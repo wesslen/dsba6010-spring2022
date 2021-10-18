@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: dsba6010-spring2022.netlify.app/sitemap.xml
