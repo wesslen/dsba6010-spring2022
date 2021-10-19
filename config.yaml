@@ -5,72 +5,104 @@
 
 title: DSBA 6010 Bayesian Statistics # Website name
 baseurl: 'https://dsba6010-spring2022.netlify.app' # Website URL
-copyright: '© 2021 Ryan Wesslen' # Footer text, e.g. '© {year} Me'
+#copyright: '© 2021 Ryan Wesslen' # Footer text, e.g. '© {year} Me'
 
 ############################
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
-removePathAccents: true
 
 ############################
 ## MODULES
 ############################
 
-module:
-  imports:
-    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms
-    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy
-
 ############################
 ## ADVANCED
 ############################
 
-enableGitInfo: false
-summaryLength: 30
-paginate: 10
-enableEmoji: true
-enableRobotsTXT: true
-footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
+# ------------------
+# Building options
+# ------------------
 permalinks:
-  event: '/talk/:slug/'
-  tags: '/tag/:slug/'
-  categories: '/category/:slug/'
-  publication_types: '/publication-type/:slug/'
-disableAliases: true
-outputs:
-  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
-  section: [HTML, RSS]
+  post: "/:year/:month/:day/:slug/"
+buildFuture: yes
+
+ignoreFiles:
+  - \.ipynb$
+  - .ipynb_checkpoints$
+  - \.Rmd$
+  - \.Rmarkdown$
+  - _cache$
+  - \.Rproj.user$
+  - \.Rhistory$
+  - \.knit\.md$
+  - \.utf8\.md$
+
+# No taxonomy
+disableKinds:
+  - taxonomy
+  - taxonomyTerm
+
+imaging:
+  anchor: smart
+  quality: 75
+  resampleFilter: lanczos
+
+# Markdown options
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:
     renderer:
       unsafe: true
   highlight:
-    codeFences: false
+    codeFences: true
+    guessSyntax: true
+    style: "monokai"
   tableOfContents:
     startLevel: 2
-    endLevel: 3
-imaging:
-  resampleFilter: lanczos
-  quality: 75
-  anchor: smart
-timeout: 600000
+    endLevel: 4
+footnotereturnlinkcontents: <sup>^</sup>
+
+defaultContentLanguage: en
+copyright: ''
+enableGitInfo: no
+hasCJKLanguage: no
+defaultContentLanguageInSubdir: no
+removePathAccents: yes
+summaryLength: 30
+paginate: 10
+enableEmoji: yes
+
+
+# ----------------
+# Output options
+# ----------------
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+    - WebAppManifest
+  section:
+    - HTML
+    - RSS
+mediaTypes:
+  application/manifest+json:
+    suffixes: webmanifest
+outputFormats:
+  WebAppManifest:
+    mediaType: application/manifest+json
+    rel: manifest
+enableRobotsTXT: yes
+
 taxonomies:
-  tag: tags
+  author: authors
   category: categories
   publication_type: publication_types
-  author: authors
-related:
-  threshold: 80
-  includeNewer: true
-  toLower: true
-  indices:
-    - name: tags
-      weight: 100
-    - name: categories
-      weight: 70
+  tag: tags
+  
+  
+module:
+  imports:
+    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms
+    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy

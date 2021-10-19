@@ -12,7 +12,7 @@ font_size: L
 
 # SEO
 
-site_type: Organization
+site_type: Course
 local_business_type: ''
 org_name: ''
 description: ''
@@ -109,10 +109,12 @@ marketing:
   google_analytics: ''
   google_tag_manager: ''
   google_site_verification: ''
-  baidu_site_verification: ''
-  baidu_tongji: ''
+############################
+## Content Management System
+############################
 cms:
-  local_backend: false
+  # See https://sourcethemes.com/academic/docs/install/#install-with-web-browser
+  netlify_cms: true
 icon:
   pack:
     ai: false

@@ -5,7 +5,7 @@
     <link>https://dsba6010-spring2022.netlify.app/post/</link>
       <atom:link href="https://dsba6010-spring2022.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Latest News</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Ryan Wesslen</copyright><lastBuildDate>Tue, 01 Dec 2020 21:13:14 -0500</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Dec 2020 21:13:14 -0500</lastBuildDate>
     <image>
       <url>https://dsba6010-spring2022.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Latest News</title>
@@ -14,11 +14,11 @@
     
     <item>
       <title>Hello R Markdown</title>
-      <link>https://dsba6010-spring2022.netlify.app/post/2020-12-01-r-rmarkdown/</link>
+      <link>https://dsba6010-spring2022.netlify.app/2020/12/01/hello-r-markdown/</link>
       <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      <guid>https://dsba6010-spring2022.netlify.app/post/2020-12-01-r-rmarkdown/</guid>
+      <guid>https://dsba6010-spring2022.netlify.app/2020/12/01/hello-r-markdown/</guid>
       <description>
-&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/post/2020-12-01-r-rmarkdown/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/2020/12/01/hello-r-markdown/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
@@ -54,7 +54,7 @@ pie(
   init.angle = -50, border = NA
 )&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span style=&#34;display:block;&#34; id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/post/2020-12-01-r-rmarkdown/index.en_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/2020/12/01/hello-r-markdown/index.en_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: A fancy pie chart.
 &lt;/p&gt;
@@ -65,9 +65,9 @@ Figure 1: A fancy pie chart.
     
     <item>
       <title>Jian Yang and Monica Hall Win the Best Paper Award at Wowchemy 2020</title>
-      <link>https://dsba6010-spring2022.netlify.app/post/20-12-02-icml-best-paper/</link>
+      <link>https://dsba6010-spring2022.netlify.app/2020/12/02/jian-yang-and-monica-hall-win-the-best-paper-award-at-wowchemy-2020/</link>
       <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://dsba6010-spring2022.netlify.app/post/20-12-02-icml-best-paper/</guid>
+      <guid>https://dsba6010-spring2022.netlify.app/2020/12/02/jian-yang-and-monica-hall-win-the-best-paper-award-at-wowchemy-2020/</guid>
       <description>&lt;p&gt;Congratulations to Jian Yang and Monica Hall for winning the Best Paper Award at the 2020 Conference on Wowchemy for their paper “Learning Wowchemy”.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.&lt;/p&gt;
 &lt;p&gt;Sed eu dui nec ligula bibendum dapibus. Nullam imperdiet auctor tortor, vel cursus mauris malesuada non. Quisque ultrices euismod dapibus. Aenean sed gravida risus. Sed nisi tortor, vulputate nec quam non, placerat porta nisl. Nunc varius lobortis urna, condimentum facilisis ipsum molestie eu. Ut molestie eleifend ligula sed dignissim. Duis ut tellus turpis. Praesent tincidunt, nunc sed congue malesuada, mauris enim maximus massa, eget interdum turpis urna et ante. Morbi sem nisl, cursus quis mollis et, interdum luctus augue. Aliquam laoreet, leo et accumsan tincidunt, libero neque aliquet lectus, a ultricies lorem mi a orci.&lt;/p&gt;
@@ -76,9 +76,9 @@ Figure 1: A fancy pie chart.
     
     <item>
       <title>Richard Hendricks Wins First Place in the Wowchemy Prize</title>
-      <link>https://dsba6010-spring2022.netlify.app/post/20-12-01-wowchemy-prize/</link>
+      <link>https://dsba6010-spring2022.netlify.app/2020/12/01/richard-hendricks-wins-first-place-in-the-wowchemy-prize/</link>
       <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://dsba6010-spring2022.netlify.app/post/20-12-01-wowchemy-prize/</guid>
+      <guid>https://dsba6010-spring2022.netlify.app/2020/12/01/richard-hendricks-wins-first-place-in-the-wowchemy-prize/</guid>
       <description>&lt;p&gt;Congratulations to Richard Hendricks for winning first place in the Wowchemy Prize.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.&lt;/p&gt;
 &lt;p&gt;Sed eu dui nec ligula bibendum dapibus. Nullam imperdiet auctor tortor, vel cursus mauris malesuada non. Quisque ultrices euismod dapibus. Aenean sed gravida risus. Sed nisi tortor, vulputate nec quam non, placerat porta nisl. Nunc varius lobortis urna, condimentum facilisis ipsum molestie eu. Ut molestie eleifend ligula sed dignissim. Duis ut tellus turpis. Praesent tincidunt, nunc sed congue malesuada, mauris enim maximus massa, eget interdum turpis urna et ante. Morbi sem nisl, cursus quis mollis et, interdum luctus augue. Aliquam laoreet, leo et accumsan tincidunt, libero neque aliquet lectus, a ultricies lorem mi a orci.&lt;/p&gt;

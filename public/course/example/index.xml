@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>📊 Bayesian Statistics | DSBA 6010 Bayesian Statistics</title>
-    <link>dsba6010-spring2022.netlify.app/course/example/</link>
-      <atom:link href="dsba6010-spring2022.netlify.app/course/example/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dsba6010-spring2022.netlify.app/course/example/</link>
+      <atom:link href="https://dsba6010-spring2022.netlify.app/course/example/index.xml" rel="self" type="application/rss+xml" />
     <description>📊 Bayesian Statistics</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Ryan Wesslen</copyright><lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/dsba6010-spring2022.netlify.app/course/example/featured.jpg</url>
+      <url>https://dsba6010-spring2022.netlify.app/course/example/featured.jpg</url>
       <title>📊 Bayesian Statistics</title>
-      <link>dsba6010-spring2022.netlify.app/course/example/</link>
+      <link>https://dsba6010-spring2022.netlify.app/course/example/</link>
     </image>
     
     <item>
       <title>Python basics</title>
-      <link>dsba6010-spring2022.netlify.app/course/example/python/</link>
+      <link>https://dsba6010-spring2022.netlify.app/course/example/python/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>dsba6010-spring2022.netlify.app/course/example/python/</guid>
+      <guid>https://dsba6010-spring2022.netlify.app/course/example/python/</guid>
       <description>&lt;p&gt;Build a foundation in Python.&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
@@ -51,9 +51,9 @@
     
     <item>
       <title>Visualization</title>
-      <link>dsba6010-spring2022.netlify.app/course/example/visualization/</link>
+      <link>https://dsba6010-spring2022.netlify.app/course/example/visualization/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>dsba6010-spring2022.netlify.app/course/example/visualization/</guid>
+      <guid>https://dsba6010-spring2022.netlify.app/course/example/visualization/</guid>
       <description>&lt;p&gt;Learn how to visualize data with Plotly.&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
@@ -70,20 +70,19 @@
 &lt;/details&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
   &lt;summary&gt;Write Plotly code to render a bar chart&lt;/summary&gt;
-  &lt;p&gt;&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import plotly.express as px
-data_canada = px.data.gapminder().query(&amp;quot;country == &#39;Canada&#39;&amp;quot;)
-fig = px.bar(data_canada, x=&#39;year&#39;, y=&#39;pop&#39;)
-fig.show()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/p&gt;
+  &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; plotly.express &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; px
+data_canada &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; px&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;gapminder()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;query(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;country == &amp;#39;Canada&amp;#39;&amp;#34;&lt;/span&gt;)
+fig &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; px&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;bar(data_canada, x&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;year&amp;#39;&lt;/span&gt;, y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pop&amp;#39;&lt;/span&gt;)
+fig&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;/details&gt;</description>
     </item>
     
     <item>
       <title>Statistics</title>
-      <link>dsba6010-spring2022.netlify.app/course/example/stats/</link>
+      <link>https://dsba6010-spring2022.netlify.app/course/example/stats/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>dsba6010-spring2022.netlify.app/course/example/stats/</guid>
+      <guid>https://dsba6010-spring2022.netlify.app/course/example/stats/</guid>
       <description>&lt;p&gt;Introduction to statistics for data science.&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;

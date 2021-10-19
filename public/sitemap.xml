@@ -2,51 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dsba6010-spring2022.netlify.app/categories/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
+    <loc>https://dsba6010-spring2022.netlify.app/course/example/python/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/course/example/visualization/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/course/example/stats/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/course/example/</loc>
+    <lastmod>2022-01-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
+    <lastmod>2022-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/post/2020-12-01-r-rmarkdown/</loc>
+    <loc>https://dsba6010-spring2022.netlify.app/course/</loc>
+    <lastmod>2022-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/2020/12/01/hello-r-markdown/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/post/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/tag/plot/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/category/r/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/tag/r-markdown/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/tag/regression/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/tags/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/post/20-12-02-icml-best-paper/</loc>
+    <loc>https://dsba6010-spring2022.netlify.app/2020/12/02/jian-yang-and-monica-hall-win-the-best-paper-award-at-wowchemy-2020/</loc>
     <lastmod>2020-12-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/post/20-12-01-wowchemy-prize/</loc>
+    <loc>https://dsba6010-spring2022.netlify.app/2020/12/01/richard-hendricks-wins-first-place-in-the-wowchemy-prize/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/admin/</loc>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/contact/</loc>
-  </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/authors/</loc>
-  </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/authors/admin/</loc>
-  </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/publication_types/</loc>
-  </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/authors/%E5%90%B3%E6%81%A9%E9%81%94/</loc>
-  </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/course/</loc>
   </url>
 </urlset>
