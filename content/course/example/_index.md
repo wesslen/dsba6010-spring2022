@@ -1,6 +1,6 @@
 ---
 date: "2022-01-24"
-linkTitle: Bayesian Statistics
+linkTitle: Data Science
 summary: Bayesian statistics and causal inference
 title: "\U0001F4CA Bayesian Statistics"
 type: book

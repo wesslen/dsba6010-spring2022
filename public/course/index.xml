@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>📚 Courses | DSBA 6010 Bayesian Statistics</title>
-    <link>dsba6010-spring2022.netlify.app/course/</link>
-      <atom:link href="dsba6010-spring2022.netlify.app/course/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dsba6010-spring2022.netlify.app/course/</link>
+      <atom:link href="https://dsba6010-spring2022.netlify.app/course/index.xml" rel="self" type="application/rss+xml" />
     <description>📚 Courses</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Ryan Wesslen</copyright>
     <image>
-      <url>/dsba6010-spring2022.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <url>https://dsba6010-spring2022.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>📚 Courses</title>
-      <link>dsba6010-spring2022.netlify.app/course/</link>
+      <link>https://dsba6010-spring2022.netlify.app/course/</link>
     </image>
     
   </channel>

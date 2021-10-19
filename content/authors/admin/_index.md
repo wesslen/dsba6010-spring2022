@@ -3,7 +3,7 @@ bio: My research interests include distributed robotics, mobile computing and pr
   matter.
 education:
   courses:
-  - course: PhD in Artificial Intelligence
+  - course: PhD in Computing & Information Systems
     institution: Stanford University
     year: 2012
   - course: MEng in Artificial Intelligence
@@ -19,19 +19,19 @@ interests:
 - Computational Linguistics
 - Information Retrieval
 organizations:
-- name: Stanford University
+- name: UNC Charlotte
   url: ""
 role: Python Instructor
 social:
 - icon: envelope
   icon_pack: fas
-  link: mailto:test@example.org
+  link: mailto:rwesslen@uncc.edu
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: https://twitter.com/ryanwesslen
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/wesslen
 superuser: true
 title: Nelson Bighetti
 user_groups:
