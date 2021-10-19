@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>吳恩達 | Bayesian Statistics</title>
+    <title>吳恩達 | DSBA 6010 Bayesian Statistics</title>
     <link>dsba6010-spring2022.netlify.app/authors/%E5%90%B3%E6%81%A9%E9%81%94/</link>
       <atom:link href="dsba6010-spring2022.netlify.app/authors/%E5%90%B3%E6%81%A9%E9%81%94/index.xml" rel="self" type="application/rss+xml" />
     <description>吳恩達</description>

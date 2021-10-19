@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Latest News | Bayesian Statistics</title>
+    <title>Latest News | DSBA 6010 Bayesian Statistics</title>
     <link>dsba6010-spring2022.netlify.app/post/</link>
       <atom:link href="dsba6010-spring2022.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Latest News</description>

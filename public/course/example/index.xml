@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>📊 Learn Data Science | Bayesian Statistics</title>
+    <title>📊 Bayesian Statistics | DSBA 6010 Bayesian Statistics</title>
     <link>dsba6010-spring2022.netlify.app/course/example/</link>
       <atom:link href="dsba6010-spring2022.netlify.app/course/example/index.xml" rel="self" type="application/rss+xml" />
-    <description>📊 Learn Data Science</description>
+    <description>📊 Bayesian Statistics</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Ryan Wesslen</copyright><lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/dsba6010-spring2022.netlify.app/course/example/featured.jpg</url>
-      <title>📊 Learn Data Science</title>
+      <title>📊 Bayesian Statistics</title>
       <link>dsba6010-spring2022.netlify.app/course/example/</link>
     </image>
     
