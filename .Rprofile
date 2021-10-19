@@ -19,7 +19,8 @@ options(
   blogdown.knit.on_save = FALSE,    
   blogdown.author = "Ryan Wesslen", 
   blogdown.ext = ".Rmarkdown",     
-  blogdown.subdir = "post"      
+  blogdown.subdir = "post",
+  method = 'html'
 )
 
 # fix Hugo version

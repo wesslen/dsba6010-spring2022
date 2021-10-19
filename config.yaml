@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: DSBA 6010 Bayesian Statistics # Website name
+title: Bayesian Statistics # Website name
 baseurl: 'https://dsba6010-spring2022.netlify.app' # Website URL
 #copyright: '© 2021 Ryan Wesslen' # Footer text, e.g. '© {year} Me'
 
