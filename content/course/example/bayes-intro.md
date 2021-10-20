@@ -1,11 +1,13 @@
 ---
-date: "2021-01-01"
-title: Python basics
+date: "2021-01-10"
+title: Intro to Bayesian Methods
 type: book
+tags:
+- Bayesian Methods
 weight: 20
 ---
 
-Build a foundation in Python.
+Chapter 1: The Golem of Prague
 
 <!--more-->
 
@@ -13,7 +15,7 @@ Build a foundation in Python.
 
 ## Learn
 
-{{< youtube rfscVS0vtbw >}}
+{{< youtube 4WVelCswXo4 >}}
 
 ## Quiz
 

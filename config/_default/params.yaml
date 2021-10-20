@@ -118,3 +118,48 @@ cms:
 icon:
   pack:
     ai: false
+    
+    
+
+author: Ryan Wesslen
+
+instructor: 
+  name: Dr. Ryan Wesslen
+  email: rwesslen@uncc.edu
+  url: "https://wesslen.netlify.app"
+  twitter: ryanwesslen
+  github: wesslen
+  office: "TBD"
+  contact_policy: >-
+    E-mail and Slack are the best ways to get in contact with me.
+  appointment_url: https://calendly.com/ryanwesslen/
+
+course:
+  number: "DSBA 6010"
+  semester: "Spring 2022"
+  days: "Monday"
+  time: "12:00pm-2:45pm"
+  location: "Center City 1101"
+  dates: "Jan 10, 2022 - May 12, 2022"
+  github: "wesslen/dsba6010-spring2022"
+  copyrightYear: "2022"
+  slack: "https://dsba6010-spring2022.slack.com"
+
+university: 
+  name: University of North Carolina at Charlotte
+  url: "https://www.uncc.edu"
+
+school:
+  name: School of Data Science
+  url: "https://datascience.charlotte.edu/"
+
+
+############################
+## Social
+############################
+
+# Default image for social sharing and search engines. Place image in `static/media/` folder and specify image name here.
+sharing_image: "social-image-sp21.png"
+
+# Twitter username (without @). Used when a visitor shares your site on Twitter.
+twitter: "andrewheiss"

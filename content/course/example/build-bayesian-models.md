@@ -1,14 +1,14 @@
 ---
-date: "2021-01-01"
+date: "2021-01-24"
 highlight: true
 tags:
-- Data Visualization
-title: Visualization
+- Bayesian Methods
+title: Building Bayesian Models
 type: book
 weight: 30
 ---
 
-Learn how to visualize data with Plotly.
+Chapter 2: The Garden of Forking Data
 
 <!--more-->
 
@@ -16,7 +16,7 @@ Learn how to visualize data with Plotly.
 
 ## Learn
 
-{{< youtube hSPmj7mK6ng >}}
+{{< youtube XoVtOAN0htU >}}
 
 ## Quiz
 

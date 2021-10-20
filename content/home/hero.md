@@ -1,20 +1,20 @@
 ---
 widget: hero
 headless: true
-weight: 10
-title: Online Course Template
-hero_media: student.svg
+weight: 5
+title: Bayesian Statistics
+hero_media: icon-192.png
 design:
   background:
     gradient_angle: 0
-    gradient_start: 'rgb(224,223,255)'
-    gradient_end: 'rgb(153,238,255)'
+    gradient_start: 'rgb(221,226,227)'
+    gradient_end: 'rgb(221,226,227)'
     text_color_light: false
-cta:
-  url: course/
-  label: Explore our courses
-  icon_pack: fas
-  icon: user-graduate
+#cta:
+#  url: course/
+#  label: Explore our courses
+#  icon_pack: fas
+#  icon: user-graduate
 cta_alt:
   url:
   label:
@@ -25,8 +25,10 @@ advanced:
 ---
 <br>
 
-Published with the [Wowchemy Website Builder](https://wowchemy.com/) for Hugo.
+DSBA Special Topics: Bayesian statistics
 
-Introduce your courses here.
+Combine research design, causal inference, and econometric tools to measure the effects of social programs
 
-<a class="github-button" href="https://github.com/wowchemy/wowchemy-hugo-modules" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Wowchemy Website Builder for Hugo">Star Wowchemy Website Builder for Hugo</a><br><a class="github-button" href="https://github.com/wowchemy/starter-hugo-online-course" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star the Online Course template">Star the Online Course template</a><script async defer src="https://buttons.github.io/buttons.js"></script>
+DSBA 6010 • Spring 2022
+<br>School of Data Science
+<br>University of North Carolina at Charlotte

@@ -1,12 +1,12 @@
 ---
-date: "2022-01-24"
-linkTitle: Data Science
+date: "2022-01-10"
+linkTitle: Bayesian Statistics
 summary: Bayesian statistics and causal inference
 title: "\U0001F4CA Bayesian Statistics"
 type: book
 ---
 
-{{< figure src="featured.jpg" >}}
+{{< figure src="featured.png" >}}
 
 {{< toc hide_on="xl" >}}
 
@@ -14,7 +14,7 @@ type: book
 
 - Fundamental {{<hl>}}R programming skills{{</hl>}}
 - {{<hl>}}Statistical concepts{{</hl>}} and how to apply them in practice
-- Gain experience with the {{<hl>}}stan{{</hl>}}, including data visualization with {{<hl>}}tidybayes{{</hl>}} and data wrangling with {{<hl>}}tidyverse{{</hl>}}
+- Gain experience with {{<hl>}}`stan`{{</hl>}}, including data visualization with {{<hl>}}`tidybayes`{{</hl>}} and data wrangling with {{<hl>}}`tidyverse`{{</hl>}}
 
 ## Course overview
 
@@ -30,10 +30,6 @@ Application of the models will focus on research in cognitive science, human-com
 
 {{< list_children >}}
 
-## Meet your instructor
-
-{{< mention "admin" >}}
-
 ## FAQs
 
 {{< spoiler text="Are there prerequisites?" >}}
@@ -44,4 +40,4 @@ Yes. Experience with R, especially tidyverse, are necessary. Students without sh
 Lectures and coursework will require R. Students must complete assignments in R. However, final projects can be done in Python (e.g., pyMC3) or Julia (turing.jl).
 {{< /spoiler >}}
 
-{{< cta cta_text="Begin the course" cta_link="python" >}}
+{{< cta cta_text="Begin the course" cta_link="bayes-intro" >}}
