@@ -1,23 +1,30 @@
 ---
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: My research focuses on human-centered data science.
 education:
   courses:
   - course: PhD in Computing & Information Systems
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
+    institution: UNC Charlotte
+    year: 2021
+  - course: MS in Data Science & Business Analytics
+    institution: UNC Charlotte
+    year: 2016
+  - course: MA in Economics
+    institution: New York University
+    year: 2011  
+  - course: MS in Financial Mathematics
+    institution: NC State University
     year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: BA in Economics
+    institution: UNC Chapel Hill
+    year: 2007
 email: ""
 highlight_name: false
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Human-computer interaction
+- Information visualization
+- Cognitive science
+- Natural language processing
+- Computational social science
 organizations:
 - name: UNC Charlotte
   url: ""
@@ -33,7 +40,7 @@ social:
   icon_pack: fab
   link: https://github.com/wesslen
 superuser: true
-title: Nelson Bighetti
+title: Ryan Wesslen
 user_groups:
 - Teachers
 ---

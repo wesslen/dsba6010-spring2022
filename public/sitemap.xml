@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dsba6010-spring2022.netlify.app/course/example/python/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+    <loc>https://dsba6010-spring2022.netlify.app/syllabus/01-bayes-intro/</loc>
+    <lastmod>2021-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/course/example/visualization/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+    <loc>https://dsba6010-spring2022.netlify.app/syllabus/02-build-bayesian-models/</loc>
+    <lastmod>2022-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/course/example/stats/</loc>
+    <loc>https://dsba6010-spring2022.netlify.app/syllabus/03-build-bayesian-models/</loc>
+    <lastmod>2022-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/syllabus/stats/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/</loc>
     <lastmod>2022-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/course/example/</loc>
-    <lastmod>2022-01-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/course/</loc>
-    <lastmod>2022-01-24T00:00:00+00:00</lastmod>
+    <loc>https://dsba6010-spring2022.netlify.app/syllabus/</loc>
+    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/2020/12/01/hello-r-markdown/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
@@ -32,14 +32,12 @@
     <loc>https://dsba6010-spring2022.netlify.app/2020/12/01/richard-hendricks-wins-first-place-in-the-wowchemy-prize/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/privacy/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/terms/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/admin/</loc>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/contact/</loc>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/schedule/schedule/</loc>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/schedule/</loc>
   </url>
 </urlset>

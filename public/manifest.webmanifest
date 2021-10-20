@@ -1,9 +1,9 @@
 {
-  "name": "Bayesian Statistics",
-  "short_name": "Bayesian Statistics",
+  "name": "DSBA 6010",
+  "short_name": "DSBA 6010",
   "lang": "en-us",
-  "theme_color": "#0072ff",
-  "background_color": "#0072ff",
+  "theme_color": "#B0BBBF",
+  "background_color": "#B0BBBF",
   "icons": [{
     "src": "/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_3.png",
     "sizes": "192x192",

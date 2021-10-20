@@ -64,7 +64,7 @@ p <- d %>%
                    alpha = remain %>% as.character()),
                size = 1/3) +
   geom_point(aes(fill = fill, alpha = remain %>% as.character()),
-             shape = 21, size = 1) +
+             shape = 21, size = 2) +
   # it's the alpha parameter that makes elements semitransparent
   scale_fill_manual(values = c("navy", "white")) +
   scale_alpha_manual(values = c(1/5, 1)) +

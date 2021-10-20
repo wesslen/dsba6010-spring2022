@@ -1,19 +1,17 @@
 lessons:
-  - title: 'Evaluation and causation'
+  - title: 'Bayesian methods'
     header: True
 
-  - title: '<span class="content-title">Evaluation and the causal revolution</span>'
+  - title: '<span class="content-title">Intro to Bayesian methods</span>'
     session: "Session 1"
-    date: "January 11–15"
-    date_start: "January 11"
-    date_end: "January 15"
+    date: "January 10"
     content: "01-content"
     example: "rstudio-tidyverse"
     bg: 1
     
-  - title: 'Weekly check-in 1'
-    date: "January 19"
-    assignment: "weekly-check-in"
+  - title: 'Lesson quiz 1'
+    date: "January 24"
+    assignment: "lesson-quiz-1"
     bg: 1
 
   - title: 'Problem set 1'
