@@ -5,28 +5,30 @@ lessons:
   - title: '<span class="content-title">Intro to Bayesian methods</span>'
     session: "Session 1"
     date: "January 10"
-    content: "01-content"
+    content: "01-bayes-intro"
     example: "rstudio-tidyverse"
     bg: 1
+  
+  - title: 'No class (MLK Holiday)'
+    date: "January 24"
+    bg: 1 
     
   - title: 'Lesson quiz 1'
-    date: "January 24"
+    date: "January 31"
     assignment: "lesson-quiz-1"
-    bg: 1
+    bg: 1    
+
+  - title: '<span class="content-title">Bayesian inference</span>'
+    session: "Session 2"
+    date: "January 31"
+    content: "02-bayesian-inference"
+    bg: 2
 
   - title: 'Problem set 1'
-    date: "January 19"
+    date: "January 31"
     assignment: "01-problem-set"
     bg: 1
-    bottomborder: True
-
-  - title: '<span class="content-title">Regression and inference</span>'
-    session: "Session 2"
-    date: "January 19–22"
-    date_start: "January 19"
-    date_end: "January 22"
-    content: "02-content"
-    bg: 2
+    bottomborder: True    
 
   - title: 'Weekly check-in 2'
     date: "January 25"
@@ -118,8 +120,6 @@ lessons:
     
   - title: '<i class="fas fa-star"></i> **Exam 1**'
     date: "February 22–28"
-    date_start: "February 22"
-    date_end: "March 1"
     bg: 3
 
   - title: 'Tools and methods'

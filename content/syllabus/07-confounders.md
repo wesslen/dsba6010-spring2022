@@ -1,14 +1,14 @@
 ---
-date: "2022-01-24"
+date: "2022-02-20"
 highlight: true
 tags:
-- Bayesian Methods
-title: Building Bayesian Models
+- Causal inference
+title: Confounders
 type: book
 weight: 30
 ---
 
-Chapter 2: The Garden of Forking Data
+Chapter 6: The haunted DAG & the causal terror
 
 <!--more-->
 
@@ -16,7 +16,7 @@ Chapter 2: The Garden of Forking Data
 
 ## Learn
 
-{{< youtube XoVtOAN0htU >}}
+{{< youtube l_7yIUqWBmE >}}
 
 ## Quiz
 

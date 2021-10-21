@@ -1,9 +1,9 @@
 ---
-date: "2021-01-10"
+date: "2022-01-10"
 title: Intro to Bayesian Methods
 type: book
 tags:
-- Bayesian Methods
+- Bayesian methods
 weight: 20
 ---
 

@@ -2,7 +2,7 @@
 widget: portfolio
 headless: true
 weight: 30
-title: Explore course topics
+title: Course topics
 subtitle:
 content:
   page_type: book
@@ -18,7 +18,7 @@ content:
     - name: Programming
       tag: Programming
 design:
-  columns: '1'
+  columns: '2'
   view: 3
   flip_alt_rows: false
 ---

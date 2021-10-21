@@ -5,7 +5,7 @@
     <link>https://dsba6010-spring2022.netlify.app/</link>
       <atom:link href="https://dsba6010-spring2022.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <description>DSBA 6010</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 31 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dsba6010-spring2022.netlify.app/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>DSBA 6010</title>
@@ -50,11 +50,40 @@
     </item>
     
     <item>
+      <title>Linear Regression</title>
+      <link>https://dsba6010-spring2022.netlify.app/syllabus/04-linear-regression-2/</link>
+      <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://dsba6010-spring2022.netlify.app/syllabus/04-linear-regression-2/</guid>
+      <description>&lt;p&gt;Chapter 4: Geocentric Models&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
+&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/h5aPo5wXN8E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;quiz&#34;&gt;Quiz&lt;/h2&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
+  &lt;summary&gt;When is a heatmap useful?&lt;/summary&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
+  &lt;summary&gt;Write Plotly code to render a bar chart&lt;/summary&gt;
+  &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; plotly.express &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; px
+data_canada &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; px&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;gapminder()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;query(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;country == &amp;#39;Canada&amp;#39;&amp;#34;&lt;/span&gt;)
+fig &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; px&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;bar(data_canada, x&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;year&amp;#39;&lt;/span&gt;, y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pop&amp;#39;&lt;/span&gt;)
+fig&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/details&gt;</description>
+    </item>
+    
+    <item>
       <title>Building Bayesian Models</title>
       <link>https://dsba6010-spring2022.netlify.app/syllabus/02-build-bayesian-models/</link>
       <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/syllabus/02-build-bayesian-models/</guid>
-      <description>&lt;p&gt;Chapter 2: The Garden of Forking Data&lt;/p&gt;
+      <description>&lt;p&gt;Chapter 2: The Garden of Forking Data and Chapter 3: Sampling the Imaginary&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
 &lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
@@ -79,11 +108,11 @@ fig&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     </item>
     
     <item>
-      <title>Building Bayesian Models</title>
-      <link>https://dsba6010-spring2022.netlify.app/syllabus/03-build-bayesian-models/</link>
+      <title>Linear Regression</title>
+      <link>https://dsba6010-spring2022.netlify.app/syllabus/03-linear-regression/</link>
       <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://dsba6010-spring2022.netlify.app/syllabus/03-build-bayesian-models/</guid>
-      <description>&lt;p&gt;Chapter 3: Sampling the Imaginary&lt;/p&gt;
+      <guid>https://dsba6010-spring2022.netlify.app/syllabus/03-linear-regression/</guid>
+      <description>&lt;p&gt;Chapter 4: Geocentric Models&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
 &lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;

@@ -1,14 +1,14 @@
 ---
-date: "2022-01-24"
+date: "2022-02-06"
 highlight: true
 tags:
-- Bayesian Methods
-title: Building Bayesian Models
+- Bayesian methods
+title: Linear Models (2)
 type: book
 weight: 30
 ---
 
-Chapter 3: Sampling the Imaginary
+Chapter 4: Geocentric models
 
 <!--more-->
 

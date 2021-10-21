@@ -1,8 +1,8 @@
 ---
 date: "2022-01-10"
-linkTitle: Bayesian Statistics
+linkTitle: Syllabus
 summary: Bayesian statistics and causal inference
-title: "\U0001F4CA Bayesian Statistics"
+title: "\U0001F4CA Syllabus"
 type: book
 ---
 
