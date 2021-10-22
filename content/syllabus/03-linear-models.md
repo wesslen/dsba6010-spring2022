@@ -5,7 +5,7 @@ tags:
 - Bayesian methods
 title: Linear Models
 type: book
-weight: 30
+weight: 3
 ---
 
 Chapter 4: Geocentric models

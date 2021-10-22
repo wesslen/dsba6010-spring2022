@@ -15,8 +15,8 @@ content:
       tag: Bayesian methods
     - name: Causal inference
       tag: Causal inference
-    - name: Programming
-      tag: Programming
+    - name: Computation
+      tag: Computation
 design:
   columns: '2'
   view: 3

@@ -5,7 +5,7 @@ tags:
 - Causal inference
 title: Confounders
 type: book
-weight: 30
+weight: 7
 ---
 
 Chapter 6: The haunted DAG & the causal terror

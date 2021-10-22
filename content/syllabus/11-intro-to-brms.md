@@ -1,14 +1,14 @@
 ---
-date: "2022-02-06"
+date: "2022-04-06"
 highlight: true
 tags:
 - Computation
-title: Bayesian workflows
+title: Intro to brms
 type: book
-weight: 5
+weight: 11
 ---
 
-Bayesian workflows
+Introduction to brms
 
 <!--more-->
 
@@ -16,7 +16,7 @@ Bayesian workflows
 
 ## Learn
 
-{{< youtube ppKpwtGy8KQ >}}
+{{< youtube 1qeXD4NQ4To >}}
 
 ## Quiz
 

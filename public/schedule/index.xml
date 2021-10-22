@@ -24,8 +24,8 @@
 &lt;p&gt;Here’s your roadmap for the semester!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/content/&#34;&gt;&lt;strong&gt;Content&lt;/strong&gt;&lt;/a&gt; (&lt;i class=&#34;fas fa-book-reader&#34;&gt;&lt;/i&gt;): This page contains the readings, slides, and recorded lectures for the topic. Read and watch these first.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/example/&#34;&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/a&gt; (&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;): This page contains fully annotated R code and other supplementary information that you can use as a reference for your assignments and project. This is only a reference page—you don’t have to necessarily do anything here. Some sections also contain videos of me live coding the examples so you can see what it looks like to work with R in real time. This page will be &lt;em&gt;very&lt;/em&gt; helpful as you work on your assignments.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/assignment/&#34;&gt;&lt;strong&gt;Assignment&lt;/strong&gt;&lt;/a&gt; (&lt;i class=&#34;fas fa-pencil-ruler&#34;&gt;&lt;/i&gt;): This page contains the instructions for each assignment. &lt;strong&gt;Assignments are due by 11:59 PM on the day they’re listed.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/example/&#34;&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/a&gt; (&lt;i class=&#34;fas fa-laptop-code&#34;&gt;&lt;/i&gt;): This page contains fully annotated R code and other supplementary information that you can use as a reference for your assignments and project. Given the focus on active learning, we’ll evaluate these examples in class together and in groups.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/assignment/&#34;&gt;&lt;strong&gt;Assignment&lt;/strong&gt;&lt;/a&gt; (&lt;i class=&#34;fas fa-pencil-ruler&#34;&gt;&lt;/i&gt;): This page contains the instructions for each assignment. &lt;strong&gt;Assignments are due by 11:59 AM (1 minute before class) on the day they’re listed.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;ical&#34;&gt;
 &lt;p&gt;You can subscribe to this calendar URL in Outlook, Google Calendar, or Apple Calendar:&lt;br&gt;&lt;a class=&#34;btn btn-primary&#34; href=&#34;https://dsba6010-spring2022.netlify.app/schedule/schedule.ics&#34; role=&#34;button&#34;&gt;&lt;i class=&#34;far fa-calendar-alt&#34;&gt;&lt;/i&gt;&lt;/a&gt; &lt;input id=&#34;ics_url&#34; type=&#34;text&#34; value=&#34;https://dsba6010-spring2022.netlify.appschedule/schedule.ics&#34; onclick=&#34;this.select()&#34; readonly=&#34;readonly&#34; size=&#34;60&#34; /&gt;&lt;/p&gt;
@@ -49,7 +49,7 @@
                 &lt;small&gt;(Session 1)&lt;/small&gt;&lt;/td&gt;
             &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Intro to Bayesian methods&lt;/span&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;https://dsba6010-spring2022.netlify.app/content/01-content/&#34;&gt;
+                    href=&#34;https://dsba6010-spring2022.netlify.app/syllabus/01-bayes-intro/&#34;&gt;
                     &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
                     href=&#34;https://dsba6010-spring2022.netlify.app/example/rstudio-tidyverse/&#34;&gt;
@@ -63,6 +63,24 @@
             class=&#34; schedule-bg-1&#34;&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
                 &lt;strong&gt;January 24&lt;/strong&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;No class (MLK Holiday)&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
+            class=&#34; schedule-bg-1&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;January 31&lt;/strong&gt;&lt;/td&gt;
             &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Lesson quiz 1&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
                 &lt;font color=&#34;f1f1f1&#34;&gt;
@@ -77,9 +95,27 @@
                     &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr
+            class=&#34; schedule-bg-2&#34;&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
+                &lt;strong&gt;January 31&lt;/strong&gt;&lt;br&gt;
+                &lt;small&gt;(Session 2)&lt;/small&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Bayesian inference&lt;/span&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
+                    href=&#34;https://dsba6010-spring2022.netlify.app/syllabus/02-bayesian-inference/&#34;&gt;
+                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+                &lt;font color=&#34;f1f1f1&#34;&gt;
+                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr
             class=&#34; section-bottom schedule-bg-1&#34;&gt;
             &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;January 19&lt;/strong&gt;&lt;/td&gt;
+                &lt;strong&gt;January 31&lt;/strong&gt;&lt;/td&gt;
             &lt;td style=&#34;width:56%;text-align:left&#34;&gt;Problem set 1&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
                 &lt;font color=&#34;f1f1f1&#34;&gt;
@@ -92,24 +128,6 @@
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
                     href=&#34;https://dsba6010-spring2022.netlify.app/assignment/01-problem-set/&#34;&gt;
                     &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr
-            class=&#34; schedule-bg-2&#34;&gt;
-            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;
-                &lt;strong&gt;January 19–22&lt;/strong&gt;&lt;br&gt;
-                &lt;small&gt;(Session 2)&lt;/small&gt;&lt;/td&gt;
-            &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Regression and inference&lt;/span&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;https://dsba6010-spring2022.netlify.app/content/02-content/&#34;&gt;
-                    &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-laptop-code fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
-            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
-                &lt;font color=&#34;f1f1f1&#34;&gt;
-                    &lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;
-            &lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr
             class=&#34; schedule-bg-2&#34;&gt;
@@ -152,7 +170,7 @@
                 &lt;small&gt;(Session 3)&lt;/small&gt;&lt;/td&gt;
             &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Theories of change and logic models&lt;/span&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;https://dsba6010-spring2022.netlify.app/content/03-content/&#34;&gt;
+                    href=&#34;https://dsba6010-spring2022.netlify.app/syllabus/03-content/&#34;&gt;
                     &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
                 &lt;font color=&#34;f1f1f1&#34;&gt;
@@ -204,7 +222,7 @@
                 &lt;small&gt;(Session 4)&lt;/small&gt;&lt;/td&gt;
             &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Measurement and DAGs&lt;/span&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;https://dsba6010-spring2022.netlify.app/content/04-content/&#34;&gt;
+                    href=&#34;https://dsba6010-spring2022.netlify.app/syllabus/04-content/&#34;&gt;
                     &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
                     href=&#34;https://dsba6010-spring2022.netlify.app/example/dags/&#34;&gt;
@@ -255,7 +273,7 @@
                 &lt;small&gt;(Session 5)&lt;/small&gt;&lt;/td&gt;
             &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;DAGs and potential outcomes&lt;/span&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;https://dsba6010-spring2022.netlify.app/content/05-content/&#34;&gt;
+                    href=&#34;https://dsba6010-spring2022.netlify.app/syllabus/05-content/&#34;&gt;
                     &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
                     href=&#34;https://dsba6010-spring2022.netlify.app/example/po-ate-cate/&#34;&gt;
@@ -306,7 +324,7 @@
                 &lt;small&gt;(Session 6)&lt;/small&gt;&lt;/td&gt;
             &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Threats to validity&lt;/span&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;https://dsba6010-spring2022.netlify.app/content/06-content/&#34;&gt;
+                    href=&#34;https://dsba6010-spring2022.netlify.app/syllabus/06-content/&#34;&gt;
                     &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
                 &lt;font color=&#34;f1f1f1&#34;&gt;
@@ -386,7 +404,7 @@
                 &lt;small&gt;(Session 7)&lt;/small&gt;&lt;/td&gt;
             &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Randomization and matching&lt;/span&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;https://dsba6010-spring2022.netlify.app/content/07-content/&#34;&gt;
+                    href=&#34;https://dsba6010-spring2022.netlify.app/syllabus/07-content/&#34;&gt;
                     &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
                     href=&#34;https://dsba6010-spring2022.netlify.app/example/matching-ipw/&#34;&gt;
@@ -437,7 +455,7 @@
                 &lt;small&gt;(Sessions 8–9)&lt;/small&gt;&lt;/td&gt;
             &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Difference-in-differences I + II&lt;/span&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;https://dsba6010-spring2022.netlify.app/content/08-content/&#34;&gt;
+                    href=&#34;https://dsba6010-spring2022.netlify.app/syllabus/08-content/&#34;&gt;
                     &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
                     href=&#34;https://dsba6010-spring2022.netlify.app/example/diff-in-diff/&#34;&gt;
@@ -522,7 +540,7 @@
                 &lt;small&gt;(Session 10)&lt;/small&gt;&lt;/td&gt;
             &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Regression discontinuity I&lt;/span&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;https://dsba6010-spring2022.netlify.app/content/10-content/&#34;&gt;
+                    href=&#34;https://dsba6010-spring2022.netlify.app/syllabus/10-content/&#34;&gt;
                     &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
                     href=&#34;https://dsba6010-spring2022.netlify.app/example/rdd/&#34;&gt;
@@ -573,7 +591,7 @@
                 &lt;small&gt;(Session 11)&lt;/small&gt;&lt;/td&gt;
             &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Instrumental variables I&lt;/span&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;https://dsba6010-spring2022.netlify.app/content/11-content/&#34;&gt;
+                    href=&#34;https://dsba6010-spring2022.netlify.app/syllabus/11-content/&#34;&gt;
                     &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
                     href=&#34;https://dsba6010-spring2022.netlify.app/example/iv/&#34;&gt;
@@ -624,7 +642,7 @@
                 &lt;small&gt;(Session 12)&lt;/small&gt;&lt;/td&gt;
             &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Instrumental variables II + Regression discontinuity II&lt;/span&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;https://dsba6010-spring2022.netlify.app/content/12-content/&#34;&gt;
+                    href=&#34;https://dsba6010-spring2022.netlify.app/syllabus/12-content/&#34;&gt;
                     &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
                     href=&#34;https://dsba6010-spring2022.netlify.app/example/rdd-fuzzy/&#34;&gt;
@@ -703,7 +721,7 @@
                 &lt;small&gt;(Session 13)&lt;/small&gt;&lt;/td&gt;
             &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Choosing and planning ethical evaluations&lt;/span&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;https://dsba6010-spring2022.netlify.app/content/13-content/&#34;&gt;
+                    href=&#34;https://dsba6010-spring2022.netlify.app/syllabus/13-content/&#34;&gt;
                     &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
                     href=&#34;https://dsba6010-spring2022.netlify.app/example/synthetic-data/&#34;&gt;
@@ -754,7 +772,7 @@
                 &lt;small&gt;(Session 14)&lt;/small&gt;&lt;/td&gt;
             &lt;td style=&#34;width:56%;text-align:left&#34;&gt;&lt;span class=&#34;content-title&#34;&gt;Ethics, stories, and curiosity&lt;/span&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;&lt;a
-                    href=&#34;https://dsba6010-spring2022.netlify.app/content/14-content/&#34;&gt;
+                    href=&#34;https://dsba6010-spring2022.netlify.app/syllabus/14-content/&#34;&gt;
                     &lt;i class=&#34;fas fa-book-reader fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
             &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
                 &lt;font color=&#34;f1f1f1&#34;&gt;

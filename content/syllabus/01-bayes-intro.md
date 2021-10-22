@@ -4,7 +4,7 @@ title: Intro to Bayesian Methods
 type: book
 tags:
 - Bayesian methods
-weight: 20
+weight: 1
 ---
 
 Chapter 1: The Golem of Prague

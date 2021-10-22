@@ -5,7 +5,7 @@ tags:
 - Causal inference
 title: Spurious correlations
 type: book
-weight: 30
+weight: 6
 ---
 
 Chapter 5: The many variables & the spurious waffles

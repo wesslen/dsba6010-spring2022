@@ -5,7 +5,7 @@ tags:
 - Bayesian methods
 title: Bayesian Inference
 type: book
-weight: 30
+weight: 2
 ---
 
 Chapter 2: The Garden of Forking Data and Chapter 3: Sampling the Imaginary
