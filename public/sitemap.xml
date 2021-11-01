@@ -5,14 +5,8 @@
     <loc>https://dsba6010-spring2022.netlify.app/syllabus/01-bayes-intro/</loc>
     <lastmod>2022-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/syllabus/07-confounders/</loc>
-    <lastmod>2022-02-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/syllabus/06-spurious-correlations/</loc>
-    <lastmod>2022-02-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/syllabus/05-intro-to-stan/</loc>
-    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
+    <loc>https://dsba6010-spring2022.netlify.app/syllabus/02-bayesian-inference/</loc>
+    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/syllabus/03-linear-models/</loc>
     <lastmod>2022-02-06T00:00:00+00:00</lastmod>
@@ -20,14 +14,23 @@
     <loc>https://dsba6010-spring2022.netlify.app/syllabus/04-linear-models-2/</loc>
     <lastmod>2022-02-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/syllabus/02-bayesian-inference/</loc>
-    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+    <loc>https://dsba6010-spring2022.netlify.app/syllabus/05-intro-to-stan/</loc>
+    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/syllabus/06-spurious-correlations/</loc>
+    <lastmod>2022-02-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/syllabus/07-confounders/</loc>
+    <lastmod>2022-02-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/syllabus/11-intro-to-brms/</loc>
+    <lastmod>2022-04-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/syllabus/stats/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/</loc>
-    <lastmod>2022-02-20T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/syllabus/</loc>
     <lastmod>2022-01-10T00:00:00+00:00</lastmod>

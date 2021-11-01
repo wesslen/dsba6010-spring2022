@@ -25,10 +25,10 @@ advanced:
 ---
 <br>
 
-DSBA Special Topics: Bayesian statistics
+DSBA/STAT Special Topics: Bayesian statistics
 
-Combine research design, causal inference, and econometric tools to measure the effects of social programs
+Builds your knowledge of and confidence in making inferences from data through Bayesian statistics and causal inference modeling.
 
-DSBA 6010 • Spring 2022
+DSBA 6010 / STAT 7027 • Spring 2022
 <br>School of Data Science
 <br>University of North Carolina at Charlotte
