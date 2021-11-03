@@ -27,13 +27,10 @@
     
   
   <meta name="description" content="
-   Chapter 2: The Garden of Forking Data
-
-
-   Chapter 3: Sampling the Imaginary" />
+   Chapter 1: The Golem of Prague" />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://dsba6010-spring2022.netlify.app/syllabus/02-bayesian-inference/" />
+  <link rel="alternate" hreflang="en-us" href="https://dsba6010-spring2022.netlify.app/syllabus/01-bayes-intro.rmd/" />
 
   
 
@@ -78,14 +75,6 @@
     
       
     
-    
-      
-      
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
-        
-      
     
 
     
@@ -271,7 +260,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://dsba6010-spring2022.netlify.app/syllabus/02-bayesian-inference/" />
+  <link rel="canonical" href="https://dsba6010-spring2022.netlify.app/syllabus/01-bayes-intro.rmd/" />
 
   
   
@@ -291,22 +280,19 @@
     <meta property="twitter:creator" content="@andrewheiss" />
   
   <meta property="og:site_name" content="DSBA 6010" />
-  <meta property="og:url" content="https://dsba6010-spring2022.netlify.app/syllabus/02-bayesian-inference/" />
-  <meta property="og:title" content="Bayesian Inference | DSBA 6010" />
+  <meta property="og:url" content="https://dsba6010-spring2022.netlify.app/syllabus/01-bayes-intro.rmd/" />
+  <meta property="og:title" content="Intro to Bayesian Methods | DSBA 6010" />
   <meta property="og:description" content="
-   Chapter 2: The Garden of Forking Data
-
-
-   Chapter 3: Sampling the Imaginary" /><meta property="og:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" />
+   Chapter 1: The Golem of Prague" /><meta property="og:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2022-01-31T00:00:00&#43;00:00"
+        content="2022-01-10T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2022-01-31T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2022-01-10T00:00:00&#43;00:00">
   
 
   
@@ -323,11 +309,11 @@
 
 
 
-  <title>Bayesian Inference | DSBA 6010</title>
+  <title>Intro to Bayesian Methods | DSBA 6010</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="9c956fc14270fd7f1e27a22b070e5fee" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="216286e037cdbe2a0bcbc036948352d6" >
 
   
   
@@ -771,7 +757,11 @@
 
 
 
-  <li class="active"><a href="/syllabus/02-bayesian-inference/">Bayesian Inference</a></li>
+  <li class="active"><a href="/syllabus/01-bayes-intro.rmd/">Intro to Bayesian Methods</a></li>
+
+
+
+  <li class=""><a href="/syllabus/02-bayesian-inference/">Bayesian Inference</a></li>
 
 
 
@@ -862,7 +852,7 @@
 
 
       <li class="breadcrumb-item active" aria-current="page">
-        Bayesian Inference
+        Intro to Bayesian Methods
       </li>
     </ol>
   </nav>
@@ -870,27 +860,93 @@
 
           
 
-          <h1>Bayesian Inference</h1>
+          <h1>Intro to Bayesian Methods</h1>
 
           <div class="article-style">
             <p>
-  <i class="fas fa-book  pr-1 fa-fw"></i> <a href="http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf" target="_blank" rel="noopener">Chapter 2: The Garden of Forking Data</a></p>
-<p>
-
-  <i class="fas fa-book  pr-1 fa-fw"></i> Chapter 3: Sampling the Imaginary
+  <i class="fas fa-book  pr-1 fa-fw"></i> <a href="http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf" target="_blank" rel="noopener">Chapter 1: The Golem of Prague</a></p>
 <h2 id="lecture">Lecture</h2>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/XoVtOAN0htU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/4WVelCswXo4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 <h2 id="slides">Slides</h2>
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/3bfa335d71ac499ebb10e11073efe777" title="L02 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;" data-ratio="1.3333333333333333"></iframe>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/c63892105b90479bb8827c9afcf5ad76" title="L01 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;" data-ratio="1.3333333333333333"></iframe>
 <h2 id="comprehension-questions">Comprehension questions</h2>
-<details class="spoiler "  id="spoiler-3">
-  <summary>When is a heatmap useful?</summary>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<details class="spoiler "  id="spoiler-2">
+  <summary>What is Bayesian data analysis? How does it differ in its definition of uncertainty from Frequentist interpretations?</summary>
+  <p><ul>
+<li>
+<p>An approach to <strong>count all the ways data can happen</strong> according to assumptions.</p>
+</li>
+<li>
+<p>Bayesian data analysis uses <strong>probabilities</strong> to describe uncertainty. Importantly, in Bayesian data analysis probabilities describe <strong>degrees of belief</strong>. In contrast, a frequentist interpretation of probabilities would be as the <strong>frequencies of events in very large samples</strong>.</p>
+</li>
+<li>
+<p>This leads to frequentist uncertainty being premised on <strong>imaginary resampling of data</strong>—if we were to repeat the measurement many many times, we would end up collecting a list of values that will have some pattern to it. It means also that parameters and models <strong>cannot</strong> have probability distributions, only measurements can.</p>
+</li>
+</ul>
+</p>
 </details>
+<details class="spoiler "  id="spoiler-3">
+  <summary>Classical (Frequentist) statistical tests were originally developed for what purposes?</summary>
+  <p><ul>
+<li>
+<p>They were originally developed (largely by Ronald Fisher) in the early 20th century for agricultural applications. They typically were for randomized experiments with large effects, in which <strong>measurement issues had been solved</strong>.</p>
+</li>
+<li>
+<p>Such statistical tests produce inferences, <strong>not decisions</strong>.</p>
+</li>
+</ul>
+</p>
+</details>
+<details class="spoiler "  id="spoiler-4">
+  <summary>What is the core problem with null hypothesis testing?</summary>
+  <p><ul>
+<li>
+<p><strong>Models are not hypotheses</strong>; they are neither true or false. Models are &ldquo;golems&rdquo; that do as they are told.</p>
+</li>
+<li>
+<p>Ideally should <strong>compare performance across models</strong> (model comparison).</p>
+</li>
+<li>
+<p>Popper: <strong>test (attempt to falsify) research hypothesis</strong>. Use theory, make a falsifiable prediction, and test that; not that nothing happened (aka null hypothesis).</p>
+</li>
+</ul>
+</p>
+</details>
+<details class="spoiler "  id="spoiler-5">
+  <summary>What are three ways in which cross-validation and information theory aid in model evaluation?</summary>
+  <p><ol>
+<li>
+<p>They provide <strong>useful expectations of predictive accuracy</strong>, rather than merely fit to sample. So they <strong>compare models</strong> where it matters.</p>
+</li>
+<li>
+<p>They give us an <strong>estimate of the tendency of a model</strong> to overfit. This will help us to understand how models and data interact, which in turn helps us to design better models.</p>
+</li>
+<li>
+<p>They help us to spot <strong>highly influential observations</strong>.</p>
+</li>
+</ol>
+<ul>
+<li>We will cover these later in the course.</li>
+</ul>
+</p>
+</details>
+<details class="spoiler "  id="spoiler-6">
+  <summary>What are the benefits of using multilevel (aka hierarchical) models?</summary>
+  <p><ul>
+<li>
+<p>They acknowledge that, though each individual group might have its own model, one group can provide valuable information about another. That is, <strong>&ldquo;let’s learn from one another while celebrating our individuality.&quot;</strong></p>
+</li>
+<li>
+<p>We will cover these later in the course.</p>
+</li>
+</ul>
+</p>
+</details>
+<p><code>r blogdown::shortcode(&quot;feedback&quot;)</code></p>
           </div>
 
           
@@ -918,7 +974,7 @@
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="/syllabus/03-linear-models/" rel="prev">Linear Models</a>
+    <a href="/syllabus/02-bayesian-inference/" rel="prev">Bayesian Inference</a>
   </div>
   
 </div>
@@ -928,7 +984,7 @@
         </div>
 
         <div class="body-footer">
-          <p>Last updated on Jan 31, 2022</p>
+          <p>Last updated on Jan 10, 2022</p>
 
           
 
@@ -1050,10 +1106,6 @@
 
       
 
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
-        
       
 
     

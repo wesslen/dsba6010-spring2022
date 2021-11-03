@@ -18,7 +18,7 @@
       <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/syllabus/01-bayes-intro/</guid>
       <description>&lt;p&gt;
-  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 1: The Golem of Prague&lt;/p&gt;
+  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chapter 1: The Golem of Prague&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -30,30 +30,84 @@
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
   &lt;summary&gt;What is Bayesian data analysis? How does it differ in its definition of uncertainty from Frequentist interpretations?&lt;/summary&gt;
-  &lt;p&gt;&lt;p&gt;An approach to count all the ways data can happen according to assumptions.&lt;/p&gt;
-&lt;p&gt;Bayesian data analysis uses probabilities to describe uncertainty. Importantly, in Bayesian data analysis probabilities describe degrees of belief. In contrast, frequentist interpretat of probabilities as the frequencies of events in very large samples.&lt;/p&gt;
-&lt;p&gt;This leads to frequentist uncertainty being premised on imaginary resampling of data—if we were to repeat the measurement many many times, we would end up collecting a list of values that will have some pattern to it. It means also that parameters and models cannot have probability distributions, only measurements can.&lt;/p&gt;
+  &lt;p&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;An approach to &lt;strong&gt;count all the ways data can happen&lt;/strong&gt; according to assumptions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bayesian data analysis uses &lt;strong&gt;probabilities&lt;/strong&gt; to describe uncertainty. Importantly, in Bayesian data analysis probabilities describe &lt;strong&gt;degrees of belief&lt;/strong&gt;. In contrast, a frequentist interpretation of probabilities would be as the &lt;strong&gt;frequencies of events in very large samples&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This leads to frequentist uncertainty being premised on &lt;strong&gt;imaginary resampling of data&lt;/strong&gt;—if we were to repeat the measurement many many times, we would end up collecting a list of values that will have some pattern to it. It means also that parameters and models &lt;strong&gt;cannot&lt;/strong&gt; have probability distributions, only measurements can.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/p&gt;
 &lt;/details&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
-  &lt;summary&gt;What are three ways in which cross-validation and information theory aid in model evaluation?&lt;/summary&gt;
-  &lt;p&gt;&lt;ol&gt;
+  &lt;summary&gt;Classical (Frequentist) statistical tests were originally developed for what purposes?&lt;/summary&gt;
+  &lt;p&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;They provide useful expectations of predictive accuracy, rather than merely fit to sample. So they compare models where it matters.&lt;/p&gt;
+&lt;p&gt;They were originally developed (largely by Ronald Fisher) in the early 20th century for agricultural applications. They typically were for randomized experiments with large effects, in which &lt;strong&gt;measurement issues had been solved&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;They give us an estimate of the tendency of a model to overfit. This will help us to understand how models and data interact, which in turn helps us to design better models.&lt;/p&gt;
+&lt;p&gt;Such statistical tests produce inferences, &lt;strong&gt;not decisions&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;They help us to spot highly influential observations.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 &lt;/p&gt;
 &lt;/details&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-4&#34;&gt;
+  &lt;summary&gt;What is the core problem with null hypothesis testing?&lt;/summary&gt;
+  &lt;p&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Models are not hypotheses&lt;/strong&gt;; they are neither true or false. Models are &amp;ldquo;golems&amp;rdquo; that do as they are told.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ideally should &lt;strong&gt;compare performance across models&lt;/strong&gt; (model comparison).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Popper: &lt;strong&gt;test (attempt to falsify) research hypothesis&lt;/strong&gt;. Use theory, make a falsifiable prediction, and test that; not that nothing happened (aka null hypothesis).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-5&#34;&gt;
+  &lt;summary&gt;What are three ways in which cross-validation and information theory aid in model evaluation?&lt;/summary&gt;
+  &lt;p&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;They provide &lt;strong&gt;useful expectations of predictive accuracy&lt;/strong&gt;, rather than merely fit to sample. So they &lt;strong&gt;compare models&lt;/strong&gt; where it matters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;They give us an &lt;strong&gt;estimate of the tendency of a model&lt;/strong&gt; to overfit. This will help us to understand how models and data interact, which in turn helps us to design better models.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;They help us to spot &lt;strong&gt;highly influential observations&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;We will cover these topics in Lesson 8.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-6&#34;&gt;
   &lt;summary&gt;What are the benefits of using multilevel (aka hierarchical) models?&lt;/summary&gt;
-  &lt;p&gt;They acknowledge that, though each individual group might have its own model, one group can provide valuable information about another. That is, &amp;ldquo;let’s learn from one another while celebrating our individuality.&amp;rdquo;&lt;/p&gt;
-&lt;/details&gt;</description>
+  &lt;p&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;They acknowledge that, though each individual group might have its own model, one group can provide valuable information about another. That is, &lt;strong&gt;&amp;ldquo;let’s learn from one another while celebrating our individuality.&amp;quot;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We will cover these later in the course.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
+    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
+    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
+        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
+        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -62,7 +116,7 @@
       <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/syllabus/02-bayesian-inference/</guid>
       <description>&lt;p&gt;
-  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 2: The Garden of Forking Data&lt;/p&gt;
+  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chapter 2: The Garden of Forking Data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 
   &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 3: Sampling the Imaginary
@@ -75,24 +129,10 @@
 &lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
 &lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/3bfa335d71ac499ebb10e11073efe777&#34; title=&#34;L02 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
-&lt;h1 id=&#34;hahahugoshortcode-s3-hbhb&#34;&gt;&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
   &lt;summary&gt;When is a heatmap useful?&lt;/summary&gt;
-  &lt;p&gt;&lt;h1 id=&#34;lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit&#34;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/h1&gt;
-&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;/p&gt;
-&lt;/details&gt;&lt;/h1&gt;
-&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;h1 id=&#34;hahahugoshortcode-s4-hbhb&#34;&gt;&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-4&#34;&gt;
-  &lt;summary&gt;Write Plotly code to render a bar chart&lt;/summary&gt;
-  &lt;p&gt;&lt;h1 id=&#34;python&#34;&gt;```python&lt;/h1&gt;
-&lt;h1 id=&#34;import-plotlyexpress-as-px&#34;&gt;import plotly.express as px&lt;/h1&gt;
-&lt;h1 id=&#34;data_canada--pxdatagapminderquerycountry--canada&#34;&gt;data_canada = px.data.gapminder().query(&amp;ldquo;country == &amp;lsquo;Canada&amp;rsquo;&amp;quot;)&lt;/h1&gt;
-&lt;h1 id=&#34;fig--pxbardata_canada-xyear-ypop&#34;&gt;fig = px.bar(data_canada, x=&amp;lsquo;year&amp;rsquo;, y=&amp;lsquo;pop&amp;rsquo;)&lt;/h1&gt;
-&lt;h1 id=&#34;figshow&#34;&gt;fig.show()&lt;/h1&gt;
-&lt;h1 id=&#34;heading&#34;&gt;```&lt;/h1&gt;
-&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;
-&lt;/p&gt;
-&lt;/details&gt;&lt;/h1&gt;</description>
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;/details&gt;</description>
     </item>
     
     <item>
@@ -110,25 +150,7 @@
 
 &lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
 &lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/c81fda5d72c54127935b83201d31c2c0&#34; title=&#34;L03 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
-&lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
-&lt;h1 id=&#34;hahahugoshortcode-s2-hbhb&#34;&gt;&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
-  &lt;summary&gt;When is a heatmap useful?&lt;/summary&gt;
-  &lt;p&gt;&lt;h1 id=&#34;lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit&#34;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/h1&gt;
-&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;/p&gt;
-&lt;/details&gt;&lt;/h1&gt;
-&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;h1 id=&#34;hahahugoshortcode-s3-hbhb&#34;&gt;&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
-  &lt;summary&gt;Write Plotly code to render a bar chart&lt;/summary&gt;
-  &lt;p&gt;&lt;h1 id=&#34;python&#34;&gt;```python&lt;/h1&gt;
-&lt;h1 id=&#34;import-plotlyexpress-as-px&#34;&gt;import plotly.express as px&lt;/h1&gt;
-&lt;h1 id=&#34;data_canada--pxdatagapminderquerycountry--canada&#34;&gt;data_canada = px.data.gapminder().query(&amp;ldquo;country == &amp;lsquo;Canada&amp;rsquo;&amp;quot;)&lt;/h1&gt;
-&lt;h1 id=&#34;fig--pxbardata_canada-xyear-ypop&#34;&gt;fig = px.bar(data_canada, x=&amp;lsquo;year&amp;rsquo;, y=&amp;lsquo;pop&amp;rsquo;)&lt;/h1&gt;
-&lt;h1 id=&#34;figshow&#34;&gt;fig.show()&lt;/h1&gt;
-&lt;h1 id=&#34;heading&#34;&gt;```&lt;/h1&gt;
-&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;
-&lt;/p&gt;
-&lt;/details&gt;&lt;/h1&gt;</description>
+&lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;</description>
     </item>
     
     <item>
@@ -146,25 +168,7 @@
 
 &lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
 &lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/a176e2b36674464581c6aecfd770f97f&#34; title=&#34;L04 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
-&lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
-&lt;h1 id=&#34;hahahugoshortcode-s2-hbhb&#34;&gt;&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
-  &lt;summary&gt;When is a heatmap useful?&lt;/summary&gt;
-  &lt;p&gt;&lt;h1 id=&#34;lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit&#34;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/h1&gt;
-&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;/p&gt;
-&lt;/details&gt;&lt;/h1&gt;
-&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;h1 id=&#34;hahahugoshortcode-s3-hbhb&#34;&gt;&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
-  &lt;summary&gt;Write Plotly code to render a bar chart&lt;/summary&gt;
-  &lt;p&gt;&lt;h1 id=&#34;python&#34;&gt;```python&lt;/h1&gt;
-&lt;h1 id=&#34;import-plotlyexpress-as-px&#34;&gt;import plotly.express as px&lt;/h1&gt;
-&lt;h1 id=&#34;data_canada--pxdatagapminderquerycountry--canada&#34;&gt;data_canada = px.data.gapminder().query(&amp;ldquo;country == &amp;lsquo;Canada&amp;rsquo;&amp;quot;)&lt;/h1&gt;
-&lt;h1 id=&#34;fig--pxbardata_canada-xyear-ypop&#34;&gt;fig = px.bar(data_canada, x=&amp;lsquo;year&amp;rsquo;, y=&amp;lsquo;pop&amp;rsquo;)&lt;/h1&gt;
-&lt;h1 id=&#34;figshow&#34;&gt;fig.show()&lt;/h1&gt;
-&lt;h1 id=&#34;heading&#34;&gt;```&lt;/h1&gt;
-&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;
-&lt;/p&gt;
-&lt;/details&gt;&lt;/h1&gt;</description>
+&lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;</description>
     </item>
     
     <item>
@@ -173,33 +177,14 @@
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/syllabus/05-intro-to-stan/</guid>
       <description>&lt;p&gt;Bayesian workflows&lt;/p&gt;
-&lt;p&gt;
-  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
 &lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/ppKpwtGy8KQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;quiz&#34;&gt;Quiz&lt;/h2&gt;
-&lt;h1 id=&#34;hahahugoshortcode-s2-hbhb&#34;&gt;&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
-  &lt;summary&gt;When is a heatmap useful?&lt;/summary&gt;
-  &lt;p&gt;&lt;h1 id=&#34;lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit&#34;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/h1&gt;
-&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;/p&gt;
-&lt;/details&gt;&lt;/h1&gt;
-&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
-&lt;h1 id=&#34;hahahugoshortcode-s3-hbhb&#34;&gt;&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
-  &lt;summary&gt;Write Plotly code to render a bar chart&lt;/summary&gt;
-  &lt;p&gt;&lt;h1 id=&#34;python&#34;&gt;```python&lt;/h1&gt;
-&lt;h1 id=&#34;import-plotlyexpress-as-px&#34;&gt;import plotly.express as px&lt;/h1&gt;
-&lt;h1 id=&#34;data_canada--pxdatagapminderquerycountry--canada&#34;&gt;data_canada = px.data.gapminder().query(&amp;ldquo;country == &amp;lsquo;Canada&amp;rsquo;&amp;quot;)&lt;/h1&gt;
-&lt;h1 id=&#34;fig--pxbardata_canada-xyear-ypop&#34;&gt;fig = px.bar(data_canada, x=&amp;lsquo;year&amp;rsquo;, y=&amp;lsquo;pop&amp;rsquo;)&lt;/h1&gt;
-&lt;h1 id=&#34;figshow&#34;&gt;fig.show()&lt;/h1&gt;
-&lt;h1 id=&#34;heading&#34;&gt;```&lt;/h1&gt;
-&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;
-&lt;/p&gt;
-&lt;/details&gt;&lt;/h1&gt;</description>
+&lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension Questions&lt;/h2&gt;
+</description>
     </item>
     
     <item>
@@ -221,14 +206,6 @@
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
   &lt;summary&gt;When is a heatmap useful?&lt;/summary&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-&lt;/details&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
-  &lt;summary&gt;Write Plotly code to render a bar chart&lt;/summary&gt;
-  &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; plotly.express &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; px
-data_canada &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; px&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;gapminder()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;query(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;country == &amp;#39;Canada&amp;#39;&amp;#34;&lt;/span&gt;)
-fig &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; px&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;bar(data_canada, x&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;year&amp;#39;&lt;/span&gt;, y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pop&amp;#39;&lt;/span&gt;)
-fig&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;/details&gt;</description>
     </item>
     
@@ -280,42 +257,6 @@ fig&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
   &lt;summary&gt;When is a heatmap useful?&lt;/summary&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-&lt;/details&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
-  &lt;summary&gt;Write Plotly code to render a bar chart&lt;/summary&gt;
-  &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; plotly.express &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; px
-data_canada &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; px&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;gapminder()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;query(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;country == &amp;#39;Canada&amp;#39;&amp;#34;&lt;/span&gt;)
-fig &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; px&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;bar(data_canada, x&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;year&amp;#39;&lt;/span&gt;, y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pop&amp;#39;&lt;/span&gt;)
-fig&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;/details&gt;</description>
-    </item>
-    
-    <item>
-      <title>Statistics</title>
-      <link>https://dsba6010-spring2022.netlify.app/syllabus/stats/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://dsba6010-spring2022.netlify.app/syllabus/stats/</guid>
-      <description>&lt;p&gt;Introduction to statistics for data science.&lt;/p&gt;
-&lt;p&gt;
-  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
-&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
-&lt;p&gt;The general form of the &lt;strong&gt;normal&lt;/strong&gt; probability density function is:&lt;/p&gt;
-&lt;p&gt;$$
-f(x) = \frac{1}{\sigma \sqrt{2\pi} } e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
-$$&lt;/p&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    The parameter $\mu$ is the mean or expectation of the distribution.
-$\sigma$ is its standard deviation.
-The variance of the distribution is $\sigma^{2}$.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;quiz&#34;&gt;Quiz&lt;/h2&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
-  &lt;summary&gt;What is the parameter $\mu$?&lt;/summary&gt;
-  &lt;p&gt;The parameter $\mu$ is the mean or expectation of the distribution.&lt;/p&gt;
 &lt;/details&gt;</description>
     </item>
     

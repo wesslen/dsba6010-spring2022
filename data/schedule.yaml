@@ -2,10 +2,10 @@ lessons:
   - title: 'Bayesian methods'
     header: True
 
-  - title: '<span class="content-title">Intro to Bayesian methods</span>'
-    session: "Session 1"
+  - title: '<span class="content-title">Intro to the course / R</span>'
+    #session: "Session 1"
     date: "January 10"
-    content: "01-bayes-intro"
+    content: "00-course-intro"
     example: "rstudio-tidyverse"
     bg: 1
   
@@ -14,18 +14,25 @@ lessons:
     bg: 1 
     
   - title: 'Lesson quiz 1'
-    date: "January 31"
+    date: "Due January 31"
     assignment: "lesson-quiz-1"
     bg: 1    
+    
+  - title: '<span class="content-title">Intro to Bayesian Methods (1)</span>'
+    #session: "Session 1"
+    date: "January 31"
+    content: "01-bayes-intro"
+    bg: 2    
 
-  - title: '<span class="content-title">Bayesian inference</span>'
-    session: "Session 2"
+  - title: '<span class="content-title">Bayesian inference (2)</span>'
+    #session: "Session 2"
     date: "January 31"
     content: "02-bayesian-inference"
     bg: 2
 
   - title: 'Problem set 1'
-    date: "January 31"
+    #session: "Due February 6"
+    date: "Due February 6"
     assignment: "01-problem-set"
     bg: 1
     bottomborder: True    

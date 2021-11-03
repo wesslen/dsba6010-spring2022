@@ -783,10 +783,6 @@
 
   <li class=""><a href="/syllabus/11-intro-to-brms/">Intro to brms</a></li>
 
-
-
-  <li class=""><a href="/syllabus/stats/">Statistics</a></li>
-
       
     
 
@@ -813,6 +809,7 @@
     <li><a href="#lecture">Lecture</a></li>
     <li><a href="#slides">Slides</a></li>
     <li><a href="#comprehension-questions">Comprehension questions</a></li>
+    <li><a href="#feedback">Feedback</a></li>
   </ul>
 </nav>
 
@@ -864,7 +861,7 @@
 
           <div class="article-style">
             <p>
-  <i class="fas fa-book  pr-1 fa-fw"></i> Chapter 1: The Golem of Prague</p>
+  <i class="fas fa-book  pr-1 fa-fw"></i> <a href="http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf" target="_blank" rel="noopener">Chapter 1: The Golem of Prague</a></p>
 <h2 id="lecture">Lecture</h2>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -876,30 +873,84 @@
 <h2 id="comprehension-questions">Comprehension questions</h2>
 <details class="spoiler "  id="spoiler-2">
   <summary>What is Bayesian data analysis? How does it differ in its definition of uncertainty from Frequentist interpretations?</summary>
-  <p><p>An approach to count all the ways data can happen according to assumptions.</p>
-<p>Bayesian data analysis uses probabilities to describe uncertainty. Importantly, in Bayesian data analysis probabilities describe degrees of belief. In contrast, frequentist interpretat of probabilities as the frequencies of events in very large samples.</p>
-<p>This leads to frequentist uncertainty being premised on imaginary resampling of data—if we were to repeat the measurement many many times, we would end up collecting a list of values that will have some pattern to it. It means also that parameters and models cannot have probability distributions, only measurements can.</p>
+  <p><ul>
+<li>
+<p>An approach to <strong>count all the ways data can happen</strong> according to assumptions.</p>
+</li>
+<li>
+<p>Bayesian data analysis uses <strong>probabilities</strong> to describe uncertainty. Importantly, in Bayesian data analysis probabilities describe <strong>degrees of belief</strong>. In contrast, a frequentist interpretation of probabilities would be as the <strong>frequencies of events in very large samples</strong>.</p>
+</li>
+<li>
+<p>This leads to frequentist uncertainty being premised on <strong>imaginary resampling of data</strong>—if we were to repeat the measurement many many times, we would end up collecting a list of values that will have some pattern to it. It means also that parameters and models <strong>cannot</strong> have probability distributions, only measurements can.</p>
+</li>
+</ul>
 </p>
 </details>
 <details class="spoiler "  id="spoiler-3">
-  <summary>What are three ways in which cross-validation and information theory aid in model evaluation?</summary>
-  <p><ol>
+  <summary>Classical (Frequentist) statistical tests were originally developed for what purposes?</summary>
+  <p><ul>
 <li>
-<p>They provide useful expectations of predictive accuracy, rather than merely fit to sample. So they compare models where it matters.</p>
+<p>They were originally developed (largely by Ronald Fisher) in the early 20th century for agricultural applications. They typically were for randomized experiments with large effects, in which <strong>measurement issues had been solved</strong>.</p>
 </li>
 <li>
-<p>They give us an estimate of the tendency of a model to overfit. This will help us to understand how models and data interact, which in turn helps us to design better models.</p>
+<p>Such statistical tests produce inferences, <strong>not decisions</strong>.</p>
 </li>
-<li>
-<p>They help us to spot highly influential observations.</p>
-</li>
-</ol>
+</ul>
 </p>
 </details>
 <details class="spoiler "  id="spoiler-4">
-  <summary>What are the benefits of using multilevel (aka hierarchical) models?</summary>
-  <p>They acknowledge that, though each individual group might have its own model, one group can provide valuable information about another. That is, &ldquo;let’s learn from one another while celebrating our individuality.&rdquo;</p>
+  <summary>What is the core problem with null hypothesis testing?</summary>
+  <p><ul>
+<li>
+<p><strong>Models are not hypotheses</strong>; they are neither true or false. Models are &ldquo;golems&rdquo; that do as they are told.</p>
+</li>
+<li>
+<p>Ideally should <strong>compare performance across models</strong> (model comparison).</p>
+</li>
+<li>
+<p>Popper: <strong>test (attempt to falsify) research hypothesis</strong>. Use theory, make a falsifiable prediction, and test that; not that nothing happened (aka null hypothesis).</p>
+</li>
+</ul>
+</p>
 </details>
+<details class="spoiler "  id="spoiler-5">
+  <summary>What are three ways in which cross-validation and information theory aid in model evaluation?</summary>
+  <p><ol>
+<li>
+<p>They provide <strong>useful expectations of predictive accuracy</strong>, rather than merely fit to sample. So they <strong>compare models</strong> where it matters.</p>
+</li>
+<li>
+<p>They give us an <strong>estimate of the tendency of a model</strong> to overfit. This will help us to understand how models and data interact, which in turn helps us to design better models.</p>
+</li>
+<li>
+<p>They help us to spot <strong>highly influential observations</strong>.</p>
+</li>
+</ol>
+<ul>
+<li>We will cover these topics in Lesson 8.</li>
+</ul>
+</p>
+</details>
+<details class="spoiler "  id="spoiler-6">
+  <summary>What are the benefits of using multilevel (aka hierarchical) models?</summary>
+  <p><ul>
+<li>
+<p>They acknowledge that, though each individual group might have its own model, one group can provide valuable information about another. That is, <strong>&ldquo;let’s learn from one another while celebrating our individuality.&quot;</strong></p>
+</li>
+<li>
+<p>We will cover these later in the course.</p>
+</li>
+</ul>
+</p>
+</details>
+<h2 id="feedback">Feedback</h2>
+    <p>Go to <a href="https://forms.gle/zMipNzav3BCL3Rwy9">this form</a> and answer these three questions:</p>
+    <ol style="list-style-type: decimal">
+        <li>What was the muddiest thing from class this lesson? What are you still wondering about?</li>
+        <li>What was the clearest thing from class this lesson?</li>
+        <li>What was the most exciting thing you learned?</li>
+    </ol>
+    <p>I’ll compile the questions and review for class.</p>
           </div>
 
           

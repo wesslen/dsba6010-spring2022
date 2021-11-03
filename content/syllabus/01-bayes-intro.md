@@ -29,6 +29,26 @@ weight: 1
 - This leads to frequentist uncertainty being premised on **imaginary resampling of data**—if we were to repeat the measurement many many times, we would end up collecting a list of values that will have some pattern to it. It means also that parameters and models **cannot** have probability distributions, only measurements can. 
 {{% /spoiler %}}
 
+{{% spoiler text="Classical (Frequentist) statistical tests were originally developed for what purposes?" %}}
+
+- They were originally developed (largely by Ronald Fisher) in the early 20th century for agricultural applications. They typically were for randomized experiments with large effects, in which **measurement issues had been solved**.
+
+- Such statistical tests produce inferences, **not decisions**.
+
+{{% /spoiler %}}
+
+
+{{% spoiler text="What is the core problem with null hypothesis testing?" %}}
+
+- **Models are not hypotheses**; they are neither true or false. Models are "golems" that do as they are told.
+
+- Ideally should **compare performance across models** (model comparison).
+
+- Popper: **test (attempt to falsify) research hypothesis**. Use theory, make a falsifiable prediction, and test that; not that nothing happened (aka null hypothesis).
+
+{{% /spoiler %}}
+
+
 {{% spoiler text="What are three ways in which cross-validation and information theory aid in model evaluation?" %}}
 
 1. They provide **useful expectations of predictive accuracy**, rather than merely fit to sample. So they **compare models** where it matters. 
@@ -37,18 +57,18 @@ weight: 1
 
 3. They help us to spot **highly influential observations**.
 
+- We will cover these topics in Lesson 8.
+
 {{% /spoiler %}}
 
 {{% spoiler text="What are the benefits of using multilevel (aka hierarchical) models?" %}}
 
 - They acknowledge that, though each individual group might have its own model, one group can provide valuable information about another. That is, **"let’s learn from one another while celebrating our individuality."**
 
-{{% /spoiler %}}
-
-{{% spoiler text="Classical (Frequentist) statistical tests were originally developed for what purposes?" %}}
-
-- They were originally developed (largely by Ronald Fisher) in the early 20th century for agricultural applications. They typically were for randomized experiments with large effects, in which **measurement issues had been solved**.
-
-- Such statistical tests produce inferences, **not decisions**.
+- We will cover these later in the course.
 
 {{% /spoiler %}}
+
+## Feedback
+
+{{< feedback >}}
