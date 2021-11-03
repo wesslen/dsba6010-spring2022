@@ -26,18 +26,25 @@ The course also includes directed acyclic graph (DAG) approach to causal inferen
 
 Application of the models will focus on research in cognitive science, human-computer interaction, computational social science, and information visualization. 
 
-## Courses in this program
+## Topics
 
 {{< list_children >}}
 
 ## FAQs
 
-{{< spoiler text="Are there prerequisites?" >}}
-Yes. Experience with R, especially tidyverse, are necessary. Students without should immediately consider DataCamp courses and hands-on practice problems. We'll also assume core understanding of statistical models like linear regression. 
-{{< /spoiler >}}
+{{% spoiler text="What are the course prerequisites?" %}}
 
-{{< spoiler text="What programming languages will be used?" >}}
-Lectures and coursework will require R. Students must complete assignments in R. However, final projects can be done in Python (e.g., pyMC3) or Julia (turing.jl).
-{{< /spoiler >}}
+**Programming**: Experience with R, ideally tidyverse, are necessary. Students without should immediately consider DataCamp courses and hands-on practice problems. 
+
+**Probability**: Fundamental probability theory is highly recommended. This includes exposure to common distributions like Normal (Gaussian), Binomial, and Beta distributions. 
+
+We'll also assume core understanding of statistical models like linear regression.
+{{% /spoiler %}}
+
+{{% spoiler text="What programming languages will be used?" %}}
+- Lectures and coursework will require R. Students must complete assignments in R and mid term will cover basics of R. 
+
+- Final projects can be done in Python (e.g., pyMC3) or Julia (turing.jl); however, it is the student's responsibility to be fluent in setting up related environments/packages (e.g., Jupyter, virtual environments, etc.) if they want to use Python or Julia.
+{{% /spoiler %}}
 
 {{< cta cta_text="Begin the course" cta_link="bayes-intro" >}}

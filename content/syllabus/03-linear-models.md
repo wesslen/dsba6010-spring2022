@@ -22,15 +22,15 @@ weight: 3
 
 ## Comprehension questions
 
-# {{< spoiler text="When is a heatmap useful?" >}}
-# Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-# {{< /spoiler >}}
-# 
-# {{< spoiler text="Write Plotly code to render a bar chart" >}}
-# ```python
-# import plotly.express as px
-# data_canada = px.data.gapminder().query("country == 'Canada'")
-# fig = px.bar(data_canada, x='year', y='pop')
-# fig.show()
-# ```
-# {{< /spoiler >}}
+{{% spoiler text="When is a heatmap useful?" >}}
+
+{{% /spoiler %}}
+
+{{% spoiler text="Write R code to " %}}
+```r
+import plotly.express as px
+data_canada = px.data.gapminder().query("country == 'Canada'")
+fig = px.bar(data_canada, x='year', y='pop')
+fig.show()
+```
+{{% /spoiler %}}

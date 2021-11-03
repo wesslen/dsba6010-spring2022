@@ -8,7 +8,7 @@ type: book
 weight: 2
 ---
 
-{{< icon name="book" pack="fas" >}} Chapter 2: The Garden of Forking Data
+{{< icon name="book" pack="fas" >}} [Chapter 2: The Garden of Forking Data](http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf)
 <p>
 {{< icon name="book" pack="fas" >}} Chapter 3: Sampling the Imaginary
 
