@@ -10,35 +10,35 @@ lessons:
     bg: 1
   
   - title: 'No class (MLK Holiday)'
-    date: "January 24"
+    date: "January 17"
     bg: 1 
     
   - title: 'Lesson quiz 1'
-    date: "Due January 31"
+    date: "Due January 24"
     assignment: "lesson-quiz-1"
     bg: 1    
     
   - title: '<span class="content-title">Intro to Bayesian Methods (1)</span>'
     #session: "Session 1"
-    date: "January 31"
+    date: "January 24"
     content: "01-bayes-intro"
     bg: 2    
 
   - title: '<span class="content-title">Bayesian inference (2)</span>'
     #session: "Session 2"
-    date: "January 31"
+    date: "January 24"
     content: "02-bayesian-inference"
     bg: 2
 
   - title: 'Problem set 1'
-    #session: "Due February 6"
-    date: "Due February 6"
+    #session: "Due January 31"
+    date: "Due January 31"
     assignment: "01-problem-set"
     bg: 1
     bottomborder: True    
 
   - title: 'Weekly check-in 2'
-    date: "January 25"
+    date: "January 31"
     assignment: "weekly-check-in"
     bg: 2
 

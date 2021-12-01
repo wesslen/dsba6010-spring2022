@@ -7,7 +7,11 @@
 
 theme: custom
 day_night: false
-font: ''
+# Override the theme's font set (optional).
+#   Latest font sets (may require updating): https://sourcethemes.com/academic/themes/
+#   Browse built-in font sets in `themes/academic/data/fonts/`
+#   Browse user installed font sets in `data/fonts/`
+font: 'Native'
 font_size: L
 
 # SEO
@@ -20,8 +24,6 @@ twitter: ''
 
 # Contact (edit or remove options as required)
 
-email: test@example.org
-appointment_url: 'https://calendly.com'
 contact_links:
   - icon: comments
     icon_pack: fas
@@ -162,4 +164,4 @@ school:
 sharing_image: "social-image-sp21.png"
 
 # Twitter username (without @). Used when a visitor shares your site on Twitter.
-twitter: "andrewheiss"
+twitter: "ryanwesslen"

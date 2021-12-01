@@ -1,0 +1,1153 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="
+   Chapter 1: The Golem of Prague" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://dsba6010-spring2022.netlify.app/content/01-bayes-intro/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#B0BBBF" />
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.7128504dee1e800b4d6f834ad27beed3.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://dsba6010-spring2022.netlify.app/content/01-bayes-intro/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@ryanwesslen" />
+    <meta property="twitter:creator" content="@ryanwesslen" />
+  
+  <meta property="og:site_name" content="DSBA 6010" />
+  <meta property="og:url" content="https://dsba6010-spring2022.netlify.app/content/01-bayes-intro/" />
+  <meta property="og:title" content="Intro to Bayesian Inference | DSBA 6010" />
+  <meta property="og:description" content="
+   Chapter 1: The Golem of Prague" /><meta property="og:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2021-12-01T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-12-01T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Intro to Bayesian Inference | DSBA 6010</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="c531cd8242bc99a4b58503d51617d284" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.c2ae95842e5b33a787c7b8c567e989a4.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">DSBA 6010</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">DSBA 6010</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/syllabus/"><span>Syllabus</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/content/"><span>Content</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/assignment/"><span>Assignments</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/example/"><span>Examples</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/resource/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://dsba6010-spring2022.slack.com" target="_blank" rel="noopener"><span><i class="fab fa-slack"></i></span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>RStudio.cloud</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+    
+  
+
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/content/">Overview</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/content/">Readings, lectures, and videos</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/content/00-course-intro/">Course content</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/content/00-course-intro/">Course Intro</a>
+      </li>
+
+      
+      <li class="active">
+        <a href="/content/01-bayes-intro/">Intro to Bayesian Inference</a>
+      </li>
+
+      
+      <li >
+        <a href="/content/02-bayesian-inference/">Bayesian Inference</a>
+      </li>
+
+      
+      <li >
+        <a href="/content/03-linear-models/">Linear Models</a>
+      </li>
+
+      
+      <li >
+        <a href="/content/04-linear-models-2/">Linear Models (2)</a>
+      </li>
+
+      
+      <li >
+        <a href="/content/05-bayesian-presentations/">Bayesian Applications (Class presentations)</a>
+      </li>
+
+      
+      <li >
+        <a href="/content/06-spurious-correlations/">Spurious correlations</a>
+      </li>
+
+      
+      <li >
+        <a href="/content/07-confounders/">Confounders</a>
+      </li>
+
+      
+      <li >
+        <a href="/content/08-model-comparison/">Model Comparison</a>
+      </li>
+
+      
+      <li >
+        <a href="/content/09-interactions/">Interactions</a>
+      </li>
+
+      
+      <li >
+        <a href="/content/10-mcmc/">Markov Chain Monte Carlo</a>
+      </li>
+
+      
+      <li >
+        <a href="/content/11-entropy-glm/">Maximium entropy &amp; GLMs</a>
+      </li>
+
+      
+      <li >
+        <a href="/content/22-missing-measurement/">Missing Data and Measurement Error</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/15-1-example/">Examples</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/15-1-example/">15-1-example</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Intro to Bayesian Inference</h1>
+
+          <div class="article-style">
+            <p>
+  <i class="fas fa-book  pr-1 fa-fw"></i> <a href="http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf" target="_blank" rel="noopener">Chapter 1: The Golem of Prague</a></p>
+<h2 id="lecture">Lecture</h2>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/4WVelCswXo4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="slides">Slides</h2>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/c63892105b90479bb8827c9afcf5ad76" title="L01 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;" data-ratio="1.3333333333333333"></iframe>
+<h2 id="comprehension-questions">Comprehension questions</h2>
+<details class="spoiler "  id="spoiler-2">
+  <summary>What is Bayesian data analysis? How does it differ in its definition of uncertainty from Frequentist interpretations?</summary>
+  <p><ul>
+<li>
+<p>An approach to <strong>count all the ways data can happen</strong> according to assumptions.</p>
+</li>
+<li>
+<p>Bayesian data analysis uses <strong>probabilities</strong> to describe uncertainty. Importantly, in Bayesian data analysis probabilities describe <strong>degrees of belief</strong>. In contrast, a frequentist interpretation of probabilities would be as the <strong>frequencies of events in very large samples</strong>.</p>
+</li>
+<li>
+<p>This leads to frequentist uncertainty being premised on <strong>imaginary resampling of data</strong>—if we were to repeat the measurement many many times, we would end up collecting a list of values that will have some pattern to it. It means also that parameters and models <strong>cannot</strong> have probability distributions, only measurements can.</p>
+</li>
+</ul>
+</p>
+</details>
+<details class="spoiler "  id="spoiler-3">
+  <summary>Classical (Frequentist) statistical tests were originally developed for what purposes?</summary>
+  <p><ul>
+<li>
+<p>They were originally developed (largely by Ronald Fisher) in the early 20th century for agricultural applications. They typically were for randomized experiments with large effects, in which <strong>measurement issues had been solved</strong>.</p>
+</li>
+<li>
+<p>Such statistical tests produce inferences, <strong>not decisions</strong>.</p>
+</li>
+</ul>
+</p>
+</details>
+<details class="spoiler "  id="spoiler-4">
+  <summary>What is the core problem with null hypothesis testing?</summary>
+  <p><ul>
+<li>
+<p><strong>Models are not hypotheses</strong>; they are neither true or false. Models are &ldquo;golems&rdquo; that do as they are told.</p>
+</li>
+<li>
+<p>Ideally should <strong>compare performance across models</strong> (model comparison).</p>
+</li>
+<li>
+<p>Popper: <strong>test (attempt to falsify) research hypothesis</strong>. Use theory, make a falsifiable prediction, and test that; not that nothing happened (aka null hypothesis).</p>
+</li>
+</ul>
+</p>
+</details>
+<details class="spoiler "  id="spoiler-5">
+  <summary>What are three ways in which cross-validation and information theory aid in model evaluation?</summary>
+  <p><ol>
+<li>
+<p>They provide <strong>useful expectations of predictive accuracy</strong>, rather than merely fit to sample. So they <strong>compare models</strong> where it matters.</p>
+</li>
+<li>
+<p>They give us an <strong>estimate of the tendency of a model</strong> to overfit. This will help us to understand how models and data interact, which in turn helps us to design better models.</p>
+</li>
+<li>
+<p>They help us to spot <strong>highly influential observations</strong>.</p>
+</li>
+</ol>
+<ul>
+<li>We will cover these topics in Lesson 8.</li>
+</ul>
+</p>
+</details>
+<details class="spoiler "  id="spoiler-6">
+  <summary>What are the benefits of using multilevel (aka hierarchical) models?</summary>
+  <p><ul>
+<li>
+<p>They acknowledge that, though each individual group might have its own model, one group can provide valuable information about another. That is, <strong>&ldquo;let’s learn from one another while celebrating our individuality.&quot;</strong></p>
+</li>
+<li>
+<p>We will cover these later in the course.</p>
+</li>
+</ul>
+</p>
+</details>
+<h2 id="feedback">Feedback</h2>
+    <p>Go to <a href="https://forms.gle/zMipNzav3BCL3Rwy9">this form</a> and answer these three questions:</p>
+    <ol style="list-style-type: decimal">
+        <li>What was the muddiest thing from class this lesson? What are you still wondering about?</li>
+        <li>What was the clearest thing from class this lesson?</li>
+        <li>What was the most exciting thing you learned?</li>
+    </ol>
+    <p>I’ll compile the questions and review for class.</p>
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/content/00-course-intro/" rel="next">Course Intro</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/content/02-bayesian-inference/" rel="prev">Bayesian Inference</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Dec 1, 2021</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.4bba0826db6409c865d2e7b99039d6d0.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

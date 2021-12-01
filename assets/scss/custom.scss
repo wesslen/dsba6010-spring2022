@@ -1,3 +1,31 @@
+
+$colors: (
+    #B0BBBF, 
+    #A53F2B
+);
+
+
+body {
+    font-size: 1.1rem;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 2.75rem;
+}
+
+
+
+
 // Remove shadow under navbar
 .navbar {
   box-shadow: none;

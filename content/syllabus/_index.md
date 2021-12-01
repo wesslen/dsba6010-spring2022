@@ -30,6 +30,8 @@ Application of the models will focus on research in cognitive science, human-com
 
 {{< list_children >}}
 
+{{< tweet 1329573633371631617 >}}
+
 ## FAQs
 
 {{% spoiler text="What are the course prerequisites?" %}}
@@ -46,5 +48,3 @@ We'll also assume core understanding of statistical models like linear regressio
 
 - Final projects can be done in Python (e.g., pyMC3) or Julia (turing.jl); however, it is the student's responsibility to be fluent in setting up related environments/packages (e.g., Jupyter, virtual environments, etc.) if they want to use Python or Julia.
 {{% /spoiler %}}
-
-{{< cta cta_text="Begin the course" cta_link="bayes-intro" >}}

@@ -1,0 +1,1108 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="15.1 Examples # simulate a pancake and return randomly ordered sides sim_pancake &lt;- function() { pancake &lt;- sample(1:3,1) sides &lt;- matrix(c(1,1,1,0,0,0),2,3)[,pancake] sample(sides) } # sim 10,000 pancakes pancakes &lt;- replicate( 1e4 , sim_pancake() ) up &lt;- pancakes[1,] down &lt;- pancakes[2,] # compute proportion 1/1 (BB) out of all 1/1 and 1/0 num_11_10 &lt;- sum( up==1 ) num_11 &lt;- sum( up==1 &amp; down==1 ) print(num_11/num_11_10) ## [1] 0." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://dsba6010-spring2022.netlify.app/example/15-1-example/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#B0BBBF" />
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.7128504dee1e800b4d6f834ad27beed3.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://dsba6010-spring2022.netlify.app/example/15-1-example/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@ryanwesslen" />
+    <meta property="twitter:creator" content="@ryanwesslen" />
+  
+  <meta property="og:site_name" content="DSBA 6010" />
+  <meta property="og:url" content="https://dsba6010-spring2022.netlify.app/example/15-1-example/" />
+  <meta property="og:title" content="15-1-example | DSBA 6010" />
+  <meta property="og:description" content="15.1 Examples # simulate a pancake and return randomly ordered sides sim_pancake &lt;- function() { pancake &lt;- sample(1:3,1) sides &lt;- matrix(c(1,1,1,0,0,0),2,3)[,pancake] sample(sides) } # sim 10,000 pancakes pancakes &lt;- replicate( 1e4 , sim_pancake() ) up &lt;- pancakes[1,] down &lt;- pancakes[2,] # compute proportion 1/1 (BB) out of all 1/1 and 1/0 num_11_10 &lt;- sum( up==1 ) num_11 &lt;- sum( up==1 &amp; down==1 ) print(num_11/num_11_10) ## [1] 0." /><meta property="og:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2021-12-01T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-12-01T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>15-1-example | DSBA 6010</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="1cf84f25a13d240154f8fcba580cd535" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.c2ae95842e5b33a787c7b8c567e989a4.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">DSBA 6010</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">DSBA 6010</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/syllabus/"><span>Syllabus</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/content/"><span>Content</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/assignment/"><span>Assignments</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/example/"><span>Examples</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/resource/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://dsba6010-spring2022.slack.com" target="_blank" rel="noopener"><span><i class="fab fa-slack"></i></span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>RStudio.cloud</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>15-1-example</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Dec 1, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="examples" class="section level2">
+<h2>15.1 Examples</h2>
+<pre class="r"><code># simulate a pancake and return randomly ordered sides
+sim_pancake &lt;- function() {
+    pancake &lt;- sample(1:3,1)
+    sides &lt;- matrix(c(1,1,1,0,0,0),2,3)[,pancake]
+    sample(sides)
+}
+
+# sim 10,000 pancakes
+pancakes &lt;- replicate( 1e4 , sim_pancake() )
+up &lt;- pancakes[1,]
+down &lt;- pancakes[2,]
+
+# compute proportion 1/1 (BB) out of all 1/1 and 1/0
+num_11_10 &lt;- sum( up==1 )
+num_11 &lt;- sum( up==1 &amp; down==1 )
+print(num_11/num_11_10)</code></pre>
+<pre><code>## [1] 0.6539235</code></pre>
+</div>
+<div id="measurement-error" class="section level2">
+<h2>15.2 Measurement Error</h2>
+<pre class="r"><code>data(WaffleDivorce, package = &quot;rethinking&quot;)
+d &lt;- WaffleDivorce
+rm(WaffleDivorce)</code></pre>
+<pre class="r"><code># points
+plot( d$Divorce ~ d$MedianAgeMarriage , ylim=c(4,15) ,
+    xlab=&quot;Median age marriage&quot; , ylab=&quot;Divorce rate&quot; )
+
+# standard errors
+for ( i in 1:nrow(d) ) {
+    ci &lt;- d$Divorce[i] + c(-1,1)*d$Divorce.SE[i]
+    x &lt;- d$MedianAgeMarriage[i]
+    lines( c(x,x) , ci )
+}</code></pre>
+<p><img src="/example/15-1-example_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<pre class="r"><code>dlist &lt;- list(
+    D_obs = standardize( d$Divorce ),
+    D_sd = d$Divorce.SE / sd( d$Divorce ),
+    M = standardize( d$Marriage ),
+    A = standardize( d$MedianAgeMarriage ),
+    N = nrow(d)
+)
+
+m15.1 &lt;- ulam(
+    alist(
+        D_obs ~ dnorm( D_true , D_sd ),
+        vector[N]:D_true ~ dnorm( mu , sigma ),
+        mu &lt;- a + bA*A + bM*M,
+        a ~ dnorm(0,0.2),
+        bA ~ dnorm(0,0.5),
+        bM ~ dnorm(0,0.5),
+        sigma ~ dexp(1)
+    ) , data=dlist , chains=4 , cores=4, cmdstan=TRUE )
+
+## R code 15.4
+precis( m15.1 , depth=2 )
+
+plot(m15.1)</code></pre>
+<pre class="r"><code>#plot(m15.1)</code></pre>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://dsba6010-spring2022.netlify.app/example/15-1-example/&amp;text=15-1-example" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://dsba6010-spring2022.netlify.app/example/15-1-example/&amp;t=15-1-example" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=15-1-example&amp;body=https://dsba6010-spring2022.netlify.app/example/15-1-example/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://dsba6010-spring2022.netlify.app/example/15-1-example/&amp;title=15-1-example" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=15-1-example%20https://dsba6010-spring2022.netlify.app/example/15-1-example/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://dsba6010-spring2022.netlify.app/example/15-1-example/&amp;title=15-1-example" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.4bba0826db6409c865d2e7b99039d6d0.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
