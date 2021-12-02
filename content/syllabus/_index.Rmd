@@ -3,18 +3,21 @@ date: "2022-01-10"
 linkTitle: Syllabus
 summary: Bayesian statistics and causal inference
 title: "\U0001F4CA Syllabus"
-type: book
 ---
 
-{{< figure src="featured.png" >}}
+<!--{{< figure src="featured.png" >}}-->
+<p float="left">
+<img src="featured.png" alt="drawing" width="300"/>
 
-{{< toc hide_on="xl" >}}
+</p>
+<!-- {{< tweet 1329573633371631617 >}}-->
 
 ## What you will learn
 
-- Fundamental {{<hl>}}R programming skills{{</hl>}}
-- {{<hl>}}Statistical concepts{{</hl>}} and how to apply them in practice
-- Gain experience with {{<hl>}}`stan`{{</hl>}}, including data visualization with {{<hl>}}`tidybayes`{{</hl>}} and data wrangling with {{<hl>}}`tidyverse`{{</hl>}}
+- Bayesian inference through **probabilistic programming** (R/Stan, Python/PyMC3, Julia/Turing.jl)
+- **Computational approaches** for statistical modeling (e.g., quadratic approximation, sampling, MCMC, Hamiltonian Monte Carlo)
+- Techniques from machine learning to **reduce overfitting** in statistical models (e.g., cross-validation, regularization, shrinkage, pooling)
+- **Causal inference** to develop robust statistical models and identify causal relationships
 
 ## Course overview
 
@@ -26,25 +29,25 @@ The course also includes directed acyclic graph (DAG) approach to causal inferen
 
 Application of the models will focus on research in cognitive science, human-computer interaction, computational social science, and information visualization. 
 
-## Topics
-
-{{< list_children >}}
-
-{{< tweet 1329573633371631617 >}}
-
 ## FAQs
 
-{{% spoiler text="What are the course prerequisites?" %}}
+```{r echo=FALSE}
+blogdown::shortcode_open('spoiler', text = 'What are the course prerequisites?')
+```
 
-**Programming**: Experience with R, ideally tidyverse, are necessary. Students without should immediately consider DataCamp courses and hands-on practice problems. 
+**Programming**: Experience with R (e.g., installing packages, loading data, RStudio). Students without should immediately consider DataCamp courses and hands-on practice problems. 
 
 **Probability**: Fundamental probability theory is highly recommended. This includes exposure to common distributions like Normal (Gaussian), Binomial, and Beta distributions. 
 
 We'll also assume core understanding of statistical models like linear regression.
-{{% /spoiler %}}
 
-{{% spoiler text="What programming languages will be used?" %}}
-- Lectures and coursework will require R. Students must complete assignments in R and mid term will cover basics of R. 
+
+```{r echo=FALSE}
+blogdown::shortcode_close('spoiler')
+blogdown::shortcode('spoiler', text = 'What programming languages will be used?')
+```
+
+- Lectures and coursework will use R. Students must complete assignments in R and the mid-term may cover some R code examples.
 
 - Final projects can be done in Python (e.g., pyMC3) or Julia (turing.jl); however, it is the student's responsibility to be fluent in setting up related environments/packages (e.g., Jupyter, virtual environments, etc.) if they want to use Python or Julia.
-{{% /spoiler %}}
+

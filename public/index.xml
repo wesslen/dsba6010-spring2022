@@ -23,6 +23,90 @@
     </item>
     
     <item>
+      <title>Installing R, RStudio, tidyverse, and tinytex</title>
+      <link>https://dsba6010-spring2022.netlify.app/resource/install/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://dsba6010-spring2022.netlify.app/resource/install/</guid>
+      <description>
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;You will do all of your work in this class with the open source (and free!) programming language &lt;a href=&#34;https://cran.r-project.org/&#34;&gt;R&lt;/a&gt;. You will use &lt;a href=&#34;https://www.rstudio.com/&#34;&gt;RStudio&lt;/a&gt; as the main program to access R. Think of R as an engine and RStudio as a car dashboard—R handles all the calculations and the actual statistics, while RStudio provides a nice interface for running R code.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div id=&#34;rstudio.cloud&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;RStudio.cloud&lt;/h2&gt;
+&lt;p&gt;R is free, but it can sometimes be a pain to install and configure. To make life easier, you can (and should!) use the free &lt;a href=&#34;http://rstudio.cloud/&#34;&gt;RStudio.cloud&lt;/a&gt; service &lt;em&gt;initially&lt;/em&gt;, which lets you run a full instance of RStudio in your web browser. This means you won’t have to install anything on your computer to get started with R! We will have a shared class workspace in RStudio.cloud that will let you quickly copy templates for labs and problem sets.&lt;/p&gt;
+&lt;p&gt;Go to &lt;a href=&#34;https://rstudio.cloud/&#34; class=&#34;uri&#34;&gt;https://rstudio.cloud/&lt;/a&gt; and create an account. You’ll receive a link to join the shared class workspace separately. If you don’t get this link, let me know and I will invite you.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;rstudio-on-your-computer&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;RStudio on your computer&lt;/h2&gt;
+&lt;p&gt;RStudio.cloud is convenient, but it can be slow and it is not designed to be able to handle larger datasets, more complicated analysis, or fancier graphics. Over the course of the semester, you should wean yourself off of RStudio.cloud and install all these things locally. This is also important if you want to customize fonts, since RStudio.cloud has extremely limited support for fonts other than Helvetica.&lt;/p&gt;
+&lt;p&gt;Here’s how you install all these things&lt;/p&gt;
+&lt;div id=&#34;install-r&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Install R&lt;/h3&gt;
+&lt;p&gt;First you need to install R itself (the engine).&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Go to the CRAN (Collective R Archive Network)&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; website: &lt;a href=&#34;https://cran.r-project.org/&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click on “Download R for &lt;code&gt;XXX&lt;/code&gt;”, where &lt;code&gt;XXX&lt;/code&gt; is either Mac or Windows:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-links.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;If you use macOS, scroll down to the first &lt;code&gt;.pkg&lt;/code&gt; file in the list of files (in this picture, it’s &lt;code&gt;R-4.0.0.pkg&lt;/code&gt;; as of right now, the current version is also 4.0.0) and download it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-mac.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If you use Windows, click “base” (or click on the bolded “install R for the first time” link) and download it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-windows.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Double click on the downloaded file (check your &lt;code&gt;Downloads&lt;/code&gt; folder). Click yes through all the prompts to install like any other program.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If you use macOS, &lt;a href=&#34;https://www.xquartz.org/&#34;&gt;download and install XQuartz&lt;/a&gt;. You do not need to do this on Windows.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;install-rstudio&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Install RStudio&lt;/h3&gt;
+&lt;p&gt;Next, you need to install RStudio, the nicer graphical user interface (GUI) for R (the dashboard). Once R and RStudio are both installed, you can ignore R and only use RStudio. RStudio will use R automatically and you won’t ever have to interact with it directly.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Go to the free download location on RStudio’s website: &lt;a href=&#34;https://www.rstudio.com/products/rstudio/download/#download&#34; class=&#34;uri&#34;&gt;https://www.rstudio.com/products/rstudio/download/#download&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The website should automatically detect your operating system (macOS or Windows) and show a big download button for it:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-rstudio1.png&#34; width=&#34;50%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;If not, scroll down a little to the large table and choose the version of RStudio that matches your operating system.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-rstudio2.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Double click on the downloaded file (again, check your &lt;code&gt;Downloads&lt;/code&gt; folder). Click yes through all the prompts to install like any other program.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Double click on RStudio to run it (check your applications folder or start menu).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;install-tidyverse&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Install &lt;code&gt;tidyverse&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;R packages are easy to install with RStudio. Select the packages panel, click on “Install,” type the name of the package you want to install, and press enter.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-package-panel.png&#34; width=&#34;40%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This can sometimes be tedious when you’re installing lots of packages, though. &lt;a href=&#34;https://www.tidyverse.org/&#34;&gt;The tidyverse&lt;/a&gt;, for instance, consists of dozens of packages (including &lt;strong&gt;ggplot2&lt;/strong&gt;) that all work together. Rather than install each individually, you can install a single magical package and get them all at the same time.&lt;/p&gt;
+&lt;p&gt;Go to the packages panel in RStudio, click on “Install,” type “tidyverse”, and press enter. You’ll see a bunch of output in the RStudio console as all the tidyverse packages are installed.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-tidyverse.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Notice also that RStudio will generate a line of code for you and run it: &lt;code&gt;install.packages(&#34;tidyverse&#34;)&lt;/code&gt;. You can also just paste and run this instead of using the packages panel.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;install-tinytex&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Install &lt;code&gt;tinytex&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;When you knit to PDF, R uses a special scientific typesetting program named LaTeX (pronounced “lay-tek” or “lah-tex”; for goofy nerdy reasons, the x is technically the “ch” sound in “Bach”, but most people just say it as “k”—saying “layteks” is frowned on for whatever reason).&lt;/p&gt;
+&lt;p&gt;LaTeX is neat and makes pretty documents, but it’s a huge program—&lt;a href=&#34;https://tug.org/mactex/mactex-download.html&#34;&gt;the macOS version, for instance, is nearly 4 GB&lt;/a&gt;! To make life easier, there’s &lt;a href=&#34;https://yihui.org/tinytex/&#34;&gt;an R package named &lt;strong&gt;tinytex&lt;/strong&gt;&lt;/a&gt; that installs a minimal LaTeX program and that automatically deals with differences between macOS and Windows.&lt;/p&gt;
+&lt;p&gt;Here’s how to install &lt;strong&gt;tinytex&lt;/strong&gt; so you can knit to pretty PDFs:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Use the Packages in panel in RStudio to install &lt;strong&gt;tinytex&lt;/strong&gt; like you did above with &lt;strong&gt;tidyverse&lt;/strong&gt;. Alternatively, run &lt;code&gt;install.packages(&#34;tinytex&#34;)&lt;/code&gt; in the console.&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;tinytex::install_tinytex()&lt;/code&gt; in the console.&lt;/li&gt;
+&lt;li&gt;Wait for a bit while R downloads and installs everything you need.&lt;/li&gt;
+&lt;li&gt;The end! You should now be able to knit to PDF.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;These instructions were created by &lt;a href=&#34;andrewheiss.com&#34;&gt;Andrew Heiss&lt;/a&gt; from his excellent &lt;a href=&#34;https://evalf21.classes.andrewheiss.com/&#34;&gt;Program Evaluation course website&lt;/a&gt;.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;It’s a goofy name, but CRAN is where most R packages—and R itself—lives.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Intro to Bayesian Inference</title>
       <link>https://dsba6010-spring2022.netlify.app/content/01-bayes-intro/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
@@ -419,7 +503,7 @@ fig&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     </item>
     
     <item>
-      <title>15-1-example</title>
+      <title>Example: 15-1</title>
       <link>https://dsba6010-spring2022.netlify.app/example/15-1-example/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/example/15-1-example/</guid>
@@ -445,7 +529,7 @@ down &amp;lt;- pancakes[2,]
 num_11_10 &amp;lt;- sum( up==1 )
 num_11 &amp;lt;- sum( up==1 &amp;amp; down==1 )
 print(num_11/num_11_10)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 0.6539235&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.6583751&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;measurement-error&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;15.2 Measurement Error&lt;/h2&gt;
@@ -483,9 +567,7 @@ m15.1 &amp;lt;- ulam(
     ) , data=dlist , chains=4 , cores=4, cmdstan=TRUE )
 
 ## R code 15.4
-precis( m15.1 , depth=2 )
-
-plot(m15.1)&lt;/code&gt;&lt;/pre&gt;
+precis( m15.1 , depth=2 )&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#plot(m15.1)&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>

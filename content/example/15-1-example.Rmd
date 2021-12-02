@@ -1,7 +1,6 @@
 ---
 date: "2021-12-01"
-title: "15-1-example"
-output: html_document
+title: "Example: 15-1"
 menu:
   content:
     parent: Examples
@@ -78,8 +77,6 @@ m15.1 <- ulam(
 
 ## R code 15.4
 precis( m15.1 , depth=2 )
-
-plot(m15.1)
 ```
 
 ```{r}

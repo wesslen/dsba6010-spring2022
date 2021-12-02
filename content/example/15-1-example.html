@@ -1,7 +1,6 @@
 ---
 date: "2021-12-01"
-title: "15-1-example"
-output: html_document
+title: "Example: 15-1"
 menu:
   content:
     parent: Examples
@@ -29,7 +28,7 @@ down &lt;- pancakes[2,]
 num_11_10 &lt;- sum( up==1 )
 num_11 &lt;- sum( up==1 &amp; down==1 )
 print(num_11/num_11_10)</code></pre>
-<pre><code>## [1] 0.6539235</code></pre>
+<pre><code>## [1] 0.6583751</code></pre>
 </div>
 <div id="measurement-error" class="section level2">
 <h2>15.2 Measurement Error</h2>
@@ -67,8 +66,6 @@ m15.1 &lt;- ulam(
     ) , data=dlist , chains=4 , cores=4, cmdstan=TRUE )
 
 ## R code 15.4
-precis( m15.1 , depth=2 )
-
-plot(m15.1)</code></pre>
+precis( m15.1 , depth=2 )</code></pre>
 <pre class="r"><code>#plot(m15.1)</code></pre>
 </div>
