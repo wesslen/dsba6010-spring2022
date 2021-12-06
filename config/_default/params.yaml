@@ -137,7 +137,7 @@ instructor:
   appointment_url: https://calendly.com/ryanwesslen/
 
 course:
-  number: "DSBA 6010"
+  number: "DSBA 6010 / STAT 7027"
   semester: "Spring 2022"
   days: "Monday"
   time: "12:00pm-2:45pm"

@@ -5,11 +5,6 @@ summary: Bayesian statistics and causal inference
 title: "\U0001F4CA Syllabus"
 ---
 
-<!--{{< figure src="featured.png" >}}-->
-<p float="left">
-<img src="featured.png" alt="drawing" width="300"/>
-
-</p>
 <!-- {{< tweet 1329573633371631617 >}}-->
 
 ## What you will learn

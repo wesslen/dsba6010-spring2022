@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Readings, lectures, and videos | DSBA 6010</title>
+    <title>Readings, lectures, and videos | Bayesian Statistics</title>
     <link>https://dsba6010-spring2022.netlify.app/content/</link>
       <atom:link href="https://dsba6010-spring2022.netlify.app/content/index.xml" rel="self" type="application/rss+xml" />
     <description>Readings, lectures, and videos</description>

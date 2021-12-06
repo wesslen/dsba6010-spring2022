@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DSBA 6010</title>
+    <title>Bayesian Statistics</title>
     <link>https://dsba6010-spring2022.netlify.app/</link>
       <atom:link href="https://dsba6010-spring2022.netlify.app/index.xml" rel="self" type="application/rss+xml" />
-    <description>DSBA 6010</description>
+    <description>Bayesian Statistics</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 10 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png</url>
-      <title>DSBA 6010</title>
+      <title>Bayesian Statistics</title>
       <link>https://dsba6010-spring2022.netlify.app/</link>
     </image>
     
