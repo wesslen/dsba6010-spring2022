@@ -1,0 +1,1209 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="R style conventions R is fairly forgiving about how you type code (unlike other languages like Python, where miscounting spaces can ruin your code!). All of these things will do exactly the same thing:" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://dsba6010-spring2022.netlify.app/resource/style/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#B0BBBF" />
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.7128504dee1e800b4d6f834ad27beed3.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://dsba6010-spring2022.netlify.app/resource/style/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@ryanwesslen" />
+    <meta property="twitter:creator" content="@ryanwesslen" />
+  
+  <meta property="og:site_name" content="Bayesian Statistics" />
+  <meta property="og:url" content="https://dsba6010-spring2022.netlify.app/resource/style/" />
+  <meta property="og:title" content="R style suggestions | Bayesian Statistics" />
+  <meta property="og:description" content="R style conventions R is fairly forgiving about how you type code (unlike other languages like Python, where miscounting spaces can ruin your code!). All of these things will do exactly the same thing:" /><meta property="og:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+    
+  
+
+  
+
+
+
+  
+
+  
+
+  <link rel="stylesheet" type="text/css" href="/custom-css/print.css" media="print" />
+
+  <link rel="shortcut icon" href="https://dsba6010-spring2022.netlify.app/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="https://dsba6010-spring2022.netlify.app/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://dsba6010-spring2022.netlify.app/img/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="DSBA 6010 / STAT 7027: Bayesian Statistics" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="https://dsba6010-spring2022.netlify.app/img/mstile-144x144.png" />
+
+  <title>R style suggestions | Bayesian Statistics</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="f4734e734c67442efdc8d228e91ad766" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.c2ae95842e5b33a787c7b8c567e989a4.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Bayesian Statistics</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Bayesian Statistics</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/syllabus/"><span>Syllabus</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/content/"><span>Content</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/assignment/"><span>Assignments</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/example/"><span>Examples</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/resource/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://dsba6010-spring2022.slack.com" target="_blank" rel="noopener"><span><i class="fab fa-slack"></i></span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>RStudio.cloud</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+    
+  
+
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/resource/">Resources</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/resource/">Helpful resources</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/r/">R</a>
+      </li>
+
+      
+      <li class="active">
+        <a href="/resource/style/">R style suggestions</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/bayes/">Bayesian statistics resources</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" >Study guides</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/resource/install/">Guides</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/resource/install/">Installing R, RStudio, tidyverse, and tinytex</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/markdown/">Using Markdown</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/rmarkdown/">Using R Markdown</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/unzipping/">Unzipping files</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      
+
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>R style suggestions</h1>
+
+          <div class="article-style">
+            
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+
+</div>
+
+<div id="r-style-conventions" class="section level2">
+<h2>R style conventions</h2>
+<p>R is fairly forgiving about how you type code (unlike other languages like Python, where miscounting spaces can ruin your code!). All of these things will do exactly the same thing:</p>
+<pre class="r"><code>mpg %&gt;% 
+  filter(cty &gt; 10, class == &quot;compact&quot;)
+
+mpg %&gt;% filter(cty &gt; 10, class == &quot;compact&quot;)
+
+mpg %&gt;% 
+  filter(cty &gt; 10, 
+         class == &quot;compact&quot;)
+
+mpg %&gt;% filter(cty&gt;10, class==&quot;compact&quot;)
+
+filter(mpg,cty&gt;10,class==&quot;compact&quot;)
+
+mpg %&gt;% 
+filter(cty &gt; 10, 
+                        class == &quot;compact&quot;)
+
+filter ( mpg,cty&gt;10,     class==&quot;compact&quot; )</code></pre>
+<p>But you’ll notice that only a few of those iterations (the first three) are easily readable.</p>
+<p>To help improve readability and make it easier to share code with others, there’s <a href="https://style.tidyverse.org/index.html">an unofficial style guide for writing R code</a>. It’s fairly short and just has lots of examples of good and bad ways of writing code (naming variables, dealing with long lines, using proper indentation levels, etc.)—you should glance through it some time.</p>
+<p>RStudio has a built-in way of cleaning up your code. Select some code, press <kbd>ctrl</kbd> + <kbd>i</kbd> (on Windows) or <kbd>⌘</kbd> + <kbd>i</kbd> (on macOS), and R will reformat the code for you. It’s not always perfect, but it’s really helpful for getting indentation right without having to manually hit <kbd>space</kbd> a billion times.</p>
+</div>
+<div id="main-style-things-to-pay-attention-to-for-this-class" class="section level2">
+<h2>Main style things to pay attention to for this class</h2>
+<blockquote>
+<p><em>Important note</em>: I won’t ever grade you on any of this! If you submit something like <code>filter(mpg,cty&gt;10,class=="compact")</code>, I might recommend adding spaces, but it won’t affect your grade or points or anything.</p>
+</blockquote>
+<div id="spacing" class="section level3">
+<h3>Spacing</h3>
+<blockquote>
+<p>See the <a href="https://style.tidyverse.org/syntax.html#spacing">“Spacing” section</a> in the tidyverse style guide.</p>
+</blockquote>
+<p>Put spaces after commas (like in regular English):</p>
+<pre class="r"><code># Good
+filter(mpg, cty &gt; 10)
+
+# Bad
+filter(mpg , cty &gt; 10)
+filter(mpg ,cty &gt; 10)
+filter(mpg,cty &gt; 10)</code></pre>
+<p>Put spaces around operators like <code>+</code>, <code>-</code>, <code>&gt;</code>, <code>=</code>, etc.:</p>
+<pre class="r"><code># Good
+filter(mpg, cty &gt; 10)
+
+# Bad
+filter(mpg, cty&gt;10)
+filter(mpg, cty&gt; 10)
+filter(mpg, cty &gt;10)</code></pre>
+<p>Don’t put spaces around parentheses that are parts of functions:</p>
+<pre class="r"><code># Good
+filter(mpg, cty &gt; 10)
+
+# Bad
+filter (mpg, cty &gt; 10)
+filter ( mpg, cty &gt; 10)
+filter( mpg, cty &gt; 10 )</code></pre>
+</div>
+<div id="long-lines" class="section level3">
+<h3>Long lines</h3>
+<blockquote>
+<p>See the <a href="https://style.tidyverse.org/syntax.html#long-lines">“Long lines” section</a> in the tidyverse style guide.</p>
+</blockquote>
+<p>It’s generally good practice to not have really long lines of code. A good suggestion is to keep lines at a maximum of 80 characters. Instead of counting characters by hand (ew), in RStudio go to “Tools” &gt; “Global Options” &gt; “Code” &gt; “Display” and check the box for “Show margin”. You should now see a really thin line indicating 80 characters. Again, you can go beyond this—that’s fine. It’s just good practice to avoid going too far past it.</p>
+<p>You can add line breaks inside longer lines of code. Line breaks should come after commas, and things like function arguments should align within the function:</p>
+<pre class="r"><code># Good
+filter(mpg, cty &gt; 10, class == &quot;compact&quot;)
+
+# Good
+filter(mpg, cty &gt; 10, 
+       class == &quot;compact&quot;)
+
+# Good
+filter(mpg,
+       cty &gt; 10,
+       class == &quot;compact&quot;)
+
+# Bad
+filter(mpg, cty &gt; 10, class %in% c(&quot;compact&quot;, &quot;pickup&quot;, &quot;midsize&quot;, &quot;subcompact&quot;, &quot;suv&quot;, &quot;2seater&quot;, &quot;minivan&quot;))
+
+# Good
+filter(mpg, 
+       cty &gt; 10, 
+       class %in% c(&quot;compact&quot;, &quot;pickup&quot;, &quot;midsize&quot;, &quot;subcompact&quot;, 
+                    &quot;suv&quot;, &quot;2seater&quot;, &quot;minivan&quot;))</code></pre>
+</div>
+<div id="pipes-and-ggplot-layers" class="section level3">
+<h3>Pipes (<code>%&gt;%</code>) and ggplot layers (<code>+</code>)</h3>
+<p>Put each layer of a ggplot plot on separate lines, with the <code>+</code> at the end of the line, indented with two spaces:</p>
+<pre class="r"><code># Good
+ggplot(mpg, aes(x = cty, y = hwy, color = class)) +
+  geom_point() +
+  geom_smooth() +
+  theme_bw()
+
+# Bad
+ggplot(mpg, aes(x = cty, y = hwy, color = class)) +
+  geom_point() + geom_smooth() +
+  theme_bw()
+
+# Super bad
+ggplot(mpg, aes(x = cty, y = hwy, color = class)) + geom_point() + geom_smooth() + theme_bw()
+
+# Super bad and won&#39;t even work
+ggplot(mpg, aes(x = cty, y = hwy, color = class))
+  + geom_point()
+  + geom_smooth() 
+  + theme_bw()</code></pre>
+<p>Put each step in a dplyr pipeline on separate lines, with the <code>%&gt;%</code> at the end of the line, indented with two spaces:</p>
+<pre class="r"><code># Good
+mpg %&gt;% 
+  filter(cty &gt; 10) %&gt;% 
+  group_by(class) %&gt;% 
+  summarize(avg_hwy = mean(hwy))
+
+# Bad
+mpg %&gt;% filter(cty &gt; 10) %&gt;% group_by(class) %&gt;% 
+  summarize(avg_hwy = mean(hwy))
+
+# Super bad
+mpg %&gt;% filter(cty &gt; 10) %&gt;% group_by(class) %&gt;% summarize(avg_hwy = mean(hwy))
+
+# Super bad and won&#39;t even work
+mpg %&gt;% 
+  filter(cty &gt; 10)
+  %&gt;% group_by(class)
+  %&gt;% summarize(avg_hwy = mean(hwy))</code></pre>
+</div>
+<div id="comments" class="section level3">
+<h3>Comments</h3>
+<blockquote>
+<p>See the <a href="https://style.tidyverse.org/syntax.html#comments">“Comments” section</a> in the tidyverse style guide.</p>
+</blockquote>
+<p>Comments should start with a comment symbol and a single space: <code>#</code></p>
+<pre class="r"><code># Good
+
+#Bad
+
+    #Bad</code></pre>
+<p>If the comment is really short (and won’t cause you to go over 80 characters in the line), you can include it in the same line as the code, separated by at least two spaces (it works with one space, but using a couple can enhance readability):</p>
+<pre class="r"><code>mpg %&gt;% 
+  filter(cty &gt; 10) %&gt;%  # Only rows where cty is 10 +
+  group_by(class) %&gt;%  # Divide into class groups
+  summarize(avg_hwy = mean(hwy))  # Find the average hwy in each group</code></pre>
+<p>You can add extra spaces to get inline comments to align, if you want:</p>
+<pre class="r"><code>mpg %&gt;% 
+  filter(cty &gt; 10) %&gt;%            # Only rows where cty is 10 +
+  group_by(class) %&gt;%             # Divide into class groups
+  summarize(avg_hwy = mean(hwy))  # Find the average hwy in each group</code></pre>
+<p>If the comment is really long, you can break it into multiple lines. RStudio can do this for you if you go to “Code” &gt; “Reflow comment”</p>
+<pre class="r"><code># Good
+# Happy families are all alike; every unhappy family is unhappy in its own way.
+# Everything was in confusion in the Oblonskys’ house. The wife had discovered
+# that the husband was carrying on an intrigue with a French girl, who had been
+# a governess in their family, and she had announced to her husband that she
+# could not go on living in the same house with him. This position of affairs
+# had now lasted three days, and not only the husband and wife themselves, but
+# all the members of their family and household, were painfully conscious of it.
+
+# Bad
+# Happy families are all alike; every unhappy family is unhappy in its own way. Everything was in confusion in the Oblonskys’ house. The wife had discovered that the husband was carrying on an intrigue with a French girl, who had been a governess in their family, and she had announced to her husband that she could not go on living in the same house with him. This position of affairs had now lasted three days, and not only the husband and wife themselves, but all the members of their family and household, were painfully conscious of it.</code></pre>
+<p>Though, if you’re dealing with comments that are <em>that</em> long, consider putting the text in R Markdown instead and having it be actual prose.</p>
+</div>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/resource/r/" rel="next">R</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/resource/unzipping/" rel="prev">Unzipping files</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Jan 1, 0001</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer>
+    <hr>
+
+    <div class="row course-info">
+        <div class="col-md-7">
+            <p>
+                <strong>DSBA 6010 / STAT 7027: Bayesian Statistics (Spring 2022)</strong><br>
+                <a href="https://www.uncc.edu" target="_blank" rel="noopener">University of North Carolina at Charlotte</a> &emsp;&emsp;
+                <a href="https://datascience.charlotte.edu/" target="_blank" rel="noopener">School of Data Science</a>
+            </p>
+
+            <p>
+                <a href="https://wesslen.netlify.app" target="_blank" rel="noopener"><i class="fas fa-user"></i>
+                    Dr. Ryan Wesslen</a> &emsp;&emsp;
+                <a href="mailto:rwesslen@uncc.edu"><i class="fas fa-envelope"></i>
+                    rwesslen@uncc.edu</a>
+            </p>
+
+            <p>
+                <i class="far fa-calendar-alt"></i> Monday &emsp;&emsp;
+                <i class="far fa-clock"></i> 12:00pm-2:45pm 
+                <br><i class="fas fa-university"></i> Center City 1101
+            </p>
+        </div>
+
+        <div class="col-md-5 credits">
+            <p>All content licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+            
+            <p>Content <i class="fab fa-creative-commons"></i> 2022 <a href="https://wesslen.netlify.app" target="_blank" rel="noopener">Ryan Wesslen</a></p>
+        
+            <p>This site created with the <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> in <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown</a> and <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>. </p>
+            
+            <p><a href="https://github.com/wesslen/dsba6010-spring2022" target="_blank" rel="noopener"><i class="fab fa-github"></i> View the source at GitHub.</a></p>
+        </div>
+    </div>
+</footer>
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.4bba0826db6409c865d2e7b99039d6d0.js"></script>
+
+    
+
+
+</body>
+</html>

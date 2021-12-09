@@ -161,7 +161,7 @@ school:
 ############################
 
 # Default image for social sharing and search engines. Place image in `static/media/` folder and specify image name here.
-sharing_image: "social-image-sp21.png"
+sharing_image: "dsba6010-hex.png"
 
 # Twitter username (without @). Used when a visitor shares your site on Twitter.
 twitter: "ryanwesslen"

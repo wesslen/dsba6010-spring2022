@@ -8,7 +8,7 @@ menu:
 highlight: true
 tags:
 - Computation
-title: Maximium entropy & GLMs
+title: God Spiked the Integers
 type: docs
 weight: 13
 ---

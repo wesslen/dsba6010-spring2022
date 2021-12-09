@@ -1,0 +1,1890 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Markdown is a special kind of markup language that lets you format text with simple syntax. You can then use a converter program like pandoc to convert Markdown into whatever format you want: HTML, PDF, Word, PowerPoint, etc." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://dsba6010-spring2022.netlify.app/resource/markdown/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#B0BBBF" />
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.7128504dee1e800b4d6f834ad27beed3.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://dsba6010-spring2022.netlify.app/resource/markdown/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@ryanwesslen" />
+    <meta property="twitter:creator" content="@ryanwesslen" />
+  
+  <meta property="og:site_name" content="Bayesian Statistics" />
+  <meta property="og:url" content="https://dsba6010-spring2022.netlify.app/resource/markdown/" />
+  <meta property="og:title" content="Using Markdown | Bayesian Statistics" />
+  <meta property="og:description" content="Markdown is a special kind of markup language that lets you format text with simple syntax. You can then use a converter program like pandoc to convert Markdown into whatever format you want: HTML, PDF, Word, PowerPoint, etc." /><meta property="og:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-01-13T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2020-01-13T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  <link rel="stylesheet" type="text/css" href="/custom-css/print.css" media="print" />
+
+  <link rel="shortcut icon" href="https://dsba6010-spring2022.netlify.app/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="https://dsba6010-spring2022.netlify.app/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://dsba6010-spring2022.netlify.app/img/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="DSBA 6010 / STAT 7027: Bayesian Statistics" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="https://dsba6010-spring2022.netlify.app/img/mstile-144x144.png" />
+
+  <title>Using Markdown | Bayesian Statistics</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="dcf6a5ae191a1cca4f4c8ff8ac114538" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.c2ae95842e5b33a787c7b8c567e989a4.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Bayesian Statistics</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Bayesian Statistics</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/syllabus/"><span>Syllabus</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/content/"><span>Content</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/assignment/"><span>Assignments</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/example/"><span>Examples</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/resource/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://dsba6010-spring2022.slack.com" target="_blank" rel="noopener"><span><i class="fab fa-slack"></i></span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>RStudio.cloud</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+    
+  
+
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/resource/">Resources</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/resource/">Helpful resources</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/r/">R</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/style/">R style suggestions</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/bayes/">Bayesian statistics resources</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" >Study guides</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/resource/install/">Guides</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/resource/install/">Installing R, RStudio, tidyverse, and tinytex</a>
+      </li>
+
+      
+      <li class="active">
+        <a href="/resource/markdown/">Using Markdown</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/rmarkdown/">Using R Markdown</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/unzipping/">Unzipping files</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      
+
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Using Markdown</h1>
+
+          <div class="article-style">
+            
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+<link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
+
+<div id="TOC">
+
+</div>
+
+<p><a href="https://daringfireball.net/projects/markdown/">Markdown</a> is a special kind of markup language that lets you format text with simple syntax. You can then use a converter program like <a href="https://pandoc.org/">pandoc</a> to convert Markdown into whatever format you want: HTML, PDF, Word, PowerPoint, etc. (<a href="https://pandoc.org/MANUAL.html#option--to">see the full list of output types here</a>)</p>
+<textarea rows="1" class="invisible-text">Delete this text and start playing with Markdown here!</textarea>
+<script src="/js/stackedit.min.js"></script>
+<script src="/js/markdown-config.js"></script>
+<div id="basic-markdown-formatting" class="section level2">
+<h2>Basic Markdown formatting</h2>
+<table>
+<colgroup>
+<col width="40%" />
+<col width="21%" />
+<col width="38%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>
+Type…
+</th>
+<th>
+…or…
+</th>
+<th>
+…to get
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<pre>Some text in a paragraph.<br>
+More text in the next paragraph. Always
+use empty lines between paragraphs.</pre>
+</td>
+<td>
+</td>
+<td>
+<p>
+Some text in a paragraph.
+</p>
+<p>
+More text in the next paragraph. Always
+use empty lines between paragraphs.
+</p>
+</td>
+</tr>
+<tr class="even">
+<td>
+<code><em>Italic</em></code>
+</td>
+<td>
+<code><em>Italic</em></code>
+</td>
+<td>
+<em>Italic</em>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code><strong>Bold</strong></code>
+</td>
+<td>
+<code><strong>Bold</strong></code>
+</td>
+<td>
+<strong>Bold</strong>
+</td>
+</tr>
+<tr class="even">
+<td>
+<code># Heading 1</code>
+</td>
+<td>
+</td>
+<td>
+<h1 class="smaller-h1">
+Heading 1
+</h1>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>## Heading 2</code>
+</td>
+<td>
+</td>
+<td>
+<h2 class="smaller-h2">
+Heading 2
+</h2>
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>### Heading 3</code>
+</td>
+<td>
+</td>
+<td>
+<h3 class="smaller-h3">
+Heading 3
+</h3>
+</td>
+</tr>
+<tr class="odd">
+<td>
+(Go up to heading level 6 with <code>######</code>)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr class="even">
+<td>
+<code><a href="http://www.example.com">Link text</a></code>
+</td>
+<td>
+</td>
+<td>
+<a href="http://www.example.com">Link text</a>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code><img src="/path/to/image.png" alt="Image caption" /></code>
+</td>
+<td>
+</td>
+<td>
+<img src="/img/mstile-144x144.png" title="fig:" alt="Class logo" />
+</td>
+</tr>
+<tr class="even">
+<td>
+<code>&lt;code&gt;Inline code</code> with backticks</code>
+</td>
+<td>
+</td>
+<td>
+<code>Inline code</code> with backticks
+</td>
+</tr>
+<tr class="odd">
+<td>
+<code>&gt; Blockquote</code>
+</td>
+<td>
+</td>
+<td>
+<blockquote>
+<p>
+Blockquote
+</p>
+</blockquote>
+</td>
+</tr>
+<tr class="even">
+<td>
+<pre>- Things in
+- an unordered
+- list</pre>
+</td>
+<td>
+<pre>* Things in
+* an unordered
+* list</pre>
+</td>
+<td>
+<ul>
+<li>
+Things in
+</li>
+<li>
+an unordered
+</li>
+<li>
+list
+</li>
+</ul>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<pre>1. Things in
+2. an ordered
+3. list</pre>
+</td>
+<td>
+<pre>1) Things in
+2) an ordered
+3) list</pre>
+</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>
+Things in
+</li>
+<li>
+an ordered
+</li>
+<li>
+list
+</li>
+</ol>
+</td>
+</tr>
+<tr class="even">
+<td>
+<pre>Horizontal line
+
+---</pre>
+</td>
+<td>
+<pre>Horizontal line
+
+***</pre>
+</td>
+<td>
+<p>
+Horizontal line
+</p>
+<hr />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="math" class="section level2">
+<h2>Math</h2>
+<div id="basic-math-commands" class="section level3">
+<h3>Basic math commands</h3>
+<p>Markdown uses LaTeX to create fancy mathematical equations. There are like a billion little options and features available for math equations—you can find <a href="http://www.malinc.se/math/latex/basiccodeen.php">helpful examples of the the most common basic commands here</a>. In this class, these will be the most common things you’ll use:</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Description
+</th>
+<th style="text-align:left;">
+Command
+</th>
+<th style="text-align:left;">
+Output
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="4">
+<td colspan="3" style="border-bottom: 1px solid;">
+<strong>Letters</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Roman letters
+</td>
+<td style="text-align:left;">
+<code>a b c d e f</code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(a\ b\ c\ d\ e\ f\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Greek letters (see <a href="https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols">this</a> for all possible letters)
+</td>
+<td style="text-align:left;">
+<code></code> <br> <code></code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\alpha\ \beta\ \Gamma\ \gamma\ \Delta\ \delta\ \epsilon\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Letters will automatically be italicized and treated as math variables;<br>if you want actual text in the math, use <code></code>
+</td>
+<td style="text-align:left;">
+Ew: <code>Treatment = </code> <br>Good: <code> = </code>
+</td>
+<td style="text-align:left;">
+Ew: <span class="math inline">\(Treatment = \beta\)</span><br>Good: <span class="math inline">\(\text{Treatment} = \beta\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Extra spaces will automatically be removed; if you want a space, use <code> </code>
+</td>
+<td style="text-align:left;">
+No space: <code>x y</code> <br> Space: <code>x y</code>
+</td>
+<td style="text-align:left;">
+No space: <span class="math inline">\(x y\)</span> <br>Space: <span class="math inline">\(x \ y\)</span>
+</td>
+</tr>
+<tr grouplength="6">
+<td colspan="3" style="border-bottom: 1px solid;">
+<strong>Superscripts and subscripts</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Use <code>^</code> to make one character superscripted.
+</td>
+<td style="text-align:left;">
+<code>x^2</code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(x^2\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Wrap the superscripted part in <code>{}</code> if there’s more than one character
+</td>
+<td style="text-align:left;">
+<code>x^{2+y}</code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(x^{2+y}\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Use <code>_</code> to make one character subscripted
+</td>
+<td style="text-align:left;">
+<code>_1</code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\beta_1\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Wrap the subscripted part in <code>{}</code> if there’s more than one character
+</td>
+<td style="text-align:left;">
+<code>_{i, t}</code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\beta_{i, t}\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Use superscripts and subscripts simultaneously
+</td>
+<td style="text-align:left;">
+<code>_1^{}</code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\beta_1^{\text{Treatment}}\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+You can even nest them
+</td>
+<td style="text-align:left;">
+<code>x<sup>{2</sup>{2^2}}</code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(x^{2^{2^2}}\)</span>
+</td>
+</tr>
+<tr grouplength="9">
+<td colspan="3" style="border-bottom: 1px solid;">
+<strong>Math operations</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Addition
+</td>
+<td style="text-align:left;">
+<code>2 + 5 = 7</code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(2 + 5 = 7\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Subtraction
+</td>
+<td style="text-align:left;">
+<code>2 - 5 = -3</code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(2 + 5 = -3\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Multiplication
+</td>
+<td style="text-align:left;">
+<code>x y</code> <br> <code>x y</code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(x \times y\)</span> <br> <span class="math inline">\(x \cdot y\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Division
+</td>
+<td style="text-align:left;">
+<code>8 </code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(8 \div 2\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Fractions
+</td>
+<td style="text-align:left;">
+<code></code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\frac{8}{2}\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Square roots; use <code>[3]</code> for other roots
+</td>
+<td style="text-align:left;">
+<code> = 9</code> <br> <code> = 3</code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\sqrt{81} = 9\)</span> <br> <span class="math inline">\(\sqrt[3]{27} = 3\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Summation; use sub/superscripts for extra details
+</td>
+<td style="text-align:left;">
+<code>x</code> <br> <code>_{n=1}^{} </code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\sum x\)</span> <br> <span class="math inline">\(\sum_{n=1}^{\infty} \frac{1}{n}\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Products; use sub/superscripts for extra details
+</td>
+<td style="text-align:left;">
+<code>x</code> <br> <code>_{n=1}^{5} n^2</code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\prod x\)</span> <br> <span class="math inline">\(\prod_{n=1}^{5} n^2\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Integrals; use sub/superscripts for extra details
+</td>
+<td style="text-align:left;">
+<code>x^2  dx</code> <br> <code>_{1}^{100} x^2  dx</code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\int x^2 \ dx\)</span> <br> <span class="math inline">\(\int_{1}^{100} x^2 \ dx\)</span>
+</td>
+</tr>
+<tr grouplength="5">
+<td colspan="3" style="border-bottom: 1px solid;">
+<strong>Extra symbols</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Add a bar for things like averages
+</td>
+<td style="text-align:left;">
+<code>{x}</code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\bar{x}\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Use an overline for longer things
+</td>
+<td style="text-align:left;">
+Ew: <code>{abcdef}</code> <br> Good: <code></code>
+</td>
+<td style="text-align:left;">
+Ew: <span class="math inline">\(\bar{abcdef}\)</span> <br> Good: <span class="math inline">\(\overline{abcdef}\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Add a hat for things like estimates
+</td>
+<td style="text-align:left;">
+<code></code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\hat{y}\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Use a wide hat for longer things
+</td>
+<td style="text-align:left;">
+Ew: <code></code> <br> Good: <code></code>
+</td>
+<td style="text-align:left;">
+Ew: <span class="math inline">\(\hat{abcdef}\)</span> <br> Good: <span class="math inline">\(\widehat{abcdef}\)</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Use arrows for DAG-like things
+</td>
+<td style="text-align:left;">
+<code>Z Y X</code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(Z \rightarrow Y \leftarrow X\)</span>
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="3" style="border-bottom: 1px solid;">
+<strong>Bonus fun</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+Use colors!; see <a href="https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX">here</a> for more details and <a href="https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX#Reference_guide">here</a> for a list of color names
+</td>
+<td style="text-align:left;">
+<code> = </code>
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\color{red}{y}\ \color{black}{=}\ \color{blue}{\beta_1 x_1}\)</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="using-math-inline" class="section level3">
+<h3>Using math inline</h3>
+<p>You can use math in two different ways: inline or in a display block. To use math inline, wrap it in single dollar signs, like <code>\$y = mx + b\$</code>:</p>
+<table>
+<colgroup>
+<col width="52%" />
+<col width="47%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>
+Type…
+</th>
+<th>
+…to get
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<pre>Based on the DAG, the regression model for
+estimating the effect of education on wages
+is &dollar;\hat{y} = \beta_0 + \beta_1 x_1 + \epsilon&dollar;, or
+&dollar;\text{Wages} = \beta_0 + \beta_1 \text{Education} + \epsilon&dollar;.</pre>
+</td>
+<td>
+Based on the DAG, the regression model for
+estimating the effect of education on wages
+is <span class="math inline"><span class="math inline">\(\hat{y} = \beta_0 + \beta_1 x_1 + \epsilon\)</span></span>, or
+<span class="math inline"><span class="math inline">\(\text{Wages} = \beta_0 + \beta_1 \text{Education} + \epsilon\)</span></span>.
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="using-math-in-a-block" class="section level3">
+<h3>Using math in a block</h3>
+<p>To put an equation on its own line in a display block, wrap it in double dollar signs, like this:</p>
+<p><strong>Type…</strong></p>
+<pre class="text"><code>The quadratic equation was an important part of high school math:
+
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+But now we just use computers to solve for $x$.</code></pre>
+<p><strong>…to get…</strong></p>
+<blockquote>
+<p>The quadratic equation was an important part of high school math:</p>
+<p><span class="math display">\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]</span></p>
+<p>But now we just use computers to solve for <span class="math inline">\(x\)</span>.</p>
+</blockquote>
+<hr />
+</div>
+<div id="dollar-signs-and-math" class="section level3">
+<h3>Dollar signs and math</h3>
+<p>Because dollar signs are used to indicate math equations, you can’t just use dollar signs like normal if you’re writing about actual dollars. For instance, if you write <code>This book costs \$5.75 and this other costs \$40</code>, Markdown will treat everything that comes between the dollar signs as math, like so: “This book costs $5.75 and this other costs $40”.</p>
+<p>To get around that, put a backslash (<code>\</code>) in front of the dollar signs, so that <code>This book costs \\\$5.75 and this other costs \\\$40</code> becomes “This book costs <span>$5.75</span> and this other costs <span>$40</span>”.</p>
+</div>
+</div>
+<div id="tables" class="section level2">
+<h2>Tables</h2>
+<p>There are 4 different ways to hand-create tables in Markdown—I say “hand-create” because it’s normally way easier to use R to generate these things with packages like <a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html"><strong>kableExtra</strong></a> (use <code>kable()</code>) or <a href="https://rapporter.github.io/pander/"><strong>pander</strong></a> (use <code>pandoc.table()</code>). The two most common are simple tables and pipe tables. <a href="https://pandoc.org/MANUAL.html#tables">You should look at the full documentation here</a>.</p>
+<p><strong>For simple tables, type…</strong></p>
+<pre class="text"><code>  Right     Left     Center     Default
+-------     ------ ----------   -------
+     12     12        12            12
+    123     123       123          123
+      1     1          1             1
+
+Table: Caption goes here</code></pre>
+<p><strong>…to get…</strong></p>
+<table>
+<caption>Caption goes here</caption>
+<thead>
+<tr class="header">
+<th align="right">Right</th>
+<th align="left">Left</th>
+<th align="center">Center</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">12</td>
+<td align="left">12</td>
+<td align="center">12</td>
+<td>12</td>
+</tr>
+<tr class="even">
+<td align="right">123</td>
+<td align="left">123</td>
+<td align="center">123</td>
+<td>123</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">1</td>
+<td align="center">1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>For pipe tables, type…</strong></p>
+<pre class="text"><code>| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|   12  |  12  |    12   |    12  |
+|  123  |  123 |   123   |   123  |
+|    1  |    1 |     1   |     1  |
+
+Table: Caption goes here</code></pre>
+<p><strong>…to get…</strong></p>
+<table>
+<caption>Caption goes here</caption>
+<thead>
+<tr class="header">
+<th align="right">Right</th>
+<th align="left">Left</th>
+<th>Default</th>
+<th align="center">Center</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">12</td>
+<td align="left">12</td>
+<td>12</td>
+<td align="center">12</td>
+</tr>
+<tr class="even">
+<td align="right">123</td>
+<td align="left">123</td>
+<td>123</td>
+<td align="center">123</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">1</td>
+<td>1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="footnotes" class="section level2">
+<h2>Footnotes</h2>
+<p>There are two different ways to add footnotes (<a href="https://pandoc.org/MANUAL.html#footnotes">see here for complete documentation</a>): regular and inline.</p>
+<p>Regular notes need (1) an identifier and (2) the actual note. The identifier can be whatever you want. Some people like to use numbers like <code>[^1]</code>, but if you ever rearrange paragraphs or add notes before #1, the numbering will be wrong (in your Markdown file, not in the output; everything will be correct in the output). Because of that, I prefer to use some sort of text label:</p>
+<p><strong>Type…</strong></p>
+<pre class="text"><code>Here is a footnote reference[^1] and here is another [^note-on-dags].
+
+[^1]: This is a note.
+
+[^note-on-dags]: DAGs are neat. 
+
+And here&#39;s more of the document.</code></pre>
+<p><strong>…to get…</strong></p>
+<blockquote>
+<p>Here is a footnote reference<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> and here is another.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>And here’s more of the document.</p>
+<hr />
+<div class="footnotes">
+<ol>
+<li id="fn1">
+<p>
+This is a note.<a href="#fnref1" class="footnote-back">↩︎</a>
+</p>
+</li>
+<li id="fn2">
+<p>
+DAGs are neat.<a href="#fnref2" class="footnote-back">↩︎</a>
+</p>
+</li>
+</ol>
+</div>
+</blockquote>
+<hr />
+<p>You can also use inline footnotes with <code>^[Text of the note goes here]</code>, which are often easier because you don’t need to worry about identifiers:</p>
+<p><strong>Type…</strong></p>
+<pre class="text"><code>Causal inference is neat.^[But it can be hard too!]</code></pre>
+<p><strong>…to get…</strong></p>
+<blockquote>
+<p>Causal inference is neat.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>1</sup></a></p>
+<hr />
+<div class="footnotes">
+<ol>
+<li id="fn3">
+<p>
+But it can be hard too!<a href="#fnref3" class="footnote-back">↩︎</a>
+</p>
+</li>
+</ol>
+</div>
+</blockquote>
+</div>
+<div id="front-matter" class="section level2">
+<h2>Front matter</h2>
+<p>You can include a special section at the top of a Markdown document that contains metadata (or data about your document) like the title, date, author, etc. This section uses a special simple syntax named <a href="https://learn.getgrav.org/16/advanced/yaml">YAML</a> (or “YAML Ain’t Markup Language”) that follows this basic outline: <code>setting: value for setting</code>. Here’s an example YAML metadata section. Note that it must start and end with three dashes (<code>---</code>).</p>
+<pre class="yaml"><code>---
+title: Title of your document
+date: &quot;January 13, 2020&quot;
+author: &quot;Your name&quot;
+---</code></pre>
+<p>You can put the values inside quotes (like the date and name in the example above), or you can leave them outside of quotes (like the title in the example above). I typically use quotes just to be safe—if the value you’re using has a colon (<code>:</code>) in it, it’ll confuse Markdown since it’ll be something like <code>title: My cool title: a subtitle</code>, which has two colons. It’s better to do this:</p>
+<pre class="yaml"><code>---
+title: &quot;My cool title: a subtitle&quot;
+---</code></pre>
+<p>If you want to use quotes inside one of the values (e.g. your document is <code>An evaluation of "scare quotes"</code>), you can use single quotes instead:</p>
+<pre class="yaml"><code>---
+title: &#39;An evaluation of &quot;scare quotes&quot;&#39;
+---</code></pre>
+</div>
+<div id="citations" class="section level2">
+<h2>Citations</h2>
+<p>One of the most powerful features of Markdown + pandoc is the ability to automatically cite things and generate bibliographies. to use citations, you need to create a <a href="http://www.bibtex.org/">BibTeX file</a> (ends in <code>.bib</code>) that contains a database of the things you want to cite. You can do this with bibliography managers designed to work with BibTeX directly (like <a href="https://bibdesk.sourceforge.io/">BibDesk</a> on macOS), or you can use <a href="https://www.zotero.org/">Zotero</a> (macOS and Windows) to export a <code>.bib</code> file. You can <a href="/resource/citations/">download an example <code>.bib</code> file of all the readings from this class here</a>.</p>
+<p><a href="https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html">Complete details for using citations can be found here</a>. In brief, you need to do three things:</p>
+<ol style="list-style-type: decimal">
+<li><p>Add a <code>bibliography:</code> entry to the YAML metadata:</p>
+<pre class="yaml"><code>---
+title: Title of your document
+date: &quot;January 13, 2020&quot;
+author: &quot;Your name&quot;
+bibliography: name_of_file.bib
+---</code></pre></li>
+<li><p>Choose a citation style based on a CSL file. The default is Chicago author-date, but you can choose from 2,000+ <a href="https://github.com/citation-style-language/styles">at this repository</a>. Download the CSL file, put it in your project folder, and add an entry to the YAML metadata (or provide a URL to the online version):</p>
+<pre class="yaml"><code>---
+title: Title of your document
+date: &quot;January 13, 2020&quot;
+author: &quot;Your name&quot;
+bibliography: name_of_file.bib
+csl: &quot;https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl&quot;
+---</code></pre>
+<p>Some of the most common CSLs are:</p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-author-date.csl">Chicago author-date</a></li>
+<li><a href="https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-note-bibliography.csl">Chicago note-bibliography</a></li>
+<li><a href="https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-fullnote-bibliography.csl">Chicago full note-bibliography</a> (no shortened notes or ibids)</li>
+<li><a href="https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl">APA 7th edition</a></li>
+<li><a href="https://raw.githubusercontent.com/citation-style-language/styles/master/modern-language-association.csl">MLA 8th edition</a></li>
+</ul></li>
+<li><p>Cite things in your document. <a href="https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html">Check the documentation for full details of how to do this</a>. Essentially, you use <code>@citationkey</code> inside square brackets (<code>[]</code>):</p>
+<table>
+<colgroup>
+<col width="51%" />
+<col width="48%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type…</th>
+<th>…to get…</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>Causal inference is neat [@Rohrer:2018; @AngristPischke:2015].</code></td>
+<td>Causal inference is neat (Rohrer 2018; Angrist and Pischke 2015).</td>
+</tr>
+<tr class="even">
+<td><code>Causal inference is neat [see @Rohrer:2018, p. 34; also @AngristPischke:2015, chapter 1].</code></td>
+<td>Causal inference is neat (see Rohrer 2018, 34; also Angrist and Pischke 2015, chap. 1).</td>
+</tr>
+<tr class="odd">
+<td><code>Angrist and Pischke say causal inference is neat [-@AngristPischke:2015; see also @Rohrer:2018].</code></td>
+<td>Angrist and Pischke say causal inference is neat (2015; see also Rohrer 2018).</td>
+</tr>
+<tr class="even">
+<td><code>@AngristPischke:2015 [chapter 1] say causal inference is neat, and @Rohrer:2018 agrees.</code></td>
+<td>Angrist and Pischke (2015, chap. 1) say causal inference is neat, and Rohrer (2018) agrees.</td>
+</tr>
+</tbody>
+</table>
+<p>After compiling, you should have a perfectly formatted bibliography added to the end of your document too:</p>
+<blockquote>
+<p>Angrist, Joshua D., and Jörn-Steffen Pischke. 2015. <em>Mastering ’Metrics: The Path from Cause to Effect.</em> Princeton, NJ: Princeton University Press.</p>
+<p>Rohrer, Julia M. 2018. “Thinking Clearly About Correlations and Causation: Graphical Causal Models for Observational Data.” <em>Advances in Methods and Practices in Psychological Science</em> 1 (1): 27–42. <a href="https://doi.org/10.1177/2515245917745629" class="uri">https://doi.org/10.1177/2515245917745629</a>.</p>
+</blockquote></li>
+</ol>
+</div>
+<div id="other-references" class="section level2">
+<h2>Other references</h2>
+<p>These websites have additional details and examples and practice tools:</p>
+<ul>
+<li><a href="https://commonmark.org/help/tutorial/"><strong>CommonMark’s Markdown tutorial</strong></a>: A quick interactive Markdown tutorial.</li>
+<li><a href="https://www.markdowntutorial.com/"><strong>Markdown tutorial</strong></a>: Another interactive tutorial to practice using Markdown.</li>
+<li><a href="http://packetlife.net/media/library/16/Markdown.pdf"><strong>Markdown cheatsheet</strong></a>: Useful one-page reminder of Markdown syntax.</li>
+<li><a href="http://plain-text.co/"><strong>The Plain Person’s Guide to Plain Text Social Science</strong></a>: A comprehensive explanation and tutorial about why you should write data-based reports in Markdown.</li>
+</ul>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/resource/bayes/" rel="next">Bayesian statistics resources</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/resource/rmarkdown/" rel="prev">Using R Markdown</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Jan 13, 2020</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer>
+    <hr>
+
+    <div class="row course-info">
+        <div class="col-md-7">
+            <p>
+                <strong>DSBA 6010 / STAT 7027: Bayesian Statistics (Spring 2022)</strong><br>
+                <a href="https://www.uncc.edu" target="_blank" rel="noopener">University of North Carolina at Charlotte</a> &emsp;&emsp;
+                <a href="https://datascience.charlotte.edu/" target="_blank" rel="noopener">School of Data Science</a>
+            </p>
+
+            <p>
+                <a href="https://wesslen.netlify.app" target="_blank" rel="noopener"><i class="fas fa-user"></i>
+                    Dr. Ryan Wesslen</a> &emsp;&emsp;
+                <a href="mailto:rwesslen@uncc.edu"><i class="fas fa-envelope"></i>
+                    rwesslen@uncc.edu</a>
+            </p>
+
+            <p>
+                <i class="far fa-calendar-alt"></i> Monday &emsp;&emsp;
+                <i class="far fa-clock"></i> 12:00pm-2:45pm 
+                <br><i class="fas fa-university"></i> Center City 1101
+            </p>
+        </div>
+
+        <div class="col-md-5 credits">
+            <p>All content licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+            
+            <p>Content <i class="fab fa-creative-commons"></i> 2022 <a href="https://wesslen.netlify.app" target="_blank" rel="noopener">Ryan Wesslen</a></p>
+        
+            <p>This site created with the <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> in <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown</a> and <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>. </p>
+            
+            <p><a href="https://github.com/wesslen/dsba6010-spring2022" target="_blank" rel="noopener"><i class="fab fa-github"></i> View the source at GitHub.</a></p>
+        </div>
+    </div>
+</footer>
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.4bba0826db6409c865d2e7b99039d6d0.js"></script>
+
+    
+
+
+</body>
+</html>

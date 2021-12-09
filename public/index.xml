@@ -52,11 +52,13 @@
 &lt;li&gt;&lt;p&gt;Click on “Download R for &lt;code&gt;XXX&lt;/code&gt;”, where &lt;code&gt;XXX&lt;/code&gt; is either Mac or Windows:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-links.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;If you use macOS, scroll down to the first &lt;code&gt;.pkg&lt;/code&gt; file in the list of files (in this picture, it’s &lt;code&gt;R-4.0.0.pkg&lt;/code&gt;; as of right now, the current version is also 4.0.0) and download it.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-mac.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;If you use Windows, click “base” (or click on the bolded “install R for the first time” link) and download it.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-windows.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;If you use macOS, scroll down to the first &lt;code&gt;.pkg&lt;/code&gt; file in the list of files (in this picture, it’s &lt;code&gt;R-4.0.0.pkg&lt;/code&gt;; as of right now, the current version is also 4.0.0) and download it.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-mac.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- If you use Windows, click &amp;quot;base&amp;quot; (or click on the bolded &amp;quot;install R for the first time&amp;quot; link) and download it. &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-windows.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;&lt;p&gt;Double click on the downloaded file (check your &lt;code&gt;Downloads&lt;/code&gt; folder). Click yes through all the prompts to install like any other program.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;If you use macOS, &lt;a href=&#34;https://www.xquartz.org/&#34;&gt;download and install XQuartz&lt;/a&gt;. You do not need to do this on Windows.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -65,12 +67,14 @@
 &lt;h3&gt;Install RStudio&lt;/h3&gt;
 &lt;p&gt;Next, you need to install RStudio, the nicer graphical user interface (GUI) for R (the dashboard). Once R and RStudio are both installed, you can ignore R and only use RStudio. RStudio will use R automatically and you won’t ever have to interact with it directly.&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;p&gt;Go to the free download location on RStudio’s website: &lt;a href=&#34;https://www.rstudio.com/products/rstudio/download/#download&#34; class=&#34;uri&#34;&gt;https://www.rstudio.com/products/rstudio/download/#download&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;The website should automatically detect your operating system (macOS or Windows) and show a big download button for it:&lt;/p&gt;
+&lt;li&gt;Go to the free download location on RStudio’s website: &lt;a href=&#34;https://www.rstudio.com/products/rstudio/download/#download&#34; class=&#34;uri&#34;&gt;https://www.rstudio.com/products/rstudio/download/#download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The website should automatically detect your operating system (macOS or Windows) and show a big download button for it:&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-rstudio1.png&#34; width=&#34;50%&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;If not, scroll down a little to the large table and choose the version of RStudio that matches your operating system.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-rstudio2.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Double click on the downloaded file (again, check your &lt;code&gt;Downloads&lt;/code&gt; folder). Click yes through all the prompts to install like any other program.&lt;/p&gt;&lt;/li&gt;
+&lt;pre&gt;&lt;code&gt;If not, scroll down a little to the large table and choose the version of RStudio that matches your operating system.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-rstudio2.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Double click on the downloaded file (again, check your &lt;code&gt;Downloads&lt;/code&gt; folder). Click yes through all the prompts to install like any other program.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Double click on RStudio to run it (check your applications folder or start menu).&lt;/p&gt;
 &lt;/div&gt;
@@ -235,6 +239,242 @@
     </item>
     
     <item>
+      <title>R</title>
+      <link>https://dsba6010-spring2022.netlify.app/resource/r/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://dsba6010-spring2022.netlify.app/resource/r/</guid>
+      <description>
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;learning-r&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Learning R&lt;/h2&gt;
+&lt;p&gt;I highly recommend subscribing to the &lt;a href=&#34;https://rweekly.org/&#34;&gt;R Weekly newsletter&lt;/a&gt;. This e-mail is sent every Monday and is full of helpful tutorials about how to do stuff with R.&lt;/p&gt;
+&lt;p&gt;Searching for help with R on Google can sometimes be tricky because the program name is a single letter. Google is generally smart enough to figure out what you mean when you search for “r scatterplot”, but if it does struggle, try searching for “rstats” instead (e.g. “rstats scatterplot”).&lt;/p&gt;
+&lt;p&gt;If you use Twitter, post R-related questions and content with &lt;a href=&#34;https://twitter.com/search?q=%23rstats&#34;&gt;#rstats&lt;/a&gt;. The community there is exceptionally generous and helpful. Also check out &lt;a href=&#34;https://stackoverflow.com/&#34;&gt;StackOverflow&lt;/a&gt; (a Q&amp;amp;A site with hundreds of thousands of answers to all sorts of programming questions) and &lt;a href=&#34;https://community.rstudio.com/&#34;&gt;RStudio Community&lt;/a&gt; (a forum specifically designed for people using RStudio and the tidyverse (i.e. you)).&lt;/p&gt;
+&lt;p&gt;These resources are also really really helpful:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://r4ds.had.co.nz/&#34;&gt;&lt;strong&gt;R for Data Science&lt;/strong&gt;&lt;/a&gt;: A free online book for learning the basics of R and the tidyverse.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rstudio.com/resources/cheatsheets/&#34;&gt;&lt;strong&gt;R and RStudio cheat sheets&lt;/strong&gt;&lt;/a&gt;: A large collection of simple cheat sheets for RStudio, &lt;strong&gt;ggplot2&lt;/strong&gt;, and other R-related things.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stat545.com/&#34;&gt;&lt;strong&gt;Stat 545&lt;/strong&gt;&lt;/a&gt;: &lt;a href=&#34;https://twitter.com/JennyBryan&#34;&gt;Dr. Jenny Bryan&lt;/a&gt; at RStudio has an entire introductory course in R, visualization, and data analysis online.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www2.stat.duke.edu/courses/Fall17/sta112.01/&#34;&gt;&lt;strong&gt;STA 112FS: Data Science&lt;/strong&gt;&lt;/a&gt;: &lt;a href=&#34;https://twitter.com/minebocek&#34;&gt;Dr. Mine Çetinkaya-Rundel&lt;/a&gt; at the University of Edinburgh / Duke University has an entire introductory course in R, visualization, and data science online.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cslu.ohsu.edu/~bedricks/courses/cs631/&#34;&gt;&lt;strong&gt;CSE 631: Principles &amp;amp; Practice of Data Visualization&lt;/strong&gt;&lt;/a&gt;: Yet another introductory course for R and ggplot2 by &lt;a href=&#34;https://twitter.com/apreshill&#34;&gt;Dr. Alison Presmanes Hill&lt;/a&gt; at RStudio.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-in-the-wild&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;R in the wild&lt;/h2&gt;
+&lt;p&gt;A popular (and increasingly standard) way for sharing your analyses and visualizations is to post an annotated explanation of your process somewhere online. RStudio allows you to publish knitted HTML files directly to &lt;a href=&#34;http://rpubs.com/&#34;&gt;RPubs&lt;/a&gt;, but you can also post your output to a blog or other type of website.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; Reading these kinds of posts is one of the best ways to learn R, since they walk you through each step of the process &lt;em&gt;and&lt;/em&gt; show the code and output.&lt;/p&gt;
+&lt;p&gt;Here are some of the best examples I’ve come across:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://varianceexplained.org/r/trump-tweets/&#34;&gt;Text analysis of Trump’s tweets confirms he writes only the (angrier) Android half&lt;/a&gt; (with a &lt;a href=&#34;http://varianceexplained.org/r/trump-followup/&#34;&gt;follow-up&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rudeboybert.github.io/fivethirtyeight/articles/bob_ross.html&#34;&gt;Bob Ross - Joy of Painting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rudeboybert.github.io/fivethirtyeight/articles/bechdel.html&#34;&gt;Bechdel analysis using the tidyverse&lt;/a&gt;: There are also a bunch of other examples &lt;a href=&#34;https://rudeboybert.github.io/fivethirtyeight/articles/&#34;&gt;using data from FiveThirtyEight&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://rpubs.com/Jwhitman/Final_Project&#34;&gt;Sexism on the Silver Screen: Exploring film’s gender divide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://soc301s2017.netlify.com/group_projects/group5&#34;&gt;Comparison of Quentin Tarantino Movies by Box Office and the Bechdel Test&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://juliasilge.com/blog/who-came-to-vote/&#34;&gt;Who came to vote in Utah’s caucuses?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://juliasilge.com/blog/health-care-indicators/&#34;&gt;Health care indicators in Utah counties&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://juliasilge.com/blog/song-lyrics-across/&#34;&gt;Song lyrics across the United States&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.karawoo.com/2016/09/22/A-decade-ish-of-listening-to-Sigur-Ros&#34;&gt;A decade (ish) of listening to Sigur Rós&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://rpubs.com/ry_lisa_elana/chicago&#34;&gt;When is Tom peeping these days?&lt;/a&gt;: There are a also bunch of final projects from other R and data visualization classes &lt;a href=&#34;http://soc301s2017.netlify.com/group-projects/&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://rudeboybert.github.io/MATH116/PS/final_project/final_project_outline.html#past_examples&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rud.is/b/2017/09/18/mapping-fall-foliage-with-sf/&#34;&gt;Mapping Fall Foliage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rud.is/b/2017/07/25/r%E2%81%B6-general-attys-distributions/&#34;&gt;General (Attys) Distributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rud.is/b/2017/06/18/r%E2%81%B6-disproving-approval/&#34;&gt;Disproving Approval&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;If you want to be really fancy, you can use &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown&lt;/a&gt;, which makes a complete website with R Markdown files. That’s actually how this site is built (&lt;a href=&#34;https://github.com/andrewheiss/datavizm20.classes.andrewheiss.com&#34;&gt;see the source code&lt;/a&gt;). You can build your own site &lt;a href=&#34;https://apreshill.rbind.io/post/up-and-running-with-blogdown/&#34;&gt;with this tutorial&lt;/a&gt;.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R style suggestions</title>
+      <link>https://dsba6010-spring2022.netlify.app/resource/style/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://dsba6010-spring2022.netlify.app/resource/style/</guid>
+      <description>
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;r-style-conventions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;R style conventions&lt;/h2&gt;
+&lt;p&gt;R is fairly forgiving about how you type code (unlike other languages like Python, where miscounting spaces can ruin your code!). All of these things will do exactly the same thing:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;% 
+  filter(cty &amp;gt; 10, class == &amp;quot;compact&amp;quot;)
+
+mpg %&amp;gt;% filter(cty &amp;gt; 10, class == &amp;quot;compact&amp;quot;)
+
+mpg %&amp;gt;% 
+  filter(cty &amp;gt; 10, 
+         class == &amp;quot;compact&amp;quot;)
+
+mpg %&amp;gt;% filter(cty&amp;gt;10, class==&amp;quot;compact&amp;quot;)
+
+filter(mpg,cty&amp;gt;10,class==&amp;quot;compact&amp;quot;)
+
+mpg %&amp;gt;% 
+filter(cty &amp;gt; 10, 
+                        class == &amp;quot;compact&amp;quot;)
+
+filter ( mpg,cty&amp;gt;10,     class==&amp;quot;compact&amp;quot; )&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But you’ll notice that only a few of those iterations (the first three) are easily readable.&lt;/p&gt;
+&lt;p&gt;To help improve readability and make it easier to share code with others, there’s &lt;a href=&#34;https://style.tidyverse.org/index.html&#34;&gt;an unofficial style guide for writing R code&lt;/a&gt;. It’s fairly short and just has lots of examples of good and bad ways of writing code (naming variables, dealing with long lines, using proper indentation levels, etc.)—you should glance through it some time.&lt;/p&gt;
+&lt;p&gt;RStudio has a built-in way of cleaning up your code. Select some code, press &lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;i&lt;/kbd&gt; (on Windows) or &lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;i&lt;/kbd&gt; (on macOS), and R will reformat the code for you. It’s not always perfect, but it’s really helpful for getting indentation right without having to manually hit &lt;kbd&gt;space&lt;/kbd&gt; a billion times.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;main-style-things-to-pay-attention-to-for-this-class&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Main style things to pay attention to for this class&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Important note&lt;/em&gt;: I won’t ever grade you on any of this! If you submit something like &lt;code&gt;filter(mpg,cty&amp;gt;10,class==&#34;compact&#34;)&lt;/code&gt;, I might recommend adding spaces, but it won’t affect your grade or points or anything.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div id=&#34;spacing&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Spacing&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;See the &lt;a href=&#34;https://style.tidyverse.org/syntax.html#spacing&#34;&gt;“Spacing” section&lt;/a&gt; in the tidyverse style guide.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Put spaces after commas (like in regular English):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Good
+filter(mpg, cty &amp;gt; 10)
+
+# Bad
+filter(mpg , cty &amp;gt; 10)
+filter(mpg ,cty &amp;gt; 10)
+filter(mpg,cty &amp;gt; 10)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Put spaces around operators like &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;-&lt;/code&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt;, &lt;code&gt;=&lt;/code&gt;, etc.:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Good
+filter(mpg, cty &amp;gt; 10)
+
+# Bad
+filter(mpg, cty&amp;gt;10)
+filter(mpg, cty&amp;gt; 10)
+filter(mpg, cty &amp;gt;10)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Don’t put spaces around parentheses that are parts of functions:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Good
+filter(mpg, cty &amp;gt; 10)
+
+# Bad
+filter (mpg, cty &amp;gt; 10)
+filter ( mpg, cty &amp;gt; 10)
+filter( mpg, cty &amp;gt; 10 )&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;long-lines&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Long lines&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;See the &lt;a href=&#34;https://style.tidyverse.org/syntax.html#long-lines&#34;&gt;“Long lines” section&lt;/a&gt; in the tidyverse style guide.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It’s generally good practice to not have really long lines of code. A good suggestion is to keep lines at a maximum of 80 characters. Instead of counting characters by hand (ew), in RStudio go to “Tools” &amp;gt; “Global Options” &amp;gt; “Code” &amp;gt; “Display” and check the box for “Show margin”. You should now see a really thin line indicating 80 characters. Again, you can go beyond this—that’s fine. It’s just good practice to avoid going too far past it.&lt;/p&gt;
+&lt;p&gt;You can add line breaks inside longer lines of code. Line breaks should come after commas, and things like function arguments should align within the function:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Good
+filter(mpg, cty &amp;gt; 10, class == &amp;quot;compact&amp;quot;)
+
+# Good
+filter(mpg, cty &amp;gt; 10, 
+       class == &amp;quot;compact&amp;quot;)
+
+# Good
+filter(mpg,
+       cty &amp;gt; 10,
+       class == &amp;quot;compact&amp;quot;)
+
+# Bad
+filter(mpg, cty &amp;gt; 10, class %in% c(&amp;quot;compact&amp;quot;, &amp;quot;pickup&amp;quot;, &amp;quot;midsize&amp;quot;, &amp;quot;subcompact&amp;quot;, &amp;quot;suv&amp;quot;, &amp;quot;2seater&amp;quot;, &amp;quot;minivan&amp;quot;))
+
+# Good
+filter(mpg, 
+       cty &amp;gt; 10, 
+       class %in% c(&amp;quot;compact&amp;quot;, &amp;quot;pickup&amp;quot;, &amp;quot;midsize&amp;quot;, &amp;quot;subcompact&amp;quot;, 
+                    &amp;quot;suv&amp;quot;, &amp;quot;2seater&amp;quot;, &amp;quot;minivan&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;pipes-and-ggplot-layers&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Pipes (&lt;code&gt;%&amp;gt;%&lt;/code&gt;) and ggplot layers (&lt;code&gt;+&lt;/code&gt;)&lt;/h3&gt;
+&lt;p&gt;Put each layer of a ggplot plot on separate lines, with the &lt;code&gt;+&lt;/code&gt; at the end of the line, indented with two spaces:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Good
+ggplot(mpg, aes(x = cty, y = hwy, color = class)) +
+  geom_point() +
+  geom_smooth() +
+  theme_bw()
+
+# Bad
+ggplot(mpg, aes(x = cty, y = hwy, color = class)) +
+  geom_point() + geom_smooth() +
+  theme_bw()
+
+# Super bad
+ggplot(mpg, aes(x = cty, y = hwy, color = class)) + geom_point() + geom_smooth() + theme_bw()
+
+# Super bad and won&amp;#39;t even work
+ggplot(mpg, aes(x = cty, y = hwy, color = class))
+  + geom_point()
+  + geom_smooth() 
+  + theme_bw()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Put each step in a dplyr pipeline on separate lines, with the &lt;code&gt;%&amp;gt;%&lt;/code&gt; at the end of the line, indented with two spaces:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Good
+mpg %&amp;gt;% 
+  filter(cty &amp;gt; 10) %&amp;gt;% 
+  group_by(class) %&amp;gt;% 
+  summarize(avg_hwy = mean(hwy))
+
+# Bad
+mpg %&amp;gt;% filter(cty &amp;gt; 10) %&amp;gt;% group_by(class) %&amp;gt;% 
+  summarize(avg_hwy = mean(hwy))
+
+# Super bad
+mpg %&amp;gt;% filter(cty &amp;gt; 10) %&amp;gt;% group_by(class) %&amp;gt;% summarize(avg_hwy = mean(hwy))
+
+# Super bad and won&amp;#39;t even work
+mpg %&amp;gt;% 
+  filter(cty &amp;gt; 10)
+  %&amp;gt;% group_by(class)
+  %&amp;gt;% summarize(avg_hwy = mean(hwy))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;comments&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Comments&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;See the &lt;a href=&#34;https://style.tidyverse.org/syntax.html#comments&#34;&gt;“Comments” section&lt;/a&gt; in the tidyverse style guide.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Comments should start with a comment symbol and a single space: &lt;code&gt;#&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Good
+
+#Bad
+
+    #Bad&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If the comment is really short (and won’t cause you to go over 80 characters in the line), you can include it in the same line as the code, separated by at least two spaces (it works with one space, but using a couple can enhance readability):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;% 
+  filter(cty &amp;gt; 10) %&amp;gt;%  # Only rows where cty is 10 +
+  group_by(class) %&amp;gt;%  # Divide into class groups
+  summarize(avg_hwy = mean(hwy))  # Find the average hwy in each group&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can add extra spaces to get inline comments to align, if you want:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;% 
+  filter(cty &amp;gt; 10) %&amp;gt;%            # Only rows where cty is 10 +
+  group_by(class) %&amp;gt;%             # Divide into class groups
+  summarize(avg_hwy = mean(hwy))  # Find the average hwy in each group&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If the comment is really long, you can break it into multiple lines. RStudio can do this for you if you go to “Code” &amp;gt; “Reflow comment”&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Good
+# Happy families are all alike; every unhappy family is unhappy in its own way.
+# Everything was in confusion in the Oblonskys’ house. The wife had discovered
+# that the husband was carrying on an intrigue with a French girl, who had been
+# a governess in their family, and she had announced to her husband that she
+# could not go on living in the same house with him. This position of affairs
+# had now lasted three days, and not only the husband and wife themselves, but
+# all the members of their family and household, were painfully conscious of it.
+
+# Bad
+# Happy families are all alike; every unhappy family is unhappy in its own way. Everything was in confusion in the Oblonskys’ house. The wife had discovered that the husband was carrying on an intrigue with a French girl, who had been a governess in their family, and she had announced to her husband that she could not go on living in the same house with him. This position of affairs had now lasted three days, and not only the husband and wife themselves, but all the members of their family and household, were painfully conscious of it.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Though, if you’re dealing with comments that are &lt;em&gt;that&lt;/em&gt; long, consider putting the text in R Markdown instead and having it be actual prose.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Linear Models</title>
       <link>https://dsba6010-spring2022.netlify.app/content/03-linear-models/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
@@ -259,6 +499,43 @@
         &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
     &lt;/ol&gt;
     &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Unzipping files</title>
+      <link>https://dsba6010-spring2022.netlify.app/resource/unzipping/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dsba6010-spring2022.netlify.app/resource/unzipping/</guid>
+      <description>
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Because RStudio projects typically consist of multiple files (R scripts, datasets, graphical output, etc.) the easiest way to distribute them to you for examples, assignments, and projects is to combine all the different files in to a single compressed collection called a &lt;strong&gt;zip file&lt;/strong&gt;. When you unzip a zipped file, your operating system extracts all the files that are contained inside into a new folder on your computer.&lt;/p&gt;
+&lt;p&gt;Unzipping files on macOS is trivial, but unzipping files on Windows can mess you up if you don’t pay careful attention. Here’s a helpful guide to unzipping files on both macOS and Windows.&lt;/p&gt;
+&lt;div id=&#34;unzipping-files-on-macos&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Unzipping files on macOS&lt;/h2&gt;
+&lt;p&gt;Double click on the downloaded &lt;code&gt;.zip&lt;/code&gt; file. macOS will automatically create a new folder with the same name as the &lt;code&gt;.zip&lt;/code&gt; file, and all the file’s contents will be inside. Double click on the RStudio Project file (&lt;code&gt;.Rproj&lt;/code&gt;) to get started.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/unzipping/unzip-mac.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;unzipping-files-on-windows&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Unzipping files on Windows&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;tl;dr&lt;/strong&gt;: Right click on the &lt;code&gt;.zip&lt;/code&gt; file, select “Extract All…”, and work with the resulting unzipped folder.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Unlike macOS, Windows does &lt;em&gt;not&lt;/em&gt; automatically unzip things for you. If you double click on the &lt;code&gt;.zip&lt;/code&gt; file, Windows will show you what’s inside, but it will do so without actually extracting anything. This &lt;del&gt;can be&lt;/del&gt; is incredibly confusing! Here’s what it looks like—the only clues that this folder is really a &lt;code&gt;.zip&lt;/code&gt; file are that there’s a “Compressed Folder Tools” tab at the top, and there’s a “Ratio” column that shows how much each file is compressed.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/unzipping/inside-zip-windows.png&#34; width=&#34;80%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;It is very tempting to try to open files from this view. However, if you do, things will break and you won’t be able to correctly work with any of the files in the zipped folder. If you open the R Project file, for instance, RStudio will point to a bizarre working directory buried deep in some temporary folder:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/unzipping/temp-wd-windows.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;You most likely won’t be able to open any data files or save anything, which will be frustrating.&lt;/p&gt;
+&lt;p&gt;Instead, you need to right click on the &lt;code&gt;.zip&lt;/code&gt; file and select “Extract All…”:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/unzipping/extract-windows-1.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Then choose where you want to unzip all the files and click on “Extract”&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/unzipping/extract-windows-2.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;You should then finally have a real folder with all the contents of the zipped file. Open the R Project file and RStudio will point to the correct working directory and everything will work.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/unzipping/extract-windows-3.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
@@ -297,6 +574,468 @@
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/05-bayesian-presentations/</guid>
       <description>&lt;p&gt;Individual presentations on Bayesian applications&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bayesian statistics resources</title>
+      <link>https://dsba6010-spring2022.netlify.app/resource/bayes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://dsba6010-spring2022.netlify.app/resource/bayes/</guid>
+      <description>
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;In class session 2 (&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/slides/02-class.html#12&#34;&gt;see this from the FAQ slides&lt;/a&gt;) we talked briefly about the difference between frequentist statistics, where you test for the probability of your data given a null hypothesis, or &lt;span class=&#34;math inline&#34;&gt;\(P(\text{data} \mid H_0)\)&lt;/span&gt;, and Bayesian statistics, where you test for the probability of your hypothesis given your data, or &lt;span class=&#34;math inline&#34;&gt;\(P(H \mid \text{data})\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;This difference is important. In the world of frequentism, which is what pretty much all statistics classes use (including this one!), you have to compare your findings to a hypothetical null world and you have to talk about rejecting null hypotheses. In the Bayes world, though, you get to talk about the probability that your hypothesis is correct rather than the probability of seeing a value in a null world. So much more convenient and easy to interpret!&lt;/p&gt;
+&lt;p&gt;Bayesian statistics, though, requires a lot of computational power and a different way of thinking about statistics and numbers in general. And very few classes teach it. Including this one! I use Bayesian stats all the time in my own research (see &lt;a href=&#34;https://www.andrewheiss.com/research/articles/chaudhry-heiss-ngos-philanthropy/&#34;&gt;this&lt;/a&gt; or &lt;a href=&#34;https://www.andrewheiss.com/research/articles/chaudhry-dotson-heiss-2021/&#34;&gt;this&lt;/a&gt;, for instance), but don’t teach it (yet!) because nobody else really teaches it and frequentist statistics still rule the policy world, so you need to know it.&lt;/p&gt;
+&lt;div id=&#34;resources&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;p&gt;But you can learn it on your own. Because very few stats classes actually teach Bayesian statistics, tons of people who use it are self-taught (like me!), in part because there are a ton of resources online for learning this stuff. Here are some of the best I’ve found:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bayesrulesbook.com/&#34;&gt;This new &lt;em&gt;Bayes Rules&lt;/em&gt; book&lt;/a&gt; is designed to be an introductory textbook for a stats class teaching Bayesian stuff. It’s really accessible and good (and free!). If I ever get to teach an intro stats class with Bayesian stats, I’ll use this.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://thinkinator.com/2016/01/12/r-users-will-now-inevitably-become-bayesians/&#34;&gt;This post from 2016&lt;/a&gt; is a great short introduction and is what made me start using Bayesian methods. &lt;a href=&#34;https://paul-buerkner.github.io/brms/&#34;&gt;The &lt;strong&gt;brms&lt;/strong&gt; package&lt;/a&gt; makes it incredibly easy to do Bayesian stuff, and the syntax is basically the same as &lt;code&gt;lm()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.andrewheiss.com/blog/2019/01/29/diff-means-half-dozen-ways/&#34;&gt;This post shows how to do one simple task&lt;/a&gt; (a difference-in-means test) with regular old frequentist methods, bootstrapping, and with Bayesian stats both with brms and raw Stan code&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tjmahr.com/bayes-theorem-in-three-panels/&#34;&gt;This short post&lt;/a&gt; gives a helpful overview of the intuition behind Bayesianism&lt;/li&gt;
+&lt;li&gt;The super canonical everyone-has-this-book book is &lt;a href=&#34;https://xcelab.net/rm/statistical-rethinking/&#34;&gt;&lt;em&gt;Statistical Rethinking&lt;/em&gt; by Richard McElreath&lt;/a&gt;. At that page he also has an entire set of accompanying lectures on YouTube. He doesn’t use brms or ggplot, but someone has translated all his models to &lt;a href=&#34;https://bookdown.org/ajkurz/Statistical_Rethinking_recoded/&#34;&gt;tidyverse-based brms code here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Theory-That-Would-Not-Die/dp/0300188226&#34;&gt;&lt;em&gt;The Theory That Would Not Die&lt;/em&gt;&lt;/a&gt; is a fun little general introduction to the history of Bayesianism and why it kind of disappeared in the 20th century and was replaced by frequentism and p-values and null hypothesis testing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;super-short-example&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Super short example&lt;/h2&gt;
+&lt;p&gt;In practice, the R code for Bayesian models should be very familiar. For instance, here’s a regular old frequentist OLS model:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(broom)
+
+model_ols &amp;lt;- lm(hwy ~ displ + drv, data = mpg)
+tidy(model_ols, conf.int = TRUE)
+## # A tibble: 4 × 7
+##   term        estimate std.error statistic  p.value conf.low conf.high
+##   &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
+## 1 (Intercept)    30.8      0.924     33.4  4.21e-90    29.0      32.6 
+## 2 displ          -2.91     0.218    -13.4  1.73e-30    -3.34     -2.48
+## 3 drvf            4.79     0.530      9.05 6.40e-17     3.75      5.83
+## 4 drvr            5.26     0.734      7.17 1.03e-11     3.81      6.70&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here’s that same model using the &lt;strong&gt;brms&lt;/strong&gt; package, with default priors. Note how the code is basically the same:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(brms)         # For Bayesian regression with brm()
+library(broom.mixed)  # For tidy() and glance() with brms-based models
+library(tidybayes)    # For extracting posterior draws&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# This will take a few seconds to run
+model_bayes &amp;lt;- brm(hwy ~ displ + drv, data = mpg)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tidy(model_bayes)
+## # A tibble: 5 × 8
+##   effect   component group    term            estimate std.error conf.low conf.high
+##   &amp;lt;chr&amp;gt;    &amp;lt;chr&amp;gt;     &amp;lt;chr&amp;gt;    &amp;lt;chr&amp;gt;              &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
+## 1 fixed    cond      &amp;lt;NA&amp;gt;     (Intercept)        30.8      0.922    29.0      32.6 
+## 2 fixed    disp      &amp;lt;NA&amp;gt;     displ              -2.91     0.219    -3.32     -2.48
+## 3 fixed    cond      &amp;lt;NA&amp;gt;     drvf                4.80     0.525     3.76      5.83
+## 4 fixed    cond      &amp;lt;NA&amp;gt;     drvr                5.25     0.754     3.79      6.75
+## 5 ran_pars cond      Residual sd__Observation     3.10     0.149     2.81      3.41&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In Bayes land, you get a distribution of plausible values given the data (or what is called the “posterior distribution”), and you can visualize this posterior distribution:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Make a long dataset of the draws for these three coefficients
+posterior_draws &amp;lt;- model_bayes %&amp;gt;% 
+  gather_draws(c(b_displ, b_drv, b_drvf, b_drvr))
+
+# Plot this thing
+ggplot(posterior_draws, aes(x = .value, y = fct_rev(.variable), fill = .variable)) +
+  geom_vline(xintercept = 0) +
+  stat_halfeye(.width = c(0.8, 0.95), alpha = 0.8, point_interval = &amp;quot;median_hdi&amp;quot;) +
+  guides(fill = &amp;quot;none&amp;quot;) +
+  labs(x = &amp;quot;Coefficient&amp;quot;, y = &amp;quot;Variable&amp;quot;,
+       caption = &amp;quot;80% and 95% credible intervals shown in black&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/bayes_files/figure-html/plot-bayes-results-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Those are all the plausible values for these coefficients, given the data that we’ve fed the model, and the black bars at the bottom show the 80% and 95% credible intervals (or the range of values that 80/95% of the posterior covers). With this, there’s a 95% chance that the coefficient for displacement is between −3.35 and −2.48. Neat!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;confidence-intervals-vs.-credible-intervals&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Confidence intervals vs. credible intervals&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/content/06-content/&#34;&gt;In session 6&lt;/a&gt;, we talked about frequentist confidence intervals and Bayesian credible (or posterior) intervals, since I had you read &lt;a href=&#34;https://doi.org/10.1257/jep.35.3.157&#34;&gt;Guido Imbens’s essay on &lt;em&gt;p&lt;/em&gt;-values&lt;/a&gt;, where his conclusion is that:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It would be preferable if reporting standards emphasized confidence intervals or standard errors, and, even better, Bayesian posterior intervals.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Imbens wants us to use Bayesian posterior intervals (or credible intervals), but how do we do that?&lt;/p&gt;
+&lt;div id=&#34;frequentist-confidence-intervals&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Frequentist confidence intervals&lt;/h3&gt;
+&lt;p&gt;In frequentist statistics (i.e. all the statistics you’ve been exposed to in this class and all previous classes), your whole goal is to estimate and infer something about a population using a sample. This “something” is a true (but unknown) thing called a &lt;em&gt;population parameter&lt;/em&gt;. It is a single fixed value that exists out in the world, and it’s the main thing you’re interested in discovering. Here are a bunch of different population parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Average treatment effect of a program&lt;/li&gt;
+&lt;li&gt;Proportion of left-handed students at GSU&lt;/li&gt;
+&lt;li&gt;Median rent of apartments in NYC&lt;/li&gt;
+&lt;li&gt;Proportion of red M&amp;amp;Ms produced in a factory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In frequentist statistics, we take a sample from the population, calculate the parameter (i.e. mean, median, proportion, whatever) in the sample, and then check to see how good of a guess it might be for the whole population. To do that, we can look at a confidence interval. Think of a confidence interval as a net—it’s a range of possible values for the population parameters, and we can be X% confident (typically 95%) that the net is picking up the population parameter. Another way to think about it is to imagine taking more samples. If you take 100 samples, at least 95 of them would have the true population parameter in their 95% confidence intervals. Frequentist statistics assumes that the unknown population parameter is fixed and singular, but that the data can vary—you can repeat an experiment over and over again, or take repeated samples from a population in order to be more certain about the estimate of the parameter (and shrink the net of the confidence interval).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Importantly&lt;/strong&gt;, when talking about confidence intervals, you cannot really say anything about the estimate of the parameter itself. Confidence intervals are all about the net, or the range itself. You can legally say this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We are 95% confident that this confidence interval captures the true population parameter.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You &lt;strong&gt;cannot&lt;/strong&gt; say this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There’s a 95% chance that the population parameter is X. &lt;em&gt;or&lt;/em&gt; There’s a 95% chance that the true value falls in this range.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Confidence intervals tell you about the range, or the net. That’s all.&lt;/p&gt;
+&lt;p&gt;Here’s an example with some data from &lt;em&gt;The Effect&lt;/em&gt; on restaurant inspections in Alaska. We want to know if weekend inspections are more lenient that ones conducted during the work week.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(broom)
+library(gghalves)
+
+inspections &amp;lt;- read_csv(&amp;quot;https://vincentarelbundock.github.io/Rdatasets/csv/causaldata/restaurant_inspections.csv&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;First we should look at the data to see if there are any obvious patterns. Let’s look at scores separated by weekend status. We’ll use &lt;a href=&#34;https://erocoar.github.io/gghalves/&#34;&gt;the neat &lt;strong&gt;gghalves&lt;/strong&gt; package&lt;/a&gt; to plot both the raw points and a density plot. The orange points show the average value:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(inspections, aes(x = Weekend, y = inspection_score)) +
+  geom_half_point(side = &amp;quot;l&amp;quot;, alpha = 0.2, size = 0.5,
+                  transformation = position_jitter(height = 0)) +
+  geom_half_violin(side = &amp;quot;r&amp;quot;) +
+  stat_summary(fun.data = &amp;quot;mean_se&amp;quot;, fun.args = list(mult = 1.96), color = &amp;quot;orange&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/bayes_files/figure-html/inspections-raw-distribution-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;It looks like weekend inspections are far more rare than weekday ones, and no weekend inspections every give scores lower than 80. It also looks like the average weekend score is slightly higher than the average weekday score. Let’s figure out how much of a difference there is.&lt;/p&gt;
+&lt;p&gt;But first, we’ll use the language of inference and sampling. Our population parameter (we’ll call it the Greek letter theta, or &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;) is some single true fixed number that exists out in the world—weekend restaurant inspections in Alaska have a &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; higher average score than weekday inspections. We want to find out what that &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is, so we’ll look at some confidence intervals.&lt;/p&gt;
+&lt;p&gt;We can look at a basic difference in means based on weekend status:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;model_naive &amp;lt;- lm(inspection_score ~ Weekend, 
+                  data = inspections)
+tidy(model_naive, conf.int = TRUE)
+## # A tibble: 2 × 7
+##   term        estimate std.error statistic    p.value conf.low conf.high
+##   &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;      &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
+## 1 (Intercept)    93.6     0.0381   2458.   0             93.6      93.7 
+## 2 WeekendTRUE     2.10    0.433       4.84 0.00000131     1.25      2.95&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here, weekend scores are 2.1 points higher than weekday scores, on average (that’s our estimate, or &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt;. We have a confidence interval of 1.2–2.9. We &lt;em&gt;cannot&lt;/em&gt; say that we’re 95% confident that the weekend score boost (or &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;) is between 1.2 and 2.9. What we &lt;em&gt;can&lt;/em&gt; say is that we’re 95% confident that the range 1.2–2.9 captures the true population parameter &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;. If we took a bunch of different samples of inspection scores and calculated the average weekend vs. weekday score in each of those samples, 95% of those confidence intervals should capture the true &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;. Importantly, we still have no idea what the actual &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is, but we’re pretty sure that our confidence interval net has captured it.&lt;/p&gt;
+&lt;p&gt;This estimate is probably wrong, since there are other factors that confound the weekend → score relationship. Maybe the health department only conducts weekend inspections in places with lots of branches, or maybe they did more weekend inspections in certain years. We can adjust/control for these in the model:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;model_adjusted &amp;lt;- lm(inspection_score ~ Weekend + NumberofLocations + Year, 
+                     data = inspections)
+tidy(model_adjusted, conf.int = TRUE)
+## # A tibble: 4 × 7
+##   term              estimate std.error statistic  p.value conf.low conf.high
+##   &amp;lt;chr&amp;gt;                &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
+## 1 (Intercept)       225.     12.4          18.1  7.88e-73 200.      249.    
+## 2 WeekendTRUE         1.43    0.419         3.42 6.25e- 4   0.611     2.25  
+## 3 NumberofLocations  -0.0191  0.000436    -43.9  0         -0.0200   -0.0183
+## 4 Year               -0.0646  0.00617     -10.5  1.45e-25  -0.0767   -0.0525&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Our weekend estimate shrunk a little and is now 1.43, with a confidence interval of 0.6–2.3. Again, think of this as a net—we’re 95% sure that the true &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is in that net somewhere. &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; could be 0.7, it could be 1.4, it could be 2.2—who knows. All we know is that our net most likely picked it up.&lt;/p&gt;
+&lt;p&gt;For fun, let’s plot both these weekend estimates and their confidence intervals:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Save just the weekend coefficient from both models
+freq_results_naive &amp;lt;- tidy(model_naive, conf.int = TRUE) %&amp;gt;% 
+  mutate(model = &amp;quot;Naive model&amp;quot;) %&amp;gt;% 
+  filter(term == &amp;quot;WeekendTRUE&amp;quot;)
+
+freq_results_full &amp;lt;- tidy(model_adjusted, conf.int = TRUE) %&amp;gt;% 
+  mutate(model = &amp;quot;Full model&amp;quot;) %&amp;gt;% 
+  filter(term == &amp;quot;WeekendTRUE&amp;quot;)
+
+# Put these coefficients in a single dataset and plot them
+freq_results &amp;lt;- bind_rows(freq_results_naive, freq_results_full) %&amp;gt;% 
+  # Make sure the model name follows the order it appears in the data instead of
+  # alphabetical order
+  mutate(model = fct_inorder(model))
+
+ggplot(freq_results, aes(x = estimate, y = model, color = model)) +
+  geom_pointrange(aes(xmin = conf.low, xmax = conf.high)) +
+  guides(color = &amp;quot;none&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/bayes_files/figure-html/plot-freq-results-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;bayesian-credible-intervals&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Bayesian credible intervals&lt;/h3&gt;
+&lt;p&gt;Remember, with frequentist statistics, &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is fixed and singular and we’re hoping to pick it up with our confidence interval nets. The data we collect is variable—we can hypothetically take more and more samples and calculate a bunch of confidence intervals and become more certain about where &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; might be. We can only interpret confidence intervals as ranges: “There’s a 95% probability that the range contains the true value &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;”. We can’t say anything about the estimate of &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; itself. We’ve calculated the probability of the range, not the probability of the actual value.&lt;/p&gt;
+&lt;p&gt;Bayesian analysis, however, &lt;em&gt;does&lt;/em&gt; let us talk about the probability of the actual value. Under Bayesianism, the &lt;em&gt;data&lt;/em&gt; you’re working with is fixed (i.e. you collected it once and it’s all you have—you can’t go out and collect infinite additional samples), and the population parameter &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; varies and has uncertainty about it (i.e. instead of imagining some single number uncapturable that’s the average difference in weekend vs. weekday scores, &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; has some range around it).&lt;/p&gt;
+&lt;p&gt;This difference is apparent in the formulas for testing hypotheses under each of these approaches:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\underbrace{P(\text{Data} \mid \theta)}_{\substack{\textbf{Frequentism} \\ \text{Probability of seeing the} \\ \text{data given that } \theta \text{ exists}}} \qquad \underbrace{P(\theta \mid \text{Data})}_{\substack{\textbf{Bayesianism} \\ \text{Probability of } \theta \\ \text{given the current data}}}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Bayes’ theorem has a nice formula (&lt;a href=&#34;https://www.youtube.com/watch?v=HZGCoVF3YvM&#34;&gt;with neat intuition, like in this video&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\underbrace{P(\theta \mid \text{Data})}_{\text{Posterior}} = \frac{\overbrace{P(\theta)}^{\text{Prior}} \times \overbrace{P(\text{Data} \mid \theta)}^{\text{Likelihood}}}{P(\text{Data})}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Put (hopefully!) simply, combine the observed likelihood of the data &lt;span class=&#34;math inline&#34;&gt;\(P(\text{Data} \mid \theta)\)&lt;/span&gt; (that’s basically frequentism!) with prior knowledge about the distribution of &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; and you’ll get a posterior estimate of &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Actually calculating this with real data, though, can be tricky and computationally intensive—often there’s no formal mathematical way to figure out the actual equation. So instead, we can use computers to simulate thousands of guesses and then look at the distribution of those guesses (just like we did with &lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/zilch/#probability-with-computers-only&#34;&gt;the Zilch simulation in class&lt;/a&gt;). One modern method for doing this is called Monte Carlo Markov Chain (MCMC) simulation, which is what most R-based tools for Bayesian stats use nowadays.&lt;/p&gt;
+&lt;p&gt;Let’s look at restaurant inspection scores on the weekend Bayesianly. Here, we’re still interested in our population parameter &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;, or the average weekend score boost. Only now, we’re not assuming that &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is some single fixed value out in the world that we’re trying to capture with confidence intervals—we’ll use the data that we have to estimate the variation in &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;. The easiest way to do Bayesian analysis with R is with &lt;a href=&#34;https://paul-buerkner.github.io/brms/&#34;&gt;the &lt;strong&gt;brms&lt;/strong&gt; package&lt;/a&gt;, which uses the familiar formula syntax you’ve been using with &lt;code&gt;lm()&lt;/code&gt;. The syntax is super similar, just with a few additional arguments:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MCMC things&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Arguments like &lt;code&gt;chains&lt;/code&gt;, &lt;code&gt;iter&lt;/code&gt;, and &lt;code&gt;cores&lt;/code&gt; deal with the simulation. &lt;code&gt;chains&lt;/code&gt; defines how many parallel simulations should happen, &lt;code&gt;iter&lt;/code&gt; controls how many iterations should happen with in each chain, and &lt;code&gt;cores&lt;/code&gt; spreads those chains across the CPUs in your computer (i.e. if you have a 4-core computer, you can run 4 chains all at the same time; run &lt;code&gt;parallel::detectCores()&lt;/code&gt; in your R console to see how many CPU cores you have). &lt;code&gt;seed&lt;/code&gt; makes it so that the random simulation results are reproducible (&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/example/random-numbers/#seeds&#34;&gt;see here for more on seeds&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Priors&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;These define your prior beliefs about the parameters (i.e. &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;) in the model. If you think that the restaurant weekend inspection boost is probably positive, but could possibly be negative, or maybe zero, you can feed that belief into the model. For instance, if you’re fairly confident (based on experiences in other states maybe) that weekend scores really are higher, you can provide an &lt;em&gt;informative&lt;/em&gt; prior that says that &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is most likely 1.5 points ± a little variation, following a normal distribution. Or, if you have no idea what it could be—maybe it’s super high like 10, maybe it’s negative like −5, or maybe it’s 0 and there’s no weekend boost—you can provide a &lt;em&gt;vague&lt;/em&gt; prior that says that &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is 0 points ± a ton of variation.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(patchwork)  # For combining ggplot plots
+
+plot_informative &amp;lt;- ggplot() +
+  stat_function(fun = dnorm, args = list(mean = 1.5, sd = 0.5),
+                geom = &amp;quot;area&amp;quot;, fill = &amp;quot;grey80&amp;quot;, color = &amp;quot;black&amp;quot;) +
+  xlim(-1, 4) +
+  labs(title = &amp;quot;Informative prior&amp;quot;, subtitle = &amp;quot;Normal(mean = 1.5, sd = 0.5)&amp;quot;,
+       caption = &amp;quot;We&amp;#39;re pretty sure θ is around 1.5&amp;quot;)
+
+plot_vague &amp;lt;- ggplot() +
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 10),
+                geom = &amp;quot;area&amp;quot;, fill = &amp;quot;grey80&amp;quot;, color = &amp;quot;black&amp;quot;) +
+  xlim(-35, 35) +
+  labs(title = &amp;quot;Vague prior&amp;quot;, subtitle = &amp;quot;Normal(mean = 0, sd = 10)&amp;quot;,
+       caption = &amp;quot;Surely θ is in there *somewhere*&amp;quot;)
+
+plot_informative | plot_vague&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/bayes_files/figure-html/priors-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;For the sake of this example, we’ll use a vague prior.&lt;/p&gt;
+&lt;p&gt;Here’s how to officially do Bayesian analysis with &lt;strong&gt;brms&lt;/strong&gt; and incorporate prior information about &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;. Again, the syntax is super similar to &lt;code&gt;lm()&lt;/code&gt;, just with some extra bits about the prior and the MCMC settings:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(brms)         # For Bayesian regression with brm()
+library(broom.mixed)  # For tidy() and glance() with brms-based models
+library(tidybayes)    # For extracting posterior draws
+library(ggdist)       # For making pretty posterior plots&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# bf() stands for &amp;quot;bayes formula&amp;quot;; you technically don&amp;#39;t need to use it, but it 
+# makes life easier for more complex models, so it&amp;#39;s good practice even when 
+# using a simple formula like the one here
+#
+# This will take a little bit of time to run. Here&amp;#39;s what it&amp;#39;s actually doing:
+#
+# 1. Translate this R code to Stan (a specific language for doing Bayesian stuff with MCMC)
+# 2. Compile the Stan code to faster-running C++ code
+# 3. Actually do the MCMC sampling
+
+# Set the prior for the weekend coefficient
+# Use get_priors() to see all the other default priors
+priors &amp;lt;- c(
+  prior(normal(0, 10), class = &amp;quot;b&amp;quot;, coef = &amp;quot;WeekendTRUE&amp;quot;)
+)
+
+# Run the model!
+model_bayes &amp;lt;- brm(bf(inspection_score ~ Weekend + NumberofLocations + Year),
+                   data = inspections,
+                   prior = priors,
+                   chains = 4, iter = 2000, cores = 4, seed = 1234)
+## Compiling Stan program...
+## Start sampling&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Phew. That took a while to run, but it ran! Now we can check the results:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tidy(model_bayes, conf.int = TRUE)
+## # A tibble: 5 × 8
+##   effect   component group    term              estimate std.error conf.low conf.high
+##   &amp;lt;chr&amp;gt;    &amp;lt;chr&amp;gt;     &amp;lt;chr&amp;gt;    &amp;lt;chr&amp;gt;                &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
+## 1 fixed    cond      &amp;lt;NA&amp;gt;     (Intercept)       224.     12.5      200.      249.    
+## 2 fixed    cond      &amp;lt;NA&amp;gt;     WeekendTRUE         1.44    0.420      0.613     2.25  
+## 3 fixed    cond      &amp;lt;NA&amp;gt;     NumberofLocations  -0.0191  0.000428  -0.0200   -0.0183
+## 4 fixed    cond      &amp;lt;NA&amp;gt;     Year               -0.0644  0.00624   -0.0765   -0.0522
+## 5 ran_pars cond      Residual sd__Observation     6.04    0.0252     5.99      6.09&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Our estimate for the weekend boost, or &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt;, is 1.44, which is basically the same as the frequentist estimate we found before. We have an interval too, but it’s not a confidence interval—it’s a credible interval. Instead of telling us about the range of the confidence interval net, this credible interval tells us the probability that &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt; falls in that range. It’s essentially the probability of the actual value, not the probability of the range. Based on this, there’s a 95% chance that—given the data we have—the weekend score boost (&lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt;) is between 0.61 and 2.25.&lt;/p&gt;
+&lt;p&gt;We can visualize this posterior distribution to see more information than we could with our frequentist estimate. Remember, our simulation estimated thousands of possible coefficients for &lt;code&gt;WeekendTRUE&lt;/code&gt;, and each of them are equally likely. The value that we see in &lt;code&gt;tidy()&lt;/code&gt; is the median of all these simulated coefficients, or draws. We can see a few of them here:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;model_bayes %&amp;gt;%
+  spread_draws(b_WeekendTRUE) %&amp;gt;%
+  head(10)
+## # A tibble: 10 × 4
+##    .chain .iteration .draw b_WeekendTRUE
+##     &amp;lt;int&amp;gt;      &amp;lt;int&amp;gt; &amp;lt;int&amp;gt;         &amp;lt;dbl&amp;gt;
+##  1      1          1     1         0.923
+##  2      1          2     2         1.30 
+##  3      1          3     3         1.11 
+##  4      1          4     4         0.917
+##  5      1          5     5         1.54 
+##  6      1          6     6         1.33 
+##  7      1          7     7         1.21 
+##  8      1          8     8         1.39 
+##  9      1          9     9         1.79 
+## 10      1         10    10         1.09&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Sometimes the weekend boost is 1.2, sometimes 1.7, sometimes 1.3, etc. There’s a lot of variation in there. We can plot all these simulated coefficients to see where they mostly cluster:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;weekend_draws &amp;lt;- model_bayes %&amp;gt;%
+  spread_draws(b_WeekendTRUE)
+
+ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
+  stat_halfeye() +
+  labs(caption = &amp;quot;Point shows median value;\nthick black bar shows 66% credible interval;\nthin black bar shows 95% credible interval&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/bayes_files/figure-html/weekend-posterior-halfeye-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The weekend point boost &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt; is mostly clustered around 1–2, and 95% of those draws are between 0.61 and 2.25. We’re thus 95% sure that the actual weekend point boost is between 0.61 and 2.25 with a median of 1.44.&lt;/p&gt;
+&lt;p&gt;We can also look at this distribution a slightly different way by collapsing all those posterior draws into 100 possible values. Each of these dots is equally likely, and the true value of &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; could be any of them, but again, most are clustered around 1.44:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
+  stat_dotsinterval(quantiles = 100) +
+  labs(caption = &amp;quot;Point shows median value;\nthick black bar shows 66% credible interval;\nthin black bar shows 95% credible interval&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/bayes_files/figure-html/weekend-posterior-dots-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;general-summary-of-intervals&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;General summary of intervals&lt;/h2&gt;
+&lt;p&gt;So, we’ve seen two different philosophies for quantifying uncertainty with confidence intervals and credible intervals. Here’s a general overview of the two approaches and how you can interpret them:&lt;/p&gt;
+&lt;table class=&#34;table&#34; style=&#34;width: auto !important; margin-left: auto; margin-right: auto;&#34;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Frequentism
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Bayesianism
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Approach
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(P(\text{Data} \mid \theta)\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(P(\theta \mid \text{Data})\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is a fixed single value; data is variable and can be repeatedly sampled
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is variable and has uncertainty; data is fixed (you only have one sample)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+How to do it in R
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;lm(…)&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;library(brms)&lt;/code&gt;&lt;br&gt;&lt;code&gt;brm(…)&lt;/code&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Name
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Confidence interval
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Credible interval (or posterior interval)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Intuition
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Probability of the range
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Probability of the actual value
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Interpretation template
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+There’s a 95% probability that this range contains the true value of &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+There’s a 95% probability that the true value of &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; falls in this range.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Few people naturally think like this
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+People &lt;em&gt;do&lt;/em&gt; naturally think like this
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;two-ways-of-making-decisions-with-posterior-distributions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Two ways of making decisions with posterior distributions&lt;/h2&gt;
+&lt;p&gt;In the world of frequentism, we’re interested in whether coefficients are statistically different from 0 in a null world where there’s no effect. We rely on &lt;em&gt;p&lt;/em&gt;-values to see the probability of seeing an estimate at least as large as what we’ve calculated in a hypothetical world where that estimate is actually 0. This is a really non-intuitive way of thinking about the world (imaginary null worlds?!), so everyone always misinterprets &lt;em&gt;p&lt;/em&gt;-values.&lt;/p&gt;
+&lt;p&gt;Remember what you read in &lt;a href=&#34;https://doi.org/10.1257/jep.35.3.157&#34;&gt;Imbens’s article&lt;/a&gt; though—in real life, very few people care about whether a coefficient is significantly different from a hypothetical null. Instead, people want to know how certain you are of the estimate and what it means practically. Is it for sure a positive effect, or could it maybe be zero or maybe be negative? Significance stars can’t tell us much about those questions, but posterior Bayesian intervals can.&lt;/p&gt;
+&lt;div id=&#34;probability-of-direction&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Probability of direction&lt;/h3&gt;
+&lt;p&gt;One question we can answer with Bayesian results is “How certain are we that this estimate is positive (or negative)?” Are we sure the weekend scores are higher on average, or could they sometimes be negative? Are we sure that the average treatment effect of your program decreases poverty, or could it maybe have a positive effect instead?&lt;/p&gt;
+&lt;p&gt;To figure this out, we can calculate something called the &lt;a href=&#34;https://easystats.github.io/bayestestR/articles/probability_of_direction.html&#34;&gt;“probability of direction,”&lt;/a&gt; or the proportion of posterior draws that are above (or below) some arbitrary number. For instance, what’s the probability that the weekend boost is positive (or greater than 0)?&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Find the proportion of posterior draws that are bigger than 0
+weekend_draws %&amp;gt;% 
+  summarize(prop_greater_0 = sum(b_WeekendTRUE &amp;gt; 0) / n())
+## # A tibble: 1 × 1
+##   prop_greater_0
+##            &amp;lt;dbl&amp;gt;
+## 1           1.00&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Whoa. 99.9% of the posterior draws for the weekend boost are greater than 0, meaning that there’s a 99.9% chance that the coefficient is positive, given the data we have.&lt;/p&gt;
+&lt;p&gt;The neat thing about the probability of direction is that we can choose whatever value we want as the threshold. Let’s say the state health director wants to know if weekend scores are higher than weekday scores, but she’s fine with just a little boost (weekends are nice! inspectors are happier!). Pretend that she thinks an average difference of 1 or lower isn’t a big concern, but seeing a difference greater than 1 is a signal that weekend inspectors are maybe being too lenient. We can use 1 as our threshold instead:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Find the proportion of posterior draws that are bigger than 1
+weekend_draws %&amp;gt;% 
+  summarize(prop_greater_0 = sum(b_WeekendTRUE &amp;gt; 1) / n())
+## # A tibble: 1 × 1
+##   prop_greater_0
+##            &amp;lt;dbl&amp;gt;
+## 1          0.855&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Based on this, 84% of the draws are higher than 1, so there’s an 84% chance that the actual &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is greater than 1. Notice how there’s no discussion of significance here—no alpha thresholds, no stars, no null worlds. We just have a probability that &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt; is above 1. We can even visualize it. Everything to the right of that vertical line at 1 is “significant” (but not significant with null worlds and stars).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
+  stat_halfeye(aes(fill_ramp = stat(x &amp;gt; 1)), fill = &amp;quot;red&amp;quot;) +
+  scale_fill_ramp_discrete(from = &amp;quot;darkred&amp;quot;, guide = &amp;quot;none&amp;quot;) +
+  geom_vline(xintercept = 1) +
+  labs(caption = &amp;quot;Point shows median value;\nthick black bar shows 66% credible interval;\nthin black bar shows 95% credible interval&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/bayes_files/figure-html/plot-pd-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Should the state health director be concerned? Probably. There’s an 84% chance that weekend inspection scores are at least 1 point higher than weekday scores, on average, given the data we have.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;region-of-practical-equivalence-rope&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Region of practical equivalence (ROPE)&lt;/h3&gt;
+&lt;p&gt;Looking at the probability of direction is helpful if you are concerned whether an effect is positive or negative (i.e. greater or less than 0), but it’s also a little weird to think about because we’re testing if something is greater or less than some specific single number. In our example of the health director, we pretended that she cared whether the average weekend score was 1 point higher, but that’s arbitrary.&lt;/p&gt;
+&lt;p&gt;Another approach is that we can think of a range of &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; where there’s practically no effect. Think of this as a “dead zone” of sorts. If &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt; is 0, we know there’s no effect. If &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt; is something tiny like 0.2 or -0.3, we probably don’t actually care—that’s a tiny amount and could just be because of measurement error. It’s not anything really actionable. If &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt; is big like 1.3 or -2.4 or whatever, then we have cause to worry, but if the estimate is in the “dead zone” (however we want to define it), then we shouldn’t really care or worry.&lt;/p&gt;
+&lt;p&gt;The official Bayesian term for this “dead zone” is &lt;a href=&#34;https://easystats.github.io/bayestestR/articles/region_of_practical_equivalence.html&#34;&gt;the &lt;em&gt;region of practical equivalence&lt;/em&gt; (ROPE)&lt;/a&gt;. There are lots of ways to determine this dead zone—you can base it on experience with the phenomenon (e.g., if you’re the health director and know a lot about inspection scores, you know what kind of score ranges matter), or you can base it on the data you have (e.g., &lt;code&gt;-0.1 * sd(outcome)&lt;/code&gt; to &lt;code&gt;0.1 * sd(outcome)&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;For this example, let’s pretend that the health director tells you that any effect between −0.5 and 0.5 doesn’t matter—for her, those kind of values would be the same as 0. Now that we have a dead zone or ROPE, we can calculate the proportion of coefficient draws that fall outside of that ROPE:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Find the proportion of posterior draws that are bigger than 0.5 or less than -0.5
+weekend_draws %&amp;gt;% 
+  summarize(prop_outside_rope = 1 - sum(b_WeekendTRUE &amp;gt;= -0.5 &amp;amp; b_WeekendTRUE &amp;lt;= 0.5) / n())
+## # A tibble: 1 × 1
+##   prop_outside_rope
+##               &amp;lt;dbl&amp;gt;
+## 1             0.986&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
+  stat_halfeye(aes(fill_ramp = stat(x &amp;gt;= 0.5 | x &amp;lt;= -0.5)), fill = &amp;quot;red&amp;quot;) +
+  scale_fill_ramp_discrete(from = &amp;quot;darkred&amp;quot;, guide = &amp;quot;none&amp;quot;) +
+  annotate(geom = &amp;quot;rect&amp;quot;, xmin = -0.5, xmax = 0.5, ymin = -Inf, ymax = Inf, fill = &amp;quot;purple&amp;quot;, alpha = 0.3) +
+  annotate(geom = &amp;quot;label&amp;quot;, x = 0, y = 0.75, label = &amp;quot;ROPE\n(dead zone)&amp;quot;) +
+  labs(caption = &amp;quot;Point shows median value;\nthick black bar shows 66% credible interval;\nthin black bar shows 95% credible interval&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/bayes_files/figure-html/plot-rope-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Given this data, 98% of the posterior distribution of the weekend boost is outside of the ROPE, or dead zone, so we can consider this to be “significant” (again, this is a tricky word because it has nothing to do with null worlds and stars!).&lt;/p&gt;
+&lt;p&gt;There are some debates over what you should check with the ROPE. Some people say that you should look at how much of the 95% credible interval is inside the dead zone; other say you should look at how much of the entire distribution is inside the dead zone. We just did the latter, with the whole distribution. If we want to see how much of the area within the credible interval is inside the dead zone, we can change the code a little to filter those observations out:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Extract the 95% confidence interval range
+weekend_cred_int &amp;lt;- weekend_draws %&amp;gt;% 
+  median_hdi()
+weekend_cred_int$.lower
+## [1] 0.66
+
+# Find the proportion of posterior draws that are bigger than 0.5 or less than 
+# -0.5, but only look inside the 95% credible interval
+weekend_draws %&amp;gt;% 
+  # Only look inside the credible interval
+  filter(b_WeekendTRUE &amp;gt;= weekend_cred_int$.lower &amp;amp; b_WeekendTRUE &amp;lt;= weekend_cred_int$.upper) %&amp;gt;% 
+  summarize(prop_outside_rope = 1 - sum(b_WeekendTRUE &amp;gt;= -0.5 &amp;amp; b_WeekendTRUE &amp;lt;= 0.5) / n())
+## # A tibble: 1 × 1
+##   prop_outside_rope
+##               &amp;lt;dbl&amp;gt;
+## 1                 1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If we look only at the 95% credible interval of the posterior, there’s a 0% chance that any of those estimated coefficients are in the dead zone / ROPE. There’s a 100% chance that the credible interval doesn’t touch the ROPE. You can see this visually too—look at the figure above with the purple ROPE. The thin black bar that shows the 95% credible interval doesn’t show up in the purple area.&lt;/p&gt;
+&lt;p&gt;Which approach is better—using full distribution or just using the credible interval? Who knows. That’s up to you.&lt;/p&gt;
+&lt;p&gt;Finally, here we decided on the ROPE kind of arbitrarily as −0.5 to 0.5, but there are more systematic ways of doing it. &lt;a href=&#34;https://easystats.github.io/bayestestR/articles/region_of_practical_equivalence.html#how-to-define-the-rope-range-&#34;&gt;One common and standard suggestion&lt;/a&gt; is to use −0.1 and 0.1 times the standard deviation of the outcome variable:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;c(-0.1, 0.1) * sd(inspections$inspection_score)
+## [1] -0.63  0.63&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Based on this approach, our ROPE/dead zone should be −0.63 to 0.63. Let’s see how that looks:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Find the proportion of posterior draws that are bigger than 0.5 or less than 
+# -0.5, but only look inside the 95% credible interval
+weekend_draws %&amp;gt;% 
+  # Only look inside the credible interval
+  filter(b_WeekendTRUE &amp;gt;= weekend_cred_int$.lower &amp;amp; b_WeekendTRUE &amp;lt;= weekend_cred_int$.upper) %&amp;gt;% 
+  summarize(prop_outside_rope = 1 - sum(b_WeekendTRUE &amp;gt;= -0.63 &amp;amp; b_WeekendTRUE &amp;lt;= 0.63) / n())
+## # A tibble: 1 × 1
+##   prop_outside_rope
+##               &amp;lt;dbl&amp;gt;
+## 1                 1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
+  stat_halfeye(aes(fill_ramp = stat(x &amp;gt;= 0.63 | x &amp;lt;= -0.63)), fill = &amp;quot;red&amp;quot;) +
+  scale_fill_ramp_discrete(from = &amp;quot;darkred&amp;quot;, guide = &amp;quot;none&amp;quot;) +
+  annotate(geom = &amp;quot;rect&amp;quot;, xmin = -0.63, xmax = 0.63, ymin = -Inf, ymax = Inf, fill = &amp;quot;purple&amp;quot;, alpha = 0.3) +
+  annotate(geom = &amp;quot;label&amp;quot;, x = 0, y = 0.75, label = &amp;quot;ROPE\n(dead zone)&amp;quot;) +
+  labs(caption = &amp;quot;Point shows median value;\nthick black bar shows 66% credible interval;\nthin black bar shows 95% credible interval&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/bayes_files/figure-html/plot-rope-sd-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This changes our results just a tiny bit. 97% of the full posterior distribution and 99.7% of the credible interval falls outside this ROPE. Neat. We can thus safely say that the weekend effect, or our estimate of &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is definitely practical and substantial (or “significant” if we want to play with that language).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -463,7 +1202,7 @@
     </item>
     
     <item>
-      <title>Maximium entropy &amp; GLMs</title>
+      <title>God Spiked the Integers</title>
       <link>https://dsba6010-spring2022.netlify.app/content/12-spiked-integers/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/12-spiked-integers/</guid>
@@ -536,7 +1275,7 @@ down &amp;lt;- pancakes[2,]
 num_11_10 &amp;lt;- sum( up==1 )
 num_11 &amp;lt;- sum( up==1 &amp;amp; down==1 )
 print(num_11/num_11_10)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 0.6583751&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.6618241&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;measurement-error&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;15.2 Measurement Error&lt;/h2&gt;
@@ -576,6 +1315,978 @@ m15.1 &amp;lt;- ulam(
 ## R code 15.4
 precis( m15.1 , depth=2 )&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#plot(m15.1)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using Markdown</title>
+      <link>https://dsba6010-spring2022.netlify.app/resource/markdown/</link>
+      <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://dsba6010-spring2022.netlify.app/resource/markdown/</guid>
+      <description>
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; is a special kind of markup language that lets you format text with simple syntax. You can then use a converter program like &lt;a href=&#34;https://pandoc.org/&#34;&gt;pandoc&lt;/a&gt; to convert Markdown into whatever format you want: HTML, PDF, Word, PowerPoint, etc. (&lt;a href=&#34;https://pandoc.org/MANUAL.html#option--to&#34;&gt;see the full list of output types here&lt;/a&gt;)&lt;/p&gt;
+&lt;textarea rows=&#34;1&#34; class=&#34;invisible-text&#34;&gt;Delete this text and start playing with Markdown here!&lt;/textarea&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/js/stackedit.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/js/markdown-config.js&#34;&gt;&lt;/script&gt;
+&lt;div id=&#34;basic-markdown-formatting&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Basic Markdown formatting&lt;/h2&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;40%&#34; /&gt;
+&lt;col width=&#34;21%&#34; /&gt;
+&lt;col width=&#34;38%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;
+Type…
+&lt;/th&gt;
+&lt;th&gt;
+…or…
+&lt;/th&gt;
+&lt;th&gt;
+…to get
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;
+&lt;pre&gt;Some text in a paragraph.&lt;br&gt;
+More text in the next paragraph. Always
+use empty lines between paragraphs.&lt;/pre&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;
+Some text in a paragraph.
+&lt;/p&gt;
+&lt;p&gt;
+More text in the next paragraph. Always
+use empty lines between paragraphs.
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;
+&lt;code&gt;&lt;em&gt;Italic&lt;/em&gt;&lt;/code&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;code&gt;&lt;em&gt;Italic&lt;/em&gt;&lt;/code&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;em&gt;Italic&lt;/em&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;
+&lt;code&gt;&lt;strong&gt;Bold&lt;/strong&gt;&lt;/code&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;code&gt;&lt;strong&gt;Bold&lt;/strong&gt;&lt;/code&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;strong&gt;Bold&lt;/strong&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;
+&lt;code&gt;# Heading 1&lt;/code&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;h1 class=&#34;smaller-h1&#34;&gt;
+Heading 1
+&lt;/h1&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;
+&lt;code&gt;## Heading 2&lt;/code&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;h2 class=&#34;smaller-h2&#34;&gt;
+Heading 2
+&lt;/h2&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;
+&lt;code&gt;### Heading 3&lt;/code&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;h3 class=&#34;smaller-h3&#34;&gt;
+Heading 3
+&lt;/h3&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;
+(Go up to heading level 6 with &lt;code&gt;######&lt;/code&gt;)
+&lt;/td&gt;
+&lt;td&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;
+&lt;code&gt;&lt;a href=&#34;http://www.example.com&#34;&gt;Link text&lt;/a&gt;&lt;/code&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href=&#34;http://www.example.com&#34;&gt;Link text&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;
+&lt;code&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/path/to/image.png&#34; alt=&#34;Image caption&#34; /&gt;&lt;/code&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/mstile-144x144.png&#34; title=&#34;fig:&#34; alt=&#34;Class logo&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;
+&lt;code&gt;&amp;lt;code&amp;gt;Inline code&lt;/code&gt; with backticks&lt;/code&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;code&gt;Inline code&lt;/code&gt; with backticks
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;
+&lt;code&gt;&amp;gt; Blockquote&lt;/code&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Blockquote
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;
+&lt;pre&gt;- Things in
+- an unordered
+- list&lt;/pre&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;pre&gt;* Things in
+* an unordered
+* list&lt;/pre&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;ul&gt;
+&lt;li&gt;
+Things in
+&lt;/li&gt;
+&lt;li&gt;
+an unordered
+&lt;/li&gt;
+&lt;li&gt;
+list
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;
+&lt;pre&gt;1. Things in
+2. an ordered
+3. list&lt;/pre&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;pre&gt;1) Things in
+2) an ordered
+3) list&lt;/pre&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;
+Things in
+&lt;/li&gt;
+&lt;li&gt;
+an ordered
+&lt;/li&gt;
+&lt;li&gt;
+list
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;
+&lt;pre&gt;Horizontal line
+
+---&lt;/pre&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;pre&gt;Horizontal line
+
+***&lt;/pre&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;
+Horizontal line
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;math&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Math&lt;/h2&gt;
+&lt;div id=&#34;basic-math-commands&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Basic math commands&lt;/h3&gt;
+&lt;p&gt;Markdown uses LaTeX to create fancy mathematical equations. There are like a billion little options and features available for math equations—you can find &lt;a href=&#34;http://www.malinc.se/math/latex/basiccodeen.php&#34;&gt;helpful examples of the the most common basic commands here&lt;/a&gt;. In this class, these will be the most common things you’ll use:&lt;/p&gt;
+&lt;table class=&#34;table&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Description
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Command
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Output
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr grouplength=&#34;4&#34;&gt;
+&lt;td colspan=&#34;3&#34; style=&#34;border-bottom: 1px solid;&#34;&gt;
+&lt;strong&gt;Letters&lt;/strong&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Roman letters
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;a b c d e f&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(a\ b\ c\ d\ e\ f\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Greek letters (see &lt;a href=&#34;https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols&#34;&gt;this&lt;/a&gt; for all possible letters)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;&lt;/code&gt; &lt;br&gt; &lt;code&gt;&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\alpha\ \beta\ \Gamma\ \gamma\ \Delta\ \delta\ \epsilon\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Letters will automatically be italicized and treated as math variables;&lt;br&gt;if you want actual text in the math, use &lt;code&gt;&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ew: &lt;code&gt;Treatment = &lt;/code&gt; &lt;br&gt;Good: &lt;code&gt; = &lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ew: &lt;span class=&#34;math inline&#34;&gt;\(Treatment = \beta\)&lt;/span&gt;&lt;br&gt;Good: &lt;span class=&#34;math inline&#34;&gt;\(\text{Treatment} = \beta\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Extra spaces will automatically be removed; if you want a space, use &lt;code&gt; &lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+No space: &lt;code&gt;x y&lt;/code&gt; &lt;br&gt; Space: &lt;code&gt;x y&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+No space: &lt;span class=&#34;math inline&#34;&gt;\(x y\)&lt;/span&gt; &lt;br&gt;Space: &lt;span class=&#34;math inline&#34;&gt;\(x \ y\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr grouplength=&#34;6&#34;&gt;
+&lt;td colspan=&#34;3&#34; style=&#34;border-bottom: 1px solid;&#34;&gt;
+&lt;strong&gt;Superscripts and subscripts&lt;/strong&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Use &lt;code&gt;^&lt;/code&gt; to make one character superscripted.
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;x^2&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(x^2\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Wrap the superscripted part in &lt;code&gt;{}&lt;/code&gt; if there’s more than one character
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;x^{2+y}&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(x^{2+y}\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Use &lt;code&gt;_&lt;/code&gt; to make one character subscripted
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;_1&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\beta_1\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Wrap the subscripted part in &lt;code&gt;{}&lt;/code&gt; if there’s more than one character
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;_{i, t}&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\beta_{i, t}\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Use superscripts and subscripts simultaneously
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;_1^{}&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\beta_1^{\text{Treatment}}\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+You can even nest them
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;x&lt;sup&gt;{2&lt;/sup&gt;{2^2}}&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(x^{2^{2^2}}\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr grouplength=&#34;9&#34;&gt;
+&lt;td colspan=&#34;3&#34; style=&#34;border-bottom: 1px solid;&#34;&gt;
+&lt;strong&gt;Math operations&lt;/strong&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Addition
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;2 + 5 = 7&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(2 + 5 = 7\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Subtraction
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;2 - 5 = -3&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(2 + 5 = -3\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Multiplication
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;x y&lt;/code&gt; &lt;br&gt; &lt;code&gt;x y&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(x \times y\)&lt;/span&gt; &lt;br&gt; &lt;span class=&#34;math inline&#34;&gt;\(x \cdot y\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Division
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;8 &lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(8 \div 2\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Fractions
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\frac{8}{2}\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Square roots; use &lt;code&gt;[3]&lt;/code&gt; for other roots
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt; = 9&lt;/code&gt; &lt;br&gt; &lt;code&gt; = 3&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\sqrt{81} = 9\)&lt;/span&gt; &lt;br&gt; &lt;span class=&#34;math inline&#34;&gt;\(\sqrt[3]{27} = 3\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Summation; use sub/superscripts for extra details
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;x&lt;/code&gt; &lt;br&gt; &lt;code&gt;_{n=1}^{} &lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\sum x\)&lt;/span&gt; &lt;br&gt; &lt;span class=&#34;math inline&#34;&gt;\(\sum_{n=1}^{\infty} \frac{1}{n}\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Products; use sub/superscripts for extra details
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;x&lt;/code&gt; &lt;br&gt; &lt;code&gt;_{n=1}^{5} n^2&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\prod x\)&lt;/span&gt; &lt;br&gt; &lt;span class=&#34;math inline&#34;&gt;\(\prod_{n=1}^{5} n^2\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Integrals; use sub/superscripts for extra details
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;x^2  dx&lt;/code&gt; &lt;br&gt; &lt;code&gt;_{1}^{100} x^2  dx&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\int x^2 \ dx\)&lt;/span&gt; &lt;br&gt; &lt;span class=&#34;math inline&#34;&gt;\(\int_{1}^{100} x^2 \ dx\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr grouplength=&#34;5&#34;&gt;
+&lt;td colspan=&#34;3&#34; style=&#34;border-bottom: 1px solid;&#34;&gt;
+&lt;strong&gt;Extra symbols&lt;/strong&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Add a bar for things like averages
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;{x}&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\bar{x}\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Use an overline for longer things
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ew: &lt;code&gt;{abcdef}&lt;/code&gt; &lt;br&gt; Good: &lt;code&gt;&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ew: &lt;span class=&#34;math inline&#34;&gt;\(\bar{abcdef}\)&lt;/span&gt; &lt;br&gt; Good: &lt;span class=&#34;math inline&#34;&gt;\(\overline{abcdef}\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Add a hat for things like estimates
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\hat{y}\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Use a wide hat for longer things
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ew: &lt;code&gt;&lt;/code&gt; &lt;br&gt; Good: &lt;code&gt;&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ew: &lt;span class=&#34;math inline&#34;&gt;\(\hat{abcdef}\)&lt;/span&gt; &lt;br&gt; Good: &lt;span class=&#34;math inline&#34;&gt;\(\widehat{abcdef}\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Use arrows for DAG-like things
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt;Z Y X&lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(Z \rightarrow Y \leftarrow X\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr grouplength=&#34;1&#34;&gt;
+&lt;td colspan=&#34;3&#34; style=&#34;border-bottom: 1px solid;&#34;&gt;
+&lt;strong&gt;Bonus fun&lt;/strong&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;padding-left: 2em;&#34; indentlevel=&#34;1&#34;&gt;
+Use colors!; see &lt;a href=&#34;https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX&#34;&gt;here&lt;/a&gt; for more details and &lt;a href=&#34;https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX#Reference_guide&#34;&gt;here&lt;/a&gt; for a list of color names
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;code&gt; = &lt;/code&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(\color{red}{y}\ \color{black}{=}\ \color{blue}{\beta_1 x_1}\)&lt;/span&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;using-math-inline&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Using math inline&lt;/h3&gt;
+&lt;p&gt;You can use math in two different ways: inline or in a display block. To use math inline, wrap it in single dollar signs, like &lt;code&gt;\$y = mx + b\$&lt;/code&gt;:&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;52%&#34; /&gt;
+&lt;col width=&#34;47%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;
+Type…
+&lt;/th&gt;
+&lt;th&gt;
+…to get
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;
+&lt;pre&gt;Based on the DAG, the regression model for
+estimating the effect of education on wages
+is &amp;dollar;\hat{y} = \beta_0 + \beta_1 x_1 + \epsilon&amp;dollar;, or
+&amp;dollar;\text{Wages} = \beta_0 + \beta_1 \text{Education} + \epsilon&amp;dollar;.&lt;/pre&gt;
+&lt;/td&gt;
+&lt;td&gt;
+Based on the DAG, the regression model for
+estimating the effect of education on wages
+is &lt;span class=&#34;math inline&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\hat{y} = \beta_0 + \beta_1 x_1 + \epsilon\)&lt;/span&gt;&lt;/span&gt;, or
+&lt;span class=&#34;math inline&#34;&gt;&lt;span class=&#34;math inline&#34;&gt;\(\text{Wages} = \beta_0 + \beta_1 \text{Education} + \epsilon\)&lt;/span&gt;&lt;/span&gt;.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;using-math-in-a-block&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Using math in a block&lt;/h3&gt;
+&lt;p&gt;To put an equation on its own line in a display block, wrap it in double dollar signs, like this:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Type…&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&#34;text&#34;&gt;&lt;code&gt;The quadratic equation was an important part of high school math:
+
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+But now we just use computers to solve for $x$.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;…to get…&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The quadratic equation was an important part of high school math:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;But now we just use computers to solve for &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dollar-signs-and-math&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Dollar signs and math&lt;/h3&gt;
+&lt;p&gt;Because dollar signs are used to indicate math equations, you can’t just use dollar signs like normal if you’re writing about actual dollars. For instance, if you write &lt;code&gt;This book costs \$5.75 and this other costs \$40&lt;/code&gt;, Markdown will treat everything that comes between the dollar signs as math, like so: “This book costs $5.75 and this other costs $40”.&lt;/p&gt;
+&lt;p&gt;To get around that, put a backslash (&lt;code&gt;\&lt;/code&gt;) in front of the dollar signs, so that &lt;code&gt;This book costs \\\$5.75 and this other costs \\\$40&lt;/code&gt; becomes “This book costs &lt;span&gt;$5.75&lt;/span&gt; and this other costs &lt;span&gt;$40&lt;/span&gt;”.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tables&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Tables&lt;/h2&gt;
+&lt;p&gt;There are 4 different ways to hand-create tables in Markdown—I say “hand-create” because it’s normally way easier to use R to generate these things with packages like &lt;a href=&#34;https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html&#34;&gt;&lt;strong&gt;kableExtra&lt;/strong&gt;&lt;/a&gt; (use &lt;code&gt;kable()&lt;/code&gt;) or &lt;a href=&#34;https://rapporter.github.io/pander/&#34;&gt;&lt;strong&gt;pander&lt;/strong&gt;&lt;/a&gt; (use &lt;code&gt;pandoc.table()&lt;/code&gt;). The two most common are simple tables and pipe tables. &lt;a href=&#34;https://pandoc.org/MANUAL.html#tables&#34;&gt;You should look at the full documentation here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For simple tables, type…&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&#34;text&#34;&gt;&lt;code&gt;  Right     Left     Center     Default
+-------     ------ ----------   -------
+     12     12        12            12
+    123     123       123          123
+      1     1          1             1
+
+Table: Caption goes here&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;…to get…&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;caption&gt;Caption goes here&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;right&#34;&gt;Right&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Left&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Center&lt;/th&gt;
+&lt;th&gt;Default&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;12&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;12&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;123&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;123&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;123&lt;/td&gt;
+&lt;td&gt;123&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;For pipe tables, type…&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&#34;text&#34;&gt;&lt;code&gt;| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|   12  |  12  |    12   |    12  |
+|  123  |  123 |   123   |   123  |
+|    1  |    1 |     1   |     1  |
+
+Table: Caption goes here&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;…to get…&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;caption&gt;Caption goes here&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;right&#34;&gt;Right&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Left&lt;/th&gt;
+&lt;th&gt;Default&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Center&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;12&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;12&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;123&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;123&lt;/td&gt;
+&lt;td&gt;123&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;123&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;footnotes&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Footnotes&lt;/h2&gt;
+&lt;p&gt;There are two different ways to add footnotes (&lt;a href=&#34;https://pandoc.org/MANUAL.html#footnotes&#34;&gt;see here for complete documentation&lt;/a&gt;): regular and inline.&lt;/p&gt;
+&lt;p&gt;Regular notes need (1) an identifier and (2) the actual note. The identifier can be whatever you want. Some people like to use numbers like &lt;code&gt;[^1]&lt;/code&gt;, but if you ever rearrange paragraphs or add notes before #1, the numbering will be wrong (in your Markdown file, not in the output; everything will be correct in the output). Because of that, I prefer to use some sort of text label:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Type…&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&#34;text&#34;&gt;&lt;code&gt;Here is a footnote reference[^1] and here is another [^note-on-dags].
+
+[^1]: This is a note.
+
+[^note-on-dags]: DAGs are neat. 
+
+And here&amp;#39;s more of the document.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;…to get…&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here is a footnote reference&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; and here is another.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;And here’s more of the document.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;
+&lt;p&gt;
+This is a note.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;
+&lt;p&gt;
+DAGs are neat.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;p&gt;You can also use inline footnotes with &lt;code&gt;^[Text of the note goes here]&lt;/code&gt;, which are often easier because you don’t need to worry about identifiers:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Type…&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&#34;text&#34;&gt;&lt;code&gt;Causal inference is neat.^[But it can be hard too!]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;…to get…&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Causal inference is neat.&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn3&#34;&gt;
+&lt;p&gt;
+But it can be hard too!&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div id=&#34;front-matter&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Front matter&lt;/h2&gt;
+&lt;p&gt;You can include a special section at the top of a Markdown document that contains metadata (or data about your document) like the title, date, author, etc. This section uses a special simple syntax named &lt;a href=&#34;https://learn.getgrav.org/16/advanced/yaml&#34;&gt;YAML&lt;/a&gt; (or “YAML Ain’t Markup Language”) that follows this basic outline: &lt;code&gt;setting: value for setting&lt;/code&gt;. Here’s an example YAML metadata section. Note that it must start and end with three dashes (&lt;code&gt;---&lt;/code&gt;).&lt;/p&gt;
+&lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;---
+title: Title of your document
+date: &amp;quot;January 13, 2020&amp;quot;
+author: &amp;quot;Your name&amp;quot;
+---&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can put the values inside quotes (like the date and name in the example above), or you can leave them outside of quotes (like the title in the example above). I typically use quotes just to be safe—if the value you’re using has a colon (&lt;code&gt;:&lt;/code&gt;) in it, it’ll confuse Markdown since it’ll be something like &lt;code&gt;title: My cool title: a subtitle&lt;/code&gt;, which has two colons. It’s better to do this:&lt;/p&gt;
+&lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;---
+title: &amp;quot;My cool title: a subtitle&amp;quot;
+---&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you want to use quotes inside one of the values (e.g. your document is &lt;code&gt;An evaluation of &#34;scare quotes&#34;&lt;/code&gt;), you can use single quotes instead:&lt;/p&gt;
+&lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;---
+title: &amp;#39;An evaluation of &amp;quot;scare quotes&amp;quot;&amp;#39;
+---&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;citations&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Citations&lt;/h2&gt;
+&lt;p&gt;One of the most powerful features of Markdown + pandoc is the ability to automatically cite things and generate bibliographies. to use citations, you need to create a &lt;a href=&#34;http://www.bibtex.org/&#34;&gt;BibTeX file&lt;/a&gt; (ends in &lt;code&gt;.bib&lt;/code&gt;) that contains a database of the things you want to cite. You can do this with bibliography managers designed to work with BibTeX directly (like &lt;a href=&#34;https://bibdesk.sourceforge.io/&#34;&gt;BibDesk&lt;/a&gt; on macOS), or you can use &lt;a href=&#34;https://www.zotero.org/&#34;&gt;Zotero&lt;/a&gt; (macOS and Windows) to export a &lt;code&gt;.bib&lt;/code&gt; file. You can &lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/citations/&#34;&gt;download an example &lt;code&gt;.bib&lt;/code&gt; file of all the readings from this class here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html&#34;&gt;Complete details for using citations can be found here&lt;/a&gt;. In brief, you need to do three things:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Add a &lt;code&gt;bibliography:&lt;/code&gt; entry to the YAML metadata:&lt;/p&gt;
+&lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;---
+title: Title of your document
+date: &amp;quot;January 13, 2020&amp;quot;
+author: &amp;quot;Your name&amp;quot;
+bibliography: name_of_file.bib
+---&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Choose a citation style based on a CSL file. The default is Chicago author-date, but you can choose from 2,000+ &lt;a href=&#34;https://github.com/citation-style-language/styles&#34;&gt;at this repository&lt;/a&gt;. Download the CSL file, put it in your project folder, and add an entry to the YAML metadata (or provide a URL to the online version):&lt;/p&gt;
+&lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;---
+title: Title of your document
+date: &amp;quot;January 13, 2020&amp;quot;
+author: &amp;quot;Your name&amp;quot;
+bibliography: name_of_file.bib
+csl: &amp;quot;https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl&amp;quot;
+---&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Some of the most common CSLs are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-author-date.csl&#34;&gt;Chicago author-date&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-note-bibliography.csl&#34;&gt;Chicago note-bibliography&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/citation-style-language/styles/master/chicago-fullnote-bibliography.csl&#34;&gt;Chicago full note-bibliography&lt;/a&gt; (no shortened notes or ibids)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl&#34;&gt;APA 7th edition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/citation-style-language/styles/master/modern-language-association.csl&#34;&gt;MLA 8th edition&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Cite things in your document. &lt;a href=&#34;https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html&#34;&gt;Check the documentation for full details of how to do this&lt;/a&gt;. Essentially, you use &lt;code&gt;@citationkey&lt;/code&gt; inside square brackets (&lt;code&gt;[]&lt;/code&gt;):&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;51%&#34; /&gt;
+&lt;col width=&#34;48%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Type…&lt;/th&gt;
+&lt;th&gt;…to get…&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;Causal inference is neat [@Rohrer:2018; @AngristPischke:2015].&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Causal inference is neat (Rohrer 2018; Angrist and Pischke 2015).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;Causal inference is neat [see @Rohrer:2018, p. 34; also @AngristPischke:2015, chapter 1].&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Causal inference is neat (see Rohrer 2018, 34; also Angrist and Pischke 2015, chap. 1).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;Angrist and Pischke say causal inference is neat [-@AngristPischke:2015; see also @Rohrer:2018].&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Angrist and Pischke say causal inference is neat (2015; see also Rohrer 2018).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;@AngristPischke:2015 [chapter 1] say causal inference is neat, and @Rohrer:2018 agrees.&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Angrist and Pischke (2015, chap. 1) say causal inference is neat, and Rohrer (2018) agrees.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;After compiling, you should have a perfectly formatted bibliography added to the end of your document too:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Angrist, Joshua D., and Jörn-Steffen Pischke. 2015. &lt;em&gt;Mastering ’Metrics: The Path from Cause to Effect.&lt;/em&gt; Princeton, NJ: Princeton University Press.&lt;/p&gt;
+&lt;p&gt;Rohrer, Julia M. 2018. “Thinking Clearly About Correlations and Causation: Graphical Causal Models for Observational Data.” &lt;em&gt;Advances in Methods and Practices in Psychological Science&lt;/em&gt; 1 (1): 27–42. &lt;a href=&#34;https://doi.org/10.1177/2515245917745629&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1177/2515245917745629&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;other-references&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Other references&lt;/h2&gt;
+&lt;p&gt;These websites have additional details and examples and practice tools:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://commonmark.org/help/tutorial/&#34;&gt;&lt;strong&gt;CommonMark’s Markdown tutorial&lt;/strong&gt;&lt;/a&gt;: A quick interactive Markdown tutorial.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.markdowntutorial.com/&#34;&gt;&lt;strong&gt;Markdown tutorial&lt;/strong&gt;&lt;/a&gt;: Another interactive tutorial to practice using Markdown.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://packetlife.net/media/library/16/Markdown.pdf&#34;&gt;&lt;strong&gt;Markdown cheatsheet&lt;/strong&gt;&lt;/a&gt;: Useful one-page reminder of Markdown syntax.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://plain-text.co/&#34;&gt;&lt;strong&gt;The Plain Person’s Guide to Plain Text Social Science&lt;/strong&gt;&lt;/a&gt;: A comprehensive explanation and tutorial about why you should write data-based reports in Markdown.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using R Markdown</title>
+      <link>https://dsba6010-spring2022.netlify.app/resource/rmarkdown/</link>
+      <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://dsba6010-spring2022.netlify.app/resource/rmarkdown/</guid>
+      <description>
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;TOC&#34;&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://rmarkdown.rstudio.com/&#34;&gt;R Markdown&lt;/a&gt; is &lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/markdown/&#34;&gt;regular Markdown&lt;/a&gt; with R code and output sprinkled in. You can do everything you can with &lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/markdown/&#34;&gt;regular Markdown&lt;/a&gt;, but you can incorporate graphs, tables, and other R output directly in your document. You can create HTML, PDF, and Word documents, PowerPoint and HTML presentations, websites, books, and even &lt;a href=&#34;https://rmarkdown.rstudio.com/flexdashboard/index.html&#34;&gt;interactive dashboards&lt;/a&gt; with R Markdown. This whole course website is created with R Markdown (and &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;a package named &lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34;&gt;documentation for R Markdown&lt;/a&gt; is extremely comprehensive, and their &lt;a href=&#34;https://rmarkdown.rstudio.com/lesson-1.html&#34;&gt;tutorials&lt;/a&gt; and &lt;a href=&#34;https://rmarkdown.rstudio.com/lesson-15.html&#34;&gt;cheatsheets&lt;/a&gt; are excellent—rely on those.&lt;/p&gt;
+&lt;p&gt;Here are the most important things you’ll need to know about R Markdown in this class:&lt;/p&gt;
+&lt;div id=&#34;key-terms&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Key terms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Document&lt;/strong&gt;: A Markdown file where you type stuff&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Chunk&lt;/strong&gt;: A piece of R code that is included in your document. It looks like this:&lt;/p&gt;
+&lt;pre class=&#34;markdown&#34;&gt;&lt;code&gt;```{r}
+# Code goes here
+```&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There must be an empty line before and after the chunk. The final three backticks must be the only thing on the line—if you add more text, or if you forget to add the backticks, or accidentally delete the backticks, your document will not knit correctly.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Knit&lt;/strong&gt;: When you “knit” a document, R runs each of the chunks sequentially and converts the output of each chunk into Markdown. R then runs the knitted document through &lt;a href=&#34;https://pandoc.org/&#34;&gt;pandoc&lt;/a&gt; to convert it to HTML or PDF or Word (or whatever output you’ve selected).&lt;/p&gt;
+&lt;p&gt;You can knit by clicking on the “Knit” button at the top of the editor window, or by pressing &lt;code&gt;⌘⇧K&lt;/code&gt; on macOS or &lt;code&gt;control + shift + K&lt;/code&gt; on Windows.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;add-chunks&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Add chunks&lt;/h2&gt;
+&lt;p&gt;There are three ways to insert chunks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Press &lt;code&gt;⌘⌥I&lt;/code&gt; on macOS or &lt;code&gt;control + alt + I&lt;/code&gt; on Windows&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Click on the “Insert” button at the top of the editor window&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/reference/insert-chunk.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Manually type all the backticks and curly braces (don’t do this)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chunk-names&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Chunk names&lt;/h2&gt;
+&lt;p&gt;You can add names to chunks to make it easier to navigate your document. If you click on the little dropdown menu at the bottom of your editor in RStudio, you can see a table of contents that shows all the headings and chunks. If you name chunks, they’ll appear in the list. If you don’t include a name, the chunk will still show up, but you won’t know what it does.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/reference/chunk-toc.png&#34; width=&#34;40%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;To add a name, include it immediately after the &lt;code&gt;{r&lt;/code&gt; in the first line of the chunk. Names cannot contain spaces, but they can contain underscores and dashes. &lt;strong&gt;All chunk names in your document must be unique.&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&#34;markdown&#34;&gt;&lt;code&gt;```{r name-of-this-chunk}
+# Code goes here
+```&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;chunk-options&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Chunk options&lt;/h2&gt;
+&lt;p&gt;There are a bunch of different options you can set for each chunk. You can see a complete list in the &lt;a href=&#34;https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf&#34;&gt;RMarkdown Reference Guide&lt;/a&gt; or at &lt;a href=&#34;https://yihui.org/knitr/options/&#34;&gt;&lt;strong&gt;knitr&lt;/strong&gt;’s website&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Options go inside the &lt;code&gt;{r}&lt;/code&gt; section of the chunk:&lt;/p&gt;
+&lt;pre class=&#34;markdown&#34;&gt;&lt;code&gt;```{r name-of-this-chunk, warning=FALSE, message=FALSE}
+# Code goes here
+```&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The most common chunk options are these:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;fig.width=5&lt;/code&gt; and &lt;code&gt;fig.height=3&lt;/code&gt; (&lt;em&gt;or whatever number you want&lt;/em&gt;): Set the dimensions for figures&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;echo=FALSE&lt;/code&gt;: The code is not shown in the final document, but the results are&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;message=FALSE&lt;/code&gt;: Any messages that R generates (like all the notes that appear after you load a package) are omitted&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;warning=FALSE&lt;/code&gt;: Any warnings that R generates are omitted&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;include=FALSE&lt;/code&gt;: The chunk still runs, but the code and results are not included in the final document&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can also set chunk options by clicking on the little gear icon in the top right corner of any chunk:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/reference/chunk-options.png&#34; width=&#34;70%&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;inline-chunks&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Inline chunks&lt;/h2&gt;
+&lt;p&gt;You can also include R output directly in your text, which is really helpful if you want to report numbers from your analysis. To do this, use &lt;code&gt;`r r_code_here`&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;It’s generally easiest to calculate numbers in a regular chunk beforehand and then use an inline chunk to display the value in your text. For instance, this document…&lt;/p&gt;
+&lt;pre class=&#34;markdown&#34;&gt;&lt;code&gt;```{r find-avg-mpg, echo=FALSE}
+avg_mpg &amp;lt;- mean(mtcars$mpg)
+```
+
+The average fuel efficiency for cars from 1974 was `r round(avg_mpg, 1)` miles per gallon.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;… would knit into this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The average fuel efficiency for cars from 1974 was 20.1 miles per gallon.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div id=&#34;output-formats&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Output formats&lt;/h2&gt;
+&lt;p&gt;You can specify what kind of document you create when you knit in the &lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/markdown/#front-matter&#34;&gt;YAML front matter&lt;/a&gt;.&lt;/p&gt;
+&lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;title: &amp;quot;My document&amp;quot;
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can also click on the down arrow on the “Knit” button to choose the output &lt;em&gt;and&lt;/em&gt; generate the appropriate YAML. If you click on the gear icon next to the “Knit” button and choose “Output options”, you change settings for each specific output type, like default figure dimensions or whether or not a table of contents is included.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/reference/output-options.png&#34; width=&#34;35%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The first output type listed under &lt;code&gt;output:&lt;/code&gt; will be what is generated when you click on the “Knit” button or press the keyboard shortcut (&lt;code&gt;⌘⇧K&lt;/code&gt; on macOS; &lt;code&gt;control + shift + K&lt;/code&gt; on Windows). If you choose a different output with the “Knit” button menu, that output will be moved to the top of the &lt;code&gt;output&lt;/code&gt; section.&lt;/p&gt;
+&lt;p&gt;The indentation of the YAML section matters, especially when you have settings nested under each output type. Here’s what a typical &lt;code&gt;output&lt;/code&gt; section might look like:&lt;/p&gt;
+&lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;---
+title: &amp;quot;My document&amp;quot;
+author: &amp;quot;My name&amp;quot;
+date: &amp;quot;January 13, 2020&amp;quot;
+output: 
+  html_document: 
+    toc: yes
+    fig_caption: yes
+    fig_height: 8
+    fig_width: 10
+  pdf_document: 
+    latex_engine: xelatex  # More modern PDF typesetting engine
+    toc: yes
+  word_document: 
+    toc: yes
+    fig_caption: yes
+    fig_height: 4
+    fig_width: 5
+---&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
     </item>

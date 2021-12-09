@@ -42,15 +42,15 @@ First you need to install R itself (the engine).
 
     - If you use macOS, scroll down to the first `.pkg` file in the list of files (in this picture, it's `R-4.0.0.pkg`; as of right now, the current version is also 4.0.0) and download it.
     
-        ```{r, echo=FALSE, out.width="100%"}
-        include_graphics("/img/install/install-r-mac.png", error = FALSE)
-        ```
+```{r, echo=FALSE, out.width="100%"}
+include_graphics("/img/install/install-r-mac.png", error = FALSE)
+```
     
     - If you use Windows, click "base" (or click on the bolded "install R for the first time" link) and download it. 
     
-        ```{r, echo=FALSE, out.width="100%"}
-        include_graphics("/img/install/install-r-windows.png", error = FALSE)
-        ```
+```{r, echo=FALSE, out.width="100%"}
+include_graphics("/img/install/install-r-windows.png", error = FALSE)
+```
 
 3. Double click on the downloaded file (check your `Downloads` folder). Click yes through all the prompts to install like any other program.
 
@@ -64,15 +64,15 @@ Next, you need to install RStudio, the nicer graphical user interface (GUI) for 
 1. Go to the free download location on RStudio's website: <https://www.rstudio.com/products/rstudio/download/#download>
 2. The website should automatically detect your operating system (macOS or Windows) and show a big download button for it:
 
-    ```{r, echo=FALSE, out.width="50%"}
-    include_graphics("/img/install/install-r-rstudio1.png", error = FALSE)
-    ```
+```{r, echo=FALSE, out.width="50%"}
+include_graphics("/img/install/install-r-rstudio1.png", error = FALSE)
+```
     
     If not, scroll down a little to the large table and choose the version of RStudio that matches your operating system.
 
-    ```{r, echo=FALSE, out.width="100%"}
-    include_graphics("/img/install/install-r-rstudio2.png", error = FALSE)
-    ```
+```{r, echo=FALSE, out.width="100%"}
+include_graphics("/img/install/install-r-rstudio2.png", error = FALSE)
+```
 
 3. Double click on the downloaded file (again, check your `Downloads` folder). Click yes through all the prompts to install like any other program.
 

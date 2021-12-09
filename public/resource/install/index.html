@@ -293,11 +293,20 @@
 
   
 
-  
+  <link rel="stylesheet" type="text/css" href="/custom-css/print.css" media="print" />
 
-
-
-
+  <link rel="shortcut icon" href="https://dsba6010-spring2022.netlify.app/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="https://dsba6010-spring2022.netlify.app/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://dsba6010-spring2022.netlify.app/img/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="DSBA 6010 / STAT 7027: Bayesian Statistics" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="https://dsba6010-spring2022.netlify.app/img/mstile-144x144.png" />
 
   <title>Installing R, RStudio, tidyverse, and tinytex | Bayesian Statistics</title>
 </head>
@@ -726,6 +735,21 @@
       </li>
 
       
+      <li >
+        <a href="/resource/r/">R</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/style/">R style suggestions</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/bayes/">Bayesian statistics resources</a>
+      </li>
+
+      
     </ul>
     
 
@@ -742,6 +766,21 @@
       
       <li class="active">
         <a href="/resource/install/">Installing R, RStudio, tidyverse, and tinytex</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/markdown/">Using Markdown</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/rmarkdown/">Using R Markdown</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/unzipping/">Unzipping files</a>
       </li>
 
       
@@ -799,11 +838,13 @@
 <li><p>Click on “Download R for <code>XXX</code>”, where <code>XXX</code> is either Mac or Windows:</p>
 <p><img src="/img/install/install-r-links.png" width="60%" /></p>
 <ul>
-<li><p>If you use macOS, scroll down to the first <code>.pkg</code> file in the list of files (in this picture, it’s <code>R-4.0.0.pkg</code>; as of right now, the current version is also 4.0.0) and download it.</p>
-<p><img src="/img/install/install-r-mac.png" width="100%" /></p></li>
-<li><p>If you use Windows, click “base” (or click on the bolded “install R for the first time” link) and download it.</p>
-<p><img src="/img/install/install-r-windows.png" width="100%" /></p></li>
+<li>If you use macOS, scroll down to the first <code>.pkg</code> file in the list of files (in this picture, it’s <code>R-4.0.0.pkg</code>; as of right now, the current version is also 4.0.0) and download it.</li>
 </ul></li>
+</ol>
+<p><img src="/img/install/install-r-mac.png" width="100%" /></p>
+<pre><code>- If you use Windows, click &quot;base&quot; (or click on the bolded &quot;install R for the first time&quot; link) and download it. </code></pre>
+<p><img src="/img/install/install-r-windows.png" width="100%" /></p>
+<ol start="3" style="list-style-type: decimal">
 <li><p>Double click on the downloaded file (check your <code>Downloads</code> folder). Click yes through all the prompts to install like any other program.</p></li>
 <li><p>If you use macOS, <a href="https://www.xquartz.org/">download and install XQuartz</a>. You do not need to do this on Windows.</p></li>
 </ol>
@@ -812,12 +853,14 @@
 <h3>Install RStudio</h3>
 <p>Next, you need to install RStudio, the nicer graphical user interface (GUI) for R (the dashboard). Once R and RStudio are both installed, you can ignore R and only use RStudio. RStudio will use R automatically and you won’t ever have to interact with it directly.</p>
 <ol style="list-style-type: decimal">
-<li><p>Go to the free download location on RStudio’s website: <a href="https://www.rstudio.com/products/rstudio/download/#download" class="uri">https://www.rstudio.com/products/rstudio/download/#download</a></p></li>
-<li><p>The website should automatically detect your operating system (macOS or Windows) and show a big download button for it:</p>
+<li>Go to the free download location on RStudio’s website: <a href="https://www.rstudio.com/products/rstudio/download/#download" class="uri">https://www.rstudio.com/products/rstudio/download/#download</a></li>
+<li>The website should automatically detect your operating system (macOS or Windows) and show a big download button for it:</li>
+</ol>
 <p><img src="/img/install/install-r-rstudio1.png" width="50%" /></p>
-<p>If not, scroll down a little to the large table and choose the version of RStudio that matches your operating system.</p>
-<p><img src="/img/install/install-r-rstudio2.png" width="100%" /></p></li>
-<li><p>Double click on the downloaded file (again, check your <code>Downloads</code> folder). Click yes through all the prompts to install like any other program.</p></li>
+<pre><code>If not, scroll down a little to the large table and choose the version of RStudio that matches your operating system.</code></pre>
+<p><img src="/img/install/install-r-rstudio2.png" width="100%" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Double click on the downloaded file (again, check your <code>Downloads</code> folder). Click yes through all the prompts to install like any other program.</li>
 </ol>
 <p>Double click on RStudio to run it (check your applications folder or start menu).</p>
 </div>
@@ -863,6 +906,12 @@
 <div class="post-nav">
   
   
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/resource/r/" rel="prev">R</a>
+  </div>
+  
 </div>
 
           </div>
@@ -899,7 +948,6 @@
         <div class="col-md-7">
             <p>
                 <strong>DSBA 6010 / STAT 7027: Bayesian Statistics (Spring 2022)</strong><br>
-
                 <a href="https://www.uncc.edu" target="_blank" rel="noopener">University of North Carolina at Charlotte</a> &emsp;&emsp;
                 <a href="https://datascience.charlotte.edu/" target="_blank" rel="noopener">School of Data Science</a>
             </p>
@@ -1060,10 +1108,6 @@
     <script src="/en/js/wowchemy.min.4bba0826db6409c865d2e7b99039d6d0.js"></script>
 
     
-
-
-
-
 
 
 </body>

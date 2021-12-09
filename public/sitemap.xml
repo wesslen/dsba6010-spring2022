@@ -23,14 +23,23 @@
     <loc>https://dsba6010-spring2022.netlify.app/content/02-bayesian-inference/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/resource/r/</loc>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/resource/style/</loc>
+  </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/content/03-linear-models/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/resource/unzipping/</loc>
+    <lastmod>2020-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/content/04-linear-models-2/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/content/05-bayesian-presentations/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/resource/bayes/</loc>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/content/06-spurious-correlations/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
@@ -64,6 +73,12 @@
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/example/15-1-example/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/resource/markdown/</loc>
+    <lastmod>2020-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/resource/rmarkdown/</loc>
+    <lastmod>2020-01-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/contact/</loc>
   </url><url>
