@@ -1275,7 +1275,7 @@ down &amp;lt;- pancakes[2,]
 num_11_10 &amp;lt;- sum( up==1 )
 num_11 &amp;lt;- sum( up==1 &amp;amp; down==1 )
 print(num_11/num_11_10)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 0.6618241&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.6785428&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;measurement-error&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;15.2 Measurement Error&lt;/h2&gt;
