@@ -1,0 +1,303 @@
+---
+title: Installing rethinking, Stan, and Bayesian Packages
+date: "2021-12-01"
+menu:
+  resource:
+    parent: Guides
+type: docs
+toc: true
+weight: 2
+---
+
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
+library(knitr)
+```
+
+We'll primarily use Richard McElreath's `rethinking` R package. Installation can be a bit tricky so this guide will outline how to install as well as other packages that may be helpful in this class.
+
+## `rethinking` package
+
+The package's github repository <https://github.com/rmcelreath/rethinking> is the best source of information, especially the [issues](https://github.com/rmcelreath/rethinking/issues) section where likely if you run into errors, you may find tips to help install.
+
+### Install `rstan`
+
+While this course uses R, the engine for running Bayesian is Stan. Stan is a C++ library that can be used in a variety of ways (R, Python, Julia, Command Line, etc.).
+
+To get started, we'll use it with `rstan`, which is the R package aligned to calling Stan.
+
+To install it, follow these instructions:  <https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started>
+
+You can find more information about `rstan`  <https://mc-stan.org/users/interfaces/rstan.html> or you can view the [Stan User Guide](https://mc-stan.org/docs/2_28/stan-users-guide/index.html).
+
+To test whether you properly installed `rstan`, try running this (see original [GitHub Gist](https://gist.github.com/rasmusab/744410db9cf85ecb85e1)):
+
+```{r}
+set.seed(123)
+y <- rbinom(30, size = 1, prob = 0.2016)
+
+# Fitting a simple binomial model using Stan
+library(rstan)
+
+model_string <- "
+data {
+  int n;
+  int y[n];
+}
+parameters {
+  real<lower=0, upper=1> theta;
+}
+model {
+  y ~ bernoulli(theta);
+}"
+
+stan_samples <- stan(model_code = model_string, data = list(y = y, n = length(y)) )
+stan_samples
+traceplot(stan_samples)
+plot(stan_samples)
+```
+
+Did you get similar output?
+
+### Install `cmdstanr`
+
+Like all things, Stan is going through changes and moving forward, `rstan` is falling out of favor and instead much more development will be used with `cmdstanr` rather than `rstan` ([here's a comparison](https://mc-stan.org/cmdstanr/articles/cmdstanr.html#comparison-with-rstan)). 
+
+The `rethinking` package works with either of these packages but it's likely much better to use `cmdstanr` instead of `stanr`; therefore, Richard (and I) recommend installing both. <https://mc-stan.org/cmdstanr/>
+
+To install `cmdstanr`, you'll need to install that from github (non-CRAN library).
+
+```{r eval=FALSE}
+# if you get an error, do you have devtools installed? 
+devtools::install_github("stan-dev/cmdstanr")
+```
+
+After you've installed it, if it's your first time you'll need to run:
+
+```{r eval=FALSE}
+# see https://mc-stan.org/cmdstanr/reference/install_cmdstan.html
+cmdstanr::install_cmdstan()
+```
+
+To check if it was installed correctly, run:
+
+```{r}
+cmdstanr::check_cmdstan_toolchain()
+```
+
+```{r}
+library(cmdstanr)
+
+file <- file.path(cmdstan_path(), "examples", "bernoulli", "bernoulli.stan")
+
+data_list <- list(N = 10, y = c(0,1,0,0,0,0,0,0,0,1))
+mod <- cmdstan_model(file)
+fit <- mod$sample(
+  data = data_list, 
+  seed = 123, 
+  chains = 4, 
+  parallel_chains = 4,
+  refresh = 500
+)
+
+fit$summary()
+```
+### Install `rethinking`
+
+Now with both `rstan` and `cmdstanr`, you can install `rethinking`:
+
+```{r eval=FALSE}
+install.packages(c("coda","mvtnorm","devtools","loo","dagitty"))
+devtools::install_github("rmcelreath/rethinking")
+```
+
+We can do a few functions to check to see if `rethinking` was installed correctly.
+
+```{r}
+library(rethinking)
+
+f <- alist(
+    y ~ dnorm( mu , sigma ),
+    mu ~ dnorm( 0 , 10 ),
+    sigma ~ dexp( 1 )
+)
+
+fit <- quap( 
+    f , 
+    data=list(y=c(-1,1)) , 
+    start=list(mu=0,sigma=1)
+)
+
+precis(fit)
+```
+
+This first runs `quap` which uses quadratic approximation for fitting the posterior. This is what we'll use for the first few weeks of the class before we use MCMC methods via Stan.
+
+```{r}
+# this uses cmdstanr version; this is recommended
+# you can set this permanently (i.e., don't need the argument) by running set_ulam_cmdstan(TRUE)
+fit_stan <- ulam( f , data=list(y=c(-1,1)), cmdstan = TRUE )
+precis(fit_stan)
+```
+
+## Optional but highly helpful Bayesian packages
+
+As Stan has grown in popularity, so too has Bayesian stats and a variety of package that work well with Stan.
+
+### `rstanarm`
+
+First, I recommend installing `rstanarm`
+
+```{r eval=FALSE}
+install.packages("rstanarm")
+```
+
+Per [its helpful vignette](https://mc-stan.org/rstanarm/articles/rstanarm.html), the goal of the `rstanarm` package is to make Bayesian estimation routine for the most common regression models that applied researchers use. This will enable researchers to avoid the counter-intuitiveness of the frequentist approach to probability and statistics with only minimal changes to their existing R scripts.
+
+To test whether the package was installed correctly, try this code:
+
+```{r}
+library(rstanarm)
+fit <- stan_glm(mpg ~ ., data = mtcars)
+
+plot(fit)
+```
+
+### `bayesplot`
+
+Another package that is handy is `bayesplot`, which provides helpful ways to visualize results from Stan models.
+
+To install it, you'll need to run:
+
+```{r eval=FALSE}
+install.packages("bayesplot")
+```
+
+You can then test it out running this code:
+
+```{r}
+library(bayesplot)
+library(ggplot2) # assume you already have it installed
+
+posterior <- as.matrix(fit)
+plot_title <- ggtitle("Posterior distributions",
+                      "with medians and 80% intervals")
+mcmc_areas(posterior,
+           pars = c("cyl", "drat", "am", "wt"),
+           prob = 0.8) + plot_title
+```
+This can also provide helpful post-predictive checks (i.e., see model fitting), for example:
+
+```{r}
+color_scheme_set("red")
+ppc_dens_overlay(y = fit$y,
+                 yrep = posterior_predict(fit, draws = 50))
+```
+
+### `brms`
+
+For most Bayesian research projects, `brms` has become the most popular R package. <https://paul-buerkner.github.io/brms/>
+
+It combines the intuition of class R regression modeling (`y ~ IV1 + IV1`) with mixed effects modeling like `lme4` syntax. This class we won't use this package (maybe near the end of course) but it's incredibly helpful to think about for your final project.
+
+Like other CRAN libraries, to install:
+```{r eval=FALSE}
+install.packages("brms")
+```
+
+You can then run Bayesian mixed effects modeling simply with:
+```{r}
+# tidybayes example: http://mjskay.github.io/tidybayes/articles/tidy-brms.html
+set.seed(5)
+n = 10
+n_condition = 5
+ABC =
+  data.frame(
+    condition = rep(c("A","B","C","D","E"), n),
+    response = rnorm(n * 5, c(0,1,2,1,-1), 0.5)
+  )
+
+library(brms)
+m = brm(
+  response ~ (1|condition), 
+  data = ABC, 
+  prior = c(
+    prior(normal(0, 1), class = Intercept),
+    prior(student_t(3, 0, 1), class = sd),
+    prior(student_t(3, 0, 1), class = sigma)
+  ),
+  backend = "cmdstanr", # optional; if not specified, will use stanr
+  control = list(adapt_delta = .99)
+)
+
+m
+```
+
+Soloman Kurz has an amazing reproduction of our textbook but translated into `brms` as well as `tidyverse`: [Statistical rethinking with brms, ggplot2, and the tidyverse: Second edition](https://bookdown.org/content/4857/)
+
+### `tidybayes` and `ggdist`
+
+Last, `tidybayes` is in incredibly helpful package that combines Bayesian statistics from a [`tidy`](https://r4ds.had.co.nz/tidy-data.html) perspective that underpins the [`tidyverse`](https://www.tidyverse.org/).
+
+In addition, `tidybayes`' sister package, `ggdist`, enables incredibly powerful uncertainty visualizations via `ggplot2`.
+
+![](https://mjskay.github.io/ggdist/reference/figures/preview.png)
+
+To install these packages, you can run:
+```{r eval=FALSE}
+install.packages('ggdist')
+install.packages('tidybayes')
+```
+
+```{r}
+library(ggdist)
+library(tidybayes)
+library(magrittr) # part of tidyverse; install if you don't have
+library(modelr) # install if you don't have; data_grid is from it
+
+ABC %>%
+  data_grid(condition) %>%
+  add_epred_rvars(m) %>%
+  ggplot(aes(dist = .epred, y = condition)) +
+  stat_dist_dotsinterval(quantiles = 100)
+```
+
+This provides posterior means using quantile dot plots, which are frequency-format uncertainty visualizations that have showed great promise in improving decision-making ([Kay et al. 2016](https://dl.acm.org/doi/10.1145/2858036.2858558), [Fernandes et al. 2018](https://dl.acm.org/doi/10.1145/3173574.3173718))
+
+### `tidybayes.rethinking`
+
+There is even a `tidybayes` package that works specifically for the `rethinking` package. I encourage you to install this as we may 
+
+```{r eval=FALSE}
+devtools::install_github("mjskay/tidybayes.rethinking")
+```
+
+You can now run this:
+```{r}
+library(tidybayes.rethinking)
+
+# bayesian regression wt (x) on mpg (y)
+m = quap(alist(
+    mpg ~ dlnorm(mu, sigma),
+    mu <- a + b*wt,
+    c(a,b) ~ dnorm(0, 10),
+    sigma ~ dexp(1)
+  ),
+  data = mtcars,
+  start = list(a = 4, b = -1, sigma = 1)
+)
+
+m %>%
+  tidybayes::tidy_draws() %>%
+  tidybayes::gather_variables() %>%
+  median_qi() %>%
+  ggplot(aes(y = .variable, x = .value, xmin = .lower, xmax = .upper)) +
+  geom_pointinterval()
+```
+
+## Package versions above
+
+When using R (or any open source language), it's very important to keep links for package versions. I **highly** recommend running in Rmarkdown files this code at the end to timestamp what packages were used.
+
+```{r}
+sessionInfo()
+```

@@ -4,7 +4,7 @@ date: "2020-01-13"
 menu:
   resource:
     parent: Guides
-    weight: 3
+    weight: 4
 type: docs
 toc: true
 ---
