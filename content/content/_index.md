@@ -12,7 +12,7 @@ Each class session has a set of required readings that you should complete ***be
 
 Every class session also has a YouTube video for each of the lecture sections. 
 
-{{< cta cta_text="Begin the course" cta_link="00-course-intro" >}}
+{{< cta cta_text="Begin the course" cta_link="01-course-intro" >}}
 
 <!-- The lecture slides are special HTML files made with the R package [**xaringan**](https://bookdown.org/yihui/rmarkdown/xaringan.html) (R can do so much!). On each class session page you'll see buttons for opening the presentation in a new tab or for downloading a PDF of the slides in case you want to print them or store them on your computer:
 

@@ -13,32 +13,46 @@
     </image>
     
     <item>
-      <title>Course Intro</title>
-      <link>https://dsba6010-spring2022.netlify.app/content/00-course-intro/</link>
+      <title>Class 1 - Course Intro</title>
+      <link>https://dsba6010-spring2022.netlify.app/content/01-course-intro/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://dsba6010-spring2022.netlify.app/content/00-course-intro/</guid>
+      <guid>https://dsba6010-spring2022.netlify.app/content/01-course-intro/</guid>
       <description>&lt;p&gt;Welcome!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://media3.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif?cid=790b76119130519cc0d76cbb37bf927be0309d606652bf98&amp;amp;rid=giphy.gif&amp;amp;ct=g&#34; alt=&#34;Welcome to the class!&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Intro to Bayesian Inference</title>
-      <link>https://dsba6010-spring2022.netlify.app/content/01-bayes-intro/</link>
+      <title>Class 2 - Bayesian Inference</title>
+      <link>https://dsba6010-spring2022.netlify.app/content/02-bayesian-inference/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://dsba6010-spring2022.netlify.app/content/01-bayes-intro/</guid>
+      <guid>https://dsba6010-spring2022.netlify.app/content/02-bayesian-inference/</guid>
       <description>&lt;p&gt;
-  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chapter 1: The Golem of Prague&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
+  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chapter 1: The Golem of Prague Data&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chapter 2: The Garden of Forking Data&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 3: Sampling the Imaginary&lt;/p&gt;
+&lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
+&lt;h3 id=&#34;lecture-1&#34;&gt;Lecture 1&lt;/h3&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/4WVelCswXo4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
+&lt;br&gt;
 &lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/c63892105b90479bb8827c9afcf5ad76&#34; title=&#34;L01 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;lecture-2&#34;&gt;Lecture 2&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/XoVtOAN0htU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/3bfa335d71ac499ebb10e11073efe777&#34; title=&#34;L02 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-5&#34;&gt;
   &lt;summary&gt;What is Bayesian data analysis? How does it differ in its definition of uncertainty from Frequentist interpretations?&lt;/summary&gt;
   &lt;p&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -53,7 +67,7 @@
 &lt;/ul&gt;
 &lt;/p&gt;
 &lt;/details&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-6&#34;&gt;
   &lt;summary&gt;Classical (Frequentist) statistical tests were originally developed for what purposes?&lt;/summary&gt;
   &lt;p&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -65,7 +79,7 @@
 &lt;/ul&gt;
 &lt;/p&gt;
 &lt;/details&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-4&#34;&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-7&#34;&gt;
   &lt;summary&gt;What is the core problem with null hypothesis testing?&lt;/summary&gt;
   &lt;p&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -80,7 +94,7 @@
 &lt;/ul&gt;
 &lt;/p&gt;
 &lt;/details&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-5&#34;&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-8&#34;&gt;
   &lt;summary&gt;What are three ways in which cross-validation and information theory aid in model evaluation?&lt;/summary&gt;
   &lt;p&gt;&lt;ol&gt;
 &lt;li&gt;
@@ -98,7 +112,7 @@
 &lt;/ul&gt;
 &lt;/p&gt;
 &lt;/details&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-6&#34;&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-9&#34;&gt;
   &lt;summary&gt;What are the benefits of using multilevel (aka hierarchical) models?&lt;/summary&gt;
   &lt;p&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -121,43 +135,14 @@
     </item>
     
     <item>
-      <title>Bayesian Inference</title>
-      <link>https://dsba6010-spring2022.netlify.app/content/02-bayesian-inference/</link>
-      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://dsba6010-spring2022.netlify.app/content/02-bayesian-inference/</guid>
-      <description>&lt;p&gt;
-  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chapter 2: The Garden of Forking Data&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-
-  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 3: Sampling the Imaginary
-&lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/XoVtOAN0htU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/3bfa335d71ac499ebb10e11073efe777&#34; title=&#34;L02 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
-&lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
-&lt;p&gt;TBD&lt;/p&gt;
-&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
-    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
-    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
-        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
-        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Linear Models</title>
+      <title>Class 3 - Linear Models</title>
       <link>https://dsba6010-spring2022.netlify.app/content/03-linear-models/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/03-linear-models/</guid>
       <description>&lt;p&gt;
   &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 4: Geocentric models&lt;/p&gt;
 &lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
+&lt;h3 id=&#34;lecture-3&#34;&gt;Lecture 3&lt;/h3&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/h5aPo5wXN8E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
@@ -178,7 +163,7 @@
     </item>
     
     <item>
-      <title>Linear Models (2)</title>
+      <title>Class 4 - Linear Models</title>
       <link>https://dsba6010-spring2022.netlify.app/content/04-linear-models-2/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/04-linear-models-2/</guid>
@@ -188,13 +173,15 @@
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
+&lt;h3 id=&#34;lecture-4&#34;&gt;Lecture 4&lt;/h3&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/ENxTrFf9a7c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
+&lt;br&gt;
 &lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/a176e2b36674464581c6aecfd770f97f&#34; title=&#34;L04 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;br&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
 &lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
@@ -208,7 +195,7 @@
     </item>
     
     <item>
-      <title>Bayesian Applications (Class presentations)</title>
+      <title>Class 5 - Class presentations</title>
       <link>https://dsba6010-spring2022.netlify.app/content/05-bayesian-presentations/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/05-bayesian-presentations/</guid>
@@ -217,47 +204,33 @@
     </item>
     
     <item>
-      <title>Spurious correlations</title>
+      <title>Class 6 - Spurious correlations</title>
       <link>https://dsba6010-spring2022.netlify.app/content/06-spurious-correlations/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/06-spurious-correlations/</guid>
       <description>&lt;p&gt;
   &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 5: The many variables &amp;amp; the spurious waffles&lt;/p&gt;
-&lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 6: The haunted DAG &amp;amp; the causal terror&lt;/p&gt;
+&lt;h2 id=&#34;lectures&#34;&gt;Lectures&lt;/h2&gt;
+&lt;h3 id=&#34;lecture-5&#34;&gt;Lecture 5&lt;/h3&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/e0tO64mtYMU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
+&lt;br&gt;
 &lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/26cdb77505364b8b8fd653c72fcf1bcf&#34; title=&#34;L05 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
-&lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
-&lt;p&gt;TBD&lt;/p&gt;
-&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
-    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
-    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
-        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
-        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Confounders</title>
-      <link>https://dsba6010-spring2022.netlify.app/content/07-confounders/</link>
-      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://dsba6010-spring2022.netlify.app/content/07-confounders/</guid>
-      <description>&lt;p&gt;
-  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 6: The haunted DAG &amp;amp; the causal terror&lt;/p&gt;
-&lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;lecture-6&#34;&gt;Lecture 6&lt;/h3&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/l_7yIUqWBmE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
+&lt;br&gt;
 &lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/d4422ebeb555488fb1e852bb35fc1d4d&#34; title=&#34;L06 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;br&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
 &lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
@@ -271,20 +244,30 @@
     </item>
     
     <item>
-      <title>Model Comparison</title>
-      <link>https://dsba6010-spring2022.netlify.app/content/08-model-comparison/</link>
+      <title>Class 7 - Model Comparison</title>
+      <link>https://dsba6010-spring2022.netlify.app/content/07-model-comparison/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://dsba6010-spring2022.netlify.app/content/08-model-comparison/</guid>
+      <guid>https://dsba6010-spring2022.netlify.app/content/07-model-comparison/</guid>
       <description>&lt;p&gt;
   &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 7: Ulysses&#39; Compass&lt;/p&gt;
 &lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
+&lt;h3 id=&#34;lecture-7&#34;&gt;Lecture 7&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/0Jc6Kgw5qc0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/a6e7ecd6950045c7ae93f34bc1955557&#34; title=&#34;L07 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;lecture-8&#34;&gt;Lecture 8&lt;/h3&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/gjrsYDJbRh0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/a6e7ecd6950045c7ae93f34bc1955557&#34; title=&#34;L07 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;br&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/13b0ac246f344570b6b002b8e3c384bc&#34; title=&#34;L08 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
 &lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
@@ -298,47 +281,78 @@
     </item>
     
     <item>
-      <title>Interactions</title>
-      <link>https://dsba6010-spring2022.netlify.app/content/09-interactions/</link>
+      <title>Class 8 - Interactions/MCMC</title>
+      <link>https://dsba6010-spring2022.netlify.app/content/08-interactions/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://dsba6010-spring2022.netlify.app/content/09-interactions/</guid>
+      <guid>https://dsba6010-spring2022.netlify.app/content/08-interactions/</guid>
       <description>&lt;p&gt;
   &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 8: Conditional Manatees&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 9: Markov Chain Monte Carlo&lt;/p&gt;
 &lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
+&lt;h3 id=&#34;lecture-9&#34;&gt;Lecture 9&lt;/h3&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/QhHfo6-Bx8o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
+&lt;br&gt;
 &lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/d4e9b8ae775c4968b4dab1b44fea4c75&#34; title=&#34;L09 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
-&lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
-&lt;p&gt;TBD&lt;/p&gt;
-&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
-    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
-    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
-        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
-        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Markov Chain Monte Carlo</title>
-      <link>https://dsba6010-spring2022.netlify.app/content/10-mcmc/</link>
-      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://dsba6010-spring2022.netlify.app/content/10-mcmc/</guid>
-      <description>&lt;p&gt;
-  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 9: Markov Chain Monte Carlo&lt;/p&gt;
-&lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;lecture-10&#34;&gt;Lecture 10&lt;/h3&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/v-j0UmWf3Us&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
+&lt;br&gt;
 &lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/c01485b84fa54e849136242257d8af0e&#34; title=&#34;L10 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+## Comprehension questions
+&lt;p&gt;TBD&lt;/p&gt;
+&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
+    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
+    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
+        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
+        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Class 10 - Guest Lecture</title>
+      <link>https://dsba6010-spring2022.netlify.app/content/10-guest-lecture/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://dsba6010-spring2022.netlify.app/content/10-guest-lecture/</guid>
+      <description>&lt;p&gt;TBD&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 11 - GLM / Categorical</title>
+      <link>https://dsba6010-spring2022.netlify.app/content/11-monsters-mixtures/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://dsba6010-spring2022.netlify.app/content/11-monsters-mixtures/</guid>
+      <description>&lt;p&gt;
+  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 12: Monsters and Mixtures&lt;/p&gt;
+&lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
+&lt;h3 id=&#34;lecture-13&#34;&gt;Lecture 13&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/p7g-CgGCS34&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/14835b694f5849bb8e277aeaa977e5dc&#34; title=&#34;L13 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;lecture-14&#34;&gt;Lecture 14&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zA3Jxv8LOrA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/bb23a87b930a4bf0a1450ebe5bd044cb&#34; title=&#34;L14 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
 &lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
@@ -352,46 +366,29 @@
     </item>
     
     <item>
-      <title>Maximium entropy &amp; GLMs</title>
-      <link>https://dsba6010-spring2022.netlify.app/content/11-entropy-glm/</link>
+      <title>Class 11 - Monsters &amp; Mixtures</title>
+      <link>https://dsba6010-spring2022.netlify.app/content/09-entropy-glm/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://dsba6010-spring2022.netlify.app/content/11-entropy-glm/</guid>
+      <guid>https://dsba6010-spring2022.netlify.app/content/09-entropy-glm/</guid>
       <description>&lt;p&gt;
-  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 10: Big Entropy and the Generalized Linear Model&lt;/p&gt;
+  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 12: Monsters and Mixtures&lt;/p&gt;
 &lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
+&lt;h3 id=&#34;lecture-11&#34;&gt;Lecture 11&lt;/h3&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/-4y4X8ELcEM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
+&lt;br&gt;
 &lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/49d056ed5f2449459654d8b3b1e273fe&#34; title=&#34;L11 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
-&lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
-&lt;p&gt;TBD&lt;/p&gt;
-&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
-    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
-    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
-        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
-        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>God Spiked the Integers</title>
-      <link>https://dsba6010-spring2022.netlify.app/content/12-spiked-integers/</link>
-      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://dsba6010-spring2022.netlify.app/content/12-spiked-integers/</guid>
-      <description>&lt;p&gt;
-  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 11: God Spiked the Integers&lt;/p&gt;
-&lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;lecture-12&#34;&gt;Lecture 12&lt;/h3&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/hRJtKCIDTwc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
+&lt;br&gt;
 &lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/8204715ef3c445daa83dd2653c4b2559&#34; title=&#34;L12 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
@@ -406,22 +403,123 @@
     </item>
     
     <item>
-      <title>Missing Data and Measurement Error</title>
-      <link>https://dsba6010-spring2022.netlify.app/content/22-missing-measurement/</link>
+      <title>Class 12 - Multilevel</title>
+      <link>https://dsba6010-spring2022.netlify.app/content/12-multilevel/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://dsba6010-spring2022.netlify.app/content/22-missing-measurement/</guid>
+      <guid>https://dsba6010-spring2022.netlify.app/content/12-multilevel/</guid>
+      <description>&lt;p&gt;
+  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 13: Models with Memory&lt;/p&gt;
+&lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
+&lt;h3 id=&#34;lecture-15&#34;&gt;Lecture 15&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/AALYPv5xSos&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/2b1b80986b784bc49e10df6e808d5864&#34; title=&#34;L15 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;lecture-16&#34;&gt;Lecture 16&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ZG3Oe35R5sY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/e41e4dabd661476cb52ca156ec4c0132&#34; title=&#34;L16 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
+    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
+    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
+        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
+        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Class 13 - Exam</title>
+      <link>https://dsba6010-spring2022.netlify.app/content/13-exam/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://dsba6010-spring2022.netlify.app/content/13-exam/</guid>
+      <description>&lt;p&gt;In class exam.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 14 - Adventures in Covariance</title>
+      <link>https://dsba6010-spring2022.netlify.app/content/14-covariance/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://dsba6010-spring2022.netlify.app/content/14-covariance/</guid>
+      <description>&lt;p&gt;
+  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 14: Adventures in Covariance&lt;/p&gt;
+&lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
+&lt;h3 id=&#34;lecture-17&#34;&gt;Lecture 17&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/yfXpjmWgyXU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/4542a31bca014bacb068a3d19c61770d&#34; title=&#34;L17 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;lecture-18&#34;&gt;Lecture 18&lt;/h3&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/e5cgiAGBKzI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/365cb7f482674b12baaee3aadaddc3cf&#34; title=&#34;L18 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
+    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
+    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
+        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
+        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 15 - Missing Data</title>
+      <link>https://dsba6010-spring2022.netlify.app/content/15-missing-measurement/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://dsba6010-spring2022.netlify.app/content/15-missing-measurement/</guid>
       <description>&lt;p&gt;
   &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 15: Missing Data and Other Opportunities&lt;/p&gt;
-&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
+&lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
+&lt;h2 id=&#34;lecture-19&#34;&gt;Lecture 19&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/pwMRbt2CbSU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/8582fc1c71cc4f4fae43ee1d2a0ac319&#34; title=&#34;L19 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;br&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/UgLF0aLk85s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/da27f0f59b1447cc85418c8fb0fb390c&#34; title=&#34;L20 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;br&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/da27f0f59b1447cc85418c8fb0fb390c&#34; title=&#34;L20 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
+&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
+    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
+    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
+        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
+        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;
 </description>
     </item>
     

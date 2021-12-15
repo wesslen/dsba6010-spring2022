@@ -50,10 +50,13 @@
   
   
   
-    <meta name="theme-color" content="#B0BBBF" />
+    <meta name="theme-color" content="#26172A" />
   
 
   
+  
+    
+    <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -191,9 +194,9 @@
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -223,7 +226,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.7128504dee1e800b4d6f834ad27beed3.css" />
+  <link rel="stylesheet" href="/css/wowchemy.5986d1b422a4ae9125f3007bfa6d81bc.css" />
 
   
 
@@ -317,7 +320,7 @@
   
   
   
-  <script src="/js/wowchemy-init.min.c2ae95842e5b33a787c7b8c567e989a4.js"></script>
+  <script src="/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js"></script>
 
   
 
@@ -669,6 +672,23 @@
 
       
       
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
 
       
       
@@ -718,11 +738,11 @@
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
-<p>Here’s your roadmap for the semester!</p>
 <ul>
-<li><a href="/content/"><strong>Content</strong></a> (<i class="fas fa-book-reader"></i>): This page contains the readings, slides, and recorded lectures for the topic. Read and watch these first.</li>
-<li><a href="/example/"><strong>Example</strong></a> (<i class="fas fa-laptop-code"></i>): This page contains fully annotated R code and other supplementary information that you can use as a reference for your assignments and project. Given the focus on active learning, we’ll evaluate these examples in class together and in groups.</li>
-<li><a href="/assignment/"><strong>Assignment</strong></a> (<i class="fas fa-pencil-ruler"></i>): This page contains the instructions for each assignment. <strong>Assignments are due by 11:59 AM (1 minute before class) on the day they’re listed.</strong></li>
+<li><a href="/content/"><strong>Content</strong></a> (<i class="fas fa-book-reader"></i>): Readings, slides, and recorded lectures for the topic.</li>
+<li><a href="/example/"><strong>Example</strong></a> (<i class="fas fa-laptop-code"></i>): Annotated R code and supplementary information for reference for your assignments and project.</li>
+<li><a href="/assignment/"><strong>Problem Set</strong></a> (<i class="fas fa-pencil-ruler"></i>): Instructions for problem sets. We’ll work on these in class. Due by <strong>11:59 AM (1 minute before class) of the next class.</strong></li>
+<li><a href="/assignment/"><strong>Quiz</strong></a> (<i class="fas fa-question"></i>): Lesson quizzes via Canvas to test chapter reading and lectures. Due by <strong>11:59 AM (1 minute before class) on the day they’re listed.</strong></li>
 </ul>
 <div class="ical">
 <p>You can subscribe to this calendar URL in Outlook, Google Calendar, or Apple Calendar:<br><a class="btn btn-primary" href="/schedule/schedule.ics" role="button"><i class="far fa-calendar-alt"></i></a> <input id="ics_url" type="text" value="https://dsba6010-spring2022.netlify.app/schedule/schedule.ics" onclick="this.select()" readonly="readonly" size="60" /></p>
@@ -733,19 +753,21 @@
             class=" fake-header-table">
             <td align="right" style="width:20%;text-align:right">
                 <strong></strong></td>
-            <td style="width:56%;text-align:left">Bayesian methods</td>
+            <td style="width:52%;text-align:left">Principles of Bayesian Inference</td>
 
-            <td style="width:8%;text-align:center" class="mid-table-header">Content</td>
-            <td style="width:8%;text-align:center" class="mid-table-header">Example</td>
-            <td style="width:8%;text-align:center" class="mid-table-header">Assignment</td>
+            <td style="width:12%;text-align:center" class="mid-table-header">Content</td>
+            <td style="width:12%;text-align:center" class="mid-table-header">Example</td>
+            <td style="width:12%;text-align:center" class="mid-table-header">Problem Set</td>
+            <td style="width:12%;text-align:center" class="mid-table-header">Quiz</td>
         </tr>
         <tr
-            class=" schedule-bg-1">
+            class=" section-bottom schedule-bg-1">
             <td align="right" style="width:20%;text-align:right">
-                <strong>January 10</strong></td>
-            <td style="width:56%;text-align:left"><span class="content-title">Intro to the course / R</span></td>
+                <strong>Jan 10</strong><br>
+                <small>(Session 1)</small></td>
+            <td style="width:52%;text-align:left"><span class="content-title">Intro to the course / R</span></td>
             <td align="center" style="width:10%;text-align:center"><a
-                    href="/syllabus/00-course-intro/">
+                    href="/content/01-course-intro/">
                     <i class="fas fa-book-reader fa-lg"></i></a></td>
             <td align="center" style="width:10%;text-align:center"><a
                     href="/example/rstudio-tidyverse/">
@@ -754,12 +776,16 @@
                 <font color="f1f1f1">
                     <i class="fas fa-pencil-ruler fa-lg"></i></font>
             </td>
+            <td align="center" style="width:10%;text-align:center">
+                <font color="f1f1f1">
+                    <i class="fas fa-question fa-lg"></i></font>
+            </td>
         </tr>
         <tr
-            class=" schedule-bg-1">
+            class=" section-bottom schedule-bg-2">
             <td align="right" style="width:20%;text-align:right">
-                <strong>January 17</strong></td>
-            <td style="width:56%;text-align:left">No class (MLK Holiday)</td>
+                <strong>Jan 17</strong></td>
+            <td style="width:52%;text-align:left">No class (MLK Holiday)</td>
             <td align="center" style="width:10%;text-align:center">
                 <font color="f1f1f1">
                     <i class="fas fa-book-reader fa-lg"></i></font>
@@ -772,67 +798,20 @@
                 <font color="f1f1f1">
                     <i class="fas fa-pencil-ruler fa-lg"></i></font>
             </td>
-        </tr>
-        <tr
-            class=" schedule-bg-1">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>Due January 24</strong></td>
-            <td style="width:56%;text-align:left">Lesson quiz 1</td>
             <td align="center" style="width:10%;text-align:center">
                 <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/lesson-quiz-1/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>January 24</strong></td>
-            <td style="width:56%;text-align:left"><span class="content-title">Intro to Bayesian Methods (1)</span></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/syllabus/01-bayes-intro/">
-                    <i class="fas fa-book-reader fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
-            </td>
-        </tr>
-        <tr
-            class=" schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>January 24</strong></td>
-            <td style="width:56%;text-align:left"><span class="content-title">Bayesian inference (2)</span></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/syllabus/02-bayesian-inference/">
-                    <i class="fas fa-book-reader fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
+                    <i class="fas fa-question fa-lg"></i></font>
             </td>
         </tr>
         <tr
             class=" section-bottom schedule-bg-1">
             <td align="right" style="width:20%;text-align:right">
-                <strong>Due January 31</strong></td>
-            <td style="width:56%;text-align:left">Problem set 1</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
+                <strong>Jan 24</strong><br>
+                <small>(Session 2)</small></td>
+            <td style="width:52%;text-align:left"><span class="content-title">Intro to Bayesian Methods</span></td>
+            <td align="center" style="width:10%;text-align:center"><a
+                    href="/content/02-bayesian-inference/">
+                    <i class="fas fa-book-reader fa-lg"></i></a></td>
             <td align="center" style="width:10%;text-align:center">
                 <font color="f1f1f1">
                     <i class="fas fa-laptop-code fa-lg"></i></font>
@@ -840,33 +819,19 @@
             <td align="center" style="width:10%;text-align:center"><a
                     href="/assignment/01-problem-set/">
                     <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>January 31</strong></td>
-            <td style="width:56%;text-align:left">Weekly check-in 2</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
             <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/weekly-check-in/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
+                    href="/assignment/01-problem-set/">
+                    <i class="fas fa-question fa-lg"></i></a></td>
         </tr>
         <tr
             class=" section-bottom schedule-bg-2">
             <td align="right" style="width:20%;text-align:right">
-                <strong>January 25</strong></td>
-            <td style="width:56%;text-align:left">Problem set 2</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
+                <strong>Jan 31</strong><br>
+                <small>(Session 3)</small></td>
+            <td style="width:52%;text-align:left"><span class="content-title">Linear Models (1)</span></td>
+            <td align="center" style="width:10%;text-align:center"><a
+                    href="/content/03-linear-models/">
+                    <i class="fas fa-book-reader fa-lg"></i></a></td>
             <td align="center" style="width:10%;text-align:center">
                 <font color="f1f1f1">
                     <i class="fas fa-laptop-code fa-lg"></i></font>
@@ -874,284 +839,19 @@
             <td align="center" style="width:10%;text-align:center"><a
                     href="/assignment/02-problem-set/">
                     <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-1">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>January 25–29</strong><br>
-                <small>(Session 3)</small></td>
-            <td style="width:56%;text-align:left"><span class="content-title">Theories of change and logic models</span></td>
             <td align="center" style="width:10%;text-align:center"><a
-                    href="/syllabus/03-content/">
-                    <i class="fas fa-book-reader fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
-            </td>
+                    href="/assignment/02-problem-set/">
+                    <i class="fas fa-question fa-lg"></i></a></td>
         </tr>
         <tr
-            class=" schedule-bg-1">
+            class=" section-bottom schedule-bg-3">
             <td align="right" style="width:20%;text-align:right">
-                <strong>February 1</strong></td>
-            <td style="width:56%;text-align:left">Weekly check-in 3</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/weekly-check-in/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" section-bottom schedule-bg-1">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>February 1</strong></td>
-            <td style="width:56%;text-align:left">Evaluation: Background and theory</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/01-eval-background-theory/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>February 1–5</strong><br>
+                <strong>Feb 7</strong><br>
                 <small>(Session 4)</small></td>
-            <td style="width:56%;text-align:left"><span class="content-title">Measurement and DAGs</span></td>
+            <td style="width:52%;text-align:left"><span class="content-title">Linear Models (2)</span></td>
             <td align="center" style="width:10%;text-align:center"><a
-                    href="/syllabus/04-content/">
+                    href="/content/04-linear-models-2/">
                     <i class="fas fa-book-reader fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/example/dags/">
-                    <i class="fas fa-laptop-code fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
-            </td>
-        </tr>
-        <tr
-            class=" schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>February 8</strong></td>
-            <td style="width:56%;text-align:left">Weekly check-in 4</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/weekly-check-in/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" section-bottom schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>February 8</strong></td>
-            <td style="width:56%;text-align:left">Evaluation: Measurement</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/02-eval-measurement/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-1">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>February 8–12</strong><br>
-                <small>(Session 5)</small></td>
-            <td style="width:56%;text-align:left"><span class="content-title">DAGs and potential outcomes</span></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/syllabus/05-content/">
-                    <i class="fas fa-book-reader fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/example/po-ate-cate/">
-                    <i class="fas fa-laptop-code fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
-            </td>
-        </tr>
-        <tr
-            class=" schedule-bg-1">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>February 15</strong></td>
-            <td style="width:56%;text-align:left">Weekly check-in 5</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/weekly-check-in/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" section-bottom schedule-bg-1">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>February 15</strong></td>
-            <td style="width:56%;text-align:left">Evaluation: Causal model</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/03-eval-dag/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>February 15–19</strong><br>
-                <small>(Session 6)</small></td>
-            <td style="width:56%;text-align:left"><span class="content-title">Threats to validity</span></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/syllabus/06-content/">
-                    <i class="fas fa-book-reader fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
-            </td>
-        </tr>
-        <tr
-            class=" schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>February 22</strong></td>
-            <td style="width:56%;text-align:left">Weekly check-in 6</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/weekly-check-in/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>February 22</strong></td>
-            <td style="width:56%;text-align:left">Evaluation: Threats to validity</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/04-eval-threats/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-3">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>February 22–28</strong></td>
-            <td style="width:56%;text-align:left"><i class="fas fa-star"></i> <strong>Exam 1</strong></td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
-            </td>
-        </tr>
-        <tr
-            class=" fake-header-table">
-            <td align="right" style="width:20%;text-align:right">
-                <strong></strong></td>
-            <td style="width:56%;text-align:left">Tools and methods</td>
-
-            <td style="width:8%;text-align:center" class="mid-table-header">Content</td>
-            <td style="width:8%;text-align:center" class="mid-table-header">Example</td>
-            <td style="width:8%;text-align:center" class="mid-table-header">Assignment</td>
-        </tr>
-        <tr
-            class=" schedule-bg-1">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>February 22–26</strong><br>
-                <small>(Session 7)</small></td>
-            <td style="width:56%;text-align:left"><span class="content-title">Randomization and matching</span></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/syllabus/07-content/">
-                    <i class="fas fa-book-reader fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/example/matching-ipw/">
-                    <i class="fas fa-laptop-code fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
-            </td>
-        </tr>
-        <tr
-            class=" schedule-bg-1">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>March 1</strong></td>
-            <td style="width:56%;text-align:left">Weekly check-in 7</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/weekly-check-in/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" section-bottom schedule-bg-1">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>March 1</strong></td>
-            <td style="width:56%;text-align:left">Problem set 3</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
             <td align="center" style="width:10%;text-align:center">
                 <font color="f1f1f1">
                     <i class="fas fa-laptop-code fa-lg"></i></font>
@@ -1159,403 +859,9 @@
             <td align="center" style="width:10%;text-align:center"><a
                     href="/assignment/03-problem-set/">
                     <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>March 1–12</strong><br>
-                <small>(Sessions 8–9)</small></td>
-            <td style="width:56%;text-align:left"><span class="content-title">Difference-in-differences I + II</span></td>
             <td align="center" style="width:10%;text-align:center"><a
-                    href="/syllabus/08-content/">
-                    <i class="fas fa-book-reader fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/example/diff-in-diff/">
-                    <i class="fas fa-laptop-code fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
-            </td>
-        </tr>
-        <tr
-            class=" schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>March 8</strong></td>
-            <td style="width:56%;text-align:left">Weekly check-in 8</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/weekly-check-in/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>March 8</strong></td>
-            <td style="width:56%;text-align:left">Problem set 4</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/04-problem-set/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>March 22</strong></td>
-            <td style="width:56%;text-align:left">Weekly check-in 9</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/weekly-check-in/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" section-bottom schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>March 22</strong></td>
-            <td style="width:56%;text-align:left">Problem set 5</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/05-problem-set/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-1">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>March 22–26</strong><br>
-                <small>(Session 10)</small></td>
-            <td style="width:56%;text-align:left"><span class="content-title">Regression discontinuity I</span></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/syllabus/10-content/">
-                    <i class="fas fa-book-reader fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/example/rdd/">
-                    <i class="fas fa-laptop-code fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
-            </td>
-        </tr>
-        <tr
-            class=" schedule-bg-1">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>March 29</strong></td>
-            <td style="width:56%;text-align:left">Weekly check-in 10</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/weekly-check-in/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" section-bottom schedule-bg-1">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>March 29</strong></td>
-            <td style="width:56%;text-align:left">Problem set 6</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/06-problem-set/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>March 29–April 2</strong><br>
-                <small>(Session 11)</small></td>
-            <td style="width:56%;text-align:left"><span class="content-title">Instrumental variables I</span></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/syllabus/11-content/">
-                    <i class="fas fa-book-reader fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/example/iv/">
-                    <i class="fas fa-laptop-code fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
-            </td>
-        </tr>
-        <tr
-            class=" schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>April 5</strong></td>
-            <td style="width:56%;text-align:left">Weekly check-in 11</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/weekly-check-in/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" section-bottom schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>April 5</strong></td>
-            <td style="width:56%;text-align:left">Problem set 7</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/07-problem-set/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-1">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>April 5–9</strong><br>
-                <small>(Session 12)</small></td>
-            <td style="width:56%;text-align:left"><span class="content-title">Instrumental variables II + Regression discontinuity II</span></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/syllabus/12-content/">
-                    <i class="fas fa-book-reader fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/example/rdd-fuzzy/">
-                    <i class="fas fa-laptop-code fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
-            </td>
-        </tr>
-        <tr
-            class=" schedule-bg-1">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>April 12</strong></td>
-            <td style="width:56%;text-align:left">Weekly check-in 12</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/weekly-check-in/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-1">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>April 12</strong></td>
-            <td style="width:56%;text-align:left">Problem set 8</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/08-problem-set/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-3">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>April 12–18</strong></td>
-            <td style="width:56%;text-align:left"><i class="fas fa-star"></i> <strong>Exam 2</strong></td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
-            </td>
-        </tr>
-        <tr
-            class=" fake-header-table">
-            <td align="right" style="width:20%;text-align:right">
-                <strong></strong></td>
-            <td style="width:56%;text-align:left">Applied evaluation</td>
-
-            <td style="width:8%;text-align:center" class="mid-table-header">Content</td>
-            <td style="width:8%;text-align:center" class="mid-table-header">Example</td>
-            <td style="width:8%;text-align:center" class="mid-table-header">Assignment</td>
-        </tr>
-        <tr
-            class=" schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>April 12–16</strong><br>
-                <small>(Session 13)</small></td>
-            <td style="width:56%;text-align:left"><span class="content-title">Choosing and planning ethical evaluations</span></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/syllabus/13-content/">
-                    <i class="fas fa-book-reader fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/example/synthetic-data/">
-                    <i class="fas fa-laptop-code fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
-            </td>
-        </tr>
-        <tr
-            class=" schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>April 19</strong></td>
-            <td style="width:56%;text-align:left">Weekly check-in 13</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/weekly-check-in/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" section-bottom schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>April 19</strong></td>
-            <td style="width:56%;text-align:left">Problem set 9</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/09-problem-set/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-1">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>April 19–23</strong><br>
-                <small>(Session 14)</small></td>
-            <td style="width:56%;text-align:left"><span class="content-title">Ethics, stories, and curiosity</span></td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/syllabus/14-content/">
-                    <i class="fas fa-book-reader fa-lg"></i></a></td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
-            </td>
-        </tr>
-        <tr
-            class=" section-bottom schedule-bg-1">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>April 26</strong></td>
-            <td style="width:56%;text-align:left">Weekly check-in 14</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/weekly-check-in/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
-        </tr>
-        <tr
-            class=" schedule-bg-2">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>April 26</strong></td>
-            <td style="width:56%;text-align:left"><span class="content-title">Work session</span></td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></font>
-            </td>
-        </tr>
-        <tr
-            class=" fake-header-table">
-            <td align="right" style="width:20%;text-align:right">
-                <strong></strong></td>
-            <td style="width:56%;text-align:left"><span class="fake-header-table">Final</span></td>
-
-            <td style="width:8%;text-align:center" class="mid-table-header">Content</td>
-            <td style="width:8%;text-align:center" class="mid-table-header">Example</td>
-            <td style="width:8%;text-align:center" class="mid-table-header">Assignment</td>
-        </tr>
-        <tr
-            class=" schedule-bg-3">
-            <td align="right" style="width:20%;text-align:right">
-                <strong>May 3</strong></td>
-            <td style="width:56%;text-align:left"><i class="fas fa-star"></i> <strong>Final project due</strong> (submit online by 11:59 PM)</td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-book-reader fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-laptop-code fa-lg"></i></font>
-            </td>
-            <td align="center" style="width:10%;text-align:center"><a
-                    href="/assignment/final-project/">
-                    <i class="fas fa-pencil-ruler fa-lg"></i></a></td>
+                    href="/assignment/03-problem-set/">
+                    <i class="fas fa-question fa-lg"></i></a></td>
         </tr>
 
     </tbody>
@@ -1584,7 +890,7 @@
             <p>
                 <strong>DSBA 6010 / STAT 7027: Bayesian Statistics (Spring 2022)</strong><br>
                 <a href="https://www.uncc.edu" target="_blank" rel="noopener">University of North Carolina at Charlotte</a> &emsp;&emsp;
-                <a href="https://datascience.charlotte.edu/" target="_blank" rel="noopener">School of Data Science</a>
+                <a href="https://math.charlotte.edu/" target="_blank" rel="noopener">Department of Mathematics and Statistics</a>
             </p>
 
             <p>
@@ -1730,6 +1036,8 @@
     <script src="/en/js/wowchemy.min.4bba0826db6409c865d2e7b99039d6d0.js"></script>
 
     
+
+<script src="/js/math-code.js"></script>
 
 
 </body>

@@ -1,8 +1,8 @@
 ---
-title: "DSBA 5122: Visual Analytics"
-subtitle: "Class 1: Intro to Visual Analytics"  
+title: "DSBA 6010 / STAT 7027: Bayesian Statistics"
+subtitle: "Class 1: Intro to Course/R"  
 author: "Ryan Wesslen"
-date: 'August 19, 2019'
+date: 'January 10, 2022'
 citeproc: false
 output:
   xaringan::moon_reader:
@@ -39,11 +39,11 @@ class: center, middle
 
 # About Me
 
-- Associate Faculty Member in UNCC's DSBA Program
+- Associate Faculty Member in UNCC's School of Data Science
 
 - PhD Candidate in Computing & Information Systems
 
-- Data Scientist in Bank of America's Chief Data Science Org (NLP Team)
+- Data Scientist in Bank of America's Chief Data Scientist Org (NLP Team)
 
 ---
 
@@ -57,34 +57,11 @@ class: center, middle
 
 - What are you interested to learn more about data visualizations?
 
-To do by next class: Send me an introduction email <rwesslen@uncc.edu> answering these questions. It's up to you on length. This is my chance to learn about your background.
-
 ---
 
 ![https://dsba5122-fall2019.netlify.com](../images/slides/01-class/course-site.png)
 
 <https://dsba5122.com>: Review the syllabus, schedule, and assignments.
-
----
-
-.pull-left[
-## Visualization Theory & Concepts
-
-- What makes a good visualization?
-
-- What are the best visualization tools for your problem?
-
-- What human factors are important to consider in designing visualizations?
-]
-.pull-right[
-## Data Visualization in Practice
-
-- R: `tidyverse`: core data science for Exploratory Data Analysis (EDA)
-
-- R: `htmlwidgets`: instead of JavaScript, D3
-
-- R: `shiny`: instead of HTML/CSS/Server-side
-]
 
 ---
 

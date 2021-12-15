@@ -6,7 +6,7 @@
 # Appearance
 
 theme: custom
-day_night: false
+day_night: true
 # Override the theme's font set (optional).
 #   Latest font sets (may require updating): https://sourcethemes.com/academic/themes/
 #   Browse built-in font sets in `themes/academic/data/fonts/`
@@ -50,25 +50,26 @@ address_format: en-us
 # Site features
 
 highlight: false
-highlight_languages: []
-math: false
+highlight_languages: 
+  - r
+math: true
 diagram: false
 privacy_pack: false
 edit_page:
-  repo_url: ''
+  repo_url: 'github.com/wesslen/dsba6010-spring2022'
   content_dir: ''
   repo_branch: main
   editable:
+    docs: true
     page: false
     post: false
-    book: false
 show_related:
-  book: true
+  docs: false
   page: false
-  post: true
-  project: true
-  publication: true
-  event: true
+  post: false
+  project: false
+  publication: false
+  talk: false
 reading_time: true
 section_pager: false
 docs_section_pager: true
@@ -131,11 +132,10 @@ instructor:
   url: "https://wesslen.netlify.app"
   twitter: ryanwesslen
   github: wesslen
-  office: "TBD"
+  office: "Center City 714"
   contact_policy: >-
     E-mail and Slack are the best ways to get in contact with me.
-  appointment_url: https://calendly.com/ryanwesslen/
-
+  appointment_url: "https://calendly.com/ryanwesslen/bayesian-stats-office-hours"
 course:
   number: "DSBA 6010 / STAT 7027"
   semester: "Spring 2022"
@@ -155,6 +155,9 @@ school:
   name: School of Data Science
   url: "https://datascience.charlotte.edu/"
 
+school:
+  name: Department of Mathematics and Statistics
+  url: "https://math.charlotte.edu/"
 
 ############################
 ## Social

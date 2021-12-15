@@ -29,11 +29,11 @@ schedule_clean <- schedule_df %>%
   mutate(session_clean = ifelse(is.na(session), "", glue("({session}) "))) %>% 
   mutate(summary = glue("DSBA 6010: {session_clean}{title}")) %>% 
   mutate(date_start = ifelse(is.na(date_start), date, date_start),
-         date_end = ifelse(is.na(date_end), date, date_end)) %>% 
+         date_end = ifelse(is.na(date_end), date, date_end)) %>%
   mutate(date_start = glue("{date_start}, {class_year}"),
-         date_end = glue("{date_end}, {class_year}")) %>% 
+         date_end = glue("{date_end}, {class_year}")) %>%
   mutate(date_start_actual = map(date_start, ~as.POSIXct(., format = "%B %d, %Y")),
-         date_end_actual = map(date_end, ~as.POSIXct(., format = "%B %d, %Y"))) %>% 
+         date_end_actual = map(date_end, ~as.POSIXct(., format = "%B %d, %Y"))) %>%
   mutate(content = ifelse(!is.na(content), glue("{content_base}{content}/"), NA),
          assignment = ifelse(!is.na(assignment), glue("{assignment_base}{assignment}/"), NA)) %>% 
   mutate(url = coalesce(content, assignment),
@@ -56,11 +56,10 @@ schedule_ics <- schedule_clean %>%
 ic_write(schedule_ics, here::here("content", "schedule", "schedule.ics"))
 ```
 
-Here's your roadmap for the semester!
-
-- [**Content**](/content/) (<i class="fas fa-book-reader"></i>): This page contains the readings, slides, and recorded lectures for the topic. Read and watch these first.
-- [**Example**](/example/) (<i class="fas fa-laptop-code"></i>): This page contains fully annotated R code and other supplementary information that you can use as a reference for your assignments and project. Given the focus on active learning, we'll evaluate these examples in class together and in groups.
-- [**Assignment**](/assignment/) (<i class="fas fa-pencil-ruler"></i>): This page contains the instructions for each assignment. **Assignments are due by 11:59 AM (1 minute before class) on the day they're listed.**
+- [**Content**](/content/) (<i class="fas fa-book-reader"></i>): Readings, slides, and recorded lectures for the topic.
+- [**Example**](/example/) (<i class="fas fa-laptop-code"></i>): Annotated R code and  supplementary information for reference for your assignments and project.
+- [**Problem Set**](/assignment/) (<i class="fas fa-pencil-ruler"></i>):  Instructions for problem sets. We'll work on these in class. Due by **11:59 AM (1 minute before class) of the next class.**
+- [**Quiz**](/assignment/) (<i class="fas fa-question"></i>): Lesson quizzes via Canvas to test chapter reading and lectures. Due by **11:59 AM (1 minute before class) on the day they're listed.**
 
 <div class="ical">
 You can subscribe to this calendar URL in Outlook, Google Calendar, or Apple Calendar:<br><a class="btn btn-primary" href="/`r schedule_ics_path`" role="button"><i class="far fa-calendar-alt"></i></a> <input id="ics_url" type="text" value="`r ics_url`" onclick="this.select()" readonly="readonly" size="60" />

@@ -50,10 +50,13 @@
   
   
   
-    <meta name="theme-color" content="#B0BBBF" />
+    <meta name="theme-color" content="#26172A" />
   
 
   
+  
+    
+    <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -191,9 +194,9 @@
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -223,7 +226,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.7128504dee1e800b4d6f834ad27beed3.css" />
+  <link rel="stylesheet" href="/css/wowchemy.5986d1b422a4ae9125f3007bfa6d81bc.css" />
 
   
 
@@ -319,7 +322,7 @@
   
   
   
-  <script src="/js/wowchemy-init.min.c2ae95842e5b33a787c7b8c567e989a4.js"></script>
+  <script src="/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js"></script>
 
   
 
@@ -671,6 +674,23 @@
 
       
       
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
 
       
       
@@ -737,76 +757,81 @@
   </div>
   
   <div class="docs-toc-item">
-    <a class="docs-toc-link" href="/content/00-course-intro/">Course content</a>
+    <a class="docs-toc-link" href="/content/01-course-intro/">Course content</a>
     <ul class="nav docs-sidenav">
       
       <li >
-        <a href="/content/00-course-intro/">Course Intro</a>
+        <a href="/content/01-course-intro/">Class 1 - Course Intro</a>
       </li>
 
       
       <li >
-        <a href="/content/01-bayes-intro/">Intro to Bayesian Inference</a>
+        <a href="/content/02-bayesian-inference/">Class 2 - Bayesian Inference</a>
       </li>
 
       
       <li >
-        <a href="/content/02-bayesian-inference/">Bayesian Inference</a>
+        <a href="/content/03-linear-models/">Class 3 - Linear Models</a>
       </li>
 
       
       <li >
-        <a href="/content/03-linear-models/">Linear Models</a>
+        <a href="/content/04-linear-models-2/">Class 4 - Linear Models</a>
       </li>
 
       
       <li >
-        <a href="/content/04-linear-models-2/">Linear Models (2)</a>
+        <a href="/content/05-bayesian-presentations/">Class 5 - Class presentations</a>
       </li>
 
       
       <li >
-        <a href="/content/05-bayesian-presentations/">Bayesian Applications (Class presentations)</a>
+        <a href="/content/06-spurious-correlations/">Class 6 - Spurious correlations</a>
       </li>
 
       
       <li >
-        <a href="/content/06-spurious-correlations/">Spurious correlations</a>
+        <a href="/content/07-model-comparison/">Class 7 - Model Comparison</a>
       </li>
 
       
       <li >
-        <a href="/content/07-confounders/">Confounders</a>
+        <a href="/content/08-interactions/">Class 8 - Interactions/MCMC</a>
       </li>
 
       
       <li >
-        <a href="/content/08-model-comparison/">Model Comparison</a>
+        <a href="/content/10-guest-lecture/">Class 10 - Guest Lecture</a>
       </li>
 
       
       <li >
-        <a href="/content/09-interactions/">Interactions</a>
+        <a href="/content/11-monsters-mixtures/">Class 11 - GLM / Categorical</a>
       </li>
 
       
       <li >
-        <a href="/content/10-mcmc/">Markov Chain Monte Carlo</a>
+        <a href="/content/09-entropy-glm/">Class 11 - Monsters &amp; Mixtures</a>
       </li>
 
       
       <li >
-        <a href="/content/11-entropy-glm/">Maximium entropy &amp; GLMs</a>
+        <a href="/content/12-multilevel/">Class 12 - Multilevel</a>
       </li>
 
       
       <li >
-        <a href="/content/12-spiked-integers/">God Spiked the Integers</a>
+        <a href="/content/13-exam/">Class 13 - Exam</a>
       </li>
 
       
       <li >
-        <a href="/content/22-missing-measurement/">Missing Data and Measurement Error</a>
+        <a href="/content/14-covariance/">Class 14 - Adventures in Covariance</a>
+      </li>
+
+      
+      <li >
+        <a href="/content/15-missing-measurement/">Class 15 - Missing Data</a>
       </li>
 
       
@@ -849,7 +874,7 @@
 <ul class="cta-group">
   
   <li>
-    <a href="00-course-intro"  class="btn btn-primary px-3 py-3">Begin the course</a>
+    <a href="01-course-intro"  class="btn btn-primary px-3 py-3">Begin the course</a>
   </li>
   
   
@@ -888,6 +913,19 @@ The slides are also embedded on each page. You can click in the slides and navig
 
 
 
+
+  
+  
+
+<p class="edit-page">
+  <a href="github.com/wesslen/dsba6010-spring2022/edit/main/content/content/_index.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
           
 
 
@@ -910,7 +948,7 @@ The slides are also embedded on each page. You can click in the slides and navig
             <p>
                 <strong>DSBA 6010 / STAT 7027: Bayesian Statistics (Spring 2022)</strong><br>
                 <a href="https://www.uncc.edu" target="_blank" rel="noopener">University of North Carolina at Charlotte</a> &emsp;&emsp;
-                <a href="https://datascience.charlotte.edu/" target="_blank" rel="noopener">School of Data Science</a>
+                <a href="https://math.charlotte.edu/" target="_blank" rel="noopener">Department of Mathematics and Statistics</a>
             </p>
 
             <p>
@@ -1069,6 +1107,8 @@ The slides are also embedded on each page. You can click in the slides and navig
     <script src="/en/js/wowchemy.min.4bba0826db6409c865d2e7b99039d6d0.js"></script>
 
     
+
+<script src="/js/math-code.js"></script>
 
 
 </body>

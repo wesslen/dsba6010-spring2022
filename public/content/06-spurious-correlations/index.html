@@ -27,7 +27,9 @@
     
   
   <meta name="description" content="
-   Chapter 5: The many variables &amp; the spurious waffles" />
+   Chapter 5: The many variables &amp; the spurious waffles
+
+   Chapter 6: The haunted DAG &amp; the causal terror" />
 
   
   <link rel="alternate" hreflang="en-us" href="https://dsba6010-spring2022.netlify.app/content/06-spurious-correlations/" />
@@ -51,10 +53,13 @@
   
   
   
-    <meta name="theme-color" content="#B0BBBF" />
+    <meta name="theme-color" content="#26172A" />
   
 
   
+  
+    
+    <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -200,9 +205,9 @@
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -232,7 +237,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.7128504dee1e800b4d6f834ad27beed3.css" />
+  <link rel="stylesheet" href="/css/wowchemy.5986d1b422a4ae9125f3007bfa6d81bc.css" />
 
   
 
@@ -281,9 +286,11 @@
   
   <meta property="og:site_name" content="Bayesian Statistics" />
   <meta property="og:url" content="https://dsba6010-spring2022.netlify.app/content/06-spurious-correlations/" />
-  <meta property="og:title" content="Spurious correlations | Bayesian Statistics" />
+  <meta property="og:title" content="Class 6 - Spurious correlations | Bayesian Statistics" />
   <meta property="og:description" content="
-   Chapter 5: The many variables &amp; the spurious waffles" /><meta property="og:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" />
+   Chapter 5: The many variables &amp; the spurious waffles
+
+   Chapter 6: The haunted DAG &amp; the causal terror" /><meta property="og:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -318,7 +325,7 @@
   <meta name="msapplication-TileColor" content="#FFFFFF" />
   <meta name="msapplication-TileImage" content="https://dsba6010-spring2022.netlify.app/img/mstile-144x144.png" />
 
-  <title>Spurious correlations | Bayesian Statistics</title>
+  <title>Class 6 - Spurious correlations | Bayesian Statistics</title>
 </head>
 
 
@@ -333,7 +340,7 @@
   
   
   
-  <script src="/js/wowchemy-init.min.c2ae95842e5b33a787c7b8c567e989a4.js"></script>
+  <script src="/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js"></script>
 
   
 
@@ -685,6 +692,23 @@
 
       
       
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
 
       
       
@@ -751,76 +775,81 @@
   </div>
   
   <div class="docs-toc-item">
-    <a class="docs-toc-link" href="/content/00-course-intro/">Course content</a>
+    <a class="docs-toc-link" href="/content/01-course-intro/">Course content</a>
     <ul class="nav docs-sidenav">
       
       <li >
-        <a href="/content/00-course-intro/">Course Intro</a>
+        <a href="/content/01-course-intro/">Class 1 - Course Intro</a>
       </li>
 
       
       <li >
-        <a href="/content/01-bayes-intro/">Intro to Bayesian Inference</a>
+        <a href="/content/02-bayesian-inference/">Class 2 - Bayesian Inference</a>
       </li>
 
       
       <li >
-        <a href="/content/02-bayesian-inference/">Bayesian Inference</a>
+        <a href="/content/03-linear-models/">Class 3 - Linear Models</a>
       </li>
 
       
       <li >
-        <a href="/content/03-linear-models/">Linear Models</a>
+        <a href="/content/04-linear-models-2/">Class 4 - Linear Models</a>
       </li>
 
       
       <li >
-        <a href="/content/04-linear-models-2/">Linear Models (2)</a>
-      </li>
-
-      
-      <li >
-        <a href="/content/05-bayesian-presentations/">Bayesian Applications (Class presentations)</a>
+        <a href="/content/05-bayesian-presentations/">Class 5 - Class presentations</a>
       </li>
 
       
       <li class="active">
-        <a href="/content/06-spurious-correlations/">Spurious correlations</a>
+        <a href="/content/06-spurious-correlations/">Class 6 - Spurious correlations</a>
       </li>
 
       
       <li >
-        <a href="/content/07-confounders/">Confounders</a>
+        <a href="/content/07-model-comparison/">Class 7 - Model Comparison</a>
       </li>
 
       
       <li >
-        <a href="/content/08-model-comparison/">Model Comparison</a>
+        <a href="/content/08-interactions/">Class 8 - Interactions/MCMC</a>
       </li>
 
       
       <li >
-        <a href="/content/09-interactions/">Interactions</a>
+        <a href="/content/10-guest-lecture/">Class 10 - Guest Lecture</a>
       </li>
 
       
       <li >
-        <a href="/content/10-mcmc/">Markov Chain Monte Carlo</a>
+        <a href="/content/11-monsters-mixtures/">Class 11 - GLM / Categorical</a>
       </li>
 
       
       <li >
-        <a href="/content/11-entropy-glm/">Maximium entropy &amp; GLMs</a>
+        <a href="/content/09-entropy-glm/">Class 11 - Monsters &amp; Mixtures</a>
       </li>
 
       
       <li >
-        <a href="/content/12-spiked-integers/">God Spiked the Integers</a>
+        <a href="/content/12-multilevel/">Class 12 - Multilevel</a>
       </li>
 
       
       <li >
-        <a href="/content/22-missing-measurement/">Missing Data and Measurement Error</a>
+        <a href="/content/13-exam/">Class 13 - Exam</a>
+      </li>
+
+      
+      <li >
+        <a href="/content/14-covariance/">Class 14 - Adventures in Covariance</a>
+      </li>
+
+      
+      <li >
+        <a href="/content/15-missing-measurement/">Class 15 - Missing Data</a>
       </li>
 
       
@@ -855,19 +884,32 @@
       <article class="article">
 
         <div class="docs-article-container">
-          <h1>Spurious correlations</h1>
+          <h1>Class 6 - Spurious correlations</h1>
 
           <div class="article-style">
             <p>
   <i class="fas fa-book  pr-1 fa-fw"></i> Chapter 5: The many variables &amp; the spurious waffles</p>
-<h2 id="lecture">Lecture</h2>
+<p>
+  <i class="fas fa-book  pr-1 fa-fw"></i> Chapter 6: The haunted DAG &amp; the causal terror</p>
+<h2 id="lectures">Lectures</h2>
+<h3 id="lecture-5">Lecture 5</h3>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/e0tO64mtYMU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<h2 id="slides">Slides</h2>
+<br>
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/26cdb77505364b8b8fd653c72fcf1bcf" title="L05 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;" data-ratio="1.3333333333333333"></iframe>
+<br>
+<h3 id="lecture-6">Lecture 6</h3>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/l_7yIUqWBmE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<br>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/d4422ebeb555488fb1e852bb35fc1d4d" title="L06 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;" data-ratio="1.3333333333333333"></iframe>
+<br>
 <h2 id="comprehension-questions">Comprehension questions</h2>
 <p>TBD</p>
 <h2 id="feedback">Feedback</h2>
@@ -897,14 +939,14 @@
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/content/05-bayesian-presentations/" rel="next">Bayesian Applications (Class presentations)</a>
+    <a href="/content/05-bayesian-presentations/" rel="next">Class 5 - Class presentations</a>
   </div>
   
   
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="/content/07-confounders/" rel="prev">Confounders</a>
+    <a href="/content/07-model-comparison/" rel="prev">Class 7 - Model Comparison</a>
   </div>
   
 </div>
@@ -918,6 +960,19 @@
 
           
 
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="github.com/wesslen/dsba6010-spring2022/edit/main/content/content/06-spurious-correlations.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
 
 
 
@@ -944,7 +999,7 @@
             <p>
                 <strong>DSBA 6010 / STAT 7027: Bayesian Statistics (Spring 2022)</strong><br>
                 <a href="https://www.uncc.edu" target="_blank" rel="noopener">University of North Carolina at Charlotte</a> &emsp;&emsp;
-                <a href="https://datascience.charlotte.edu/" target="_blank" rel="noopener">School of Data Science</a>
+                <a href="https://math.charlotte.edu/" target="_blank" rel="noopener">Department of Mathematics and Statistics</a>
             </p>
 
             <p>
@@ -1033,6 +1088,8 @@
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
       
 
     
@@ -1107,6 +1164,8 @@
     <script src="/en/js/wowchemy.min.4bba0826db6409c865d2e7b99039d6d0.js"></script>
 
     
+
+<script src="/js/math-code.js"></script>
 
 
 </body>

@@ -4,13 +4,13 @@ class_date: "2022-01-31"
 menu:
   content:
     parent: Course content
-    weight: 4
+    weight: 3
 highlight: true
 tags:
 - Bayesian methods
-title: Linear Models
+title: Class 3 - Linear Models
 type: docs
-weight: 4
+weight: 3
 ---
 
 {{< icon name="book" pack="fas" >}} Chapter 4: Geocentric models
@@ -18,6 +18,8 @@ weight: 4
 <!--more-->
 
 ## Lecture
+
+### Lecture 3
 
 {{< youtube h5aPo5wXN8E >}}
 

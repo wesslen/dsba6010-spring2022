@@ -5,10 +5,10 @@
     <loc>https://dsba6010-spring2022.netlify.app/resource/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/example/</loc>
+    <loc>https://dsba6010-spring2022.netlify.app/content/01-course-intro/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/content/00-course-intro/</loc>
+    <loc>https://dsba6010-spring2022.netlify.app/example/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/resource/install/</loc>
@@ -17,21 +17,18 @@
     <loc>https://dsba6010-spring2022.netlify.app/content/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/content/01-bayes-intro/</loc>
+    <loc>https://dsba6010-spring2022.netlify.app/content/02-bayesian-inference/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/content/02-bayesian-inference/</loc>
+    <loc>https://dsba6010-spring2022.netlify.app/resource/install-rethinking/</loc>
+    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/content/03-linear-models/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/resource/r/</loc>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/resource/style/</loc>
-  </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/content/03-linear-models/</loc>
-    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/resource/unzipping/</loc>
-    <lastmod>2020-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/content/04-linear-models-2/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
@@ -39,30 +36,39 @@
     <loc>https://dsba6010-spring2022.netlify.app/content/05-bayesian-presentations/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/resource/bayes/</loc>
+    <loc>https://dsba6010-spring2022.netlify.app/resource/unzipping/</loc>
+    <lastmod>2020-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/content/06-spurious-correlations/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/content/07-confounders/</loc>
+    <loc>https://dsba6010-spring2022.netlify.app/resource/bayes/</loc>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/content/07-model-comparison/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/content/08-model-comparison/</loc>
+    <loc>https://dsba6010-spring2022.netlify.app/content/08-interactions/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/content/09-interactions/</loc>
+    <loc>https://dsba6010-spring2022.netlify.app/content/10-guest-lecture/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/content/10-mcmc/</loc>
+    <loc>https://dsba6010-spring2022.netlify.app/content/11-monsters-mixtures/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/content/11-entropy-glm/</loc>
+    <loc>https://dsba6010-spring2022.netlify.app/content/09-entropy-glm/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/content/12-spiked-integers/</loc>
+    <loc>https://dsba6010-spring2022.netlify.app/content/12-multilevel/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsba6010-spring2022.netlify.app/content/22-missing-measurement/</loc>
+    <loc>https://dsba6010-spring2022.netlify.app/content/13-exam/</loc>
+    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/content/14-covariance/</loc>
+    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsba6010-spring2022.netlify.app/content/15-missing-measurement/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsba6010-spring2022.netlify.app/</loc>

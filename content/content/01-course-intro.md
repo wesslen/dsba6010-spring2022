@@ -5,7 +5,7 @@ menu:
   content:
     parent: Course content
     weight: 1
-title: Course Intro
+title: Class 1 - Course Intro
 type: docs
 weight: 1
 ---
