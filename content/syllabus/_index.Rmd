@@ -4,10 +4,6 @@ linkTitle: Syllabus
 summary: Bayesian statistics and causal inference
 title: "\U0001F4CA Syllabus"
 slug: syllabus
-output:
-  blogdown::html_page:
-    toc: true
-    fig_caption: false
 ---
 
 ```{r setup, message=FALSE, warning=FALSE, include=FALSE}

@@ -4,7 +4,6 @@ menu:
   resource:
     parent: Resources
 type: docs
-toc: true
 weight: 6
 editor_options:
   chunk_output_type: console
@@ -14,10 +13,8 @@ editor_options:
 <script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
 <link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
 
-<div id="TOC">
 
-</div>
-
+<script src="/js/prismr.js"></script>
 <p>In class session 2 (<a href="/slides/02-class.html#12">see this from the FAQ slides</a>) we talked briefly about the difference between frequentist statistics, where you test for the probability of your data given a null hypothesis, or <span class="math inline">\(P(\text{data} \mid H_0)\)</span>, and Bayesian statistics, where you test for the probability of your hypothesis given your data, or <span class="math inline">\(P(H \mid \text{data})\)</span>.</p>
 <p>This difference is important. In the world of frequentism, which is what pretty much all statistics classes use (including this one!), you have to compare your findings to a hypothetical null world and you have to talk about rejecting null hypotheses. In the Bayes world, though, you get to talk about the probability that your hypothesis is correct rather than the probability of seeing a value in a null world. So much more convenient and easy to interpret!</p>
 <p>Bayesian statistics, though, requires a lot of computational power and a different way of thinking about statistics and numbers in general. And very few classes teach it. Including this one! I use Bayesian stats all the time in my own research (see <a href="https://www.andrewheiss.com/research/articles/chaudhry-heiss-ngos-philanthropy/">this</a> or <a href="https://www.andrewheiss.com/research/articles/chaudhry-dotson-heiss-2021/">this</a>, for instance), but don’t teach it (yet!) because nobody else really teaches it and frequentist statistics still rule the policy world, so you need to know it.</p>
@@ -36,7 +33,7 @@ editor_options:
 <div id="super-short-example" class="section level2">
 <h2>Super short example</h2>
 <p>In practice, the R code for Bayesian models should be very familiar. For instance, here’s a regular old frequentist OLS model:</p>
-<pre class="r"><code>library(tidyverse)
+<pre class="r language-r"><code>library(tidyverse)
 library(broom)
 
 model_ols &lt;- lm(hwy ~ displ + drv, data = mpg)
@@ -49,13 +46,13 @@ tidy(model_ols, conf.int = TRUE)
 ## 3 drvf            4.79     0.530      9.05 6.40e-17     3.75      5.83
 ## 4 drvr            5.26     0.734      7.17 1.03e-11     3.81      6.70</code></pre>
 <p>Here’s that same model using the <strong>brms</strong> package, with default priors. Note how the code is basically the same:</p>
-<pre class="r"><code>library(tidyverse)
+<pre class="r language-r"><code>library(tidyverse)
 library(brms)         # For Bayesian regression with brm()
 library(broom.mixed)  # For tidy() and glance() with brms-based models
 library(tidybayes)    # For extracting posterior draws</code></pre>
-<pre class="r"><code># This will take a few seconds to run
+<pre class="r language-r"><code># This will take a few seconds to run
 model_bayes &lt;- brm(hwy ~ displ + drv, data = mpg)</code></pre>
-<pre class="r"><code>tidy(model_bayes)
+<pre class="r language-r"><code>tidy(model_bayes)
 ## # A tibble: 5 × 8
 ##   effect   component group    term            estimate std.error conf.low conf.high
 ##   &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;    &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;
@@ -65,7 +62,7 @@ model_bayes &lt;- brm(hwy ~ displ + drv, data = mpg)</code></pre>
 ## 4 fixed    cond      &lt;NA&gt;     drvr                5.25     0.754     3.79      6.75
 ## 5 ran_pars cond      Residual sd__Observation     3.10     0.149     2.81      3.41</code></pre>
 <p>In Bayes land, you get a distribution of plausible values given the data (or what is called the “posterior distribution”), and you can visualize this posterior distribution:</p>
-<pre class="r"><code># Make a long dataset of the draws for these three coefficients
+<pre class="r language-r"><code># Make a long dataset of the draws for these three coefficients
 posterior_draws &lt;- model_bayes %&gt;% 
   gather_draws(c(b_displ, b_drv, b_drvf, b_drvr))
 
@@ -106,13 +103,13 @@ ggplot(posterior_draws, aes(x = .value, y = fct_rev(.variable), fill = .variable
 </blockquote>
 <p>Confidence intervals tell you about the range, or the net. That’s all.</p>
 <p>Here’s an example with some data from <em>The Effect</em> on restaurant inspections in Alaska. We want to know if weekend inspections are more lenient that ones conducted during the work week.</p>
-<pre class="r"><code>library(tidyverse)
+<pre class="r language-r"><code>library(tidyverse)
 library(broom)
 library(gghalves)
 
 inspections &lt;- read_csv(&quot;https://vincentarelbundock.github.io/Rdatasets/csv/causaldata/restaurant_inspections.csv&quot;)</code></pre>
 <p>First we should look at the data to see if there are any obvious patterns. Let’s look at scores separated by weekend status. We’ll use <a href="https://erocoar.github.io/gghalves/">the neat <strong>gghalves</strong> package</a> to plot both the raw points and a density plot. The orange points show the average value:</p>
-<pre class="r"><code>ggplot(inspections, aes(x = Weekend, y = inspection_score)) +
+<pre class="r language-r"><code>ggplot(inspections, aes(x = Weekend, y = inspection_score)) +
   geom_half_point(side = &quot;l&quot;, alpha = 0.2, size = 0.5,
                   transformation = position_jitter(height = 0)) +
   geom_half_violin(side = &quot;r&quot;) +
@@ -121,7 +118,7 @@ inspections &lt;- read_csv(&quot;https://vincentarelbundock.github.io/Rdatasets/
 <p>It looks like weekend inspections are far more rare than weekday ones, and no weekend inspections every give scores lower than 80. It also looks like the average weekend score is slightly higher than the average weekday score. Let’s figure out how much of a difference there is.</p>
 <p>But first, we’ll use the language of inference and sampling. Our population parameter (we’ll call it the Greek letter theta, or <span class="math inline">\(\theta\)</span>) is some single true fixed number that exists out in the world—weekend restaurant inspections in Alaska have a <span class="math inline">\(\theta\)</span> higher average score than weekday inspections. We want to find out what that <span class="math inline">\(\theta\)</span> is, so we’ll look at some confidence intervals.</p>
 <p>We can look at a basic difference in means based on weekend status:</p>
-<pre class="r"><code>model_naive &lt;- lm(inspection_score ~ Weekend, 
+<pre class="r language-r"><code>model_naive &lt;- lm(inspection_score ~ Weekend, 
                   data = inspections)
 tidy(model_naive, conf.int = TRUE)
 ## # A tibble: 2 × 7
@@ -131,7 +128,7 @@ tidy(model_naive, conf.int = TRUE)
 ## 2 WeekendTRUE     2.10    0.433       4.84 0.00000131     1.25      2.95</code></pre>
 <p>Here, weekend scores are 2.1 points higher than weekday scores, on average (that’s our estimate, or <span class="math inline">\(\hat{\theta}\)</span>. We have a confidence interval of 1.2–2.9. We <em>cannot</em> say that we’re 95% confident that the weekend score boost (or <span class="math inline">\(\theta\)</span>) is between 1.2 and 2.9. What we <em>can</em> say is that we’re 95% confident that the range 1.2–2.9 captures the true population parameter <span class="math inline">\(\theta\)</span>. If we took a bunch of different samples of inspection scores and calculated the average weekend vs. weekday score in each of those samples, 95% of those confidence intervals should capture the true <span class="math inline">\(\theta\)</span>. Importantly, we still have no idea what the actual <span class="math inline">\(\theta\)</span> is, but we’re pretty sure that our confidence interval net has captured it.</p>
 <p>This estimate is probably wrong, since there are other factors that confound the weekend → score relationship. Maybe the health department only conducts weekend inspections in places with lots of branches, or maybe they did more weekend inspections in certain years. We can adjust/control for these in the model:</p>
-<pre class="r"><code>model_adjusted &lt;- lm(inspection_score ~ Weekend + NumberofLocations + Year, 
+<pre class="r language-r"><code>model_adjusted &lt;- lm(inspection_score ~ Weekend + NumberofLocations + Year, 
                      data = inspections)
 tidy(model_adjusted, conf.int = TRUE)
 ## # A tibble: 4 × 7
@@ -143,7 +140,7 @@ tidy(model_adjusted, conf.int = TRUE)
 ## 4 Year               -0.0646  0.00617     -10.5  1.45e-25  -0.0767   -0.0525</code></pre>
 <p>Our weekend estimate shrunk a little and is now 1.43, with a confidence interval of 0.6–2.3. Again, think of this as a net—we’re 95% sure that the true <span class="math inline">\(\theta\)</span> is in that net somewhere. <span class="math inline">\(\theta\)</span> could be 0.7, it could be 1.4, it could be 2.2—who knows. All we know is that our net most likely picked it up.</p>
 <p>For fun, let’s plot both these weekend estimates and their confidence intervals:</p>
-<pre class="r"><code># Save just the weekend coefficient from both models
+<pre class="r language-r"><code># Save just the weekend coefficient from both models
 freq_results_naive &lt;- tidy(model_naive, conf.int = TRUE) %&gt;% 
   mutate(model = &quot;Naive model&quot;) %&gt;% 
   filter(term == &quot;WeekendTRUE&quot;)
@@ -180,7 +177,7 @@ ggplot(freq_results, aes(x = estimate, y = model, color = model)) +
 <p>Arguments like <code>chains</code>, <code>iter</code>, and <code>cores</code> deal with the simulation. <code>chains</code> defines how many parallel simulations should happen, <code>iter</code> controls how many iterations should happen with in each chain, and <code>cores</code> spreads those chains across the CPUs in your computer (i.e. if you have a 4-core computer, you can run 4 chains all at the same time; run <code>parallel::detectCores()</code> in your R console to see how many CPU cores you have). <code>seed</code> makes it so that the random simulation results are reproducible (<a href="/example/random-numbers/#seeds">see here for more on seeds</a>).</p>
 <p><strong>Priors</strong></p>
 <p>These define your prior beliefs about the parameters (i.e. <span class="math inline">\(\theta\)</span>) in the model. If you think that the restaurant weekend inspection boost is probably positive, but could possibly be negative, or maybe zero, you can feed that belief into the model. For instance, if you’re fairly confident (based on experiences in other states maybe) that weekend scores really are higher, you can provide an <em>informative</em> prior that says that <span class="math inline">\(\theta\)</span> is most likely 1.5 points ± a little variation, following a normal distribution. Or, if you have no idea what it could be—maybe it’s super high like 10, maybe it’s negative like −5, or maybe it’s 0 and there’s no weekend boost—you can provide a <em>vague</em> prior that says that <span class="math inline">\(\theta\)</span> is 0 points ± a ton of variation.</p>
-<pre class="r"><code>library(patchwork)  # For combining ggplot plots
+<pre class="r language-r"><code>library(patchwork)  # For combining ggplot plots
 
 plot_informative &lt;- ggplot() +
   stat_function(fun = dnorm, args = list(mean = 1.5, sd = 0.5),
@@ -200,11 +197,11 @@ plot_informative | plot_vague</code></pre>
 <p><img src="/resource/bayes_files/figure-html/priors-1.png" width="75%" style="display: block; margin: auto;" /></p>
 <p>For the sake of this example, we’ll use a vague prior.</p>
 <p>Here’s how to officially do Bayesian analysis with <strong>brms</strong> and incorporate prior information about <span class="math inline">\(\theta\)</span>. Again, the syntax is super similar to <code>lm()</code>, just with some extra bits about the prior and the MCMC settings:</p>
-<pre class="r"><code>library(brms)         # For Bayesian regression with brm()
+<pre class="r language-r"><code>library(brms)         # For Bayesian regression with brm()
 library(broom.mixed)  # For tidy() and glance() with brms-based models
 library(tidybayes)    # For extracting posterior draws
 library(ggdist)       # For making pretty posterior plots</code></pre>
-<pre class="r"><code># bf() stands for &quot;bayes formula&quot;; you technically don&#39;t need to use it, but it 
+<pre class="r language-r"><code># bf() stands for &quot;bayes formula&quot;; you technically don&#39;t need to use it, but it 
 # makes life easier for more complex models, so it&#39;s good practice even when 
 # using a simple formula like the one here
 #
@@ -228,7 +225,7 @@ model_bayes &lt;- brm(bf(inspection_score ~ Weekend + NumberofLocations + Year),
 ## Compiling Stan program...
 ## Start sampling</code></pre>
 <p>Phew. That took a while to run, but it ran! Now we can check the results:</p>
-<pre class="r"><code>tidy(model_bayes, conf.int = TRUE)
+<pre class="r language-r"><code>tidy(model_bayes, conf.int = TRUE)
 ## # A tibble: 5 × 8
 ##   effect   component group    term              estimate std.error conf.low conf.high
 ##   &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;    &lt;chr&gt;                &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;
@@ -239,7 +236,7 @@ model_bayes &lt;- brm(bf(inspection_score ~ Weekend + NumberofLocations + Year),
 ## 5 ran_pars cond      Residual sd__Observation     6.04    0.0252     5.99      6.09</code></pre>
 <p>Our estimate for the weekend boost, or <span class="math inline">\(\hat{\theta}\)</span>, is 1.44, which is basically the same as the frequentist estimate we found before. We have an interval too, but it’s not a confidence interval—it’s a credible interval. Instead of telling us about the range of the confidence interval net, this credible interval tells us the probability that <span class="math inline">\(\hat{\theta}\)</span> falls in that range. It’s essentially the probability of the actual value, not the probability of the range. Based on this, there’s a 95% chance that—given the data we have—the weekend score boost (<span class="math inline">\(\hat{\theta}\)</span>) is between 0.61 and 2.25.</p>
 <p>We can visualize this posterior distribution to see more information than we could with our frequentist estimate. Remember, our simulation estimated thousands of possible coefficients for <code>WeekendTRUE</code>, and each of them are equally likely. The value that we see in <code>tidy()</code> is the median of all these simulated coefficients, or draws. We can see a few of them here:</p>
-<pre class="r"><code>model_bayes %&gt;%
+<pre class="r language-r"><code>model_bayes %&gt;%
   spread_draws(b_WeekendTRUE) %&gt;%
   head(10)
 ## # A tibble: 10 × 4
@@ -256,7 +253,7 @@ model_bayes &lt;- brm(bf(inspection_score ~ Weekend + NumberofLocations + Year),
 ##  9      1          9     9         1.79 
 ## 10      1         10    10         1.09</code></pre>
 <p>Sometimes the weekend boost is 1.2, sometimes 1.7, sometimes 1.3, etc. There’s a lot of variation in there. We can plot all these simulated coefficients to see where they mostly cluster:</p>
-<pre class="r"><code>weekend_draws &lt;- model_bayes %&gt;%
+<pre class="r language-r"><code>weekend_draws &lt;- model_bayes %&gt;%
   spread_draws(b_WeekendTRUE)
 
 ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
@@ -265,7 +262,7 @@ ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
 <p><img src="/resource/bayes_files/figure-html/weekend-posterior-halfeye-1.png" width="75%" style="display: block; margin: auto;" /></p>
 <p>The weekend point boost <span class="math inline">\(\hat{\theta}\)</span> is mostly clustered around 1–2, and 95% of those draws are between 0.61 and 2.25. We’re thus 95% sure that the actual weekend point boost is between 0.61 and 2.25 with a median of 1.44.</p>
 <p>We can also look at this distribution a slightly different way by collapsing all those posterior draws into 100 possible values. Each of these dots is equally likely, and the true value of <span class="math inline">\(\theta\)</span> could be any of them, but again, most are clustered around 1.44:</p>
-<pre class="r"><code>ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
+<pre class="r language-r"><code>ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
   stat_dotsinterval(quantiles = 100) +
   labs(caption = &quot;Point shows median value;\nthick black bar shows 66% credible interval;\nthin black bar shows 95% credible interval&quot;)</code></pre>
 <p><img src="/resource/bayes_files/figure-html/weekend-posterior-dots-1.png" width="75%" style="display: block; margin: auto;" /></p>
@@ -374,7 +371,7 @@ People <em>do</em> naturally think like this
 <h3>Probability of direction</h3>
 <p>One question we can answer with Bayesian results is “How certain are we that this estimate is positive (or negative)?” Are we sure the weekend scores are higher on average, or could they sometimes be negative? Are we sure that the average treatment effect of your program decreases poverty, or could it maybe have a positive effect instead?</p>
 <p>To figure this out, we can calculate something called the <a href="https://easystats.github.io/bayestestR/articles/probability_of_direction.html">“probability of direction,”</a> or the proportion of posterior draws that are above (or below) some arbitrary number. For instance, what’s the probability that the weekend boost is positive (or greater than 0)?</p>
-<pre class="r"><code># Find the proportion of posterior draws that are bigger than 0
+<pre class="r language-r"><code># Find the proportion of posterior draws that are bigger than 0
 weekend_draws %&gt;% 
   summarize(prop_greater_0 = sum(b_WeekendTRUE &gt; 0) / n())
 ## # A tibble: 1 × 1
@@ -383,7 +380,7 @@ weekend_draws %&gt;%
 ## 1           1.00</code></pre>
 <p>Whoa. 99.9% of the posterior draws for the weekend boost are greater than 0, meaning that there’s a 99.9% chance that the coefficient is positive, given the data we have.</p>
 <p>The neat thing about the probability of direction is that we can choose whatever value we want as the threshold. Let’s say the state health director wants to know if weekend scores are higher than weekday scores, but she’s fine with just a little boost (weekends are nice! inspectors are happier!). Pretend that she thinks an average difference of 1 or lower isn’t a big concern, but seeing a difference greater than 1 is a signal that weekend inspectors are maybe being too lenient. We can use 1 as our threshold instead:</p>
-<pre class="r"><code># Find the proportion of posterior draws that are bigger than 1
+<pre class="r language-r"><code># Find the proportion of posterior draws that are bigger than 1
 weekend_draws %&gt;% 
   summarize(prop_greater_0 = sum(b_WeekendTRUE &gt; 1) / n())
 ## # A tibble: 1 × 1
@@ -391,7 +388,7 @@ weekend_draws %&gt;%
 ##            &lt;dbl&gt;
 ## 1          0.855</code></pre>
 <p>Based on this, 84% of the draws are higher than 1, so there’s an 84% chance that the actual <span class="math inline">\(\theta\)</span> is greater than 1. Notice how there’s no discussion of significance here—no alpha thresholds, no stars, no null worlds. We just have a probability that <span class="math inline">\(\hat{\theta}\)</span> is above 1. We can even visualize it. Everything to the right of that vertical line at 1 is “significant” (but not significant with null worlds and stars).</p>
-<pre class="r"><code>ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
+<pre class="r language-r"><code>ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
   stat_halfeye(aes(fill_ramp = stat(x &gt; 1)), fill = &quot;red&quot;) +
   scale_fill_ramp_discrete(from = &quot;darkred&quot;, guide = &quot;none&quot;) +
   geom_vline(xintercept = 1) +
@@ -405,14 +402,14 @@ weekend_draws %&gt;%
 <p>Another approach is that we can think of a range of <span class="math inline">\(\theta\)</span> where there’s practically no effect. Think of this as a “dead zone” of sorts. If <span class="math inline">\(\hat{\theta}\)</span> is 0, we know there’s no effect. If <span class="math inline">\(\hat{\theta}\)</span> is something tiny like 0.2 or -0.3, we probably don’t actually care—that’s a tiny amount and could just be because of measurement error. It’s not anything really actionable. If <span class="math inline">\(\hat{\theta}\)</span> is big like 1.3 or -2.4 or whatever, then we have cause to worry, but if the estimate is in the “dead zone” (however we want to define it), then we shouldn’t really care or worry.</p>
 <p>The official Bayesian term for this “dead zone” is <a href="https://easystats.github.io/bayestestR/articles/region_of_practical_equivalence.html">the <em>region of practical equivalence</em> (ROPE)</a>. There are lots of ways to determine this dead zone—you can base it on experience with the phenomenon (e.g., if you’re the health director and know a lot about inspection scores, you know what kind of score ranges matter), or you can base it on the data you have (e.g., <code>-0.1 * sd(outcome)</code> to <code>0.1 * sd(outcome)</code>).</p>
 <p>For this example, let’s pretend that the health director tells you that any effect between −0.5 and 0.5 doesn’t matter—for her, those kind of values would be the same as 0. Now that we have a dead zone or ROPE, we can calculate the proportion of coefficient draws that fall outside of that ROPE:</p>
-<pre class="r"><code># Find the proportion of posterior draws that are bigger than 0.5 or less than -0.5
+<pre class="r language-r"><code># Find the proportion of posterior draws that are bigger than 0.5 or less than -0.5
 weekend_draws %&gt;% 
   summarize(prop_outside_rope = 1 - sum(b_WeekendTRUE &gt;= -0.5 &amp; b_WeekendTRUE &lt;= 0.5) / n())
 ## # A tibble: 1 × 1
 ##   prop_outside_rope
 ##               &lt;dbl&gt;
 ## 1             0.986</code></pre>
-<pre class="r"><code>ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
+<pre class="r language-r"><code>ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
   stat_halfeye(aes(fill_ramp = stat(x &gt;= 0.5 | x &lt;= -0.5)), fill = &quot;red&quot;) +
   scale_fill_ramp_discrete(from = &quot;darkred&quot;, guide = &quot;none&quot;) +
   annotate(geom = &quot;rect&quot;, xmin = -0.5, xmax = 0.5, ymin = -Inf, ymax = Inf, fill = &quot;purple&quot;, alpha = 0.3) +
@@ -421,7 +418,7 @@ weekend_draws %&gt;%
 <p><img src="/resource/bayes_files/figure-html/plot-rope-1.png" width="75%" style="display: block; margin: auto;" /></p>
 <p>Given this data, 98% of the posterior distribution of the weekend boost is outside of the ROPE, or dead zone, so we can consider this to be “significant” (again, this is a tricky word because it has nothing to do with null worlds and stars!).</p>
 <p>There are some debates over what you should check with the ROPE. Some people say that you should look at how much of the 95% credible interval is inside the dead zone; other say you should look at how much of the entire distribution is inside the dead zone. We just did the latter, with the whole distribution. If we want to see how much of the area within the credible interval is inside the dead zone, we can change the code a little to filter those observations out:</p>
-<pre class="r"><code># Extract the 95% confidence interval range
+<pre class="r language-r"><code># Extract the 95% confidence interval range
 weekend_cred_int &lt;- weekend_draws %&gt;% 
   median_hdi()
 weekend_cred_int$.lower
@@ -440,10 +437,10 @@ weekend_draws %&gt;%
 <p>If we look only at the 95% credible interval of the posterior, there’s a 0% chance that any of those estimated coefficients are in the dead zone / ROPE. There’s a 100% chance that the credible interval doesn’t touch the ROPE. You can see this visually too—look at the figure above with the purple ROPE. The thin black bar that shows the 95% credible interval doesn’t show up in the purple area.</p>
 <p>Which approach is better—using full distribution or just using the credible interval? Who knows. That’s up to you.</p>
 <p>Finally, here we decided on the ROPE kind of arbitrarily as −0.5 to 0.5, but there are more systematic ways of doing it. <a href="https://easystats.github.io/bayestestR/articles/region_of_practical_equivalence.html#how-to-define-the-rope-range-">One common and standard suggestion</a> is to use −0.1 and 0.1 times the standard deviation of the outcome variable:</p>
-<pre class="r"><code>c(-0.1, 0.1) * sd(inspections$inspection_score)
+<pre class="r language-r"><code>c(-0.1, 0.1) * sd(inspections$inspection_score)
 ## [1] -0.63  0.63</code></pre>
 <p>Based on this approach, our ROPE/dead zone should be −0.63 to 0.63. Let’s see how that looks:</p>
-<pre class="r"><code># Find the proportion of posterior draws that are bigger than 0.5 or less than 
+<pre class="r language-r"><code># Find the proportion of posterior draws that are bigger than 0.5 or less than 
 # -0.5, but only look inside the 95% credible interval
 weekend_draws %&gt;% 
   # Only look inside the credible interval
@@ -453,7 +450,7 @@ weekend_draws %&gt;%
 ##   prop_outside_rope
 ##               &lt;dbl&gt;
 ## 1                 1</code></pre>
-<pre class="r"><code>ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
+<pre class="r language-r"><code>ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
   stat_halfeye(aes(fill_ramp = stat(x &gt;= 0.63 | x &lt;= -0.63)), fill = &quot;red&quot;) +
   scale_fill_ramp_discrete(from = &quot;darkred&quot;, guide = &quot;none&quot;) +
   annotate(geom = &quot;rect&quot;, xmin = -0.63, xmax = 0.63, ymin = -Inf, ymax = Inf, fill = &quot;purple&quot;, alpha = 0.3) +

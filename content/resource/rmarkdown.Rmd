@@ -5,9 +5,19 @@ menu:
   resource:
     parent: Guides
     weight: 4
+editor_options:
+  chunk_output_type: console
 type: docs
-toc: true
 ---
+
+<script src="/js/prismr.js"></script>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.width = 6, fig.height = 3.6, fig.align = "center",
+                      fig.retina = 3, collapse = TRUE, out.width = "75%", class.source="language-markdown", class.output="language-markdown")
+set.seed(1234)
+options("digits" = 2, "width" = 150)
+```
 
 [R Markdown](https://rmarkdown.rstudio.com/) is [regular Markdown](/resource/markdown/) with R code and output sprinkled in. You can do everything you can with [regular Markdown](/resource/markdown/), but you can incorporate graphs, tables, and other R output directly in your document. You can create HTML, PDF, and Word documents, PowerPoint and HTML presentations, websites, books, and even [interactive dashboards](https://rmarkdown.rstudio.com/flexdashboard/index.html) with R Markdown. This whole course website is created with R Markdown (and [a package named **blogdown**](https://bookdown.org/yihui/blogdown/)).
 
@@ -76,11 +86,11 @@ There are a bunch of different options you can set for each chunk. You can see a
 
 Options go inside the `{r}` section of the chunk:
 
-````markdown
+```{markdown}
 `r ''````{r name-of-this-chunk, warning=FALSE, message=FALSE}
 # Code goes here
+`''````
 ```
-````
 
 The most common chunk options are these:
 

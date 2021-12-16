@@ -4,15 +4,16 @@ menu:
   resource:
     parent: Resources
 type: docs
-toc: true
 weight: 6
 editor_options:
   chunk_output_type: console
 ---
 
+<script src="/js/prismr.js"></script>
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(fig.width = 6, fig.height = 3.6, fig.align = "center",
-                      fig.retina = 3, collapse = TRUE, out.width = "75%")
+                      fig.retina = 3, collapse = TRUE, out.width = "75%", class.source="language-r", class.output="language-r")
 set.seed(1234)
 options("digits" = 2, "width" = 150)
 ```

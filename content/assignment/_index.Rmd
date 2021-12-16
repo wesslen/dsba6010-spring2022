@@ -5,7 +5,6 @@ menu:
     parent: Assignments
     weight: 1
 type: docs
-toc: true
 ---
 
 The main goals of this class are to help you design, critique, code, and run Bayesian statistical models. Each type of assignment in this class is designed to help you achieve one or more of these goals.

@@ -25,7 +25,7 @@ lessons:
     date_start: "Jan 24"
     date_end: "Jan 30"
     content: "02-bayesian-inference"
-    quiz: "lesson-quiz-1"
+    quiz: "01-lesson-quiz"
     assignment: "01-problem-set"
     bg: 2
     bottomborder: True    
@@ -36,7 +36,7 @@ lessons:
     date_start: "Jan 31"
     date_end: "Feb 6"
     content: "03-linear-models"
-    quiz: "lesson-quiz-2"
+    quiz: "02-lesson-quiz"
     assignment: "02-problem-set"
     bottomborder: True
     bg: 1
@@ -47,7 +47,7 @@ lessons:
     date_end: "Feb 13"
     session: "Session 4"
     content: "04-linear-models-2"
-    quiz: "lesson-quiz-3"
+    quiz: "03-lesson-quiz"
     assignment: "03-problem-set"
     bottomborder: True
     bg: 2

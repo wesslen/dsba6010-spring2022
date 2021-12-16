@@ -2,22 +2,22 @@
 name = "Custom Theme"
 
 # Is theme light or dark?
-is_light = false
+light = true
 
 # Primary
-primary = "#26172A"
+primary = "#CF4446"
 
 # Links
-link = "#3B2D5A"
-link_hover = "#26172A"
+link = "#CF4446"
+link_hover = "#F6D645"
 
 # Menu
-menu_primary = "rgb(132,148,154)"
-menu_text = "#000"
-menu_text_active = "#0072ff"
-menu_title = "#000"
+menu_primary = "#fff"
+menu_text = "#CF4446"
+menu_text_active = "#FB9E07"
+menu_title = "#494949"
 
 # Home sections
 home_section_odd = "rgb(255, 255, 255)"
-home_section_even = "rgb(255, 255, 255)"
+home_section_even = "rgb(247, 247, 247)"
 

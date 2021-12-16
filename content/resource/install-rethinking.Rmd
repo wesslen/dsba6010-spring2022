@@ -4,13 +4,23 @@ date: "2021-12-01"
 menu:
   resource:
     parent: Guides
+    weight: 2
 type: docs
-toc: true
 weight: 2
+editor_options:
+  chunk_output_type: console
+output:
+  html_document:
+    highlight: null
 ---
 
-```{r setup, include=FALSE, warning=FALSE, message=FALSE}
-library(knitr)
+<script src="/js/prismr.js"></script>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.width = 6, fig.height = 3.6, fig.align = "center",
+                      fig.retina = 3, collapse = TRUE, out.width = "75%", class.source="language-r", class.output="language-r")
+set.seed(1234)
+options("digits" = 2, "width" = 150)
 ```
 
 We'll primarily use Richard McElreath's `rethinking` R package. Installation can be a bit tricky so this guide will outline how to install as well as other packages that may be helpful in this class.

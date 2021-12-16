@@ -75,37 +75,37 @@ p <- d %>%
   theme_transparent()
   #geom_url(url = "dsba6010.com")
 
-pcolor = "#B0BBBF"
+pcolor = "#F4B942"
 hcolor = ""
 
 sticker(p, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 32,
-        p_color = pcolor, h_color = "#046B8B",
+        p_color = "#F4B942", h_color = "#046B8B",
         filename="./static/img/icon-32.png")
 
 sticker(p, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 192,
-        p_color = "#B0BBBF", h_color = "#046B8B",
+        p_color = pcolor, h_color = "#046B8B",
         filename="./static/img/icon-192.png")
 
 sticker(p, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 512,
-        p_color = "#B0BBBF", h_color = "#046B8B",
+        p_color = pcolor, h_color = "#046B8B",
         filename="./static/img/icon-512.png")
 
 sticker(p, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 32,
-        p_color = "#B0BBBF", h_color = "#046B8B",        
+        p_color = pcolor, h_color = "#046B8B",        
         filename="./assets/media/icon-32.png")
 
 sticker(p, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 32,
-        p_color = "#B0BBBF", h_color = "#046B8B",        
+        p_color = pcolor, h_color = "#046B8B",        
         filename="./assets/media/icon.png")
 
 sticker(p, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 192,
-        p_color = "#B0BBBF", h_color = "#046B8B",
+        p_color = pcolor, h_color = "#046B8B",
         filename="./assets/media/icon-192.png")
 
 sticker(p, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 512,
-        p_color = "#B0BBBF", h_color = "#046B8B",
+        p_color = pcolor, h_color = "#046B8B",
         filename="./assets/media/icon-512.png")
 
 sticker(p, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 384,
-        p_color = "#B0BBBF", h_color = "#046B8B",
+        p_color = pcolor, h_color = "#046B8B",
         filename="./assets/media/icon-384.png")

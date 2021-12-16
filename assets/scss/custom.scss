@@ -1,5 +1,8 @@
 // viridisLite::viridis(8, option = "mako", begin = 0.1, end = 0.9)
 
+
+
+
 $colors: (
   #26172A,
   #3B2D5A,
@@ -40,13 +43,18 @@ kbd {
     font-size: 75%;
 }
 
-pre, code {
-    color: nth($colors, 7);
-    background-color: lighten(nth($colors, 7), 60%);
+code {
+    color: #000000; //#85F789
+    background-color: transparent; // should be transparent or #282A36 if restart then resets
+}
+
+pre {
+    color: nth($colors, 1);
+    background-color: #ffffff;
 }
 
 .highlight pre, .highlight code {
-    background-color: transparent;
+    // background-color: highlight;
 }
 
 .highlight>div,
@@ -463,3 +471,4 @@ div.warning:before {
 .stackedit-button-wrapper {
     text-align: center;
 }
+

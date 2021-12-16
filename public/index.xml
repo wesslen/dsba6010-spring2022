@@ -138,7 +138,7 @@
 &lt;/div&gt;
 
 &lt;br&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/3bfa335d71ac499ebb10e11073efe777&#34; title=&#34;L02 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/3bfa335d71ac499ebb10e11073efe777&#34; title=&#34;L02 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 210px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-5&#34;&gt;
   &lt;summary&gt;What is Bayesian data analysis? How does it differ in its definition of uncertainty from Frequentist interpretations?&lt;/summary&gt;
@@ -273,8 +273,8 @@ stan_samples &amp;lt;- stan(model_code = model_string, data = list(y = y, n = le
 &lt;pre&gt;&lt;code&gt;## 
 ## SAMPLING FOR MODEL &amp;#39;f6f19f2978447ffaf66a6d87ed7010fd&amp;#39; NOW (CHAIN 1).
 ## Chain 1: 
-## Chain 1: Gradient evaluation took 6e-06 seconds
-## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.06 seconds.
+## Chain 1: Gradient evaluation took 7e-06 seconds
+## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.07 seconds.
 ## Chain 1: Adjust your expectations accordingly!
 ## Chain 1: 
 ## Chain 1: 
@@ -291,15 +291,15 @@ stan_samples &amp;lt;- stan(model_code = model_string, data = list(y = y, n = le
 ## Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 1: 
-## Chain 1:  Elapsed Time: 0.003809 seconds (Warm-up)
-## Chain 1:                0.003564 seconds (Sampling)
-## Chain 1:                0.007373 seconds (Total)
+## Chain 1:  Elapsed Time: 0.003863 seconds (Warm-up)
+## Chain 1:                0.0036 seconds (Sampling)
+## Chain 1:                0.007463 seconds (Total)
 ## Chain 1: 
 ## 
 ## SAMPLING FOR MODEL &amp;#39;f6f19f2978447ffaf66a6d87ed7010fd&amp;#39; NOW (CHAIN 2).
 ## Chain 2: 
-## Chain 2: Gradient evaluation took 2e-06 seconds
-## Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.02 seconds.
+## Chain 2: Gradient evaluation took 3e-06 seconds
+## Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.03 seconds.
 ## Chain 2: Adjust your expectations accordingly!
 ## Chain 2: 
 ## Chain 2: 
@@ -316,9 +316,9 @@ stan_samples &amp;lt;- stan(model_code = model_string, data = list(y = y, n = le
 ## Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 2: 
-## Chain 2:  Elapsed Time: 0.003909 seconds (Warm-up)
-## Chain 2:                0.003782 seconds (Sampling)
-## Chain 2:                0.007691 seconds (Total)
+## Chain 2:  Elapsed Time: 0.004009 seconds (Warm-up)
+## Chain 2:                0.003755 seconds (Sampling)
+## Chain 2:                0.007764 seconds (Total)
 ## Chain 2: 
 ## 
 ## SAMPLING FOR MODEL &amp;#39;f6f19f2978447ffaf66a6d87ed7010fd&amp;#39; NOW (CHAIN 3).
@@ -341,15 +341,15 @@ stan_samples &amp;lt;- stan(model_code = model_string, data = list(y = y, n = le
 ## Chain 3: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 3: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 3: 
-## Chain 3:  Elapsed Time: 0.003894 seconds (Warm-up)
-## Chain 3:                0.004025 seconds (Sampling)
-## Chain 3:                0.007919 seconds (Total)
+## Chain 3:  Elapsed Time: 0.003936 seconds (Warm-up)
+## Chain 3:                0.003987 seconds (Sampling)
+## Chain 3:                0.007923 seconds (Total)
 ## Chain 3: 
 ## 
 ## SAMPLING FOR MODEL &amp;#39;f6f19f2978447ffaf66a6d87ed7010fd&amp;#39; NOW (CHAIN 4).
 ## Chain 4: 
-## Chain 4: Gradient evaluation took 1e-06 seconds
-## Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.01 seconds.
+## Chain 4: Gradient evaluation took 0 seconds
+## Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
 ## Chain 4: Adjust your expectations accordingly!
 ## Chain 4: 
 ## Chain 4: 
@@ -366,9 +366,9 @@ stan_samples &amp;lt;- stan(model_code = model_string, data = list(y = y, n = le
 ## Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 4: 
-## Chain 4:  Elapsed Time: 0.003862 seconds (Warm-up)
-## Chain 4:                0.004013 seconds (Sampling)
-## Chain 4:                0.007875 seconds (Total)
+## Chain 4:  Elapsed Time: 0.00389 seconds (Warm-up)
+## Chain 4:                0.004015 seconds (Sampling)
+## Chain 4:                0.007905 seconds (Total)
 ## Chain 4:&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;stan_samples&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Inference for Stan model: f6f19f2978447ffaf66a6d87ed7010fd.
@@ -379,7 +379,7 @@ stan_samples &amp;lt;- stan(model_code = model_string, data = list(y = y, n = le
 ## theta   0.28    0.00 0.08   0.14   0.22   0.27   0.33   0.45  1505    1
 ## lp__  -19.52    0.02 0.72 -21.59 -19.68 -19.24 -19.06 -19.01  1686    1
 ## 
-## Samples were drawn using NUTS(diag_e) at Tue Dec 14 21:53:31 2021.
+## Samples were drawn using NUTS(diag_e) at Wed Dec 15 18:08:41 2021.
 ## For each parameter, n_eff is a crude measure of effective sample size,
 ## and Rhat is the potential scale reduction factor on split chains (at 
 ## convergence, Rhat=1).&lt;/code&gt;&lt;/pre&gt;
@@ -544,8 +544,8 @@ fit_stan &amp;lt;- ulam( f , data=list(y=c(-1,1)), cmdstan = TRUE )&lt;/code&gt;
 &lt;pre&gt;&lt;code&gt;## 
 ## SAMPLING FOR MODEL &amp;#39;continuous&amp;#39; NOW (CHAIN 1).
 ## Chain 1: 
-## Chain 1: Gradient evaluation took 0.000181 seconds
-## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 1.81 seconds.
+## Chain 1: Gradient evaluation took 0.000178 seconds
+## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 1.78 seconds.
 ## Chain 1: Adjust your expectations accordingly!
 ## Chain 1: 
 ## Chain 1: 
@@ -562,15 +562,15 @@ fit_stan &amp;lt;- ulam( f , data=list(y=c(-1,1)), cmdstan = TRUE )&lt;/code&gt;
 ## Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 1: 
-## Chain 1:  Elapsed Time: 0.128 seconds (Warm-up)
-## Chain 1:                0.135285 seconds (Sampling)
-## Chain 1:                0.263285 seconds (Total)
+## Chain 1:  Elapsed Time: 0.126841 seconds (Warm-up)
+## Chain 1:                0.134685 seconds (Sampling)
+## Chain 1:                0.261526 seconds (Total)
 ## Chain 1: 
 ## 
 ## SAMPLING FOR MODEL &amp;#39;continuous&amp;#39; NOW (CHAIN 2).
 ## Chain 2: 
-## Chain 2: Gradient evaluation took 3e-06 seconds
-## Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.03 seconds.
+## Chain 2: Gradient evaluation took 4e-06 seconds
+## Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.04 seconds.
 ## Chain 2: Adjust your expectations accordingly!
 ## Chain 2: 
 ## Chain 2: 
@@ -587,15 +587,15 @@ fit_stan &amp;lt;- ulam( f , data=list(y=c(-1,1)), cmdstan = TRUE )&lt;/code&gt;
 ## Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 2: 
-## Chain 2:  Elapsed Time: 0.121584 seconds (Warm-up)
-## Chain 2:                0.102728 seconds (Sampling)
-## Chain 2:                0.224312 seconds (Total)
+## Chain 2:  Elapsed Time: 0.121206 seconds (Warm-up)
+## Chain 2:                0.102408 seconds (Sampling)
+## Chain 2:                0.223614 seconds (Total)
 ## Chain 2: 
 ## 
 ## SAMPLING FOR MODEL &amp;#39;continuous&amp;#39; NOW (CHAIN 3).
 ## Chain 3: 
-## Chain 3: Gradient evaluation took 5e-06 seconds
-## Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.05 seconds.
+## Chain 3: Gradient evaluation took 4e-06 seconds
+## Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.04 seconds.
 ## Chain 3: Adjust your expectations accordingly!
 ## Chain 3: 
 ## Chain 3: 
@@ -612,9 +612,9 @@ fit_stan &amp;lt;- ulam( f , data=list(y=c(-1,1)), cmdstan = TRUE )&lt;/code&gt;
 ## Chain 3: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 3: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 3: 
-## Chain 3:  Elapsed Time: 0.124291 seconds (Warm-up)
-## Chain 3:                0.124624 seconds (Sampling)
-## Chain 3:                0.248915 seconds (Total)
+## Chain 3:  Elapsed Time: 0.12403 seconds (Warm-up)
+## Chain 3:                0.124122 seconds (Sampling)
+## Chain 3:                0.248152 seconds (Total)
 ## Chain 3: 
 ## 
 ## SAMPLING FOR MODEL &amp;#39;continuous&amp;#39; NOW (CHAIN 4).
@@ -637,9 +637,9 @@ fit_stan &amp;lt;- ulam( f , data=list(y=c(-1,1)), cmdstan = TRUE )&lt;/code&gt;
 ## Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 4: 
-## Chain 4:  Elapsed Time: 0.126878 seconds (Warm-up)
-## Chain 4:                0.118395 seconds (Sampling)
-## Chain 4:                0.245273 seconds (Total)
+## Chain 4:  Elapsed Time: 0.126184 seconds (Warm-up)
+## Chain 4:                0.118263 seconds (Sampling)
+## Chain 4:                0.244447 seconds (Total)
 ## Chain 4:&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(fit)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
@@ -2133,7 +2133,7 @@ down &amp;lt;- pancakes[2,]
 num_11_10 &amp;lt;- sum( up==1 )
 num_11 &amp;lt;- sum( up==1 &amp;amp; down==1 )
 print(num_11/num_11_10)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 0.6737099&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 0.65834&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;measurement-error&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;15.2 Measurement Error&lt;/h2&gt;

@@ -155,10 +155,6 @@ school:
   name: School of Data Science
   url: "https://datascience.charlotte.edu/"
 
-school:
-  name: Department of Mathematics and Statistics
-  url: "https://math.charlotte.edu/"
-
 ############################
 ## Social
 ############################
