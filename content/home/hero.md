@@ -21,10 +21,8 @@ cta_alt:
   label:
 cta_note:
   label: DSBA 6010 | STAT 7027 (Spring 2022) <br>School of Data Science | Department of Mathematics and Statistics <br>University of North Carolina at Charlotte
-advanced:
-  css_class: fullscreen
 ---
 <br>
-DSBA/STAT Special Topics
+Special Topics in DSBA/STAT 
 
 Build your knowledge of and confidence in making inferences from data through Bayesian statistics and causal inference modeling.

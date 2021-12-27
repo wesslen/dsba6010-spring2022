@@ -2,13 +2,13 @@
 date: "2021-12-01"
 title: "Example: 15-1"
 menu:
-  content:
+  example:
     parent: Examples
     weight: 15
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, class.source="language-r", class.output="language-r")
 library(rethinking)
 ```
 

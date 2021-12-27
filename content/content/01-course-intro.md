@@ -10,6 +10,10 @@ type: docs
 weight: 1
 ---
 
-Welcome!
 
 ![Welcome to the class!](https://media3.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif?cid=790b76119130519cc0d76cbb37bf927be0309d606652bf98&rid=giphy.gif&ct=g)
+
+## Introduction to course
+
+## Installation of R/RStudio on Personal Machine
+

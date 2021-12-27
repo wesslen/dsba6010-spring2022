@@ -37,16 +37,14 @@ content:
 example:
   - name: Overview
     weight: 1
-  - name: Simulated data
-    weight: 2
   - name: Examples
-    weight: 3
+    weight: 2
 assignment:
   - name: Assignments
     weight: 1
-  - name: Other projects
-    weight: 2
   - name: Problem sets
+    weight: 2
+  - name: Project
     weight: 3
 resource:
   - name: Resources

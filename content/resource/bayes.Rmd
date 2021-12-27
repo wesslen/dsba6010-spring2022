@@ -9,8 +9,6 @@ editor_options:
   chunk_output_type: console
 ---
 
-<script src="/js/prismr.js"></script>
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(fig.width = 6, fig.height = 3.6, fig.align = "center",
                       fig.retina = 3, collapse = TRUE, out.width = "75%", class.source="language-r", class.output="language-r")

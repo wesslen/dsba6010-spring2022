@@ -17,8 +17,8 @@ slug: syllabus
 <h2>What you will learn</h2>
 <ul>
 <li>Bayesian inference through <strong>probabilistic programming</strong> (R/Stan, Python/PyMC3, Julia/Turing.jl)</li>
-<li><strong>Computational approaches</strong> for statistical modeling (e.g., quadratic approximation, sampling, MCMC, Hamiltonian Monte Carlo)</li>
-<li>Techniques from machine learning to <strong>reduce overfitting</strong> in statistical models (e.g., cross-validation, regularization, shrinkage, pooling)</li>
+<li><strong>Computational approaches</strong> for statistical modeling (quadratic approximation, sampling, MCMC, Hamiltonian Monte Carlo)</li>
+<li>Machine learning techniques to <strong>reduce overfitting</strong> in statistical models (e.g., cross-validation, regularization, shrinkage, pooling)</li>
 <li><strong>Causal inference</strong> to develop robust statistical models and identify causal relationships</li>
 </ul>
 </div>
@@ -50,26 +50,30 @@ f(x) = \dfrac{1}{\sqrt{2\pi}} e^{-\frac12 x^2}
 <div id="important-pep-talk" class="section level2">
 <h2>Important pep talk!</h2>
 <p>I <em>promise</em> you can succeed in this class.</p>
-<p>Learning R can be difficult at first—it’s like learning a new language, just like Spanish, French, or Chinese. Hadley Wickham—the chief data scientist at RStudio and the author of some amazing R packages you’ll be using like <code>ggplot2</code>—<a href="https://r-posts.com/advice-to-young-and-old-programmers-a-conversation-with-hadley-wickham/">made this wise observation</a>:</p>
+<p>Learning Bayesian Statistics and R (or any programming language) can be difficult at first—it’s like learning a new language, just like Spanish, French, or Chinese. Hadley Wickham—the chief data scientist at RStudio and the author of some amazing R packages you’ll be using like <code>ggplot2</code>—<a href="https://r-posts.com/advice-to-young-and-old-programmers-a-conversation-with-hadley-wickham/">made this wise observation</a>:</p>
 <blockquote>
 <p>It’s easy when you start out programming to get really frustrated and think, “Oh it’s me, I’m really stupid,” or, “I’m not made out to program.” But, that is absolutely not the case. Everyone gets frustrated. I still get frustrated occasionally when writing R code. It’s just a natural part of programming. So, it happens to everyone and gets less and less over time. Don’t blame yourself. Just take a break, do something fun, and then come back and try again later.
 Even experienced programmers and evaluators find themselves bashing their heads against seemingly intractable errors. If you’re finding yourself taking way too long hitting your head against a wall and not understanding, take a break, talk to classmates, e-mail me, etc.</p>
 </blockquote>
-<p><img src="/img/syllabus/hosrt_error_tweet.png" width="60%" /></p>
-<p><a href="https://twitter.com/allison_horst/status/1213275783675822080"><img src="/img/syllabus/gator_error.jpg" alt="Alison Horst: Gator error" /></a></p>
+<p><img src="/img/syllabus/r-learn.png" width="80%" /></p>
+<div id="be-confident-to-be-comfortable-with-confusion" class="section level3">
+<h3>Be confident to be comfortable with confusion</h3>
+<p><img src="/img/syllabus/owl.png" width="80%" /></p>
+</div>
+<div id="learn-to-learn" class="section level3">
+<h3>Learn to learn</h3>
+<p><img src="/img/syllabus/learn-to-learn.png" width="80%" /></p>
+</div>
+<div id="rewards" class="section level3">
+<h3>Rewards</h3>
+</div>
 </div>
 <div id="course-materials" class="section level2">
 <h2>Course materials</h2>
-<div id="books" class="section level3">
-<h3>Books</h3>
-<p>There is one textbook for this course.</p>
-<p>
-<img align="left" width="200" height="100" src="featured.png">
-</p>
-</div>
-<div id="articles-book-chapters-and-other-materials" class="section level3">
-<h3>Articles, book chapters, and other materials</h3>
-<p>There will also occasionally be additional articles and videos to read and watch. When this happens, links to these other resources will be included on the reading page for that week.</p>
+<div id="book-and-materials" class="section level3">
+<h3>Book and materials <img src="/img/featured.png" width="150px" align="right" /></h3>
+<p>There is one textbook for this course: Richard McElreath’s <a href="https://xcelab.net/rm/statistical-rethinking/">Statistical Rethinking</a>. It is very important that you purchase the <a href="https://www.amazon.com/Statistical-Rethinking-Bayesian-Examples-Chapman/dp/036713991X">2nd edition</a>. Simultaneously this semester, Richard is teaching an <a href="https://github.com/rmcelreath/stat_rethinking_2022">online version of his course</a>. We will leverage his online lectures, slides, and problem sets for our course. Richard has taught the course many times and his iterations has led to a course (<a href="https://github.com/rmcelreath/statrethinking_winter2019">Winter 2019</a> and <a href="https://github.com/rmcelreath/stat_rethinking_2020">Winter 2020</a>) much better than anything I could create.</p>
+<p>I highly recommend viewing his <a href="https://xcelab.net/rm/statistical-rethinking/">book website</a> that includes <a href="http://xcelab.net/rmpubs/sr2/code.txt">textbook code</a>, an <a href="https://vincentarelbundock.github.io/rethinking2/"><code>tidyverse</code> version of the code</a>, <a href="https://github.com/pymc-devs/resources/tree/master/Rethinking_2"><code>PyMC</code> (Python) version of the code</a>, and <a href="https://github.com/StatisticalRethinkingJulia"><code>turing.jl</code> (Julia) version of the code</a>.</p>
 </div>
 <div id="r-and-rstudio" class="section level3">
 <h3>R and RStudio</h3>
@@ -77,46 +81,63 @@ Even experienced programmers and evaluators find themselves bashing their heads 
 <p>R is free, but it can sometimes be a pain to install and configure. To make life easier, you can (and should!) use the free <a href="http://rstudio.cloud/">RStudio.cloud</a> service, which lets you run a full instance of RStudio in your web browser. This means you won’t have to install anything on your computer to get started with R! We will have a shared class workspace in RStudio.cloud that will let you quickly copy templates for labs and problem sets.</p>
 <p>RStudio.cloud is convenient, but it can be slow and it is not designed to be able to handle larger datasets or more complicated analysis. Over the course of the semester, you’ll probably want to get around to installing R, RStudio, and other R packages on your computer and wean yourself off of RStudio.cloud. This isn’t necessary, but it’s helpful.</p>
 <p>You can <a href="/resource/install/">find instructions for installing R, RStudio, and all the tidyverse packages here.</a></p>
+<p>{{% spoiler text="Can I use Python or Julia instead of R in the class?" %}}</p>
+<ul>
+<li><p>Lectures, readings, and problem sets will use R. Students <strong>must complete</strong> problem sets in R and the exam may cover some R code examples.</p></li>
+<li><p>However, final projects can be done in Python (e.g., pyMC) or Julia (turing.jl); however, it is the student’s responsibility to be fluent in setting up related environments/packages (e.g., Jupyter, virtual environments, etc.) if they want to use Python or Julia.</p></li>
+</ul>
+<p>{{% /spoiler %}}</p>
 </div>
 <div id="online-help" class="section level3">
 <h3>Online help</h3>
 <p>Data science and statistical programming can be difficult. Computers are stupid and little errors in your code can cause hours of headache (even if you’ve been doing this stuff for years!).</p>
-<p>Fortunately there are tons of online resources to help you with this. Two of the most important are <a href="https://stackoverflow.com/">StackOverflow</a> (a Q&amp;A site with hundreds of thousands of answers to all sorts of programming questions) and <a href="https://community.rstudio.com/">RStudio Community</a> (a forum specifically designed for people using RStudio and the tidyverse (i.e. you)).</p>
+<p>Fortunately there are tons of online resources to help you with this. Two of the most important are <a href="https://stackoverflow.com/">StackOverflow</a> (a Q&amp;A site with hundreds of thousands of answers to all sorts of programming questions) and <a href="https://community.rstudio.com/">RStudio Community</a> (a forum specifically designed for people using RStudio).</p>
 <p>If you use Twitter, post R-related questions and content with <a href="https://twitter.com/search?q=%23rstats">#rstats</a>. The community there is exceptionally generous and helpful.</p>
 <p>Searching for help with R on Google can sometimes be tricky because the program name is, um, a single letter. Google is generally smart enough to figure out what you mean when you search for “r scatterplot”, but if it does struggle, try searching for “rstats” instead (e.g. “rstats scatterplot”).</p>
-<p>Additionally, we have a class chatroom at <a href="https://dsba6010-spring2022.slack.com/">Slack</a> where anyone in the class can ask questions and anyone can answer. <strong>I will monitor Slack regularly and will respond quickly.</strong> (It’s one of the rare Slack workspaces where I actually have notifications enabled!) Ask questions about the readings, assignments, and project. You’ll likely have similar questions as your peers, and you’ll likely be able to answer other peoples’ questions too.</p>
+<p>Additionally, we have a class chatroom at <a href="https://dsba6010-spring2022.slack.com/">Slack</a> where anyone in the class can ask questions and anyone can answer. <strong>I will monitor Slack regularly and will respond quickly.</strong> Ask questions about the readings, assignments, and project. You’ll likely have similar questions as your peers, and you’ll likely be able to answer other peoples’ questions too.</p>
 </div>
 </div>
 <div id="course-structure" class="section level2">
 <h2>Course structure</h2>
-<p>We meet weekly from 12:00-2:45 PM on Mondays in Center City 11-1. <strong><em>However</em></strong>, despite policies and rhetoric to the contrary, we’re still in the middle of a severe global pandemic, and the delta variant of COVID-19 is raging.</p>
-<p>Accordingly, this semester we’re going to have a <a href="https://en.wikipedia.org/wiki/Flipped_classroom">flipped classroom</a>, which will let us maximize flexibility during this pandemic.</p>
-<p>We will <strong>not</strong> have lectures during our regularly scheduled class time. Instead, you will do the readings and watch recorded lecture videos prior to each in-person class session. You can do the readings and watch the videos on your own schedule at whatever time works best for you.</p>
-<p>We will do several things during our Monday in-person classes:</p>
+<p>We meet weekly from 12:00-2:45 PM on Mondays in Center City 1101. This course will employ a <a href="https://en.wikipedia.org/wiki/Flipped_classroom">flipped classroom</a> teaching method.</p>
+<p>We will <strong>not</strong> have lectures during our regularly scheduled class time. Instead, you will do the readings and watch recorded lecture videos prior to each in-person class session. You can do the readings and watch the videos on your own schedule at whatever time works best for you.
+We will do several things during our Monday in-person classes:</p>
 <ul>
 <li><p><strong>Extensive Q&amp;A</strong>: As you do the readings and watch the videos prior to class, you will inevitably have questions. In your weekly check-in, you can submit (at least) 3 of those questions to me prior to class. We’ll spend a good chunk of each class answering, clarifying, debating, and discussing your questions. We’ll also review the lecture quiz due at the beginning of the class to ensure students are familar with the key concepts of the material</p></li>
-<li><p><strong>Activities</strong>: In some weeks, we’ll do some in-class activities to help solidify concepts about Bayesian statistics, causal inference, and programming. These will not be graded but may aid in upcoming problem set.</p></li>
+<li><p><strong>Activities</strong>: In some weeks, we’ll do some in-class activities (labeled as <a href="/example/">examples</a>) to help solidify concepts about Bayesian statistics, causal inference, and programming. These will not be graded but may aid in upcoming problem set.</p></li>
 <li><p><strong>Problem sets</strong>: We’ll spend a substantial time during each class learning and working with R together on the problem sets. You’ll need to bring a computer.</p></li>
 </ul>
+<div id="schedule" class="section level3">
+<h3>Schedule</h3>
+<p>The <a href="/schedule/">course schedule is listed here</a>. In general, we’ll likely cover 1-2 of Richard’s lectures per course. However, there will be a few exceptions.</p>
+<p>This schedule may change per the instructor’s</p>
 </div>
-<div id="pandemic-stuff" class="section level2">
-<h2>Pandemic stuff</h2>
-<div id="masks" class="section level3">
-<h3>Masks</h3>
-<p>Per <a href="https://ninernationcares.charlotte.edu/faculty-staff/face-coverings-signage-events-and-supplies">UNC Charlotte’s indoor mask policy</a>:</p>
-<p>Until further notice, face coverings are required in all indoor spaces at UNC Charlotte and are strongly encouraged outdoors when physical distance cannot be maintained. Face coverings must fully cover the nose and mouth.</p>
-<p>This requirement is for all individuals regardless of vaccination status.
-It applies to all spaces, including Atkins Library, research spaces and studios, dining halls, recreational facilities, common spaces and residence halls.
-There will be only rare exceptions to this requirement, such as when students are in their personal residence hall rooms or when employees are in their personal offices.</p>
-<p>Failure to comply with this requirement may result in disciplinary action under the Code of Student Responsibility or employee personnel action.</p>
-</div>
-<div id="vaccines" class="section level3">
-<h3>Vaccines</h3>
-<p><small>UNCC does not require this and I can’t legally require this but I am allowed to urge it so here’s me urging it:</small><br>Please get the COVID-19 vaccination (<a href="https://ninernationcares.charlotte.edu/health-safety/covid-19-vaccine-information">sign up for one here!</a>). It is free. It saves lives. (I am fully vaccinated plus booster.)</p>
+<div id="weekly-check-in" class="section level3">
+<h3>Weekly check-in</h3>
+<p>Every week, after you finish working through the content, I want to hear about what you learned and what questions you still have. Because the content in this course is flipped, these questions are <strong>crucial</strong> for our weekly in-class discussions.</p>
+<p>To encourage engagement with the course content—and to allow me to collect the class’s questions each week—you’ll need to fill out a short response on Google Forms. This should be ≈150 words. That’s fairly short: there are ≈250 words on a typical double-spaced page in Microsoft Word (500 when single-spaced).</p>
+<p>These check-ins are <strong>due by noon on the days we have class</strong>. This is so I can look through the responses and start structuring the discussion for the evening’s class.</p>
+<p>You should answer these two questions each week:</p>
+<ol style="list-style-type: decimal">
+<li>What were the <strong>three (3)</strong> most interesting or exciting things you learned from the session? Why?</li>
+<li>What were the <strong>three (3)</strong> muddiest or unclear things from the session this week? What are you still wondering about?</li>
+</ol>
+<p>You can include more than three interesting or muddiest things, but you must include at least three. There should be six easily identifiable things in each check-in: three exciting things and three questions.</p>
 </div>
 </div>
 <div id="assignments-and-grades" class="section level2">
 <h2>Assignments and grades</h2>
+<p>There are five components to your grade in the course.</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Lecture quizzes</strong>: Before each class (due 11:59am of each class), students will complete a 5 question quiz on the due lecture/chapter. There will be a 15 minute timer and the quizzes will use Canvas. There are no late quizzes that will be accepted as we will review the quizzes first thing for each class. There are <strong>eleven (11)</strong> total quizzes; however, the <strong>two (2)</strong> lowest quizzes will be dropped at the end of the semester.</p></li>
+<li><p><strong>Participation</strong>: Students will receive 10% of their grade based on participation. While I will not actively take attendance, this will be in large part a function of in-class participation (e.g., asking/answering questions) as well as out-of-class (e.g., Slack).</p></li>
+<li><p><strong>Problem sets</strong>: For each lecture, there will be an accompanying problem set. These problem sets will largely mimic those from Richard’s classes. The lowest problem set will be dropped. Problem sets late 24 hours will receive a <strong>50%</strong> reduction. Problem sets received 24+ hours will receive a zero. Please take note of <a href="/assignment/#problem-sets-1">the problem set grading rubrics</a>.</p></li>
+</ol>
+<p>For those problems reused from past classes, I will provide the answer keys before. However, likely there will be additional problems not from Richard’s class; those solutions will not be provided until after the course. <a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<ol start="4" style="list-style-type: decimal">
+<li><p><strong>Exam</strong>: There will be one in-class exam. It will be closed notes and based on chapter lectures, slides, and materials. It will be a blend of multiple choice (very similar to lecture quizzes) and short open ended questions (e.g., reading comprehension or explaining code snippets similar to problem sets).</p></li>
+<li><p><strong>Final Project</strong>: The final project will provide students an opportunity to find an application for Bayesian inference. Part of the grade will be two check-in assignments including an in-class presentation on a Bayesian topic and a proposal assignment.</p></li>
+</ol>
 <p>You can find descriptions for all the assignments on the <a href="/assignment/">assignments page</a>.</p>
 <div class="centered-table">
 <table style="width:51%;">
@@ -135,18 +156,18 @@ There will be only rare exceptions to this requirement, such as when students ar
 <tbody>
 <tr class="odd">
 <td align="left">Lecture quizzes</td>
-<td align="center">20</td>
-<td align="center">20%</td>
+<td align="center">10</td>
+<td align="center">10%</td>
 </tr>
 <tr class="even">
-<td align="left">Problem sets</td>
-<td align="center">20</td>
-<td align="center">20%</td>
-</tr>
-<tr class="odd">
 <td align="left">Participation</td>
 <td align="center">10</td>
 <td align="center">10%</td>
+</tr>
+<tr class="odd">
+<td align="left">Problem sets</td>
+<td align="center">30</td>
+<td align="center">30%</td>
 </tr>
 <tr class="even">
 <td align="left">Exam</td>
@@ -154,7 +175,7 @@ There will be only rare exceptions to this requirement, such as when students ar
 <td align="center">20%</td>
 </tr>
 <tr class="odd">
-<td align="left">Final project</td>
+<td align="left">Final Project</td>
 <td align="center">30</td>
 <td align="center">30%</td>
 </tr>
@@ -201,7 +222,49 @@ There will be only rare exceptions to this requirement, such as when students ar
 </table>
 <div>
 
-
+<p>{{% spoiler text="Can I work with others for problem sets?" %}}</p>
+<ul>
+<li><p>You may work with up to 1 other student for problem sets. However, each student <strong>must</strong> submit his/her own problem set by the required time.</p></li>
+<li><p>Projects may be completed individually or with 1 other student.</p></li>
+</ul>
+<p>{{% /spoiler %}}</p>
+</div>
+<div id="classroom-policies" class="section level2">
+<h2>Classroom policies</h2>
+<div id="masks" class="section level3">
+<h3>Masks</h3>
+<p>Per <a href="https://ninernationcares.charlotte.edu/faculty-staff/face-coverings-signage-events-and-supplies">UNC Charlotte’s indoor mask policy</a>:</p>
+<p>Until further notice, face coverings are required in all indoor spaces at UNC Charlotte and are strongly encouraged outdoors when physical distance cannot be maintained. Face coverings must fully cover the nose and mouth.</p>
+<p>This requirement is for all individuals regardless of vaccination status.
+It applies to all spaces, including Atkins Library, research spaces and studios, dining halls, recreational facilities, common spaces and residence halls.
+There will be only rare exceptions to this requirement, such as when students are in their personal residence hall rooms or when employees are in their personal offices.</p>
+<p>Failure to comply with this requirement may result in disciplinary action under the Code of Student Responsibility or employee personnel action.</p>
+</div>
+<div id="vaccines" class="section level3">
+<h3>Vaccines</h3>
+<p>If you are not vaccinated (with booster), please consider getting the COVID-19 vaccination<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> (<a href="https://ninernationcares.charlotte.edu/health-safety/covid-19-vaccine-information">sign up for one here!</a>). It is free. It saves lives. (Full disclosure: I am fully vaccinated plus booster.)</p>
+</div>
+<div id="orderly-and-productive-classroom-conduct" class="section level3">
+<h3>Orderly and productive classroom conduct</h3>
+<p>I will conduct this class in an atmosphere of mutual respect. I encourage your active participation in class discussions. Each of us may have strongly differing opinions on the various topics of class discussions. The conflict of ideas is encouraged and welcome. The orderly questioning of the ideas of others, including mine, is similarly welcome. However, <strong>I will exercise my responsibility to manage the discussions so that ideas and argument can proceed in an orderly fashion</strong>. You should expect that if your conduct during class discussions seriously disrupts the atmosphere of mutual respect I expect in this class, you will not be permitted to participate further.</p>
+</div>
+<div id="recording-in-the-classroom" class="section level3">
+<h3>Recording in the classroom</h3>
+<p>Electronic video and/or audio recording <strong>is not permitted during class unless the student obtains permission from the instructor</strong>. If permission is granted, any distribution of the recording is prohibited. Students with specific electronic recording accommodations authorized by the Office of Disability Services do not require instructor permission; however, the instructor must be notified of any such accommodation prior to recording. Any distribution of such recordings is prohibited.</p>
+</div>
+<div id="discussion-of-grades-and-performance" class="section level3">
+<h3>Discussion of grades and performance</h3>
+<p>Such discussion shall occur between the student and the instructor(s). Sharing information regarding grades and performance in places such as discussion forums or email blasts is prohibited.</p>
+</div>
+<div id="code-of-student-responsibility" class="section level3">
+<h3>Code of Student Responsibility</h3>
+<p>“The purpose of the Code of Student Responsibility (the Code) is to protect the campus community and to maintain an environment conducive to learning. University rules for student conduct are discussed in detail. The procedures followed for any Student, Student Organization or Group charged with a violation of the Code, including the right to a hearing before a Hearing Panel or Administrative Hearing Officer, are fully described.” (Introductory statement from the UNC Charlotte brochure about the Code of Student Responsibility). The entire document may be found at this site: <a href="https://legal.uncc.edu/policies/up-406" class="uri">https://legal.uncc.edu/policies/up-406</a></p>
+</div>
+<div id="academic-integrity" class="section level3">
+<h3>Academic Integrity</h3>
+<p>All students are required to read and abide by the Code of Student Academic Integrity. Violations of the Code of Student Academic Integrity, including plagiarism, will result in disciplinary action as provided in the Code. Students are expected to submit their own work, either as individuals or contributors to a group assignment. Definitions and examples of plagiarism and other violations are set forth in the Code. The Code is available from the Dean of Students Office or online at: <a href="https://legal.uncc.edu/policies/up-407" class="uri">https://legal.uncc.edu/policies/up-407</a>.</p>
+<p>Faculty may ask students to produce identification at examinations and may require students to demonstrate that graded assignments completed outside of class are their own work.</p>
+</div>
 </div>
 <div id="faqs" class="section level2">
 <h2>FAQs</h2>
@@ -209,15 +272,13 @@ There will be only rare exceptions to this requirement, such as when students ar
 <p><strong>Programming</strong>: Experience with R (e.g., installing packages, loading data, RStudio). Students without should immediately consider DataCamp courses and hands-on practice problems.</p>
 <p><strong>Probability</strong>: Fundamental probability theory is highly recommended. This includes exposure to common distributions like Normal (Gaussian), Binomial, and Beta distributions.</p>
 <p>We’ll also assume core understanding of statistical models like linear regression.</p>
-<p>{{% /spoiler %}}{{% spoiler text="What programming languages will be used?" %}}</p>
-<ul>
-<li><p>Lectures and coursework will use R. Students must complete assignments in R and the mid-term may cover some R code examples.</p></li>
-<li><p>Final projects can be done in Python (e.g., pyMC3) or Julia (turing.jl); however, it is the student’s responsibility to be fluent in setting up related environments/packages (e.g., Jupyter, virtual environments, etc.) if they want to use Python or Julia.</p></li>
-</ul>
+<p>{{% /spoiler %}}</p>
 </div>
 <div class="footnotes">
 <hr />
 <ol>
 <li id="fn1"><p>This philosophy as well as many other inspirational resources were originally created by <a href="andrewheiss.com">Andrew Heiss</a>, for example: his <a href="https://evalf21.classes.andrewheiss.com/syllabus/">PMAP 8521 course website</a>. Therefore, he deserves all praises for these ideas (he’s an amazing teacher). I’m grateful to be able to use such materials.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>My philosophy on problem sets is motivated <a href="https://twitter.com/cjlwig/status/1450925261831168008?s=21">by tweets from Cora Wigger</a> to find a right balance between enabling students to keep pace (provide answer key for some questions) while providing an incentive to work on the problem sets (some questions w/o answer key).<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>UNCC does not require this and I can’t legally require this but I am allowed to urge it so here’s me urging it. Thank you for understanding and protecting your classmates’ health.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
