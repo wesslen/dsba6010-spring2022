@@ -5,7 +5,9 @@ name = "Custom Theme"
 light = true
 
 # Primary
-primary = "#CF4446"
+primary = "#FFAA00"
+
+#  ffaa00,335f70,709099,c73c41,856084
 
 # Links
 link = "#CF4446"

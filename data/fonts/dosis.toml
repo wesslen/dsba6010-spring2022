@@ -1,0 +1,11 @@
+# Font style metadata
+name = "Dosis"
+
+# Optional Google font URL
+google_fonts = "family=Dosis:wght@500;700"
+
+# Font families
+heading_font = "Dosis"
+body_font = "Dosis"
+mono_font = "Dosis"
+nav_font = "Dosis"

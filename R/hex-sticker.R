@@ -5,6 +5,13 @@ library(tibble)
 library(magrittr)
 library(dplyr)
 
+library(showtext)
+## Loading Google fonts (http://www.google.com/fonts)
+font_add_google("Dosis", "dosis")
+font_add_google("Gochi Hand", "gochi")
+## Automatically use showtext to render text for future devices
+showtext_auto()
+
 d <-
   tibble(position = c((1:4^1) / 4^0, 
                       (1:4^2) / 4^1, 
@@ -75,37 +82,158 @@ p <- d %>%
   theme_transparent()
   #geom_url(url = "dsba6010.com")
 
-pcolor = "#F4B942"
-hcolor = ""
 
-sticker(p, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 32,
-        p_color = "#F4B942", h_color = "#046B8B",
+
+######
+
+## R code 13.1
+library(rethinking)
+data(reedfrogs)
+d <- reedfrogs
+str(d)
+
+## R code 13.2
+# make the tank cluster variable
+d$tank <- 1:nrow(d)
+
+dat <- list(
+  S = d$surv,
+  N = d$density,
+  tank = d$tank )
+
+# approximate posterior
+m13.1 <- ulam(
+  alist(
+    S ~ dbinom( N , p ) ,
+    logit(p) <- a[tank] ,
+    a[tank] ~ dnorm( 0 , 1.5 )
+  ), data=dat , chains=4 , log_lik=TRUE, cmdstan = TRUE)
+
+## R code 13.3
+m13.2 <- ulam(
+  alist(
+    S ~ dbinom( N , p ) ,
+    logit(p) <- a[tank] ,
+    a[tank] ~ dnorm( a_bar , sigma ) ,
+    a_bar ~ dnorm( 0 , 1.5 ) ,
+    sigma ~ dexp( 1 )
+  ), data=dat , chains=4 , log_lik=TRUE, cmdstan = TRUE )
+
+## R code 13.4
+compare( m13.1 , m13.2 )
+
+## R code 13.5
+# extract Stan samples
+post <- extract.samples(m13.2)
+
+# see tidybayes
+library(tidybayes)
+library(tidybayes.rethinking)
+str(rethinking::extract.samples(m13.2))
+
+
+get_variables(m13.2)
+
+recover_types(m13.2)
+
+tidy_draws(m13.2, a_bar)
+# 
+m13.2 %>%
+  recover_types(dat) %>%
+  spread_draws(a_bar) %>%
+  head(10)
+
+m13.2 %>%
+  spread_draws(sigma, a_bar) %>%
+  head(10)
+
+
+m13.2 %>%
+  spread_draws(a_bar, sigma) %>%
+  median_qi() %>%
+  ggplot(aes(y = 1, x = a_bar, xmin = .lower, xmax = .upper)) +
+  geom_pointinterval()
+
+
+
+p2 <- m13.2 %>%
+  spread_draws(a_bar, sigma) %>%
+  sample_draws(30) %>%
+  ggplot(aes(y = 1)) +
+  stat_dist_slab(aes(dist = "norm", arg1 = a_bar, arg2 = sigma), 
+                 slab_color = "#C73C41", alpha = 7/10, fill = NA, size = 0.2
+  ) +
+  theme(legend.position = "none", panel.grid = element_blank()) +
+  theme_transparent() +
+  scale_x_continuous(NULL, breaks = NULL) +
+  scale_y_continuous(NULL, breaks = NULL)
+
+
+
+# plot( NULL , xlim=c(-3,4) , ylim=c(0,0.35) ,
+#       xlab="log-odds survive" , ylab="Density" )
+# for ( i in 1:100 )
+#   curve( dnorm(x,post$a_bar[i],post$sigma[i]) , add=TRUE ,
+#          col=col.alpha("black",0.2) )
+
+
+
+
+
+######
+
+pcolor = "#F4B942" #
+hcolor = "#ffffff" #335F70
+border_color = "#335F70"
+showtext_auto()
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=2.7, p_color = border_color, p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.5,dpi = 32,
+        h_fill = hcolor, h_color = border_color, h_size = 1.3,
         filename="./static/img/icon-32.png")
 
-sticker(p, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 192,
-        p_color = pcolor, h_color = "#046B8B",
+# sticker(p2, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 32,
+#         h_fill = hcolor, h_color = "#000000", h_size = 1.3,
+#         filename="./static/img/icon-32.png")
+
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=2.7, p_color = border_color, p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.5,dpi = 192,
+        h_fill = hcolor, h_color = border_color, h_size = 1.3, 
         filename="./static/img/icon-192.png")
 
-sticker(p, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 512,
-        p_color = pcolor, h_color = "#046B8B",
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=2.7, p_color = border_color, p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.5,dpi = 512,
+        h_fill = hcolor, h_color = border_color, h_size = 1.3,
         filename="./static/img/icon-512.png")
 
-sticker(p, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 32,
-        p_color = pcolor, h_color = "#046B8B",        
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=2.7, p_color = border_color, p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.5,dpi = 32,
+        h_fill = hcolor, h_color = border_color, h_size = 1.3,       
         filename="./assets/media/icon-32.png")
 
-sticker(p, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 32,
-        p_color = pcolor, h_color = "#046B8B",        
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=2.7, 
+        p_color = border_color, p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.5, dpi = 32,
+        h_fill = hcolor, h_color = border_color, h_size = 1.3,        
         filename="./assets/media/icon.png")
 
-sticker(p, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 192,
-        p_color = pcolor, h_color = "#046B8B",
+
+
+
+sticker(p2, package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=2.7, 
+        p_color = "black", p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.5, dpi = 192,
+        h_fill = hcolor, h_color = border_color, h_size = 1.3,
+        p_family = "dosis",
         filename="./assets/media/icon-192.png")
 
-sticker(p, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 512,
-        p_color = pcolor, h_color = "#046B8B",
+
+
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=2.7, p_color = "black", p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.5, dpi = 512,
+        h_fill = hcolor, h_color = border_color, h_size = 1.3,
         filename="./assets/media/icon-512.png")
 
-sticker(p, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 384,
-        p_color = pcolor, h_color = "#046B8B",
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=2.7, p_color = "black", p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.5, dpi = 384,
+        h_fill = hcolor, h_color = border_color, h_size = 1.3,
         filename="./assets/media/icon-384.png")

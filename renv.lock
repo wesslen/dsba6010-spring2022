@@ -1314,6 +1314,19 @@
       "Repository": "CRAN",
       "Hash": "a85b9368f8af1d8e2e5ac4e7c7cc9f0b"
     },
+    "tidybayes.rethinking": {
+      "Package": "tidybayes.rethinking",
+      "Version": "3.0.0",
+      "Source": "GitHub",
+      "Remotes": "rmcelreath/rethinking",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "tidybayes.rethinking",
+      "RemoteUsername": "mjskay",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "7da99466ec2facdb6d61a176dca3302e223c6492",
+      "Hash": "0da3efb15be758ddc1f30e689c005454"
+    },
     "tidyr": {
       "Package": "tidyr",
       "Version": "1.1.4",

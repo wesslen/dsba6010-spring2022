@@ -11,7 +11,7 @@ day_night: true
 #   Latest font sets (may require updating): https://sourcethemes.com/academic/themes/
 #   Browse built-in font sets in `themes/academic/data/fonts/`
 #   Browse user installed font sets in `data/fonts/`
-font: 'Native'
+font: 'Dosis'
 font_size: L
 
 # SEO
@@ -37,7 +37,7 @@ main_menu:
   align: l
   show_logo: true
   show_language: false
-  show_day_night: true
+  show_day_night: false
   show_search: true
   highlight_active_link: true
 
@@ -60,7 +60,7 @@ edit_page:
   content_dir: ''
   repo_branch: main
   editable:
-    docs: true
+    docs: false
     page: false
     post: false
 show_related:

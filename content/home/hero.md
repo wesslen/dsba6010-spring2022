@@ -8,8 +8,8 @@ hero_media: icon-192.png
 design:
   background:
     gradient_angle: 0
-    gradient_start: 'rgb(235,155,152)'
-    gradient_end: 'rgb(215,56,51)'
+    gradient_start: '#ffd000'
+    gradient_end: '#ffaa00'
     text_color_light: false
 #cta:
 #  url: course/
