@@ -185,42 +185,47 @@ p2 <- m13.2 %>%
 pcolor = "#F4B942" #
 hcolor = "#ffffff" #335F70
 border_color = "#335F70"
-showtext_auto()
-sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=2.7, p_color = border_color, p_x = 1, p_y = 0.5,
+
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = border_color, p_x = 1, p_y = 0.5,
         s_x=1, s_y=1.3, s_width=1.8, s_height=1.5,dpi = 32,
         h_fill = hcolor, h_color = border_color, h_size = 1.3,
+        p_family = "dosis",
         filename="./static/img/icon-32.png")
 
 # sticker(p2, package=" ", p_size=0, s_x=1, s_y=0.94, s_width=2, s_height=2.3, dpi = 32,
 #         h_fill = hcolor, h_color = "#000000", h_size = 1.3,
 #         filename="./static/img/icon-32.png")
 
-sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=2.7, p_color = border_color, p_x = 1, p_y = 0.5,
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = border_color, p_x = 1, p_y = 0.5,
         s_x=1, s_y=1.3, s_width=1.8, s_height=1.5,dpi = 192,
         h_fill = hcolor, h_color = border_color, h_size = 1.3, 
+        p_family = "dosis",
         filename="./static/img/icon-192.png")
 
-sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=2.7, p_color = border_color, p_x = 1, p_y = 0.5,
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = border_color, p_x = 1, p_y = 0.5,
         s_x=1, s_y=1.3, s_width=1.8, s_height=1.5,dpi = 512,
         h_fill = hcolor, h_color = border_color, h_size = 1.3,
+        p_family = "dosis",
         filename="./static/img/icon-512.png")
 
-sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=2.7, p_color = border_color, p_x = 1, p_y = 0.5,
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = border_color, p_x = 1, p_y = 0.5,
         s_x=1, s_y=1.3, s_width=1.8, s_height=1.5,dpi = 32,
-        h_fill = hcolor, h_color = border_color, h_size = 1.3,       
+        h_fill = hcolor, h_color = border_color, h_size = 1.3, 
+        p_family = "dosis",
         filename="./assets/media/icon-32.png")
 
-sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=2.7, 
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2,
         p_color = border_color, p_x = 1, p_y = 0.5,
         s_x=1, s_y=1.3, s_width=1.8, s_height=1.5, dpi = 32,
-        h_fill = hcolor, h_color = border_color, h_size = 1.3,        
+        h_fill = hcolor, h_color = border_color, h_size = 1.3,
+        p_family = "dosis",
         filename="./assets/media/icon.png")
 
 
 
 
-sticker(p2, package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=2.7, 
-        p_color = "black", p_x = 1, p_y = 0.5,
+sticker(p2, package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, 
+        p_color = border_color, p_x = 1, p_y = 0.5,
         s_x=1, s_y=1.3, s_width=1.8, s_height=1.5, dpi = 192,
         h_fill = hcolor, h_color = border_color, h_size = 1.3,
         p_family = "dosis",
@@ -228,12 +233,14 @@ sticker(p2, package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=2.7,
 
 
 
-sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=2.7, p_color = "black", p_x = 1, p_y = 0.5,
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = border_color, p_x = 1, p_y = 0.5,
         s_x=1, s_y=1.3, s_width=1.8, s_height=1.5, dpi = 512,
         h_fill = hcolor, h_color = border_color, h_size = 1.3,
+        p_family = "dosis",
         filename="./assets/media/icon-512.png")
 
-sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=2.7, p_color = "black", p_x = 1, p_y = 0.5,
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = border_color, p_x = 1, p_y = 0.5,
         s_x=1, s_y=1.3, s_width=1.8, s_height=1.5, dpi = 384,
         h_fill = hcolor, h_color = border_color, h_size = 1.3,
+        p_family = "dosis",
         filename="./assets/media/icon-384.png")

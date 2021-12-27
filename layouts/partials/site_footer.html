@@ -5,21 +5,21 @@
         <div class="col-md-7">
             <p>
                 <strong>{{ .Site.Params.course.number }}: {{ .Site.Title }} ({{ .Site.Params.course.semester }})</strong><br>
-                <a href="{{ .Site.Params.university.url }}" target="_blank" rel="noopener">{{ .Site.Params.university.name }}</a> &emsp;&emsp;
+                <a href="{{ .Site.Params.university.url }}" target="_blank" rel="noopener">{{ .Site.Params.university.name }}</a> &emsp;
                 <a href="{{ .Site.Params.school.url }}" target="_blank" rel="noopener">{{ .Site.Params.school.name }}</a>
             </p>
 
             <p>
                 <a href="{{ .Site.Params.instructor.url }}" target="_blank" rel="noopener"><i class="fas fa-user"></i>
-                    {{ .Site.Params.instructor.name }}</a> &emsp;&emsp;
+                    {{ .Site.Params.instructor.name }}</a> &emsp;
                 <a href="mailto:{{ .Site.Params.instructor.email }}"><i class="fas fa-envelope"></i>
                     {{ .Site.Params.instructor.email }}</a>
             </p>
 
             <p>
-                <i class="far fa-calendar-alt"></i> {{ .Site.Params.course.days }} &emsp;&emsp;
-                <i class="far fa-clock"></i> {{ .Site.Params.course.time }} 
-                {{ if isset .Site.Params.course "location" }}<br><i class="fas fa-university"></i> {{ .Site.Params.course.location }}{{end}}
+                <i class="far fa-calendar-alt"></i> {{ .Site.Params.course.days }} &emsp;
+                <i class="far fa-clock"></i> {{ .Site.Params.course.time }} &emsp;
+                {{ if isset .Site.Params.course "location" }}<i class="fas fa-university"></i> {{ .Site.Params.course.location }}{{end}}
             </p>
         </div>
 

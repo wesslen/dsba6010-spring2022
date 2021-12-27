@@ -8,9 +8,9 @@ hero_media: icon-192.png
 design:
   background:
     gradient_angle: 0
-    gradient_start: '#ffd000'
-    gradient_end: '#ffaa00'
-    text_color_light: false
+    gradient_start: '#ffaa00'
+    gradient_end: '#CC8800'
+    text_color_light: true
 #cta:
 #  url: course/
 #  label: Explore our courses
@@ -20,7 +20,7 @@ cta_alt:
   url:
   label:
 cta_note:
-  label: Spring 2022 DSBA 6010 / STAT 7027 <br>School of Data Science / Department of Mathematics and Statistics <br>University of North Carolina at Charlotte
+  label: DSBA 6010 | STAT 7027 (Spring 2022) <br>School of Data Science | Department of Mathematics and Statistics <br>University of North Carolina at Charlotte
 advanced:
   css_class: fullscreen
 ---
