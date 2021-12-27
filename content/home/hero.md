@@ -8,7 +8,7 @@ hero_media: icon-192.png
 design:
   background:
     gradient_angle: 0
-    gradient_start: '#ffaa00'
+    gradient_start: '#8F5F00'
     gradient_end: '#CC8800'
     text_color_light: true
 #cta:

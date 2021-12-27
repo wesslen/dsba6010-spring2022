@@ -10,14 +10,14 @@ primary = "#c73c41"
 #  ffaa00,335f70,709099,c73c41,856084
 
 # Links
-link = "#c73c41"
-link_hover = "#ffaa00"
+link = "#C73C41"
+link_hover = "#335F70"
 
 # Menu
 menu_primary = "#fff"
 menu_text = "#c73c41"
-menu_text_active = "#ffaa00"
-menu_title = "#494949"
+menu_text_active = "#335F70"
+menu_title = "#335F70"
 
 # Home sections
 home_section_odd = "rgb(255, 255, 255)"

@@ -3254,9 +3254,9 @@ input[type="button"].btn-block {
     display: none; }
 
 .navbar-light .navbar-brand {
-  color: #494949; }
+  color: #335F70; }
   .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-    color: #ffaa00; }
+    color: #335F70; }
 
 .navbar-light .navbar-nav .nav-link {
   color: #c73c41; }
@@ -3269,7 +3269,7 @@ input[type="button"].btn-block {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #ffaa00; }
+  color: #335F70; }
 
 .navbar-light .navbar-toggler {
   color: #c73c41;
@@ -3281,9 +3281,9 @@ input[type="button"].btn-block {
 .navbar-light .navbar-text {
   color: #c73c41; }
   .navbar-light .navbar-text a {
-    color: #ffaa00; }
+    color: #335F70; }
     .navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
-      color: #ffaa00; }
+      color: #335F70; }
 
 .navbar-dark .navbar-brand {
   color: #fff; }
@@ -7329,13 +7329,13 @@ h6 {
 
 a,
 h3.article-title a:hover {
-  color: #c73c41;
+  color: #C73C41;
   text-decoration: none;
   transition: color 0.6s ease; }
 
 a:hover,
 a:focus {
-  color: #ffaa00; }
+  color: #335F70; }
 
 .dark a,
 .dark h3.article-title a:hover {
@@ -8124,13 +8124,13 @@ a.summary-link {
         color: #c73c41; }
       .navbar .navbar-nav .nav-link.active {
         font-weight: bold !important;
-        color: #ffaa00 !important; }
+        color: #335F70 !important; }
   .navbar .dropdown-menu {
     font-size: 16.17px; }
   .navbar .dropdown-item.active,
   .navbar .dropdown-item-active {
     font-weight: bold;
-    color: #ffaa00 !important; }
+    color: #335F70 !important; }
 
 .dark .navbar {
   background: #282a36;
@@ -8874,7 +8874,7 @@ html[dir='rtl'] body {
   color: #000; }
 
 .home-section.light a {
-  color: #c73c41; }
+  color: #C73C41; }
 
 .home-section.dark a {
   color: #c73c41; }
@@ -9616,9 +9616,9 @@ footer p {
     color: #c73c41;
     padding: 0.125rem 0.5rem; }
     #TableOfContents li a:focus, #TableOfContents li a:hover {
-      color: #ffaa00; }
+      color: #335F70; }
     #TableOfContents li a.active {
-      color: #ffaa00 !important; }
+      color: #335F70 !important; }
 
 .toc-top {
   background-color: #c73c41; }
@@ -9648,7 +9648,7 @@ footer p {
   .article-style #TOC a {
     color: #c73c41; }
     .article-style #TOC a:focus, .article-style #TOC a:hover {
-      color: #ffaa00; }
+      color: #335F70; }
   .article-style #TOC:before {
     content: "Contents";
     font-size: 1.1rem;

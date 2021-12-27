@@ -8,7 +8,6 @@ library(dplyr)
 library(showtext)
 ## Loading Google fonts (http://www.google.com/fonts)
 font_add_google("Dosis", "dosis")
-font_add_google("Gochi Hand", "gochi")
 ## Automatically use showtext to render text for future devices
 showtext_auto()
 
@@ -101,14 +100,6 @@ dat <- list(
   N = d$density,
   tank = d$tank )
 
-# approximate posterior
-m13.1 <- ulam(
-  alist(
-    S ~ dbinom( N , p ) ,
-    logit(p) <- a[tank] ,
-    a[tank] ~ dnorm( 0 , 1.5 )
-  ), data=dat , chains=4 , log_lik=TRUE, cmdstan = TRUE)
-
 ## R code 13.3
 m13.2 <- ulam(
   alist(
@@ -119,8 +110,6 @@ m13.2 <- ulam(
     sigma ~ dexp( 1 )
   ), data=dat , chains=4 , log_lik=TRUE, cmdstan = TRUE )
 
-## R code 13.4
-compare( m13.1 , m13.2 )
 
 ## R code 13.5
 # extract Stan samples
@@ -161,7 +150,7 @@ p2 <- m13.2 %>%
   sample_draws(30) %>%
   ggplot(aes(y = 1)) +
   stat_dist_slab(aes(dist = "norm", arg1 = a_bar, arg2 = sigma), 
-                 slab_color = "#C73C41", alpha = 7/10, fill = NA, size = 0.2
+                 slab_color = "#F4B942", alpha = 7/10, fill = NA, size = 0.2
   ) +
   theme(legend.position = "none", panel.grid = element_blank()) +
   theme_transparent() +
@@ -182,13 +171,13 @@ p2 <- m13.2 %>%
 
 ######
 
-pcolor = "#F4B942" #
+pcolor = "#F4B942" #c73c41
 hcolor = "#ffffff" #335F70
 border_color = "#335F70"
 
-sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = border_color, p_x = 1, p_y = 0.5,
-        s_x=1, s_y=1.3, s_width=1.8, s_height=1.5,dpi = 32,
-        h_fill = hcolor, h_color = border_color, h_size = 1.3,
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = hcolor, p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.4,dpi = 32,
+        h_fill = border_color, h_color = hcolor, h_size = 1.3,
         p_family = "dosis",
         filename="./static/img/icon-32.png")
 
@@ -196,28 +185,28 @@ sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p
 #         h_fill = hcolor, h_color = "#000000", h_size = 1.3,
 #         filename="./static/img/icon-32.png")
 
-sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = border_color, p_x = 1, p_y = 0.5,
-        s_x=1, s_y=1.3, s_width=1.8, s_height=1.5,dpi = 192,
-        h_fill = hcolor, h_color = border_color, h_size = 1.3, 
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = hcolor, p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.4,dpi = 192,
+        h_fill = border_color, h_color = hcolor, h_size = 1.3, 
         p_family = "dosis",
         filename="./static/img/icon-192.png")
 
-sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = border_color, p_x = 1, p_y = 0.5,
-        s_x=1, s_y=1.3, s_width=1.8, s_height=1.5,dpi = 512,
-        h_fill = hcolor, h_color = border_color, h_size = 1.3,
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = hcolor, p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.4,dpi = 512,
+        h_fill = border_color, h_color = hcolor, h_size = 1.3,
         p_family = "dosis",
         filename="./static/img/icon-512.png")
 
-sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = border_color, p_x = 1, p_y = 0.5,
-        s_x=1, s_y=1.3, s_width=1.8, s_height=1.5,dpi = 32,
-        h_fill = hcolor, h_color = border_color, h_size = 1.3, 
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = hcolor, p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.4,dpi = 32,
+        h_fill = border_color, h_color = hcolor, h_size = 1.3, 
         p_family = "dosis",
         filename="./assets/media/icon-32.png")
 
 sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2,
-        p_color = border_color, p_x = 1, p_y = 0.5,
-        s_x=1, s_y=1.3, s_width=1.8, s_height=1.5, dpi = 32,
-        h_fill = hcolor, h_color = border_color, h_size = 1.3,
+        p_color = hcolor, p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.4, dpi = 32,
+        h_fill = border_color, h_color = hcolor, h_size = 1.3,
         p_family = "dosis",
         filename="./assets/media/icon.png")
 
@@ -225,22 +214,36 @@ sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2,
 
 
 sticker(p2, package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, 
-        p_color = border_color, p_x = 1, p_y = 0.5,
-        s_x=1, s_y=1.3, s_width=1.8, s_height=1.5, dpi = 192,
-        h_fill = hcolor, h_color = border_color, h_size = 1.3,
+        p_color = hcolor, p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.4, dpi = 192,
+        h_fill = border_color, h_color = hcolor, h_size = 1.3,
         p_family = "dosis",
         filename="./assets/media/icon-192.png")
 
-
-
-sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = border_color, p_x = 1, p_y = 0.5,
-        s_x=1, s_y=1.3, s_width=1.8, s_height=1.5, dpi = 512,
-        h_fill = hcolor, h_color = border_color, h_size = 1.3,
+sticker(p2, package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, 
+        p_color = hcolor, p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.4, dpi = 192,
+        h_fill = border_color, h_color = hcolor, h_size = 1.3,
         p_family = "dosis",
+        filename="./static/media/dsba6010-hex.png")
+
+sticker(p2, package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, 
+        p_color = hcolor, p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.4, dpi = 192,
+        h_fill = border_color, h_color = hcolor, h_size = 1.3,
+        p_family = "dosis",
+        filename="./static/img/dsba6010-hex.png")
+
+
+
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = hcolor, p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.4, dpi = 512,
+        h_fill = border_color, h_color = hcolor, h_size = 1.3,
+        p_family = "dosis",p_fontface = "bold",
         filename="./assets/media/icon-512.png")
 
-sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = border_color, p_x = 1, p_y = 0.5,
-        s_x=1, s_y=1.3, s_width=1.8, s_height=1.5, dpi = 384,
-        h_fill = hcolor, h_color = border_color, h_size = 1.3,
+sticker(p2,  package="DSBA 6010 | STAT 7027\nBayesian Statistics", p_size=3.2, p_color = hcolor, p_x = 1, p_y = 0.5,
+        s_x=1, s_y=1.3, s_width=1.8, s_height=1.4, dpi = 384,
+        h_fill = border_color, h_color = hcolor, h_size = 1.3,
         p_family = "dosis",
         filename="./assets/media/icon-384.png")

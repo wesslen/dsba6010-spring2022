@@ -33,8 +33,6 @@ We'll cover causal inference and generalized linear multilevel models from a sim
 
 The course also includes directed acyclic graph (DAG) approach to causal inference. Additional topics may include the design of prior distributions, splines, ordered categorical predictors, social relations models, cross-validation, importance sampling, instrumental variables, and Hamiltonian Monte Carlo. Our goal is to go beyond generalized linear modeling, showing how domain-specific scientific models can be built into statistical analyses.
 
-Application of the models will focus on research in cognitive science, human-computer interaction, computational social science, and information visualization. 
-
 ## Course philosophy
 
 Classical statistics classes spend substantial time covering probability theory, null hypothesis testing, and other statistical tests first developed hundreds of years ago. Some classes don't use software or actual real data and instead live in the world of mathematical proofs. They can be math-heavy and full of often unintuitive concepts and equations.

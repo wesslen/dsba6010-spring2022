@@ -148,12 +148,17 @@ course:
   slack: "https://dsba6010-spring2022.slack.com"
 
 university: 
-  name: University of North Carolina at Charlotte
+  name: UNC Charlotte
   url: "https://www.uncc.edu"
 
 school:
   name: School of Data Science
   url: "https://datascience.charlotte.edu/"
+  
+department:
+  name: Dept. of Mathematics and Statistics
+  url: "https://math.charlotte.edu/"
+
 
 ############################
 ## Social
