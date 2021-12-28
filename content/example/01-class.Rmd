@@ -1,0 +1,91 @@
+---
+date: "2022-01-10"
+title: "Class 1"
+menu:
+  example:
+    parent: Examples
+weight: 1
+type: docs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, class.source="language-r", class.output="language-r", message = FALSE, warning = FALSE)
+xaringanExtra::use_clipboard()
+library(rethinking)
+```
+
+```{r echo=FALSE}
+downloadthis::download_file(
+  path = "01-class.Rmd",
+  output_name = "01-class",
+  button_label = "Download this code",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
+
+## Introduction
+
+For this class, we'll review code examples found in the Preface.
+
+This assumes that you have already installed the `rethinking` package.
+
+If you need help, be sure to remember the references in the [Resources](/resource/):
+
+* [Installing R/RStudio](/resource/install/)
+* [Installing `rethinking` package](/resource/install-rethinking/)
+* [Rmarkdown](/resource/rmarkdown/)
+* [R Style guide](/resource/style/)
+
+### R Principles
+
+```{r}
+## R code 0.1
+print( "All models are wrong, but some are useful." )
+```
+
+```{r}
+## R code 0.2
+x <- 1:2
+x <- x*10
+x <- log(x)
+x <- sum(x)
+x <- exp(x)
+x
+```
+
+```{r}
+## R code 0.3
+( log( 0.01^200 ) )
+( 200 * log(0.01) )
+```
+
+```{r}
+## R code 0.4
+# Load the data:
+# car braking distances in feet paired with speeds in km/h
+# see ?cars for details
+data(cars)
+```
+
+```{r}
+# fit a linear regression of distance on speed
+m <- lm( dist ~ speed , data=cars )
+
+# estimated coefficients from the model
+coef(m)
+```
+
+```{r}
+# plot residuals against speed
+plot( resid(m) ~ speed , data=cars )
+```
+
+## Package versions
+
+```{r}
+sessionInfo()
+```

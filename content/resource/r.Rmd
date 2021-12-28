@@ -4,9 +4,12 @@ menu:
   resource:
     parent: Resources
 type: docs
-toc: true
 weight: 3
 ---
+
+```{r setup, include=FALSE}
+xaringanExtra::use_clipboard()
+```
 
 ## Learning R
 

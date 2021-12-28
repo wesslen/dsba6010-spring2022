@@ -6,7 +6,6 @@ menu:
     parent: Guides
     weight: 3
 type: docs
-toc: true
 # output:
 #   blogdown::html_page:
 #       toc: TRUE

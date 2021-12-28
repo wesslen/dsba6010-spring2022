@@ -1,0 +1,244 @@
+---
+date: "2022-01-24"
+title: "Class 2"
+menu:
+  example:
+    parent: Examples
+weight: 2
+type: docs
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="/rmarkdown-libs/clipboard/clipboard.min.js"></script>
+<link href="/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+<script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+<script src="/rmarkdown-libs/font-awesome/js/script.js"></script>
+
+
+<a href="data:text/x-markdown;base64,LS0tCmRhdGU6ICIyMDIyLTAxLTI0Igp0aXRsZTogIkNsYXNzIDIiCm1lbnU6CiAgZXhhbXBsZToKICAgIHBhcmVudDogRXhhbXBsZXMKd2VpZ2h0OiAyCnR5cGU6IGRvY3MKLS0tCgpgYGB7ciBzZXR1cCwgaW5jbHVkZT1GQUxTRX0Ka25pdHI6Om9wdHNfY2h1bmskc2V0KGVjaG8gPSBUUlVFLCBjbGFzcy5zb3VyY2U9Imxhbmd1YWdlLXIiLCBjbGFzcy5vdXRwdXQ9Imxhbmd1YWdlLXIiLCBtZXNzYWdlID0gRkFMU0UsIHdhcm5pbmcgPSBGQUxTRSkKeGFyaW5nYW5FeHRyYTo6dXNlX2NsaXBib2FyZCgpCmxpYnJhcnkocmV0aGlua2luZykKYGBgCgoKYGBge3IgZWNobz1GQUxTRX0KZG93bmxvYWR0aGlzOjpkb3dubG9hZF9maWxlKAogIHBhdGggPSAiMDItY2xhc3MuUm1kIiwKICBvdXRwdXRfbmFtZSA9ICIwMi1jbGFzcyIsCiAgYnV0dG9uX2xhYmVsID0gIkRvd25sb2FkIHRoaXMgY29kZSIsCiAgYnV0dG9uX3R5cGUgPSAiZGFuZ2VyIiwKICBoYXNfaWNvbiA9IFRSVUUsCiAgaWNvbiA9ICJmYSBmYS1zYXZlIiwKICBzZWxmX2NvbnRhaW5lZCA9IEZBTFNFCikKYGBgCgojIyBJbnRyb2R1Y3Rpb24KCkZvciB0aGlzIGNsYXNzLCB3ZSdsbCByZXZpZXcgY29kZSBleGFtcGxlcyBmb3VuZCBpbiBDaGFwdGVyIDIuCgpUaGlzIGFzc3VtZXMgdGhhdCB5b3UgaGF2ZSBhbHJlYWR5IGluc3RhbGxlZCB0aGUgYHJldGhpbmtpbmdgIHBhY2thZ2UuCgpJZiB5b3UgbmVlZCBoZWxwLCBiZSBzdXJlIHRvIHJlbWVtYmVyIHRoZSByZWZlcmVuY2VzIGluIHRoZSBbUmVzb3VyY2VzXSgvcmVzb3VyY2UvKToKCiogW0luc3RhbGxpbmcgUi9SU3R1ZGlvXSgvcmVzb3VyY2UvaW5zdGFsbC8pCiogW0luc3RhbGxpbmcgYHJldGhpbmtpbmdgIHBhY2thZ2VdKC9yZXNvdXJjZS9pbnN0YWxsLXJldGhpbmtpbmcvKQoqIFtSbWFya2Rvd25dKC9yZXNvdXJjZS9ybWFya2Rvd24vKQoqIFtSIFN0eWxlIGd1aWRlXSgvcmVzb3VyY2Uvc3R5bGUvKQoKIyMjIEJheWVzaWFuIFVwZGF0aW5nOiBHcmlkIEFwcHJveGltYXRpb24KCkxldCdzIGFzc3VtZSB3ZSBoYXZlIHRoZSB0YWJsZSBpbiAyLjEKCmBgYHtyfQojIyBSIGNvZGUgMi4xCndheXMgPC0gYyggMCAsIDMgLCA4ICwgOSAsIDAgKQp3YXlzL3N1bSh3YXlzKQpgYGAKCkxldCdzIGNvbXB1dGUgdGhlIGxpa2VsaWhvb2Qgb2Ygc2l4IFcncyBpbiBuaW5lIHRvc3NlcyAoYXNzdW1pbmcgYSA1MCUgcHJvYmFiaWxpdHkpOgoKYGBge3J9CiMjIFIgY29kZSAyLjIKZGJpbm9tKCA2ICwgc2l6ZT05ICwgcHJvYj0wLjUgKQpgYGAKCldlIGNhbiBzZWUgaXQncyAxNi40JS4KCkJlIHN1cmUgdG8gZXhhbWluZSB0aGUgYGRiaW5vbWAgZnVuY3Rpb24gYnkgdHlwaW5nIGluIGA/ZGJpbm9tYCBhbmQgZXhwbG9yaW5nIHRoZSBkb2N1bWVudGF0aW9uLiBXZSdsbCB1c2UgdGhpcyBmdW5jdGlvbiBhIGxvdCBpbiB0aGlzIGNsYXNzLgoKTmV4dCwgbGV0J3MgZGVmaW5lIGEgZ3JpZC4gVGhpcyBpcyByZXF1aXJlZCB3aGVuIHdlIGFyZSB1c2luZyBHcmlkIEFwcHJveGltYXRpb24gZm9yIG91ciBCYXllc2lhbiBjYWxjdWxhdGlvbnMgKGkuZS4sIHRvIGVzdGltYXRlIHRoZSBwb3N0ZXJpb3IpLgoKYGBge3J9CiMjIFIgY29kZSAyLjMKIyBkZWZpbmUgZ3JpZApwX2dyaWQgPC0gc2VxKCBmcm9tPTAgLCB0bz0xICwgbGVuZ3RoLm91dD0yMCApCgpwX2dyaWQKYGBgCgpOb3RpY2UgdGhhdCB0aGlzIGZ1bmN0aW9uIGNyZWF0ZXMgYSB2ZWN0b3Igd2l0aCBsZW5ndGggMjAgYW5kIHRoYXQgcmFuZ2VzIGZyb20gMCB0byAxLiBOb3RlIGFzIHdlbGwgdGhhdCBlYWNoIHZlY3RvciBlbGVtZW50IGlzIGV2ZW5seSBzcGFjZWQgaW4gaW5jcmVtZW50cyBvZiBgKHRvIC0gZnJvbSkvKGxlbmd0aC5vdXQgLSAxKWAuCgpUaGluayBhYm91dCB0aGUgdHJhZGUtb2ZmIGJldHdlZW4gaGF2aW5nIGEgc21hbGxlciBvciBsYXJnZXIgYGxlbmd0aC5vdXRgLgoKTmV4dCwgbGV0J3MgZGVmaW5lIG91ciBwcmlvci4gV2UnbGwgYXNzdW1lIGEgImZsYXQiIHByaW9yLiAKCmBgYHtyfQojIGRlZmluZSBwcmlvcgpwcmlvciA8LSByZXAoIDEgLCAyMCApCgpwcmlvcgpgYGAKCmBgYHtyfQojIGNvbXB1dGUgbGlrZWxpaG9vZCBhdCBlYWNoIHZhbHVlIGluIGdyaWQKbGlrZWxpaG9vZCA8LSBkYmlub20oIDYgLCBzaXplPTkgLCBwcm9iPXBfZ3JpZCApCgpsaWtlbGlob29kCmBgYAoKYGBge3J9CiMgY29tcHV0ZSBwcm9kdWN0IG9mIGxpa2VsaWhvb2QgYW5kIHByaW9yCnVuc3RkLnBvc3RlcmlvciA8LSBsaWtlbGlob29kICogcHJpb3IKCnVuc3RkLnBvc3RlcmlvcgpgYGAKCmBgYHtyfQojIHN0YW5kYXJkaXplIHRoZSBwb3N0ZXJpb3IsIHNvIGl0IHN1bXMgdG8gMQpwb3N0ZXJpb3IgPC0gdW5zdGQucG9zdGVyaW9yIC8gc3VtKHVuc3RkLnBvc3RlcmlvcikKCnBvc3RlcmlvcgpgYGAKCmBgYHtyfQojIyBSIGNvZGUgMi40CnBsb3QoIHBfZ3JpZCAsIHBvc3RlcmlvciAsIHR5cGU9ImIiICwKICAgIHhsYWI9InByb2JhYmlsaXR5IG9mIHdhdGVyIiAsIHlsYWI9InBvc3RlcmlvciBwcm9iYWJpbGl0eSIgKQptdGV4dCggIjIwIHBvaW50cyIgKQpgYGAKV2hhdCBoYXBwZW5zIGlmIHdlIGFsdGVyIHRoZSBwcmlvcnM/IFdoYXQgd2lsbCBiZSB0aGUgbmV3IHBvc3RlcmlvcnM/CgpgYGB7cn0KIyMgUiBjb2RlIDIuNQpwcmlvciA8LSBpZmVsc2UoIHBfZ3JpZCA8IDAuNSAsIDAgLCAxICkKcHJpb3IgPC0gZXhwKCAtNSphYnMoIHBfZ3JpZCAtIDAuNSApICkKYGBgCgojIyMgQmF5ZXNpYW4gVXBkYXRpbmc6IFF1YWRyYXRpYyBBcHByb3hpbWF0aW9uCgpgYGB7cn0KIyMgUiBjb2RlIDIuNgpsaWJyYXJ5KHJldGhpbmtpbmcpCmdsb2JlLnFhIDwtIHF1YXAoCiAgICBhbGlzdCgKICAgICAgICBXIH4gZGJpbm9tKCBXK0wgLHApICwgICMgYmlub21pYWwgbGlrZWxpaG9vZAogICAgICAgIHAgfiBkdW5pZigwLDEpICAgICAjIHVuaWZvcm0gcHJpb3IKICAgICkgLAogICAgZGF0YT1saXN0KFc9NixMPTMpICkKCiMgZGlzcGxheSBzdW1tYXJ5IG9mIHF1YWRyYXRpYyBhcHByb3hpbWF0aW9uCnByZWNpcyggZ2xvYmUucWEgKQpgYGAKCmBgYHtyfQojIyBSIGNvZGUgMi43CiMgYW5hbHl0aWNhbCBjYWxjdWxhdGlvbgpXIDwtIDYKTCA8LSAzCmN1cnZlKCBkYmV0YSggeCAsIFcrMSAsIEwrMSApICwgZnJvbT0wICwgdG89MSApCiMgcXVhZHJhdGljIGFwcHJveGltYXRpb24KY3VydmUoIGRub3JtKCB4ICwgMC42NyAsIDAuMTYgKSAsIGx0eT0yICwgYWRkPVRSVUUgKQpgYGAKCgpgYGB7cn0KIyMgUiBjb2RlIDIuOApuX3NhbXBsZXMgPC0gMTAwMApwIDwtIHJlcCggTkEgLCBuX3NhbXBsZXMgKQpwWzFdIDwtIDAuNQpXIDwtIDYKTCA8LSAzCmZvciAoIGkgaW4gMjpuX3NhbXBsZXMgKSB7CiAgICBwX25ldyA8LSBybm9ybSggMSAsIHBbaS0xXSAsIDAuMSApCiAgICBpZiAoIHBfbmV3IDwgMCApIHBfbmV3IDwtIGFicyggcF9uZXcgKQogICAgaWYgKCBwX25ldyA+IDEgKSBwX25ldyA8LSAyIC0gcF9uZXcKICAgIHEwIDwtIGRiaW5vbSggVyAsIFcrTCAsIHBbaS0xXSApCiAgICBxMSA8LSBkYmlub20oIFcgLCBXK0wgLCBwX25ldyApCiAgICBwW2ldIDwtIGlmZWxzZSggcnVuaWYoMSkgPCBxMS9xMCAsIHBfbmV3ICwgcFtpLTFdICkKfQoKIyMgUiBjb2RlIDIuOQpkZW5zKCBwICwgeGxpbT1jKDAsMSkgKQpjdXJ2ZSggZGJldGEoIHggLCBXKzEgLCBMKzEgKSAsIGx0eT0yICwgYWRkPVRSVUUgKQpgYGAKCiMjIyBgdGlkeXZlcnNlYCBjb252ZXJzaW9uCgpTdGF0aXN0aWNhbCBSZXRoaW5raW5nIHVzZXMgYmFzZSBSIGZ1bmN0aW9ucy4gTW9yZSByZWNlbnRseSwgU29sb21hbiBLdXJ6IGhhcyBjcmVhdGVkIGEgW3RyYW5zbGF0aW9uIG9mIHRoZSBib29rJ3MgZnVuY3Rpb25zXShodHRwczovL2Jvb2tkb3duLm9yZy9jb250ZW50LzQ4NTcvKSBpbnRvIGB0aWR5dmVyc2VgIChhbmQgbGF0ZXIgYGJybXNgKSBjb2RlLiBUaGlzIGlzIG5vdCBuZWNlc3NhcnkgYnV0IGNvdWxkIGJlIGV4dHJlbWVseSBoZWxwZnVsIHRvIGNsYXNzbWF0ZXMgd2hvIGFyZSBmYW1pbGlhciB3aXRoIGB0aWR5dmVyc2VgIGFscmVhZHkuCgpGaXJzdCwgd2UnbGwgbmVlZCB0byBjYWxsIGB0aWR5dmVyc2VgLiBJZiB5b3UgZG8gbm90IGhhdmUgYHRpZHl2ZXJzZWAsIHlvdSdsbCBuZWVkIHRvIGluc3RhbGwgaXQuCgpgYGB7cn0KbGlicmFyeSh0aWR5dmVyc2UpCmBgYAoKCkZvciBleGFtcGxlLCB3ZSBjYW4gdHJhbnNsYXRlIDIuMyBjb2RlIHVzaW5nIHBpcGVzIChgJT4lYCkKCmBgYHtyfQpkIDwtIHRpYmJsZShwX2dyaWQgPSBzZXEoZnJvbSA9IDAsIHRvID0gMSwgbGVuZ3RoLm91dCA9IDIwKSwgICAgICAjIGRlZmluZSBncmlkCiAgICAgICAgICAgcHJpb3IgID0gMSkgJT4lICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBkZWZpbmUgcHJpb3IKICAgIG11dGF0ZShsaWtlbGlob29kID0gZGJpbm9tKDYsIHNpemUgPSA5LCBwcm9iID0gcF9ncmlkKSkgJT4lICAjIGNvbXB1dGUgbGlrZWxpaG9vZCBhdCBlYWNoIHZhbHVlIGluIGdyaWQKICAgIG11dGF0ZSh1bnN0ZF9wb3N0ZXJpb3IgPSBsaWtlbGlob29kICogcHJpb3IpICU+JSAgICAgICAgICAgICAjIGNvbXB1dGUgcHJvZHVjdCBvZiBsaWtlbGlob29kIGFuZCBwcmlvcgogICAgbXV0YXRlKHBvc3RlcmlvciA9IHVuc3RkX3Bvc3RlcmlvciAvIHN1bSh1bnN0ZF9wb3N0ZXJpb3IpKSAKCmQKYGBgCldpdGggdGhpcyBjYWxjdWxhdGVkLCB3ZSBjYW4gdGhlbiB1c2UgYGdncGxvdDJgLCB0aGUgc3RhcGxlIGBnZ3Bsb3QyYCBkYXRhIHZpc3VhbGl6YXRpb24gcGFja2FnZSwgdG8gcGxvdCBvdXIgcG9zdGVyaW9yLgoKYGBge3J9CmQgJT4lIAogIGdncGxvdChhZXMoeCA9IHBfZ3JpZCwgeSA9IHBvc3RlcmlvcikpICsKICBnZW9tX3BvaW50KCkgKwogIGdlb21fbGluZSgpICsKICBsYWJzKHN1YnRpdGxlID0gIjIwIHBvaW50cyIsCiAgICAgICB4ID0gInByb2JhYmlsaXR5IG9mIHdhdGVyIiwKICAgICAgIHkgPSAicG9zdGVyaW9yIHByb2JhYmlsaXR5IikgKwogIHRoZW1lKHBhbmVsLmdyaWQgPSBlbGVtZW50X2JsYW5rKCkpCmBgYAoKRm9yIHRoaXMgY2xhc3MsIHdlJ2xsIG9jY2FzaW9uYWxseSByZWZlciB0byBTb2xvbWFuJ3MgZ3VpZGUuIAoKIyMgUGFja2FnZSB2ZXJzaW9ucwoKYGBge3J9CnNlc3Npb25JbmZvKCkKYGBg" download="02-class.Rmd">
+<button class="btn btn-danger"><i class="fa fa-save"></i> Download this code</button>
+</a>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>For this class, we’ll review code examples found in Chapter 2.</p>
+<p>This assumes that you have already installed the <code>rethinking</code> package.</p>
+<p>If you need help, be sure to remember the references in the <a href="/resource/">Resources</a>:</p>
+<ul>
+<li><a href="/resource/install/">Installing R/RStudio</a></li>
+<li><a href="/resource/install-rethinking/">Installing <code>rethinking</code> package</a></li>
+<li><a href="/resource/rmarkdown/">Rmarkdown</a></li>
+<li><a href="/resource/style/">R Style guide</a></li>
+</ul>
+<div id="bayesian-updating-grid-approximation" class="section level3">
+<h3>Bayesian Updating: Grid Approximation</h3>
+<p>Let’s assume we have the table in 2.1</p>
+<pre class="r language-r"><code>## R code 2.1
+ways &lt;- c( 0 , 3 , 8 , 9 , 0 )
+ways/sum(ways)</code></pre>
+<pre class="language-r"><code>## [1] 0.00 0.15 0.40 0.45 0.00</code></pre>
+<p>Let’s compute the likelihood of six W’s in nine tosses (assuming a 50% probability):</p>
+<pre class="r language-r"><code>## R code 2.2
+dbinom( 6 , size=9 , prob=0.5 )</code></pre>
+<pre class="language-r"><code>## [1] 0.1640625</code></pre>
+<p>We can see it’s 16.4%.</p>
+<p>Be sure to examine the <code>dbinom</code> function by typing in <code>?dbinom</code> and exploring the documentation. We’ll use this function a lot in this class.</p>
+<p>Next, let’s define a grid. This is required when we are using Grid Approximation for our Bayesian calculations (i.e., to estimate the posterior).</p>
+<pre class="r language-r"><code>## R code 2.3
+# define grid
+p_grid &lt;- seq( from=0 , to=1 , length.out=20 )
+
+p_grid</code></pre>
+<pre class="language-r"><code>##  [1] 0.00000000 0.05263158 0.10526316 0.15789474 0.21052632 0.26315789
+##  [7] 0.31578947 0.36842105 0.42105263 0.47368421 0.52631579 0.57894737
+## [13] 0.63157895 0.68421053 0.73684211 0.78947368 0.84210526 0.89473684
+## [19] 0.94736842 1.00000000</code></pre>
+<p>Notice that this function creates a vector with length 20 and that ranges from 0 to 1. Note as well that each vector element is evenly spaced in increments of <code>(to - from)/(length.out - 1)</code>.</p>
+<p>Think about the trade-off between having a smaller or larger <code>length.out</code>.</p>
+<p>Next, let’s define our prior. We’ll assume a “flat” prior.</p>
+<pre class="r language-r"><code># define prior
+prior &lt;- rep( 1 , 20 )
+
+prior</code></pre>
+<pre class="language-r"><code>##  [1] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</code></pre>
+<pre class="r language-r"><code># compute likelihood at each value in grid
+likelihood &lt;- dbinom( 6 , size=9 , prob=p_grid )
+
+likelihood</code></pre>
+<pre class="language-r"><code>##  [1] 0.000000e+00 1.518149e-06 8.185093e-05 7.772923e-04 3.598575e-03
+##  [6] 1.116095e-02 2.668299e-02 5.292110e-02 9.082698e-02 1.383413e-01
+## [11] 1.897686e-01 2.361147e-01 2.666113e-01 2.714006e-01 2.450051e-01
+## [16] 1.897686e-01 1.179181e-01 5.026670e-02 8.853845e-03 0.000000e+00</code></pre>
+<pre class="r language-r"><code># compute product of likelihood and prior
+unstd.posterior &lt;- likelihood * prior
+
+unstd.posterior</code></pre>
+<pre class="language-r"><code>##  [1] 0.000000e+00 1.518149e-06 8.185093e-05 7.772923e-04 3.598575e-03
+##  [6] 1.116095e-02 2.668299e-02 5.292110e-02 9.082698e-02 1.383413e-01
+## [11] 1.897686e-01 2.361147e-01 2.666113e-01 2.714006e-01 2.450051e-01
+## [16] 1.897686e-01 1.179181e-01 5.026670e-02 8.853845e-03 0.000000e+00</code></pre>
+<pre class="r language-r"><code># standardize the posterior, so it sums to 1
+posterior &lt;- unstd.posterior / sum(unstd.posterior)
+
+posterior</code></pre>
+<pre class="language-r"><code>##  [1] 0.000000e+00 7.989837e-07 4.307717e-05 4.090797e-04 1.893887e-03
+##  [6] 5.873873e-03 1.404294e-02 2.785174e-02 4.780115e-02 7.280739e-02
+## [11] 9.987296e-02 1.242643e-01 1.403143e-01 1.428349e-01 1.289433e-01
+## [16] 9.987296e-02 6.205890e-02 2.645477e-02 4.659673e-03 0.000000e+00</code></pre>
+<pre class="r language-r"><code>## R code 2.4
+plot( p_grid , posterior , type=&quot;b&quot; ,
+    xlab=&quot;probability of water&quot; , ylab=&quot;posterior probability&quot; )
+mtext( &quot;20 points&quot; )</code></pre>
+<p><img src="/example/02-class_files/figure-html/unnamed-chunk-9-1.png" width="672" />
+What happens if we alter the priors? What will be the new posteriors?</p>
+<pre class="r language-r"><code>## R code 2.5
+prior &lt;- ifelse( p_grid &lt; 0.5 , 0 , 1 )
+prior &lt;- exp( -5*abs( p_grid - 0.5 ) )</code></pre>
+</div>
+<div id="bayesian-updating-quadratic-approximation" class="section level3">
+<h3>Bayesian Updating: Quadratic Approximation</h3>
+<pre class="r language-r"><code>## R code 2.6
+library(rethinking)
+globe.qa &lt;- quap(
+    alist(
+        W ~ dbinom( W+L ,p) ,  # binomial likelihood
+        p ~ dunif(0,1)     # uniform prior
+    ) ,
+    data=list(W=6,L=3) )
+
+# display summary of quadratic approximation
+precis( globe.qa )</code></pre>
+<pre class="language-r"><code>##        mean        sd      5.5%     94.5%
+## p 0.6666665 0.1571338 0.4155363 0.9177967</code></pre>
+<pre class="r language-r"><code>## R code 2.7
+# analytical calculation
+W &lt;- 6
+L &lt;- 3
+curve( dbeta( x , W+1 , L+1 ) , from=0 , to=1 )
+# quadratic approximation
+curve( dnorm( x , 0.67 , 0.16 ) , lty=2 , add=TRUE )</code></pre>
+<p><img src="/example/02-class_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<pre class="r language-r"><code>## R code 2.8
+n_samples &lt;- 1000
+p &lt;- rep( NA , n_samples )
+p[1] &lt;- 0.5
+W &lt;- 6
+L &lt;- 3
+for ( i in 2:n_samples ) {
+    p_new &lt;- rnorm( 1 , p[i-1] , 0.1 )
+    if ( p_new &lt; 0 ) p_new &lt;- abs( p_new )
+    if ( p_new &gt; 1 ) p_new &lt;- 2 - p_new
+    q0 &lt;- dbinom( W , W+L , p[i-1] )
+    q1 &lt;- dbinom( W , W+L , p_new )
+    p[i] &lt;- ifelse( runif(1) &lt; q1/q0 , p_new , p[i-1] )
+}
+
+## R code 2.9
+dens( p , xlim=c(0,1) )
+curve( dbeta( x , W+1 , L+1 ) , lty=2 , add=TRUE )</code></pre>
+<p><img src="/example/02-class_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+</div>
+<div id="tidyverse-conversion" class="section level3">
+<h3><code>tidyverse</code> conversion</h3>
+<p>Statistical Rethinking uses base R functions. More recently, Soloman Kurz has created a <a href="https://bookdown.org/content/4857/">translation of the book’s functions</a> into <code>tidyverse</code> (and later <code>brms</code>) code. This is not necessary but could be extremely helpful to classmates who are familiar with <code>tidyverse</code> already.</p>
+<p>First, we’ll need to call <code>tidyverse</code>. If you do not have <code>tidyverse</code>, you’ll need to install it.</p>
+<pre class="r language-r"><code>library(tidyverse)</code></pre>
+<p>For example, we can translate 2.3 code using pipes (<code>%&gt;%</code>)</p>
+<pre class="r language-r"><code>d &lt;- tibble(p_grid = seq(from = 0, to = 1, length.out = 20),      # define grid
+           prior  = 1) %&gt;%                                       # define prior
+    mutate(likelihood = dbinom(6, size = 9, prob = p_grid)) %&gt;%  # compute likelihood at each value in grid
+    mutate(unstd_posterior = likelihood * prior) %&gt;%             # compute product of likelihood and prior
+    mutate(posterior = unstd_posterior / sum(unstd_posterior)) 
+
+d</code></pre>
+<pre class="language-r"><code>## # A tibble: 20 × 5
+##    p_grid prior likelihood unstd_posterior   posterior
+##     &lt;dbl&gt; &lt;dbl&gt;      &lt;dbl&gt;           &lt;dbl&gt;       &lt;dbl&gt;
+##  1 0          1 0               0          0          
+##  2 0.0526     1 0.00000152      0.00000152 0.000000799
+##  3 0.105      1 0.0000819       0.0000819  0.0000431  
+##  4 0.158      1 0.000777        0.000777   0.000409   
+##  5 0.211      1 0.00360         0.00360    0.00189    
+##  6 0.263      1 0.0112          0.0112     0.00587    
+##  7 0.316      1 0.0267          0.0267     0.0140     
+##  8 0.368      1 0.0529          0.0529     0.0279     
+##  9 0.421      1 0.0908          0.0908     0.0478     
+## 10 0.474      1 0.138           0.138      0.0728     
+## 11 0.526      1 0.190           0.190      0.0999     
+## 12 0.579      1 0.236           0.236      0.124      
+## 13 0.632      1 0.267           0.267      0.140      
+## 14 0.684      1 0.271           0.271      0.143      
+## 15 0.737      1 0.245           0.245      0.129      
+## 16 0.789      1 0.190           0.190      0.0999     
+## 17 0.842      1 0.118           0.118      0.0621     
+## 18 0.895      1 0.0503          0.0503     0.0265     
+## 19 0.947      1 0.00885         0.00885    0.00466    
+## 20 1          1 0               0          0</code></pre>
+<p>With this calculated, we can then use <code>ggplot2</code>, the staple <code>ggplot2</code> data visualization package, to plot our posterior.</p>
+<pre class="r language-r"><code>d %&gt;% 
+  ggplot(aes(x = p_grid, y = posterior)) +
+  geom_point() +
+  geom_line() +
+  labs(subtitle = &quot;20 points&quot;,
+       x = &quot;probability of water&quot;,
+       y = &quot;posterior probability&quot;) +
+  theme(panel.grid = element_blank())</code></pre>
+<p><img src="/example/02-class_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p>For this class, we’ll occasionally refer to Soloman’s guide.</p>
+</div>
+</div>
+<div id="package-versions" class="section level2">
+<h2>Package versions</h2>
+<pre class="r language-r"><code>sessionInfo()</code></pre>
+<pre class="language-r"><code>## R version 4.1.1 (2021-08-10)
+## Platform: aarch64-apple-darwin20 (64-bit)
+## Running under: macOS Monterey 12.0.1
+## 
+## Matrix products: default
+## BLAS:   /Library/Frameworks/R.framework/Versions/4.1-arm64/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.1-arm64/Resources/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] parallel  stats     graphics  grDevices datasets  utils     methods  
+## [8] base     
+## 
+## other attached packages:
+##  [1] forcats_0.5.1        stringr_1.4.0        dplyr_1.0.7         
+##  [4] purrr_0.3.4          readr_2.0.2          tidyr_1.1.4         
+##  [7] tibble_3.1.6         tidyverse_1.3.1      rethinking_2.13     
+## [10] rstan_2.21.2         ggplot2_3.3.5        StanHeaders_2.21.0-7
+## 
+## loaded via a namespace (and not attached):
+##  [1] matrixStats_0.61.0  fs_1.5.0            lubridate_1.8.0    
+##  [4] httr_1.4.2          tools_4.1.1         backports_1.3.0    
+##  [7] bslib_0.3.1         utf8_1.2.2          R6_2.5.1           
+## [10] DBI_1.1.1           colorspace_2.0-2    withr_2.4.3        
+## [13] tidyselect_1.1.1    gridExtra_2.3       prettyunits_1.1.1  
+## [16] processx_3.5.2      curl_4.3.2          compiler_4.1.1     
+## [19] rvest_1.0.2         cli_3.1.0           xml2_1.3.2         
+## [22] labeling_0.4.2      bookdown_0.24       sass_0.4.0         
+## [25] scales_1.1.1        mvtnorm_1.1-3       callr_3.7.0        
+## [28] bsplus_0.1.3        digest_0.6.29       rmarkdown_2.11     
+## [31] base64enc_0.1-3     pkgconfig_2.0.3     htmltools_0.5.2    
+## [34] dbplyr_2.1.1        fastmap_1.1.0       highr_0.9          
+## [37] rlang_0.4.12        readxl_1.3.1        rstudioapi_0.13    
+## [40] farver_2.1.0        shape_1.4.6         jquerylib_0.1.4    
+## [43] generics_0.1.1      jsonlite_1.7.2      inline_0.3.19      
+## [46] magrittr_2.0.1      loo_2.4.1           Rcpp_1.0.7         
+## [49] munsell_0.5.0       fansi_0.5.0         lifecycle_1.0.1    
+## [52] stringi_1.7.6       yaml_2.2.1          MASS_7.3-54        
+## [55] pkgbuild_1.3.0      grid_4.1.1          crayon_1.4.2       
+## [58] lattice_0.20-44     haven_2.4.3         hms_1.1.1          
+## [61] knitr_1.36          ps_1.6.0            pillar_1.6.4       
+## [64] uuid_1.0-3          codetools_0.2-18    stats4_4.1.1       
+## [67] reprex_2.0.1        glue_1.5.1          evaluate_0.14      
+## [70] blogdown_1.5        V8_3.6.0            renv_0.14.0        
+## [73] RcppParallel_5.1.4  modelr_0.1.8        vctrs_0.3.8        
+## [76] tzdb_0.1.2          cellranger_1.1.0    gtable_0.3.0       
+## [79] assertthat_0.2.1    xfun_0.28           mime_0.12          
+## [82] broom_0.7.9         coda_0.19-4         ellipsis_0.3.2     
+## [85] downloadthis_0.2.1  xaringanExtra_0.5.5</code></pre>
+</div>

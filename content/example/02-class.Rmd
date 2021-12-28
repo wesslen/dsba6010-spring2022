@@ -1,0 +1,211 @@
+---
+date: "2022-01-24"
+title: "Class 2"
+menu:
+  example:
+    parent: Examples
+weight: 2
+type: docs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, class.source="language-r", class.output="language-r", message = FALSE, warning = FALSE)
+xaringanExtra::use_clipboard()
+library(rethinking)
+```
+
+
+```{r echo=FALSE}
+downloadthis::download_file(
+  path = "02-class.Rmd",
+  output_name = "02-class",
+  button_label = "Download this code",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
+## Introduction
+
+For this class, we'll review code examples found in Chapter 2.
+
+This assumes that you have already installed the `rethinking` package.
+
+If you need help, be sure to remember the references in the [Resources](/resource/):
+
+* [Installing R/RStudio](/resource/install/)
+* [Installing `rethinking` package](/resource/install-rethinking/)
+* [Rmarkdown](/resource/rmarkdown/)
+* [R Style guide](/resource/style/)
+
+### Bayesian Updating: Grid Approximation
+
+Let's assume we have the table in 2.1
+
+```{r}
+## R code 2.1
+ways <- c( 0 , 3 , 8 , 9 , 0 )
+ways/sum(ways)
+```
+
+Let's compute the likelihood of six W's in nine tosses (assuming a 50% probability):
+
+```{r}
+## R code 2.2
+dbinom( 6 , size=9 , prob=0.5 )
+```
+
+We can see it's 16.4%.
+
+Be sure to examine the `dbinom` function by typing in `?dbinom` and exploring the documentation. We'll use this function a lot in this class.
+
+Next, let's define a grid. This is required when we are using Grid Approximation for our Bayesian calculations (i.e., to estimate the posterior).
+
+```{r}
+## R code 2.3
+# define grid
+p_grid <- seq( from=0 , to=1 , length.out=20 )
+
+p_grid
+```
+
+Notice that this function creates a vector with length 20 and that ranges from 0 to 1. Note as well that each vector element is evenly spaced in increments of `(to - from)/(length.out - 1)`.
+
+Think about the trade-off between having a smaller or larger `length.out`.
+
+Next, let's define our prior. We'll assume a "flat" prior. 
+
+```{r}
+# define prior
+prior <- rep( 1 , 20 )
+
+prior
+```
+
+```{r}
+# compute likelihood at each value in grid
+likelihood <- dbinom( 6 , size=9 , prob=p_grid )
+
+likelihood
+```
+
+```{r}
+# compute product of likelihood and prior
+unstd.posterior <- likelihood * prior
+
+unstd.posterior
+```
+
+```{r}
+# standardize the posterior, so it sums to 1
+posterior <- unstd.posterior / sum(unstd.posterior)
+
+posterior
+```
+
+```{r}
+## R code 2.4
+plot( p_grid , posterior , type="b" ,
+    xlab="probability of water" , ylab="posterior probability" )
+mtext( "20 points" )
+```
+What happens if we alter the priors? What will be the new posteriors?
+
+```{r}
+## R code 2.5
+prior <- ifelse( p_grid < 0.5 , 0 , 1 )
+prior <- exp( -5*abs( p_grid - 0.5 ) )
+```
+
+### Bayesian Updating: Quadratic Approximation
+
+```{r}
+## R code 2.6
+library(rethinking)
+globe.qa <- quap(
+    alist(
+        W ~ dbinom( W+L ,p) ,  # binomial likelihood
+        p ~ dunif(0,1)     # uniform prior
+    ) ,
+    data=list(W=6,L=3) )
+
+# display summary of quadratic approximation
+precis( globe.qa )
+```
+
+```{r}
+## R code 2.7
+# analytical calculation
+W <- 6
+L <- 3
+curve( dbeta( x , W+1 , L+1 ) , from=0 , to=1 )
+# quadratic approximation
+curve( dnorm( x , 0.67 , 0.16 ) , lty=2 , add=TRUE )
+```
+
+
+```{r}
+## R code 2.8
+n_samples <- 1000
+p <- rep( NA , n_samples )
+p[1] <- 0.5
+W <- 6
+L <- 3
+for ( i in 2:n_samples ) {
+    p_new <- rnorm( 1 , p[i-1] , 0.1 )
+    if ( p_new < 0 ) p_new <- abs( p_new )
+    if ( p_new > 1 ) p_new <- 2 - p_new
+    q0 <- dbinom( W , W+L , p[i-1] )
+    q1 <- dbinom( W , W+L , p_new )
+    p[i] <- ifelse( runif(1) < q1/q0 , p_new , p[i-1] )
+}
+
+## R code 2.9
+dens( p , xlim=c(0,1) )
+curve( dbeta( x , W+1 , L+1 ) , lty=2 , add=TRUE )
+```
+
+### `tidyverse` conversion
+
+Statistical Rethinking uses base R functions. More recently, Soloman Kurz has created a [translation of the book's functions](https://bookdown.org/content/4857/) into `tidyverse` (and later `brms`) code. This is not necessary but could be extremely helpful to classmates who are familiar with `tidyverse` already.
+
+First, we'll need to call `tidyverse`. If you do not have `tidyverse`, you'll need to install it.
+
+```{r}
+library(tidyverse)
+```
+
+
+For example, we can translate 2.3 code using pipes (`%>%`)
+
+```{r}
+d <- tibble(p_grid = seq(from = 0, to = 1, length.out = 20),      # define grid
+           prior  = 1) %>%                                       # define prior
+    mutate(likelihood = dbinom(6, size = 9, prob = p_grid)) %>%  # compute likelihood at each value in grid
+    mutate(unstd_posterior = likelihood * prior) %>%             # compute product of likelihood and prior
+    mutate(posterior = unstd_posterior / sum(unstd_posterior)) 
+
+d
+```
+With this calculated, we can then use `ggplot2`, the staple `ggplot2` data visualization package, to plot our posterior.
+
+```{r}
+d %>% 
+  ggplot(aes(x = p_grid, y = posterior)) +
+  geom_point() +
+  geom_line() +
+  labs(subtitle = "20 points",
+       x = "probability of water",
+       y = "posterior probability") +
+  theme(panel.grid = element_blank())
+```
+
+For this class, we'll occasionally refer to Soloman's guide. 
+
+## Package versions
+
+```{r}
+sessionInfo()
+```

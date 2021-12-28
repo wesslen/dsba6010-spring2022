@@ -8,7 +8,7 @@ lessons:
     date_start: "Jan 10"
     date_end: "Jan 16"
     content: "01-course-intro"
-    example: "rstudio-tidyverse"
+    example: "01-class"
     bg: 1
     bottomborder: True
   
@@ -27,6 +27,7 @@ lessons:
     content: "02-bayesian-inference"
     quiz: "01-lesson-quiz"
     assignment: "01-problem-set"
+    example: "02-class"
     bg: 2
     bottomborder: True    
 
