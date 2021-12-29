@@ -1,5 +1,5 @@
 ---
-date: "2022-01-24"
+date: "`r Sys.Date()`"
 title: "Class 2"
 menu:
   example:

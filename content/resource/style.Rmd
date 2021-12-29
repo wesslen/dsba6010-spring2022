@@ -1,5 +1,6 @@
 ---
-title: R style suggestions 
+title: R style suggestions
+date: "`r Sys.Date()`"
 menu:
   resource:
     parent: Resources
@@ -12,7 +13,7 @@ output:
     highlight: null
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, message=FALSE,warning=FALSE}
 knitr::opts_chunk$set(fig.width = 6, fig.height = 3.6, fig.align = "center",
                       fig.retina = 3, collapse = TRUE, out.width = "75%", class.source="language-r", class.output="language-r")
 xaringanExtra::use_clipboard()

@@ -1,0 +1,13 @@
+---
+title: Problem Set 1
+date: "`r Sys.Date()`"
+menu:
+  assignments:
+    parent: Problem Sets
+    weight: 1
+type: docs
+---
+
+This problem set is due on January 24, 2022 at 11:59am.
+
+Submit your problem set [through this canvas link](https://uncc.instructure.com/courses/171000/assignments/1415432).

@@ -1,5 +1,6 @@
 ---
 title: Bayesian statistics resources
+date: "`r Sys.Date()`"
 menu:
   resource:
     parent: Resources

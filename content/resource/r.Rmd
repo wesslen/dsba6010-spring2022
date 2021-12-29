@@ -1,5 +1,6 @@
 ---
 title: R
+date: "`r Sys.Date()`"
 menu:
   resource:
     parent: Resources
@@ -7,7 +8,7 @@ type: docs
 weight: 3
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, message=FALSE,warning=FALSE}
 xaringanExtra::use_clipboard()
 ```
 

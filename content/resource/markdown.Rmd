@@ -1,6 +1,6 @@
 ---
 title: Using Markdown
-date: "2020-01-13"
+date: "`r Sys.Date()`"
 menu:
   resource:
     parent: Guides

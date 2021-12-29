@@ -14,9 +14,7 @@ output:
     highlight: null
 ---
 
-<script src="/js/prismr.js"></script>
-
-```{r setup, include=FALSE}
+```{r setup, include=FALSE,message=FALSE,warning=FALSE}
 knitr::opts_chunk$set(fig.width = 6, fig.height = 3.6, fig.align = "center",
                       fig.retina = 3, collapse = TRUE, out.width = "75%", class.source="language-r", class.output="language-r")
 xaringanExtra::use_clipboard()
@@ -48,7 +46,9 @@ y <- rbinom(30, size = 1, prob = 0.2016)
 
 # Fitting a simple binomial model using Stan
 library(rstan)
+```
 
+```{r}
 model_string <- "
 data {
   int n;
@@ -62,7 +62,13 @@ model {
 }"
 
 stan_samples <- stan(model_code = model_string, data = list(y = y, n = length(y)) )
+```
+
+```{r}
 stan_samples
+```
+
+```{r}
 traceplot(stan_samples)
 plot(stan_samples)
 ```
@@ -97,7 +103,9 @@ cmdstanr::check_cmdstan_toolchain()
 
 ```{r}
 library(cmdstanr)
+```
 
+```{r}
 file <- file.path(cmdstan_path(), "examples", "bernoulli", "bernoulli.stan")
 
 data_list <- list(N = 10, y = c(0,1,0,0,0,0,0,0,0,1))
@@ -109,7 +117,9 @@ fit <- mod$sample(
   parallel_chains = 4,
   refresh = 500
 )
+```
 
+```{r}
 fit$summary()
 ```
 ### Install `rethinking`
@@ -125,7 +135,9 @@ We can do a few functions to check to see if `rethinking` was installed correctl
 
 ```{r}
 library(rethinking)
+```
 
+```{r}
 f <- alist(
     y ~ dnorm( mu , sigma ),
     mu ~ dnorm( 0 , 10 ),
@@ -168,8 +180,13 @@ To test whether the package was installed correctly, try this code:
 
 ```{r}
 library(rstanarm)
-fit <- stan_glm(mpg ~ ., data = mtcars)
+```
 
+```{r}
+fit <- stan_glm(mpg ~ ., data = mtcars)
+```
+
+```{r}
 plot(fit)
 ```
 

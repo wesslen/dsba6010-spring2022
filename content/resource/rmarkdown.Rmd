@@ -1,6 +1,6 @@
 ---
 title: Using R Markdown
-date: "2020-01-13"
+date: "`r Sys.Date()`"
 menu:
   resource:
     parent: Guides
@@ -10,9 +10,7 @@ editor_options:
 type: docs
 ---
 
-<script src="/js/prismr.js"></script>
-
-```{r setup, include=FALSE}
+```{r setup, include=FALSE,message=FALSE,warning=FALSE}
 knitr::opts_chunk$set(fig.width = 6, fig.height = 3.6, fig.align = "center",
                       fig.retina = 3, collapse = TRUE, out.width = "75%", class.source="language-markdown", class.output="language-markdown")
 set.seed(1234)

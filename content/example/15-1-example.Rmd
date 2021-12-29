@@ -1,5 +1,5 @@
 ---
-date: "2021-12-01"
+date: "`r Sys.Date()`"
 title: "Example: 15-1"
 menu:
   example:

@@ -21,7 +21,6 @@ output:
 <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
 
 
-<script src="/js/prismr.js"></script>
 <p>We’ll primarily use Richard McElreath’s <code>rethinking</code> R package. Installation can be a bit tricky so this guide will outline how to install as well as other packages that may be helpful in this class.</p>
 <div id="rethinking-package" class="section level2">
 <h2><code>rethinking</code> package</h2>
@@ -44,9 +43,8 @@ library(rstan)
 ## For execution on a local, multicore CPU with excess RAM we recommend calling
 ## options(mc.cores = parallel::detectCores()).
 ## To avoid recompilation of unchanged Stan programs, we recommend calling
-## rstan_options(auto_write = TRUE)
-
-model_string &lt;- &quot;
+## rstan_options(auto_write = TRUE)</code></pre>
+<pre class="r language-r"><code>model_string &lt;- &quot;
 data {
   int n;
   int y[n];
@@ -62,8 +60,8 @@ stan_samples &lt;- stan(model_code = model_string, data = list(y = y, n = length
 ## 
 ## SAMPLING FOR MODEL &#39;f6f19f2978447ffaf66a6d87ed7010fd&#39; NOW (CHAIN 1).
 ## Chain 1: 
-## Chain 1: Gradient evaluation took 5e-06 seconds
-## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.05 seconds.
+## Chain 1: Gradient evaluation took 9e-06 seconds
+## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.09 seconds.
 ## Chain 1: Adjust your expectations accordingly!
 ## Chain 1: 
 ## Chain 1: 
@@ -81,8 +79,8 @@ stan_samples &lt;- stan(model_code = model_string, data = list(y = y, n = length
 ## Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 1: 
 ## Chain 1:  Elapsed Time: 0.00383 seconds (Warm-up)
-## Chain 1:                0.003544 seconds (Sampling)
-## Chain 1:                0.007374 seconds (Total)
+## Chain 1:                0.00356 seconds (Sampling)
+## Chain 1:                0.00739 seconds (Total)
 ## Chain 1: 
 ## 
 ## SAMPLING FOR MODEL &#39;f6f19f2978447ffaf66a6d87ed7010fd&#39; NOW (CHAIN 2).
@@ -105,15 +103,15 @@ stan_samples &lt;- stan(model_code = model_string, data = list(y = y, n = length
 ## Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 2: 
-## Chain 2:  Elapsed Time: 0.003923 seconds (Warm-up)
-## Chain 2:                0.003764 seconds (Sampling)
-## Chain 2:                0.007687 seconds (Total)
+## Chain 2:  Elapsed Time: 0.003934 seconds (Warm-up)
+## Chain 2:                0.00377 seconds (Sampling)
+## Chain 2:                0.007704 seconds (Total)
 ## Chain 2: 
 ## 
 ## SAMPLING FOR MODEL &#39;f6f19f2978447ffaf66a6d87ed7010fd&#39; NOW (CHAIN 3).
 ## Chain 3: 
-## Chain 3: Gradient evaluation took 1e-06 seconds
-## Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.01 seconds.
+## Chain 3: Gradient evaluation took 0 seconds
+## Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
 ## Chain 3: Adjust your expectations accordingly!
 ## Chain 3: 
 ## Chain 3: 
@@ -130,15 +128,15 @@ stan_samples &lt;- stan(model_code = model_string, data = list(y = y, n = length
 ## Chain 3: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 3: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 3: 
-## Chain 3:  Elapsed Time: 0.003907 seconds (Warm-up)
-## Chain 3:                0.004017 seconds (Sampling)
-## Chain 3:                0.007924 seconds (Total)
+## Chain 3:  Elapsed Time: 0.00407 seconds (Warm-up)
+## Chain 3:                0.004044 seconds (Sampling)
+## Chain 3:                0.008114 seconds (Total)
 ## Chain 3: 
 ## 
 ## SAMPLING FOR MODEL &#39;f6f19f2978447ffaf66a6d87ed7010fd&#39; NOW (CHAIN 4).
 ## Chain 4: 
-## Chain 4: Gradient evaluation took 1e-06 seconds
-## Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.01 seconds.
+## Chain 4: Gradient evaluation took 3e-06 seconds
+## Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.03 seconds.
 ## Chain 4: Adjust your expectations accordingly!
 ## Chain 4: 
 ## Chain 4: 
@@ -155,11 +153,11 @@ stan_samples &lt;- stan(model_code = model_string, data = list(y = y, n = length
 ## Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 4: 
-## Chain 4:  Elapsed Time: 0.003885 seconds (Warm-up)
-## Chain 4:                0.00397 seconds (Sampling)
-## Chain 4:                0.007855 seconds (Total)
-## Chain 4:
-stan_samples
+## Chain 4:  Elapsed Time: 0.004015 seconds (Warm-up)
+## Chain 4:                0.004031 seconds (Sampling)
+## Chain 4:                0.008046 seconds (Total)
+## Chain 4:</code></pre>
+<pre class="r language-r"><code>stan_samples
 ## Inference for Stan model: f6f19f2978447ffaf66a6d87ed7010fd.
 ## 4 chains, each with iter=2000; warmup=1000; thin=1; 
 ## post-warmup draws per chain=1000, total post-warmup draws=4000.
@@ -168,16 +166,16 @@ stan_samples
 ## theta   0.28    0.00 0.08   0.14   0.22   0.27   0.33   0.45  1505    1
 ## lp__  -19.52    0.02 0.72 -21.59 -19.68 -19.24 -19.06 -19.01  1686    1
 ## 
-## Samples were drawn using NUTS(diag_e) at Tue Dec 28 08:46:00 2021.
+## Samples were drawn using NUTS(diag_e) at Tue Dec 28 20:25:23 2021.
 ## For each parameter, n_eff is a crude measure of effective sample size,
 ## and Rhat is the potential scale reduction factor on split chains (at 
-## convergence, Rhat=1).
-traceplot(stan_samples)</code></pre>
-<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-1-1.png" width="75%" style="display: block; margin: auto;" /></p>
+## convergence, Rhat=1).</code></pre>
+<pre class="r language-r"><code>traceplot(stan_samples)</code></pre>
+<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-4-1.png" width="75%" style="display: block; margin: auto;" /></p>
 <pre class="r language-r"><code>plot(stan_samples)
 ## ci_level: 0.8 (80% intervals)
 ## outer_level: 0.95 (95% intervals)</code></pre>
-<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-1-2.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-4-2.png" width="75%" style="display: block; margin: auto;" /></p>
 <p>Did you get similar output?</p>
 </div>
 <div id="install-cmdstanr" class="section level3">
@@ -197,9 +195,8 @@ cmdstanr::install_cmdstan()</code></pre>
 ## This is cmdstanr version 0.4.0.9000
 ## - Online documentation and vignettes at mc-stan.org/cmdstanr
 ## - CmdStan path set to: /Users/rhymenoceros/.cmdstan/cmdstan-2.28.2
-## - Use set_cmdstan_path() to change the path
-
-file &lt;- file.path(cmdstan_path(), &quot;examples&quot;, &quot;bernoulli&quot;, &quot;bernoulli.stan&quot;)
+## - Use set_cmdstan_path() to change the path</code></pre>
+<pre class="r language-r"><code>file &lt;- file.path(cmdstan_path(), &quot;examples&quot;, &quot;bernoulli&quot;, &quot;bernoulli.stan&quot;)
 
 data_list &lt;- list(N = 10, y = c(0,1,0,0,0,0,0,0,0,1))
 mod &lt;- cmdstan_model(file)
@@ -243,9 +240,8 @@ fit &lt;- mod$sample(
 ## 
 ## All 4 chains finished successfully.
 ## Mean chain execution time: 0.0 seconds.
-## Total execution time: 0.4 seconds.
-
-fit$summary()
+## Total execution time: 0.4 seconds.</code></pre>
+<pre class="r language-r"><code>fit$summary()
 ## # A tibble: 2 × 10
 ##   variable   mean median    sd   mad      q5    q95  rhat ess_bulk ess_tail
 ##   &lt;chr&gt;     &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;
@@ -265,9 +261,8 @@ devtools::install_github(&quot;rmcelreath/rethinking&quot;)</code></pre>
 ## Attaching package: &#39;rethinking&#39;
 ## The following object is masked from &#39;package:stats&#39;:
 ## 
-##     rstudent
-
-f &lt;- alist(
+##     rstudent</code></pre>
+<pre class="r language-r"><code>f &lt;- alist(
     y ~ dnorm( mu , sigma ),
     mu ~ dnorm( 0 , 10 ),
     sigma ~ dexp( 1 )
@@ -331,13 +326,13 @@ precis(fit_stan)
 ##     logit, se
 ## The following object is masked from &#39;package:rstan&#39;:
 ## 
-##     loo
-fit &lt;- stan_glm(mpg ~ ., data = mtcars)
+##     loo</code></pre>
+<pre class="r language-r"><code>fit &lt;- stan_glm(mpg ~ ., data = mtcars)
 ## 
 ## SAMPLING FOR MODEL &#39;continuous&#39; NOW (CHAIN 1).
 ## Chain 1: 
-## Chain 1: Gradient evaluation took 0.000111 seconds
-## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 1.11 seconds.
+## Chain 1: Gradient evaluation took 0.000209 seconds
+## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 2.09 seconds.
 ## Chain 1: Adjust your expectations accordingly!
 ## Chain 1: 
 ## Chain 1: 
@@ -354,15 +349,15 @@ fit &lt;- stan_glm(mpg ~ ., data = mtcars)
 ## Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 1: 
-## Chain 1:  Elapsed Time: 0.129717 seconds (Warm-up)
-## Chain 1:                0.139663 seconds (Sampling)
-## Chain 1:                0.26938 seconds (Total)
+## Chain 1:  Elapsed Time: 0.131049 seconds (Warm-up)
+## Chain 1:                0.137666 seconds (Sampling)
+## Chain 1:                0.268715 seconds (Total)
 ## Chain 1: 
 ## 
 ## SAMPLING FOR MODEL &#39;continuous&#39; NOW (CHAIN 2).
 ## Chain 2: 
-## Chain 2: Gradient evaluation took 4e-06 seconds
-## Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.04 seconds.
+## Chain 2: Gradient evaluation took 5e-06 seconds
+## Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.05 seconds.
 ## Chain 2: Adjust your expectations accordingly!
 ## Chain 2: 
 ## Chain 2: 
@@ -379,15 +374,15 @@ fit &lt;- stan_glm(mpg ~ ., data = mtcars)
 ## Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 2: 
-## Chain 2:  Elapsed Time: 0.124641 seconds (Warm-up)
-## Chain 2:                0.105407 seconds (Sampling)
-## Chain 2:                0.230048 seconds (Total)
+## Chain 2:  Elapsed Time: 0.122286 seconds (Warm-up)
+## Chain 2:                0.103454 seconds (Sampling)
+## Chain 2:                0.22574 seconds (Total)
 ## Chain 2: 
 ## 
 ## SAMPLING FOR MODEL &#39;continuous&#39; NOW (CHAIN 3).
 ## Chain 3: 
-## Chain 3: Gradient evaluation took 5e-06 seconds
-## Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.05 seconds.
+## Chain 3: Gradient evaluation took 7e-06 seconds
+## Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.07 seconds.
 ## Chain 3: Adjust your expectations accordingly!
 ## Chain 3: 
 ## Chain 3: 
@@ -404,15 +399,15 @@ fit &lt;- stan_glm(mpg ~ ., data = mtcars)
 ## Chain 3: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 3: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 3: 
-## Chain 3:  Elapsed Time: 0.127311 seconds (Warm-up)
-## Chain 3:                0.140728 seconds (Sampling)
-## Chain 3:                0.268039 seconds (Total)
+## Chain 3:  Elapsed Time: 0.126971 seconds (Warm-up)
+## Chain 3:                0.127857 seconds (Sampling)
+## Chain 3:                0.254828 seconds (Total)
 ## Chain 3: 
 ## 
 ## SAMPLING FOR MODEL &#39;continuous&#39; NOW (CHAIN 4).
 ## Chain 4: 
-## Chain 4: Gradient evaluation took 9e-06 seconds
-## Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.09 seconds.
+## Chain 4: Gradient evaluation took 6e-06 seconds
+## Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.06 seconds.
 ## Chain 4: Adjust your expectations accordingly!
 ## Chain 4: 
 ## Chain 4: 
@@ -429,13 +424,12 @@ fit &lt;- stan_glm(mpg ~ ., data = mtcars)
 ## Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 4: 
-## Chain 4:  Elapsed Time: 0.126559 seconds (Warm-up)
-## Chain 4:                0.118704 seconds (Sampling)
-## Chain 4:                0.245263 seconds (Total)
-## Chain 4:
-
-plot(fit)</code></pre>
-<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-10-1.png" width="75%" style="display: block; margin: auto;" /></p>
+## Chain 4:  Elapsed Time: 0.128105 seconds (Warm-up)
+## Chain 4:                0.119292 seconds (Sampling)
+## Chain 4:                0.247397 seconds (Total)
+## Chain 4:</code></pre>
+<pre class="r language-r"><code>plot(fit)</code></pre>
+<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-18-1.png" width="75%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="bayesplot" class="section level3">
 <h3><code>bayesplot</code></h3>
@@ -457,12 +451,12 @@ plot_title &lt;- ggtitle(&quot;Posterior distributions&quot;,
 mcmc_areas(posterior,
            pars = c(&quot;cyl&quot;, &quot;drat&quot;, &quot;am&quot;, &quot;wt&quot;),
            prob = 0.8) + plot_title</code></pre>
-<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-12-1.png" width="75%" style="display: block; margin: auto;" />
+<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-20-1.png" width="75%" style="display: block; margin: auto;" />
 This can also provide helpful post-predictive checks (i.e., see model fitting), for example:</p>
 <pre class="r language-r"><code>color_scheme_set(&quot;red&quot;)
 ppc_dens_overlay(y = fit$y,
                  yrep = posterior_predict(fit, draws = 50))</code></pre>
-<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-13-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-21-1.png" width="75%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="brms" class="section level3">
 <h3><code>brms</code></h3>
@@ -675,7 +669,7 @@ ABC %&gt;%
   add_epred_rvars(m) %&gt;%
   ggplot(aes(dist = .epred, y = condition)) +
   stat_dist_dotsinterval(quantiles = 100)</code></pre>
-<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-17-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-25-1.png" width="75%" style="display: block; margin: auto;" /></p>
 <p>This provides posterior means using quantile dot plots, which are frequency-format uncertainty visualizations that have showed great promise in improving decision-making (<a href="https://dl.acm.org/doi/10.1145/2858036.2858558">Kay et al. 2016</a>, <a href="https://dl.acm.org/doi/10.1145/3173574.3173718">Fernandes et al. 2018</a>)</p>
 </div>
 <div id="tidybayes.rethinking" class="section level3">
@@ -702,7 +696,7 @@ m %&gt;%
   median_qi() %&gt;%
   ggplot(aes(y = .variable, x = .value, xmin = .lower, xmax = .upper)) +
   geom_pointinterval()</code></pre>
-<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-19-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-27-1.png" width="75%" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <div id="package-versions-above" class="section level2">
