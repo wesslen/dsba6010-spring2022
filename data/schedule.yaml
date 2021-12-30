@@ -25,7 +25,7 @@ lessons:
     date_start: "Jan 24"
     date_end: "Jan 30"
     content: "02-bayesian-inference"
-    quiz: "01-lesson-quiz"
+    quiz: "https://uncc.instructure.com/courses/171000/quizzes/331407"
     assignment: "01-problem-set"
     example: "02-class"
     bg: 2
@@ -37,7 +37,7 @@ lessons:
     date_start: "Jan 31"
     date_end: "Feb 6"
     content: "03-linear-models"
-    quiz: "02-lesson-quiz"
+    quiz: "https://uncc.instructure.com/courses/171000/quizzes/331402"
     assignment: "02-problem-set"
     bottomborder: True
     bg: 1
@@ -48,7 +48,7 @@ lessons:
     date_end: "Feb 13"
     session: "Class 4"
     content: "04-linear-models-2"
-    quiz: "03-lesson-quiz"
+    quiz: "https://uncc.instructure.com/courses/171000/quizzes/331403"
     assignment: "03-problem-set"
     bottomborder: True
     bg: 2
@@ -62,7 +62,7 @@ lessons:
     date_start: "Feb 14"
     date_end: "Feb 20"
     ##content: "02-bayesian-inference"
-    ##quiz: "01-lesson-quiz"
+    quiz: "https://uncc.instructure.com/courses/171000/quizzes/331404"
     ##assignment: "01-problem-set"
     bg: 1
     bottomborder: True   
@@ -73,7 +73,7 @@ lessons:
     date_start: "Feb 21"
     date_end: "Feb 27"
     ##content: "06-spurious-correlations"
-    ##quiz: "01-lesson-quiz"
+    quiz: "https://uncc.instructure.com/courses/171000/quizzes/331405"
     ##assignment: "01-problem-set"
     bg: 2
     bottomborder: True
@@ -84,7 +84,7 @@ lessons:
     date_start: "Feb 28"
     date_end: "Mar 6"
     ##content: "07-model-comparison"
-    ##quiz: "01-lesson-quiz"
+    quiz: "https://uncc.instructure.com/courses/171000/quizzes/331406"
     ##assignment: "01-problem-set"
     bg: 1
     bottomborder: True  
