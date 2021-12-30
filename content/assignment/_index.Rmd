@@ -12,7 +12,7 @@ The main goals of this class are to help you design, critique, code, and run Bay
 
 ## Problem sets
 
-To practice writing R code, running inferential models, and thinking about causation, you will complete a series of problem sets. 
+To practice writing code, running inferential models, and thinking about causation, you will complete a series of problem sets. 
 
 You need to show that you made a good faith effort to work each question. I will not grade these in detail. The problem sets will be graded using a check system:
 
@@ -60,7 +60,7 @@ The first check-in is an [in-class presentation](/assignment/class-presentation/
 
 The second check-in will be a [project proposal](/assignment/project-proposal/) due on February 28th. This will need to be turned in on Canvas. 
 
-Similar to problem sets, late assignments (within 24 hours) will be subject to a 50% reduction. Assignments received over 24 hours will be subject to a zero grade. 
+Similar to problem sets, late assignments (within 48 hours) will be subject to a 50% reduction. Assignments received over 48 hours will be subject to a zero grade. 
 
 Each check-in will make up 5% of your Final Project grade (so 1.5% of your final grade) and these assignments will be graded using a check system:
 

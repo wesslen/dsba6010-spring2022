@@ -1,0 +1,63 @@
+---
+title: Readings in Bayesian
+date: "`r Sys.Date()`"
+menu:
+  resource:
+    parent: Resources
+type: docs
+bibliography: ../../static/bib/references.bib
+weight: 4
+---
+
+```{r setup, include=FALSE, message=FALSE,warning=FALSE}
+xaringanExtra::use_clipboard()
+```
+
+## Motivations for Bayesian Methods
+
+- <i class="fas fa-book"></i> [The Foundations of Statistics](https://www.gwern.net/docs/statistics/decision/1972-savage-foundationsofstatistics.pdf) [@savage1972foundations]
+
+- <i class="fas fa-newspaper"></i> [Confidence intervals vs Bayesian intervals](https://bayes.wustl.edu/etj/articles/confidence.pdf) [@jaynes1976confidence]
+
+- <i class="fas fa-book"></i> [Probability theory: The logic of science](https://bayes.wustl.edu/etj/prob/book.pdf) [@jaynes2003probability]
+
+- <i class="fas fa-blog"></i> [My Journey From Frequentist to Bayesian Statistics](https://www.fharrell.com/post/journey/) [@harrell_2021]
+
+## NHST / p-hacking
+
+
+- <i class="fas fa-newspaper"></i> [Statistical Evidence in Experimental Psychology: An Empirical Comparison Using 855 t Tests](https://journals.sagepub.com/doi/abs/10.1177/1745691611406923?journalCode=ppsa) [@wetzels2011statistical]
+
+- <i class="fas fa-newspaper"></i> [The garden of forking paths: Why multiple comparisons can be a problem, even when there is no “fishing expedition” or “p-hacking” and the research hypothesis was posited ahead of time](http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf) [@gelman2013garden]
+
+- <i class="fas fa-newspaper"></i> [The New Statistics: Why and How](https://journals.sagepub.com/doi/10.1177/0956797613504966) [@cumming2014new]
+
+- <i class="fas fa-newspaper"></i> [Fair Statistical Communication in HCI](https://hal.inria.fr/hal-01377894/document) [@dragicevic2016fair]
+
+- <i class="fas fa-newspaper"></i> [When Null Hypothesis Significance Testing Is Unsuitable for Research: A Reassessment](https://www.frontiersin.org/articles/10.3389/fnhum.2017.00390/full) [@szucs2017null]
+
+- <i class="fas fa-newspaper"></i> [Abandon Statistical Significance](https://www.tandfonline.com/doi/pdf/10.1080/00031305.2018.1527253) [@mcshane2019abandon]
+
+- <i class="fas fa-blog"></i> [Why p-values should be interpreted as p-values and not as measures of evidence](http://daniellakens.blogspot.com/2021/11/why-p-values-should-be-interpreted-as-p.html) [@lakens2021]
+
+## Bayes in Practice
+
+- <i class="fas fa-blog"></i> [A guide to working with country-year panel data and Bayesian multilevel models](https://www.andrewheiss.com/blog/2021/12/01/multilevel-models-panel-data-guide/) [@heiss2021]
+
+## DAGs / Causal Inference
+
+- <i class="fas fa-blog"></i> [Ways to close backdoors in DAGs](https://www.andrewheiss.com/blog/2020/02/25/closing-backdoors-dags/) [@heiss2020]
+
+## Textbooks
+
+- <i class="fas fa-book"></i> [Probabilistic Programming & Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/) [@davidson2015bayesian]
+
+- <i class="fas fa-book"></i> [Flexible imputation of missing data](https://stefvanbuuren.name/fimd/) [@van2018flexible]
+
+- <i class="fas fa-book"></i> [An introduction to probabilistic programming](https://arxiv.org/pdf/1809.10756.pdf) [@van2018introduction]
+
+- <i class="fas fa-book"></i> [Think Bayes: Bayesian Statistics in Python](http://allendowney.github.io/ThinkBayes2/) [@downey2021think]
+
+
+
+## References
