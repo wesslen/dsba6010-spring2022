@@ -92,6 +92,16 @@ weight: 2
 
 {{% /spoiler %}}
 
-## Feedback
+## Deliverables
 
-{{< feedback >}}
+Due before class: Monday, January 31 at 11:59am 
+
+<a href="https://forms.gle/zMipNzav3BCL3Rwy9"><i class="fas fa-comment fa-lg"></i>  Class Feedback</a>
+
+<a href="https://uncc.instructure.com/courses/171000/quizzes/331407"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a>
+
+## Problem Set 1
+
+Due by next class: Monday, February 7 at 11:59am
+
+<a href="{{ .Site.baseurl }}/assignment/01-problem-set"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / [Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1415432)

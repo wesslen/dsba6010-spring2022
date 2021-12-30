@@ -42,6 +42,4 @@ weight: 12
 
 TBD
 
-## Feedback
-
-{{< feedback >}}
+## Deliverables

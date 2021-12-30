@@ -12,3 +12,7 @@ weight: 5
 ---
 
 Individual presentations on Bayesian applications
+
+Due before class: Feb 14, 2022 at 11:59am
+
+[Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1415489)
