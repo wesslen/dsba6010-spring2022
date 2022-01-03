@@ -26,7 +26,13 @@ We'll primarily use Richard McElreath's `rethinking` R package. Installation can
 
 ## `rethinking` package
 
-The package's github repository <https://github.com/rmcelreath/rethinking> is the best source of information, especially the [issues](https://github.com/rmcelreath/rethinking/issues) section where likely if you run into errors, you may find tips to help install.
+The [package's github repository](https://github.com/rmcelreath/rethinking) is the best source of information, especially the [issues](https://github.com/rmcelreath/rethinking/issues) section where likely if you run into errors, you may find tips to help install.
+
+{{% callout note %}}
+
+Richard updated the `rethinking` package [recently to v2.21](https://twitter.com/rlmcelreath/status/1476219290500149253?s=20). The biggest change is that the default Stan engine to `cmdstanr` instead of `rstan`.
+
+{{% /callout %}}
 
 ### Install `rstan`
 
@@ -34,9 +40,9 @@ While this course uses R, the engine for running Bayesian is Stan. Stan is a C++
 
 To get started, we'll use it with `rstan`, which is the R package aligned to calling Stan.
 
-To install it, follow these instructions:  <https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started>
+To install it, follow [these instructions](https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started).
 
-You can find more information about `rstan`  <https://mc-stan.org/users/interfaces/rstan.html> or you can view the [Stan User Guide](https://mc-stan.org/docs/2_28/stan-users-guide/index.html).
+You can find more information about [`rstan` on its website](https://mc-stan.org/users/interfaces/rstan.html) or you can view the [Stan User Guide](https://mc-stan.org/docs/2_28/stan-users-guide/index.html).
 
 To test whether you properly installed `rstan`, try running this (see original [GitHub Gist](https://gist.github.com/rasmusab/744410db9cf85ecb85e1)):
 
@@ -158,6 +164,7 @@ This first runs `quap` which uses quadratic approximation for fitting the poster
 ```{r}
 # this uses cmdstanr version; this is recommended
 # you can set this permanently (i.e., don't need the argument) by running set_ulam_cmdstan(TRUE)
+# as of rethinking v2.21, cmdstan=TRUE is now default; therefore not necessary
 fit_stan <- ulam( f , data=list(y=c(-1,1)), cmdstan = TRUE )
 precis(fit_stan)
 ```
@@ -256,7 +263,9 @@ m = brm(
   backend = "cmdstanr", # optional; if not specified, will use stanr
   control = list(adapt_delta = .99)
 )
+```
 
+```{r}
 m
 ```
 

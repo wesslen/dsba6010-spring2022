@@ -47,9 +47,9 @@ assignment:
   - name: Project
     weight: 3
 resource:
-  - name: Resources
-    weight: 1
-  - name: Study guides
-    weight: 2
   - name: Guides
+    weight: 1
+  - name: Resources
+    weight: 2
+  - name: Study guides
     weight: 3
