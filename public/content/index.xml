@@ -7,7 +7,7 @@
     <description>Readings, lectures, and videos</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Dec 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png</url>
+      <url>https://dsba6010-spring2022.netlify.app/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_512x512_fill_lanczos_center_3.png</url>
       <title>Readings, lectures, and videos</title>
       <link>https://dsba6010-spring2022.netlify.app/content/</link>
     </image>
@@ -17,8 +17,14 @@
       <link>https://dsba6010-spring2022.netlify.app/content/01-course-intro/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/01-course-intro/</guid>
-      <description>&lt;p&gt;Welcome!&lt;/p&gt;
+      <description>&lt;h2 id=&#34;welcome&#34;&gt;Welcome!&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://media3.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif?cid=790b76119130519cc0d76cbb37bf927be0309d606652bf98&amp;amp;rid=giphy.gif&amp;amp;ct=g&#34; alt=&#34;Welcome to the class!&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;zoom&#34;&gt;Zoom&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://uncc.zoom.us/j/93339403054&#34;&gt;&lt;i class=&#34;fas fa-video fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;: 12:00pm - 2:45pm, January 10, 2022&lt;/p&gt;
+&lt;h2 id=&#34;introduction-to-course&#34;&gt;Introduction to course&lt;/h2&gt;
+&lt;h2 id=&#34;installation-of-rrstudio-on-personal-machine&#34;&gt;Installation of R/RStudio on Personal Machine&lt;/h2&gt;
+&lt;h2 id=&#34;next-weeks-class&#34;&gt;Next Week&amp;rsquo;s Class&lt;/h2&gt;
+&lt;p&gt;As this course is &amp;ldquo;flipped classroom&amp;rdquo;, you will be responsible for completing the readings and watching the lectures &lt;strong&gt;before&lt;/strong&gt; next class. This includes completing the weekly check-in and lecture quiz before class. We will start our first problem set in next class. Click the link below to view next week&amp;rsquo;s lectures.&lt;/p&gt;
 </description>
     </item>
     
@@ -27,7 +33,10 @@
       <link>https://dsba6010-spring2022.netlify.app/content/02-bayesian-inference/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/02-bayesian-inference/</guid>
-      <description>&lt;p&gt;
+      <description>&lt;h2 id=&#34;zoom&#34;&gt;Zoom&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://uncc.zoom.us/j/93339403054&#34;&gt;&lt;i class=&#34;fas fa-video fa-lg&#34;&gt;&lt;/i&gt; Zoom Link&lt;/a&gt;: 12:00pm - 2:45pm, January 24, 2022&lt;/p&gt;
+&lt;h2 id=&#34;required-readings&#34;&gt;Required Readings&lt;/h2&gt;
+&lt;p&gt;
   &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chapter 1: The Golem of Prague Data&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chapter 2: The Garden of Forking Data&lt;/a&gt;&lt;/p&gt;
@@ -37,11 +46,11 @@
 &lt;h3 id=&#34;lecture-1&#34;&gt;Lecture 1&lt;/h3&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/4WVelCswXo4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/cclUd_HoRlo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;br&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/c63892105b90479bb8827c9afcf5ad76&#34; title=&#34;L01 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/075b46c0223d495d89692fc22077b394&#34; title=&#34;Statistical Rethinking 2022 Lecture 01&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;&#34; data-ratio=&#34;1.78343949044586&#34;&gt;&lt;/iframe&gt;
 &lt;br&gt;
 &lt;h3 id=&#34;lecture-2&#34;&gt;Lecture 2&lt;/h3&gt;
 
@@ -50,7 +59,7 @@
 &lt;/div&gt;
 
 &lt;br&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/3bfa335d71ac499ebb10e11073efe777&#34; title=&#34;L02 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 210px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/3bfa335d71ac499ebb10e11073efe777&#34; title=&#34;L02 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-5&#34;&gt;
   &lt;summary&gt;What is Bayesian data analysis? How does it differ in its definition of uncertainty from Frequentist interpretations?&lt;/summary&gt;
@@ -108,7 +117,7 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;We will cover these topics in Lesson 8.&lt;/li&gt;
+&lt;li&gt;We will cover these topics later in the semester.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;
 &lt;/details&gt;
@@ -124,14 +133,13 @@
 &lt;/ul&gt;
 &lt;/p&gt;
 &lt;/details&gt;
-&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
-    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
-    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
-        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
-        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;</description>
+&lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;
+&lt;p&gt;Due before class: Monday, January 24 at 11:59am&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;&lt;i class=&#34;fas fa-comment fa-lg&#34;&gt;&lt;/i&gt;  Class Feedback&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://uncc.instructure.com/courses/171000/quizzes/331407&#34;&gt;&lt;i class=&#34;fas fa-question fa-lg&#34;&gt;&lt;/i&gt;  Lesson Quiz&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;problem-set-1&#34;&gt;Problem Set 1&lt;/h2&gt;
+&lt;p&gt;Due by next class: Monday, January 31 at 11:59am&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;{{ .Site.baseurl }}/assignment/01-problem-set&#34;&gt;&lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;  Problem Set&lt;/a&gt; / &lt;a href=&#34;https://uncc.instructure.com/courses/171000/assignments/1415432&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Canvas Link&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -139,7 +147,10 @@
       <link>https://dsba6010-spring2022.netlify.app/content/03-linear-models/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/03-linear-models/</guid>
-      <description>&lt;p&gt;
+      <description>&lt;h2 id=&#34;zoom&#34;&gt;Zoom&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://uncc.zoom.us/j/93339403054&#34;&gt;&lt;i class=&#34;fas fa-video fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;: 12:00pm - 2:45pm, January 31, 2022&lt;/p&gt;
+&lt;h2 id=&#34;required-readings&#34;&gt;Required Readings&lt;/h2&gt;
+&lt;p&gt;
   &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 4: Geocentric models&lt;/p&gt;
 &lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
 &lt;h3 id=&#34;lecture-3&#34;&gt;Lecture 3&lt;/h3&gt;
@@ -149,17 +160,16 @@
 &lt;/div&gt;
 
 &lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/c81fda5d72c54127935b83201d31c2c0&#34; title=&#34;L03 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/c81fda5d72c54127935b83201d31c2c0&#34; title=&#34;L03 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
-&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
-    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
-    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
-        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
-        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;</description>
+&lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;
+&lt;p&gt;Due before class: Monday, February 7 at 11:59am&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;&lt;i class=&#34;fas fa-comment fa-lg&#34;&gt;&lt;/i&gt;  Class Feedback&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://uncc.instructure.com/courses/171000/quizzes/331402&#34;&gt;&lt;i class=&#34;fas fa-question fa-lg&#34;&gt;&lt;/i&gt;  Lesson Quiz&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;problem-set-2&#34;&gt;Problem Set 2&lt;/h2&gt;
+&lt;p&gt;Due by next class: Monday, February 14 at 11:59am&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;{{ .Site.baseurl }}/assignment/02-problem-set&#34;&gt;&lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;  Problem Set&lt;/a&gt; / &lt;a href=&#34;https://uncc.instructure.com/courses/171000/assignments/1415433&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Canvas Link&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -167,11 +177,14 @@
       <link>https://dsba6010-spring2022.netlify.app/content/04-linear-models-2/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/04-linear-models-2/</guid>
-      <description>&lt;p&gt;
-  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 4: Geocentric models&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Wiggle, wiggle, wiggle&lt;br&gt;Just a little bit (Spline!)&lt;br&gt;&lt;br&gt;[Trying to show how flexible the spline is with independent samples from prior (top) and posterior (bottom)] &lt;a href=&#34;https://t.co/Q4JEPwCXuc&#34;&gt;pic.twitter.com/Q4JEPwCXuc&lt;/a&gt;&lt;/p&gt;&amp;mdash; Richard McElreath 🍜 (@rlmcelreath) &lt;a href=&#34;https://twitter.com/rlmcelreath/status/1459851523056361472?ref_src=twsrc%5Etfw&#34;&gt;November 14, 2021&lt;/a&gt;&lt;/blockquote&gt;
+      <description>&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Wiggle, wiggle, wiggle&lt;br&gt;Just a little bit (Spline!)&lt;br&gt;&lt;br&gt;[Trying to show how flexible the spline is with independent samples from prior (top) and posterior (bottom)] &lt;a href=&#34;https://t.co/Q4JEPwCXuc&#34;&gt;pic.twitter.com/Q4JEPwCXuc&lt;/a&gt;&lt;/p&gt;&amp;mdash; Richard McElreath 🦔 (@rlmcelreath) &lt;a href=&#34;https://twitter.com/rlmcelreath/status/1459851523056361472?ref_src=twsrc%5Etfw&#34;&gt;November 14, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
+&lt;h2 id=&#34;zoom&#34;&gt;Zoom&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://uncc.zoom.us/j/93339403054&#34;&gt;&lt;i class=&#34;fas fa-video fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;: 12:00pm - 2:45pm, January 10, 2022&lt;/p&gt;
+&lt;h2 id=&#34;required-readings&#34;&gt;Required Readings&lt;/h2&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 4: Geocentric models&lt;/p&gt;
 &lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
 &lt;h3 id=&#34;lecture-4&#34;&gt;Lecture 4&lt;/h3&gt;
 
@@ -180,18 +193,17 @@
 &lt;/div&gt;
 
 &lt;br&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/a176e2b36674464581c6aecfd770f97f&#34; title=&#34;L04 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/a176e2b36674464581c6aecfd770f97f&#34; title=&#34;L04 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;br&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
-&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
-    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
-    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
-        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
-        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;</description>
+&lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;
+&lt;p&gt;Due before class: Monday, February 14 at 11:59am&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;&lt;i class=&#34;fas fa-comment fa-lg&#34;&gt;&lt;/i&gt;  Class Feedback&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://uncc.instructure.com/courses/171000/quizzes/331403&#34;&gt;&lt;i class=&#34;fas fa-question fa-lg&#34;&gt;&lt;/i&gt;  Lesson Quiz&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;problem-set-3&#34;&gt;Problem Set 3&lt;/h2&gt;
+&lt;p&gt;Due by next class: Monday, February 21 at 11:59am&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;{{ .Site.baseurl }}/assignment/03-problem-set&#34;&gt;&lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;  Problem Set&lt;/a&gt; / &lt;a href=&#34;https://uncc.instructure.com/courses/171000/assignments/1415434&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Canvas Link&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -200,6 +212,8 @@
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/05-bayesian-presentations/</guid>
       <description>&lt;p&gt;Individual presentations on Bayesian applications&lt;/p&gt;
+&lt;p&gt;Due before class: Feb 14, 2022 at 11:59am&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://uncc.instructure.com/courses/171000/assignments/1415489&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Canvas Link&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -229,18 +243,17 @@
 &lt;/div&gt;
 
 &lt;br&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/d4422ebeb555488fb1e852bb35fc1d4d&#34; title=&#34;L06 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/d4422ebeb555488fb1e852bb35fc1d4d&#34; title=&#34;L06 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;br&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
-&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
-    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
-    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
-        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
-        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;</description>
+&lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;
+&lt;p&gt;Due before class: Monday, February 28 at 11:59am&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;&lt;i class=&#34;fas fa-comment fa-lg&#34;&gt;&lt;/i&gt;  Class Feedback&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://uncc.instructure.com/courses/171000/quizzes/331403&#34;&gt;&lt;i class=&#34;fas fa-question fa-lg&#34;&gt;&lt;/i&gt;  Lesson Quiz&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;problem-set-4&#34;&gt;Problem Set 4&lt;/h2&gt;
+&lt;p&gt;Due by next class: Monday, March 14 at 11:59am&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;{{ .Site.baseurl }}/assignment/04-problem-set&#34;&gt;&lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;  Problem Set&lt;/a&gt; / &lt;a href=&#34;https://uncc.instructure.com/courses/171000/assignments/1415435&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Canvas Link&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -267,17 +280,10 @@
 &lt;/div&gt;
 
 &lt;br&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/13b0ac246f344570b6b002b8e3c384bc&#34; title=&#34;L08 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/13b0ac246f344570b6b002b8e3c384bc&#34; title=&#34;L08 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
-&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
-    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
-    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
-        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
-        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;</description>
+&lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;</description>
     </item>
     
     <item>
@@ -306,17 +312,10 @@
 &lt;/div&gt;
 
 &lt;br&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/c01485b84fa54e849136242257d8af0e&#34; title=&#34;L10 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/c01485b84fa54e849136242257d8af0e&#34; title=&#34;L10 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 ## Comprehension questions
 &lt;p&gt;TBD&lt;/p&gt;
-&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
-    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
-    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
-        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
-        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;</description>
+&lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;</description>
     </item>
     
     <item>
@@ -343,7 +342,7 @@
 &lt;/div&gt;
 
 &lt;br&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/14835b694f5849bb8e277aeaa977e5dc&#34; title=&#34;L13 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/14835b694f5849bb8e277aeaa977e5dc&#34; title=&#34;L13 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;br&gt;
 &lt;h3 id=&#34;lecture-14&#34;&gt;Lecture 14&lt;/h3&gt;
 
@@ -355,14 +354,7 @@
 &lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/bb23a87b930a4bf0a1450ebe5bd044cb&#34; title=&#34;L14 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
-&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
-    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
-    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
-        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
-        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;</description>
+&lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;</description>
     </item>
     
     <item>
@@ -380,7 +372,7 @@
 &lt;/div&gt;
 
 &lt;br&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/49d056ed5f2449459654d8b3b1e273fe&#34; title=&#34;L11 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/49d056ed5f2449459654d8b3b1e273fe&#34; title=&#34;L11 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;br&gt;
 &lt;h3 id=&#34;lecture-12&#34;&gt;Lecture 12&lt;/h3&gt;
 
@@ -389,17 +381,10 @@
 &lt;/div&gt;
 
 &lt;br&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/8204715ef3c445daa83dd2653c4b2559&#34; title=&#34;L12 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/8204715ef3c445daa83dd2653c4b2559&#34; title=&#34;L12 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
-&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
-    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
-    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
-        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
-        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;</description>
+&lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;</description>
     </item>
     
     <item>
@@ -417,7 +402,7 @@
 &lt;/div&gt;
 
 &lt;br&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/2b1b80986b784bc49e10df6e808d5864&#34; title=&#34;L15 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/2b1b80986b784bc49e10df6e808d5864&#34; title=&#34;L15 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;br&gt;
 &lt;h3 id=&#34;lecture-16&#34;&gt;Lecture 16&lt;/h3&gt;
 
@@ -426,17 +411,10 @@
 &lt;/div&gt;
 
 &lt;br&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/e41e4dabd661476cb52ca156ec4c0132&#34; title=&#34;L16 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/e41e4dabd661476cb52ca156ec4c0132&#34; title=&#34;L16 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
-&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
-    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
-    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
-        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
-        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;</description>
+&lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;</description>
     </item>
     
     <item>
@@ -463,7 +441,7 @@
 &lt;/div&gt;
 
 &lt;br&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/4542a31bca014bacb068a3d19c61770d&#34; title=&#34;L17 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/4542a31bca014bacb068a3d19c61770d&#34; title=&#34;L17 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;br&gt;
 &lt;h3 id=&#34;lecture-18&#34;&gt;Lecture 18&lt;/h3&gt;
 
@@ -472,17 +450,10 @@
 &lt;/div&gt;
 
 &lt;br&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/365cb7f482674b12baaee3aadaddc3cf&#34; title=&#34;L18 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/365cb7f482674b12baaee3aadaddc3cf&#34; title=&#34;L18 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
-&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
-    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
-    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
-        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
-        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;
+&lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;
 </description>
     </item>
     
@@ -501,7 +472,7 @@
 &lt;/div&gt;
 
 &lt;br&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/8582fc1c71cc4f4fae43ee1d2a0ac319&#34; title=&#34;L19 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/8582fc1c71cc4f4fae43ee1d2a0ac319&#34; title=&#34;L19 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;br&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -509,17 +480,10 @@
 &lt;/div&gt;
 
 &lt;br&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/da27f0f59b1447cc85418c8fb0fb390c&#34; title=&#34;L20 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/da27f0f59b1447cc85418c8fb0fb390c&#34; title=&#34;L20 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
-&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;/h2&gt;
-    &lt;p&gt;Go to &lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;this form&lt;/a&gt; and answer these three questions:&lt;/p&gt;
-    &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-        &lt;li&gt;What was the muddiest thing from class this lesson? What are you still wondering about?&lt;/li&gt;
-        &lt;li&gt;What was the clearest thing from class this lesson?&lt;/li&gt;
-        &lt;li&gt;What was the most exciting thing you learned?&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;p&gt;I’ll compile the questions and review for class.&lt;/p&gt;
+&lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;
 </description>
     </item>
     

@@ -1,0 +1,11 @@
+---
+title: Helpful resources
+date: "`r Sys.Date()`"
+menu:
+  resource:
+    parent: Overview
+type: docs
+weight: 1
+---
+
+I have included a bunch of extra resources and guides related to Bayesian statistics, causal inference, R, data, and other relevant topics. Enjoy!

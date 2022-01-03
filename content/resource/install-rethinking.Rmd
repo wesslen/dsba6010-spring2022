@@ -50,6 +50,10 @@ To test whether you properly installed `rstan`, try running this (see original [
 set.seed(123)
 y <- rbinom(30, size = 1, prob = 0.2016)
 
+y
+```
+
+```{r}
 # Fitting a simple binomial model using Stan
 library(rstan)
 ```
@@ -67,7 +71,13 @@ model {
   y ~ bernoulli(theta);
 }"
 
-stan_samples <- stan(model_code = model_string, data = list(y = y, n = length(y)) )
+stan_samples <- stan(
+  model_code = model_string, 
+  data = list(y = y, n = length(y)),
+  seed = 123, 
+  chains = 4, 
+  refresh = 500
+)
 ```
 
 ```{r}
@@ -114,10 +124,9 @@ library(cmdstanr)
 ```{r}
 file <- file.path(cmdstan_path(), "examples", "bernoulli", "bernoulli.stan")
 
-data_list <- list(N = 10, y = c(0,1,0,0,0,0,0,0,0,1))
 mod <- cmdstan_model(file)
 fit <- mod$sample(
-  data = data_list, 
+  data = list(y = y, N = length(y)), # recall y from earlier example
   seed = 123, 
   chains = 4, 
   parallel_chains = 4,

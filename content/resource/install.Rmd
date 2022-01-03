@@ -5,7 +5,6 @@ menu:
   resource:
     parent: Guides
 type: docs
-toc: true
 weight: 1
 ---
 
@@ -15,23 +14,21 @@ library(knitr)
 
 You will do all of your work in this class with the open source (and free!) programming language [R](https://cran.r-project.org/). You will use [RStudio](https://www.rstudio.com/) as the main program to access R. Think of R as an engine and RStudio as a car dashboard—R handles all the calculations and the actual statistics, while RStudio provides a nice interface for running R code.^[These instructions were created by [Andrew Heiss](andrewheiss.com) from his excellent [Program Evaluation course website](https://evalf21.classes.andrewheiss.com/).]
 
-
-## RStudio.cloud
-
-R is free, but it can sometimes be a pain to install and configure. To make life easier, you can (and should!) use the free [RStudio.cloud](http://rstudio.cloud/) service *initially*, which lets you run a full instance of RStudio in your web browser. This means you won't have to install anything on your computer to get started with R! We will have a shared class workspace in RStudio.cloud that will let you quickly copy templates for labs and problem sets.
-
-Go to <https://rstudio.cloud/> and create an account. You'll receive a link to join the shared class workspace separately. If you don't get this link, let me know and I will invite you.
-
-
 ## RStudio on your computer
 
 RStudio.cloud is convenient, but it can be slow and it is not designed to be able to handle larger datasets, more complicated analysis, or fancier graphics. Over the course of the semester, you should wean yourself off of RStudio.cloud and install all these things locally. This is also important if you want to customize fonts, since RStudio.cloud has extremely limited support for fonts other than Helvetica. 
 
-Here's how you install all these things
+Here's how you install all these things:
 
 ### Install R
 
 First you need to install R itself (the engine).
+
+{{% callout note %}}
+
+As of January 3, 2022, the most recent version of R is 4.1.2. Please install that version.
+
+{{% /callout %}}
 
 1. Go to the CRAN (Collective R Archive Network)^[It's a goofy name, but CRAN is where most R packages—and R itself—lives.] website: <https://cran.r-project.org/>
 2. Click on "Download R for `XXX`", where `XXX` is either Mac or Windows:
@@ -40,7 +37,7 @@ First you need to install R itself (the engine).
     include_graphics("/img/install/install-r-links.png", error = FALSE)
     ```
 
-    - If you use macOS, scroll down to the first `.pkg` file in the list of files (in this picture, it's `R-4.0.0.pkg`; as of right now, the current version is also 4.0.0) and download it.
+    - If you use macOS, scroll down to the first `.pkg` file in the list of files (in this picture, it's `R-4.0.0.pkg`; as of right now, the current version is also 4.1.2) and download it.
     
 ```{r, echo=FALSE, out.width="100%"}
 include_graphics("/img/install/install-r-mac.png", error = FALSE)
@@ -56,6 +53,44 @@ include_graphics("/img/install/install-r-windows.png", error = FALSE)
 
 4. If you use macOS, [download and install XQuartz](https://www.xquartz.org/). You do not need to do this on Windows.
 
+
+```{r echo=FALSE}
+blogdown::shortcode_open('spoiler', text = 'I already have R and/or RStudio installed on my computer. What should I do?')
+```
+
+- Likely. Unfortunately this answer isn't easy (and highlights why we'll emphasis good reproducibility practices first).
+
+- What's important is for you to first figure out these three things:
+
+1. What is your operating system?
+
+2. What version of R do you have?
+
+3. What version of RStudio do you have?
+
+- For the first two, type in `sessionInfo()` into R. At the top, you should see your R version and operating system. We're going to work with R version 4.1.1. If you don't have it, you can download it and RStudio will automatically find your new version of R.
+
+- For RStudio, I recommend having at least 1.4 or higher. It's important to note that RStudio versioninig changed recently as the September release moved to a calendar based version (see [this link for more details](https://support.rstudio.com/hc/en-us/articles/200716783-RStudio-IDE-Release-History)). So if you have the `2021.09.0` or higher, you're okay.
+
+- If you want a great overview, see Colin Gillespie and Robin Lovelace's [Efficient R programming package](https://csgillespie.github.io/efficientR/set-up.html).
+
+```{r echo=FALSE}
+blogdown::shortcode_close('spoiler')
+```
+
+```{r echo=FALSE}
+blogdown::shortcode_open('spoiler', text = 'If I install a new version of RStudio, will I need to reinstall all of my packages?')
+```
+
+- Likely. However, recognizing this first is the most critical step.
+
+- There are a lot of helpful tutorials on how to navigate. A lot of it is contingent on what is your operating system. For example, there is a helpful R package for updating for Windows user ([`installr` website](https://cran.r-project.org/web/packages/installr/index.html)), which I highly recommend.
+
+- For Mac or Linux users, this is more challenging. There are several helpful blog posts (see [blog 1](https://rfortherestofus.com/2020/09/how-to-update-rstudio-r-packages/), [blog 2](https://csgillespie.github.io/efficientR/set-up.html#r-version)) but I recommend [Jenny Bryan's advice](https://rstats.wtf/maintaining-r.html#how-to-transfer-your-library-when-updating-r). Try her instructions. If it doesn't work out, reach out to me on Slack and we'll work together.
+
+```{r echo=FALSE}
+blogdown::shortcode_close('spoiler')
+```
 
 ### Install RStudio
 
@@ -78,6 +113,33 @@ include_graphics("/img/install/install-r-rstudio2.png", error = FALSE)
 
 Double click on RStudio to run it (check your applications folder or start menu).
 
+### R Projects
+
+Perhaps you have previously used R and/or RStudio before. However, very quickly many students immediately get a disorganized set of code, data, and files that become a headache for your future self (myself included when I was learning R!).
+
+Instead, reproducibility is an incredibly important skill in data science (any programming language, not just R!) and using/maintaining projects as R Projects is a critical first step to mitigating these issues.
+
+I recommend for this class, you create a unique R project uniquely for this class. I recommend on an easy access place like your Desktop.
+
+Once you have completed all the steps above, to create your R project, click "File > New Project".
+
+### R Environments `renv`
+
+To avoid so much pain in package management, R has created the package `renv` to enable better management of packages. I **highly** recommend using it.
+
+Like any other package, you'll first need to install `renv`. Then you can follow these instructions from the [`renv` website](https://rstudio.github.io/renv/articles/renv.html).
+
+The general workflow when working with renv is:
+
+1. Call `renv::init()` to initialize a new project-local environment with a private R library,
+
+2. Work in the project as normal, installing and removing new R packages as they are needed in the project,
+
+3. Call `renv::snapshot()` to save the state of the project library to the lockfile (called renv.lock),
+
+4. Continue working on your project, installing and updating R packages as needed.
+
+5. Call `renv::snapshot()` again to save the state of your project library if your attempts to update R packages were successful, or call `renv::restore()` to revert to the previous state as encoded in the lockfile if your attempts to update packages introduced some new problems.
 
 ### Install `tidyverse`
 
@@ -97,6 +159,19 @@ include_graphics("/img/install/install-r-tidyverse.png", error = FALSE)
 
 Notice also that RStudio will generate a line of code for you and run it: `install.packages("tidyverse")`. You can also just paste and run this instead of using the packages panel.
 
+In this class, we may occassionaly use `tidyverse` but it's not critical. We'll discuss on the next resource the `rethinking` package that is more critical for our class.
+
+## Optional but Recommended Steps
+
+For these steps, you are welcome to come back to this step later in the semester as this may be a lot for the first class.
+
+### RStudio + Git(Hub)
+
+Related to our earlier part on reproducibility, Git (or version control tools like GitHub or BitBucket) are important in both research and industry. These allow checkpoint changes in code that enable better collaboration, transparency, and tracking for possible debugging. 
+
+There are multiple places to learn about Git, especially within RStudio. You are welcome to use Git in the terminal if you've used before, but for those new to Git, I highly recommend Jenny Bryan's excellent tutorial: [Happy with Git and GitHub for the useR](https://happygitwithr.com/install-intro.html).
+
+A wonderful way to get started is to follow these instructions and push updates of your course work onto this GitHub. The great thing is that this keeps a backup copy of your work in case you ever have a major error or even lose your work.
 
 ### Install `tinytex`
 

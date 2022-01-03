@@ -26,7 +26,10 @@
   
     
   
-  <meta name="description" content="
+  <meta name="description" content="Zoom
+: 12:00pm - 2:45pm, January 31, 2022
+Required Readings
+
    Chapter 4: Geocentric models" />
 
   
@@ -47,11 +50,13 @@
 
   
   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
 
   
   
   
-    <meta name="theme-color" content="#CF4446" />
+    <meta name="theme-color" content="#c73c41" />
   
 
   
@@ -229,13 +234,19 @@
   
   
   
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;700&display=swap" media="print" onload="this.media='all'">
+    
+  
 
   
   
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.c70d27f8e004002976021a82265de335.css" />
+  <link rel="stylesheet" href="/css/wowchemy.433c17f74a45f8b39638e76070a1cc8f.css" />
 
   
 
@@ -260,8 +271,8 @@
     <link rel="manifest" href="/index.webmanifest" />
   
 
-  <link rel="icon" type="image/png" href="/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_180x180_fill_lanczos_center_3.png" />
+  <link rel="icon" type="image/png" href="/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_180x180_fill_lanczos_center_3.png" />
 
   <link rel="canonical" href="https://dsba6010-spring2022.netlify.app/content/03-linear-models/" />
 
@@ -285,9 +296,12 @@
   <meta property="og:site_name" content="Bayesian Statistics" />
   <meta property="og:url" content="https://dsba6010-spring2022.netlify.app/content/03-linear-models/" />
   <meta property="og:title" content="Class 3 - Linear Models | Bayesian Statistics" />
-  <meta property="og:description" content="
-   Chapter 4: Geocentric models" /><meta property="og:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" />
-    <meta property="twitter:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  <meta property="og:description" content="Zoom
+: 12:00pm - 2:45pm, January 31, 2022
+Required Readings
+
+   Chapter 4: Geocentric models" /><meta property="og:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
@@ -317,9 +331,11 @@
   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-152x152.png" />
   <link rel="icon" type="image/png" href="https://dsba6010-spring2022.netlify.app/img/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="https://dsba6010-spring2022.netlify.app/img/favicon-16x16.png" sizes="16x16" />
-  <meta name="application-name" content="DSBA 6010 / STAT 7027: Bayesian Statistics" />
+  <meta name="application-name" content="DSBA 6010 | STAT 7027: Bayesian Statistics" />
   <meta name="msapplication-TileColor" content="#FFFFFF" />
   <meta name="msapplication-TileImage" content="https://dsba6010-spring2022.netlify.app/img/mstile-144x144.png" />
+  <link href="/css/adam-one-dark.css" rel="stylesheet" />
+  <script src="/js/prismr.js"></script>
 
   <title>Class 3 - Linear Models | Bayesian Statistics</title>
 </head>
@@ -636,38 +652,6 @@
         
         
 
-        
-
-        
-        
-        
-          
-            
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>RStudio.cloud</span></a>
-        </li>
-
-        
-        
-
       
 
         
@@ -687,23 +671,6 @@
       
 
       
-      
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
-          <i class="fas fa-moon" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>Light</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>Dark</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>Automatic</span>
-          </a>
-        </div>
-      </li>
       
 
       
@@ -854,20 +821,6 @@
 
   </div>
   
-  <div class="docs-toc-item">
-    <a class="docs-toc-link" href="/example/15-1-example/">Examples</a>
-    <ul class="nav docs-sidenav">
-      
-      <li >
-        <a href="/example/15-1-example/">Example: 15-1</a>
-      </li>
-
-      
-    </ul>
-    
-
-  </div>
-  
   
 </nav>
 
@@ -883,7 +836,10 @@
           <h1>Class 3 - Linear Models</h1>
 
           <div class="article-style">
-            <p>
+            <h2 id="zoom">Zoom</h2>
+<p><a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i></a>: 12:00pm - 2:45pm, January 31, 2022</p>
+<h2 id="required-readings">Required Readings</h2>
+<p>
   <i class="fas fa-book  pr-1 fa-fw"></i> Chapter 4: Geocentric models</p>
 <h2 id="lecture">Lecture</h2>
 <h3 id="lecture-3">Lecture 3</h3>
@@ -893,17 +849,16 @@
 </div>
 
 <h2 id="slides">Slides</h2>
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/c81fda5d72c54127935b83201d31c2c0" title="L03 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;" data-ratio="1.3333333333333333"></iframe>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/c81fda5d72c54127935b83201d31c2c0" title="L03 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;" data-ratio="1.3333333333333333"></iframe>
 <h2 id="comprehension-questions">Comprehension questions</h2>
 <p>TBD</p>
-<h2 id="feedback">Feedback</h2>
-    <p>Go to <a href="https://forms.gle/zMipNzav3BCL3Rwy9">this form</a> and answer these three questions:</p>
-    <ol style="list-style-type: decimal">
-        <li>What was the muddiest thing from class this lesson? What are you still wondering about?</li>
-        <li>What was the clearest thing from class this lesson?</li>
-        <li>What was the most exciting thing you learned?</li>
-    </ol>
-    <p>I’ll compile the questions and review for class.</p>
+<h2 id="deliverables">Deliverables</h2>
+<p>Due before class: Monday, February 7 at 11:59am</p>
+<p><a href="https://forms.gle/zMipNzav3BCL3Rwy9"><i class="fas fa-comment fa-lg"></i>  Class Feedback</a></p>
+<p><a href="https://uncc.instructure.com/courses/171000/quizzes/331402"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a></p>
+<h2 id="problem-set-2">Problem Set 2</h2>
+<p>Due by next class: Monday, February 14 at 11:59am</p>
+<p><a href="{{ .Site.baseurl }}/assignment/02-problem-set"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / <a href="https://uncc.instructure.com/courses/171000/assignments/1415433" target="_blank" rel="noopener">Canvas Link</a></p>
           </div>
 
           
@@ -948,19 +903,6 @@
 
 
 
-
-  
-  
-
-<p class="edit-page">
-  <a href="github.com/wesslen/dsba6010-spring2022/edit/main/content/content/03-linear-models.md">
-    <i class="fas fa-pen pr-2"></i>Edit this page
-  </a>
-</p>
-
-
-
-
           
 
 
@@ -981,22 +923,23 @@
     <div class="row course-info">
         <div class="col-md-7">
             <p>
-                <strong>DSBA 6010 / STAT 7027: Bayesian Statistics (Spring 2022)</strong><br>
-                <a href="https://www.uncc.edu" target="_blank" rel="noopener">University of North Carolina at Charlotte</a> &emsp;&emsp;
-                <a href="https://math.charlotte.edu/" target="_blank" rel="noopener">Department of Mathematics and Statistics</a>
+                <strong>DSBA 6010 | STAT 7027: Bayesian Statistics (Spring 2022)</strong><br>
+                <a href="https://www.uncc.edu" target="_blank" rel="noopener">UNC Charlotte</a> &emsp;
+                <a href="https://datascience.charlotte.edu/" target="_blank" rel="noopener">School of Data Science</a> &emsp;
+                <a href="https://math.charlotte.edu/" target="_blank" rel="noopener">Dept. of Mathematics and Statistics</a>
             </p>
 
             <p>
                 <a href="https://wesslen.netlify.app" target="_blank" rel="noopener"><i class="fas fa-user"></i>
-                    Dr. Ryan Wesslen</a> &emsp;&emsp;
+                    Dr. Ryan Wesslen</a> &emsp;
                 <a href="mailto:rwesslen@uncc.edu"><i class="fas fa-envelope"></i>
                     rwesslen@uncc.edu</a>
             </p>
 
             <p>
-                <i class="far fa-calendar-alt"></i> Monday &emsp;&emsp;
-                <i class="far fa-clock"></i> 12:00pm-2:45pm 
-                <br><i class="fas fa-university"></i> Center City 1101
+                <i class="far fa-calendar-alt"></i> Monday &emsp;
+                <i class="far fa-clock"></i> 12:00pm-2:45pm &emsp;
+                <i class="fas fa-university"></i> Center City 1101
             </p>
         </div>
 
@@ -1145,7 +1088,7 @@
       
     
     
-    <script src="/en/js/wowchemy.min.4bba0826db6409c865d2e7b99039d6d0.js"></script>
+    <script src="/en/js/wowchemy.min.fb8eb32a4d207f5f18023712a904b210.js"></script>
 
     
 

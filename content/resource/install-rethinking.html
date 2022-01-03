@@ -38,7 +38,9 @@ output:
 <pre class="r language-r"><code>set.seed(123)
 y &lt;- rbinom(30, size = 1, prob = 0.2016)
 
-# Fitting a simple binomial model using Stan
+y
+##  [1] 0 0 0 1 1 0 0 1 0 0 1 0 0 0 0 1 0 0 0 1 1 0 0 1 0 0 0 0 0 0</code></pre>
+<pre class="r language-r"><code># Fitting a simple binomial model using Stan
 library(rstan)
 ## Loading required package: StanHeaders
 ## Loading required package: ggplot2
@@ -59,81 +61,91 @@ model {
   y ~ bernoulli(theta);
 }&quot;
 
-stan_samples &lt;- stan(model_code = model_string, data = list(y = y, n = length(y)) )
+stan_samples &lt;- stan(
+  model_code = model_string, 
+  data = list(y = y, n = length(y)),
+  seed = 123, 
+  chains = 4, 
+  refresh = 500
+)
+## Trying to compile a simple C file
+## Running /Library/Frameworks/R.framework/Resources/bin/R CMD SHLIB foo.c
+## clang -arch arm64 -I&quot;/Library/Frameworks/R.framework/Resources/include&quot; -DNDEBUG   -I&quot;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/Rcpp/include/&quot;  -I&quot;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppEigen/include/&quot;  -I&quot;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppEigen/include/unsupported&quot;  -I&quot;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/BH/include&quot; -I&quot;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/StanHeaders/include/src/&quot;  -I&quot;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/StanHeaders/include/&quot;  -I&quot;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppParallel/include/&quot;  -I&quot;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/rstan/include&quot; -DEIGEN_NO_DEBUG  -DBOOST_DISABLE_ASSERTS  -DBOOST_PENDING_INTEGER_LOG2_HPP  -DSTAN_THREADS  -DBOOST_NO_AUTO_PTR  -include &#39;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/StanHeaders/include/stan/math/prim/mat/fun/Eigen.hpp&#39;  -D_REENTRANT -DRCPP_PARALLEL_USE_TBB=1   -I/opt/R/arm64/include   -fPIC  -falign-functions=64 -Wall -g -O2  -c foo.c -o foo.o
+## In file included from &lt;built-in&gt;:1:
+## In file included from /Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/StanHeaders/include/stan/math/prim/mat/fun/Eigen.hpp:13:
+## In file included from /Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppEigen/include/Eigen/Dense:1:
+## In file included from /Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppEigen/include/Eigen/Core:88:
+## /Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppEigen/include/Eigen/src/Core/util/Macros.h:628:1: error: unknown type name &#39;namespace&#39;
+## namespace Eigen {
+## ^
+## /Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppEigen/include/Eigen/src/Core/util/Macros.h:628:16: error: expected &#39;;&#39; after top level declarator
+## namespace Eigen {
+##                ^
+##                ;
+## In file included from &lt;built-in&gt;:1:
+## In file included from /Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/StanHeaders/include/stan/math/prim/mat/fun/Eigen.hpp:13:
+## In file included from /Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppEigen/include/Eigen/Dense:1:
+## /Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppEigen/include/Eigen/Core:96:10: fatal error: &#39;complex&#39; file not found
+## #include &lt;complex&gt;
+##          ^~~~~~~~~
+## 3 errors generated.
+## make: *** [foo.o] Error 1
 ## 
 ## SAMPLING FOR MODEL &#39;f6f19f2978447ffaf66a6d87ed7010fd&#39; NOW (CHAIN 1).
 ## Chain 1: 
-## Chain 1: Gradient evaluation took 7e-06 seconds
-## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.07 seconds.
+## Chain 1: Gradient evaluation took 1.4e-05 seconds
+## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.14 seconds.
 ## Chain 1: Adjust your expectations accordingly!
 ## Chain 1: 
 ## Chain 1: 
 ## Chain 1: Iteration:    1 / 2000 [  0%]  (Warmup)
-## Chain 1: Iteration:  200 / 2000 [ 10%]  (Warmup)
-## Chain 1: Iteration:  400 / 2000 [ 20%]  (Warmup)
-## Chain 1: Iteration:  600 / 2000 [ 30%]  (Warmup)
-## Chain 1: Iteration:  800 / 2000 [ 40%]  (Warmup)
+## Chain 1: Iteration:  500 / 2000 [ 25%]  (Warmup)
 ## Chain 1: Iteration: 1000 / 2000 [ 50%]  (Warmup)
 ## Chain 1: Iteration: 1001 / 2000 [ 50%]  (Sampling)
-## Chain 1: Iteration: 1200 / 2000 [ 60%]  (Sampling)
-## Chain 1: Iteration: 1400 / 2000 [ 70%]  (Sampling)
-## Chain 1: Iteration: 1600 / 2000 [ 80%]  (Sampling)
-## Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+## Chain 1: Iteration: 1500 / 2000 [ 75%]  (Sampling)
 ## Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 1: 
-## Chain 1:  Elapsed Time: 0.003381 seconds (Warm-up)
-## Chain 1:                0.00313 seconds (Sampling)
-## Chain 1:                0.006511 seconds (Total)
+## Chain 1:  Elapsed Time: 0.003489 seconds (Warm-up)
+## Chain 1:                0.003177 seconds (Sampling)
+## Chain 1:                0.006666 seconds (Total)
 ## Chain 1: 
 ## 
 ## SAMPLING FOR MODEL &#39;f6f19f2978447ffaf66a6d87ed7010fd&#39; NOW (CHAIN 2).
 ## Chain 2: 
-## Chain 2: Gradient evaluation took 0 seconds
-## Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0 seconds.
+## Chain 2: Gradient evaluation took 1e-06 seconds
+## Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.01 seconds.
 ## Chain 2: Adjust your expectations accordingly!
 ## Chain 2: 
 ## Chain 2: 
 ## Chain 2: Iteration:    1 / 2000 [  0%]  (Warmup)
-## Chain 2: Iteration:  200 / 2000 [ 10%]  (Warmup)
-## Chain 2: Iteration:  400 / 2000 [ 20%]  (Warmup)
-## Chain 2: Iteration:  600 / 2000 [ 30%]  (Warmup)
-## Chain 2: Iteration:  800 / 2000 [ 40%]  (Warmup)
+## Chain 2: Iteration:  500 / 2000 [ 25%]  (Warmup)
 ## Chain 2: Iteration: 1000 / 2000 [ 50%]  (Warmup)
 ## Chain 2: Iteration: 1001 / 2000 [ 50%]  (Sampling)
-## Chain 2: Iteration: 1200 / 2000 [ 60%]  (Sampling)
-## Chain 2: Iteration: 1400 / 2000 [ 70%]  (Sampling)
-## Chain 2: Iteration: 1600 / 2000 [ 80%]  (Sampling)
-## Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+## Chain 2: Iteration: 1500 / 2000 [ 75%]  (Sampling)
 ## Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 2: 
-## Chain 2:  Elapsed Time: 0.00344 seconds (Warm-up)
-## Chain 2:                0.003328 seconds (Sampling)
-## Chain 2:                0.006768 seconds (Total)
+## Chain 2:  Elapsed Time: 0.003485 seconds (Warm-up)
+## Chain 2:                0.003422 seconds (Sampling)
+## Chain 2:                0.006907 seconds (Total)
 ## Chain 2: 
 ## 
 ## SAMPLING FOR MODEL &#39;f6f19f2978447ffaf66a6d87ed7010fd&#39; NOW (CHAIN 3).
 ## Chain 3: 
-## Chain 3: Gradient evaluation took 1e-06 seconds
-## Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.01 seconds.
+## Chain 3: Gradient evaluation took 2e-06 seconds
+## Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.02 seconds.
 ## Chain 3: Adjust your expectations accordingly!
 ## Chain 3: 
 ## Chain 3: 
 ## Chain 3: Iteration:    1 / 2000 [  0%]  (Warmup)
-## Chain 3: Iteration:  200 / 2000 [ 10%]  (Warmup)
-## Chain 3: Iteration:  400 / 2000 [ 20%]  (Warmup)
-## Chain 3: Iteration:  600 / 2000 [ 30%]  (Warmup)
-## Chain 3: Iteration:  800 / 2000 [ 40%]  (Warmup)
+## Chain 3: Iteration:  500 / 2000 [ 25%]  (Warmup)
 ## Chain 3: Iteration: 1000 / 2000 [ 50%]  (Warmup)
 ## Chain 3: Iteration: 1001 / 2000 [ 50%]  (Sampling)
-## Chain 3: Iteration: 1200 / 2000 [ 60%]  (Sampling)
-## Chain 3: Iteration: 1400 / 2000 [ 70%]  (Sampling)
-## Chain 3: Iteration: 1600 / 2000 [ 80%]  (Sampling)
-## Chain 3: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+## Chain 3: Iteration: 1500 / 2000 [ 75%]  (Sampling)
 ## Chain 3: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 3: 
-## Chain 3:  Elapsed Time: 0.003432 seconds (Warm-up)
-## Chain 3:                0.003523 seconds (Sampling)
-## Chain 3:                0.006955 seconds (Total)
+## Chain 3:  Elapsed Time: 0.003471 seconds (Warm-up)
+## Chain 3:                0.0032 seconds (Sampling)
+## Chain 3:                0.006671 seconds (Total)
 ## Chain 3: 
 ## 
 ## SAMPLING FOR MODEL &#39;f6f19f2978447ffaf66a6d87ed7010fd&#39; NOW (CHAIN 4).
@@ -144,21 +156,15 @@ stan_samples &lt;- stan(model_code = model_string, data = list(y = y, n = length
 ## Chain 4: 
 ## Chain 4: 
 ## Chain 4: Iteration:    1 / 2000 [  0%]  (Warmup)
-## Chain 4: Iteration:  200 / 2000 [ 10%]  (Warmup)
-## Chain 4: Iteration:  400 / 2000 [ 20%]  (Warmup)
-## Chain 4: Iteration:  600 / 2000 [ 30%]  (Warmup)
-## Chain 4: Iteration:  800 / 2000 [ 40%]  (Warmup)
+## Chain 4: Iteration:  500 / 2000 [ 25%]  (Warmup)
 ## Chain 4: Iteration: 1000 / 2000 [ 50%]  (Warmup)
 ## Chain 4: Iteration: 1001 / 2000 [ 50%]  (Sampling)
-## Chain 4: Iteration: 1200 / 2000 [ 60%]  (Sampling)
-## Chain 4: Iteration: 1400 / 2000 [ 70%]  (Sampling)
-## Chain 4: Iteration: 1600 / 2000 [ 80%]  (Sampling)
-## Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+## Chain 4: Iteration: 1500 / 2000 [ 75%]  (Sampling)
 ## Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 4: 
-## Chain 4:  Elapsed Time: 0.003407 seconds (Warm-up)
-## Chain 4:                0.003507 seconds (Sampling)
-## Chain 4:                0.006914 seconds (Total)
+## Chain 4:  Elapsed Time: 0.003573 seconds (Warm-up)
+## Chain 4:                0.003461 seconds (Sampling)
+## Chain 4:                0.007034 seconds (Total)
 ## Chain 4:</code></pre>
 <pre class="r language-r"><code>stan_samples
 ## Inference for Stan model: f6f19f2978447ffaf66a6d87ed7010fd.
@@ -166,19 +172,19 @@ stan_samples &lt;- stan(model_code = model_string, data = list(y = y, n = length
 ## post-warmup draws per chain=1000, total post-warmup draws=4000.
 ## 
 ##         mean se_mean   sd   2.5%    25%    50%    75%  97.5% n_eff Rhat
-## theta   0.28    0.00 0.08   0.14   0.22   0.27   0.33   0.45  1505    1
-## lp__  -19.52    0.02 0.72 -21.59 -19.68 -19.24 -19.06 -19.01  1686    1
+## theta   0.28    0.00 0.08   0.14   0.22   0.27   0.33   0.45  1533    1
+## lp__  -19.56    0.02 0.78 -21.77 -19.74 -19.26 -19.07 -19.01  1344    1
 ## 
-## Samples were drawn using NUTS(diag_e) at Sun Jan  2 19:51:46 2022.
+## Samples were drawn using NUTS(diag_e) at Sun Jan  2 22:39:50 2022.
 ## For each parameter, n_eff is a crude measure of effective sample size,
 ## and Rhat is the potential scale reduction factor on split chains (at 
 ## convergence, Rhat=1).</code></pre>
 <pre class="r language-r"><code>traceplot(stan_samples)</code></pre>
-<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-4-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-5-1.png" width="75%" style="display: block; margin: auto;" /></p>
 <pre class="r language-r"><code>plot(stan_samples)
 ## ci_level: 0.8 (80% intervals)
 ## outer_level: 0.95 (95% intervals)</code></pre>
-<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-4-2.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-5-2.png" width="75%" style="display: block; margin: auto;" /></p>
 <p>Did you get similar output?</p>
 </div>
 <div id="install-cmdstanr" class="section level3">
@@ -201,10 +207,9 @@ cmdstanr::install_cmdstan()</code></pre>
 ## - CmdStan version: 2.28.2</code></pre>
 <pre class="r language-r"><code>file &lt;- file.path(cmdstan_path(), &quot;examples&quot;, &quot;bernoulli&quot;, &quot;bernoulli.stan&quot;)
 
-data_list &lt;- list(N = 10, y = c(0,1,0,0,0,0,0,0,0,1))
 mod &lt;- cmdstan_model(file)
 fit &lt;- mod$sample(
-  data = data_list, 
+  data = list(y = y, N = length(y)), # recall y from earlier example
   seed = 123, 
   chains = 4, 
   parallel_chains = 4,
@@ -246,10 +251,10 @@ fit &lt;- mod$sample(
 ## Total execution time: 0.2 seconds.</code></pre>
 <pre class="r language-r"><code>fit$summary()
 ## # A tibble: 2 × 10
-##   variable   mean median    sd   mad      q5    q95  rhat ess_bulk ess_tail
-##   &lt;chr&gt;     &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;
-## 1 lp__     -7.27  -6.98  0.725 0.317 -8.76   -6.75   1.00    1910.    1726.
-## 2 theta     0.247  0.232 0.119 0.120  0.0784  0.461  1.00    1530.    1575.</code></pre>
+##   variable    mean  median     sd    mad      q5     q95  rhat ess_bulk ess_tail
+##   &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;
+## 1 lp__     -19.6   -19.3   0.783  0.335  -21.0   -19.0    1.00    1703.    1945.
+## 2 theta      0.278   0.274 0.0800 0.0804   0.157   0.419  1.00    1541.    1505.</code></pre>
 </div>
 <div id="install-rethinking" class="section level3">
 <h3>Install <code>rethinking</code></h3>
@@ -338,8 +343,8 @@ precis(fit_stan)
 ## 
 ## SAMPLING FOR MODEL &#39;continuous&#39; NOW (CHAIN 1).
 ## Chain 1: 
-## Chain 1: Gradient evaluation took 0.000184 seconds
-## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 1.84 seconds.
+## Chain 1: Gradient evaluation took 0.000226 seconds
+## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 2.26 seconds.
 ## Chain 1: Adjust your expectations accordingly!
 ## Chain 1: 
 ## Chain 1: 
@@ -356,15 +361,15 @@ precis(fit_stan)
 ## Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 1: 
-## Chain 1:  Elapsed Time: 0.10958 seconds (Warm-up)
-## Chain 1:                0.115932 seconds (Sampling)
-## Chain 1:                0.225512 seconds (Total)
+## Chain 1:  Elapsed Time: 0.111007 seconds (Warm-up)
+## Chain 1:                0.11817 seconds (Sampling)
+## Chain 1:                0.229177 seconds (Total)
 ## Chain 1: 
 ## 
 ## SAMPLING FOR MODEL &#39;continuous&#39; NOW (CHAIN 2).
 ## Chain 2: 
-## Chain 2: Gradient evaluation took 4e-06 seconds
-## Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.04 seconds.
+## Chain 2: Gradient evaluation took 5e-06 seconds
+## Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.05 seconds.
 ## Chain 2: Adjust your expectations accordingly!
 ## Chain 2: 
 ## Chain 2: 
@@ -381,15 +386,15 @@ precis(fit_stan)
 ## Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 2: 
-## Chain 2:  Elapsed Time: 0.104438 seconds (Warm-up)
-## Chain 2:                0.088821 seconds (Sampling)
-## Chain 2:                0.193259 seconds (Total)
+## Chain 2:  Elapsed Time: 0.105936 seconds (Warm-up)
+## Chain 2:                0.090356 seconds (Sampling)
+## Chain 2:                0.196292 seconds (Total)
 ## Chain 2: 
 ## 
 ## SAMPLING FOR MODEL &#39;continuous&#39; NOW (CHAIN 3).
 ## Chain 3: 
-## Chain 3: Gradient evaluation took 4e-06 seconds
-## Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.04 seconds.
+## Chain 3: Gradient evaluation took 5e-06 seconds
+## Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.05 seconds.
 ## Chain 3: Adjust your expectations accordingly!
 ## Chain 3: 
 ## Chain 3: 
@@ -406,15 +411,15 @@ precis(fit_stan)
 ## Chain 3: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 3: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 3: 
-## Chain 3:  Elapsed Time: 0.106788 seconds (Warm-up)
-## Chain 3:                0.109982 seconds (Sampling)
-## Chain 3:                0.21677 seconds (Total)
+## Chain 3:  Elapsed Time: 0.107874 seconds (Warm-up)
+## Chain 3:                0.109805 seconds (Sampling)
+## Chain 3:                0.217679 seconds (Total)
 ## Chain 3: 
 ## 
 ## SAMPLING FOR MODEL &#39;continuous&#39; NOW (CHAIN 4).
 ## Chain 4: 
-## Chain 4: Gradient evaluation took 4e-06 seconds
-## Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.04 seconds.
+## Chain 4: Gradient evaluation took 5e-06 seconds
+## Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.05 seconds.
 ## Chain 4: Adjust your expectations accordingly!
 ## Chain 4: 
 ## Chain 4: 
@@ -431,12 +436,12 @@ precis(fit_stan)
 ## Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 4: 
-## Chain 4:  Elapsed Time: 0.109008 seconds (Warm-up)
-## Chain 4:                0.103142 seconds (Sampling)
-## Chain 4:                0.21215 seconds (Total)
+## Chain 4:  Elapsed Time: 0.112289 seconds (Warm-up)
+## Chain 4:                0.105433 seconds (Sampling)
+## Chain 4:                0.217722 seconds (Total)
 ## Chain 4:</code></pre>
 <pre class="r language-r"><code>plot(fit)</code></pre>
-<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-18-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-19-1.png" width="75%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="bayesplot" class="section level3">
 <h3><code>bayesplot</code></h3>
@@ -458,12 +463,12 @@ plot_title &lt;- ggtitle(&quot;Posterior distributions&quot;,
 mcmc_areas(posterior,
            pars = c(&quot;cyl&quot;, &quot;drat&quot;, &quot;am&quot;, &quot;wt&quot;),
            prob = 0.8) + plot_title</code></pre>
-<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-20-1.png" width="75%" style="display: block; margin: auto;" />
+<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-21-1.png" width="75%" style="display: block; margin: auto;" />
 This can also provide helpful post-predictive checks (i.e., see model fitting), for example:</p>
 <pre class="r language-r"><code>color_scheme_set(&quot;red&quot;)
 ppc_dens_overlay(y = fit$y,
                  yrep = posterior_predict(fit, draws = 50))</code></pre>
-<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-21-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-22-1.png" width="75%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="brms" class="section level3">
 <h3><code>brms</code></h3>
@@ -609,7 +614,7 @@ m = brm(
 ## 
 ## All 4 chains finished successfully.
 ## Mean chain execution time: 0.4 seconds.
-## Total execution time: 1.8 seconds.</code></pre>
+## Total execution time: 1.9 seconds.</code></pre>
 <pre class="r language-r"><code>m
 ##  Family: gaussian 
 ##   Links: mu = identity; sigma = identity 
@@ -675,7 +680,7 @@ ABC %&gt;%
   add_epred_rvars(m) %&gt;%
   ggplot(aes(dist = .epred, y = condition)) +
   stat_dist_dotsinterval(quantiles = 100)</code></pre>
-<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-26-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-27-1.png" width="75%" style="display: block; margin: auto;" /></p>
 <p>This provides posterior means using quantile dot plots, which are frequency-format uncertainty visualizations that have showed great promise in improving decision-making (<a href="https://dl.acm.org/doi/10.1145/2858036.2858558">Kay et al. 2016</a>, <a href="https://dl.acm.org/doi/10.1145/3173574.3173718">Fernandes et al. 2018</a>)</p>
 </div>
 <div id="tidybayes.rethinking" class="section level3">
@@ -702,7 +707,7 @@ m %&gt;%
   median_qi() %&gt;%
   ggplot(aes(y = .variable, x = .value, xmin = .lower, xmax = .upper)) +
   geom_pointinterval()</code></pre>
-<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-28-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="/resource/install-rethinking_files/figure-html/unnamed-chunk-29-1.png" width="75%" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <div id="package-versions-above" class="section level2">

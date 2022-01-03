@@ -5,12 +5,26 @@
     <link>https://dsba6010-spring2022.netlify.app/assignment/</link>
       <atom:link href="https://dsba6010-spring2022.netlify.app/assignment/index.xml" rel="self" type="application/rss+xml" />
     <description>Assignment details</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 28 Dec 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png</url>
+      <url>https://dsba6010-spring2022.netlify.app/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_512x512_fill_lanczos_center_3.png</url>
       <title>Assignment details</title>
       <link>https://dsba6010-spring2022.netlify.app/assignment/</link>
     </image>
+    
+    <item>
+      <title>Problem Set 1</title>
+      <link>https://dsba6010-spring2022.netlify.app/assignment/01-problem-set/</link>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://dsba6010-spring2022.netlify.app/assignment/01-problem-set/</guid>
+      <description>
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;This problem set is due on January 24, 2022 at 11:59am.&lt;/p&gt;
+&lt;p&gt;Submit your problem set &lt;a href=&#34;https://uncc.instructure.com/courses/171000/assignments/1415432&#34;&gt;through this canvas link&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>

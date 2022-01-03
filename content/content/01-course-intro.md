@@ -10,10 +10,19 @@ type: docs
 weight: 1
 ---
 
+## Welcome!
 
 ![Welcome to the class!](https://media3.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif?cid=790b76119130519cc0d76cbb37bf927be0309d606652bf98&rid=giphy.gif&ct=g)
+
+## Zoom
+
+<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i></a>: 12:00pm - 2:45pm, January 10, 2022
 
 ## Introduction to course
 
 ## Installation of R/RStudio on Personal Machine
+
+## Next Week's Class
+
+As this course is "flipped classroom", you will be responsible for completing the readings and watching the lectures **before** next class. This includes completing the weekly check-in and lecture quiz before class. We will start our first problem set in next class. Click the link below to view next week's lectures.
 

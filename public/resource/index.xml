@@ -5,9 +5,9 @@
     <link>https://dsba6010-spring2022.netlify.app/resource/</link>
       <atom:link href="https://dsba6010-spring2022.netlify.app/resource/index.xml" rel="self" type="application/rss+xml" />
     <description>Helpful resources</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 03 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png</url>
+      <url>https://dsba6010-spring2022.netlify.app/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_512x512_fill_lanczos_center_3.png</url>
       <title>Helpful resources</title>
       <link>https://dsba6010-spring2022.netlify.app/resource/</link>
     </image>
@@ -20,29 +20,29 @@
       <description>
 &lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
-&lt;div id=&#34;TOC&#34;&gt;
-
-&lt;/div&gt;
 
 &lt;p&gt;You will do all of your work in this class with the open source (and free!) programming language &lt;a href=&#34;https://cran.r-project.org/&#34;&gt;R&lt;/a&gt;. You will use &lt;a href=&#34;https://www.rstudio.com/&#34;&gt;RStudio&lt;/a&gt; as the main program to access R. Think of R as an engine and RStudio as a car dashboard—R handles all the calculations and the actual statistics, while RStudio provides a nice interface for running R code.&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;div id=&#34;rstudio.cloud&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;RStudio.cloud&lt;/h2&gt;
-&lt;p&gt;R is free, but it can sometimes be a pain to install and configure. To make life easier, you can (and should!) use the free &lt;a href=&#34;http://rstudio.cloud/&#34;&gt;RStudio.cloud&lt;/a&gt; service &lt;em&gt;initially&lt;/em&gt;, which lets you run a full instance of RStudio in your web browser. This means you won’t have to install anything on your computer to get started with R! We will have a shared class workspace in RStudio.cloud that will let you quickly copy templates for labs and problem sets.&lt;/p&gt;
-&lt;p&gt;Go to &lt;a href=&#34;https://rstudio.cloud/&#34; class=&#34;uri&#34;&gt;https://rstudio.cloud/&lt;/a&gt; and create an account. You’ll receive a link to join the shared class workspace separately. If you don’t get this link, let me know and I will invite you.&lt;/p&gt;
-&lt;/div&gt;
 &lt;div id=&#34;rstudio-on-your-computer&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;RStudio on your computer&lt;/h2&gt;
 &lt;p&gt;RStudio.cloud is convenient, but it can be slow and it is not designed to be able to handle larger datasets, more complicated analysis, or fancier graphics. Over the course of the semester, you should wean yourself off of RStudio.cloud and install all these things locally. This is also important if you want to customize fonts, since RStudio.cloud has extremely limited support for fonts other than Helvetica.&lt;/p&gt;
-&lt;p&gt;Here’s how you install all these things&lt;/p&gt;
+&lt;p&gt;Here’s how you install all these things:&lt;/p&gt;
 &lt;div id=&#34;install-r&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Install R&lt;/h3&gt;
 &lt;p&gt;First you need to install R itself (the engine).&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;/p&gt;
+&lt;p&gt;As of January 3, 2022, the most recent version of R is 4.1.2. Please install that version.&lt;/p&gt;
+&lt;p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;&lt;p&gt;Go to the CRAN (Collective R Archive Network)&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; website: &lt;a href=&#34;https://cran.r-project.org/&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Click on “Download R for &lt;code&gt;XXX&lt;/code&gt;”, where &lt;code&gt;XXX&lt;/code&gt; is either Mac or Windows:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-links.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;If you use macOS, scroll down to the first &lt;code&gt;.pkg&lt;/code&gt; file in the list of files (in this picture, it’s &lt;code&gt;R-4.0.0.pkg&lt;/code&gt;; as of right now, the current version is also 4.0.0) and download it.&lt;/li&gt;
+&lt;li&gt;If you use macOS, scroll down to the first &lt;code&gt;.pkg&lt;/code&gt; file in the list of files (in this picture, it’s &lt;code&gt;R-4.0.0.pkg&lt;/code&gt;; as of right now, the current version is also 4.1.2) and download it.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-mac.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
@@ -52,6 +52,35 @@
 &lt;li&gt;&lt;p&gt;Double click on the downloaded file (check your &lt;code&gt;Downloads&lt;/code&gt; folder). Click yes through all the prompts to install like any other program.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;If you use macOS, &lt;a href=&#34;https://www.xquartz.org/&#34;&gt;download and install XQuartz&lt;/a&gt;. You do not need to do this on Windows.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-1&#34;&gt;
+  &lt;summary&gt;I already have R and/or RStudio installed on my computer. What should I do?&lt;/summary&gt;
+  &lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Likely. Unfortunately this answer isn’t easy (and highlights why we’ll emphasis good reproducibility practices first).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What’s important is for you to first figure out these three things:&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;What is your operating system?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What version of R do you have?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What version of RStudio do you have?&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;For the first two, type in &lt;code&gt;sessionInfo()&lt;/code&gt; into R. At the top, you should see your R version and operating system. We’re going to work with R version 4.1.1. If you don’t have it, you can download it and RStudio will automatically find your new version of R.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;For RStudio, I recommend having at least 1.4 or higher. It’s important to note that RStudio versioninig changed recently as the September release moved to a calendar based version (see &lt;a href=&#34;https://support.rstudio.com/hc/en-us/articles/200716783-RStudio-IDE-Release-History&#34;&gt;this link for more details&lt;/a&gt;). So if you have the &lt;code&gt;2021.09.0&lt;/code&gt; or higher, you’re okay.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If you want a great overview, see Colin Gillespie and Robin Lovelace’s &lt;a href=&#34;https://csgillespie.github.io/efficientR/set-up.html&#34;&gt;Efficient R programming package&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/details&gt;&lt;/p&gt;
+&lt;p&gt;&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
+  &lt;summary&gt;If I install a new version of RStudio, will I need to reinstall all of my packages?&lt;/summary&gt;
+  &lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Likely. However, recognizing this first is the most critical step.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;There are a lot of helpful tutorials on how to navigate. A lot of it is contingent on what is your operating system. For example, there is a helpful R package for updating for Windows user (&lt;a href=&#34;https://cran.r-project.org/web/packages/installr/index.html&#34;&gt;&lt;code&gt;installr&lt;/code&gt; website&lt;/a&gt;), which I highly recommend.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;For Mac or Linux users, this is more challenging. There are several helpful blog posts (see &lt;a href=&#34;https://rfortherestofus.com/2020/09/how-to-update-rstudio-r-packages/&#34;&gt;blog 1&lt;/a&gt;, &lt;a href=&#34;https://csgillespie.github.io/efficientR/set-up.html#r-version&#34;&gt;blog 2&lt;/a&gt;) but I recommend &lt;a href=&#34;https://rstats.wtf/maintaining-r.html#how-to-transfer-your-library-when-updating-r&#34;&gt;Jenny Bryan’s advice&lt;/a&gt;. Try her instructions. If it doesn’t work out, reach out to me on Slack and we’ll work together.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/details&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;install-rstudio&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Install RStudio&lt;/h3&gt;
@@ -68,6 +97,26 @@
 &lt;/ol&gt;
 &lt;p&gt;Double click on RStudio to run it (check your applications folder or start menu).&lt;/p&gt;
 &lt;/div&gt;
+&lt;div id=&#34;r-projects&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;R Projects&lt;/h3&gt;
+&lt;p&gt;Perhaps you have previously used R and/or RStudio before. However, very quickly many students immediately get a disorganized set of code, data, and files that become a headache for your future self (myself included when I was learning R!).&lt;/p&gt;
+&lt;p&gt;Instead, reproducibility is an incredibly important skill in data science (any programming language, not just R!) and using/maintaining projects as R Projects is a critical first step to mitigating these issues.&lt;/p&gt;
+&lt;p&gt;I recommend for this class, you create a unique R project uniquely for this class. I recommend on an easy access place like your Desktop.&lt;/p&gt;
+&lt;p&gt;Once you have completed all the steps above, to create your R project, click “File &amp;gt; New Project”.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;r-environments-renv&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;R Environments &lt;code&gt;renv&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;To avoid so much pain in package management, R has created the package &lt;code&gt;renv&lt;/code&gt; to enable better management of packages. I &lt;strong&gt;highly&lt;/strong&gt; recommend using it.&lt;/p&gt;
+&lt;p&gt;Like any other package, you’ll first need to install &lt;code&gt;renv&lt;/code&gt;. Then you can follow these instructions from the &lt;a href=&#34;https://rstudio.github.io/renv/articles/renv.html&#34;&gt;&lt;code&gt;renv&lt;/code&gt; website&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The general workflow when working with renv is:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Call &lt;code&gt;renv::init()&lt;/code&gt; to initialize a new project-local environment with a private R library,&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Work in the project as normal, installing and removing new R packages as they are needed in the project,&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Call &lt;code&gt;renv::snapshot()&lt;/code&gt; to save the state of the project library to the lockfile (called renv.lock),&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Continue working on your project, installing and updating R packages as needed.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Call &lt;code&gt;renv::snapshot()&lt;/code&gt; again to save the state of your project library if your attempts to update R packages were successful, or call &lt;code&gt;renv::restore()&lt;/code&gt; to revert to the previous state as encoded in the lockfile if your attempts to update packages introduced some new problems.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 &lt;div id=&#34;install-tidyverse&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Install &lt;code&gt;tidyverse&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;R packages are easy to install with RStudio. Select the packages panel, click on “Install,” type the name of the package you want to install, and press enter.&lt;/p&gt;
@@ -76,6 +125,17 @@
 &lt;p&gt;Go to the packages panel in RStudio, click on “Install,” type “tidyverse”, and press enter. You’ll see a bunch of output in the RStudio console as all the tidyverse packages are installed.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/install/install-r-tidyverse.png&#34; width=&#34;60%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Notice also that RStudio will generate a line of code for you and run it: &lt;code&gt;install.packages(&#34;tidyverse&#34;)&lt;/code&gt;. You can also just paste and run this instead of using the packages panel.&lt;/p&gt;
+&lt;p&gt;In this class, we may occassionaly use &lt;code&gt;tidyverse&lt;/code&gt; but it’s not critical. We’ll discuss on the next resource the &lt;code&gt;rethinking&lt;/code&gt; package that is more critical for our class.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;optional-but-recommended-steps&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Optional but Recommended Steps&lt;/h2&gt;
+&lt;p&gt;For these steps, you are welcome to come back to this step later in the semester as this may be a lot for the first class.&lt;/p&gt;
+&lt;div id=&#34;rstudio-github&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;RStudio + Git(Hub)&lt;/h3&gt;
+&lt;p&gt;Related to our earlier part on reproducibility, Git (or version control tools like GitHub or BitBucket) are important in both research and industry. These allow checkpoint changes in code that enable better collaboration, transparency, and tracking for possible debugging.&lt;/p&gt;
+&lt;p&gt;There are multiple places to learn about Git, especially within RStudio. You are welcome to use Git in the terminal if you’ve used before, but for those new to Git, I highly recommend Jenny Bryan’s excellent tutorial: &lt;a href=&#34;https://happygitwithr.com/install-intro.html&#34;&gt;Happy with Git and GitHub for the useR&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A wonderful way to get started is to follow these instructions and push updates of your course work onto this GitHub. The great thing is that this keeps a backup copy of your work in case you ever have a major error or even lose your work.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;install-tinytex&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Install &lt;code&gt;tinytex&lt;/code&gt;&lt;/h3&gt;
@@ -107,35 +167,46 @@
       <guid>https://dsba6010-spring2022.netlify.app/resource/install-rethinking/</guid>
       <description>
 &lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/clipboard/clipboard.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34;Copy Code&#34;,&#34;success&#34;:&#34;Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl+C to Copy&#34;})&lt;/script&gt;
 
-&lt;div id=&#34;TOC&#34;&gt;
-
-&lt;/div&gt;
 
 &lt;p&gt;We’ll primarily use Richard McElreath’s &lt;code&gt;rethinking&lt;/code&gt; R package. Installation can be a bit tricky so this guide will outline how to install as well as other packages that may be helpful in this class.&lt;/p&gt;
 &lt;div id=&#34;rethinking-package&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;code&gt;rethinking&lt;/code&gt; package&lt;/h2&gt;
-&lt;p&gt;The package’s github repository &lt;a href=&#34;https://github.com/rmcelreath/rethinking&#34; class=&#34;uri&#34;&gt;https://github.com/rmcelreath/rethinking&lt;/a&gt; is the best source of information, especially the &lt;a href=&#34;https://github.com/rmcelreath/rethinking/issues&#34;&gt;issues&lt;/a&gt; section where likely if you run into errors, you may find tips to help install.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/rmcelreath/rethinking&#34;&gt;package’s github repository&lt;/a&gt; is the best source of information, especially the &lt;a href=&#34;https://github.com/rmcelreath/rethinking/issues&#34;&gt;issues&lt;/a&gt; section where likely if you run into errors, you may find tips to help install.&lt;/p&gt;
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;/p&gt;
+&lt;p&gt;Richard updated the &lt;code&gt;rethinking&lt;/code&gt; package &lt;a href=&#34;https://twitter.com/rlmcelreath/status/1476219290500149253?s=20&#34;&gt;recently to v2.21&lt;/a&gt;. The biggest change is that the default Stan engine to &lt;code&gt;cmdstanr&lt;/code&gt; instead of &lt;code&gt;rstan&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;div id=&#34;install-rstan&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Install &lt;code&gt;rstan&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;While this course uses R, the engine for running Bayesian is Stan. Stan is a C++ library that can be used in a variety of ways (R, Python, Julia, Command Line, etc.).&lt;/p&gt;
 &lt;p&gt;To get started, we’ll use it with &lt;code&gt;rstan&lt;/code&gt;, which is the R package aligned to calling Stan.&lt;/p&gt;
-&lt;p&gt;To install it, follow these instructions: &lt;a href=&#34;https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started&#34; class=&#34;uri&#34;&gt;https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;You can find more information about &lt;code&gt;rstan&lt;/code&gt; &lt;a href=&#34;https://mc-stan.org/users/interfaces/rstan.html&#34; class=&#34;uri&#34;&gt;https://mc-stan.org/users/interfaces/rstan.html&lt;/a&gt; or you can view the &lt;a href=&#34;https://mc-stan.org/docs/2_28/stan-users-guide/index.html&#34;&gt;Stan User Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To install it, follow &lt;a href=&#34;https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started&#34;&gt;these instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find more information about &lt;a href=&#34;https://mc-stan.org/users/interfaces/rstan.html&#34;&gt;&lt;code&gt;rstan&lt;/code&gt; on its website&lt;/a&gt; or you can view the &lt;a href=&#34;https://mc-stan.org/docs/2_28/stan-users-guide/index.html&#34;&gt;Stan User Guide&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;To test whether you properly installed &lt;code&gt;rstan&lt;/code&gt;, try running this (see original &lt;a href=&#34;https://gist.github.com/rasmusab/744410db9cf85ecb85e1&#34;&gt;GitHub Gist&lt;/a&gt;):&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(123)
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;set.seed(123)
 y &amp;lt;- rbinom(30, size = 1, prob = 0.2016)
 
-# Fitting a simple binomial model using Stan
-library(rstan)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Loading required package: StanHeaders&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Loading required package: ggplot2&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## rstan (Version 2.21.2, GitRev: 2e1f913d3ca3)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## For execution on a local, multicore CPU with excess RAM we recommend calling
+y
+##  [1] 0 0 0 1 1 0 0 1 0 0 1 0 0 0 0 1 0 0 0 1 1 0 0 1 0 0 0 0 0 0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# Fitting a simple binomial model using Stan
+library(rstan)
+## Loading required package: StanHeaders
+## Loading required package: ggplot2
+## rstan (Version 2.21.3, GitRev: 2e1f913d3ca3)
+## For execution on a local, multicore CPU with excess RAM we recommend calling
 ## options(mc.cores = parallel::detectCores()).
 ## To avoid recompilation of unchanged Stan programs, we recommend calling
 ## rstan_options(auto_write = TRUE)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;model_string &amp;lt;- &amp;quot;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;model_string &amp;lt;- &amp;quot;
 data {
   int n;
   int y[n];
@@ -147,81 +218,91 @@ model {
   y ~ bernoulli(theta);
 }&amp;quot;
 
-stan_samples &amp;lt;- stan(model_code = model_string, data = list(y = y, n = length(y)) )&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
+stan_samples &amp;lt;- stan(
+  model_code = model_string, 
+  data = list(y = y, n = length(y)),
+  seed = 123, 
+  chains = 4, 
+  refresh = 500
+)
+## Trying to compile a simple C file
+## Running /Library/Frameworks/R.framework/Resources/bin/R CMD SHLIB foo.c
+## clang -arch arm64 -I&amp;quot;/Library/Frameworks/R.framework/Resources/include&amp;quot; -DNDEBUG   -I&amp;quot;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/Rcpp/include/&amp;quot;  -I&amp;quot;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppEigen/include/&amp;quot;  -I&amp;quot;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppEigen/include/unsupported&amp;quot;  -I&amp;quot;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/BH/include&amp;quot; -I&amp;quot;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/StanHeaders/include/src/&amp;quot;  -I&amp;quot;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/StanHeaders/include/&amp;quot;  -I&amp;quot;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppParallel/include/&amp;quot;  -I&amp;quot;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/rstan/include&amp;quot; -DEIGEN_NO_DEBUG  -DBOOST_DISABLE_ASSERTS  -DBOOST_PENDING_INTEGER_LOG2_HPP  -DSTAN_THREADS  -DBOOST_NO_AUTO_PTR  -include &amp;#39;/Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/StanHeaders/include/stan/math/prim/mat/fun/Eigen.hpp&amp;#39;  -D_REENTRANT -DRCPP_PARALLEL_USE_TBB=1   -I/opt/R/arm64/include   -fPIC  -falign-functions=64 -Wall -g -O2  -c foo.c -o foo.o
+## In file included from &amp;lt;built-in&amp;gt;:1:
+## In file included from /Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/StanHeaders/include/stan/math/prim/mat/fun/Eigen.hpp:13:
+## In file included from /Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppEigen/include/Eigen/Dense:1:
+## In file included from /Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppEigen/include/Eigen/Core:88:
+## /Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppEigen/include/Eigen/src/Core/util/Macros.h:628:1: error: unknown type name &amp;#39;namespace&amp;#39;
+## namespace Eigen {
+## ^
+## /Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppEigen/include/Eigen/src/Core/util/Macros.h:628:16: error: expected &amp;#39;;&amp;#39; after top level declarator
+## namespace Eigen {
+##                ^
+##                ;
+## In file included from &amp;lt;built-in&amp;gt;:1:
+## In file included from /Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/StanHeaders/include/stan/math/prim/mat/fun/Eigen.hpp:13:
+## In file included from /Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppEigen/include/Eigen/Dense:1:
+## /Users/rhymenoceros/Desktop/dsba6010-spring2022/renv/library/R-4.1/aarch64-apple-darwin20/RcppEigen/include/Eigen/Core:96:10: fatal error: &amp;#39;complex&amp;#39; file not found
+## #include &amp;lt;complex&amp;gt;
+##          ^~~~~~~~~
+## 3 errors generated.
+## make: *** [foo.o] Error 1
+## 
 ## SAMPLING FOR MODEL &amp;#39;f6f19f2978447ffaf66a6d87ed7010fd&amp;#39; NOW (CHAIN 1).
 ## Chain 1: 
-## Chain 1: Gradient evaluation took 7e-06 seconds
-## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.07 seconds.
+## Chain 1: Gradient evaluation took 1.4e-05 seconds
+## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.14 seconds.
 ## Chain 1: Adjust your expectations accordingly!
 ## Chain 1: 
 ## Chain 1: 
 ## Chain 1: Iteration:    1 / 2000 [  0%]  (Warmup)
-## Chain 1: Iteration:  200 / 2000 [ 10%]  (Warmup)
-## Chain 1: Iteration:  400 / 2000 [ 20%]  (Warmup)
-## Chain 1: Iteration:  600 / 2000 [ 30%]  (Warmup)
-## Chain 1: Iteration:  800 / 2000 [ 40%]  (Warmup)
+## Chain 1: Iteration:  500 / 2000 [ 25%]  (Warmup)
 ## Chain 1: Iteration: 1000 / 2000 [ 50%]  (Warmup)
 ## Chain 1: Iteration: 1001 / 2000 [ 50%]  (Sampling)
-## Chain 1: Iteration: 1200 / 2000 [ 60%]  (Sampling)
-## Chain 1: Iteration: 1400 / 2000 [ 70%]  (Sampling)
-## Chain 1: Iteration: 1600 / 2000 [ 80%]  (Sampling)
-## Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+## Chain 1: Iteration: 1500 / 2000 [ 75%]  (Sampling)
 ## Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 1: 
-## Chain 1:  Elapsed Time: 0.003863 seconds (Warm-up)
-## Chain 1:                0.0036 seconds (Sampling)
-## Chain 1:                0.007463 seconds (Total)
+## Chain 1:  Elapsed Time: 0.003489 seconds (Warm-up)
+## Chain 1:                0.003177 seconds (Sampling)
+## Chain 1:                0.006666 seconds (Total)
 ## Chain 1: 
 ## 
 ## SAMPLING FOR MODEL &amp;#39;f6f19f2978447ffaf66a6d87ed7010fd&amp;#39; NOW (CHAIN 2).
 ## Chain 2: 
-## Chain 2: Gradient evaluation took 3e-06 seconds
-## Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.03 seconds.
+## Chain 2: Gradient evaluation took 1e-06 seconds
+## Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.01 seconds.
 ## Chain 2: Adjust your expectations accordingly!
 ## Chain 2: 
 ## Chain 2: 
 ## Chain 2: Iteration:    1 / 2000 [  0%]  (Warmup)
-## Chain 2: Iteration:  200 / 2000 [ 10%]  (Warmup)
-## Chain 2: Iteration:  400 / 2000 [ 20%]  (Warmup)
-## Chain 2: Iteration:  600 / 2000 [ 30%]  (Warmup)
-## Chain 2: Iteration:  800 / 2000 [ 40%]  (Warmup)
+## Chain 2: Iteration:  500 / 2000 [ 25%]  (Warmup)
 ## Chain 2: Iteration: 1000 / 2000 [ 50%]  (Warmup)
 ## Chain 2: Iteration: 1001 / 2000 [ 50%]  (Sampling)
-## Chain 2: Iteration: 1200 / 2000 [ 60%]  (Sampling)
-## Chain 2: Iteration: 1400 / 2000 [ 70%]  (Sampling)
-## Chain 2: Iteration: 1600 / 2000 [ 80%]  (Sampling)
-## Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+## Chain 2: Iteration: 1500 / 2000 [ 75%]  (Sampling)
 ## Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 2: 
-## Chain 2:  Elapsed Time: 0.004009 seconds (Warm-up)
-## Chain 2:                0.003755 seconds (Sampling)
-## Chain 2:                0.007764 seconds (Total)
+## Chain 2:  Elapsed Time: 0.003485 seconds (Warm-up)
+## Chain 2:                0.003422 seconds (Sampling)
+## Chain 2:                0.006907 seconds (Total)
 ## Chain 2: 
 ## 
 ## SAMPLING FOR MODEL &amp;#39;f6f19f2978447ffaf66a6d87ed7010fd&amp;#39; NOW (CHAIN 3).
 ## Chain 3: 
-## Chain 3: Gradient evaluation took 1e-06 seconds
-## Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.01 seconds.
+## Chain 3: Gradient evaluation took 2e-06 seconds
+## Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.02 seconds.
 ## Chain 3: Adjust your expectations accordingly!
 ## Chain 3: 
 ## Chain 3: 
 ## Chain 3: Iteration:    1 / 2000 [  0%]  (Warmup)
-## Chain 3: Iteration:  200 / 2000 [ 10%]  (Warmup)
-## Chain 3: Iteration:  400 / 2000 [ 20%]  (Warmup)
-## Chain 3: Iteration:  600 / 2000 [ 30%]  (Warmup)
-## Chain 3: Iteration:  800 / 2000 [ 40%]  (Warmup)
+## Chain 3: Iteration:  500 / 2000 [ 25%]  (Warmup)
 ## Chain 3: Iteration: 1000 / 2000 [ 50%]  (Warmup)
 ## Chain 3: Iteration: 1001 / 2000 [ 50%]  (Sampling)
-## Chain 3: Iteration: 1200 / 2000 [ 60%]  (Sampling)
-## Chain 3: Iteration: 1400 / 2000 [ 70%]  (Sampling)
-## Chain 3: Iteration: 1600 / 2000 [ 80%]  (Sampling)
-## Chain 3: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+## Chain 3: Iteration: 1500 / 2000 [ 75%]  (Sampling)
 ## Chain 3: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 3: 
-## Chain 3:  Elapsed Time: 0.003936 seconds (Warm-up)
-## Chain 3:                0.003987 seconds (Sampling)
-## Chain 3:                0.007923 seconds (Total)
+## Chain 3:  Elapsed Time: 0.003471 seconds (Warm-up)
+## Chain 3:                0.0032 seconds (Sampling)
+## Chain 3:                0.006671 seconds (Total)
 ## Chain 3: 
 ## 
 ## SAMPLING FOR MODEL &amp;#39;f6f19f2978447ffaf66a6d87ed7010fd&amp;#39; NOW (CHAIN 4).
@@ -232,41 +313,35 @@ stan_samples &amp;lt;- stan(model_code = model_string, data = list(y = y, n = le
 ## Chain 4: 
 ## Chain 4: 
 ## Chain 4: Iteration:    1 / 2000 [  0%]  (Warmup)
-## Chain 4: Iteration:  200 / 2000 [ 10%]  (Warmup)
-## Chain 4: Iteration:  400 / 2000 [ 20%]  (Warmup)
-## Chain 4: Iteration:  600 / 2000 [ 30%]  (Warmup)
-## Chain 4: Iteration:  800 / 2000 [ 40%]  (Warmup)
+## Chain 4: Iteration:  500 / 2000 [ 25%]  (Warmup)
 ## Chain 4: Iteration: 1000 / 2000 [ 50%]  (Warmup)
 ## Chain 4: Iteration: 1001 / 2000 [ 50%]  (Sampling)
-## Chain 4: Iteration: 1200 / 2000 [ 60%]  (Sampling)
-## Chain 4: Iteration: 1400 / 2000 [ 70%]  (Sampling)
-## Chain 4: Iteration: 1600 / 2000 [ 80%]  (Sampling)
-## Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+## Chain 4: Iteration: 1500 / 2000 [ 75%]  (Sampling)
 ## Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 4: 
-## Chain 4:  Elapsed Time: 0.00389 seconds (Warm-up)
-## Chain 4:                0.004015 seconds (Sampling)
-## Chain 4:                0.007905 seconds (Total)
+## Chain 4:  Elapsed Time: 0.003573 seconds (Warm-up)
+## Chain 4:                0.003461 seconds (Sampling)
+## Chain 4:                0.007034 seconds (Total)
 ## Chain 4:&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;stan_samples&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Inference for Stan model: f6f19f2978447ffaf66a6d87ed7010fd.
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;stan_samples
+## Inference for Stan model: f6f19f2978447ffaf66a6d87ed7010fd.
 ## 4 chains, each with iter=2000; warmup=1000; thin=1; 
 ## post-warmup draws per chain=1000, total post-warmup draws=4000.
 ## 
 ##         mean se_mean   sd   2.5%    25%    50%    75%  97.5% n_eff Rhat
-## theta   0.28    0.00 0.08   0.14   0.22   0.27   0.33   0.45  1505    1
-## lp__  -19.52    0.02 0.72 -21.59 -19.68 -19.24 -19.06 -19.01  1686    1
+## theta   0.28    0.00 0.08   0.14   0.22   0.27   0.33   0.45  1533    1
+## lp__  -19.56    0.02 0.78 -21.77 -19.74 -19.26 -19.07 -19.01  1344    1
 ## 
-## Samples were drawn using NUTS(diag_e) at Wed Dec 15 18:08:41 2021.
+## Samples were drawn using NUTS(diag_e) at Sun Jan  2 22:39:50 2022.
 ## For each parameter, n_eff is a crude measure of effective sample size,
 ## and Rhat is the potential scale reduction factor on split chains (at 
 ## convergence, Rhat=1).&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;traceplot(stan_samples)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(stan_samples)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## ci_level: 0.8 (80% intervals)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## outer_level: 0.95 (95% intervals)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking_files/figure-html/unnamed-chunk-1-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;traceplot(stan_samples)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;plot(stan_samples)
+## ci_level: 0.8 (80% intervals)
+## outer_level: 0.95 (95% intervals)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking_files/figure-html/unnamed-chunk-5-2.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Did you get similar output?&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;install-cmdstanr&#34; class=&#34;section level3&#34;&gt;
@@ -274,31 +349,30 @@ stan_samples &amp;lt;- stan(model_code = model_string, data = list(y = y, n = le
 &lt;p&gt;Like all things, Stan is going through changes and moving forward, &lt;code&gt;rstan&lt;/code&gt; is falling out of favor and instead much more development will be used with &lt;code&gt;cmdstanr&lt;/code&gt; rather than &lt;code&gt;rstan&lt;/code&gt; (&lt;a href=&#34;https://mc-stan.org/cmdstanr/articles/cmdstanr.html#comparison-with-rstan&#34;&gt;here’s a comparison&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;rethinking&lt;/code&gt; package works with either of these packages but it’s likely much better to use &lt;code&gt;cmdstanr&lt;/code&gt; instead of &lt;code&gt;stanr&lt;/code&gt;; therefore, Richard (and I) recommend installing both. &lt;a href=&#34;https://mc-stan.org/cmdstanr/&#34; class=&#34;uri&#34;&gt;https://mc-stan.org/cmdstanr/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;To install &lt;code&gt;cmdstanr&lt;/code&gt;, you’ll need to install that from github (non-CRAN library).&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# if you get an error, do you have devtools installed? 
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# if you get an error, do you have devtools installed? 
 devtools::install_github(&amp;quot;stan-dev/cmdstanr&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;After you’ve installed it, if it’s your first time you’ll need to run:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# see https://mc-stan.org/cmdstanr/reference/install_cmdstan.html
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# see https://mc-stan.org/cmdstanr/reference/install_cmdstan.html
 cmdstanr::install_cmdstan()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;To check if it was installed correctly, run:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;cmdstanr::check_cmdstan_toolchain()&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## The C++ toolchain required for CmdStan is setup properly!&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(cmdstanr)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## This is cmdstanr version 0.4.0.9000&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## - Online documentation and vignettes at mc-stan.org/cmdstanr&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## - CmdStan path set to: /Users/rhymenoceros/.cmdstan/cmdstan-2.28.2&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## - Use set_cmdstan_path() to change the path&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;file &amp;lt;- file.path(cmdstan_path(), &amp;quot;examples&amp;quot;, &amp;quot;bernoulli&amp;quot;, &amp;quot;bernoulli.stan&amp;quot;)
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;cmdstanr::check_cmdstan_toolchain()
+## The C++ toolchain required for CmdStan is setup properly!&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;library(cmdstanr)
+## This is cmdstanr version 0.4.0.9001
+## - CmdStanR documentation and vignettes: mc-stan.org/cmdstanr
+## - CmdStan path: /Users/rhymenoceros/.cmdstan/cmdstan-2.28.2
+## - CmdStan version: 2.28.2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;file &amp;lt;- file.path(cmdstan_path(), &amp;quot;examples&amp;quot;, &amp;quot;bernoulli&amp;quot;, &amp;quot;bernoulli.stan&amp;quot;)
 
-data_list &amp;lt;- list(N = 10, y = c(0,1,0,0,0,0,0,0,0,1))
 mod &amp;lt;- cmdstan_model(file)
 fit &amp;lt;- mod$sample(
-  data = data_list, 
+  data = list(y = y, N = length(y)), # recall y from earlier example
   seed = 123, 
   chains = 4, 
   parallel_chains = 4,
   refresh = 500
-)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Running MCMC with 4 parallel chains...
+)
+## Running MCMC with 4 parallel chains...
 ## 
 ## Chain 1 Iteration:    1 / 2000 [  0%]  (Warmup) 
 ## Chain 1 Iteration:  500 / 2000 [ 25%]  (Warmup) 
@@ -331,29 +405,32 @@ fit &amp;lt;- mod$sample(
 ## 
 ## All 4 chains finished successfully.
 ## Mean chain execution time: 0.0 seconds.
-## Total execution time: 0.4 seconds.&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fit$summary()&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## # A tibble: 2 × 10
-##   variable   mean median    sd   mad      q5    q95  rhat ess_bulk ess_tail
-##   &amp;lt;chr&amp;gt;     &amp;lt;dbl&amp;gt;  &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt;  &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;
-## 1 lp__     -7.27  -6.98  0.725 0.317 -8.76   -6.75   1.00    1910.    1726.
-## 2 theta     0.247  0.232 0.119 0.120  0.0784  0.461  1.00    1530.    1575.&lt;/code&gt;&lt;/pre&gt;
+## Total execution time: 0.2 seconds.&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;fit$summary()
+## # A tibble: 2 × 10
+##   variable    mean  median     sd    mad      q5     q95  rhat ess_bulk ess_tail
+##   &amp;lt;chr&amp;gt;      &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt;  &amp;lt;dbl&amp;gt;  &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;
+## 1 lp__     -19.6   -19.3   0.783  0.335  -21.0   -19.0    1.00    1703.    1945.
+## 2 theta      0.278   0.274 0.0800 0.0804   0.157   0.419  1.00    1541.    1505.&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;install-rethinking&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Install &lt;code&gt;rethinking&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;Now with both &lt;code&gt;rstan&lt;/code&gt; and &lt;code&gt;cmdstanr&lt;/code&gt;, you can install &lt;code&gt;rethinking&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(c(&amp;quot;coda&amp;quot;,&amp;quot;mvtnorm&amp;quot;,&amp;quot;devtools&amp;quot;,&amp;quot;loo&amp;quot;,&amp;quot;dagitty&amp;quot;))
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;install.packages(c(&amp;quot;coda&amp;quot;,&amp;quot;mvtnorm&amp;quot;,&amp;quot;devtools&amp;quot;,&amp;quot;loo&amp;quot;,&amp;quot;dagitty&amp;quot;))
 devtools::install_github(&amp;quot;rmcelreath/rethinking&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;We can do a few functions to check to see if &lt;code&gt;rethinking&lt;/code&gt; was installed correctly.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(rethinking)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Loading required package: parallel&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## rethinking (Version 2.13)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-## Attaching package: &amp;#39;rethinking&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:stats&amp;#39;:
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;library(rethinking)
+## Loading required package: parallel
+## rethinking (Version 2.21)
+## 
+## Attaching package: &amp;#39;rethinking&amp;#39;
+## The following object is masked from &amp;#39;package:rstan&amp;#39;:
+## 
+##     stan
+## The following object is masked from &amp;#39;package:stats&amp;#39;:
 ## 
 ##     rstudent&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;f &amp;lt;- alist(
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;f &amp;lt;- alist(
     y ~ dnorm( mu , sigma ),
     mu ~ dnorm( 0 , 10 ),
     sigma ~ dexp( 1 )
@@ -365,15 +442,16 @@ fit &amp;lt;- quap(
     start=list(mu=0,sigma=1)
 )
 
-precis(fit)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##            mean        sd       5.5%    94.5%
-## mu    0.0000000 0.5924240 -0.9468080 0.946808
-## sigma 0.8392882 0.3287434  0.3138927 1.364684&lt;/code&gt;&lt;/pre&gt;
+precis(fit)
+##       mean   sd  5.5% 94.5%
+## mu    0.00 0.59 -0.95  0.95
+## sigma 0.84 0.33  0.31  1.36&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This first runs &lt;code&gt;quap&lt;/code&gt; which uses quadratic approximation for fitting the posterior. This is what we’ll use for the first few weeks of the class before we use MCMC methods via Stan.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# this uses cmdstanr version; this is recommended
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# this uses cmdstanr version; this is recommended
 # you can set this permanently (i.e., don&amp;#39;t need the argument) by running set_ulam_cmdstan(TRUE)
-fit_stan &amp;lt;- ulam( f , data=list(y=c(-1,1)), cmdstan = TRUE )&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Running MCMC with 1 chain, with 1 thread(s) per chain...
+# as of rethinking v2.21, cmdstan=TRUE is now default; therefore not necessary
+fit_stan &amp;lt;- ulam( f , data=list(y=c(-1,1)), cmdstan = TRUE )
+## Running MCMC with 1 chain, with 1 thread(s) per chain...
 ## 
 ## Chain 1 Iteration:   1 / 1000 [  0%]  (Warmup) 
 ## Chain 1 Iteration: 100 / 1000 [ 10%]  (Warmup) 
@@ -387,11 +465,11 @@ fit_stan &amp;lt;- ulam( f , data=list(y=c(-1,1)), cmdstan = TRUE )&lt;/code&gt;
 ## Chain 1 Iteration: 800 / 1000 [ 80%]  (Sampling) 
 ## Chain 1 Iteration: 900 / 1000 [ 90%]  (Sampling) 
 ## Chain 1 Iteration: 1000 / 1000 [100%]  (Sampling) 
-## Chain 1 finished in 0.0 seconds.&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;precis(fit_stan)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##              mean        sd      5.5%    94.5%    n_eff     Rhat4
-## mu    -0.08841271 1.6549093 -2.120005 1.957120 65.28501 1.0002767
-## sigma  1.62526571 0.9387858  0.686161 3.472576 54.75995 0.9982491&lt;/code&gt;&lt;/pre&gt;
+## Chain 1 finished in 0.0 seconds.
+precis(fit_stan)
+##         mean   sd  5.5% 94.5% n_eff Rhat4
+## mu    -0.088 1.65 -2.12   2.0    65     1
+## sigma  1.625 0.94  0.69   3.5    55     1&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;optional-but-highly-helpful-bayesian-packages&#34; class=&#34;section level2&#34;&gt;
@@ -400,30 +478,30 @@ fit_stan &amp;lt;- ulam( f , data=list(y=c(-1,1)), cmdstan = TRUE )&lt;/code&gt;
 &lt;div id=&#34;rstanarm&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;&lt;code&gt;rstanarm&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;First, I recommend installing &lt;code&gt;rstanarm&lt;/code&gt;&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;rstanarm&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;rstanarm&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Per &lt;a href=&#34;https://mc-stan.org/rstanarm/articles/rstanarm.html&#34;&gt;its helpful vignette&lt;/a&gt;, the goal of the &lt;code&gt;rstanarm&lt;/code&gt; package is to make Bayesian estimation routine for the most common regression models that applied researchers use. This will enable researchers to avoid the counter-intuitiveness of the frequentist approach to probability and statistics with only minimal changes to their existing R scripts.&lt;/p&gt;
 &lt;p&gt;To test whether the package was installed correctly, try this code:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(rstanarm)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Loading required package: Rcpp&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## This is rstanarm version 2.21.1&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## - See https://mc-stan.org/rstanarm/articles/priors for changes to default priors!&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## - Default priors may change, so it&amp;#39;s safest to specify priors, even if equivalent to the defaults.&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## - For execution on a local, multicore CPU with excess RAM we recommend calling&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##   options(mc.cores = parallel::detectCores())&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-## Attaching package: &amp;#39;rstanarm&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## The following objects are masked from &amp;#39;package:rethinking&amp;#39;:
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;library(rstanarm)
+## Loading required package: Rcpp
+## This is rstanarm version 2.21.1
+## - See https://mc-stan.org/rstanarm/articles/priors for changes to default priors!
+## - Default priors may change, so it&amp;#39;s safest to specify priors, even if equivalent to the defaults.
+## - For execution on a local, multicore CPU with excess RAM we recommend calling
+##   options(mc.cores = parallel::detectCores())
 ## 
-##     logit, se&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:rstan&amp;#39;:
+## Attaching package: &amp;#39;rstanarm&amp;#39;
+## The following objects are masked from &amp;#39;package:rethinking&amp;#39;:
+## 
+##     logit, se
+## The following object is masked from &amp;#39;package:rstan&amp;#39;:
 ## 
 ##     loo&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fit &amp;lt;- stan_glm(mpg ~ ., data = mtcars)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;fit &amp;lt;- stan_glm(mpg ~ ., data = mtcars)
+## 
 ## SAMPLING FOR MODEL &amp;#39;continuous&amp;#39; NOW (CHAIN 1).
 ## Chain 1: 
-## Chain 1: Gradient evaluation took 0.000178 seconds
-## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 1.78 seconds.
+## Chain 1: Gradient evaluation took 0.000226 seconds
+## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 2.26 seconds.
 ## Chain 1: Adjust your expectations accordingly!
 ## Chain 1: 
 ## Chain 1: 
@@ -440,15 +518,15 @@ fit_stan &amp;lt;- ulam( f , data=list(y=c(-1,1)), cmdstan = TRUE )&lt;/code&gt;
 ## Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 1: 
-## Chain 1:  Elapsed Time: 0.126841 seconds (Warm-up)
-## Chain 1:                0.134685 seconds (Sampling)
-## Chain 1:                0.261526 seconds (Total)
+## Chain 1:  Elapsed Time: 0.111007 seconds (Warm-up)
+## Chain 1:                0.11817 seconds (Sampling)
+## Chain 1:                0.229177 seconds (Total)
 ## Chain 1: 
 ## 
 ## SAMPLING FOR MODEL &amp;#39;continuous&amp;#39; NOW (CHAIN 2).
 ## Chain 2: 
-## Chain 2: Gradient evaluation took 4e-06 seconds
-## Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.04 seconds.
+## Chain 2: Gradient evaluation took 5e-06 seconds
+## Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.05 seconds.
 ## Chain 2: Adjust your expectations accordingly!
 ## Chain 2: 
 ## Chain 2: 
@@ -465,15 +543,15 @@ fit_stan &amp;lt;- ulam( f , data=list(y=c(-1,1)), cmdstan = TRUE )&lt;/code&gt;
 ## Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 2: 
-## Chain 2:  Elapsed Time: 0.121206 seconds (Warm-up)
-## Chain 2:                0.102408 seconds (Sampling)
-## Chain 2:                0.223614 seconds (Total)
+## Chain 2:  Elapsed Time: 0.105936 seconds (Warm-up)
+## Chain 2:                0.090356 seconds (Sampling)
+## Chain 2:                0.196292 seconds (Total)
 ## Chain 2: 
 ## 
 ## SAMPLING FOR MODEL &amp;#39;continuous&amp;#39; NOW (CHAIN 3).
 ## Chain 3: 
-## Chain 3: Gradient evaluation took 4e-06 seconds
-## Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.04 seconds.
+## Chain 3: Gradient evaluation took 5e-06 seconds
+## Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.05 seconds.
 ## Chain 3: Adjust your expectations accordingly!
 ## Chain 3: 
 ## Chain 3: 
@@ -490,15 +568,15 @@ fit_stan &amp;lt;- ulam( f , data=list(y=c(-1,1)), cmdstan = TRUE )&lt;/code&gt;
 ## Chain 3: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 3: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 3: 
-## Chain 3:  Elapsed Time: 0.12403 seconds (Warm-up)
-## Chain 3:                0.124122 seconds (Sampling)
-## Chain 3:                0.248152 seconds (Total)
+## Chain 3:  Elapsed Time: 0.107874 seconds (Warm-up)
+## Chain 3:                0.109805 seconds (Sampling)
+## Chain 3:                0.217679 seconds (Total)
 ## Chain 3: 
 ## 
 ## SAMPLING FOR MODEL &amp;#39;continuous&amp;#39; NOW (CHAIN 4).
 ## Chain 4: 
-## Chain 4: Gradient evaluation took 4e-06 seconds
-## Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.04 seconds.
+## Chain 4: Gradient evaluation took 5e-06 seconds
+## Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.05 seconds.
 ## Chain 4: Adjust your expectations accordingly!
 ## Chain 4: 
 ## Chain 4: 
@@ -515,26 +593,26 @@ fit_stan &amp;lt;- ulam( f , data=list(y=c(-1,1)), cmdstan = TRUE )&lt;/code&gt;
 ## Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 4: 
-## Chain 4:  Elapsed Time: 0.126184 seconds (Warm-up)
-## Chain 4:                0.118263 seconds (Sampling)
-## Chain 4:                0.244447 seconds (Total)
+## Chain 4:  Elapsed Time: 0.112289 seconds (Warm-up)
+## Chain 4:                0.105433 seconds (Sampling)
+## Chain 4:                0.217722 seconds (Total)
 ## Chain 4:&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(fit)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;plot(fit)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking_files/figure-html/unnamed-chunk-19-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;bayesplot&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;&lt;code&gt;bayesplot&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;Another package that is handy is &lt;code&gt;bayesplot&lt;/code&gt;, which provides helpful ways to visualize results from Stan models.&lt;/p&gt;
 &lt;p&gt;To install it, you’ll need to run:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;bayesplot&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;bayesplot&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You can then test it out running this code:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(bayesplot)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## This is bayesplot version 1.8.1&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## - Online documentation and vignettes at mc-stan.org/bayesplot&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## - bayesplot theme set to bayesplot::theme_default()&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##    * Does _not_ affect other ggplot2 plots&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##    * See ?bayesplot_theme_set for details on theme setting&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2) # assume you already have it installed
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;library(bayesplot)
+## This is bayesplot version 1.8.1
+## - Online documentation and vignettes at mc-stan.org/bayesplot
+## - bayesplot theme set to bayesplot::theme_default()
+##    * Does _not_ affect other ggplot2 plots
+##    * See ?bayesplot_theme_set for details on theme setting
+library(ggplot2) # assume you already have it installed
 
 posterior &amp;lt;- as.matrix(fit)
 plot_title &amp;lt;- ggtitle(&amp;quot;Posterior distributions&amp;quot;,
@@ -542,21 +620,21 @@ plot_title &amp;lt;- ggtitle(&amp;quot;Posterior distributions&amp;quot;,
 mcmc_areas(posterior,
            pars = c(&amp;quot;cyl&amp;quot;, &amp;quot;drat&amp;quot;, &amp;quot;am&amp;quot;, &amp;quot;wt&amp;quot;),
            prob = 0.8) + plot_title&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking_files/figure-html/unnamed-chunk-21-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;
 This can also provide helpful post-predictive checks (i.e., see model fitting), for example:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;color_scheme_set(&amp;quot;red&amp;quot;)
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;color_scheme_set(&amp;quot;red&amp;quot;)
 ppc_dens_overlay(y = fit$y,
                  yrep = posterior_predict(fit, draws = 50))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking_files/figure-html/unnamed-chunk-22-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;brms&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;&lt;code&gt;brms&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;For most Bayesian research projects, &lt;code&gt;brms&lt;/code&gt; has become the most popular R package. &lt;a href=&#34;https://paul-buerkner.github.io/brms/&#34; class=&#34;uri&#34;&gt;https://paul-buerkner.github.io/brms/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;It combines the intuition of class R regression modeling (&lt;code&gt;y ~ IV1 + IV1&lt;/code&gt;) with mixed effects modeling like &lt;code&gt;lme4&lt;/code&gt; syntax. This class we won’t use this package (maybe near the end of course) but it’s incredibly helpful to think about for your final project.&lt;/p&gt;
 &lt;p&gt;Like other CRAN libraries, to install:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;brms&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;brms&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You can then run Bayesian mixed effects modeling simply with:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# tidybayes example: http://mjskay.github.io/tidybayes/articles/tidy-brms.html
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# tidybayes example: http://mjskay.github.io/tidybayes/articles/tidy-brms.html
 set.seed(5)
 n = 10
 n_condition = 5
@@ -566,25 +644,25 @@ ABC =
     response = rnorm(n * 5, c(0,1,2,1,-1), 0.5)
   )
 
-library(brms)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Loading &amp;#39;brms&amp;#39; package (version 2.16.3). Useful instructions
+library(brms)
+## Loading &amp;#39;brms&amp;#39; package (version 2.16.3). Useful instructions
 ## can be found by typing help(&amp;#39;brms&amp;#39;). A more detailed introduction
-## to the package is available through vignette(&amp;#39;brms_overview&amp;#39;).&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-## Attaching package: &amp;#39;brms&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## The following objects are masked from &amp;#39;package:rstanarm&amp;#39;:
+## to the package is available through vignette(&amp;#39;brms_overview&amp;#39;).
 ## 
-##     dirichlet, exponential, get_y, lasso, ngrps&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## The following objects are masked from &amp;#39;package:rethinking&amp;#39;:
+## Attaching package: &amp;#39;brms&amp;#39;
+## The following objects are masked from &amp;#39;package:rstanarm&amp;#39;:
 ## 
-##     LOO, stancode, WAIC&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:rstan&amp;#39;:
+##     dirichlet, exponential, get_y, lasso, ngrps
+## The following objects are masked from &amp;#39;package:rethinking&amp;#39;:
 ## 
-##     loo&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:stats&amp;#39;:
+##     LOO, stancode, WAIC
+## The following object is masked from &amp;#39;package:rstan&amp;#39;:
 ## 
-##     ar&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;m = brm(
+##     loo
+## The following object is masked from &amp;#39;package:stats&amp;#39;:
+## 
+##     ar
+m = brm(
   response ~ (1|condition), 
   data = ABC, 
   prior = c(
@@ -594,9 +672,9 @@ library(brms)&lt;/code&gt;&lt;/pre&gt;
   ),
   backend = &amp;quot;cmdstanr&amp;quot;, # optional; if not specified, will use stanr
   control = list(adapt_delta = .99)
-)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Start sampling&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Running MCMC with 4 sequential chains...
+)
+## Start sampling
+## Running MCMC with 4 sequential chains...
 ## 
 ## Chain 1 Iteration:    1 / 2000 [  0%]  (Warmup) 
 ## Chain 1 Iteration:  100 / 2000 [  5%]  (Warmup) 
@@ -693,9 +771,9 @@ library(brms)&lt;/code&gt;&lt;/pre&gt;
 ## 
 ## All 4 chains finished successfully.
 ## Mean chain execution time: 0.4 seconds.
-## Total execution time: 2.0 seconds.&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;m&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##  Family: gaussian 
+## Total execution time: 1.9 seconds.&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;m
+##  Family: gaussian 
 ##   Links: mu = identity; sigma = identity 
 ## Formula: response ~ (1 | condition) 
 ##    Data: ABC (Number of observations: 50) 
@@ -726,47 +804,48 @@ library(brms)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;In addition, &lt;code&gt;tidybayes&lt;/code&gt;’ sister package, &lt;code&gt;ggdist&lt;/code&gt;, enables incredibly powerful uncertainty visualizations via &lt;code&gt;ggplot2&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://mjskay.github.io/ggdist/reference/figures/preview.png&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;To install these packages, you can run:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;#39;ggdist&amp;#39;)
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;install.packages(&amp;#39;ggdist&amp;#39;)
 install.packages(&amp;#39;tidybayes&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggdist)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-## Attaching package: &amp;#39;ggdist&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## The following objects are masked from &amp;#39;package:brms&amp;#39;:
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;library(ggdist)
 ## 
-##     dstudent_t, pstudent_t, qstudent_t, rstudent_t&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidybayes)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
+## Attaching package: &amp;#39;ggdist&amp;#39;
+## The following objects are masked from &amp;#39;package:brms&amp;#39;:
+## 
+##     dstudent_t, pstudent_t, qstudent_t, rstudent_t
+library(tidybayes)
+## 
 ## Attaching package: &amp;#39;tidybayes&amp;#39;
 ## 
 ## The following objects are masked from &amp;#39;package:brms&amp;#39;:
 ## 
-##     dstudent_t, pstudent_t, qstudent_t, rstudent_t&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(magrittr) # part of tidyverse; install if you don&amp;#39;t have&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-## Attaching package: &amp;#39;magrittr&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:rstan&amp;#39;:
+##     dstudent_t, pstudent_t, qstudent_t, rstudent_t
+library(magrittr) # part of tidyverse; install if you don&amp;#39;t have
 ## 
-##     extract&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(modelr) # install if you don&amp;#39;t have; data_grid is from it&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-## Attaching package: &amp;#39;modelr&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:rethinking&amp;#39;:
+## Attaching package: &amp;#39;magrittr&amp;#39;
+## The following object is masked from &amp;#39;package:rstan&amp;#39;:
 ## 
-##     resample&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ABC %&amp;gt;%
+##     extract
+library(modelr) # install if you don&amp;#39;t have; data_grid is from it
+## 
+## Attaching package: &amp;#39;modelr&amp;#39;
+## The following object is masked from &amp;#39;package:rethinking&amp;#39;:
+## 
+##     resample
+
+ABC %&amp;gt;%
   data_grid(condition) %&amp;gt;%
   add_epred_rvars(m) %&amp;gt;%
   ggplot(aes(dist = .epred, y = condition)) +
   stat_dist_dotsinterval(quantiles = 100)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking_files/figure-html/unnamed-chunk-17-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking_files/figure-html/unnamed-chunk-27-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;This provides posterior means using quantile dot plots, which are frequency-format uncertainty visualizations that have showed great promise in improving decision-making (&lt;a href=&#34;https://dl.acm.org/doi/10.1145/2858036.2858558&#34;&gt;Kay et al. 2016&lt;/a&gt;, &lt;a href=&#34;https://dl.acm.org/doi/10.1145/3173574.3173718&#34;&gt;Fernandes et al. 2018&lt;/a&gt;)&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;tidybayes.rethinking&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;&lt;code&gt;tidybayes.rethinking&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;There is even a &lt;code&gt;tidybayes&lt;/code&gt; package that works specifically for the &lt;code&gt;rethinking&lt;/code&gt; package. I encourage you to install this as we may&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;devtools::install_github(&amp;quot;mjskay/tidybayes.rethinking&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;devtools::install_github(&amp;quot;mjskay/tidybayes.rethinking&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You can now run this:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidybayes.rethinking)
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;library(tidybayes.rethinking)
 
 # bayesian regression wt (x) on mpg (y)
 m = quap(alist(
@@ -785,14 +864,14 @@ m %&amp;gt;%
   median_qi() %&amp;gt;%
   ggplot(aes(y = .variable, x = .value, xmin = .lower, xmax = .upper)) +
   geom_pointinterval()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking_files/figure-html/unnamed-chunk-19-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking_files/figure-html/unnamed-chunk-29-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;package-versions-above&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Package versions above&lt;/h2&gt;
 &lt;p&gt;When using R (or any open source language), it’s very important to keep links for package versions. I &lt;strong&gt;highly&lt;/strong&gt; recommend running in Rmarkdown files this code at the end to timestamp what packages were used.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sessionInfo()&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## R version 4.1.1 (2021-08-10)
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;sessionInfo()
+## R version 4.1.1 (2021-08-10)
 ## Platform: aarch64-apple-darwin20 (64-bit)
 ## Running under: macOS Monterey 12.0.1
 ## 
@@ -804,58 +883,33 @@ m %&amp;gt;%
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
 ## 
 ## attached base packages:
-## [1] parallel  stats     graphics  grDevices datasets  utils     methods  
-## [8] base     
+## [1] parallel  stats     graphics  grDevices datasets  utils     methods   base     
 ## 
 ## other attached packages:
-##  [1] tidybayes.rethinking_3.0.0 modelr_0.1.8              
-##  [3] magrittr_2.0.1             tidybayes_3.0.1           
-##  [5] ggdist_3.0.1               brms_2.16.3               
-##  [7] bayesplot_1.8.1            rstanarm_2.21.1           
-##  [9] Rcpp_1.0.7                 digest_0.6.29             
-## [11] rethinking_2.13            cmdstanr_0.4.0.9000       
-## [13] rstan_2.21.2               ggplot2_3.3.5             
-## [15] StanHeaders_2.21.0-7       knitr_1.36                
+##  [1] tidybayes.rethinking_3.0.0 modelr_0.1.8               magrittr_2.0.1             tidybayes_3.0.1            ggdist_3.0.1              
+##  [6] brms_2.16.3                bayesplot_1.8.1            rstanarm_2.21.1            Rcpp_1.0.7                 digest_0.6.29             
+## [11] rethinking_2.21            cmdstanr_0.4.0.9001        rstan_2.21.3               ggplot2_3.3.5              StanHeaders_2.21.0-7      
 ## 
 ## loaded via a namespace (and not attached):
-##   [1] minqa_1.2.4          colorspace_2.0-2     ellipsis_0.3.2      
-##   [4] ggridges_0.5.3       rsconnect_0.8.25     markdown_1.1        
-##   [7] base64enc_0.1-3      rstudioapi_0.13      farver_2.1.0        
-##  [10] svUnit_1.0.6         DT_0.20              fansi_0.5.0         
-##  [13] mvtnorm_1.1-3        bridgesampling_1.1-2 codetools_0.2-18    
-##  [16] splines_4.1.1        shinythemes_1.2.0    jsonlite_1.7.2      
-##  [19] nloptr_1.2.2.3       broom_0.7.9          shiny_1.7.1         
-##  [22] compiler_4.1.1       backports_1.3.0      assertthat_0.2.1    
-##  [25] Matrix_1.3-4         fastmap_1.1.0        cli_3.1.0           
-##  [28] later_1.3.0          htmltools_0.5.2      prettyunits_1.1.1   
-##  [31] tools_4.1.1          igraph_1.2.9         coda_0.19-4         
-##  [34] gtable_0.3.0         glue_1.5.1           reshape2_1.4.4      
-##  [37] dplyr_1.0.7          posterior_1.1.0      V8_3.6.0            
-##  [40] jquerylib_0.1.4      vctrs_0.3.8          nlme_3.1-152        
-##  [43] blogdown_1.5         crosstalk_1.2.0      tensorA_0.36.2      
-##  [46] xfun_0.28            stringr_1.4.0        ps_1.6.0            
-##  [49] lme4_1.1-27.1        mime_0.12            miniUI_0.1.1.1      
-##  [52] lifecycle_1.0.1      renv_0.14.0          gtools_3.9.2        
-##  [55] MASS_7.3-54          zoo_1.8-9            scales_1.1.1        
-##  [58] colourpicker_1.1.1   Brobdingnag_1.2-6    promises_1.2.0.1    
-##  [61] inline_0.3.19        shinystan_2.5.0      yaml_2.2.1          
-##  [64] curl_4.3.2           gridExtra_2.3        loo_2.4.1           
-##  [67] sass_0.4.0           stringi_1.7.6        highr_0.9           
-##  [70] dygraphs_1.1.1.6     checkmate_2.0.0      boot_1.3-28         
-##  [73] pkgbuild_1.3.0       shape_1.4.6          rlang_0.4.12        
-##  [76] pkgconfig_2.0.3      matrixStats_0.61.0   distributional_0.2.2
-##  [79] evaluate_0.14        lattice_0.20-44      purrr_0.3.4         
-##  [82] rstantools_2.1.1     htmlwidgets_1.5.4    labeling_0.4.2      
-##  [85] processx_3.5.2       tidyselect_1.1.1     plyr_1.8.6          
-##  [88] bookdown_0.24        R6_2.5.1             generics_0.1.1      
-##  [91] DBI_1.1.1            pillar_1.6.4         withr_2.4.3         
-##  [94] xts_0.12.1           survival_3.2-11      abind_1.4-5         
-##  [97] tibble_3.1.6         crayon_1.4.2         arrayhelpers_1.1-0  
-## [100] utf8_1.2.2           rmarkdown_2.11       grid_4.1.1          
-## [103] data.table_1.14.2    callr_3.7.0          threejs_0.3.3       
-## [106] xtable_1.8-4         tidyr_1.1.4          httpuv_1.6.3        
-## [109] RcppParallel_5.1.4   stats4_4.1.1         munsell_0.5.0       
-## [112] bslib_0.3.1          shinyjs_2.0.0&lt;/code&gt;&lt;/pre&gt;
+##   [1] minqa_1.2.4          colorspace_2.0-2     ellipsis_0.3.2       ggridges_0.5.3       rsconnect_0.8.25     markdown_1.1        
+##   [7] base64enc_0.1-3      xaringanExtra_0.5.5  rstudioapi_0.13      farver_2.1.0         svUnit_1.0.6         DT_0.20             
+##  [13] fansi_0.5.0          mvtnorm_1.1-3        bridgesampling_1.1-2 codetools_0.2-18     splines_4.1.1        knitr_1.36          
+##  [19] shinythemes_1.2.0    jsonlite_1.7.2       nloptr_1.2.2.3       broom_0.7.9          shiny_1.7.1          compiler_4.1.1      
+##  [25] backports_1.4.1      assertthat_0.2.1     Matrix_1.3-4         fastmap_1.1.0        cli_3.1.0            later_1.3.0         
+##  [31] htmltools_0.5.2      prettyunits_1.1.1    tools_4.1.1          igraph_1.2.9         coda_0.19-4          gtable_0.3.0        
+##  [37] glue_1.6.0           reshape2_1.4.4       dplyr_1.0.7          posterior_1.1.0      jquerylib_0.1.4      vctrs_0.3.8         
+##  [43] nlme_3.1-152         blogdown_1.5         crosstalk_1.2.0      tensorA_0.36.2       xfun_0.28            stringr_1.4.0       
+##  [49] ps_1.6.0             lme4_1.1-27.1        mime_0.12            miniUI_0.1.1.1       lifecycle_1.0.1      renv_0.14.0         
+##  [55] gtools_3.9.2         MASS_7.3-54          zoo_1.8-9            scales_1.1.1         colourpicker_1.1.1   Brobdingnag_1.2-6   
+##  [61] promises_1.2.0.1     inline_0.3.19        shinystan_2.5.0      yaml_2.2.1           gridExtra_2.3        loo_2.4.1           
+##  [67] sass_0.4.0           stringi_1.7.6        highr_0.9            dygraphs_1.1.1.6     checkmate_2.0.0      boot_1.3-28         
+##  [73] pkgbuild_1.3.1       shape_1.4.6          rlang_0.4.12         pkgconfig_2.0.3      matrixStats_0.61.0   distributional_0.2.2
+##  [79] evaluate_0.14        lattice_0.20-44      purrr_0.3.4          rstantools_2.1.1     htmlwidgets_1.5.4    labeling_0.4.2      
+##  [85] processx_3.5.2       tidyselect_1.1.1     plyr_1.8.6           bookdown_0.24        R6_2.5.1             generics_0.1.1      
+##  [91] DBI_1.1.1            pillar_1.6.4         withr_2.4.3          xts_0.12.1           survival_3.2-11      abind_1.4-5         
+##  [97] tibble_3.1.6         crayon_1.4.2         arrayhelpers_1.1-0   uuid_1.0-3           utf8_1.2.2           rmarkdown_2.11      
+## [103] grid_4.1.1           data.table_1.14.2    callr_3.7.0          threejs_0.3.3        xtable_1.8-4         tidyr_1.1.4         
+## [109] httpuv_1.6.3         RcppParallel_5.1.4   stats4_4.1.1         munsell_0.5.0        bslib_0.3.1          shinyjs_2.0.0&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -867,10 +921,11 @@ m %&amp;gt;%
       <guid>https://dsba6010-spring2022.netlify.app/resource/r/</guid>
       <description>
 &lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/clipboard/clipboard.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34;Copy Code&#34;,&#34;success&#34;:&#34;Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl+C to Copy&#34;})&lt;/script&gt;
 
-&lt;div id=&#34;TOC&#34;&gt;
-
-&lt;/div&gt;
 
 &lt;div id=&#34;learning-r&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Learning R&lt;/h2&gt;
@@ -922,15 +977,16 @@ m %&amp;gt;%
       <guid>https://dsba6010-spring2022.netlify.app/resource/style/</guid>
       <description>
 &lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/clipboard/clipboard.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34;Copy Code&#34;,&#34;success&#34;:&#34;Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl+C to Copy&#34;})&lt;/script&gt;
 
-&lt;div id=&#34;TOC&#34;&gt;
-
-&lt;/div&gt;
 
 &lt;div id=&#34;r-style-conventions&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;R style conventions&lt;/h2&gt;
 &lt;p&gt;R is fairly forgiving about how you type code (unlike other languages like Python, where miscounting spaces can ruin your code!). All of these things will do exactly the same thing:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;% 
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;mpg %&amp;gt;% 
   filter(cty &amp;gt; 10, class == &amp;quot;compact&amp;quot;)
 
 mpg %&amp;gt;% filter(cty &amp;gt; 10, class == &amp;quot;compact&amp;quot;)
@@ -963,7 +1019,7 @@ filter ( mpg,cty&amp;gt;10,     class==&amp;quot;compact&amp;quot; )&lt;/code&gt
 &lt;p&gt;See the &lt;a href=&#34;https://style.tidyverse.org/syntax.html#spacing&#34;&gt;“Spacing” section&lt;/a&gt; in the tidyverse style guide.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Put spaces after commas (like in regular English):&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Good
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# Good
 filter(mpg, cty &amp;gt; 10)
 
 # Bad
@@ -971,7 +1027,7 @@ filter(mpg , cty &amp;gt; 10)
 filter(mpg ,cty &amp;gt; 10)
 filter(mpg,cty &amp;gt; 10)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Put spaces around operators like &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;-&lt;/code&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt;, &lt;code&gt;=&lt;/code&gt;, etc.:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Good
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# Good
 filter(mpg, cty &amp;gt; 10)
 
 # Bad
@@ -979,7 +1035,7 @@ filter(mpg, cty&amp;gt;10)
 filter(mpg, cty&amp;gt; 10)
 filter(mpg, cty &amp;gt;10)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Don’t put spaces around parentheses that are parts of functions:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Good
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# Good
 filter(mpg, cty &amp;gt; 10)
 
 # Bad
@@ -994,7 +1050,7 @@ filter( mpg, cty &amp;gt; 10 )&lt;/code&gt;&lt;/pre&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;It’s generally good practice to not have really long lines of code. A good suggestion is to keep lines at a maximum of 80 characters. Instead of counting characters by hand (ew), in RStudio go to “Tools” &amp;gt; “Global Options” &amp;gt; “Code” &amp;gt; “Display” and check the box for “Show margin”. You should now see a really thin line indicating 80 characters. Again, you can go beyond this—that’s fine. It’s just good practice to avoid going too far past it.&lt;/p&gt;
 &lt;p&gt;You can add line breaks inside longer lines of code. Line breaks should come after commas, and things like function arguments should align within the function:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Good
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# Good
 filter(mpg, cty &amp;gt; 10, class == &amp;quot;compact&amp;quot;)
 
 # Good
@@ -1018,7 +1074,7 @@ filter(mpg,
 &lt;div id=&#34;pipes-and-ggplot-layers&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Pipes (&lt;code&gt;%&amp;gt;%&lt;/code&gt;) and ggplot layers (&lt;code&gt;+&lt;/code&gt;)&lt;/h3&gt;
 &lt;p&gt;Put each layer of a ggplot plot on separate lines, with the &lt;code&gt;+&lt;/code&gt; at the end of the line, indented with two spaces:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Good
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# Good
 ggplot(mpg, aes(x = cty, y = hwy, color = class)) +
   geom_point() +
   geom_smooth() +
@@ -1038,7 +1094,7 @@ ggplot(mpg, aes(x = cty, y = hwy, color = class))
   + geom_smooth() 
   + theme_bw()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Put each step in a dplyr pipeline on separate lines, with the &lt;code&gt;%&amp;gt;%&lt;/code&gt; at the end of the line, indented with two spaces:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Good
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# Good
 mpg %&amp;gt;% 
   filter(cty &amp;gt; 10) %&amp;gt;% 
   group_by(class) %&amp;gt;% 
@@ -1063,23 +1119,23 @@ mpg %&amp;gt;%
 &lt;p&gt;See the &lt;a href=&#34;https://style.tidyverse.org/syntax.html#comments&#34;&gt;“Comments” section&lt;/a&gt; in the tidyverse style guide.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Comments should start with a comment symbol and a single space: &lt;code&gt;#&lt;/code&gt;&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Good
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# Good
 
 #Bad
 
     #Bad&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;If the comment is really short (and won’t cause you to go over 80 characters in the line), you can include it in the same line as the code, separated by at least two spaces (it works with one space, but using a couple can enhance readability):&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;% 
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;mpg %&amp;gt;% 
   filter(cty &amp;gt; 10) %&amp;gt;%  # Only rows where cty is 10 +
   group_by(class) %&amp;gt;%  # Divide into class groups
   summarize(avg_hwy = mean(hwy))  # Find the average hwy in each group&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You can add extra spaces to get inline comments to align, if you want:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;% 
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;mpg %&amp;gt;% 
   filter(cty &amp;gt; 10) %&amp;gt;%            # Only rows where cty is 10 +
   group_by(class) %&amp;gt;%             # Divide into class groups
   summarize(avg_hwy = mean(hwy))  # Find the average hwy in each group&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;If the comment is really long, you can break it into multiple lines. RStudio can do this for you if you go to “Code” &amp;gt; “Reflow comment”&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Good
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# Good
 # Happy families are all alike; every unhappy family is unhappy in its own way.
 # Everything was in confusion in the Oblonskys’ house. The wife had discovered
 # that the husband was carrying on an intrigue with a French girl, who had been
@@ -1091,6 +1147,136 @@ mpg %&amp;gt;%
 # Bad
 # Happy families are all alike; every unhappy family is unhappy in its own way. Everything was in confusion in the Oblonskys’ house. The wife had discovered that the husband was carrying on an intrigue with a French girl, who had been a governess in their family, and she had announced to her husband that she could not go on living in the same house with him. This position of affairs had now lasted three days, and not only the husband and wife themselves, but all the members of their family and household, were painfully conscious of it.&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Though, if you’re dealing with comments that are &lt;em&gt;that&lt;/em&gt; long, consider putting the text in R Markdown instead and having it be actual prose.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Readings in Bayesian</title>
+      <link>https://dsba6010-spring2022.netlify.app/resource/bayesian-readings/</link>
+      <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://dsba6010-spring2022.netlify.app/resource/bayesian-readings/</guid>
+      <description>
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/clipboard/clipboard.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34;Copy Code&#34;,&#34;success&#34;:&#34;Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl+C to Copy&#34;})&lt;/script&gt;
+
+
+&lt;p&gt;Highly recommend : &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;br&gt;
+Recommend : &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;br&gt;
+Only for diehards : &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;br&gt;&lt;/p&gt;
+&lt;div id=&#34;motivations-for-bayesian-methods&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Motivations for Bayesian Methods&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.gwern.net/docs/statistics/decision/1972-savage-foundationsofstatistics.pdf&#34;&gt;The Foundations of Statistics&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-savage1972foundations&#34; role=&#34;doc-biblioref&#34;&gt;Savage 1972&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;i class=&#34;fas fa-newspaper&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://bayes.wustl.edu/etj/articles/confidence.pdf&#34;&gt;Confidence intervals vs Bayesian intervals&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-jaynes1976confidence&#34; role=&#34;doc-biblioref&#34;&gt;Jaynes and Kempthorne 1976&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://bayes.wustl.edu/etj/prob/book.pdf&#34;&gt;Probability theory: The logic of science&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-jaynes2003probability&#34; role=&#34;doc-biblioref&#34;&gt;Jaynes 2003&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;i class=&#34;fas fa-newspaper&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro/&#34;&gt;&lt;i class=&#34;fas fa-blog&#34;&gt;&lt;/i&gt;&lt;/a&gt; &lt;a href=&#34;https://arxiv.org/pdf/1411.5018.pdf&#34;&gt;Frequentism and Bayesianism: A Python-driven
+Primer&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-vanderplas2014frequentism&#34; role=&#34;doc-biblioref&#34;&gt;VanderPlas 2014&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;i class=&#34;fas fa-blog&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.fharrell.com/post/journey/&#34;&gt;My Journey From Frequentist to Bayesian Statistics&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-harrell_2021&#34; role=&#34;doc-biblioref&#34;&gt;Harrell 2021&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;nhst-p-hacking&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;NHST / p-hacking&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;i class=&#34;fas fa-newspaper&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124&amp;amp;xid=17259,15700019,15700186,15700190,15700248&#34;&gt;Why most published research findings are false&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-ioannidis2005most&#34; role=&#34;doc-biblioref&#34;&gt;Ioannidis 2005&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;i class=&#34;fas fa-newspaper&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://journals.sagepub.com/doi/abs/10.1177/1745691611406923?journalCode=ppsa&#34;&gt;Statistical Evidence in Experimental Psychology: An Empirical Comparison Using 855 t Tests&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-wetzels2011statistical&#34; role=&#34;doc-biblioref&#34;&gt;Wetzels et al. 2011&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;i class=&#34;fas fa-newspaper&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf&#34;&gt;The garden of forking paths: Why multiple comparisons can be a problem, even when there is no “fishing expedition” or “p-hacking” and the research hypothesis was posited ahead of time&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-gelman2013garden&#34; role=&#34;doc-biblioref&#34;&gt;Gelman and Loken 2013&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;i class=&#34;fas fa-newspaper&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://journals.sagepub.com/doi/10.1177/0956797613504966&#34;&gt;The New Statistics: Why and How&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-cumming2014new&#34; role=&#34;doc-biblioref&#34;&gt;Cumming 2014&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;i class=&#34;fas fa-newspaper&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://hal.inria.fr/hal-01377894/document&#34;&gt;Fair Statistical Communication in HCI&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-dragicevic2016fair&#34; role=&#34;doc-biblioref&#34;&gt;Dragicevic 2016&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;i class=&#34;fas fa-newspaper&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.frontiersin.org/articles/10.3389/fnhum.2017.00390/full&#34;&gt;When Null Hypothesis Significance Testing Is Unsuitable for Research: A Reassessment&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-szucs2017null&#34; role=&#34;doc-biblioref&#34;&gt;Szucs and Ioannidis 2017&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;i class=&#34;fas fa-newspaper&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.tandfonline.com/doi/pdf/10.1080/00031305.2018.1527253&#34;&gt;Abandon Statistical Significance&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-mcshane2019abandon&#34; role=&#34;doc-biblioref&#34;&gt;McShane et al. 2019&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;i class=&#34;fas fa-blog&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://daniellakens.blogspot.com/2021/11/why-p-values-should-be-interpreted-as-p.html&#34;&gt;Why p-values should be interpreted as p-values and not as measures of evidence&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-lakens2021&#34; role=&#34;doc-biblioref&#34;&gt;Lakens 2021&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;bayes-in-practice&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Bayes in Practice&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-blog&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.andrewheiss.com/blog/2021/12/01/multilevel-models-panel-data-guide/&#34;&gt;A guide to working with country-year panel data and Bayesian multilevel models&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-heiss2021&#34; role=&#34;doc-biblioref&#34;&gt;Heiss 2021&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- https://betanalpha.github.io/assets/case_studies/modeling_sparsity.html#1_Fading_into_Irrelevance
+
+--&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dags-causal-inference&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;DAGs / Causal Inference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class=&#34;fas fa-blog&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://www.andrewheiss.com/blog/2020/02/25/closing-backdoors-dags/&#34;&gt;Ways to close backdoors in DAGs&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-heiss2020&#34; role=&#34;doc-biblioref&#34;&gt;Heiss 2020&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;textbooks&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Textbooks&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/&#34;&gt;Probabilistic Programming &amp;amp; Bayesian Methods for Hackers&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-davidson2015bayesian&#34; role=&#34;doc-biblioref&#34;&gt;Davidson-Pilon 2015&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://stefvanbuuren.name/fimd/&#34;&gt;Flexible imputation of missing data&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-van2018flexible&#34; role=&#34;doc-biblioref&#34;&gt;Van Buuren 2018&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; &lt;a href=&#34;https://arxiv.org/pdf/1809.10756.pdf&#34;&gt;An introduction to probabilistic programming&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-van2018introduction&#34; role=&#34;doc-biblioref&#34;&gt;Meent et al. 2018&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://allendowney.github.io/ThinkBayes2/&#34;&gt;Think Bayes: Bayesian Statistics in Python&lt;/a&gt; &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-downey2021think&#34; role=&#34;doc-biblioref&#34;&gt;Downey 2021&lt;/a&gt;)&lt;/span&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt; &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level2 unnumbered&#34;&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references csl-bib-body hanging-indent&#34;&gt;
+&lt;div id=&#34;ref-cumming2014new&#34; class=&#34;csl-entry&#34;&gt;
+Cumming, Geoff. 2014. &lt;span&gt;“The New Statistics: Why and How.”&lt;/span&gt; &lt;em&gt;Psychological Science&lt;/em&gt; 25 (1): 7–29.
+&lt;/div&gt;
+&lt;div id=&#34;ref-davidson2015bayesian&#34; class=&#34;csl-entry&#34;&gt;
+Davidson-Pilon, Cameron. 2015. &lt;em&gt;Bayesian Methods for Hackers: Probabilistic Programming and Bayesian Inference&lt;/em&gt;. Addison-Wesley Professional.
+&lt;/div&gt;
+&lt;div id=&#34;ref-downey2021think&#34; class=&#34;csl-entry&#34;&gt;
+Downey, Allen. 2021. &lt;em&gt;Think Bayes: Bayesian Statistics in Python&lt;/em&gt;. 2nd ed. &#34; O’Reilly Media, Inc.&#34;.
+&lt;/div&gt;
+&lt;div id=&#34;ref-dragicevic2016fair&#34; class=&#34;csl-entry&#34;&gt;
+Dragicevic, Pierre. 2016. &lt;span&gt;“Fair Statistical Communication in HCI.”&lt;/span&gt; In &lt;em&gt;Modern Statistical Methods for HCI&lt;/em&gt;, 291–330. Springer.
+&lt;/div&gt;
+&lt;div id=&#34;ref-gelman2013garden&#34; class=&#34;csl-entry&#34;&gt;
+Gelman, Andrew, and Eric Loken. 2013. &lt;span&gt;“The Garden of Forking Paths: Why Multiple Comparisons Can Be a Problem, Even When There Is No &lt;span&gt;‘Fishing Expedition’&lt;/span&gt; or &lt;span&gt;‘p-Hacking’&lt;/span&gt; and the Research Hypothesis Was Posited Ahead of Time.”&lt;/span&gt; &lt;em&gt;Department of Statistics, Columbia University&lt;/em&gt; 348.
+&lt;/div&gt;
+&lt;div id=&#34;ref-harrell_2021&#34; class=&#34;csl-entry&#34;&gt;
+Harrell, Frank. 2021. &lt;span&gt;“My Journey from Frequentist to Bayesian Statistics.”&lt;/span&gt; &lt;em&gt;Statistical Thinking&lt;/em&gt;. &lt;a href=&#34;https://www.fharrell.com/post/journey/&#34;&gt;https://www.fharrell.com/post/journey/&lt;/a&gt;.
+&lt;/div&gt;
+&lt;div id=&#34;ref-heiss2020&#34; class=&#34;csl-entry&#34;&gt;
+Heiss, Andrew. 2020. &lt;span&gt;“Ways to Close Backdoors in DAGs.”&lt;/span&gt; &lt;a href=&#34;https://www.andrewheiss.com/blog/2020/02/25/closing-backdoors-dags/&#34;&gt;https://www.andrewheiss.com/blog/2020/02/25/closing-backdoors-dags/&lt;/a&gt;.
+&lt;/div&gt;
+&lt;div id=&#34;ref-heiss2021&#34; class=&#34;csl-entry&#34;&gt;
+———. 2021. &lt;span&gt;“A Guide to Working with Country-Year Panel Data and Bayesian Multilevel Models.”&lt;/span&gt; &lt;a href=&#34;https://www.andrewheiss.com/blog/2021/12/01/multilevel-models-panel-data-guide/&#34;&gt;https://www.andrewheiss.com/blog/2021/12/01/multilevel-models-panel-data-guide/&lt;/a&gt;.
+&lt;/div&gt;
+&lt;div id=&#34;ref-ioannidis2005most&#34; class=&#34;csl-entry&#34;&gt;
+Ioannidis, John PA. 2005. &lt;span&gt;“Why Most Published Research Findings Are False.”&lt;/span&gt; &lt;em&gt;PLoS Medicine&lt;/em&gt; 2 (8): e124.
+&lt;/div&gt;
+&lt;div id=&#34;ref-jaynes2003probability&#34; class=&#34;csl-entry&#34;&gt;
+Jaynes, Edwin T. 2003. &lt;em&gt;Probability Theory: The Logic of Science&lt;/em&gt;. Cambridge university press.
+&lt;/div&gt;
+&lt;div id=&#34;ref-jaynes1976confidence&#34; class=&#34;csl-entry&#34;&gt;
+Jaynes, Edwin T, and Oscar Kempthorne. 1976. &lt;span&gt;“Confidence Intervals Vs Bayesian Intervals.”&lt;/span&gt; In &lt;em&gt;Foundations of Probability Theory, Statistical Inference, and Statistical Theories of Science&lt;/em&gt;, 175–257. Springer.
+&lt;/div&gt;
+&lt;div id=&#34;ref-lakens2021&#34; class=&#34;csl-entry&#34;&gt;
+Lakens, Daniel. 2021. &lt;span&gt;“Why p-Values Should Be Interpreted as p-Values and Not as Measures of Evidence.”&lt;/span&gt; &lt;a href=&#34;http://daniellakens.blogspot.com/2021/11/why-p-values-should-be-interpreted-as-p.html&#34;&gt;http://daniellakens.blogspot.com/2021/11/why-p-values-should-be-interpreted-as-p.html&lt;/a&gt;.
+&lt;/div&gt;
+&lt;div id=&#34;ref-mcshane2019abandon&#34; class=&#34;csl-entry&#34;&gt;
+McShane, Blakeley B, David Gal, Andrew Gelman, Christian Robert, and Jennifer L Tackett. 2019. &lt;span&gt;“Abandon Statistical Significance.”&lt;/span&gt; &lt;em&gt;The American Statistician&lt;/em&gt; 73 (sup1): 235–45.
+&lt;/div&gt;
+&lt;div id=&#34;ref-van2018introduction&#34; class=&#34;csl-entry&#34;&gt;
+Meent, Jan-Willem van de, Brooks Paige, Hongseok Yang, and Frank Wood. 2018. &lt;span&gt;“An Introduction to Probabilistic Programming.”&lt;/span&gt; &lt;em&gt;arXiv Preprint arXiv:1809.10756&lt;/em&gt;.
+&lt;/div&gt;
+&lt;div id=&#34;ref-savage1972foundations&#34; class=&#34;csl-entry&#34;&gt;
+Savage, Leonard J. 1972. &lt;em&gt;The Foundations of Statistics&lt;/em&gt;. Courier Corporation.
+&lt;/div&gt;
+&lt;div id=&#34;ref-szucs2017null&#34; class=&#34;csl-entry&#34;&gt;
+Szucs, Denes, and John Ioannidis. 2017. &lt;span&gt;“When Null Hypothesis Significance Testing Is Unsuitable for Research: A Reassessment.”&lt;/span&gt; &lt;em&gt;Frontiers in Human Neuroscience&lt;/em&gt; 11: 390.
+&lt;/div&gt;
+&lt;div id=&#34;ref-van2018flexible&#34; class=&#34;csl-entry&#34;&gt;
+Van Buuren, Stef. 2018. &lt;em&gt;Flexible Imputation of Missing Data&lt;/em&gt;. CRC press.
+&lt;/div&gt;
+&lt;div id=&#34;ref-vanderplas2014frequentism&#34; class=&#34;csl-entry&#34;&gt;
+VanderPlas, Jake. 2014. &lt;span&gt;“Frequentism and Bayesianism: A Python-Driven Primer.”&lt;/span&gt; &lt;em&gt;arXiv Preprint arXiv:1411.5018&lt;/em&gt;.
+&lt;/div&gt;
+&lt;div id=&#34;ref-wetzels2011statistical&#34; class=&#34;csl-entry&#34;&gt;
+Wetzels, Ruud, Dora Matzke, Michael D Lee, Jeffrey N Rouder, Geoffrey J Iverson, and Eric-Jan Wagenmakers. 2011. &lt;span&gt;“Statistical Evidence in Experimental Psychology: An Empirical Comparison Using 855 t Tests.”&lt;/span&gt; &lt;em&gt;Perspectives on Psychological Science&lt;/em&gt; 6 (3): 291–98.
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1136,18 +1322,27 @@ mpg %&amp;gt;%
     <item>
       <title>Bayesian statistics resources</title>
       <link>https://dsba6010-spring2022.netlify.app/resource/bayes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/resource/bayes/</guid>
       <description>
 &lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/clipboard/clipboard.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34;Copy Code&#34;,&#34;success&#34;:&#34;Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl+C to Copy&#34;})&lt;/script&gt;
 &lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
 &lt;link href=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 
-&lt;div id=&#34;TOC&#34;&gt;
 
+&lt;p&gt;&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;/p&gt;
+&lt;p&gt;This resource was created by Andrew Heiss for his &lt;a href=&#34;https://evalf21.classes.andrewheiss.com/resource/&#34;&gt;PMAP 8521 course&lt;/a&gt;. I liked it so much, that I kept it without modification. Some of the topics will be covered in the class while others won’t in much detail (e.g., &lt;code&gt;brms&lt;/code&gt;, ROPE). His course focuses more on causal inference (which we’ll cover a little) but only some coverage of Bayesian Statistics. Nevertheless, Andrew is a great communicator of Bayesian stats in practice (see &lt;a href=&#34;https://www.andrewheiss.com/blog/2021/11/08/beta-regression-guide/&#34;&gt;blog post 1&lt;/a&gt;, &lt;a href=&#34;https://www.andrewheiss.com/blog/2021/12/01/multilevel-models-panel-data-guide/&#34;&gt;blog post 2&lt;/a&gt;) and we’ll likely reference some of his work later on.&lt;/p&gt;
+&lt;p&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
-
-&lt;p&gt;In class session 2 (&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/slides/02-class.html#12&#34;&gt;see this from the FAQ slides&lt;/a&gt;) we talked briefly about the difference between frequentist statistics, where you test for the probability of your data given a null hypothesis, or &lt;span class=&#34;math inline&#34;&gt;\(P(\text{data} \mid H_0)\)&lt;/span&gt;, and Bayesian statistics, where you test for the probability of your hypothesis given your data, or &lt;span class=&#34;math inline&#34;&gt;\(P(H \mid \text{data})\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/p&gt;
+&lt;p&gt;In class session 2 (&lt;a href=&#34;https://evalf21.classes.andrewheiss.com/slides/02-class.html#12&#34;&gt;see this from the FAQ slides&lt;/a&gt;) we talked briefly about the difference between frequentist statistics, where you test for the probability of your data given a null hypothesis, or &lt;span class=&#34;math inline&#34;&gt;\(P(\text{data} \mid H_0)\)&lt;/span&gt;, and Bayesian statistics, where you test for the probability of your hypothesis given your data, or &lt;span class=&#34;math inline&#34;&gt;\(P(H \mid \text{data})\)&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;This difference is important. In the world of frequentism, which is what pretty much all statistics classes use (including this one!), you have to compare your findings to a hypothetical null world and you have to talk about rejecting null hypotheses. In the Bayes world, though, you get to talk about the probability that your hypothesis is correct rather than the probability of seeing a value in a null world. So much more convenient and easy to interpret!&lt;/p&gt;
 &lt;p&gt;Bayesian statistics, though, requires a lot of computational power and a different way of thinking about statistics and numbers in general. And very few classes teach it. Including this one! I use Bayesian stats all the time in my own research (see &lt;a href=&#34;https://www.andrewheiss.com/research/articles/chaudhry-heiss-ngos-philanthropy/&#34;&gt;this&lt;/a&gt; or &lt;a href=&#34;https://www.andrewheiss.com/research/articles/chaudhry-dotson-heiss-2021/&#34;&gt;this&lt;/a&gt;, for instance), but don’t teach it (yet!) because nobody else really teaches it and frequentist statistics still rule the policy world, so you need to know it.&lt;/p&gt;
 &lt;div id=&#34;resources&#34; class=&#34;section level2&#34;&gt;
@@ -1165,7 +1360,7 @@ mpg %&amp;gt;%
 &lt;div id=&#34;super-short-example&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Super short example&lt;/h2&gt;
 &lt;p&gt;In practice, the R code for Bayesian models should be very familiar. For instance, here’s a regular old frequentist OLS model:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;library(tidyverse)
 library(broom)
 
 model_ols &amp;lt;- lm(hwy ~ displ + drv, data = mpg)
@@ -1178,13 +1373,13 @@ tidy(model_ols, conf.int = TRUE)
 ## 3 drvf            4.79     0.530      9.05 6.40e-17     3.75      5.83
 ## 4 drvr            5.26     0.734      7.17 1.03e-11     3.81      6.70&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here’s that same model using the &lt;strong&gt;brms&lt;/strong&gt; package, with default priors. Note how the code is basically the same:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;library(tidyverse)
 library(brms)         # For Bayesian regression with brm()
 library(broom.mixed)  # For tidy() and glance() with brms-based models
 library(tidybayes)    # For extracting posterior draws&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# This will take a few seconds to run
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# This will take a few seconds to run
 model_bayes &amp;lt;- brm(hwy ~ displ + drv, data = mpg)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tidy(model_bayes)
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;tidy(model_bayes)
 ## # A tibble: 5 × 8
 ##   effect   component group    term            estimate std.error conf.low conf.high
 ##   &amp;lt;chr&amp;gt;    &amp;lt;chr&amp;gt;     &amp;lt;chr&amp;gt;    &amp;lt;chr&amp;gt;              &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
@@ -1194,7 +1389,7 @@ model_bayes &amp;lt;- brm(hwy ~ displ + drv, data = mpg)&lt;/code&gt;&lt;/pre&gt
 ## 4 fixed    cond      &amp;lt;NA&amp;gt;     drvr                5.25     0.754     3.79      6.75
 ## 5 ran_pars cond      Residual sd__Observation     3.10     0.149     2.81      3.41&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;In Bayes land, you get a distribution of plausible values given the data (or what is called the “posterior distribution”), and you can visualize this posterior distribution:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Make a long dataset of the draws for these three coefficients
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# Make a long dataset of the draws for these three coefficients
 posterior_draws &amp;lt;- model_bayes %&amp;gt;% 
   gather_draws(c(b_displ, b_drv, b_drvf, b_drvr))
 
@@ -1210,7 +1405,7 @@ ggplot(posterior_draws, aes(x = .value, y = fct_rev(.variable), fill = .variable
 &lt;/div&gt;
 &lt;div id=&#34;confidence-intervals-vs.-credible-intervals&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Confidence intervals vs. credible intervals&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/content/06-content/&#34;&gt;In session 6&lt;/a&gt;, we talked about frequentist confidence intervals and Bayesian credible (or posterior) intervals, since I had you read &lt;a href=&#34;https://doi.org/10.1257/jep.35.3.157&#34;&gt;Guido Imbens’s essay on &lt;em&gt;p&lt;/em&gt;-values&lt;/a&gt;, where his conclusion is that:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://evalf21.classes.andrewheiss.com/content/06-content/&#34;&gt;In session 6&lt;/a&gt;, we talked about frequentist confidence intervals and Bayesian credible (or posterior) intervals, since I had you read &lt;a href=&#34;https://doi.org/10.1257/jep.35.3.157&#34;&gt;Guido Imbens’s essay on &lt;em&gt;p&lt;/em&gt;-values&lt;/a&gt;, where his conclusion is that:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;It would be preferable if reporting standards emphasized confidence intervals or standard errors, and, even better, Bayesian posterior intervals.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1235,13 +1430,13 @@ ggplot(posterior_draws, aes(x = .value, y = fct_rev(.variable), fill = .variable
 &lt;/blockquote&gt;
 &lt;p&gt;Confidence intervals tell you about the range, or the net. That’s all.&lt;/p&gt;
 &lt;p&gt;Here’s an example with some data from &lt;em&gt;The Effect&lt;/em&gt; on restaurant inspections in Alaska. We want to know if weekend inspections are more lenient that ones conducted during the work week.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;library(tidyverse)
 library(broom)
 library(gghalves)
 
 inspections &amp;lt;- read_csv(&amp;quot;https://vincentarelbundock.github.io/Rdatasets/csv/causaldata/restaurant_inspections.csv&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;First we should look at the data to see if there are any obvious patterns. Let’s look at scores separated by weekend status. We’ll use &lt;a href=&#34;https://erocoar.github.io/gghalves/&#34;&gt;the neat &lt;strong&gt;gghalves&lt;/strong&gt; package&lt;/a&gt; to plot both the raw points and a density plot. The orange points show the average value:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(inspections, aes(x = Weekend, y = inspection_score)) +
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;ggplot(inspections, aes(x = Weekend, y = inspection_score)) +
   geom_half_point(side = &amp;quot;l&amp;quot;, alpha = 0.2, size = 0.5,
                   transformation = position_jitter(height = 0)) +
   geom_half_violin(side = &amp;quot;r&amp;quot;) +
@@ -1250,7 +1445,7 @@ inspections &amp;lt;- read_csv(&amp;quot;https://vincentarelbundock.github.io/Rd
 &lt;p&gt;It looks like weekend inspections are far more rare than weekday ones, and no weekend inspections every give scores lower than 80. It also looks like the average weekend score is slightly higher than the average weekday score. Let’s figure out how much of a difference there is.&lt;/p&gt;
 &lt;p&gt;But first, we’ll use the language of inference and sampling. Our population parameter (we’ll call it the Greek letter theta, or &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;) is some single true fixed number that exists out in the world—weekend restaurant inspections in Alaska have a &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; higher average score than weekday inspections. We want to find out what that &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is, so we’ll look at some confidence intervals.&lt;/p&gt;
 &lt;p&gt;We can look at a basic difference in means based on weekend status:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;model_naive &amp;lt;- lm(inspection_score ~ Weekend, 
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;model_naive &amp;lt;- lm(inspection_score ~ Weekend, 
                   data = inspections)
 tidy(model_naive, conf.int = TRUE)
 ## # A tibble: 2 × 7
@@ -1260,7 +1455,7 @@ tidy(model_naive, conf.int = TRUE)
 ## 2 WeekendTRUE     2.10    0.433       4.84 0.00000131     1.25      2.95&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here, weekend scores are 2.1 points higher than weekday scores, on average (that’s our estimate, or &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt;. We have a confidence interval of 1.2–2.9. We &lt;em&gt;cannot&lt;/em&gt; say that we’re 95% confident that the weekend score boost (or &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;) is between 1.2 and 2.9. What we &lt;em&gt;can&lt;/em&gt; say is that we’re 95% confident that the range 1.2–2.9 captures the true population parameter &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;. If we took a bunch of different samples of inspection scores and calculated the average weekend vs. weekday score in each of those samples, 95% of those confidence intervals should capture the true &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;. Importantly, we still have no idea what the actual &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is, but we’re pretty sure that our confidence interval net has captured it.&lt;/p&gt;
 &lt;p&gt;This estimate is probably wrong, since there are other factors that confound the weekend → score relationship. Maybe the health department only conducts weekend inspections in places with lots of branches, or maybe they did more weekend inspections in certain years. We can adjust/control for these in the model:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;model_adjusted &amp;lt;- lm(inspection_score ~ Weekend + NumberofLocations + Year, 
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;model_adjusted &amp;lt;- lm(inspection_score ~ Weekend + NumberofLocations + Year, 
                      data = inspections)
 tidy(model_adjusted, conf.int = TRUE)
 ## # A tibble: 4 × 7
@@ -1272,7 +1467,7 @@ tidy(model_adjusted, conf.int = TRUE)
 ## 4 Year               -0.0646  0.00617     -10.5  1.45e-25  -0.0767   -0.0525&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Our weekend estimate shrunk a little and is now 1.43, with a confidence interval of 0.6–2.3. Again, think of this as a net—we’re 95% sure that the true &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is in that net somewhere. &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; could be 0.7, it could be 1.4, it could be 2.2—who knows. All we know is that our net most likely picked it up.&lt;/p&gt;
 &lt;p&gt;For fun, let’s plot both these weekend estimates and their confidence intervals:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Save just the weekend coefficient from both models
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# Save just the weekend coefficient from both models
 freq_results_naive &amp;lt;- tidy(model_naive, conf.int = TRUE) %&amp;gt;% 
   mutate(model = &amp;quot;Naive model&amp;quot;) %&amp;gt;% 
   filter(term == &amp;quot;WeekendTRUE&amp;quot;)
@@ -1309,7 +1504,7 @@ ggplot(freq_results, aes(x = estimate, y = model, color = model)) +
 &lt;p&gt;Arguments like &lt;code&gt;chains&lt;/code&gt;, &lt;code&gt;iter&lt;/code&gt;, and &lt;code&gt;cores&lt;/code&gt; deal with the simulation. &lt;code&gt;chains&lt;/code&gt; defines how many parallel simulations should happen, &lt;code&gt;iter&lt;/code&gt; controls how many iterations should happen with in each chain, and &lt;code&gt;cores&lt;/code&gt; spreads those chains across the CPUs in your computer (i.e. if you have a 4-core computer, you can run 4 chains all at the same time; run &lt;code&gt;parallel::detectCores()&lt;/code&gt; in your R console to see how many CPU cores you have). &lt;code&gt;seed&lt;/code&gt; makes it so that the random simulation results are reproducible (&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/example/random-numbers/#seeds&#34;&gt;see here for more on seeds&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Priors&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;These define your prior beliefs about the parameters (i.e. &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;) in the model. If you think that the restaurant weekend inspection boost is probably positive, but could possibly be negative, or maybe zero, you can feed that belief into the model. For instance, if you’re fairly confident (based on experiences in other states maybe) that weekend scores really are higher, you can provide an &lt;em&gt;informative&lt;/em&gt; prior that says that &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is most likely 1.5 points ± a little variation, following a normal distribution. Or, if you have no idea what it could be—maybe it’s super high like 10, maybe it’s negative like −5, or maybe it’s 0 and there’s no weekend boost—you can provide a &lt;em&gt;vague&lt;/em&gt; prior that says that &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is 0 points ± a ton of variation.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(patchwork)  # For combining ggplot plots
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;library(patchwork)  # For combining ggplot plots
 
 plot_informative &amp;lt;- ggplot() +
   stat_function(fun = dnorm, args = list(mean = 1.5, sd = 0.5),
@@ -1329,11 +1524,11 @@ plot_informative | plot_vague&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/bayes_files/figure-html/priors-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;For the sake of this example, we’ll use a vague prior.&lt;/p&gt;
 &lt;p&gt;Here’s how to officially do Bayesian analysis with &lt;strong&gt;brms&lt;/strong&gt; and incorporate prior information about &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;. Again, the syntax is super similar to &lt;code&gt;lm()&lt;/code&gt;, just with some extra bits about the prior and the MCMC settings:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(brms)         # For Bayesian regression with brm()
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;library(brms)         # For Bayesian regression with brm()
 library(broom.mixed)  # For tidy() and glance() with brms-based models
 library(tidybayes)    # For extracting posterior draws
 library(ggdist)       # For making pretty posterior plots&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# bf() stands for &amp;quot;bayes formula&amp;quot;; you technically don&amp;#39;t need to use it, but it 
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# bf() stands for &amp;quot;bayes formula&amp;quot;; you technically don&amp;#39;t need to use it, but it 
 # makes life easier for more complex models, so it&amp;#39;s good practice even when 
 # using a simple formula like the one here
 #
@@ -1357,7 +1552,7 @@ model_bayes &amp;lt;- brm(bf(inspection_score ~ Weekend + NumberofLocations + Ye
 ## Compiling Stan program...
 ## Start sampling&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Phew. That took a while to run, but it ran! Now we can check the results:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tidy(model_bayes, conf.int = TRUE)
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;tidy(model_bayes, conf.int = TRUE)
 ## # A tibble: 5 × 8
 ##   effect   component group    term              estimate std.error conf.low conf.high
 ##   &amp;lt;chr&amp;gt;    &amp;lt;chr&amp;gt;     &amp;lt;chr&amp;gt;    &amp;lt;chr&amp;gt;                &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
@@ -1368,7 +1563,7 @@ model_bayes &amp;lt;- brm(bf(inspection_score ~ Weekend + NumberofLocations + Ye
 ## 5 ran_pars cond      Residual sd__Observation     6.04    0.0252     5.99      6.09&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Our estimate for the weekend boost, or &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt;, is 1.44, which is basically the same as the frequentist estimate we found before. We have an interval too, but it’s not a confidence interval—it’s a credible interval. Instead of telling us about the range of the confidence interval net, this credible interval tells us the probability that &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt; falls in that range. It’s essentially the probability of the actual value, not the probability of the range. Based on this, there’s a 95% chance that—given the data we have—the weekend score boost (&lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt;) is between 0.61 and 2.25.&lt;/p&gt;
 &lt;p&gt;We can visualize this posterior distribution to see more information than we could with our frequentist estimate. Remember, our simulation estimated thousands of possible coefficients for &lt;code&gt;WeekendTRUE&lt;/code&gt;, and each of them are equally likely. The value that we see in &lt;code&gt;tidy()&lt;/code&gt; is the median of all these simulated coefficients, or draws. We can see a few of them here:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;model_bayes %&amp;gt;%
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;model_bayes %&amp;gt;%
   spread_draws(b_WeekendTRUE) %&amp;gt;%
   head(10)
 ## # A tibble: 10 × 4
@@ -1385,7 +1580,7 @@ model_bayes &amp;lt;- brm(bf(inspection_score ~ Weekend + NumberofLocations + Ye
 ##  9      1          9     9         1.79 
 ## 10      1         10    10         1.09&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Sometimes the weekend boost is 1.2, sometimes 1.7, sometimes 1.3, etc. There’s a lot of variation in there. We can plot all these simulated coefficients to see where they mostly cluster:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;weekend_draws &amp;lt;- model_bayes %&amp;gt;%
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;weekend_draws &amp;lt;- model_bayes %&amp;gt;%
   spread_draws(b_WeekendTRUE)
 
 ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
@@ -1394,7 +1589,7 @@ ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
 &lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/bayes_files/figure-html/weekend-posterior-halfeye-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;The weekend point boost &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt; is mostly clustered around 1–2, and 95% of those draws are between 0.61 and 2.25. We’re thus 95% sure that the actual weekend point boost is between 0.61 and 2.25 with a median of 1.44.&lt;/p&gt;
 &lt;p&gt;We can also look at this distribution a slightly different way by collapsing all those posterior draws into 100 possible values. Each of these dots is equally likely, and the true value of &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; could be any of them, but again, most are clustered around 1.44:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
   stat_dotsinterval(quantiles = 100) +
   labs(caption = &amp;quot;Point shows median value;\nthick black bar shows 66% credible interval;\nthin black bar shows 95% credible interval&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/bayes_files/figure-html/weekend-posterior-dots-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
@@ -1503,7 +1698,7 @@ People &lt;em&gt;do&lt;/em&gt; naturally think like this
 &lt;h3&gt;Probability of direction&lt;/h3&gt;
 &lt;p&gt;One question we can answer with Bayesian results is “How certain are we that this estimate is positive (or negative)?” Are we sure the weekend scores are higher on average, or could they sometimes be negative? Are we sure that the average treatment effect of your program decreases poverty, or could it maybe have a positive effect instead?&lt;/p&gt;
 &lt;p&gt;To figure this out, we can calculate something called the &lt;a href=&#34;https://easystats.github.io/bayestestR/articles/probability_of_direction.html&#34;&gt;“probability of direction,”&lt;/a&gt; or the proportion of posterior draws that are above (or below) some arbitrary number. For instance, what’s the probability that the weekend boost is positive (or greater than 0)?&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Find the proportion of posterior draws that are bigger than 0
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# Find the proportion of posterior draws that are bigger than 0
 weekend_draws %&amp;gt;% 
   summarize(prop_greater_0 = sum(b_WeekendTRUE &amp;gt; 0) / n())
 ## # A tibble: 1 × 1
@@ -1512,7 +1707,7 @@ weekend_draws %&amp;gt;%
 ## 1           1.00&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Whoa. 99.9% of the posterior draws for the weekend boost are greater than 0, meaning that there’s a 99.9% chance that the coefficient is positive, given the data we have.&lt;/p&gt;
 &lt;p&gt;The neat thing about the probability of direction is that we can choose whatever value we want as the threshold. Let’s say the state health director wants to know if weekend scores are higher than weekday scores, but she’s fine with just a little boost (weekends are nice! inspectors are happier!). Pretend that she thinks an average difference of 1 or lower isn’t a big concern, but seeing a difference greater than 1 is a signal that weekend inspectors are maybe being too lenient. We can use 1 as our threshold instead:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Find the proportion of posterior draws that are bigger than 1
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# Find the proportion of posterior draws that are bigger than 1
 weekend_draws %&amp;gt;% 
   summarize(prop_greater_0 = sum(b_WeekendTRUE &amp;gt; 1) / n())
 ## # A tibble: 1 × 1
@@ -1520,7 +1715,7 @@ weekend_draws %&amp;gt;%
 ##            &amp;lt;dbl&amp;gt;
 ## 1          0.855&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Based on this, 84% of the draws are higher than 1, so there’s an 84% chance that the actual &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is greater than 1. Notice how there’s no discussion of significance here—no alpha thresholds, no stars, no null worlds. We just have a probability that &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt; is above 1. We can even visualize it. Everything to the right of that vertical line at 1 is “significant” (but not significant with null worlds and stars).&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
   stat_halfeye(aes(fill_ramp = stat(x &amp;gt; 1)), fill = &amp;quot;red&amp;quot;) +
   scale_fill_ramp_discrete(from = &amp;quot;darkred&amp;quot;, guide = &amp;quot;none&amp;quot;) +
   geom_vline(xintercept = 1) +
@@ -1534,14 +1729,14 @@ weekend_draws %&amp;gt;%
 &lt;p&gt;Another approach is that we can think of a range of &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; where there’s practically no effect. Think of this as a “dead zone” of sorts. If &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt; is 0, we know there’s no effect. If &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt; is something tiny like 0.2 or -0.3, we probably don’t actually care—that’s a tiny amount and could just be because of measurement error. It’s not anything really actionable. If &lt;span class=&#34;math inline&#34;&gt;\(\hat{\theta}\)&lt;/span&gt; is big like 1.3 or -2.4 or whatever, then we have cause to worry, but if the estimate is in the “dead zone” (however we want to define it), then we shouldn’t really care or worry.&lt;/p&gt;
 &lt;p&gt;The official Bayesian term for this “dead zone” is &lt;a href=&#34;https://easystats.github.io/bayestestR/articles/region_of_practical_equivalence.html&#34;&gt;the &lt;em&gt;region of practical equivalence&lt;/em&gt; (ROPE)&lt;/a&gt;. There are lots of ways to determine this dead zone—you can base it on experience with the phenomenon (e.g., if you’re the health director and know a lot about inspection scores, you know what kind of score ranges matter), or you can base it on the data you have (e.g., &lt;code&gt;-0.1 * sd(outcome)&lt;/code&gt; to &lt;code&gt;0.1 * sd(outcome)&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;For this example, let’s pretend that the health director tells you that any effect between −0.5 and 0.5 doesn’t matter—for her, those kind of values would be the same as 0. Now that we have a dead zone or ROPE, we can calculate the proportion of coefficient draws that fall outside of that ROPE:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Find the proportion of posterior draws that are bigger than 0.5 or less than -0.5
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# Find the proportion of posterior draws that are bigger than 0.5 or less than -0.5
 weekend_draws %&amp;gt;% 
   summarize(prop_outside_rope = 1 - sum(b_WeekendTRUE &amp;gt;= -0.5 &amp;amp; b_WeekendTRUE &amp;lt;= 0.5) / n())
 ## # A tibble: 1 × 1
 ##   prop_outside_rope
 ##               &amp;lt;dbl&amp;gt;
 ## 1             0.986&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
   stat_halfeye(aes(fill_ramp = stat(x &amp;gt;= 0.5 | x &amp;lt;= -0.5)), fill = &amp;quot;red&amp;quot;) +
   scale_fill_ramp_discrete(from = &amp;quot;darkred&amp;quot;, guide = &amp;quot;none&amp;quot;) +
   annotate(geom = &amp;quot;rect&amp;quot;, xmin = -0.5, xmax = 0.5, ymin = -Inf, ymax = Inf, fill = &amp;quot;purple&amp;quot;, alpha = 0.3) +
@@ -1550,7 +1745,7 @@ weekend_draws %&amp;gt;%
 &lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/resource/bayes_files/figure-html/plot-rope-1.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Given this data, 98% of the posterior distribution of the weekend boost is outside of the ROPE, or dead zone, so we can consider this to be “significant” (again, this is a tricky word because it has nothing to do with null worlds and stars!).&lt;/p&gt;
 &lt;p&gt;There are some debates over what you should check with the ROPE. Some people say that you should look at how much of the 95% credible interval is inside the dead zone; other say you should look at how much of the entire distribution is inside the dead zone. We just did the latter, with the whole distribution. If we want to see how much of the area within the credible interval is inside the dead zone, we can change the code a little to filter those observations out:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Extract the 95% confidence interval range
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# Extract the 95% confidence interval range
 weekend_cred_int &amp;lt;- weekend_draws %&amp;gt;% 
   median_hdi()
 weekend_cred_int$.lower
@@ -1569,10 +1764,10 @@ weekend_draws %&amp;gt;%
 &lt;p&gt;If we look only at the 95% credible interval of the posterior, there’s a 0% chance that any of those estimated coefficients are in the dead zone / ROPE. There’s a 100% chance that the credible interval doesn’t touch the ROPE. You can see this visually too—look at the figure above with the purple ROPE. The thin black bar that shows the 95% credible interval doesn’t show up in the purple area.&lt;/p&gt;
 &lt;p&gt;Which approach is better—using full distribution or just using the credible interval? Who knows. That’s up to you.&lt;/p&gt;
 &lt;p&gt;Finally, here we decided on the ROPE kind of arbitrarily as −0.5 to 0.5, but there are more systematic ways of doing it. &lt;a href=&#34;https://easystats.github.io/bayestestR/articles/region_of_practical_equivalence.html#how-to-define-the-rope-range-&#34;&gt;One common and standard suggestion&lt;/a&gt; is to use −0.1 and 0.1 times the standard deviation of the outcome variable:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;c(-0.1, 0.1) * sd(inspections$inspection_score)
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;c(-0.1, 0.1) * sd(inspections$inspection_score)
 ## [1] -0.63  0.63&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Based on this approach, our ROPE/dead zone should be −0.63 to 0.63. Let’s see how that looks:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Find the proportion of posterior draws that are bigger than 0.5 or less than 
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# Find the proportion of posterior draws that are bigger than 0.5 or less than 
 # -0.5, but only look inside the 95% credible interval
 weekend_draws %&amp;gt;% 
   # Only look inside the credible interval
@@ -1582,7 +1777,7 @@ weekend_draws %&amp;gt;%
 ##   prop_outside_rope
 ##               &amp;lt;dbl&amp;gt;
 ## 1                 1&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;ggplot(weekend_draws, aes(x = b_WeekendTRUE)) +
   stat_halfeye(aes(fill_ramp = stat(x &amp;gt;= 0.63 | x &amp;lt;= -0.63)), fill = &amp;quot;red&amp;quot;) +
   scale_fill_ramp_discrete(from = &amp;quot;darkred&amp;quot;, guide = &amp;quot;none&amp;quot;) +
   annotate(geom = &amp;quot;rect&amp;quot;, xmin = -0.63, xmax = 0.63, ymin = -Inf, ymax = Inf, fill = &amp;quot;purple&amp;quot;, alpha = 0.3) +
@@ -1605,9 +1800,6 @@ weekend_draws %&amp;gt;%
 &lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
 &lt;link href=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 
-&lt;div id=&#34;TOC&#34;&gt;
-
-&lt;/div&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; is a special kind of markup language that lets you format text with simple syntax. You can then use a converter program like &lt;a href=&#34;https://pandoc.org/&#34;&gt;pandoc&lt;/a&gt; to convert Markdown into whatever format you want: HTML, PDF, Word, PowerPoint, etc. (&lt;a href=&#34;https://pandoc.org/MANUAL.html#option--to&#34;&gt;see the full list of output types here&lt;/a&gt;)&lt;/p&gt;
 &lt;textarea rows=&#34;1&#34; class=&#34;invisible-text&#34;&gt;Delete this text and start playing with Markdown here!&lt;/textarea&gt;
@@ -2460,9 +2652,6 @@ csl: &amp;quot;https://raw.githubusercontent.com/citation-style-language/styles/
       <description>
 &lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
-&lt;div id=&#34;TOC&#34;&gt;
-
-&lt;/div&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://rmarkdown.rstudio.com/&#34;&gt;R Markdown&lt;/a&gt; is &lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/markdown/&#34;&gt;regular Markdown&lt;/a&gt; with R code and output sprinkled in. You can do everything you can with &lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/markdown/&#34;&gt;regular Markdown&lt;/a&gt;, but you can incorporate graphs, tables, and other R output directly in your document. You can create HTML, PDF, and Word documents, PowerPoint and HTML presentations, websites, books, and even &lt;a href=&#34;https://rmarkdown.rstudio.com/flexdashboard/index.html&#34;&gt;interactive dashboards&lt;/a&gt; with R Markdown. This whole course website is created with R Markdown (and &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;a package named &lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;The &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34;&gt;documentation for R Markdown&lt;/a&gt; is extremely comprehensive, and their &lt;a href=&#34;https://rmarkdown.rstudio.com/lesson-1.html&#34;&gt;tutorials&lt;/a&gt; and &lt;a href=&#34;https://rmarkdown.rstudio.com/lesson-15.html&#34;&gt;cheatsheets&lt;/a&gt; are excellent—rely on those.&lt;/p&gt;
@@ -2478,7 +2667,7 @@ csl: &amp;quot;https://raw.githubusercontent.com/citation-style-language/styles/
 &lt;p&gt;There must be an empty line before and after the chunk. The final three backticks must be the only thing on the line—if you add more text, or if you forget to add the backticks, or accidentally delete the backticks, your document will not knit correctly.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Knit&lt;/strong&gt;: When you “knit” a document, R runs each of the chunks sequentially and converts the output of each chunk into Markdown. R then runs the knitted document through &lt;a href=&#34;https://pandoc.org/&#34;&gt;pandoc&lt;/a&gt; to convert it to HTML or PDF or Word (or whatever output you’ve selected).&lt;/p&gt;
 &lt;p&gt;You can knit by clicking on the “Knit” button at the top of the editor window, or by pressing &lt;code&gt;⌘⇧K&lt;/code&gt; on macOS or &lt;code&gt;control + shift + K&lt;/code&gt; on Windows.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/assignments/knit-button.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/assignments/knit-button.png&#34; width=&#34;30%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;add-chunks&#34; class=&#34;section level2&#34;&gt;
@@ -2487,14 +2676,14 @@ csl: &amp;quot;https://raw.githubusercontent.com/citation-style-language/styles/
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Press &lt;code&gt;⌘⌥I&lt;/code&gt; on macOS or &lt;code&gt;control + alt + I&lt;/code&gt; on Windows&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Click on the “Insert” button at the top of the editor window&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/reference/insert-chunk.png&#34; width=&#34;30%&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/reference/insert-chunk.png&#34; width=&#34;30%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Manually type all the backticks and curly braces (don’t do this)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;chunk-names&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Chunk names&lt;/h2&gt;
 &lt;p&gt;You can add names to chunks to make it easier to navigate your document. If you click on the little dropdown menu at the bottom of your editor in RStudio, you can see a table of contents that shows all the headings and chunks. If you name chunks, they’ll appear in the list. If you don’t include a name, the chunk will still show up, but you won’t know what it does.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/reference/chunk-toc.png&#34; width=&#34;40%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/reference/chunk-toc.png&#34; width=&#34;40%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;To add a name, include it immediately after the &lt;code&gt;{r&lt;/code&gt; in the first line of the chunk. Names cannot contain spaces, but they can contain underscores and dashes. &lt;strong&gt;All chunk names in your document must be unique.&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&#34;markdown&#34;&gt;&lt;code&gt;```{r name-of-this-chunk}
 # Code goes here
@@ -2504,9 +2693,9 @@ csl: &amp;quot;https://raw.githubusercontent.com/citation-style-language/styles/
 &lt;h2&gt;Chunk options&lt;/h2&gt;
 &lt;p&gt;There are a bunch of different options you can set for each chunk. You can see a complete list in the &lt;a href=&#34;https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf&#34;&gt;RMarkdown Reference Guide&lt;/a&gt; or at &lt;a href=&#34;https://yihui.org/knitr/options/&#34;&gt;&lt;strong&gt;knitr&lt;/strong&gt;’s website&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Options go inside the &lt;code&gt;{r}&lt;/code&gt; section of the chunk:&lt;/p&gt;
-&lt;pre class=&#34;markdown&#34;&gt;&lt;code&gt;```{r name-of-this-chunk, warning=FALSE, message=FALSE}
+&lt;pre class=&#34;markdown language-markdown&#34;&gt;&lt;code&gt;`r &amp;#39;&amp;#39;````{r name-of-this-chunk, warning=FALSE, message=FALSE}
 # Code goes here
-```&lt;/code&gt;&lt;/pre&gt;
+`&amp;#39;&amp;#39;````&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The most common chunk options are these:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;fig.width=5&lt;/code&gt; and &lt;code&gt;fig.height=3&lt;/code&gt; (&lt;em&gt;or whatever number you want&lt;/em&gt;): Set the dimensions for figures&lt;/li&gt;
@@ -2516,7 +2705,7 @@ csl: &amp;quot;https://raw.githubusercontent.com/citation-style-language/styles/
 &lt;li&gt;&lt;code&gt;include=FALSE&lt;/code&gt;: The chunk still runs, but the code and results are not included in the final document&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You can also set chunk options by clicking on the little gear icon in the top right corner of any chunk:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/reference/chunk-options.png&#34; width=&#34;70%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/reference/chunk-options.png&#34; width=&#34;70%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;inline-chunks&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Inline chunks&lt;/h2&gt;
@@ -2541,7 +2730,7 @@ output:
   pdf_document: default
   word_document: default&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You can also click on the down arrow on the “Knit” button to choose the output &lt;em&gt;and&lt;/em&gt; generate the appropriate YAML. If you click on the gear icon next to the “Knit” button and choose “Output options”, you change settings for each specific output type, like default figure dimensions or whether or not a table of contents is included.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/reference/output-options.png&#34; width=&#34;35%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/img/reference/output-options.png&#34; width=&#34;35%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;The first output type listed under &lt;code&gt;output:&lt;/code&gt; will be what is generated when you click on the “Knit” button or press the keyboard shortcut (&lt;code&gt;⌘⇧K&lt;/code&gt; on macOS; &lt;code&gt;control + shift + K&lt;/code&gt; on Windows). If you choose a different output with the “Knit” button menu, that output will be moved to the top of the &lt;code&gt;output&lt;/code&gt; section.&lt;/p&gt;
 &lt;p&gt;The indentation of the YAML section matters, especially when you have settings nested under each output type. Here’s what a typical &lt;code&gt;output&lt;/code&gt; section might look like:&lt;/p&gt;
 &lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;---

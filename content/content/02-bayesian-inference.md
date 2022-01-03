@@ -13,6 +13,12 @@ type: docs
 weight: 2
 ---
 
+## Zoom
+
+<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i> Zoom Link</a>: 12:00pm - 2:45pm, January 24, 2022
+
+## Required Readings
+
 {{< icon name="book" pack="fas" >}} [Chapter 1: The Golem of Prague Data](http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf)
 
 {{< icon name="book" pack="fas" >}} [Chapter 2: The Garden of Forking Data](http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf)
@@ -25,11 +31,11 @@ weight: 2
 
 ### Lecture 1
 
-{{< youtube 4WVelCswXo4 >}}
+{{< youtube cclUd_HoRlo >}}
 
 <br>
 
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/c63892105b90479bb8827c9afcf5ad76" title="L01 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;" data-ratio="1.3333333333333333"></iframe>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/075b46c0223d495d89692fc22077b394" title="Statistical Rethinking 2022 Lecture 01" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
 <br>
 
@@ -80,7 +86,7 @@ weight: 2
 
 3. They help us to spot **highly influential observations**.
 
-- We will cover these topics in Lesson 8.
+- We will cover these topics later in the semester.
 
 {{% /spoiler %}}
 
@@ -94,7 +100,7 @@ weight: 2
 
 ## Deliverables
 
-Due before class: Monday, January 31 at 11:59am 
+Due before class: Monday, January 24 at 11:59am 
 
 <a href="https://forms.gle/zMipNzav3BCL3Rwy9"><i class="fas fa-comment fa-lg"></i>  Class Feedback</a>
 
@@ -102,6 +108,6 @@ Due before class: Monday, January 31 at 11:59am
 
 ## Problem Set 1
 
-Due by next class: Monday, February 7 at 11:59am
+Due by next class: Monday, January 31 at 11:59am
 
 <a href="{{ .Site.baseurl }}/assignment/01-problem-set"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / [Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1415432)

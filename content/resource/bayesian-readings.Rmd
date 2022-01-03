@@ -25,8 +25,8 @@ Only for diehards : <i class="fas fa-star"></i> <br>
 
 - <i class="fas fa-book"></i> [Probability theory: The logic of science](https://bayes.wustl.edu/etj/prob/book.pdf) [@jaynes2003probability] <i class="fas fa-star"></i>
 
-- <i class="fas fa-newspaper"></i> [Frequentism and Bayesianism: A Python-driven
-Primer](https://arxiv.org/pdf/1411.5018.pdf) [@vanderplas2014frequentism] <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+- <i class="fas fa-newspaper"></i> <a href="http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro/"><i class="fas fa-blog"></i></a> [Frequentism and Bayesianism: A Python-driven
+Primer](https://arxiv.org/pdf/1411.5018.pdf) [@vanderplas2014frequentism] <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> 
 
 - <i class="fas fa-blog"></i> [My Journey From Frequentist to Bayesian Statistics](https://www.fharrell.com/post/journey/) [@harrell_2021] <i class="fas fa-star"></i> <i class="fas fa-star"></i>
 
@@ -51,6 +51,10 @@ Primer](https://arxiv.org/pdf/1411.5018.pdf) [@vanderplas2014frequentism] <i cla
 ## Bayes in Practice
 
 - <i class="fas fa-blog"></i> [A guide to working with country-year panel data and Bayesian multilevel models](https://www.andrewheiss.com/blog/2021/12/01/multilevel-models-panel-data-guide/) [@heiss2021] <i class="fas fa-star"></i>
+
+<!-- https://betanalpha.github.io/assets/case_studies/modeling_sparsity.html#1_Fading_into_Irrelevance
+
+-->
 
 ## DAGs / Causal Inference
 

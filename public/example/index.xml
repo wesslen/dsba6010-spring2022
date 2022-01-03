@@ -5,25 +5,389 @@
     <link>https://dsba6010-spring2022.netlify.app/example/</link>
       <atom:link href="https://dsba6010-spring2022.netlify.app/example/index.xml" rel="self" type="application/rss+xml" />
     <description>Code examples</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 02 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png</url>
+      <url>https://dsba6010-spring2022.netlify.app/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_512x512_fill_lanczos_center_3.png</url>
       <title>Code examples</title>
       <link>https://dsba6010-spring2022.netlify.app/example/</link>
     </image>
     
     <item>
+      <title>Class 1</title>
+      <link>https://dsba6010-spring2022.netlify.app/example/01-class/</link>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://dsba6010-spring2022.netlify.app/example/01-class/</guid>
+      <description>
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/clipboard/clipboard.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34;Copy Code&#34;,&#34;success&#34;:&#34;Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl+C to Copy&#34;})&lt;/script&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/font-awesome/js/script.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;a href=&#34;data:text/x-markdown;base64,LS0tCmRhdGU6ICJgciBTeXMuRGF0ZSgpYCIKdGl0bGU6ICJDbGFzcyAxIgptZW51OgogIGV4YW1wbGU6CiAgICBwYXJlbnQ6IEV4YW1wbGVzCndlaWdodDogMQp0eXBlOiBkb2NzCi0tLQoKYGBge3Igc2V0dXAsIGluY2x1ZGU9RkFMU0V9CmtuaXRyOjpvcHRzX2NodW5rJHNldChlY2hvID0gVFJVRSwgY2xhc3Muc291cmNlPSJsYW5ndWFnZS1yIiwgY2xhc3Mub3V0cHV0PSJsYW5ndWFnZS1yIiwgbWVzc2FnZSA9IEZBTFNFLCB3YXJuaW5nID0gRkFMU0UpCnhhcmluZ2FuRXh0cmE6OnVzZV9jbGlwYm9hcmQoKQpsaWJyYXJ5KHJldGhpbmtpbmcpCmBgYAoKYGBge3IgZWNobz1GQUxTRX0KZG93bmxvYWR0aGlzOjpkb3dubG9hZF9maWxlKAogIHBhdGggPSAiMDEtY2xhc3MuUm1kIiwKICBvdXRwdXRfbmFtZSA9ICIwMS1jbGFzcyIsCiAgYnV0dG9uX2xhYmVsID0gIkRvd25sb2FkIHRoaXMgY29kZSIsCiAgYnV0dG9uX3R5cGUgPSAiZGFuZ2VyIiwKICBoYXNfaWNvbiA9IFRSVUUsCiAgaWNvbiA9ICJmYSBmYS1zYXZlIiwKICBzZWxmX2NvbnRhaW5lZCA9IEZBTFNFCikKYGBgCgoKIyMgSW50cm9kdWN0aW9uCgpGb3IgdGhpcyBjbGFzcywgd2UnbGwgcmV2aWV3IGNvZGUgZXhhbXBsZXMgZm91bmQgaW4gdGhlIFByZWZhY2UuCgpUaGlzIGFzc3VtZXMgdGhhdCB5b3UgaGF2ZSBhbHJlYWR5IGluc3RhbGxlZCB0aGUgYHJldGhpbmtpbmdgIHBhY2thZ2UuCgpJZiB5b3UgbmVlZCBoZWxwLCBiZSBzdXJlIHRvIHJlbWVtYmVyIHRoZSByZWZlcmVuY2VzIGluIHRoZSBbUmVzb3VyY2VzXSgvcmVzb3VyY2UvKToKCiogW0luc3RhbGxpbmcgUi9SU3R1ZGlvXSgvcmVzb3VyY2UvaW5zdGFsbC8pCiogW0luc3RhbGxpbmcgYHJldGhpbmtpbmdgIHBhY2thZ2VdKC9yZXNvdXJjZS9pbnN0YWxsLXJldGhpbmtpbmcvKQoqIFtSbWFya2Rvd25dKC9yZXNvdXJjZS9ybWFya2Rvd24vKQoqIFtSIFN0eWxlIGd1aWRlXSgvcmVzb3VyY2Uvc3R5bGUvKQoKIyMjIFIgUHJpbmNpcGxlcwoKYGBge3J9CiMjIFIgY29kZSAwLjEKcHJpbnQoICJBbGwgbW9kZWxzIGFyZSB3cm9uZywgYnV0IHNvbWUgYXJlIHVzZWZ1bC4iICkKYGBgCgpgYGB7cn0KIyMgUiBjb2RlIDAuMgp4IDwtIDE6Mgp4IDwtIHgqMTAKeCA8LSBsb2coeCkKeCA8LSBzdW0oeCkKeCA8LSBleHAoeCkKeApgYGAKCmBgYHtyfQojIyBSIGNvZGUgMC4zCiggbG9nKCAwLjAxXjIwMCApICkKKCAyMDAgKiBsb2coMC4wMSkgKQpgYGAKCmBgYHtyfQojIyBSIGNvZGUgMC40CiMgTG9hZCB0aGUgZGF0YToKIyBjYXIgYnJha2luZyBkaXN0YW5jZXMgaW4gZmVldCBwYWlyZWQgd2l0aCBzcGVlZHMgaW4ga20vaAojIHNlZSA/Y2FycyBmb3IgZGV0YWlscwpkYXRhKGNhcnMpCmBgYAoKYGBge3J9CiMgZml0IGEgbGluZWFyIHJlZ3Jlc3Npb24gb2YgZGlzdGFuY2Ugb24gc3BlZWQKbSA8LSBsbSggZGlzdCB+IHNwZWVkICwgZGF0YT1jYXJzICkKCiMgZXN0aW1hdGVkIGNvZWZmaWNpZW50cyBmcm9tIHRoZSBtb2RlbApjb2VmKG0pCmBgYAoKYGBge3J9CiMgcGxvdCByZXNpZHVhbHMgYWdhaW5zdCBzcGVlZApwbG90KCByZXNpZChtKSB+IHNwZWVkICwgZGF0YT1jYXJzICkKYGBgCgojIyBQYWNrYWdlIHZlcnNpb25zCgpgYGB7cn0Kc2Vzc2lvbkluZm8oKQpgYGA=&#34; download=&#34;01-class.Rmd&#34;&gt;
+&lt;button class=&#34;btn btn-danger&#34;&gt;&lt;i class=&#34;fa fa-save&#34;&gt;&lt;/i&gt; Download this code&lt;/button&gt;
+&lt;/a&gt;
+&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;For this class, we’ll review code examples found in the Preface.&lt;/p&gt;
+&lt;p&gt;This assumes that you have already installed the &lt;code&gt;rethinking&lt;/code&gt; package.&lt;/p&gt;
+&lt;p&gt;If you need help, be sure to remember the references in the &lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/&#34;&gt;Resources&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/install/&#34;&gt;Installing R/RStudio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking/&#34;&gt;Installing &lt;code&gt;rethinking&lt;/code&gt; package&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/rmarkdown/&#34;&gt;Rmarkdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/style/&#34;&gt;R Style guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;r-principles&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;R Principles&lt;/h3&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;## R code 0.1
+print( &amp;quot;All models are wrong, but some are useful.&amp;quot; )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;language-r&#34;&gt;&lt;code&gt;## [1] &amp;quot;All models are wrong, but some are useful.&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;## R code 0.2
+x &amp;lt;- 1:2
+x &amp;lt;- x*10
+x &amp;lt;- log(x)
+x &amp;lt;- sum(x)
+x &amp;lt;- exp(x)
+x&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;language-r&#34;&gt;&lt;code&gt;## [1] 200&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;## R code 0.3
+( log( 0.01^200 ) )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;language-r&#34;&gt;&lt;code&gt;## [1] -Inf&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;( 200 * log(0.01) )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;language-r&#34;&gt;&lt;code&gt;## [1] -921.034&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;## R code 0.4
+# Load the data:
+# car braking distances in feet paired with speeds in km/h
+# see ?cars for details
+data(cars)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# fit a linear regression of distance on speed
+m &amp;lt;- lm( dist ~ speed , data=cars )
+
+# estimated coefficients from the model
+coef(m)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;language-r&#34;&gt;&lt;code&gt;## (Intercept)       speed 
+##  -17.579095    3.932409&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# plot residuals against speed
+plot( resid(m) ~ speed , data=cars )&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/example/01-class_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;package-versions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Package versions&lt;/h2&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;sessionInfo()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;language-r&#34;&gt;&lt;code&gt;## R version 4.1.1 (2021-08-10)
+## Platform: aarch64-apple-darwin20 (64-bit)
+## Running under: macOS Monterey 12.0.1
+## 
+## Matrix products: default
+## BLAS:   /Library/Frameworks/R.framework/Versions/4.1-arm64/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.1-arm64/Resources/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] parallel  stats     graphics  grDevices datasets  utils     methods  
+## [8] base     
+## 
+## other attached packages:
+## [1] rethinking_2.13      rstan_2.21.2         ggplot2_3.3.5       
+## [4] StanHeaders_2.21.0-7
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_1.0.7          lubridate_1.8.0     mvtnorm_1.1-3      
+##  [4] lattice_0.20-44     prettyunits_1.1.1   ps_1.6.0           
+##  [7] assertthat_0.2.1    digest_0.6.29       utf8_1.2.2         
+## [10] V8_3.6.0            mime_0.12           R6_2.5.1           
+## [13] stats4_4.1.1        evaluate_0.14       coda_0.19-4        
+## [16] highr_0.9           blogdown_1.5        pillar_1.6.4       
+## [19] bsplus_0.1.3        rlang_0.4.12        curl_4.3.2         
+## [22] uuid_1.0-3          rstudioapi_0.13     callr_3.7.0        
+## [25] jquerylib_0.1.4     rmarkdown_2.11      xaringanExtra_0.5.5
+## [28] stringr_1.4.0       loo_2.4.1           munsell_0.5.0      
+## [31] compiler_4.1.1      xfun_0.28           base64enc_0.1-3    
+## [34] pkgconfig_2.0.3     pkgbuild_1.3.0      shape_1.4.6        
+## [37] htmltools_0.5.2     tidyselect_1.1.1    tibble_3.1.6       
+## [40] gridExtra_2.3       bookdown_0.24       codetools_0.2-18   
+## [43] matrixStats_0.61.0  fansi_0.5.0         crayon_1.4.2       
+## [46] dplyr_1.0.7         withr_2.4.3         MASS_7.3-54        
+## [49] grid_4.1.1          jsonlite_1.7.2      gtable_0.3.0       
+## [52] lifecycle_1.0.1     DBI_1.1.1           magrittr_2.0.1     
+## [55] scales_1.1.1        RcppParallel_5.1.4  cli_3.1.0          
+## [58] stringi_1.7.6       renv_0.14.0         fs_1.5.0           
+## [61] bslib_0.3.1         ellipsis_0.3.2      generics_0.1.1     
+## [64] vctrs_0.3.8         tools_4.1.1         glue_1.5.1         
+## [67] purrr_0.3.4         processx_3.5.2      fastmap_1.1.0      
+## [70] yaml_2.2.1          inline_0.3.19       colorspace_2.0-2   
+## [73] downloadthis_0.2.1  knitr_1.36          sass_0.4.0&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Class 2</title>
+      <link>https://dsba6010-spring2022.netlify.app/example/02-class/</link>
+      <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://dsba6010-spring2022.netlify.app/example/02-class/</guid>
+      <description>
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/clipboard/clipboard.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34;Copy Code&#34;,&#34;success&#34;:&#34;Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl+C to Copy&#34;})&lt;/script&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/font-awesome/js/script.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;a href=&#34;data:text/x-markdown;base64,LS0tCmRhdGU6ICJgciBTeXMuRGF0ZSgpYCIKdGl0bGU6ICJDbGFzcyAyIgptZW51OgogIGV4YW1wbGU6CiAgICBwYXJlbnQ6IEV4YW1wbGVzCndlaWdodDogMgp0eXBlOiBkb2NzCi0tLQoKYGBge3Igc2V0dXAsIGluY2x1ZGU9RkFMU0V9CmtuaXRyOjpvcHRzX2NodW5rJHNldChlY2hvID0gVFJVRSwgY2xhc3Muc291cmNlPSJsYW5ndWFnZS1yIiwgY2xhc3Mub3V0cHV0PSJsYW5ndWFnZS1yIiwgbWVzc2FnZSA9IEZBTFNFLCB3YXJuaW5nID0gRkFMU0UpCnhhcmluZ2FuRXh0cmE6OnVzZV9jbGlwYm9hcmQoKQpsaWJyYXJ5KHJldGhpbmtpbmcpCmBgYAoKCmBgYHtyIGVjaG89RkFMU0V9CmRvd25sb2FkdGhpczo6ZG93bmxvYWRfZmlsZSgKICBwYXRoID0gIjAyLWNsYXNzLlJtZCIsCiAgb3V0cHV0X25hbWUgPSAiMDItY2xhc3MiLAogIGJ1dHRvbl9sYWJlbCA9ICJEb3dubG9hZCB0aGlzIGNvZGUiLAogIGJ1dHRvbl90eXBlID0gImRhbmdlciIsCiAgaGFzX2ljb24gPSBUUlVFLAogIGljb24gPSAiZmEgZmEtc2F2ZSIsCiAgc2VsZl9jb250YWluZWQgPSBGQUxTRQopCmBgYAoKIyMgSW50cm9kdWN0aW9uCgpGb3IgdGhpcyBjbGFzcywgd2UnbGwgcmV2aWV3IGNvZGUgZXhhbXBsZXMgZm91bmQgaW4gQ2hhcHRlciAyLgoKVGhpcyBhc3N1bWVzIHRoYXQgeW91IGhhdmUgYWxyZWFkeSBpbnN0YWxsZWQgdGhlIGByZXRoaW5raW5nYCBwYWNrYWdlLgoKSWYgeW91IG5lZWQgaGVscCwgYmUgc3VyZSB0byByZW1lbWJlciB0aGUgcmVmZXJlbmNlcyBpbiB0aGUgW1Jlc291cmNlc10oL3Jlc291cmNlLyk6CgoqIFtJbnN0YWxsaW5nIFIvUlN0dWRpb10oL3Jlc291cmNlL2luc3RhbGwvKQoqIFtJbnN0YWxsaW5nIGByZXRoaW5raW5nYCBwYWNrYWdlXSgvcmVzb3VyY2UvaW5zdGFsbC1yZXRoaW5raW5nLykKKiBbUm1hcmtkb3duXSgvcmVzb3VyY2Uvcm1hcmtkb3duLykKKiBbUiBTdHlsZSBndWlkZV0oL3Jlc291cmNlL3N0eWxlLykKCiMjIyBCYXllc2lhbiBVcGRhdGluZzogR3JpZCBBcHByb3hpbWF0aW9uCgpMZXQncyBhc3N1bWUgd2UgaGF2ZSB0aGUgdGFibGUgaW4gMi4xCgpgYGB7cn0KIyMgUiBjb2RlIDIuMQp3YXlzIDwtIGMoIDAgLCAzICwgOCAsIDkgLCAwICkKd2F5cy9zdW0od2F5cykKYGBgCgpMZXQncyBjb21wdXRlIHRoZSBsaWtlbGlob29kIG9mIHNpeCBXJ3MgaW4gbmluZSB0b3NzZXMgKGFzc3VtaW5nIGEgNTAlIHByb2JhYmlsaXR5KToKCmBgYHtyfQojIyBSIGNvZGUgMi4yCmRiaW5vbSggNiAsIHNpemU9OSAsIHByb2I9MC41ICkKYGBgCgpXZSBjYW4gc2VlIGl0J3MgMTYuNCUuCgpCZSBzdXJlIHRvIGV4YW1pbmUgdGhlIGBkYmlub21gIGZ1bmN0aW9uIGJ5IHR5cGluZyBpbiBgP2RiaW5vbWAgYW5kIGV4cGxvcmluZyB0aGUgZG9jdW1lbnRhdGlvbi4gV2UnbGwgdXNlIHRoaXMgZnVuY3Rpb24gYSBsb3QgaW4gdGhpcyBjbGFzcy4KCk5leHQsIGxldCdzIGRlZmluZSBhIGdyaWQuIFRoaXMgaXMgcmVxdWlyZWQgd2hlbiB3ZSBhcmUgdXNpbmcgR3JpZCBBcHByb3hpbWF0aW9uIGZvciBvdXIgQmF5ZXNpYW4gY2FsY3VsYXRpb25zIChpLmUuLCB0byBlc3RpbWF0ZSB0aGUgcG9zdGVyaW9yKS4KCmBgYHtyfQojIyBSIGNvZGUgMi4zCiMgZGVmaW5lIGdyaWQKcF9ncmlkIDwtIHNlcSggZnJvbT0wICwgdG89MSAsIGxlbmd0aC5vdXQ9MjAgKQoKcF9ncmlkCmBgYAoKTm90aWNlIHRoYXQgdGhpcyBmdW5jdGlvbiBjcmVhdGVzIGEgdmVjdG9yIHdpdGggbGVuZ3RoIDIwIGFuZCB0aGF0IHJhbmdlcyBmcm9tIDAgdG8gMS4gTm90ZSBhcyB3ZWxsIHRoYXQgZWFjaCB2ZWN0b3IgZWxlbWVudCBpcyBldmVubHkgc3BhY2VkIGluIGluY3JlbWVudHMgb2YgYCh0byAtIGZyb20pLyhsZW5ndGgub3V0IC0gMSlgLgoKVGhpbmsgYWJvdXQgdGhlIHRyYWRlLW9mZiBiZXR3ZWVuIGhhdmluZyBhIHNtYWxsZXIgb3IgbGFyZ2VyIGBsZW5ndGgub3V0YC4KCk5leHQsIGxldCdzIGRlZmluZSBvdXIgcHJpb3IuIFdlJ2xsIGFzc3VtZSBhICJmbGF0IiBwcmlvci4gCgpgYGB7cn0KIyBkZWZpbmUgcHJpb3IKcHJpb3IgPC0gcmVwKCAxICwgMjAgKQoKcHJpb3IKYGBgCgpgYGB7cn0KIyBjb21wdXRlIGxpa2VsaWhvb2QgYXQgZWFjaCB2YWx1ZSBpbiBncmlkCmxpa2VsaWhvb2QgPC0gZGJpbm9tKCA2ICwgc2l6ZT05ICwgcHJvYj1wX2dyaWQgKQoKbGlrZWxpaG9vZApgYGAKCmBgYHtyfQojIGNvbXB1dGUgcHJvZHVjdCBvZiBsaWtlbGlob29kIGFuZCBwcmlvcgp1bnN0ZC5wb3N0ZXJpb3IgPC0gbGlrZWxpaG9vZCAqIHByaW9yCgp1bnN0ZC5wb3N0ZXJpb3IKYGBgCgpgYGB7cn0KIyBzdGFuZGFyZGl6ZSB0aGUgcG9zdGVyaW9yLCBzbyBpdCBzdW1zIHRvIDEKcG9zdGVyaW9yIDwtIHVuc3RkLnBvc3RlcmlvciAvIHN1bSh1bnN0ZC5wb3N0ZXJpb3IpCgpwb3N0ZXJpb3IKYGBgCgpgYGB7cn0KIyMgUiBjb2RlIDIuNApwbG90KCBwX2dyaWQgLCBwb3N0ZXJpb3IgLCB0eXBlPSJiIiAsCiAgICB4bGFiPSJwcm9iYWJpbGl0eSBvZiB3YXRlciIgLCB5bGFiPSJwb3N0ZXJpb3IgcHJvYmFiaWxpdHkiICkKbXRleHQoICIyMCBwb2ludHMiICkKYGBgCldoYXQgaGFwcGVucyBpZiB3ZSBhbHRlciB0aGUgcHJpb3JzPyBXaGF0IHdpbGwgYmUgdGhlIG5ldyBwb3N0ZXJpb3JzPwoKYGBge3J9CiMjIFIgY29kZSAyLjUKcHJpb3IgPC0gaWZlbHNlKCBwX2dyaWQgPCAwLjUgLCAwICwgMSApCnByaW9yIDwtIGV4cCggLTUqYWJzKCBwX2dyaWQgLSAwLjUgKSApCmBgYAoKIyMjIEJheWVzaWFuIFVwZGF0aW5nOiBRdWFkcmF0aWMgQXBwcm94aW1hdGlvbgoKYGBge3J9CiMjIFIgY29kZSAyLjYKbGlicmFyeShyZXRoaW5raW5nKQpnbG9iZS5xYSA8LSBxdWFwKAogICAgYWxpc3QoCiAgICAgICAgVyB+IGRiaW5vbSggVytMICxwKSAsICAjIGJpbm9taWFsIGxpa2VsaWhvb2QKICAgICAgICBwIH4gZHVuaWYoMCwxKSAgICAgIyB1bmlmb3JtIHByaW9yCiAgICApICwKICAgIGRhdGE9bGlzdChXPTYsTD0zKSApCgojIGRpc3BsYXkgc3VtbWFyeSBvZiBxdWFkcmF0aWMgYXBwcm94aW1hdGlvbgpwcmVjaXMoIGdsb2JlLnFhICkKYGBgCgpgYGB7cn0KIyMgUiBjb2RlIDIuNwojIGFuYWx5dGljYWwgY2FsY3VsYXRpb24KVyA8LSA2CkwgPC0gMwpjdXJ2ZSggZGJldGEoIHggLCBXKzEgLCBMKzEgKSAsIGZyb209MCAsIHRvPTEgKQojIHF1YWRyYXRpYyBhcHByb3hpbWF0aW9uCmN1cnZlKCBkbm9ybSggeCAsIDAuNjcgLCAwLjE2ICkgLCBsdHk9MiAsIGFkZD1UUlVFICkKYGBgCgoKYGBge3J9CiMjIFIgY29kZSAyLjgKbl9zYW1wbGVzIDwtIDEwMDAKcCA8LSByZXAoIE5BICwgbl9zYW1wbGVzICkKcFsxXSA8LSAwLjUKVyA8LSA2CkwgPC0gMwpmb3IgKCBpIGluIDI6bl9zYW1wbGVzICkgewogICAgcF9uZXcgPC0gcm5vcm0oIDEgLCBwW2ktMV0gLCAwLjEgKQogICAgaWYgKCBwX25ldyA8IDAgKSBwX25ldyA8LSBhYnMoIHBfbmV3ICkKICAgIGlmICggcF9uZXcgPiAxICkgcF9uZXcgPC0gMiAtIHBfbmV3CiAgICBxMCA8LSBkYmlub20oIFcgLCBXK0wgLCBwW2ktMV0gKQogICAgcTEgPC0gZGJpbm9tKCBXICwgVytMICwgcF9uZXcgKQogICAgcFtpXSA8LSBpZmVsc2UoIHJ1bmlmKDEpIDwgcTEvcTAgLCBwX25ldyAsIHBbaS0xXSApCn0KCiMjIFIgY29kZSAyLjkKZGVucyggcCAsIHhsaW09YygwLDEpICkKY3VydmUoIGRiZXRhKCB4ICwgVysxICwgTCsxICkgLCBsdHk9MiAsIGFkZD1UUlVFICkKYGBgCgojIyMgYHRpZHl2ZXJzZWAgY29udmVyc2lvbgoKU3RhdGlzdGljYWwgUmV0aGlua2luZyB1c2VzIGJhc2UgUiBmdW5jdGlvbnMuIE1vcmUgcmVjZW50bHksIFNvbG9tYW4gS3VyeiBoYXMgY3JlYXRlZCBhIFt0cmFuc2xhdGlvbiBvZiB0aGUgYm9vaydzIGZ1bmN0aW9uc10oaHR0cHM6Ly9ib29rZG93bi5vcmcvY29udGVudC80ODU3LykgaW50byBgdGlkeXZlcnNlYCAoYW5kIGxhdGVyIGBicm1zYCkgY29kZS4gVGhpcyBpcyBub3QgbmVjZXNzYXJ5IGJ1dCBjb3VsZCBiZSBleHRyZW1lbHkgaGVscGZ1bCB0byBjbGFzc21hdGVzIHdobyBhcmUgZmFtaWxpYXIgd2l0aCBgdGlkeXZlcnNlYCBhbHJlYWR5LgoKRmlyc3QsIHdlJ2xsIG5lZWQgdG8gY2FsbCBgdGlkeXZlcnNlYC4gSWYgeW91IGRvIG5vdCBoYXZlIGB0aWR5dmVyc2VgLCB5b3UnbGwgbmVlZCB0byBpbnN0YWxsIGl0LgoKYGBge3J9CmxpYnJhcnkodGlkeXZlcnNlKQpgYGAKCgpGb3IgZXhhbXBsZSwgd2UgY2FuIHRyYW5zbGF0ZSAyLjMgY29kZSB1c2luZyBwaXBlcyAoYCU+JWApCgpgYGB7cn0KZCA8LSB0aWJibGUocF9ncmlkID0gc2VxKGZyb20gPSAwLCB0byA9IDEsIGxlbmd0aC5vdXQgPSAyMCksICAgICAgIyBkZWZpbmUgZ3JpZAogICAgICAgICAgIHByaW9yICA9IDEpICU+JSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMgZGVmaW5lIHByaW9yCiAgICBtdXRhdGUobGlrZWxpaG9vZCA9IGRiaW5vbSg2LCBzaXplID0gOSwgcHJvYiA9IHBfZ3JpZCkpICU+JSAgIyBjb21wdXRlIGxpa2VsaWhvb2QgYXQgZWFjaCB2YWx1ZSBpbiBncmlkCiAgICBtdXRhdGUodW5zdGRfcG9zdGVyaW9yID0gbGlrZWxpaG9vZCAqIHByaW9yKSAlPiUgICAgICAgICAgICAgIyBjb21wdXRlIHByb2R1Y3Qgb2YgbGlrZWxpaG9vZCBhbmQgcHJpb3IKICAgIG11dGF0ZShwb3N0ZXJpb3IgPSB1bnN0ZF9wb3N0ZXJpb3IgLyBzdW0odW5zdGRfcG9zdGVyaW9yKSkgCgpkCmBgYApXaXRoIHRoaXMgY2FsY3VsYXRlZCwgd2UgY2FuIHRoZW4gdXNlIGBnZ3Bsb3QyYCwgdGhlIHN0YXBsZSBgZ2dwbG90MmAgZGF0YSB2aXN1YWxpemF0aW9uIHBhY2thZ2UsIHRvIHBsb3Qgb3VyIHBvc3Rlcmlvci4KCmBgYHtyfQpkICU+JSAKICBnZ3Bsb3QoYWVzKHggPSBwX2dyaWQsIHkgPSBwb3N0ZXJpb3IpKSArCiAgZ2VvbV9wb2ludCgpICsKICBnZW9tX2xpbmUoKSArCiAgbGFicyhzdWJ0aXRsZSA9ICIyMCBwb2ludHMiLAogICAgICAgeCA9ICJwcm9iYWJpbGl0eSBvZiB3YXRlciIsCiAgICAgICB5ID0gInBvc3RlcmlvciBwcm9iYWJpbGl0eSIpICsKICB0aGVtZShwYW5lbC5ncmlkID0gZWxlbWVudF9ibGFuaygpKQpgYGAKCkZvciB0aGlzIGNsYXNzLCB3ZSdsbCBvY2Nhc2lvbmFsbHkgcmVmZXIgdG8gU29sb21hbidzIGd1aWRlLiAKCiMjIFBhY2thZ2UgdmVyc2lvbnMKCmBgYHtyfQpzZXNzaW9uSW5mbygpCmBgYA==&#34; download=&#34;02-class.Rmd&#34;&gt;
+&lt;button class=&#34;btn btn-danger&#34;&gt;&lt;i class=&#34;fa fa-save&#34;&gt;&lt;/i&gt; Download this code&lt;/button&gt;
+&lt;/a&gt;
+&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;For this class, we’ll review code examples found in Chapter 2.&lt;/p&gt;
+&lt;p&gt;This assumes that you have already installed the &lt;code&gt;rethinking&lt;/code&gt; package.&lt;/p&gt;
+&lt;p&gt;If you need help, be sure to remember the references in the &lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/&#34;&gt;Resources&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/install/&#34;&gt;Installing R/RStudio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking/&#34;&gt;Installing &lt;code&gt;rethinking&lt;/code&gt; package&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/rmarkdown/&#34;&gt;Rmarkdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/style/&#34;&gt;R Style guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;bayesian-updating-grid-approximation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Bayesian Updating: Grid Approximation&lt;/h3&gt;
+&lt;p&gt;Let’s assume we have the table in 2.1&lt;/p&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;## R code 2.1
+ways &amp;lt;- c( 0 , 3 , 8 , 9 , 0 )
+ways/sum(ways)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;language-r&#34;&gt;&lt;code&gt;## [1] 0.00 0.15 0.40 0.45 0.00&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let’s compute the likelihood of six W’s in nine tosses (assuming a 50% probability):&lt;/p&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;## R code 2.2
+dbinom( 6 , size=9 , prob=0.5 )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;language-r&#34;&gt;&lt;code&gt;## [1] 0.1640625&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can see it’s 16.4%.&lt;/p&gt;
+&lt;p&gt;Be sure to examine the &lt;code&gt;dbinom&lt;/code&gt; function by typing in &lt;code&gt;?dbinom&lt;/code&gt; and exploring the documentation. We’ll use this function a lot in this class.&lt;/p&gt;
+&lt;p&gt;Next, let’s define a grid. This is required when we are using Grid Approximation for our Bayesian calculations (i.e., to estimate the posterior).&lt;/p&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;## R code 2.3
+# define grid
+p_grid &amp;lt;- seq( from=0 , to=1 , length.out=20 )
+
+p_grid&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;language-r&#34;&gt;&lt;code&gt;##  [1] 0.00000000 0.05263158 0.10526316 0.15789474 0.21052632 0.26315789
+##  [7] 0.31578947 0.36842105 0.42105263 0.47368421 0.52631579 0.57894737
+## [13] 0.63157895 0.68421053 0.73684211 0.78947368 0.84210526 0.89473684
+## [19] 0.94736842 1.00000000&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Notice that this function creates a vector with length 20 and that ranges from 0 to 1. Note as well that each vector element is evenly spaced in increments of &lt;code&gt;(to - from)/(length.out - 1)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Think about the trade-off between having a smaller or larger &lt;code&gt;length.out&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Next, let’s define our prior. We’ll assume a “flat” prior.&lt;/p&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# define prior
+prior &amp;lt;- rep( 1 , 20 )
+
+prior&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;language-r&#34;&gt;&lt;code&gt;##  [1] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# compute likelihood at each value in grid
+likelihood &amp;lt;- dbinom( 6 , size=9 , prob=p_grid )
+
+likelihood&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;language-r&#34;&gt;&lt;code&gt;##  [1] 0.000000e+00 1.518149e-06 8.185093e-05 7.772923e-04 3.598575e-03
+##  [6] 1.116095e-02 2.668299e-02 5.292110e-02 9.082698e-02 1.383413e-01
+## [11] 1.897686e-01 2.361147e-01 2.666113e-01 2.714006e-01 2.450051e-01
+## [16] 1.897686e-01 1.179181e-01 5.026670e-02 8.853845e-03 0.000000e+00&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# compute product of likelihood and prior
+unstd.posterior &amp;lt;- likelihood * prior
+
+unstd.posterior&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;language-r&#34;&gt;&lt;code&gt;##  [1] 0.000000e+00 1.518149e-06 8.185093e-05 7.772923e-04 3.598575e-03
+##  [6] 1.116095e-02 2.668299e-02 5.292110e-02 9.082698e-02 1.383413e-01
+## [11] 1.897686e-01 2.361147e-01 2.666113e-01 2.714006e-01 2.450051e-01
+## [16] 1.897686e-01 1.179181e-01 5.026670e-02 8.853845e-03 0.000000e+00&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# standardize the posterior, so it sums to 1
+posterior &amp;lt;- unstd.posterior / sum(unstd.posterior)
+
+posterior&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;language-r&#34;&gt;&lt;code&gt;##  [1] 0.000000e+00 7.989837e-07 4.307717e-05 4.090797e-04 1.893887e-03
+##  [6] 5.873873e-03 1.404294e-02 2.785174e-02 4.780115e-02 7.280739e-02
+## [11] 9.987296e-02 1.242643e-01 1.403143e-01 1.428349e-01 1.289433e-01
+## [16] 9.987296e-02 6.205890e-02 2.645477e-02 4.659673e-03 0.000000e+00&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;## R code 2.4
+plot( p_grid , posterior , type=&amp;quot;b&amp;quot; ,
+    xlab=&amp;quot;probability of water&amp;quot; , ylab=&amp;quot;posterior probability&amp;quot; )
+mtext( &amp;quot;20 points&amp;quot; )&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/example/02-class_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;
+What happens if we alter the priors? What will be the new posteriors?&lt;/p&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;## R code 2.5
+prior &amp;lt;- ifelse( p_grid &amp;lt; 0.5 , 0 , 1 )
+prior &amp;lt;- exp( -5*abs( p_grid - 0.5 ) )&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;bayesian-updating-quadratic-approximation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Bayesian Updating: Quadratic Approximation&lt;/h3&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;## R code 2.6
+library(rethinking)
+globe.qa &amp;lt;- quap(
+    alist(
+        W ~ dbinom( W+L ,p) ,  # binomial likelihood
+        p ~ dunif(0,1)     # uniform prior
+    ) ,
+    data=list(W=6,L=3) )
+
+# display summary of quadratic approximation
+precis( globe.qa )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;language-r&#34;&gt;&lt;code&gt;##        mean        sd      5.5%     94.5%
+## p 0.6666667 0.1571338 0.4155365 0.9177968&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;## R code 2.7
+# analytical calculation
+W &amp;lt;- 6
+L &amp;lt;- 3
+curve( dbeta( x , W+1 , L+1 ) , from=0 , to=1 )
+# quadratic approximation
+curve( dnorm( x , 0.67 , 0.16 ) , lty=2 , add=TRUE )&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/example/02-class_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;## R code 2.8
+n_samples &amp;lt;- 1000
+p &amp;lt;- rep( NA , n_samples )
+p[1] &amp;lt;- 0.5
+W &amp;lt;- 6
+L &amp;lt;- 3
+for ( i in 2:n_samples ) {
+    p_new &amp;lt;- rnorm( 1 , p[i-1] , 0.1 )
+    if ( p_new &amp;lt; 0 ) p_new &amp;lt;- abs( p_new )
+    if ( p_new &amp;gt; 1 ) p_new &amp;lt;- 2 - p_new
+    q0 &amp;lt;- dbinom( W , W+L , p[i-1] )
+    q1 &amp;lt;- dbinom( W , W+L , p_new )
+    p[i] &amp;lt;- ifelse( runif(1) &amp;lt; q1/q0 , p_new , p[i-1] )
+}
+
+## R code 2.9
+dens( p , xlim=c(0,1) )
+curve( dbeta( x , W+1 , L+1 ) , lty=2 , add=TRUE )&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/example/02-class_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tidyverse-conversion&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;&lt;code&gt;tidyverse&lt;/code&gt; conversion&lt;/h3&gt;
+&lt;p&gt;Statistical Rethinking uses base R functions. More recently, Soloman Kurz has created a &lt;a href=&#34;https://bookdown.org/content/4857/&#34;&gt;translation of the book’s functions&lt;/a&gt; into &lt;code&gt;tidyverse&lt;/code&gt; (and later &lt;code&gt;brms&lt;/code&gt;) code. This is not necessary but could be extremely helpful to classmates who are familiar with &lt;code&gt;tidyverse&lt;/code&gt; already.&lt;/p&gt;
+&lt;p&gt;First, we’ll need to call &lt;code&gt;tidyverse&lt;/code&gt;. If you do not have &lt;code&gt;tidyverse&lt;/code&gt;, you’ll need to install it.&lt;/p&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For example, we can translate 2.3 code using pipes (&lt;code&gt;%&amp;gt;%&lt;/code&gt;)&lt;/p&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;d &amp;lt;- tibble(p_grid = seq(from = 0, to = 1, length.out = 20),      # define grid
+           prior  = 1) %&amp;gt;%                                       # define prior
+    mutate(likelihood = dbinom(6, size = 9, prob = p_grid)) %&amp;gt;%  # compute likelihood at each value in grid
+    mutate(unstd_posterior = likelihood * prior) %&amp;gt;%             # compute product of likelihood and prior
+    mutate(posterior = unstd_posterior / sum(unstd_posterior)) 
+
+d&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;language-r&#34;&gt;&lt;code&gt;## # A tibble: 20 × 5
+##    p_grid prior likelihood unstd_posterior   posterior
+##     &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;      &amp;lt;dbl&amp;gt;           &amp;lt;dbl&amp;gt;       &amp;lt;dbl&amp;gt;
+##  1 0          1 0               0          0          
+##  2 0.0526     1 0.00000152      0.00000152 0.000000799
+##  3 0.105      1 0.0000819       0.0000819  0.0000431  
+##  4 0.158      1 0.000777        0.000777   0.000409   
+##  5 0.211      1 0.00360         0.00360    0.00189    
+##  6 0.263      1 0.0112          0.0112     0.00587    
+##  7 0.316      1 0.0267          0.0267     0.0140     
+##  8 0.368      1 0.0529          0.0529     0.0279     
+##  9 0.421      1 0.0908          0.0908     0.0478     
+## 10 0.474      1 0.138           0.138      0.0728     
+## 11 0.526      1 0.190           0.190      0.0999     
+## 12 0.579      1 0.236           0.236      0.124      
+## 13 0.632      1 0.267           0.267      0.140      
+## 14 0.684      1 0.271           0.271      0.143      
+## 15 0.737      1 0.245           0.245      0.129      
+## 16 0.789      1 0.190           0.190      0.0999     
+## 17 0.842      1 0.118           0.118      0.0621     
+## 18 0.895      1 0.0503          0.0503     0.0265     
+## 19 0.947      1 0.00885         0.00885    0.00466    
+## 20 1          1 0               0          0&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With this calculated, we can then use &lt;code&gt;ggplot2&lt;/code&gt;, the staple &lt;code&gt;ggplot2&lt;/code&gt; data visualization package, to plot our posterior.&lt;/p&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;d %&amp;gt;% 
+  ggplot(aes(x = p_grid, y = posterior)) +
+  geom_point() +
+  geom_line() +
+  labs(subtitle = &amp;quot;20 points&amp;quot;,
+       x = &amp;quot;probability of water&amp;quot;,
+       y = &amp;quot;posterior probability&amp;quot;) +
+  theme(panel.grid = element_blank())&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/example/02-class_files/figure-html/unnamed-chunk-16-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;For this class, we’ll occasionally refer to Soloman’s guide.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;package-versions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Package versions&lt;/h2&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;sessionInfo()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;language-r&#34;&gt;&lt;code&gt;## R version 4.1.1 (2021-08-10)
+## Platform: aarch64-apple-darwin20 (64-bit)
+## Running under: macOS Monterey 12.0.1
+## 
+## Matrix products: default
+## BLAS:   /Library/Frameworks/R.framework/Versions/4.1-arm64/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.1-arm64/Resources/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] parallel  stats     graphics  grDevices datasets  utils     methods  
+## [8] base     
+## 
+## other attached packages:
+##  [1] forcats_0.5.1        stringr_1.4.0        dplyr_1.0.7         
+##  [4] purrr_0.3.4          readr_2.0.2          tidyr_1.1.4         
+##  [7] tibble_3.1.6         tidyverse_1.3.1      rethinking_2.21     
+## [10] cmdstanr_0.4.0.9001  rstan_2.21.3         ggplot2_3.3.5       
+## [13] StanHeaders_2.21.0-7
+## 
+## loaded via a namespace (and not attached):
+##  [1] matrixStats_0.61.0   fs_1.5.0             lubridate_1.8.0     
+##  [4] httr_1.4.2           tensorA_0.36.2       tools_4.1.1         
+##  [7] backports_1.4.1      bslib_0.3.1          utf8_1.2.2          
+## [10] R6_2.5.1             DBI_1.1.1            colorspace_2.0-2    
+## [13] withr_2.4.3          tidyselect_1.1.1     gridExtra_2.3       
+## [16] prettyunits_1.1.1    processx_3.5.2       compiler_4.1.1      
+## [19] rvest_1.0.2          cli_3.1.0            xml2_1.3.2          
+## [22] labeling_0.4.2       bookdown_0.24        posterior_1.1.0     
+## [25] sass_0.4.0           scales_1.1.1         checkmate_2.0.0     
+## [28] mvtnorm_1.1-3        callr_3.7.0          bsplus_0.1.3        
+## [31] digest_0.6.29        rmarkdown_2.11       base64enc_0.1-3     
+## [34] pkgconfig_2.0.3      htmltools_0.5.2      dbplyr_2.1.1        
+## [37] fastmap_1.1.0        highr_0.9            readxl_1.3.1        
+## [40] rlang_0.4.12         rstudioapi_0.13      shape_1.4.6         
+## [43] jquerylib_0.1.4      farver_2.1.0         generics_0.1.1      
+## [46] jsonlite_1.7.2       distributional_0.2.2 inline_0.3.19       
+## [49] magrittr_2.0.1       loo_2.4.1            Rcpp_1.0.7          
+## [52] munsell_0.5.0        fansi_0.5.0          abind_1.4-5         
+## [55] lifecycle_1.0.1      stringi_1.7.6        yaml_2.2.1          
+## [58] MASS_7.3-54          pkgbuild_1.3.1       grid_4.1.1          
+## [61] crayon_1.4.2         lattice_0.20-44      haven_2.4.3         
+## [64] hms_1.1.1            knitr_1.36           ps_1.6.0            
+## [67] pillar_1.6.4         uuid_1.0-3           codetools_0.2-18    
+## [70] stats4_4.1.1         reprex_2.0.1         glue_1.6.0          
+## [73] evaluate_0.14        blogdown_1.5         modelr_0.1.8        
+## [76] renv_0.14.0          RcppParallel_5.1.4   tzdb_0.1.2          
+## [79] vctrs_0.3.8          cellranger_1.1.0     gtable_0.3.0        
+## [82] assertthat_0.2.1     xfun_0.28            mime_0.12           
+## [85] broom_0.7.9          coda_0.19-4          ellipsis_0.3.2      
+## [88] downloadthis_0.2.1   xaringanExtra_0.5.5&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Example: 15-1</title>
       <link>https://dsba6010-spring2022.netlify.app/example/15-1-example/</link>
-      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/example/15-1-example/</guid>
       <description>
 &lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/clipboard/clipboard.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://dsba6010-spring2022.netlify.app/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34;Copy Code&#34;,&#34;success&#34;:&#34;Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl+C to Copy&#34;})&lt;/script&gt;
 
 
 &lt;div id=&#34;examples&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;15.1 Examples&lt;/h2&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# simulate a pancake and return randomly ordered sides
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# simulate a pancake and return randomly ordered sides
 sim_pancake &amp;lt;- function() {
     pancake &amp;lt;- sample(1:3,1)
     sides &amp;lt;- matrix(c(1,1,1,0,0,0),2,3)[,pancake]
@@ -39,14 +403,14 @@ down &amp;lt;- pancakes[2,]
 num_11_10 &amp;lt;- sum( up==1 )
 num_11 &amp;lt;- sum( up==1 &amp;amp; down==1 )
 print(num_11/num_11_10)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 0.65834&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;language-r&#34;&gt;&lt;code&gt;## [1] 0.6698546&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;measurement-error&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;15.2 Measurement Error&lt;/h2&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data(WaffleDivorce, package = &amp;quot;rethinking&amp;quot;)
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;data(WaffleDivorce, package = &amp;quot;rethinking&amp;quot;)
 d &amp;lt;- WaffleDivorce
 rm(WaffleDivorce)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# points
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;# points
 plot( d$Divorce ~ d$MedianAgeMarriage , ylim=c(4,15) ,
     xlab=&amp;quot;Median age marriage&amp;quot; , ylab=&amp;quot;Divorce rate&amp;quot; )
 
@@ -57,7 +421,7 @@ for ( i in 1:nrow(d) ) {
     lines( c(x,x) , ci )
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;https://dsba6010-spring2022.netlify.app/example/15-1-example_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dlist &amp;lt;- list(
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;dlist &amp;lt;- list(
     D_obs = standardize( d$Divorce ),
     D_sd = d$Divorce.SE / sd( d$Divorce ),
     M = standardize( d$Marriage ),
@@ -78,7 +442,7 @@ m15.1 &amp;lt;- ulam(
 
 ## R code 15.4
 precis( m15.1 , depth=2 )&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#plot(m15.1)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r language-r&#34;&gt;&lt;code&gt;#plot(m15.1)&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
     </item>

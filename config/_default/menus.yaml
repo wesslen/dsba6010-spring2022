@@ -25,9 +25,6 @@ main:
   - name: '<i class="fab fa-slack"></i>'
     url: "https://dsba6010-spring2022.slack.com"
     weight: 7
-  - name: RStudio.cloud
-    url: https://rstudio.cloud/
-    weight: 8
 
 content:
   - name: Overview
@@ -47,9 +44,11 @@ assignment:
   - name: Project
     weight: 3
 resource:
-  - name: Guides
+  - name: Overview
     weight: 1
-  - name: Resources
+  - name: Guides
     weight: 2
-  - name: Study guides
+  - name: Resources
     weight: 3
+  - name: Study guides
+    weight: 4

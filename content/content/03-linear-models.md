@@ -13,6 +13,12 @@ type: docs
 weight: 3
 ---
 
+## Zoom
+
+<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i></a>: 12:00pm - 2:45pm, January 31, 2022
+
+## Required Readings
+
 {{< icon name="book" pack="fas" >}} Chapter 4: Geocentric models
 
 <!--more-->

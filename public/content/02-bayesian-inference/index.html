@@ -26,7 +26,10 @@
   
     
   
-  <meta name="description" content="
+  <meta name="description" content="Zoom
+ Zoom Link: 12:00pm - 2:45pm, January 24, 2022
+Required Readings
+
    Chapter 1: The Golem of Prague Data
 
    Chapter 2: The Garden of Forking Data
@@ -51,11 +54,13 @@
 
   
   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
 
   
   
   
-    <meta name="theme-color" content="#CF4446" />
+    <meta name="theme-color" content="#c73c41" />
   
 
   
@@ -233,13 +238,19 @@
   
   
   
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;700&display=swap" media="print" onload="this.media='all'">
+    
+  
 
   
   
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.c70d27f8e004002976021a82265de335.css" />
+  <link rel="stylesheet" href="/css/wowchemy.433c17f74a45f8b39638e76070a1cc8f.css" />
 
   
 
@@ -264,8 +275,8 @@
     <link rel="manifest" href="/index.webmanifest" />
   
 
-  <link rel="icon" type="image/png" href="/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_180x180_fill_lanczos_center_3.png" />
+  <link rel="icon" type="image/png" href="/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_180x180_fill_lanczos_center_3.png" />
 
   <link rel="canonical" href="https://dsba6010-spring2022.netlify.app/content/02-bayesian-inference/" />
 
@@ -289,13 +300,16 @@
   <meta property="og:site_name" content="Bayesian Statistics" />
   <meta property="og:url" content="https://dsba6010-spring2022.netlify.app/content/02-bayesian-inference/" />
   <meta property="og:title" content="Class 2 - Bayesian Inference | Bayesian Statistics" />
-  <meta property="og:description" content="
+  <meta property="og:description" content="Zoom
+ Zoom Link: 12:00pm - 2:45pm, January 24, 2022
+Required Readings
+
    Chapter 1: The Golem of Prague Data
 
    Chapter 2: The Garden of Forking Data
 
-   Chapter 3: Sampling the Imaginary" /><meta property="og:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" />
-    <meta property="twitter:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+   Chapter 3: Sampling the Imaginary" /><meta property="og:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
@@ -325,9 +339,11 @@
   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-152x152.png" />
   <link rel="icon" type="image/png" href="https://dsba6010-spring2022.netlify.app/img/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="https://dsba6010-spring2022.netlify.app/img/favicon-16x16.png" sizes="16x16" />
-  <meta name="application-name" content="DSBA 6010 / STAT 7027: Bayesian Statistics" />
+  <meta name="application-name" content="DSBA 6010 | STAT 7027: Bayesian Statistics" />
   <meta name="msapplication-TileColor" content="#FFFFFF" />
   <meta name="msapplication-TileImage" content="https://dsba6010-spring2022.netlify.app/img/mstile-144x144.png" />
+  <link href="/css/adam-one-dark.css" rel="stylesheet" />
+  <script src="/js/prismr.js"></script>
 
   <title>Class 2 - Bayesian Inference | Bayesian Statistics</title>
 </head>
@@ -644,38 +660,6 @@
         
         
 
-        
-
-        
-        
-        
-          
-            
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>RStudio.cloud</span></a>
-        </li>
-
-        
-        
-
       
 
         
@@ -695,23 +679,6 @@
       
 
       
-      
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
-          <i class="fas fa-moon" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>Light</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>Dark</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>Automatic</span>
-          </a>
-        </div>
-      </li>
       
 
       
@@ -862,20 +829,6 @@
 
   </div>
   
-  <div class="docs-toc-item">
-    <a class="docs-toc-link" href="/example/15-1-example/">Examples</a>
-    <ul class="nav docs-sidenav">
-      
-      <li >
-        <a href="/example/15-1-example/">Example: 15-1</a>
-      </li>
-
-      
-    </ul>
-    
-
-  </div>
-  
   
 </nav>
 
@@ -891,7 +844,10 @@
           <h1>Class 2 - Bayesian Inference</h1>
 
           <div class="article-style">
-            <p>
+            <h2 id="zoom">Zoom</h2>
+<p><a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i> Zoom Link</a>: 12:00pm - 2:45pm, January 24, 2022</p>
+<h2 id="required-readings">Required Readings</h2>
+<p>
   <i class="fas fa-book  pr-1 fa-fw"></i> <a href="http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf" target="_blank" rel="noopener">Chapter 1: The Golem of Prague Data</a></p>
 <p>
   <i class="fas fa-book  pr-1 fa-fw"></i> <a href="http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf" target="_blank" rel="noopener">Chapter 2: The Garden of Forking Data</a></p>
@@ -901,11 +857,11 @@
 <h3 id="lecture-1">Lecture 1</h3>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/4WVelCswXo4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/cclUd_HoRlo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 <br>
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/c63892105b90479bb8827c9afcf5ad76" title="L01 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;" data-ratio="1.3333333333333333"></iframe>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/075b46c0223d495d89692fc22077b394" title="Statistical Rethinking 2022 Lecture 01" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 <br>
 <h3 id="lecture-2">Lecture 2</h3>
 
@@ -914,7 +870,7 @@
 </div>
 
 <br>
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/3bfa335d71ac499ebb10e11073efe777" title="L02 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 210px;" data-ratio="1.3333333333333333"></iframe>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/3bfa335d71ac499ebb10e11073efe777" title="L02 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;" data-ratio="1.3333333333333333"></iframe>
 <h2 id="comprehension-questions">Comprehension questions</h2>
 <details class="spoiler "  id="spoiler-5">
   <summary>What is Bayesian data analysis? How does it differ in its definition of uncertainty from Frequentist interpretations?</summary>
@@ -972,7 +928,7 @@
 </li>
 </ol>
 <ul>
-<li>We will cover these topics in Lesson 8.</li>
+<li>We will cover these topics later in the semester.</li>
 </ul>
 </p>
 </details>
@@ -988,14 +944,13 @@
 </ul>
 </p>
 </details>
-<h2 id="feedback">Feedback</h2>
-    <p>Go to <a href="https://forms.gle/zMipNzav3BCL3Rwy9">this form</a> and answer these three questions:</p>
-    <ol style="list-style-type: decimal">
-        <li>What was the muddiest thing from class this lesson? What are you still wondering about?</li>
-        <li>What was the clearest thing from class this lesson?</li>
-        <li>What was the most exciting thing you learned?</li>
-    </ol>
-    <p>I’ll compile the questions and review for class.</p>
+<h2 id="deliverables">Deliverables</h2>
+<p>Due before class: Monday, January 24 at 11:59am</p>
+<p><a href="https://forms.gle/zMipNzav3BCL3Rwy9"><i class="fas fa-comment fa-lg"></i>  Class Feedback</a></p>
+<p><a href="https://uncc.instructure.com/courses/171000/quizzes/331407"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a></p>
+<h2 id="problem-set-1">Problem Set 1</h2>
+<p>Due by next class: Monday, January 31 at 11:59am</p>
+<p><a href="{{ .Site.baseurl }}/assignment/01-problem-set"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / <a href="https://uncc.instructure.com/courses/171000/assignments/1415432" target="_blank" rel="noopener">Canvas Link</a></p>
           </div>
 
           
@@ -1040,19 +995,6 @@
 
 
 
-
-  
-  
-
-<p class="edit-page">
-  <a href="github.com/wesslen/dsba6010-spring2022/edit/main/content/content/02-bayesian-inference.md">
-    <i class="fas fa-pen pr-2"></i>Edit this page
-  </a>
-</p>
-
-
-
-
           
 
 
@@ -1073,22 +1015,23 @@
     <div class="row course-info">
         <div class="col-md-7">
             <p>
-                <strong>DSBA 6010 / STAT 7027: Bayesian Statistics (Spring 2022)</strong><br>
-                <a href="https://www.uncc.edu" target="_blank" rel="noopener">University of North Carolina at Charlotte</a> &emsp;&emsp;
-                <a href="https://math.charlotte.edu/" target="_blank" rel="noopener">Department of Mathematics and Statistics</a>
+                <strong>DSBA 6010 | STAT 7027: Bayesian Statistics (Spring 2022)</strong><br>
+                <a href="https://www.uncc.edu" target="_blank" rel="noopener">UNC Charlotte</a> &emsp;
+                <a href="https://datascience.charlotte.edu/" target="_blank" rel="noopener">School of Data Science</a> &emsp;
+                <a href="https://math.charlotte.edu/" target="_blank" rel="noopener">Dept. of Mathematics and Statistics</a>
             </p>
 
             <p>
                 <a href="https://wesslen.netlify.app" target="_blank" rel="noopener"><i class="fas fa-user"></i>
-                    Dr. Ryan Wesslen</a> &emsp;&emsp;
+                    Dr. Ryan Wesslen</a> &emsp;
                 <a href="mailto:rwesslen@uncc.edu"><i class="fas fa-envelope"></i>
                     rwesslen@uncc.edu</a>
             </p>
 
             <p>
-                <i class="far fa-calendar-alt"></i> Monday &emsp;&emsp;
-                <i class="far fa-clock"></i> 12:00pm-2:45pm 
-                <br><i class="fas fa-university"></i> Center City 1101
+                <i class="far fa-calendar-alt"></i> Monday &emsp;
+                <i class="far fa-clock"></i> 12:00pm-2:45pm &emsp;
+                <i class="fas fa-university"></i> Center City 1101
             </p>
         </div>
 
@@ -1237,7 +1180,7 @@
       
     
     
-    <script src="/en/js/wowchemy.min.4bba0826db6409c865d2e7b99039d6d0.js"></script>
+    <script src="/en/js/wowchemy.min.fb8eb32a4d207f5f18023712a904b210.js"></script>
 
     
 

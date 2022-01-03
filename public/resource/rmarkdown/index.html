@@ -46,11 +46,13 @@
 
   
   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
 
   
   
   
-    <meta name="theme-color" content="#CF4446" />
+    <meta name="theme-color" content="#c73c41" />
   
 
   
@@ -220,13 +222,19 @@
   
   
   
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;700&display=swap" media="print" onload="this.media='all'">
+    
+  
 
   
   
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.c70d27f8e004002976021a82265de335.css" />
+  <link rel="stylesheet" href="/css/wowchemy.433c17f74a45f8b39638e76070a1cc8f.css" />
 
   
 
@@ -251,8 +259,8 @@
     <link rel="manifest" href="/index.webmanifest" />
   
 
-  <link rel="icon" type="image/png" href="/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_180x180_fill_lanczos_center_3.png" />
+  <link rel="icon" type="image/png" href="/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_180x180_fill_lanczos_center_3.png" />
 
   <link rel="canonical" href="https://dsba6010-spring2022.netlify.app/resource/rmarkdown/" />
 
@@ -276,8 +284,8 @@
   <meta property="og:site_name" content="Bayesian Statistics" />
   <meta property="og:url" content="https://dsba6010-spring2022.netlify.app/resource/rmarkdown/" />
   <meta property="og:title" content="Using R Markdown | Bayesian Statistics" />
-  <meta property="og:description" content="R Markdown is regular Markdown with R code and output sprinkled in. You can do everything you can with regular Markdown, but you can incorporate graphs, tables, and other R output directly in your document." /><meta property="og:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" />
-    <meta property="twitter:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hubcd1f34ef0b7e1f986d90973bbf4f4ef_7134_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  <meta property="og:description" content="R Markdown is regular Markdown with R code and output sprinkled in. You can do everything you can with regular Markdown, but you can incorporate graphs, tables, and other R output directly in your document." /><meta property="og:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
@@ -307,9 +315,11 @@
   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-152x152.png" />
   <link rel="icon" type="image/png" href="https://dsba6010-spring2022.netlify.app/img/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="https://dsba6010-spring2022.netlify.app/img/favicon-16x16.png" sizes="16x16" />
-  <meta name="application-name" content="DSBA 6010 / STAT 7027: Bayesian Statistics" />
+  <meta name="application-name" content="DSBA 6010 | STAT 7027: Bayesian Statistics" />
   <meta name="msapplication-TileColor" content="#FFFFFF" />
   <meta name="msapplication-TileImage" content="https://dsba6010-spring2022.netlify.app/img/mstile-144x144.png" />
+  <link href="/css/adam-one-dark.css" rel="stylesheet" />
+  <script src="/js/prismr.js"></script>
 
   <title>Using R Markdown | Bayesian Statistics</title>
 </head>
@@ -626,38 +636,6 @@
         
         
 
-        
-
-        
-        
-        
-          
-            
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="https://rstudio.cloud/" target="_blank" rel="noopener"><span>RStudio.cloud</span></a>
-        </li>
-
-        
-        
-
       
 
         
@@ -677,23 +655,6 @@
       
 
       
-      
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
-          <i class="fas fa-moon" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>Light</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>Dark</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>Automatic</span>
-          </a>
-        </div>
-      </li>
       
 
       
@@ -747,7 +708,7 @@
 
   
   <div class="docs-toc-item">
-    <a class="docs-toc-link" href="/resource/">Resources</a>
+    <a class="docs-toc-link" href="/resource/">Overview</a>
     <ul class="nav docs-sidenav">
       
       <li >
@@ -755,28 +716,8 @@
       </li>
 
       
-      <li >
-        <a href="/resource/r/">R</a>
-      </li>
-
-      
-      <li >
-        <a href="/resource/style/">R style suggestions</a>
-      </li>
-
-      
-      <li >
-        <a href="/resource/bayes/">Bayesian statistics resources</a>
-      </li>
-
-      
     </ul>
     
-
-  </div>
-  
-  <div class="docs-toc-item">
-    <a class="docs-toc-link" >Study guides</a>
 
   </div>
   
@@ -814,20 +755,45 @@
 
   </div>
   
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/resource/r/">Resources</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/resource/r/">R</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/style/">R style suggestions</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/bayesian-readings/">Readings in Bayesian</a>
+      </li>
+
+      
+      <li >
+        <a href="/resource/bayes/">Bayesian statistics resources</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" >Study guides</a>
+
+  </div>
+  
   
 </nav>
 
     </div>
 
-    
-    <div class="d-none d-xl-block col-xl-2 docs-toc">
-      <ul class="nav toc-top">
-        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
-      </ul>
-
-      
-
-    </div>
     
 
     <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
@@ -841,9 +807,6 @@
             
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
-<div id="TOC">
-
-</div>
 
 <p><a href="https://rmarkdown.rstudio.com/">R Markdown</a> is <a href="/resource/markdown/">regular Markdown</a> with R code and output sprinkled in. You can do everything you can with <a href="/resource/markdown/">regular Markdown</a>, but you can incorporate graphs, tables, and other R output directly in your document. You can create HTML, PDF, and Word documents, PowerPoint and HTML presentations, websites, books, and even <a href="https://rmarkdown.rstudio.com/flexdashboard/index.html">interactive dashboards</a> with R Markdown. This whole course website is created with R Markdown (and <a href="https://bookdown.org/yihui/blogdown/">a package named <strong>blogdown</strong></a>).</p>
 <p>The <a href="https://rmarkdown.rstudio.com/">documentation for R Markdown</a> is extremely comprehensive, and their <a href="https://rmarkdown.rstudio.com/lesson-1.html">tutorials</a> and <a href="https://rmarkdown.rstudio.com/lesson-15.html">cheatsheets</a> are excellent—rely on those.</p>
@@ -859,7 +822,7 @@
 <p>There must be an empty line before and after the chunk. The final three backticks must be the only thing on the line—if you add more text, or if you forget to add the backticks, or accidentally delete the backticks, your document will not knit correctly.</p></li>
 <li><p><strong>Knit</strong>: When you “knit” a document, R runs each of the chunks sequentially and converts the output of each chunk into Markdown. R then runs the knitted document through <a href="https://pandoc.org/">pandoc</a> to convert it to HTML or PDF or Word (or whatever output you’ve selected).</p>
 <p>You can knit by clicking on the “Knit” button at the top of the editor window, or by pressing <code>⌘⇧K</code> on macOS or <code>control + shift + K</code> on Windows.</p>
-<p><img src="/img/assignments/knit-button.png" width="30%" /></p></li>
+<p><img src="/img/assignments/knit-button.png" width="30%" style="display: block; margin: auto;" /></p></li>
 </ul>
 </div>
 <div id="add-chunks" class="section level2">
@@ -868,14 +831,14 @@
 <ul>
 <li><p>Press <code>⌘⌥I</code> on macOS or <code>control + alt + I</code> on Windows</p></li>
 <li><p>Click on the “Insert” button at the top of the editor window</p>
-<p><img src="/img/reference/insert-chunk.png" width="30%" /></p></li>
+<p><img src="/img/reference/insert-chunk.png" width="30%" style="display: block; margin: auto;" /></p></li>
 <li><p>Manually type all the backticks and curly braces (don’t do this)</p></li>
 </ul>
 </div>
 <div id="chunk-names" class="section level2">
 <h2>Chunk names</h2>
 <p>You can add names to chunks to make it easier to navigate your document. If you click on the little dropdown menu at the bottom of your editor in RStudio, you can see a table of contents that shows all the headings and chunks. If you name chunks, they’ll appear in the list. If you don’t include a name, the chunk will still show up, but you won’t know what it does.</p>
-<p><img src="/img/reference/chunk-toc.png" width="40%" /></p>
+<p><img src="/img/reference/chunk-toc.png" width="40%" style="display: block; margin: auto;" /></p>
 <p>To add a name, include it immediately after the <code>{r</code> in the first line of the chunk. Names cannot contain spaces, but they can contain underscores and dashes. <strong>All chunk names in your document must be unique.</strong></p>
 <pre class="markdown"><code>```{r name-of-this-chunk}
 # Code goes here
@@ -885,9 +848,9 @@
 <h2>Chunk options</h2>
 <p>There are a bunch of different options you can set for each chunk. You can see a complete list in the <a href="https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">RMarkdown Reference Guide</a> or at <a href="https://yihui.org/knitr/options/"><strong>knitr</strong>’s website</a>.</p>
 <p>Options go inside the <code>{r}</code> section of the chunk:</p>
-<pre class="markdown"><code>```{r name-of-this-chunk, warning=FALSE, message=FALSE}
+<pre class="markdown language-markdown"><code>`r &#39;&#39;````{r name-of-this-chunk, warning=FALSE, message=FALSE}
 # Code goes here
-```</code></pre>
+`&#39;&#39;````</code></pre>
 <p>The most common chunk options are these:</p>
 <ul>
 <li><code>fig.width=5</code> and <code>fig.height=3</code> (<em>or whatever number you want</em>): Set the dimensions for figures</li>
@@ -897,7 +860,7 @@
 <li><code>include=FALSE</code>: The chunk still runs, but the code and results are not included in the final document</li>
 </ul>
 <p>You can also set chunk options by clicking on the little gear icon in the top right corner of any chunk:</p>
-<p><img src="/img/reference/chunk-options.png" width="70%" /></p>
+<p><img src="/img/reference/chunk-options.png" width="70%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="inline-chunks" class="section level2">
 <h2>Inline chunks</h2>
@@ -922,7 +885,7 @@ output:
   pdf_document: default
   word_document: default</code></pre>
 <p>You can also click on the down arrow on the “Knit” button to choose the output <em>and</em> generate the appropriate YAML. If you click on the gear icon next to the “Knit” button and choose “Output options”, you change settings for each specific output type, like default figure dimensions or whether or not a table of contents is included.</p>
-<p><img src="/img/reference/output-options.png" width="35%" /></p>
+<p><img src="/img/reference/output-options.png" width="35%" style="display: block; margin: auto;" /></p>
 <p>The first output type listed under <code>output:</code> will be what is generated when you click on the “Knit” button or press the keyboard shortcut (<code>⌘⇧K</code> on macOS; <code>control + shift + K</code> on Windows). If you choose a different output with the “Knit” button menu, that output will be moved to the top of the <code>output</code> section.</p>
 <p>The indentation of the YAML section matters, especially when you have settings nested under each output type. Here’s what a typical <code>output</code> section might look like:</p>
 <pre class="yaml"><code>---
@@ -980,19 +943,6 @@ output:
 
 
 
-
-  
-  
-
-<p class="edit-page">
-  <a href="github.com/wesslen/dsba6010-spring2022/edit/main/content/resource/rmarkdown.html">
-    <i class="fas fa-pen pr-2"></i>Edit this page
-  </a>
-</p>
-
-
-
-
           
 
 
@@ -1013,22 +963,23 @@ output:
     <div class="row course-info">
         <div class="col-md-7">
             <p>
-                <strong>DSBA 6010 / STAT 7027: Bayesian Statistics (Spring 2022)</strong><br>
-                <a href="https://www.uncc.edu" target="_blank" rel="noopener">University of North Carolina at Charlotte</a> &emsp;&emsp;
-                <a href="https://math.charlotte.edu/" target="_blank" rel="noopener">Department of Mathematics and Statistics</a>
+                <strong>DSBA 6010 | STAT 7027: Bayesian Statistics (Spring 2022)</strong><br>
+                <a href="https://www.uncc.edu" target="_blank" rel="noopener">UNC Charlotte</a> &emsp;
+                <a href="https://datascience.charlotte.edu/" target="_blank" rel="noopener">School of Data Science</a> &emsp;
+                <a href="https://math.charlotte.edu/" target="_blank" rel="noopener">Dept. of Mathematics and Statistics</a>
             </p>
 
             <p>
                 <a href="https://wesslen.netlify.app" target="_blank" rel="noopener"><i class="fas fa-user"></i>
-                    Dr. Ryan Wesslen</a> &emsp;&emsp;
+                    Dr. Ryan Wesslen</a> &emsp;
                 <a href="mailto:rwesslen@uncc.edu"><i class="fas fa-envelope"></i>
                     rwesslen@uncc.edu</a>
             </p>
 
             <p>
-                <i class="far fa-calendar-alt"></i> Monday &emsp;&emsp;
-                <i class="far fa-clock"></i> 12:00pm-2:45pm 
-                <br><i class="fas fa-university"></i> Center City 1101
+                <i class="far fa-calendar-alt"></i> Monday &emsp;
+                <i class="far fa-clock"></i> 12:00pm-2:45pm &emsp;
+                <i class="fas fa-university"></i> Center City 1101
             </p>
         </div>
 
@@ -1171,7 +1122,7 @@ output:
       
     
     
-    <script src="/en/js/wowchemy.min.4bba0826db6409c865d2e7b99039d6d0.js"></script>
+    <script src="/en/js/wowchemy.min.fb8eb32a4d207f5f18023712a904b210.js"></script>
 
     
 

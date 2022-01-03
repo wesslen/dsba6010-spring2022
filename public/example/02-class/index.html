@@ -1,0 +1,1230 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34;Copy Code&#34;,&#34;success&#34;:&#34;Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl&#43;C to Copy&#34;})   Download this code  Introduction For this class, we’ll review code examples found in Chapter 2.
+This assumes that you have already installed the rethinking package." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://dsba6010-spring2022.netlify.app/example/02-class/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#c73c41" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.433c17f74a45f8b39638e76070a1cc8f.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://dsba6010-spring2022.netlify.app/example/02-class/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@ryanwesslen" />
+    <meta property="twitter:creator" content="@ryanwesslen" />
+  
+  <meta property="og:site_name" content="Bayesian Statistics" />
+  <meta property="og:url" content="https://dsba6010-spring2022.netlify.app/example/02-class/" />
+  <meta property="og:title" content="Class 2 | Bayesian Statistics" />
+  <meta property="og:description" content="window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34;Copy Code&#34;,&#34;success&#34;:&#34;Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl&#43;C to Copy&#34;})   Download this code  Introduction For this class, we’ll review code examples found in Chapter 2.
+This assumes that you have already installed the rethinking package." /><meta property="og:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://dsba6010-spring2022.netlify.app/media/icon_hu7a1596cb6ee25e6251446916828e4968_5101_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2022-01-02T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2022-01-02T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  <link rel="stylesheet" type="text/css" href="/custom-css/print.css" media="print" />
+
+  <link rel="shortcut icon" href="https://dsba6010-spring2022.netlify.app/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://dsba6010-spring2022.netlify.app/img/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="https://dsba6010-spring2022.netlify.app/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://dsba6010-spring2022.netlify.app/img/favicon-16x16.png" sizes="16x16" />
+  <meta name="application-name" content="DSBA 6010 | STAT 7027: Bayesian Statistics" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="https://dsba6010-spring2022.netlify.app/img/mstile-144x144.png" />
+  <link href="/css/adam-one-dark.css" rel="stylesheet" />
+  <script src="/js/prismr.js"></script>
+
+  <title>Class 2 | Bayesian Statistics</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="85ab71080ef8537a0c7c1da2d2703e64" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Bayesian Statistics</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Bayesian Statistics</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/syllabus/"><span>Syllabus</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/schedule/"><span>Schedule</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/content/"><span>Content</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/assignment/"><span>Assignments</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/example/"><span>Examples</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/resource/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://dsba6010-spring2022.slack.com" target="_blank" rel="noopener"><span><i class="fab fa-slack"></i></span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+    
+  
+
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/">Overview</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/">Code examples</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/example/01-class/">Examples</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/example/01-class/">Class 1</a>
+      </li>
+
+      
+      <li class="active">
+        <a href="/example/02-class/">Class 2</a>
+      </li>
+
+      
+      <li >
+        <a href="/example/15-1-example/">Example: 15-1</a>
+      </li>
+
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Class 2</h1>
+
+          <div class="article-style">
+            
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="/rmarkdown-libs/clipboard/clipboard.min.js"></script>
+<link href="/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+<script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+<script src="/rmarkdown-libs/font-awesome/js/script.js"></script>
+
+
+<a href="data:text/x-markdown;base64,LS0tCmRhdGU6ICJgciBTeXMuRGF0ZSgpYCIKdGl0bGU6ICJDbGFzcyAyIgptZW51OgogIGV4YW1wbGU6CiAgICBwYXJlbnQ6IEV4YW1wbGVzCndlaWdodDogMgp0eXBlOiBkb2NzCi0tLQoKYGBge3Igc2V0dXAsIGluY2x1ZGU9RkFMU0V9CmtuaXRyOjpvcHRzX2NodW5rJHNldChlY2hvID0gVFJVRSwgY2xhc3Muc291cmNlPSJsYW5ndWFnZS1yIiwgY2xhc3Mub3V0cHV0PSJsYW5ndWFnZS1yIiwgbWVzc2FnZSA9IEZBTFNFLCB3YXJuaW5nID0gRkFMU0UpCnhhcmluZ2FuRXh0cmE6OnVzZV9jbGlwYm9hcmQoKQpsaWJyYXJ5KHJldGhpbmtpbmcpCmBgYAoKCmBgYHtyIGVjaG89RkFMU0V9CmRvd25sb2FkdGhpczo6ZG93bmxvYWRfZmlsZSgKICBwYXRoID0gIjAyLWNsYXNzLlJtZCIsCiAgb3V0cHV0X25hbWUgPSAiMDItY2xhc3MiLAogIGJ1dHRvbl9sYWJlbCA9ICJEb3dubG9hZCB0aGlzIGNvZGUiLAogIGJ1dHRvbl90eXBlID0gImRhbmdlciIsCiAgaGFzX2ljb24gPSBUUlVFLAogIGljb24gPSAiZmEgZmEtc2F2ZSIsCiAgc2VsZl9jb250YWluZWQgPSBGQUxTRQopCmBgYAoKIyMgSW50cm9kdWN0aW9uCgpGb3IgdGhpcyBjbGFzcywgd2UnbGwgcmV2aWV3IGNvZGUgZXhhbXBsZXMgZm91bmQgaW4gQ2hhcHRlciAyLgoKVGhpcyBhc3N1bWVzIHRoYXQgeW91IGhhdmUgYWxyZWFkeSBpbnN0YWxsZWQgdGhlIGByZXRoaW5raW5nYCBwYWNrYWdlLgoKSWYgeW91IG5lZWQgaGVscCwgYmUgc3VyZSB0byByZW1lbWJlciB0aGUgcmVmZXJlbmNlcyBpbiB0aGUgW1Jlc291cmNlc10oL3Jlc291cmNlLyk6CgoqIFtJbnN0YWxsaW5nIFIvUlN0dWRpb10oL3Jlc291cmNlL2luc3RhbGwvKQoqIFtJbnN0YWxsaW5nIGByZXRoaW5raW5nYCBwYWNrYWdlXSgvcmVzb3VyY2UvaW5zdGFsbC1yZXRoaW5raW5nLykKKiBbUm1hcmtkb3duXSgvcmVzb3VyY2Uvcm1hcmtkb3duLykKKiBbUiBTdHlsZSBndWlkZV0oL3Jlc291cmNlL3N0eWxlLykKCiMjIyBCYXllc2lhbiBVcGRhdGluZzogR3JpZCBBcHByb3hpbWF0aW9uCgpMZXQncyBhc3N1bWUgd2UgaGF2ZSB0aGUgdGFibGUgaW4gMi4xCgpgYGB7cn0KIyMgUiBjb2RlIDIuMQp3YXlzIDwtIGMoIDAgLCAzICwgOCAsIDkgLCAwICkKd2F5cy9zdW0od2F5cykKYGBgCgpMZXQncyBjb21wdXRlIHRoZSBsaWtlbGlob29kIG9mIHNpeCBXJ3MgaW4gbmluZSB0b3NzZXMgKGFzc3VtaW5nIGEgNTAlIHByb2JhYmlsaXR5KToKCmBgYHtyfQojIyBSIGNvZGUgMi4yCmRiaW5vbSggNiAsIHNpemU9OSAsIHByb2I9MC41ICkKYGBgCgpXZSBjYW4gc2VlIGl0J3MgMTYuNCUuCgpCZSBzdXJlIHRvIGV4YW1pbmUgdGhlIGBkYmlub21gIGZ1bmN0aW9uIGJ5IHR5cGluZyBpbiBgP2RiaW5vbWAgYW5kIGV4cGxvcmluZyB0aGUgZG9jdW1lbnRhdGlvbi4gV2UnbGwgdXNlIHRoaXMgZnVuY3Rpb24gYSBsb3QgaW4gdGhpcyBjbGFzcy4KCk5leHQsIGxldCdzIGRlZmluZSBhIGdyaWQuIFRoaXMgaXMgcmVxdWlyZWQgd2hlbiB3ZSBhcmUgdXNpbmcgR3JpZCBBcHByb3hpbWF0aW9uIGZvciBvdXIgQmF5ZXNpYW4gY2FsY3VsYXRpb25zIChpLmUuLCB0byBlc3RpbWF0ZSB0aGUgcG9zdGVyaW9yKS4KCmBgYHtyfQojIyBSIGNvZGUgMi4zCiMgZGVmaW5lIGdyaWQKcF9ncmlkIDwtIHNlcSggZnJvbT0wICwgdG89MSAsIGxlbmd0aC5vdXQ9MjAgKQoKcF9ncmlkCmBgYAoKTm90aWNlIHRoYXQgdGhpcyBmdW5jdGlvbiBjcmVhdGVzIGEgdmVjdG9yIHdpdGggbGVuZ3RoIDIwIGFuZCB0aGF0IHJhbmdlcyBmcm9tIDAgdG8gMS4gTm90ZSBhcyB3ZWxsIHRoYXQgZWFjaCB2ZWN0b3IgZWxlbWVudCBpcyBldmVubHkgc3BhY2VkIGluIGluY3JlbWVudHMgb2YgYCh0byAtIGZyb20pLyhsZW5ndGgub3V0IC0gMSlgLgoKVGhpbmsgYWJvdXQgdGhlIHRyYWRlLW9mZiBiZXR3ZWVuIGhhdmluZyBhIHNtYWxsZXIgb3IgbGFyZ2VyIGBsZW5ndGgub3V0YC4KCk5leHQsIGxldCdzIGRlZmluZSBvdXIgcHJpb3IuIFdlJ2xsIGFzc3VtZSBhICJmbGF0IiBwcmlvci4gCgpgYGB7cn0KIyBkZWZpbmUgcHJpb3IKcHJpb3IgPC0gcmVwKCAxICwgMjAgKQoKcHJpb3IKYGBgCgpgYGB7cn0KIyBjb21wdXRlIGxpa2VsaWhvb2QgYXQgZWFjaCB2YWx1ZSBpbiBncmlkCmxpa2VsaWhvb2QgPC0gZGJpbm9tKCA2ICwgc2l6ZT05ICwgcHJvYj1wX2dyaWQgKQoKbGlrZWxpaG9vZApgYGAKCmBgYHtyfQojIGNvbXB1dGUgcHJvZHVjdCBvZiBsaWtlbGlob29kIGFuZCBwcmlvcgp1bnN0ZC5wb3N0ZXJpb3IgPC0gbGlrZWxpaG9vZCAqIHByaW9yCgp1bnN0ZC5wb3N0ZXJpb3IKYGBgCgpgYGB7cn0KIyBzdGFuZGFyZGl6ZSB0aGUgcG9zdGVyaW9yLCBzbyBpdCBzdW1zIHRvIDEKcG9zdGVyaW9yIDwtIHVuc3RkLnBvc3RlcmlvciAvIHN1bSh1bnN0ZC5wb3N0ZXJpb3IpCgpwb3N0ZXJpb3IKYGBgCgpgYGB7cn0KIyMgUiBjb2RlIDIuNApwbG90KCBwX2dyaWQgLCBwb3N0ZXJpb3IgLCB0eXBlPSJiIiAsCiAgICB4bGFiPSJwcm9iYWJpbGl0eSBvZiB3YXRlciIgLCB5bGFiPSJwb3N0ZXJpb3IgcHJvYmFiaWxpdHkiICkKbXRleHQoICIyMCBwb2ludHMiICkKYGBgCldoYXQgaGFwcGVucyBpZiB3ZSBhbHRlciB0aGUgcHJpb3JzPyBXaGF0IHdpbGwgYmUgdGhlIG5ldyBwb3N0ZXJpb3JzPwoKYGBge3J9CiMjIFIgY29kZSAyLjUKcHJpb3IgPC0gaWZlbHNlKCBwX2dyaWQgPCAwLjUgLCAwICwgMSApCnByaW9yIDwtIGV4cCggLTUqYWJzKCBwX2dyaWQgLSAwLjUgKSApCmBgYAoKIyMjIEJheWVzaWFuIFVwZGF0aW5nOiBRdWFkcmF0aWMgQXBwcm94aW1hdGlvbgoKYGBge3J9CiMjIFIgY29kZSAyLjYKbGlicmFyeShyZXRoaW5raW5nKQpnbG9iZS5xYSA8LSBxdWFwKAogICAgYWxpc3QoCiAgICAgICAgVyB+IGRiaW5vbSggVytMICxwKSAsICAjIGJpbm9taWFsIGxpa2VsaWhvb2QKICAgICAgICBwIH4gZHVuaWYoMCwxKSAgICAgIyB1bmlmb3JtIHByaW9yCiAgICApICwKICAgIGRhdGE9bGlzdChXPTYsTD0zKSApCgojIGRpc3BsYXkgc3VtbWFyeSBvZiBxdWFkcmF0aWMgYXBwcm94aW1hdGlvbgpwcmVjaXMoIGdsb2JlLnFhICkKYGBgCgpgYGB7cn0KIyMgUiBjb2RlIDIuNwojIGFuYWx5dGljYWwgY2FsY3VsYXRpb24KVyA8LSA2CkwgPC0gMwpjdXJ2ZSggZGJldGEoIHggLCBXKzEgLCBMKzEgKSAsIGZyb209MCAsIHRvPTEgKQojIHF1YWRyYXRpYyBhcHByb3hpbWF0aW9uCmN1cnZlKCBkbm9ybSggeCAsIDAuNjcgLCAwLjE2ICkgLCBsdHk9MiAsIGFkZD1UUlVFICkKYGBgCgoKYGBge3J9CiMjIFIgY29kZSAyLjgKbl9zYW1wbGVzIDwtIDEwMDAKcCA8LSByZXAoIE5BICwgbl9zYW1wbGVzICkKcFsxXSA8LSAwLjUKVyA8LSA2CkwgPC0gMwpmb3IgKCBpIGluIDI6bl9zYW1wbGVzICkgewogICAgcF9uZXcgPC0gcm5vcm0oIDEgLCBwW2ktMV0gLCAwLjEgKQogICAgaWYgKCBwX25ldyA8IDAgKSBwX25ldyA8LSBhYnMoIHBfbmV3ICkKICAgIGlmICggcF9uZXcgPiAxICkgcF9uZXcgPC0gMiAtIHBfbmV3CiAgICBxMCA8LSBkYmlub20oIFcgLCBXK0wgLCBwW2ktMV0gKQogICAgcTEgPC0gZGJpbm9tKCBXICwgVytMICwgcF9uZXcgKQogICAgcFtpXSA8LSBpZmVsc2UoIHJ1bmlmKDEpIDwgcTEvcTAgLCBwX25ldyAsIHBbaS0xXSApCn0KCiMjIFIgY29kZSAyLjkKZGVucyggcCAsIHhsaW09YygwLDEpICkKY3VydmUoIGRiZXRhKCB4ICwgVysxICwgTCsxICkgLCBsdHk9MiAsIGFkZD1UUlVFICkKYGBgCgojIyMgYHRpZHl2ZXJzZWAgY29udmVyc2lvbgoKU3RhdGlzdGljYWwgUmV0aGlua2luZyB1c2VzIGJhc2UgUiBmdW5jdGlvbnMuIE1vcmUgcmVjZW50bHksIFNvbG9tYW4gS3VyeiBoYXMgY3JlYXRlZCBhIFt0cmFuc2xhdGlvbiBvZiB0aGUgYm9vaydzIGZ1bmN0aW9uc10oaHR0cHM6Ly9ib29rZG93bi5vcmcvY29udGVudC80ODU3LykgaW50byBgdGlkeXZlcnNlYCAoYW5kIGxhdGVyIGBicm1zYCkgY29kZS4gVGhpcyBpcyBub3QgbmVjZXNzYXJ5IGJ1dCBjb3VsZCBiZSBleHRyZW1lbHkgaGVscGZ1bCB0byBjbGFzc21hdGVzIHdobyBhcmUgZmFtaWxpYXIgd2l0aCBgdGlkeXZlcnNlYCBhbHJlYWR5LgoKRmlyc3QsIHdlJ2xsIG5lZWQgdG8gY2FsbCBgdGlkeXZlcnNlYC4gSWYgeW91IGRvIG5vdCBoYXZlIGB0aWR5dmVyc2VgLCB5b3UnbGwgbmVlZCB0byBpbnN0YWxsIGl0LgoKYGBge3J9CmxpYnJhcnkodGlkeXZlcnNlKQpgYGAKCgpGb3IgZXhhbXBsZSwgd2UgY2FuIHRyYW5zbGF0ZSAyLjMgY29kZSB1c2luZyBwaXBlcyAoYCU+JWApCgpgYGB7cn0KZCA8LSB0aWJibGUocF9ncmlkID0gc2VxKGZyb20gPSAwLCB0byA9IDEsIGxlbmd0aC5vdXQgPSAyMCksICAgICAgIyBkZWZpbmUgZ3JpZAogICAgICAgICAgIHByaW9yICA9IDEpICU+JSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMgZGVmaW5lIHByaW9yCiAgICBtdXRhdGUobGlrZWxpaG9vZCA9IGRiaW5vbSg2LCBzaXplID0gOSwgcHJvYiA9IHBfZ3JpZCkpICU+JSAgIyBjb21wdXRlIGxpa2VsaWhvb2QgYXQgZWFjaCB2YWx1ZSBpbiBncmlkCiAgICBtdXRhdGUodW5zdGRfcG9zdGVyaW9yID0gbGlrZWxpaG9vZCAqIHByaW9yKSAlPiUgICAgICAgICAgICAgIyBjb21wdXRlIHByb2R1Y3Qgb2YgbGlrZWxpaG9vZCBhbmQgcHJpb3IKICAgIG11dGF0ZShwb3N0ZXJpb3IgPSB1bnN0ZF9wb3N0ZXJpb3IgLyBzdW0odW5zdGRfcG9zdGVyaW9yKSkgCgpkCmBgYApXaXRoIHRoaXMgY2FsY3VsYXRlZCwgd2UgY2FuIHRoZW4gdXNlIGBnZ3Bsb3QyYCwgdGhlIHN0YXBsZSBgZ2dwbG90MmAgZGF0YSB2aXN1YWxpemF0aW9uIHBhY2thZ2UsIHRvIHBsb3Qgb3VyIHBvc3Rlcmlvci4KCmBgYHtyfQpkICU+JSAKICBnZ3Bsb3QoYWVzKHggPSBwX2dyaWQsIHkgPSBwb3N0ZXJpb3IpKSArCiAgZ2VvbV9wb2ludCgpICsKICBnZW9tX2xpbmUoKSArCiAgbGFicyhzdWJ0aXRsZSA9ICIyMCBwb2ludHMiLAogICAgICAgeCA9ICJwcm9iYWJpbGl0eSBvZiB3YXRlciIsCiAgICAgICB5ID0gInBvc3RlcmlvciBwcm9iYWJpbGl0eSIpICsKICB0aGVtZShwYW5lbC5ncmlkID0gZWxlbWVudF9ibGFuaygpKQpgYGAKCkZvciB0aGlzIGNsYXNzLCB3ZSdsbCBvY2Nhc2lvbmFsbHkgcmVmZXIgdG8gU29sb21hbidzIGd1aWRlLiAKCiMjIFBhY2thZ2UgdmVyc2lvbnMKCmBgYHtyfQpzZXNzaW9uSW5mbygpCmBgYA==" download="02-class.Rmd">
+<button class="btn btn-danger"><i class="fa fa-save"></i> Download this code</button>
+</a>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>For this class, we’ll review code examples found in Chapter 2.</p>
+<p>This assumes that you have already installed the <code>rethinking</code> package.</p>
+<p>If you need help, be sure to remember the references in the <a href="/resource/">Resources</a>:</p>
+<ul>
+<li><a href="/resource/install/">Installing R/RStudio</a></li>
+<li><a href="/resource/install-rethinking/">Installing <code>rethinking</code> package</a></li>
+<li><a href="/resource/rmarkdown/">Rmarkdown</a></li>
+<li><a href="/resource/style/">R Style guide</a></li>
+</ul>
+<div id="bayesian-updating-grid-approximation" class="section level3">
+<h3>Bayesian Updating: Grid Approximation</h3>
+<p>Let’s assume we have the table in 2.1</p>
+<pre class="r language-r"><code>## R code 2.1
+ways &lt;- c( 0 , 3 , 8 , 9 , 0 )
+ways/sum(ways)</code></pre>
+<pre class="language-r"><code>## [1] 0.00 0.15 0.40 0.45 0.00</code></pre>
+<p>Let’s compute the likelihood of six W’s in nine tosses (assuming a 50% probability):</p>
+<pre class="r language-r"><code>## R code 2.2
+dbinom( 6 , size=9 , prob=0.5 )</code></pre>
+<pre class="language-r"><code>## [1] 0.1640625</code></pre>
+<p>We can see it’s 16.4%.</p>
+<p>Be sure to examine the <code>dbinom</code> function by typing in <code>?dbinom</code> and exploring the documentation. We’ll use this function a lot in this class.</p>
+<p>Next, let’s define a grid. This is required when we are using Grid Approximation for our Bayesian calculations (i.e., to estimate the posterior).</p>
+<pre class="r language-r"><code>## R code 2.3
+# define grid
+p_grid &lt;- seq( from=0 , to=1 , length.out=20 )
+
+p_grid</code></pre>
+<pre class="language-r"><code>##  [1] 0.00000000 0.05263158 0.10526316 0.15789474 0.21052632 0.26315789
+##  [7] 0.31578947 0.36842105 0.42105263 0.47368421 0.52631579 0.57894737
+## [13] 0.63157895 0.68421053 0.73684211 0.78947368 0.84210526 0.89473684
+## [19] 0.94736842 1.00000000</code></pre>
+<p>Notice that this function creates a vector with length 20 and that ranges from 0 to 1. Note as well that each vector element is evenly spaced in increments of <code>(to - from)/(length.out - 1)</code>.</p>
+<p>Think about the trade-off between having a smaller or larger <code>length.out</code>.</p>
+<p>Next, let’s define our prior. We’ll assume a “flat” prior.</p>
+<pre class="r language-r"><code># define prior
+prior &lt;- rep( 1 , 20 )
+
+prior</code></pre>
+<pre class="language-r"><code>##  [1] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</code></pre>
+<pre class="r language-r"><code># compute likelihood at each value in grid
+likelihood &lt;- dbinom( 6 , size=9 , prob=p_grid )
+
+likelihood</code></pre>
+<pre class="language-r"><code>##  [1] 0.000000e+00 1.518149e-06 8.185093e-05 7.772923e-04 3.598575e-03
+##  [6] 1.116095e-02 2.668299e-02 5.292110e-02 9.082698e-02 1.383413e-01
+## [11] 1.897686e-01 2.361147e-01 2.666113e-01 2.714006e-01 2.450051e-01
+## [16] 1.897686e-01 1.179181e-01 5.026670e-02 8.853845e-03 0.000000e+00</code></pre>
+<pre class="r language-r"><code># compute product of likelihood and prior
+unstd.posterior &lt;- likelihood * prior
+
+unstd.posterior</code></pre>
+<pre class="language-r"><code>##  [1] 0.000000e+00 1.518149e-06 8.185093e-05 7.772923e-04 3.598575e-03
+##  [6] 1.116095e-02 2.668299e-02 5.292110e-02 9.082698e-02 1.383413e-01
+## [11] 1.897686e-01 2.361147e-01 2.666113e-01 2.714006e-01 2.450051e-01
+## [16] 1.897686e-01 1.179181e-01 5.026670e-02 8.853845e-03 0.000000e+00</code></pre>
+<pre class="r language-r"><code># standardize the posterior, so it sums to 1
+posterior &lt;- unstd.posterior / sum(unstd.posterior)
+
+posterior</code></pre>
+<pre class="language-r"><code>##  [1] 0.000000e+00 7.989837e-07 4.307717e-05 4.090797e-04 1.893887e-03
+##  [6] 5.873873e-03 1.404294e-02 2.785174e-02 4.780115e-02 7.280739e-02
+## [11] 9.987296e-02 1.242643e-01 1.403143e-01 1.428349e-01 1.289433e-01
+## [16] 9.987296e-02 6.205890e-02 2.645477e-02 4.659673e-03 0.000000e+00</code></pre>
+<pre class="r language-r"><code>## R code 2.4
+plot( p_grid , posterior , type=&quot;b&quot; ,
+    xlab=&quot;probability of water&quot; , ylab=&quot;posterior probability&quot; )
+mtext( &quot;20 points&quot; )</code></pre>
+<p><img src="/example/02-class_files/figure-html/unnamed-chunk-9-1.png" width="672" />
+What happens if we alter the priors? What will be the new posteriors?</p>
+<pre class="r language-r"><code>## R code 2.5
+prior &lt;- ifelse( p_grid &lt; 0.5 , 0 , 1 )
+prior &lt;- exp( -5*abs( p_grid - 0.5 ) )</code></pre>
+</div>
+<div id="bayesian-updating-quadratic-approximation" class="section level3">
+<h3>Bayesian Updating: Quadratic Approximation</h3>
+<pre class="r language-r"><code>## R code 2.6
+library(rethinking)
+globe.qa &lt;- quap(
+    alist(
+        W ~ dbinom( W+L ,p) ,  # binomial likelihood
+        p ~ dunif(0,1)     # uniform prior
+    ) ,
+    data=list(W=6,L=3) )
+
+# display summary of quadratic approximation
+precis( globe.qa )</code></pre>
+<pre class="language-r"><code>##        mean        sd      5.5%     94.5%
+## p 0.6666667 0.1571338 0.4155365 0.9177968</code></pre>
+<pre class="r language-r"><code>## R code 2.7
+# analytical calculation
+W &lt;- 6
+L &lt;- 3
+curve( dbeta( x , W+1 , L+1 ) , from=0 , to=1 )
+# quadratic approximation
+curve( dnorm( x , 0.67 , 0.16 ) , lty=2 , add=TRUE )</code></pre>
+<p><img src="/example/02-class_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<pre class="r language-r"><code>## R code 2.8
+n_samples &lt;- 1000
+p &lt;- rep( NA , n_samples )
+p[1] &lt;- 0.5
+W &lt;- 6
+L &lt;- 3
+for ( i in 2:n_samples ) {
+    p_new &lt;- rnorm( 1 , p[i-1] , 0.1 )
+    if ( p_new &lt; 0 ) p_new &lt;- abs( p_new )
+    if ( p_new &gt; 1 ) p_new &lt;- 2 - p_new
+    q0 &lt;- dbinom( W , W+L , p[i-1] )
+    q1 &lt;- dbinom( W , W+L , p_new )
+    p[i] &lt;- ifelse( runif(1) &lt; q1/q0 , p_new , p[i-1] )
+}
+
+## R code 2.9
+dens( p , xlim=c(0,1) )
+curve( dbeta( x , W+1 , L+1 ) , lty=2 , add=TRUE )</code></pre>
+<p><img src="/example/02-class_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+</div>
+<div id="tidyverse-conversion" class="section level3">
+<h3><code>tidyverse</code> conversion</h3>
+<p>Statistical Rethinking uses base R functions. More recently, Soloman Kurz has created a <a href="https://bookdown.org/content/4857/">translation of the book’s functions</a> into <code>tidyverse</code> (and later <code>brms</code>) code. This is not necessary but could be extremely helpful to classmates who are familiar with <code>tidyverse</code> already.</p>
+<p>First, we’ll need to call <code>tidyverse</code>. If you do not have <code>tidyverse</code>, you’ll need to install it.</p>
+<pre class="r language-r"><code>library(tidyverse)</code></pre>
+<p>For example, we can translate 2.3 code using pipes (<code>%&gt;%</code>)</p>
+<pre class="r language-r"><code>d &lt;- tibble(p_grid = seq(from = 0, to = 1, length.out = 20),      # define grid
+           prior  = 1) %&gt;%                                       # define prior
+    mutate(likelihood = dbinom(6, size = 9, prob = p_grid)) %&gt;%  # compute likelihood at each value in grid
+    mutate(unstd_posterior = likelihood * prior) %&gt;%             # compute product of likelihood and prior
+    mutate(posterior = unstd_posterior / sum(unstd_posterior)) 
+
+d</code></pre>
+<pre class="language-r"><code>## # A tibble: 20 × 5
+##    p_grid prior likelihood unstd_posterior   posterior
+##     &lt;dbl&gt; &lt;dbl&gt;      &lt;dbl&gt;           &lt;dbl&gt;       &lt;dbl&gt;
+##  1 0          1 0               0          0          
+##  2 0.0526     1 0.00000152      0.00000152 0.000000799
+##  3 0.105      1 0.0000819       0.0000819  0.0000431  
+##  4 0.158      1 0.000777        0.000777   0.000409   
+##  5 0.211      1 0.00360         0.00360    0.00189    
+##  6 0.263      1 0.0112          0.0112     0.00587    
+##  7 0.316      1 0.0267          0.0267     0.0140     
+##  8 0.368      1 0.0529          0.0529     0.0279     
+##  9 0.421      1 0.0908          0.0908     0.0478     
+## 10 0.474      1 0.138           0.138      0.0728     
+## 11 0.526      1 0.190           0.190      0.0999     
+## 12 0.579      1 0.236           0.236      0.124      
+## 13 0.632      1 0.267           0.267      0.140      
+## 14 0.684      1 0.271           0.271      0.143      
+## 15 0.737      1 0.245           0.245      0.129      
+## 16 0.789      1 0.190           0.190      0.0999     
+## 17 0.842      1 0.118           0.118      0.0621     
+## 18 0.895      1 0.0503          0.0503     0.0265     
+## 19 0.947      1 0.00885         0.00885    0.00466    
+## 20 1          1 0               0          0</code></pre>
+<p>With this calculated, we can then use <code>ggplot2</code>, the staple <code>ggplot2</code> data visualization package, to plot our posterior.</p>
+<pre class="r language-r"><code>d %&gt;% 
+  ggplot(aes(x = p_grid, y = posterior)) +
+  geom_point() +
+  geom_line() +
+  labs(subtitle = &quot;20 points&quot;,
+       x = &quot;probability of water&quot;,
+       y = &quot;posterior probability&quot;) +
+  theme(panel.grid = element_blank())</code></pre>
+<p><img src="/example/02-class_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p>For this class, we’ll occasionally refer to Soloman’s guide.</p>
+</div>
+</div>
+<div id="package-versions" class="section level2">
+<h2>Package versions</h2>
+<pre class="r language-r"><code>sessionInfo()</code></pre>
+<pre class="language-r"><code>## R version 4.1.1 (2021-08-10)
+## Platform: aarch64-apple-darwin20 (64-bit)
+## Running under: macOS Monterey 12.0.1
+## 
+## Matrix products: default
+## BLAS:   /Library/Frameworks/R.framework/Versions/4.1-arm64/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.1-arm64/Resources/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] parallel  stats     graphics  grDevices datasets  utils     methods  
+## [8] base     
+## 
+## other attached packages:
+##  [1] forcats_0.5.1        stringr_1.4.0        dplyr_1.0.7         
+##  [4] purrr_0.3.4          readr_2.0.2          tidyr_1.1.4         
+##  [7] tibble_3.1.6         tidyverse_1.3.1      rethinking_2.21     
+## [10] cmdstanr_0.4.0.9001  rstan_2.21.3         ggplot2_3.3.5       
+## [13] StanHeaders_2.21.0-7
+## 
+## loaded via a namespace (and not attached):
+##  [1] matrixStats_0.61.0   fs_1.5.0             lubridate_1.8.0     
+##  [4] httr_1.4.2           tensorA_0.36.2       tools_4.1.1         
+##  [7] backports_1.4.1      bslib_0.3.1          utf8_1.2.2          
+## [10] R6_2.5.1             DBI_1.1.1            colorspace_2.0-2    
+## [13] withr_2.4.3          tidyselect_1.1.1     gridExtra_2.3       
+## [16] prettyunits_1.1.1    processx_3.5.2       compiler_4.1.1      
+## [19] rvest_1.0.2          cli_3.1.0            xml2_1.3.2          
+## [22] labeling_0.4.2       bookdown_0.24        posterior_1.1.0     
+## [25] sass_0.4.0           scales_1.1.1         checkmate_2.0.0     
+## [28] mvtnorm_1.1-3        callr_3.7.0          bsplus_0.1.3        
+## [31] digest_0.6.29        rmarkdown_2.11       base64enc_0.1-3     
+## [34] pkgconfig_2.0.3      htmltools_0.5.2      dbplyr_2.1.1        
+## [37] fastmap_1.1.0        highr_0.9            readxl_1.3.1        
+## [40] rlang_0.4.12         rstudioapi_0.13      shape_1.4.6         
+## [43] jquerylib_0.1.4      farver_2.1.0         generics_0.1.1      
+## [46] jsonlite_1.7.2       distributional_0.2.2 inline_0.3.19       
+## [49] magrittr_2.0.1       loo_2.4.1            Rcpp_1.0.7          
+## [52] munsell_0.5.0        fansi_0.5.0          abind_1.4-5         
+## [55] lifecycle_1.0.1      stringi_1.7.6        yaml_2.2.1          
+## [58] MASS_7.3-54          pkgbuild_1.3.1       grid_4.1.1          
+## [61] crayon_1.4.2         lattice_0.20-44      haven_2.4.3         
+## [64] hms_1.1.1            knitr_1.36           ps_1.6.0            
+## [67] pillar_1.6.4         uuid_1.0-3           codetools_0.2-18    
+## [70] stats4_4.1.1         reprex_2.0.1         glue_1.6.0          
+## [73] evaluate_0.14        blogdown_1.5         modelr_0.1.8        
+## [76] renv_0.14.0          RcppParallel_5.1.4   tzdb_0.1.2          
+## [79] vctrs_0.3.8          cellranger_1.1.0     gtable_0.3.0        
+## [82] assertthat_0.2.1     xfun_0.28            mime_0.12           
+## [85] broom_0.7.9          coda_0.19-4          ellipsis_0.3.2      
+## [88] downloadthis_0.2.1   xaringanExtra_0.5.5</code></pre>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/example/01-class/" rel="next">Class 1</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/example/15-1-example/" rel="prev">Example: 15-1</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Jan 2, 2022</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+
+
+        </div>
+
+      </article>
+
+      <footer>
+    <hr>
+
+    <div class="row course-info">
+        <div class="col-md-7">
+            <p>
+                <strong>DSBA 6010 | STAT 7027: Bayesian Statistics (Spring 2022)</strong><br>
+                <a href="https://www.uncc.edu" target="_blank" rel="noopener">UNC Charlotte</a> &emsp;
+                <a href="https://datascience.charlotte.edu/" target="_blank" rel="noopener">School of Data Science</a> &emsp;
+                <a href="https://math.charlotte.edu/" target="_blank" rel="noopener">Dept. of Mathematics and Statistics</a>
+            </p>
+
+            <p>
+                <a href="https://wesslen.netlify.app" target="_blank" rel="noopener"><i class="fas fa-user"></i>
+                    Dr. Ryan Wesslen</a> &emsp;
+                <a href="mailto:rwesslen@uncc.edu"><i class="fas fa-envelope"></i>
+                    rwesslen@uncc.edu</a>
+            </p>
+
+            <p>
+                <i class="far fa-calendar-alt"></i> Monday &emsp;
+                <i class="far fa-clock"></i> 12:00pm-2:45pm &emsp;
+                <i class="fas fa-university"></i> Center City 1101
+            </p>
+        </div>
+
+        <div class="col-md-5 credits">
+            <p>All content licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+            
+            <p>Content <i class="fab fa-creative-commons"></i> 2022 <a href="https://wesslen.netlify.app" target="_blank" rel="noopener">Ryan Wesslen</a></p>
+        
+            <p>This site created with the <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> in <a href="https://bookdown.org/yihui/blogdown/" target="_blank" rel="noopener">blogdown</a> and <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>. </p>
+            
+            <p><a href="https://github.com/wesslen/dsba6010-spring2022" target="_blank" rel="noopener"><i class="fab fa-github"></i> View the source at GitHub.</a></p>
+        </div>
+    </div>
+</footer>
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.fb8eb32a4d207f5f18023712a904b210.js"></script>
+
+    
+
+<script src="/js/math-code.js"></script>
+
+
+</body>
+</html>
