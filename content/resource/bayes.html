@@ -1,6 +1,6 @@
 ---
 title: Bayesian statistics resources
-date: "2021-12-28"
+date: "2022-01-02"
 menu:
   resource:
     parent: Resources
@@ -19,7 +19,10 @@ editor_options:
 <link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
 
 
-<p>In class session 2 (<a href="/slides/02-class.html#12">see this from the FAQ slides</a>) we talked briefly about the difference between frequentist statistics, where you test for the probability of your data given a null hypothesis, or <span class="math inline">\(P(\text{data} \mid H_0)\)</span>, and Bayesian statistics, where you test for the probability of your hypothesis given your data, or <span class="math inline">\(P(H \mid \text{data})\)</span>.</p>
+<p>{{% callout note %}}</p>
+<p>This resource was created by Andrew Heiss for his <a href="https://evalf21.classes.andrewheiss.com/resource/">PMAP 8521 course</a>. I liked it so much, that I kept it without modification. Some of the topics will be covered in the class while others won’t in much detail (e.g., <code>brms</code>, ROPE). His course focuses more on causal inference (which we’ll cover a little) but only some coverage of Bayesian Statistics. Nevertheless, Andrew is a great communicator of Bayesian stats in practice (see <a href="https://www.andrewheiss.com/blog/2021/11/08/beta-regression-guide/">blog post 1</a>, <a href="https://www.andrewheiss.com/blog/2021/12/01/multilevel-models-panel-data-guide/">blog post 2</a>) and we’ll likely reference some of his work later on.</p>
+<p>{{% /callout %}}</p>
+<p>In class session 2 (<a href="https://evalf21.classes.andrewheiss.com/slides/02-class.html#12">see this from the FAQ slides</a>) we talked briefly about the difference between frequentist statistics, where you test for the probability of your data given a null hypothesis, or <span class="math inline">\(P(\text{data} \mid H_0)\)</span>, and Bayesian statistics, where you test for the probability of your hypothesis given your data, or <span class="math inline">\(P(H \mid \text{data})\)</span>.</p>
 <p>This difference is important. In the world of frequentism, which is what pretty much all statistics classes use (including this one!), you have to compare your findings to a hypothetical null world and you have to talk about rejecting null hypotheses. In the Bayes world, though, you get to talk about the probability that your hypothesis is correct rather than the probability of seeing a value in a null world. So much more convenient and easy to interpret!</p>
 <p>Bayesian statistics, though, requires a lot of computational power and a different way of thinking about statistics and numbers in general. And very few classes teach it. Including this one! I use Bayesian stats all the time in my own research (see <a href="https://www.andrewheiss.com/research/articles/chaudhry-heiss-ngos-philanthropy/">this</a> or <a href="https://www.andrewheiss.com/research/articles/chaudhry-dotson-heiss-2021/">this</a>, for instance), but don’t teach it (yet!) because nobody else really teaches it and frequentist statistics still rule the policy world, so you need to know it.</p>
 <div id="resources" class="section level2">
@@ -82,7 +85,7 @@ ggplot(posterior_draws, aes(x = .value, y = fct_rev(.variable), fill = .variable
 </div>
 <div id="confidence-intervals-vs.-credible-intervals" class="section level2">
 <h2>Confidence intervals vs. credible intervals</h2>
-<p><a href="/content/06-content/">In session 6</a>, we talked about frequentist confidence intervals and Bayesian credible (or posterior) intervals, since I had you read <a href="https://doi.org/10.1257/jep.35.3.157">Guido Imbens’s essay on <em>p</em>-values</a>, where his conclusion is that:</p>
+<p><a href="https://evalf21.classes.andrewheiss.com/content/06-content/">In session 6</a>, we talked about frequentist confidence intervals and Bayesian credible (or posterior) intervals, since I had you read <a href="https://doi.org/10.1257/jep.35.3.157">Guido Imbens’s essay on <em>p</em>-values</a>, where his conclusion is that:</p>
 <blockquote>
 <p>It would be preferable if reporting standards emphasized confidence intervals or standard errors, and, even better, Bayesian posterior intervals.</p>
 </blockquote>

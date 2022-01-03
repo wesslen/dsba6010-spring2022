@@ -18,7 +18,13 @@ set.seed(1234)
 options("digits" = 2, "width" = 150)
 ```
 
-In class session 2 ([see this from the FAQ slides](/slides/02-class.html#12)) we talked briefly about the difference between frequentist statistics, where you test for the probability of your data given a null hypothesis, or $P(\text{data} \mid H_0)$, and Bayesian statistics, where you test for the probability of your hypothesis given your data, or $P(H \mid \text{data})$. 
+{{% callout note %}}
+
+This resource was created by Andrew Heiss for his [PMAP 8521 course](https://evalf21.classes.andrewheiss.com/resource/). I liked it so much, that I kept it without modification. Some of the topics will be covered in the class while others won't in much detail (e.g., `brms`, ROPE). His course focuses more on causal inference (which we'll cover a little) but only some coverage of Bayesian Statistics. Nevertheless, Andrew is a great communicator of Bayesian stats in practice (see [blog post 1](https://www.andrewheiss.com/blog/2021/11/08/beta-regression-guide/), [blog post 2](https://www.andrewheiss.com/blog/2021/12/01/multilevel-models-panel-data-guide/)) and we'll likely reference some of his work later on.
+
+{{% /callout %}}
+
+In class session 2 ([see this from the FAQ slides](https://evalf21.classes.andrewheiss.com/slides/02-class.html#12)) we talked briefly about the difference between frequentist statistics, where you test for the probability of your data given a null hypothesis, or $P(\text{data} \mid H_0)$, and Bayesian statistics, where you test for the probability of your hypothesis given your data, or $P(H \mid \text{data})$. 
 
 This difference is important. In the world of frequentism, which is what pretty much all statistics classes use (including this one!), you have to compare your findings to a hypothetical null world and you have to talk about rejecting null hypotheses. In the Bayes world, though, you get to talk about the probability that your hypothesis is correct rather than the probability of seeing a value in a null world. So much more convenient and easy to interpret!
 
@@ -85,7 +91,7 @@ Those are all the plausible values for these coefficients, given the data that w
 
 ## Confidence intervals vs. credible intervals
 
-[In session 6](/content/06-content/), we talked about frequentist confidence intervals and Bayesian credible (or posterior) intervals, since I had you read [Guido Imbens's essay on *p*-values](https://doi.org/10.1257/jep.35.3.157), where his conclusion is that:
+[In session 6](https://evalf21.classes.andrewheiss.com/content/06-content/), we talked about frequentist confidence intervals and Bayesian credible (or posterior) intervals, since I had you read [Guido Imbens's essay on *p*-values](https://doi.org/10.1257/jep.35.3.157), where his conclusion is that:
 
 > It would be preferable if reporting standards emphasized confidence intervals or standard errors, and, even better, Bayesian posterior intervals.
 
