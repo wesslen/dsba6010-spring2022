@@ -16,7 +16,7 @@ weight: 1
 
 ## Zoom
 
-<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i></a>: 12:00pm - 2:45pm, January 10, 2022
+<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i> Zoom Link</a>: 12:00pm - 2:45pm, January 10, 2022
 
 ## Introduction to course
 
