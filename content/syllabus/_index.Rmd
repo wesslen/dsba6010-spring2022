@@ -4,9 +4,16 @@ linkTitle: Syllabus
 summary: Bayesian statistics and causal inference
 title: "\U0001F4CA Syllabus"
 slug: syllabus
+editor_options:
+  chunk_output_type: console
 ---
 
-```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+```{r setup, include=FALSE, warning=FALSE, include=FALSE}
+knitr::opts_chunk$set(fig.width = 6, fig.height = 3.6, fig.align = "center",
+                      fig.retina = 3, collapse = TRUE, out.width = "75%", class.source="language-r", class.output="language-r")
+xaringanExtra::use_clipboard()
+set.seed(1234)
+options("digits" = 2, "width" = 150)
 library(dplyr)
 library(tibble)
 library(pander)
@@ -39,19 +46,17 @@ Classical statistics classes spend substantial time covering probability theory,
 
 In this class,^[This philosophy as well as many other inspirational resources were originally created by [Andrew Heiss](andrewheiss.com), for example: his [PMAP 8521 course website](https://evalf21.classes.andrewheiss.com/syllabus/). Therefore, he deserves all praises for these ideas (he's an amazing teacher). I'm grateful to be able to use such materials.] we will take the opposite approach. We *begin* with data and learn how to use programming to draw inferences from statistical models.
 
-In other words, there's way less of this:^[<https://twitter.com/ChelseaParlett/status/1420189231943610370?s=20>]
+In other words, there's way less of this:
 
 $$
-f(x) = \dfrac{1}{\sqrt{2\pi}} e^{-\frac12 x^2}
+Pr(W,L|p) = \dfrac{(W+L)!}{W!L!} p^{W}(1-p)^L
 $$
 
 And way more of this:
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">summary_monthly_temp <span style="color:#f92672">&lt;-</span> weather <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">group_by</span>(month) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">summarize</span>(mean <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(temp),
-            std_dev <span style="color:#f92672">=</span> <span style="color:#a6e22e">sd</span>(temp))
-</code></pre></div>
+```{r}
+dbinom(6, 9, 0.7)
+```
 
 Over the last decade there has been a revolution in statistical and scientific computing. Open source languages like R and Python have overtaken older (and expensive!) corporate software packages like SAS and SPSS, and there are now thousands of books and blog posts and other online resources with excellent tutorials about how to analyze pretty much any kind of data.
 
@@ -89,10 +94,11 @@ knitr::include_graphics("/img/syllabus/learn-to-learn.png", error = FALSE)
 ```{r echo=FALSE, out.width="60%"}
 knitr::include_graphics("https://imgs.xkcd.com/comics/confounding_variables_2x.png", error = FALSE)
 ```
-
+<center>
 Source: [xkcd](https://www.explainxkcd.com/wiki/index.php/2560:_Confounding_Variables)
+</center>
 
-### Rewards
+### Rewards from taking this course
 
 - Develop unique skill set (Bayesian statistics + causal inference + probabilistic programming + ML) that will **distinguish** you in the **job market** and/or **academic opportunities**.
 
@@ -146,7 +152,6 @@ Searching for help with R on Google can sometimes be tricky because the program 
 
 Additionally, we have a class chatroom at [Slack](https://dsba6010-spring2022.slack.com/) where anyone in the class can ask questions and anyone can answer. **I will monitor Slack regularly and will respond quickly.** Ask questions about the readings, assignments, and project. You'll likely have similar questions as your peers, and you'll likely be able to answer other peoples' questions too.
 
-
 ## Course structure
 
 We meet weekly from 12:00-2:45 PM on Mondays in Center City 1101. This course will employ a [flipped classroom](https://en.wikipedia.org/wiki/Flipped_classroom) teaching method.
@@ -162,22 +167,18 @@ We will do several things during our Monday in-person classes:
 
 ### Schedule
 
-The [course schedule is listed here](/schedule/). In general, we'll likely cover 1-2 of Richard's lectures per course. However, there will be a few exceptions.
-
-This schedule may change per the instructor's discretion.
+The [course schedule is listed here](/schedule/). In general, we'll likely cover 1-2 of Richard's lectures per course. However, there will be a few exceptions. This schedule may change per the instructor's discretion.
 
 ### Weekly check-in
 
 Every week, after you finish working through the content, I want to hear about what you learned and what questions you still have. Because the content in this course is flipped, these questions are **crucial** for our weekly in-class discussions.
 
-To encourage engagement with the course content—and to allow me to collect the class's questions each week—you'll need to fill out a short response on Google Forms.
+To encourage engagement with the course content—and to allow me to collect the class's questions each week—you'll need to fill out a [short response on Google Forms](https://forms.gle/zMipNzav3BCL3Rwy9).
 
 You should answer these two questions each week:
 
 1. What were the **three (3)** most interesting or exciting things you learned from the session? Why?
 2. What were the **three (3)** muddiest or unclear things from the session this week? What are you still wondering about?    
-
-You can include more than three interesting or muddiest things, but you must include at least three. There should be six easily identifiable things in each check-in: three exciting things and three questions.
 
 ## Assignments and grades
 
@@ -185,11 +186,11 @@ There are five components to your grade in the course.
 
 1. **Lecture quizzes**: Before each class (due 11:59am of each class), students will complete a 5 question quiz on the due lecture/chapter. There will be a 15 minute timer and the quizzes will use Canvas. There are no late quizzes that will be accepted as we will review the quizzes first thing for each class. There are **eleven (11)** total quizzes; however, the **two (2)** lowest quizzes will be dropped at the end of the semester.
 
-2. **Participation**: Students will receive 10% of their grade based on participation. While I will not actively take attendance, this will be in large part a function of in-class participation (e.g., asking/answering questions, weekly check-ins) as well as out-of-class (e.g., Slack).
+2. **Participation**: Students will receive 5% of their grade based on participation. While I will not actively take attendance, this will be in large part a function of in-class participation (e.g., asking/answering questions, weekly check-ins) as well as out-of-class (e.g., Slack).
 
 3. **Problem sets**: For each lecture, there will be an accompanying problem set. These problem sets will largely mimic those from Richard's classes. **The lowest problem set will be dropped.** Problem sets late 48 hours will receive a **50%** reduction. Problem sets received after 48 hours will receive a zero. Please take note of [the problem set grading rubrics](/assignment/#problem-sets-1). For those problems reused from past classes, I will provide the answer keys before. However, likely there will be additional problems not from Richard's class; those solutions will not be provided until after the course. ^[My philosophy on problem sets is motivated [by tweets from Cora Wigger](https://twitter.com/cjlwig/status/1450925261831168008?s=21) to find a right balance between enabling students to keep pace (provide answer key for some questions) while providing an incentive to work on the problem sets (some questions w/o answer key).]
 
-4. **Exam**: There will be one in-class exam. It will be closed notes and based on chapter lectures, slides, and materials. It will be a blend of multiple choice (very similar to lecture quizzes) and short open ended questions (e.g., reading comprehension or explaining code snippets similar to problem sets).
+4. **Exam**: There will be one in-class exam. It will be closed notes and based on chapter lectures, slides, and materials. It will be a blend of multiple choice (very similar to lecture quizzes) and short open ended questions (e.g., reading comprehension or explaining code snippets similar to problem sets).^[Note: this exam structure may change if we need to move to an online due to the ongoing pandemic. Details will provided in advance to the exam.]
 
 5. **Final Project**: The final project will provide students an opportunity to find an application for Bayesian inference. Part of the grade will be two check-in assignments including an in-class presentation on a Bayesian topic and a proposal assignment.
 
@@ -244,7 +245,7 @@ blogdown::shortcode_open('spoiler', text = 'Can I work with others for problem s
 
 - You may work with up to 1 other student for problem sets. However, each student **must** submit his/her own problem set by the required time.
 
-- Projects may be completed individually or with 1 other student.
+- The final project may be completed individually or with 1 other student.
 
 ```{r echo=FALSE}
 blogdown::shortcode_close('spoiler')
