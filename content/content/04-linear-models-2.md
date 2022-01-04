@@ -8,7 +8,7 @@ menu:
 highlight: true
 tags:
 - Bayesian methods
-title: Class 4 - Linear Models
+title: Class 4 - Not-so-Basic Regression
 type: docs
 weight: 4
 ---

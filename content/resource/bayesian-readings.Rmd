@@ -54,6 +54,8 @@ Primer](https://arxiv.org/pdf/1411.5018.pdf) [@vanderplas2014frequentism] <i cla
 
 <!-- https://betanalpha.github.io/assets/case_studies/modeling_sparsity.html#1_Fading_into_Irrelevance
 
+<!-- https://boyangzhao.github.io/posts/mcmc-bayesian-inference -->
+
 -->
 
 ## DAGs / Causal Inference

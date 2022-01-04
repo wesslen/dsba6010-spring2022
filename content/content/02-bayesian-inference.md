@@ -41,12 +41,11 @@ weight: 2
 
 ### Lecture 2
 
-{{< youtube XoVtOAN0htU >}}
+{{< youtube guTdrfycW2Q >}}
 
 <br>
 
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/3bfa335d71ac499ebb10e11073efe777" title="L02 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;" data-ratio="1.3333333333333333"></iframe>
-
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/ecbbe6bc6df1496aa5b71e30c66b6bb7" title="Statistical Rethinking 2022 Lecture 02" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
 ## Comprehension questions
 

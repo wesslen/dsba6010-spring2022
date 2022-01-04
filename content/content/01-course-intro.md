@@ -22,6 +22,11 @@ weight: 1
 
 ## Installation of R/RStudio on Personal Machine
 
+* [Installing R/RStudio](/resource/install/)
+* [Installing `rethinking` package](/resource/install-rethinking/)
+* [Rmarkdown](/resource/rmarkdown/)
+* [Class 1 example](/example/01-class/) (optional)
+
 ## Next Week's Class
 
 As this course is "flipped classroom", you will be responsible for completing the readings and watching the lectures **before** next class. This includes completing the weekly check-in and lecture quiz before class. We will start our first problem set in next class. Click the link below to view next week's lectures.

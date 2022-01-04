@@ -20,10 +20,10 @@ library(pander)
 
 ## What you will learn
 
-- Bayesian inference through **probabilistic programming** (R/Stan, Python/PyMC3, Julia/Turing.jl)
-- **Computational approaches** for statistical modeling (quadratic approximation, sampling, MCMC, Hamiltonian Monte Carlo)
-- Machine learning techniques to **reduce overfitting** in statistical models (e.g., cross-validation, regularization, shrinkage, pooling)
+- Bayesian data analysis through **probabilistic programming** (R/Stan, Python/PyMC, Julia/Turing.jl)^[<https://twitter.com/ChelseaParlett/status/1260212290059595779?s=20>]
+- **Computational approaches** for statistical modeling (quadratic approximation, sampling, MCMC, Hamiltonian Monte Carlo)^[<https://twitter.com/chelseaparlett/status/1250787601641910285?s=21>]
 - **Causal inference** to develop robust statistical models and identify causal relationships
+- Machine learning techniques to **reduce overfitting** in statistical models (e.g., cross-validation, regularization, shrinkage, pooling)
 
 ## Course overview
 
@@ -37,9 +37,9 @@ The course also includes directed acyclic graph (DAG) approach to causal inferen
 
 Classical statistics classes spend substantial time covering probability theory, null hypothesis testing, and other statistical tests first developed hundreds of years ago. Some classes don't use software or actual real data and instead live in the world of mathematical proofs. They can be math-heavy and full of often unintuitive concepts and equations.
 
-In this class,^[This philosophy as well as many other inspirational resources were originally created by [Andrew Heiss](andrewheiss.com), for example: his [PMAP 8521 course website](https://evalf21.classes.andrewheiss.com/syllabus/). Therefore, he deserves all praises for these ideas (he's an amazing teacher). I'm grateful to be able to use such materials.] we will take the opposite approach. We *begin* with data and learn how to tidy, wrangle, manipulate, and visualize it with code. Later in the semester we'll turn to the powerful toolbox of causal inference approaches, but continue to keep the focus on data as we do so.
+In this class,^[This philosophy as well as many other inspirational resources were originally created by [Andrew Heiss](andrewheiss.com), for example: his [PMAP 8521 course website](https://evalf21.classes.andrewheiss.com/syllabus/). Therefore, he deserves all praises for these ideas (he's an amazing teacher). I'm grateful to be able to use such materials.] we will take the opposite approach. We *begin* with data and learn how to use programming to draw inferences from statistical models.
 
-In other words, there's way less of this:
+In other words, there's way less of this:^[<https://twitter.com/ChelseaParlett/status/1420189231943610370?s=20>]
 
 $$
 f(x) = \dfrac{1}{\sqrt{2\pi}} e^{-\frac12 x^2}
@@ -71,21 +71,36 @@ Even experienced programmers and evaluators find themselves bashing their heads 
 knitr::include_graphics("/img/syllabus/r-learn.png", error = FALSE)
 ```
 
-### Be confident to be comfortable with confusion
+### Learn to draw the owl 
 
 ```{r echo=FALSE, out.width="60%"}
-# https://twitter.com/allison_horst/status/1213275783675822080
 knitr::include_graphics("/img/syllabus/owl.png", error = FALSE)
 ```
 
-### Learn to learn
+### Learn how to learn effectively
 
 ```{r echo=FALSE, out.width="60%"}
 # https://twitter.com/allison_horst/status/1213275783675822080
 knitr::include_graphics("/img/syllabus/learn-to-learn.png", error = FALSE)
 ```
 
+### Be confident to be comfortable with confusion
+
+```{r echo=FALSE, out.width="60%"}
+knitr::include_graphics("https://imgs.xkcd.com/comics/confounding_variables_2x.png", error = FALSE)
+```
+
+Source: [xkcd](https://www.explainxkcd.com/wiki/index.php/2560:_Confounding_Variables)
+
 ### Rewards
+
+- Develop unique skill set (Bayesian statistics + causal inference + probabilistic programming + ML) that will **distinguish** you in the **job market** and/or **academic opportunities**.
+
+- Use problem sets and the final project to **build your data science portfolio** (encourage communication and reproducibility).^[I highly recommend aspiring data scientists to read David Robinson's [inspiring post to create a blog](http://varianceexplained.org/r/start-blog/). If you're interested for yourself, I also recommend starting with Allison Hill's [Up and Running with `blogdown` post](https://www.apreshill.com/blog/2020-12-new-year-new-blogdown/) to show how to do it in R. In fact, this website is created using `blogdown`. DM me on Slack if you have questions!]
+
+- Expose you to a wide range of **applications in Bayesian inference and causal inference** in areas like astronomy, ecology, human-computer interaction, cognitive science, biology, political science, and many more.
+
+- Exposures (when possible) to additional data science tools/techniques to enhance how you **communicate data analysis** (e.g., RMarkdown, shiny, tidyverse).
 
 
 
@@ -113,7 +128,7 @@ blogdown::shortcode('spoiler', text = 'Can I use Python or Julia instead of R in
 
 - Lectures, readings, and problem sets will use R. Students **must complete** problem sets in R and the exam may cover some R code examples.
 
-- However, final projects can be done in Python (e.g., pyMC) or Julia (turing.jl); however, it is the student's responsibility to be fluent in setting up related environments/packages (e.g., Jupyter, virtual environments, etc.) if they want to use Python or Julia.
+- However, final projects can be done in Python (e.g., pyMC) or Julia (turing.jl). We'll likely have a class and/or guest lecture on Python (PyMC) and/or Julia later in the semester. 
 
 ```{r echo=FALSE}
 blogdown::shortcode_close('spoiler')
@@ -185,8 +200,8 @@ You can find descriptions for all the assignments on the [assignments page](/ass
 assignments <- tribble(
   ~Points,   ~Assignment,
   50,    "Participation",
-  180,   "Lecture quizzes",
-  320,    "Problem sets",
+  180,   "Lecture quizzes (9 * 20pt)",
+  320,    "Problem sets (8 * 40pt)",
   200,       "Exam",
   250,       "Final Project"
 ) %>%

@@ -8,7 +8,7 @@ menu:
 highlight: true
 tags:
 - Bayesian methods
-title: Class 3 - Linear Models
+title: Class 3 - Basic Regression
 type: docs
 weight: 3
 ---

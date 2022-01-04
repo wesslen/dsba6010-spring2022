@@ -138,6 +138,12 @@ plot( resid(m) ~ speed , data=cars )&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;a href=&#34;https://uncc.zoom.us/j/93339403054&#34;&gt;&lt;i class=&#34;fas fa-video fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;: 12:00pm - 2:45pm, January 10, 2022&lt;/p&gt;
 &lt;h2 id=&#34;introduction-to-course&#34;&gt;Introduction to course&lt;/h2&gt;
 &lt;h2 id=&#34;installation-of-rrstudio-on-personal-machine&#34;&gt;Installation of R/RStudio on Personal Machine&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/install/&#34;&gt;Installing R/RStudio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/install-rethinking/&#34;&gt;Installing &lt;code&gt;rethinking&lt;/code&gt; package&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/rmarkdown/&#34;&gt;Rmarkdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/example/01-class/&#34;&gt;Class 1 example&lt;/a&gt; (optional)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;next-weeks-class&#34;&gt;Next Week&amp;rsquo;s Class&lt;/h2&gt;
 &lt;p&gt;As this course is &amp;ldquo;flipped classroom&amp;rdquo;, you will be responsible for completing the readings and watching the lectures &lt;strong&gt;before&lt;/strong&gt; next class. This includes completing the weekly check-in and lecture quiz before class. We will start our first problem set in next class. Click the link below to view next week&amp;rsquo;s lectures.&lt;/p&gt;
 </description>
@@ -563,11 +569,11 @@ d&lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;lecture-2&#34;&gt;Lecture 2&lt;/h3&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/XoVtOAN0htU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/guTdrfycW2Q&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;br&gt;
-&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/3bfa335d71ac499ebb10e11073efe777&#34; title=&#34;L02 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/ecbbe6bc6df1496aa5b71e30c66b6bb7&#34; title=&#34;Statistical Rethinking 2022 Lecture 02&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;&#34; data-ratio=&#34;1.78343949044586&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-5&#34;&gt;
   &lt;summary&gt;What is Bayesian data analysis? How does it differ in its definition of uncertainty from Frequentist interpretations?&lt;/summary&gt;
@@ -1405,7 +1411,7 @@ m %&amp;gt;%
     </item>
     
     <item>
-      <title>Class 3 - Linear Models</title>
+      <title>Class 3 - Basic Regression</title>
       <link>https://dsba6010-spring2022.netlify.app/content/03-linear-models/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/03-linear-models/</guid>
@@ -1803,7 +1809,7 @@ Wetzels, Ruud, Dora Matzke, Michael D Lee, Jeffrey N Rouder, Geoffrey J Iverson,
     </item>
     
     <item>
-      <title>Class 4 - Linear Models</title>
+      <title>Class 4 - Not-so-Basic Regression</title>
       <link>https://dsba6010-spring2022.netlify.app/content/04-linear-models-2/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/04-linear-models-2/</guid>

@@ -708,10 +708,10 @@
         <h3>Instructor</h3>
         <ul class="icon-list">
             <li><i class="fas fa-user"></i> <a href="https://wesslen.netlify.app" target="_blank" rel="noopener"> Dr. Ryan Wesslen</a></li>
-            <li><i class="fas fa-university"></i> Center City 714</li>
             <li><i class="fas fa-envelope"></i> <a href="mailto:rwesslen@uncc.edu"> rwesslen@uncc.edu</a></li>
             <li><i class="fab fa-twitter"></i> <a href="https://twitter.com/ryanwesslen" target="_blank" rel="noopener"> @ryanwesslen</a></li>
             <li><i class="fas fa-calendar-check"></i> <a href="https://calendly.com/ryanwesslen/bayesian-stats-office-hours" target="_blank" rel="noopener"> Schedule an appointment</a></li>
+                        <li><i class="fas fa-university"></i> Center City 714</li>
         </ul>
     </div>
     <div class="col-md-4">
@@ -734,10 +734,10 @@
 <div id="what-you-will-learn" class="section level2">
 <h2>What you will learn</h2>
 <ul>
-<li>Bayesian inference through <strong>probabilistic programming</strong> (R/Stan, Python/PyMC3, Julia/Turing.jl)</li>
+<li>Bayesian data analysis through <strong>probabilistic programming</strong> (R/Stan, Python/PyMC, Julia/Turing.jl)</li>
 <li><strong>Computational approaches</strong> for statistical modeling (quadratic approximation, sampling, MCMC, Hamiltonian Monte Carlo)</li>
-<li>Machine learning techniques to <strong>reduce overfitting</strong> in statistical models (e.g., cross-validation, regularization, shrinkage, pooling)</li>
 <li><strong>Causal inference</strong> to develop robust statistical models and identify causal relationships</li>
+<li>Machine learning techniques to <strong>reduce overfitting</strong> in statistical models (e.g., cross-validation, regularization, shrinkage, pooling)</li>
 </ul>
 </div>
 <div id="course-overview" class="section level2">
@@ -749,7 +749,7 @@
 <div id="course-philosophy" class="section level2">
 <h2>Course philosophy</h2>
 <p>Classical statistics classes spend substantial time covering probability theory, null hypothesis testing, and other statistical tests first developed hundreds of years ago. Some classes don’t use software or actual real data and instead live in the world of mathematical proofs. They can be math-heavy and full of often unintuitive concepts and equations.</p>
-<p>In this class,<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> we will take the opposite approach. We <em>begin</em> with data and learn how to tidy, wrangle, manipulate, and visualize it with code. Later in the semester we’ll turn to the powerful toolbox of causal inference approaches, but continue to keep the focus on data as we do so.</p>
+<p>In this class,<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> we will take the opposite approach. We <em>begin</em> with data and learn how to use programming to draw inferences from statistical models.</p>
 <p>In other words, there’s way less of this:</p>
 <p><span class="math display">\[
 f(x) = \dfrac{1}{\sqrt{2\pi}} e^{-\frac12 x^2}
@@ -784,6 +784,12 @@ Even experienced programmers and evaluators find themselves bashing their heads 
 </div>
 <div id="rewards" class="section level3">
 <h3>Rewards</h3>
+<ul>
+<li><p>Develop unique skill set (Bayesian statistics + causal inference + probabilistic programming + ML) that will <strong>distinguish</strong> you in the <strong>job market</strong> and/or <strong>academic opportunities</strong>.</p></li>
+<li><p>Use problem sets and the final project to <strong>build your data science portfolio</strong> (encourage communication and reproducibility).<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p></li>
+<li><p>Expose you to a wide range of <strong>applications in Bayesian inference and causal inference</strong> in areas like astronomy, ecology, human-computer interaction, cognitive science, biology, political science, and many more.</p></li>
+<li><p>Exposures (when possible) to additional data science tools/techniques to enhance how you <strong>communicate data analysis</strong> (e.g., RMarkdown, shiny, tidyverse).</p></li>
+</ul>
 </div>
 </div>
 <div id="course-materials" class="section level2">
@@ -804,7 +810,7 @@ Even experienced programmers and evaluators find themselves bashing their heads 
   <p></p>
 <ul>
 <li><p>Lectures, readings, and problem sets will use R. Students <strong>must complete</strong> problem sets in R and the exam may cover some R code examples.</p></li>
-<li><p>However, final projects can be done in Python (e.g., pyMC) or Julia (turing.jl); however, it is the student’s responsibility to be fluent in setting up related environments/packages (e.g., Jupyter, virtual environments, etc.) if they want to use Python or Julia.</p></li>
+<li><p>However, final projects can be done in Python (e.g., pyMC) or Julia (turing.jl). We’ll likely have a class and/or guest lecture on Python (PyMC) and/or Julia later in the semester.</p></li>
 </ul>
 <p></p>
 </details></p>
@@ -851,15 +857,15 @@ We will do several things during our Monday in-person classes:</p>
 <ol style="list-style-type: decimal">
 <li><p><strong>Lecture quizzes</strong>: Before each class (due 11:59am of each class), students will complete a 5 question quiz on the due lecture/chapter. There will be a 15 minute timer and the quizzes will use Canvas. There are no late quizzes that will be accepted as we will review the quizzes first thing for each class. There are <strong>eleven (11)</strong> total quizzes; however, the <strong>two (2)</strong> lowest quizzes will be dropped at the end of the semester.</p></li>
 <li><p><strong>Participation</strong>: Students will receive 10% of their grade based on participation. While I will not actively take attendance, this will be in large part a function of in-class participation (e.g., asking/answering questions, weekly check-ins) as well as out-of-class (e.g., Slack).</p></li>
-<li><p><strong>Problem sets</strong>: For each lecture, there will be an accompanying problem set. These problem sets will largely mimic those from Richard’s classes. <strong>The lowest problem set will be dropped.</strong> Problem sets late 48 hours will receive a <strong>50%</strong> reduction. Problem sets received after 48 hours will receive a zero. Please take note of <a href="/assignment/#problem-sets-1">the problem set grading rubrics</a>. For those problems reused from past classes, I will provide the answer keys before. However, likely there will be additional problems not from Richard’s class; those solutions will not be provided until after the course. <a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p></li>
+<li><p><strong>Problem sets</strong>: For each lecture, there will be an accompanying problem set. These problem sets will largely mimic those from Richard’s classes. <strong>The lowest problem set will be dropped.</strong> Problem sets late 48 hours will receive a <strong>50%</strong> reduction. Problem sets received after 48 hours will receive a zero. Please take note of <a href="/assignment/#problem-sets-1">the problem set grading rubrics</a>. For those problems reused from past classes, I will provide the answer keys before. However, likely there will be additional problems not from Richard’s class; those solutions will not be provided until after the course. <a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p></li>
 <li><p><strong>Exam</strong>: There will be one in-class exam. It will be closed notes and based on chapter lectures, slides, and materials. It will be a blend of multiple choice (very similar to lecture quizzes) and short open ended questions (e.g., reading comprehension or explaining code snippets similar to problem sets).</p></li>
 <li><p><strong>Final Project</strong>: The final project will provide students an opportunity to find an application for Bayesian inference. Part of the grade will be two check-in assignments including an in-class presentation on a Bayesian topic and a proposal assignment.</p></li>
 </ol>
 <p>You can find descriptions for all the assignments on the <a href="/assignment/">assignments page</a>.</p>
 <div class="centered-table">
-<table style="width:51%;">
+<table style="width:67%;">
 <colgroup>
-<col width="25%" />
+<col width="40%" />
 <col width="12%" />
 <col width="13%" />
 </colgroup>
@@ -877,12 +883,12 @@ We will do several things during our Monday in-person classes:</p>
 <td align="center">5.0%</td>
 </tr>
 <tr class="even">
-<td align="left">Lecture quizzes</td>
+<td align="left">Lecture quizzes (9 * 20pt)</td>
 <td align="center">180</td>
 <td align="center">18.0%</td>
 </tr>
 <tr class="odd">
-<td align="left">Problem sets</td>
+<td align="left">Problem sets (8 * 40pt)</td>
 <td align="center">320</td>
 <td align="center">32.0%</td>
 </tr>
@@ -962,7 +968,7 @@ There will be only rare exceptions to this requirement, such as when students ar
 </div>
 <div id="vaccines" class="section level3">
 <h3>Vaccines</h3>
-<p>If you are not vaccinated (with booster), please consider getting the COVID-19 vaccination<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> (<a href="https://ninernationcares.charlotte.edu/health-safety/covid-19-vaccine-information">sign up for one here!</a>). It is free. It saves lives. (Full disclosure: I am fully vaccinated plus booster.)</p>
+<p>If you are not vaccinated (with booster), please consider getting the COVID-19 vaccination<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> (<a href="https://ninernationcares.charlotte.edu/health-safety/covid-19-vaccine-information">sign up for one here!</a>). It is free. It saves lives. (Full disclosure: I am fully vaccinated plus booster.)</p>
 </div>
 <div id="orderly-and-productive-classroom-conduct" class="section level3">
 <h3>Orderly and productive classroom conduct</h3>
@@ -1001,8 +1007,9 @@ There will be only rare exceptions to this requirement, such as when students ar
 <hr />
 <ol>
 <li id="fn1"><p>This philosophy as well as many other inspirational resources were originally created by <a href="andrewheiss.com">Andrew Heiss</a>, for example: his <a href="https://evalf21.classes.andrewheiss.com/syllabus/">PMAP 8521 course website</a>. Therefore, he deserves all praises for these ideas (he’s an amazing teacher). I’m grateful to be able to use such materials.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>My philosophy on problem sets is motivated <a href="https://twitter.com/cjlwig/status/1450925261831168008?s=21">by tweets from Cora Wigger</a> to find a right balance between enabling students to keep pace (provide answer key for some questions) while providing an incentive to work on the problem sets (some questions w/o answer key).<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
-<li id="fn3"><p>UNCC does not require this and I can’t legally require this but I am allowed to urge it so here’s me urging it. Thank you for understanding and protecting your classmates’ health.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>I highly recommend aspiring data scientists to read David Robinson’s <a href="http://varianceexplained.org/r/start-blog/">inspiring post to create a blog</a>. If you’re interested for yourself, I also recommend starting with Allison Hill’s <a href="https://www.apreshill.com/blog/2020-12-new-year-new-blogdown/">Up and Running with <code>blogdown</code> post</a> to show how to do it in R. In fact, this website is created using <code>blogdown</code>. DM me on Slack if you have questions!<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>My philosophy on problem sets is motivated <a href="https://twitter.com/cjlwig/status/1450925261831168008?s=21">by tweets from Cora Wigger</a> to find a right balance between enabling students to keep pace (provide answer key for some questions) while providing an incentive to work on the problem sets (some questions w/o answer key).<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>UNCC does not require this and I can’t legally require this but I am allowed to urge it so here’s me urging it. Thank you for understanding and protecting your classmates’ health.<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 </div>
