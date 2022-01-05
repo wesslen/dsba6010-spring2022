@@ -20,7 +20,9 @@ weight: 1
 
 ## Introduction to course
 
-{{< gslides src="https://docs.google.com/presentation/d/e/2PACX-1vQcvuxQg-2tVMmu-5gW76GQySVhBFdaQBUxApkKtlKKa3SKX4d45ylTB8TIGREh563x26M7HTbvwYos/pub?start=false&loop=false&delayms=3000" >}}
+{{< gslides src="https://docs.google.com/presentation/d/e/2PACX-1vQcvuxQg-2tVMmu-5gW76GQySVhBFdaQBUxApkKtlKKa3SKX4d45ylTB8TIGREh563x26M7HTbvwYos/embed?start=false&loop=false&delayms=3000" >}}
+
+
 
 ## Installation of R/RStudio on Personal Machine
 
