@@ -13,6 +13,8 @@ type: docs
 weight: 2
 ---
 
+![](https://pbs.twimg.com/media/E7luuH_VIAM8yzn?format=png&name=small)<center>[@ChelseaParlett](https://twitter.com/ChelseaParlett/status/1421291716229746689)</center>
+
 ## Zoom
 
 <a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i> Zoom Link</a>: 12:00pm - 2:45pm, January 24, 2022
@@ -68,34 +70,14 @@ weight: 2
 
 {{% spoiler text="What is the core problem with null hypothesis testing?" %}}
 
-- **Models are not hypotheses**; they are neither true or false. Models are "golems" that do as they are told.
+- Null hypotheses are **not** unique. 
 
-- Ideally should **compare performance across models** (model comparison).
+- **Models are not hypotheses**; they are neither true or false. Models are "golems" that do as they are told. Ideally should **compare performance across models** (model comparison).
 
 - Popper: **test (attempt to falsify) research hypothesis**. Use theory, make a falsifiable prediction, and test that; not that nothing happened (aka null hypothesis).
 
 {{% /spoiler %}}
 
-
-{{% spoiler text="What are three ways in which cross-validation and information theory aid in model evaluation?" %}}
-
-1. They provide **useful expectations of predictive accuracy**, rather than merely fit to sample. So they **compare models** where it matters. 
-
-2. They give us an **estimate of the tendency of a model** to overfit. This will help us to understand how models and data interact, which in turn helps us to design better models.
-
-3. They help us to spot **highly influential observations**.
-
-- We will cover these topics later in the semester.
-
-{{% /spoiler %}}
-
-{{% spoiler text="What are the benefits of using multilevel (aka hierarchical) models?" %}}
-
-- They acknowledge that, though each individual group might have its own model, one group can provide valuable information about another. That is, **"let’s learn from one another while celebrating our individuality."**
-
-- We will cover these later in the course.
-
-{{% /spoiler %}}
 
 ## Deliverables
 

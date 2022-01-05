@@ -40,6 +40,10 @@ weight: 12
 
 ## Comprehension questions
 
-TBD
+{{% spoiler text="What are the benefits of using multilevel (aka hierarchical) models?" %}}
+
+- They acknowledge that, though each individual group might have its own model, one group can provide valuable information about another. That is, **"let’s learn from one another while celebrating our individuality."**
+
+{{% /spoiler %}}
 
 ## Deliverables

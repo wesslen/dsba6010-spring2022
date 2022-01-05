@@ -40,6 +40,14 @@ weight: 7
 
 ## Comprehension questions
 
-TBD
+{{% spoiler text="What are three ways in which cross-validation and information theory aid in model evaluation?" %}}
+
+1. They provide **useful expectations of predictive accuracy**, rather than merely fit to sample. So they **compare models** where it matters. 
+
+2. They give us an **estimate of the tendency of a model** to overfit. This will help us to understand how models and data interact, which in turn helps us to design better models.
+
+3. They help us to spot **highly influential observations**.
+
+{{% /spoiler %}}
 
 ## Deliverables
