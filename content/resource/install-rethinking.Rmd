@@ -171,8 +171,6 @@ precis(fit)
 This first runs `quap` which uses quadratic approximation for fitting the posterior. This is what we'll use for the first few weeks of the class before we use MCMC methods via Stan.
 
 ```{r}
-# this uses cmdstanr version; this is recommended
-# you can set this permanently (i.e., don't need the argument) by running set_ulam_cmdstan(TRUE)
 # as of rethinking v2.21, cmdstan=TRUE is now default; therefore not necessary
 fit_stan <- ulam( f , data=list(y=c(-1,1)), cmdstan = TRUE )
 precis(fit_stan)

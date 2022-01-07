@@ -1,5 +1,5 @@
 ---
-title: Installing R, RStudio, tidyverse, and tinytex
+title: Installing R, RStudio, and others
 date: "2021-12-01"
 menu:
   resource:
@@ -16,7 +16,44 @@ You will do all of your work in this class with the open source (and free!) prog
 
 ## RStudio on your computer
 
-RStudio.cloud is convenient, but it can be slow and it is not designed to be able to handle larger datasets, more complicated analysis, or fancier graphics. Over the course of the semester, you should wean yourself off of RStudio.cloud and install all these things locally. This is also important if you want to customize fonts, since RStudio.cloud has extremely limited support for fonts other than Helvetica. 
+
+```{r echo=FALSE}
+blogdown::shortcode_open('spoiler', text = 'I already have R and/or RStudio installed on my computer. What should I do?')
+```
+
+- Unfortunately this answer isn't easy (and highlights why we'll emphasize good reproducibility practices first).
+
+- What's important is for you to first figure out these three things:
+
+1. What is your operating system?
+
+2. What version of R do you have?
+
+3. What version of RStudio do you have?
+
+- For the first two, type in `sessionInfo()` into R. At the top, you should see your R version and operating system. We're going to work with R version 4.1.1. If you don't have it, you can download it and RStudio will automatically find your new version of R.
+
+- For RStudio, I recommend having at least 1.4 or higher. It's important to note that RStudio versioninig changed recently as the September release moved to a calendar based version (see [this link for more details](https://support.rstudio.com/hc/en-us/articles/200716783-RStudio-IDE-Release-History)). So if you have the `2021.09.0` or higher, you're okay.
+
+- If you want a great overview, see Colin Gillespie and Robin Lovelace's [Efficient R programming package](https://csgillespie.github.io/efficientR/set-up.html).
+
+```{r echo=FALSE}
+blogdown::shortcode_close('spoiler')
+```
+
+```{r echo=FALSE}
+blogdown::shortcode_open('spoiler', text = 'If I install a new version of RStudio, will I need to reinstall all of my packages?')
+```
+
+- Likely. However, recognizing this first is the most critical step.
+
+- There are a lot of helpful tutorials on how to navigate. A lot of it is contingent on what is your operating system. For example, there is a helpful R package for updating for Windows user ([`installr` website](https://cran.r-project.org/web/packages/installr/index.html)), which I highly recommend.
+
+- For Mac or Linux users, this is more challenging. There are several helpful blog posts (see [blog 1](https://rfortherestofus.com/2020/09/how-to-update-rstudio-r-packages/), [blog 2](https://csgillespie.github.io/efficientR/set-up.html#r-version)) but I recommend [Jenny Bryan's advice](https://rstats.wtf/maintaining-r.html#how-to-transfer-your-library-when-updating-r). Try her instructions. If it doesn't work out, reach out to me on Slack and we'll work together.
+
+```{r echo=FALSE}
+blogdown::shortcode_close('spoiler')
+```
 
 Here's how you install all these things:
 
@@ -54,43 +91,6 @@ include_graphics("/img/install/install-r-windows.png", error = FALSE)
 4. If you use macOS, [download and install XQuartz](https://www.xquartz.org/). You do not need to do this on Windows.
 
 
-```{r echo=FALSE}
-blogdown::shortcode_open('spoiler', text = 'I already have R and/or RStudio installed on my computer. What should I do?')
-```
-
-- Likely. Unfortunately this answer isn't easy (and highlights why we'll emphasis good reproducibility practices first).
-
-- What's important is for you to first figure out these three things:
-
-1. What is your operating system?
-
-2. What version of R do you have?
-
-3. What version of RStudio do you have?
-
-- For the first two, type in `sessionInfo()` into R. At the top, you should see your R version and operating system. We're going to work with R version 4.1.1. If you don't have it, you can download it and RStudio will automatically find your new version of R.
-
-- For RStudio, I recommend having at least 1.4 or higher. It's important to note that RStudio versioninig changed recently as the September release moved to a calendar based version (see [this link for more details](https://support.rstudio.com/hc/en-us/articles/200716783-RStudio-IDE-Release-History)). So if you have the `2021.09.0` or higher, you're okay.
-
-- If you want a great overview, see Colin Gillespie and Robin Lovelace's [Efficient R programming package](https://csgillespie.github.io/efficientR/set-up.html).
-
-```{r echo=FALSE}
-blogdown::shortcode_close('spoiler')
-```
-
-```{r echo=FALSE}
-blogdown::shortcode_open('spoiler', text = 'If I install a new version of RStudio, will I need to reinstall all of my packages?')
-```
-
-- Likely. However, recognizing this first is the most critical step.
-
-- There are a lot of helpful tutorials on how to navigate. A lot of it is contingent on what is your operating system. For example, there is a helpful R package for updating for Windows user ([`installr` website](https://cran.r-project.org/web/packages/installr/index.html)), which I highly recommend.
-
-- For Mac or Linux users, this is more challenging. There are several helpful blog posts (see [blog 1](https://rfortherestofus.com/2020/09/how-to-update-rstudio-r-packages/), [blog 2](https://csgillespie.github.io/efficientR/set-up.html#r-version)) but I recommend [Jenny Bryan's advice](https://rstats.wtf/maintaining-r.html#how-to-transfer-your-library-when-updating-r). Try her instructions. If it doesn't work out, reach out to me on Slack and we'll work together.
-
-```{r echo=FALSE}
-blogdown::shortcode_close('spoiler')
-```
 
 ### Install RStudio
 

@@ -16,13 +16,11 @@ weight: 1
 
 ## Zoom
 
-<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i> Zoom Link</a>: 12:00pm - 2:45pm, January 10, 2022
+<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i> Zoom</a>: 12:00pm - 2:45pm, January 10, 2022
 
 ## Introduction to course
 
 {{< gslides src="https://docs.google.com/presentation/d/e/2PACX-1vQcvuxQg-2tVMmu-5gW76GQySVhBFdaQBUxApkKtlKKa3SKX4d45ylTB8TIGREh563x26M7HTbvwYos/embed?start=false&loop=false&delayms=3000" >}}
-
-
 
 ## Installation of R/RStudio on Personal Machine
 

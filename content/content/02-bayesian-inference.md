@@ -17,7 +17,7 @@ weight: 2
 
 ## Zoom
 
-<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i> Zoom Link</a>: 12:00pm - 2:45pm, January 24, 2022
+<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i> Zoom</a>: 12:00pm - 2:45pm, January 24, 2022
 
 ## Required Readings
 
@@ -70,7 +70,7 @@ weight: 2
 
 {{% spoiler text="What is the core problem with null hypothesis testing?" %}}
 
-- Null hypotheses are **not** unique. 
+- Null hypotheses are **not** unique. Hypotheses do not imply unique models, and models do not imply unique hypotheses.
 
 - **Models are not hypotheses**; they are neither true or false. Models are "golems" that do as they are told. Ideally should **compare performance across models** (model comparison).
 
