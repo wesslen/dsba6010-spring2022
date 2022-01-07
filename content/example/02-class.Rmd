@@ -278,7 +278,7 @@ anim <- ggplot(d2m1, aes(x = p_grid, y = posterior, group = obs)) +
   enter_fade() +
   exit_fade()
 
-animate(anim, height = 200, width = 300)
+animate(anim, height = 500, width = 600)
 #anim_save("World-tossing-bayesian-chapter2.gif")
 ```
 
