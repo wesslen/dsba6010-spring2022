@@ -204,6 +204,85 @@ d %>%
 
 For this class, we'll occasionally refer to Soloman's guide. 
 
+### Practice Problems
+
+2M1: Recall the globe tossing model from the chapter. Compute and plot the grid approximate posterior distribution for each of the following sets of observations. In each case, assume a uniform prior for p.
+
+```{r}
+library(tidyverse)
+
+dist <- tibble(p_grid = seq(from = 0, to = 1, length.out = 20),
+               prior = rep(1, times = 20)) %>%
+  mutate(likelihood_1 = dbinom(3, size = 3, prob = p_grid),
+         likelihood_2 = dbinom(3, size = 4, prob = p_grid),
+         likelihood_3 = dbinom(5, size = 7, prob = p_grid),
+         across(starts_with("likelihood"), ~ .x * prior),
+         across(starts_with("likelihood"), ~ .x / sum(.x))) %>%
+  pivot_longer(cols = starts_with("likelihood"), names_to = "pattern",
+               values_to = "posterior") %>%
+  separate(pattern, c(NA, "pattern"), sep = "_", convert = TRUE) %>%
+  mutate(obs = case_when(pattern == 1L ~ "W, W, W",
+                         pattern == 2L ~ "W, W, W, L",
+                         pattern == 3L ~ "L, W, W, L, W, W, W"))
+
+ggplot(dist, aes(x = p_grid, y = posterior)) +
+  facet_wrap(vars(fct_inorder(obs)), nrow = 1) +
+  geom_line() +
+  geom_point() +
+  labs(x = "Proportion Water (p)", y = "Posterior Density")
+```
+
+```{r}
+# W, W, W, L, W, W, W
+
+# challenge: functionalize this to generalize this for any read in toss string 
+
+d2m1 <- tibble(p_grid = seq(from = 0, to = 1, length.out = 20),
+               prior = rep(1, times = 20)) %>%
+  mutate(
+         likelihood_1 = dbinom(1, size = 1, prob = p_grid),
+         likelihood_2 = dbinom(2, size = 2, prob = p_grid),
+         likelihood_3 = dbinom(3, size = 3, prob = p_grid),
+         likelihood_4 = dbinom(3, size = 4, prob = p_grid),
+         likelihood_5 = dbinom(4, size = 5, prob = p_grid),
+         likelihood_6 = dbinom(5, size = 6, prob = p_grid),
+         likelihood_7 = dbinom(6, size = 7, prob = p_grid),
+         across(starts_with("likelihood"), ~ .x * prior),
+         across(starts_with("likelihood"), ~ .x / sum(.x))) %>%
+  pivot_longer(cols = starts_with("likelihood"), names_to = "pattern",
+               values_to = "posterior") %>%
+  separate(pattern, c(NA, "pattern"), sep = "_", convert = TRUE) %>%
+  mutate(obs = case_when(pattern == 1L ~ "W",
+                         pattern == 2L ~ "W, W",
+                         pattern == 3L ~ "W, W, W,",
+                         pattern == 4L ~ "W, W, W, L",
+                         pattern == 5L ~ "W, W, W, L, W",
+                         pattern == 6L ~ "W, W, W, L, W, W",
+                         pattern == 7L ~ "W, W, W, L, W, W, W"))
+
+d2m1
+```
+
+```{r}
+library(gganimate)
+
+anim <- ggplot(d2m1, aes(x = p_grid, y = posterior, group = obs)) + 
+  geom_point() +
+  geom_line() + 
+  theme(legend.position = "none") +
+  transition_states(obs,
+                    transition_length = 2,
+                    state_length = 1) +
+  labs(x = "Proportion Water (p)", y = "Posterior Probability") +
+  ggtitle('Toss Result: {closest_state}') + 
+  enter_fade() +
+  exit_fade()
+
+animate(anim, height = 200, width = 300)
+#anim_save("World-tossing-bayesian-chapter2.gif")
+```
+
+
 ## Package versions
 
 ```{r}
