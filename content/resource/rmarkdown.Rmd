@@ -12,7 +12,7 @@ type: docs
 
 ```{r setup, include=FALSE,message=FALSE,warning=FALSE}
 knitr::opts_chunk$set(fig.width = 6, fig.height = 3.6, fig.align = "center",
-                      fig.retina = 3, collapse = TRUE, out.width = "75%", class.source="language-markdown", class.output="language-markdown")
+                      fig.retina = 3, collapse = TRUE, out.width = "75%")
 set.seed(1234)
 options("digits" = 2, "width" = 150)
 ```
@@ -27,13 +27,7 @@ Here are the most important things you'll need to know about R Markdown in this 
 
 - **Document**: A Markdown file where you type stuff
 
-- **Chunk**: A piece of R code that is included in your document. It looks like this:
-
-    ````markdown
-    `r ''````{r}
-    # Code goes here
-    ```
-    ````
+- **Chunk**: A piece of R code that is included in your document.
 
     There must be an empty line before and after the chunk. The final three backticks must be the only thing on the line—if you add more text, or if you forget to add the backticks, or accidentally delete the backticks, your document will not knit correctly.
 
@@ -54,7 +48,7 @@ There are three ways to insert chunks:
 
 - Click on the "Insert" button at the top of the editor window
 
-```{r insert-chunk, indent="    ", echo=FALSE, out.width="30%"}
+```{r insert-chunk, indent="    ", echo=FALSE}
 knitr::include_graphics("/img/reference/insert-chunk.png", error = FALSE)
 ```
 
@@ -71,26 +65,12 @@ knitr::include_graphics("/img/reference/chunk-toc.png", error = FALSE)
 
 To add a name, include it immediately after the `{r` in the first line of the chunk. Names cannot contain spaces, but they can contain underscores and dashes. **All chunk names in your document must be unique.**
 
-````markdown
-`r ''````{r name-of-this-chunk}
-# Code goes here
-```
-````
-
 
 ## Chunk options
 
 There are a bunch of different options you can set for each chunk. You can see a complete list in the [RMarkdown Reference Guide](https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) or at [**knitr**'s website](https://yihui.org/knitr/options/).
 
-Options go inside the `{r}` section of the chunk:
-
-```{markdown}
-`r ''````{r name-of-this-chunk, warning=FALSE, message=FALSE}
-# Code goes here
-`''````
-```
-
-The most common chunk options are these:
+Options go inside the `{r}` section of the chunk. The most common chunk options are these:
 
 - `fig.width=5` and `fig.height=3` (*or whatever number you want*): Set the dimensions for figures
 - `echo=FALSE`: The code is not shown in the final document, but the results are
@@ -104,29 +84,11 @@ You can also set chunk options by clicking on the little gear icon in the top ri
 knitr::include_graphics("/img/reference/chunk-options.png", error = FALSE)
 ```
 
-## Inline chunks
-
-You can also include R output directly in your text, which is really helpful if you want to report numbers from your analysis. To do this, use `` `r "\u0060r r_code_here\u0060"` ``.
-
-It's generally easiest to calculate numbers in a regular chunk beforehand and then use an inline chunk to display the value in your text. For instance, this document…
-
-````markdown
-`r ''````{r find-avg-mpg, echo=FALSE}
-avg_mpg <- mean(mtcars$mpg)
-```
-
-The average fuel efficiency for cars from 1974 was `r "\u0060r round(avg_mpg, 1)\u0060"` miles per gallon.
-````
-
-… would knit into this:
-
-> The average fuel efficiency for cars from 1974 was `r round(mean(mtcars$mpg), 1)` miles per gallon.
-
 ## Output formats
 
 You can specify what kind of document you create when you knit in the [YAML front matter](/resource/markdown/#front-matter). 
 
-```yaml
+```{yaml class.source="language-yaml", class.output="language-yaml"}
 title: "My document"
 output:
   html_document: default
@@ -144,7 +106,7 @@ The first output type listed under `output:` will be what is generated when you 
 
 The indentation of the YAML section matters, especially when you have settings nested under each output type. Here's what a typical `output` section might look like:
 
-```yaml
+```{yaml class.source="language-yaml", class.output="language-yaml"}
 ---
 title: "My document"
 author: "My name"
