@@ -46,7 +46,7 @@ Primer](https://arxiv.org/pdf/1411.5018.pdf) [@vanderplas2014frequentism] <i cla
 
 - <i class="fas fa-newspaper"></i> [Abandon Statistical Significance](https://www.tandfonline.com/doi/pdf/10.1080/00031305.2018.1527253) [@mcshane2019abandon] <i class="fas fa-star"></i>
 
-- <i class="fas fa-blog"></i> [Moving to a World Beyond "p < 0.05"](https://www.tandfonline.com/doi/pdf/10.1080/00031305.2019.1583913) [@wasserstein2019moving] <i class="fas fa-star"></i>
+- <i class="fas fa-newspaper"></i> [Moving to a World Beyond "p < 0.05"](https://www.tandfonline.com/doi/pdf/10.1080/00031305.2019.1583913) [@wasserstein2019moving] <i class="fas fa-star"></i>^[This is the editorial for  the 2019 special issue of AMA articles]
 
 - <i class="fas fa-blog"></i> [Why p-values should be interpreted as p-values and not as measures of evidence](http://daniellakens.blogspot.com/2021/11/why-p-values-should-be-interpreted-as-p.html) [@lakens2021] <i class="fas fa-star"></i>
 
