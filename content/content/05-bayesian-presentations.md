@@ -11,7 +11,9 @@ type: docs
 weight: 5
 ---
 
-Individual presentations on Bayesian applications
+Individual presentations on Bayesian applications.
+
+Students will present one published article or blog post of applications on Bayesian statistics.
 
 Due before class: Feb 14, 2022 at 11:59am
 

@@ -13,6 +13,12 @@ type: docs
 weight: 7
 ---
 
+## Zoom
+
+<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i></a>: 12:00pm - 2:45pm, February 28, 2022
+
+## Required Readings
+
 {{< icon name="book" pack="fas" >}} Chapter 7: Ulysses' Compass
 
 <!--more-->
@@ -51,3 +57,15 @@ weight: 7
 {{% /spoiler %}}
 
 ## Deliverables
+
+Due before class: Monday, February 28 at 11:59am 
+
+<a href="https://forms.gle/zMipNzav3BCL3Rwy9"><i class="fas fa-comment fa-lg"></i>  Class Feedback</a>
+
+<a href="https://uncc.instructure.com/courses/171000/quizzes/331405"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a>
+
+## Problem Set 5
+
+Due by next class: Monday, March 14 at 11:59am
+
+<a href="{{ .Site.baseurl }}/assignment/05-problem-set"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / [Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1415462)

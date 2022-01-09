@@ -16,10 +16,12 @@ To practice writing code, running inferential models, and thinking about causati
 You need to show that you made a good faith effort to work each question. I will not grade these in detail. The problem sets will be graded using a check system:
 
 - ✔++: (*110% in gradebook*) Assignment is 100% completed. Every question was attempted and answered, and most answers are correct. Document is clean and easy to follow. Work is exceptional. I will not assign these often.
-- ✔+: (*100% in gradebook*) Assignment is 70–99% complete and most answers are correct. **This is the expected level of performance.**
-- ✔: (*90% in gradebook*) Completed provided solutions and made a valid attempt at the non-provided questions. 
-- ✔−: (*50% in gradebook*) Assignment is less than 50% complete and/or most answers are incorrect. This indicates that you need to improve next time. I will hopefully not assign these often.
-- ✔−−: (*0% in gradebook*) Assignment was not turned in I will hopefully not assign these often.
+- ✔+: (*100% in gradebook*) Assignment is complete and most answers are correct. **This is the expected level of performance.**
+- ✔: (*90% in gradebook*) Completed most of the assignment and answers are mostly correct. 
+- ✔−: (*75% in gradebook*) Assignment is slightly above 50% correct and/or most answers are incorrect. This indicates that you need to improve next time. I will hopefully not assign these often.
+- ✔−−: (*50% in gradebook*) Major components were not completed and/or less than 50% of questions were correct.
+
+Zeros will be issued for problem sets not completed.
 
 You may (and should!) work together on the problem sets, but *you must turn in your own answers.* You cannot work in groups of more than **two** people, and you must note who participated in the group in your assignment.
 

@@ -13,6 +13,12 @@ type: docs
 weight: 6
 ---
 
+## Zoom
+
+<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i> Zoom</a>: 12:00pm - 2:45pm, February 21, 2022
+
+## Required Readings
+
 {{< icon name="book" pack="fas" >}} Chapter 5: The many variables & the spurious waffles
 
 {{< icon name="book" pack="fas" >}} Chapter 6: The haunted DAG & the causal terror
@@ -47,7 +53,7 @@ TBD
 
 ## Deliverables
 
-Due before class: Monday, February 28 at 11:59am 
+Due before class: Monday, February 21 at 11:59am 
 
 <a href="https://forms.gle/zMipNzav3BCL3Rwy9"><i class="fas fa-comment fa-lg"></i>  Class Feedback</a>
 
@@ -55,7 +61,7 @@ Due before class: Monday, February 28 at 11:59am
 
 ## Problem Set 4
 
-Due by next class: Monday, March 14 at 11:59am
+Due by next class: Monday, February 28 at 11:59am
 
 <a href="{{ .Site.baseurl }}/assignment/04-problem-set"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / [Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1415435)
 

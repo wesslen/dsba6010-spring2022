@@ -17,7 +17,7 @@ weight: 4
 
 ## Zoom
 
-<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i></a>: 12:00pm - 2:45pm, January 10, 2022
+<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i></a>: 12:00pm - 2:45pm, February 7, 2022
 
 ## Required Readings
 
@@ -43,7 +43,7 @@ TBD
 
 ## Deliverables
 
-Due before class: Monday, February 14 at 11:59am 
+Due before class: Monday, February 7 at 11:59am 
 
 <a href="https://forms.gle/zMipNzav3BCL3Rwy9"><i class="fas fa-comment fa-lg"></i>  Class Feedback</a>
 
@@ -51,6 +51,6 @@ Due before class: Monday, February 14 at 11:59am
 
 ## Problem Set 3
 
-Due by next class: Monday, February 21 at 11:59am
+Due by next class: Monday, February 14 at 11:59am
 
 <a href="{{ .Site.baseurl }}/assignment/03-problem-set"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / [Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1415434)

@@ -39,7 +39,7 @@ TBD
 
 ## Deliverables
 
-Due before class: Monday, February 7 at 11:59am 
+Due before class: Monday, January 31 at 11:59am 
 
 <a href="https://forms.gle/zMipNzav3BCL3Rwy9"><i class="fas fa-comment fa-lg"></i>  Class Feedback</a>
 
@@ -47,6 +47,6 @@ Due before class: Monday, February 7 at 11:59am
 
 ## Problem Set 2
 
-Due by next class: Monday, February 14 at 11:59am 
+Due by next class: Monday, February 7 at 11:59am 
 
 <a href="{{ .Site.baseurl }}/assignment/02-problem-set"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / [Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1415433)
