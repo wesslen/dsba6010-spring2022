@@ -699,6 +699,10 @@
   
   <div class="article-style">
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="/rmarkdown-libs/clipboard/clipboard.min.js"></script>
+<link href="/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+<script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
 
 
 <div class="smaller-courseinfo">
@@ -734,8 +738,8 @@
 <div id="what-you-will-learn" class="section level2">
 <h2>What you will learn</h2>
 <ul>
-<li>Bayesian data analysis through <strong>probabilistic programming</strong> (R/Stan, Python/PyMC, Julia/Turing.jl)</li>
-<li><strong>Computational approaches</strong> for statistical modeling (quadratic approximation, sampling, MCMC, Hamiltonian Monte Carlo)</li>
+<li>Bayesian data analysis through <strong>probabilistic programming</strong> (R/Stan, Python/PyMC, Julia/Turing.jl)<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></li>
+<li><strong>Computational approaches</strong> for statistical modeling (quadratic approximation, sampling, MCMC, Hamiltonian Monte Carlo)<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></li>
 <li><strong>Causal inference</strong> to develop robust statistical models and identify causal relationships</li>
 <li>Machine learning techniques to <strong>reduce overfitting</strong> in statistical models (e.g., cross-validation, regularization, shrinkage, pooling)</li>
 </ul>
@@ -749,19 +753,14 @@
 <div id="course-philosophy" class="section level2">
 <h2>Course philosophy</h2>
 <p>Classical statistics classes spend substantial time covering probability theory, null hypothesis testing, and other statistical tests first developed hundreds of years ago. Some classes don’t use software or actual real data and instead live in the world of mathematical proofs. They can be math-heavy and full of often unintuitive concepts and equations.</p>
-<p>In this class,<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> we will take the opposite approach. We <em>begin</em> with data and learn how to use programming to draw inferences from statistical models.</p>
+<p>In this class,<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> we will take the opposite approach. We <em>begin</em> with data and learn how to use programming to draw inferences from statistical models.</p>
 <p>In other words, there’s way less of this:</p>
 <p><span class="math display">\[
-f(x) = \dfrac{1}{\sqrt{2\pi}} e^{-\frac12 x^2}
+Pr(W,L|p) = \dfrac{(W+L)!}{W!L!} p^{W}(1-p)^L
 \]</span></p>
 <p>And way more of this:</p>
-<div class="highlight">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">summary_monthly_temp <span style="color:#f92672">&lt;-</span> weather <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">group_by</span>(month) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">summarize</span>(mean <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(temp),
-            std_dev <span style="color:#f92672">=</span> <span style="color:#a6e22e">sd</span>(temp))
-</code></pre>
-</div>
+<pre class="r language-r"><code>dbinom(6, 9, 0.7)
+## [1] 0.27</code></pre>
 <p>Over the last decade there has been a revolution in statistical and scientific computing. Open source languages like R and Python have overtaken older (and expensive!) corporate software packages like SAS and SPSS, and there are now thousands of books and blog posts and other online resources with excellent tutorials about how to analyze pretty much any kind of data.</p>
 <p>This class will expose you to <a href="https://cran.r-project.org/">R</a>—one of the most popular, sought-after, and in-demand statistical programming languages. Armed with the foundation of R skills you’ll learn in this class, you’ll know enough to be able to find how to analyze any sort of data-based question in the future.</p>
 </div>
@@ -773,22 +772,29 @@ f(x) = \dfrac{1}{\sqrt{2\pi}} e^{-\frac12 x^2}
 <p>It’s easy when you start out programming to get really frustrated and think, “Oh it’s me, I’m really stupid,” or, “I’m not made out to program.” But, that is absolutely not the case. Everyone gets frustrated. I still get frustrated occasionally when writing R code. It’s just a natural part of programming. So, it happens to everyone and gets less and less over time. Don’t blame yourself. Just take a break, do something fun, and then come back and try again later.
 Even experienced programmers and evaluators find themselves bashing their heads against seemingly intractable errors. If you’re finding yourself taking way too long hitting your head against a wall and not understanding, take a break, talk to classmates, e-mail me, etc.</p>
 </blockquote>
-<p><img src="/img/syllabus/r-learn.png" width="60%" /></p>
+<p><img src="/img/syllabus/r-learn.png" width="60%" style="display: block; margin: auto;" /></p>
+<div id="learn-to-draw-the-owl" class="section level3">
+<h3>Learn to draw the owl</h3>
+<p><img src="/img/syllabus/owl.png" width="60%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="learn-how-to-learn-effectively" class="section level3">
+<h3>Learn how to learn effectively</h3>
+<p><img src="/img/syllabus/learn-to-learn.png" width="60%" style="display: block; margin: auto;" /></p>
+</div>
 <div id="be-confident-to-be-comfortable-with-confusion" class="section level3">
 <h3>Be confident to be comfortable with confusion</h3>
-<p><img src="/img/syllabus/owl.png" width="60%" /></p>
+<img src="https://imgs.xkcd.com/comics/confounding_variables_2x.png" width="60%" style="display: block; margin: auto;" />
+<center>
+Source: <a href="https://www.explainxkcd.com/wiki/index.php/2560:_Confounding_Variables">xkcd</a>
+</center>
 </div>
-<div id="learn-to-learn" class="section level3">
-<h3>Learn to learn</h3>
-<p><img src="/img/syllabus/learn-to-learn.png" width="60%" /></p>
-</div>
-<div id="rewards" class="section level3">
-<h3>Rewards</h3>
+<div id="benefits-from-taking-this-course" class="section level3">
+<h3>Benefits from taking this course</h3>
 <ul>
 <li><p>Develop unique skill set (Bayesian statistics + causal inference + probabilistic programming + ML) that will <strong>distinguish</strong> you in the <strong>job market</strong> and/or <strong>academic opportunities</strong>.</p></li>
-<li><p>Use problem sets and the final project to <strong>build your data science portfolio</strong> (encourage communication and reproducibility).<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p></li>
+<li><p>Use problem sets and the final project to <strong>build your data science portfolio</strong> (encourage communication and reproducibility).<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p></li>
 <li><p>Expose you to a wide range of <strong>applications in Bayesian inference and causal inference</strong> in areas like astronomy, ecology, human-computer interaction, cognitive science, biology, political science, and many more.</p></li>
-<li><p>Exposures (when possible) to additional data science tools/techniques to enhance how you <strong>communicate data analysis</strong> (e.g., RMarkdown, shiny, tidyverse).</p></li>
+<li><p>Exposure (when possible) to additional data science tools/techniques to enhance how you <strong>communicate data analysis</strong> (e.g., <a href="https://rmarkdown.rstudio.com/">RMarkdown</a> / <a href="https://quarto.org/">quarto</a>, <a href="https://shiny.rstudio.com/">shiny</a> / <a href="https://streamlit.io/">streamlit</a>, <a href="https://www.tidyverse.org/">tidyverse</a>).</p></li>
 </ul>
 </div>
 </div>
@@ -802,9 +808,7 @@ Even experienced programmers and evaluators find themselves bashing their heads 
 <div id="r-and-rstudio" class="section level3">
 <h3>R and RStudio</h3>
 <p>You will do all of your analysis with the open source (and free!) programming language <a href="https://cran.r-project.org/">R</a>. You will use <a href="https://www.rstudio.com/">RStudio</a> as the main program to access R. Think of R as an engine and RStudio as a car dashboard—R handles all the calculations and the actual statistics, while RStudio provides a nice interface for running R code.</p>
-<p>R is free, but it can sometimes be a pain to install and configure. To make life easier, you can (and should!) use the free <a href="http://rstudio.cloud/">RStudio.cloud</a> service, which lets you run a full instance of RStudio in your web browser. This means you won’t have to install anything on your computer to get started with R! We will have a shared class workspace in RStudio.cloud that will let you quickly copy templates for labs and problem sets.</p>
-<p>RStudio.cloud is convenient, but it can be slow and it is not designed to be able to handle larger datasets or more complicated analysis. Over the course of the semester, you’ll probably want to get around to installing R, RStudio, and other R packages on your computer and wean yourself off of RStudio.cloud. This isn’t necessary, but it’s helpful.</p>
-<p>You can <a href="/resource/install/">find instructions for installing R, RStudio, and all the tidyverse packages here.</a></p>
+<p>R is free, but it can sometimes be a pain to install and configure. To help you, I’ve created (and will likely add additional) guides in the <a href="/resource/">Resources</a> section of the website. We’ll cover these in the first class.</p>
 <p><details class="spoiler "  id="spoiler-2">
   <summary>Can I use Python or Julia instead of R in the class?</summary>
   <p></p>
@@ -836,29 +840,21 @@ We will do several things during our Monday in-person classes:</p>
 </ul>
 <div id="schedule" class="section level3">
 <h3>Schedule</h3>
-<p>The <a href="/schedule/">course schedule is listed here</a>. In general, we’ll likely cover 1-2 of Richard’s lectures per course. However, there will be a few exceptions.</p>
-<p>This schedule may change per the instructor’s discretion.</p>
+<p>The <a href="/schedule/">course schedule is listed here</a>. In general, we’ll likely cover 1-2 of Richard’s lectures per course. However, there will be a few exceptions. This schedule may change per the instructor’s discretion.</p>
 </div>
 <div id="weekly-check-in" class="section level3">
 <h3>Weekly check-in</h3>
-<p>Every week, after you finish working through the content, I want to hear about what you learned and what questions you still have. Because the content in this course is flipped, these questions are <strong>crucial</strong> for our weekly in-class discussions.</p>
-<p>To encourage engagement with the course content—and to allow me to collect the class’s questions each week—you’ll need to fill out a short response on Google Forms.</p>
-<p>You should answer these two questions each week:</p>
-<ol style="list-style-type: decimal">
-<li>What were the <strong>three (3)</strong> most interesting or exciting things you learned from the session? Why?</li>
-<li>What were the <strong>three (3)</strong> muddiest or unclear things from the session this week? What are you still wondering about?</li>
-</ol>
-<p>You can include more than three interesting or muddiest things, but you must include at least three. There should be six easily identifiable things in each check-in: three exciting things and three questions.</p>
+<p>Every week, after you finish working through the content, I want to hear about what you learned and what questions you still have. Because the content in this course is flipped, these questions are <strong>crucial</strong> for our weekly in-class discussions. To encourage engagement with the course content—and to allow me to collect the class’s questions each week—you’ll need to fill out a <a href="https://forms.gle/zMipNzav3BCL3Rwy9">short response on Google Forms</a>.</p>
 </div>
 </div>
 <div id="assignments-and-grades" class="section level2">
 <h2>Assignments and grades</h2>
 <p>There are five components to your grade in the course.</p>
 <ol style="list-style-type: decimal">
-<li><p><strong>Lecture quizzes</strong>: Before each class (due 11:59am of each class), students will complete a 5 question quiz on the due lecture/chapter. There will be a 15 minute timer and the quizzes will use Canvas. There are no late quizzes that will be accepted as we will review the quizzes first thing for each class. There are <strong>eleven (11)</strong> total quizzes; however, the <strong>two (2)</strong> lowest quizzes will be dropped at the end of the semester.</p></li>
-<li><p><strong>Participation</strong>: Students will receive 10% of their grade based on participation. While I will not actively take attendance, this will be in large part a function of in-class participation (e.g., asking/answering questions, weekly check-ins) as well as out-of-class (e.g., Slack).</p></li>
-<li><p><strong>Problem sets</strong>: For each lecture, there will be an accompanying problem set. These problem sets will largely mimic those from Richard’s classes. <strong>The lowest problem set will be dropped.</strong> Problem sets late 48 hours will receive a <strong>50%</strong> reduction. Problem sets received after 48 hours will receive a zero. Please take note of <a href="/assignment/#problem-sets-1">the problem set grading rubrics</a>. For those problems reused from past classes, I will provide the answer keys before. However, likely there will be additional problems not from Richard’s class; those solutions will not be provided until after the course. <a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p></li>
-<li><p><strong>Exam</strong>: There will be one in-class exam. It will be closed notes and based on chapter lectures, slides, and materials. It will be a blend of multiple choice (very similar to lecture quizzes) and short open ended questions (e.g., reading comprehension or explaining code snippets similar to problem sets).</p></li>
+<li><p><strong>Participation</strong>: Students will receive 5% of their grade based on participation. While I will not actively take attendance, this will be in large part a function of in-class participation (e.g., asking/answering questions, weekly check-ins) as well as out-of-class (e.g., Slack).</p></li>
+<li><p><strong>Lecture quizzes</strong>: Before each class (due 11:59am of each class), students will complete a 5 question quiz on the due lecture/chapter. There will be a <strong>10 minute timer</strong> and the quizzes will use Canvas. There are no late quizzes that will be accepted as we will review the quizzes first thing for each class. There are <strong>eleven (11)</strong> total quizzes; however, the <strong>two (2)</strong> lowest quizzes will be dropped at the end of the semester.</p></li>
+<li><p><strong>Problem sets</strong>: For each lecture, there will be an accompanying problem set. These problem sets will largely mimic those from Richard’s classes with some additional problems. <strong>The lowest problem set will be dropped.</strong> Problem sets late will receive a <strong>50%</strong> reduction. Please take note of <a href="/assignment/#problem-sets-1">the problem set grading rubrics</a>. <a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p></li>
+<li><p><strong>Exam</strong>: There will be one in-class exam. It will be closed notes and based on chapter lectures, slides, and materials. It will be a blend of multiple choice (very similar to lecture quizzes) and short open ended questions (e.g., reading comprehension or explaining code snippets similar to problem sets).<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></p></li>
 <li><p><strong>Final Project</strong>: The final project will provide students an opportunity to find an application for Bayesian inference. Part of the grade will be two check-in assignments including an in-class presentation on a Bayesian topic and a proposal assignment.</p></li>
 </ol>
 <p>You can find descriptions for all the assignments on the <a href="/assignment/">assignments page</a>.</p>
@@ -950,7 +946,7 @@ We will do several things during our Monday in-person classes:</p>
   <p></p>
 <ul>
 <li><p>You may work with up to 1 other student for problem sets. However, each student <strong>must</strong> submit his/her own problem set by the required time.</p></li>
-<li><p>Projects may be completed individually or with 1 other student.</p></li>
+<li><p>The final project may be completed individually or with 1 other student.</p></li>
 </ul>
 <p></p>
 </details></p>
@@ -968,7 +964,7 @@ There will be only rare exceptions to this requirement, such as when students ar
 </div>
 <div id="vaccines" class="section level3">
 <h3>Vaccines</h3>
-<p>If you are not vaccinated (with booster), please consider getting the COVID-19 vaccination<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> (<a href="https://ninernationcares.charlotte.edu/health-safety/covid-19-vaccine-information">sign up for one here!</a>). It is free. It saves lives. (Full disclosure: I am fully vaccinated plus booster.)</p>
+<p>If you are not vaccinated (with booster), please consider getting the COVID-19 vaccination<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a> (<a href="https://ninernationcares.charlotte.edu/health-safety/covid-19-vaccine-information">sign up for one here!</a>). It is free. It saves lives. (Full disclosure: I am fully vaccinated plus booster.)</p>
 </div>
 <div id="orderly-and-productive-classroom-conduct" class="section level3">
 <h3>Orderly and productive classroom conduct</h3>
@@ -1006,10 +1002,13 @@ There will be only rare exceptions to this requirement, such as when students ar
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>This philosophy as well as many other inspirational resources were originally created by <a href="andrewheiss.com">Andrew Heiss</a>, for example: his <a href="https://evalf21.classes.andrewheiss.com/syllabus/">PMAP 8521 course website</a>. Therefore, he deserves all praises for these ideas (he’s an amazing teacher). I’m grateful to be able to use such materials.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>I highly recommend aspiring data scientists to read David Robinson’s <a href="http://varianceexplained.org/r/start-blog/">inspiring post to create a blog</a>. If you’re interested for yourself, I also recommend starting with Allison Hill’s <a href="https://www.apreshill.com/blog/2020-12-new-year-new-blogdown/">Up and Running with <code>blogdown</code> post</a> to show how to do it in R. In fact, this website is created using <code>blogdown</code>. DM me on Slack if you have questions!<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
-<li id="fn3"><p>My philosophy on problem sets is motivated <a href="https://twitter.com/cjlwig/status/1450925261831168008?s=21">by tweets from Cora Wigger</a> to find a right balance between enabling students to keep pace (provide answer key for some questions) while providing an incentive to work on the problem sets (some questions w/o answer key).<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
-<li id="fn4"><p>UNCC does not require this and I can’t legally require this but I am allowed to urge it so here’s me urging it. Thank you for understanding and protecting your classmates’ health.<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn1"><p><a href="https://twitter.com/ChelseaParlett/status/1260212290059595779?s=20" class="uri">https://twitter.com/ChelseaParlett/status/1260212290059595779?s=20</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://twitter.com/chelseaparlett/status/1250787601641910285?s=21" class="uri">https://twitter.com/chelseaparlett/status/1250787601641910285?s=21</a><a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>This philosophy as well as many other inspirational resources were originally created by <a href="andrewheiss.com">Andrew Heiss</a>, for example: his <a href="https://evalf21.classes.andrewheiss.com/syllabus/">PMAP 8521 course website</a>. Therefore, he deserves all praises for these ideas (he’s an amazing teacher). I’m grateful to be able to use such materials.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>I highly recommend aspiring data scientists to read David Robinson’s <a href="http://varianceexplained.org/r/start-blog/">inspiring post to create a blog</a>. If you’re interested for yourself, I also recommend starting with Allison Hill’s <a href="https://www.apreshill.com/blog/2020-12-new-year-new-blogdown/">Up and Running with <code>blogdown</code> post</a> to show how to do it in R. In fact, this website is created using <code>blogdown</code>. DM me on Slack if you have questions!<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>My philosophy on problem sets is motivated <a href="https://twitter.com/cjlwig/status/1450925261831168008?s=21">by tweets from Cora Wigger</a> to find a right balance between enabling students to keep pace (provide answer key for some questions) while providing an incentive to work on the problem sets (some questions w/o answer key).<a href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>Note: this exam structure may change if we need to move to an online due to the ongoing pandemic. Details will provided in advance to the exam.<a href="#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p>UNCC does not require this and I can’t legally require this but I am allowed to urge it so here’s me urging it. Thank you for understanding and protecting your classmates’ health.<a href="#fnref7" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 </div>
@@ -1179,7 +1178,7 @@ There will be only rare exceptions to this requirement, such as when students ar
       
     
     
-    <script src="/en/js/wowchemy.min.fb8eb32a4d207f5f18023712a904b210.js"></script>
+    <script src="/en/js/wowchemy.min.4bba0826db6409c865d2e7b99039d6d0.js"></script>
 
     
 

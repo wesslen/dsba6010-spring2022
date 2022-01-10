@@ -20,8 +20,16 @@
       <description>&lt;h2 id=&#34;welcome&#34;&gt;Welcome!&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://media3.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif?cid=790b76119130519cc0d76cbb37bf927be0309d606652bf98&amp;amp;rid=giphy.gif&amp;amp;ct=g&#34; alt=&#34;Welcome to the class!&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;zoom&#34;&gt;Zoom&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://uncc.zoom.us/j/93339403054&#34;&gt;&lt;i class=&#34;fas fa-video fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;: 12:00pm - 2:45pm, January 10, 2022&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://uncc.zoom.us/j/93339403054&#34;&gt;&lt;i class=&#34;fas fa-video fa-lg&#34;&gt;&lt;/i&gt; Zoom&lt;/a&gt;: 12:00pm - 2:45pm, January 10, 2022&lt;/p&gt;
 &lt;h2 id=&#34;introduction-to-course&#34;&gt;Introduction to course&lt;/h2&gt;
+&lt;div id=&#34;Container&#34;
+ style=&#34;padding-bottom:56.25%; position:relative; display:block; width: 100%&#34;&gt;
+ &lt;iframe id=&#34;googleSlideIframe&#34;
+  width=&#34;100%&#34; height=&#34;100%&#34;
+  src=&#34;https://docs.google.com/presentation/d/e/2PACX-1vQcvuxQg-2tVMmu-5gW76GQySVhBFdaQBUxApkKtlKKa3SKX4d45ylTB8TIGREh563x26M7HTbvwYos/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000&#34;
+  frameborder=&#34;0&#34; allowfullscreen=&#34;&#34;
+  style=&#34;position:absolute; top:0; left: 0&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 &lt;h2 id=&#34;installation-of-rrstudio-on-personal-machine&#34;&gt;Installation of R/RStudio on Personal Machine&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://dsba6010-spring2022.netlify.app/resource/install/&#34;&gt;Installing R/RStudio&lt;/a&gt;&lt;/li&gt;
@@ -39,8 +47,9 @@
       <link>https://dsba6010-spring2022.netlify.app/content/02-bayesian-inference/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/02-bayesian-inference/</guid>
-      <description>&lt;h2 id=&#34;zoom&#34;&gt;Zoom&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://uncc.zoom.us/j/93339403054&#34;&gt;&lt;i class=&#34;fas fa-video fa-lg&#34;&gt;&lt;/i&gt; Zoom Link&lt;/a&gt;: 12:00pm - 2:45pm, January 24, 2022&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/E7luuH_VIAM8yzn?format=png&amp;amp;name=small&#34; alt=&#34;&#34;&gt;&lt;center&gt;&lt;a href=&#34;https://twitter.com/ChelseaParlett/status/1421291716229746689&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@ChelseaParlett&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;h2 id=&#34;zoom&#34;&gt;Zoom&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://uncc.zoom.us/j/93339403054&#34;&gt;&lt;i class=&#34;fas fa-video fa-lg&#34;&gt;&lt;/i&gt; Zoom&lt;/a&gt;: 12:00pm - 2:45pm, January 24, 2022&lt;/p&gt;
 &lt;h2 id=&#34;required-readings&#34;&gt;Required Readings&lt;/h2&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; &lt;a href=&#34;http://xcelab.net/rmpubs/sr2/statisticalrethinking2_chapters1and2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chapter 1: The Golem of Prague Data&lt;/a&gt;&lt;/p&gt;
@@ -98,43 +107,13 @@
   &lt;summary&gt;What is the core problem with null hypothesis testing?&lt;/summary&gt;
   &lt;p&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Models are not hypotheses&lt;/strong&gt;; they are neither true or false. Models are &amp;ldquo;golems&amp;rdquo; that do as they are told.&lt;/p&gt;
+&lt;p&gt;Null hypotheses are &lt;strong&gt;not&lt;/strong&gt; unique. Hypotheses do not imply unique models, and models do not imply unique hypotheses.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Ideally should &lt;strong&gt;compare performance across models&lt;/strong&gt; (model comparison).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Models are not hypotheses&lt;/strong&gt;; they are neither true or false. Models are &amp;ldquo;golems&amp;rdquo; that do as they are told. Ideally should &lt;strong&gt;compare performance across models&lt;/strong&gt; (model comparison).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Popper: &lt;strong&gt;test (attempt to falsify) research hypothesis&lt;/strong&gt;. Use theory, make a falsifiable prediction, and test that; not that nothing happened (aka null hypothesis).&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;
-&lt;/details&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-8&#34;&gt;
-  &lt;summary&gt;What are three ways in which cross-validation and information theory aid in model evaluation?&lt;/summary&gt;
-  &lt;p&gt;&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;They provide &lt;strong&gt;useful expectations of predictive accuracy&lt;/strong&gt;, rather than merely fit to sample. So they &lt;strong&gt;compare models&lt;/strong&gt; where it matters.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;They give us an &lt;strong&gt;estimate of the tendency of a model&lt;/strong&gt; to overfit. This will help us to understand how models and data interact, which in turn helps us to design better models.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;They help us to spot &lt;strong&gt;highly influential observations&lt;/strong&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;We will cover these topics later in the semester.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;
-&lt;/details&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-9&#34;&gt;
-  &lt;summary&gt;What are the benefits of using multilevel (aka hierarchical) models?&lt;/summary&gt;
-  &lt;p&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;They acknowledge that, though each individual group might have its own model, one group can provide valuable information about another. That is, &lt;strong&gt;&amp;ldquo;let’s learn from one another while celebrating our individuality.&amp;quot;&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;We will cover these later in the course.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;
@@ -170,11 +149,11 @@
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
 &lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;
-&lt;p&gt;Due before class: Monday, February 7 at 11:59am&lt;/p&gt;
+&lt;p&gt;Due before class: Monday, January 31 at 11:59am&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;&lt;i class=&#34;fas fa-comment fa-lg&#34;&gt;&lt;/i&gt;  Class Feedback&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://uncc.instructure.com/courses/171000/quizzes/331402&#34;&gt;&lt;i class=&#34;fas fa-question fa-lg&#34;&gt;&lt;/i&gt;  Lesson Quiz&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;problem-set-2&#34;&gt;Problem Set 2&lt;/h2&gt;
-&lt;p&gt;Due by next class: Monday, February 14 at 11:59am&lt;/p&gt;
+&lt;p&gt;Due by next class: Monday, February 7 at 11:59am&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;{{ .Site.baseurl }}/assignment/02-problem-set&#34;&gt;&lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;  Problem Set&lt;/a&gt; / &lt;a href=&#34;https://uncc.instructure.com/courses/171000/assignments/1415433&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Canvas Link&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
@@ -187,7 +166,7 @@
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;h2 id=&#34;zoom&#34;&gt;Zoom&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://uncc.zoom.us/j/93339403054&#34;&gt;&lt;i class=&#34;fas fa-video fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;: 12:00pm - 2:45pm, January 10, 2022&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://uncc.zoom.us/j/93339403054&#34;&gt;&lt;i class=&#34;fas fa-video fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;: 12:00pm - 2:45pm, February 7, 2022&lt;/p&gt;
 &lt;h2 id=&#34;required-readings&#34;&gt;Required Readings&lt;/h2&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 4: Geocentric models&lt;/p&gt;
@@ -204,11 +183,11 @@
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
 &lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;
-&lt;p&gt;Due before class: Monday, February 14 at 11:59am&lt;/p&gt;
+&lt;p&gt;Due before class: Monday, February 7 at 11:59am&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;&lt;i class=&#34;fas fa-comment fa-lg&#34;&gt;&lt;/i&gt;  Class Feedback&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://uncc.instructure.com/courses/171000/quizzes/331403&#34;&gt;&lt;i class=&#34;fas fa-question fa-lg&#34;&gt;&lt;/i&gt;  Lesson Quiz&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;problem-set-3&#34;&gt;Problem Set 3&lt;/h2&gt;
-&lt;p&gt;Due by next class: Monday, February 21 at 11:59am&lt;/p&gt;
+&lt;p&gt;Due by next class: Monday, February 14 at 11:59am&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;{{ .Site.baseurl }}/assignment/03-problem-set&#34;&gt;&lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;  Problem Set&lt;/a&gt; / &lt;a href=&#34;https://uncc.instructure.com/courses/171000/assignments/1415434&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Canvas Link&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
@@ -217,7 +196,8 @@
       <link>https://dsba6010-spring2022.netlify.app/content/05-bayesian-presentations/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/05-bayesian-presentations/</guid>
-      <description>&lt;p&gt;Individual presentations on Bayesian applications&lt;/p&gt;
+      <description>&lt;p&gt;Individual presentations on Bayesian applications.&lt;/p&gt;
+&lt;p&gt;Students will present one published article or blog post of applications on Bayesian statistics.&lt;/p&gt;
 &lt;p&gt;Due before class: Feb 14, 2022 at 11:59am&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://uncc.instructure.com/courses/171000/assignments/1415489&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Canvas Link&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -228,7 +208,10 @@
       <link>https://dsba6010-spring2022.netlify.app/content/06-spurious-correlations/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/06-spurious-correlations/</guid>
-      <description>&lt;p&gt;
+      <description>&lt;h2 id=&#34;zoom&#34;&gt;Zoom&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://uncc.zoom.us/j/93339403054&#34;&gt;&lt;i class=&#34;fas fa-video fa-lg&#34;&gt;&lt;/i&gt; Zoom&lt;/a&gt;: 12:00pm - 2:45pm, February 21, 2022&lt;/p&gt;
+&lt;h2 id=&#34;required-readings&#34;&gt;Required Readings&lt;/h2&gt;
+&lt;p&gt;
   &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 5: The many variables &amp;amp; the spurious waffles&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 6: The haunted DAG &amp;amp; the causal terror&lt;/p&gt;
@@ -254,11 +237,11 @@
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
 &lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;
-&lt;p&gt;Due before class: Monday, February 28 at 11:59am&lt;/p&gt;
+&lt;p&gt;Due before class: Monday, February 21 at 11:59am&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;&lt;i class=&#34;fas fa-comment fa-lg&#34;&gt;&lt;/i&gt;  Class Feedback&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://uncc.instructure.com/courses/171000/quizzes/331403&#34;&gt;&lt;i class=&#34;fas fa-question fa-lg&#34;&gt;&lt;/i&gt;  Lesson Quiz&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;problem-set-4&#34;&gt;Problem Set 4&lt;/h2&gt;
-&lt;p&gt;Due by next class: Monday, March 14 at 11:59am&lt;/p&gt;
+&lt;p&gt;Due by next class: Monday, February 28 at 11:59am&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;{{ .Site.baseurl }}/assignment/04-problem-set&#34;&gt;&lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;  Problem Set&lt;/a&gt; / &lt;a href=&#34;https://uncc.instructure.com/courses/171000/assignments/1415435&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Canvas Link&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
@@ -267,7 +250,10 @@
       <link>https://dsba6010-spring2022.netlify.app/content/07-model-comparison/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/07-model-comparison/</guid>
-      <description>&lt;p&gt;
+      <description>&lt;h2 id=&#34;zoom&#34;&gt;Zoom&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://uncc.zoom.us/j/93339403054&#34;&gt;&lt;i class=&#34;fas fa-video fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;: 12:00pm - 2:45pm, February 28, 2022&lt;/p&gt;
+&lt;h2 id=&#34;required-readings&#34;&gt;Required Readings&lt;/h2&gt;
+&lt;p&gt;
   &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 7: Ulysses&#39; Compass&lt;/p&gt;
 &lt;h2 id=&#34;lecture&#34;&gt;Lecture&lt;/h2&gt;
 &lt;h3 id=&#34;lecture-7&#34;&gt;Lecture 7&lt;/h3&gt;
@@ -288,8 +274,28 @@
 &lt;br&gt;
 &lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/13b0ac246f344570b6b002b8e3c384bc&#34; title=&#34;L08 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
-&lt;p&gt;TBD&lt;/p&gt;
-&lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;</description>
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
+  &lt;summary&gt;What are three ways in which cross-validation and information theory aid in model evaluation?&lt;/summary&gt;
+  &lt;p&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;They provide &lt;strong&gt;useful expectations of predictive accuracy&lt;/strong&gt;, rather than merely fit to sample. So they &lt;strong&gt;compare models&lt;/strong&gt; where it matters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;They give us an &lt;strong&gt;estimate of the tendency of a model&lt;/strong&gt; to overfit. This will help us to understand how models and data interact, which in turn helps us to design better models.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;They help us to spot &lt;strong&gt;highly influential observations&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;
+&lt;p&gt;Due before class: Monday, February 28 at 11:59am&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;&lt;i class=&#34;fas fa-comment fa-lg&#34;&gt;&lt;/i&gt;  Class Feedback&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://uncc.instructure.com/courses/171000/quizzes/331405&#34;&gt;&lt;i class=&#34;fas fa-question fa-lg&#34;&gt;&lt;/i&gt;  Lesson Quiz&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;problem-set-5&#34;&gt;Problem Set 5&lt;/h2&gt;
+&lt;p&gt;Due by next class: Monday, March 14 at 11:59am&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;{{ .Site.baseurl }}/assignment/05-problem-set&#34;&gt;&lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;  Problem Set&lt;/a&gt; / &lt;a href=&#34;https://uncc.instructure.com/courses/171000/assignments/1415462&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Canvas Link&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -297,7 +303,10 @@
       <link>https://dsba6010-spring2022.netlify.app/content/08-interactions/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dsba6010-spring2022.netlify.app/content/08-interactions/</guid>
-      <description>&lt;p&gt;
+      <description>&lt;h2 id=&#34;zoom&#34;&gt;Zoom&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://uncc.zoom.us/j/93339403054&#34;&gt;&lt;i class=&#34;fas fa-video fa-lg&#34;&gt;&lt;/i&gt;&lt;/a&gt;: 12:00pm - 2:45pm, March 14, 2022&lt;/p&gt;
+&lt;h2 id=&#34;required-readings&#34;&gt;Required Readings&lt;/h2&gt;
+&lt;p&gt;
   &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 8: Conditional Manatees&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-book  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Chapter 9: Markov Chain Monte Carlo&lt;/p&gt;
@@ -319,9 +328,15 @@
 
 &lt;br&gt;
 &lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/c01485b84fa54e849136242257d8af0e&#34; title=&#34;L10 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
-## Comprehension questions
+&lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
 &lt;p&gt;TBD&lt;/p&gt;
-&lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;</description>
+&lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;
+&lt;p&gt;Due before class: Monday, March 14 at 11:59am&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://forms.gle/zMipNzav3BCL3Rwy9&#34;&gt;&lt;i class=&#34;fas fa-comment fa-lg&#34;&gt;&lt;/i&gt;  Class Feedback&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://uncc.instructure.com/courses/171000/quizzes/331406&#34;&gt;&lt;i class=&#34;fas fa-question fa-lg&#34;&gt;&lt;/i&gt;  Lesson Quiz&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;problem-set-6&#34;&gt;Problem Set 6&lt;/h2&gt;
+&lt;p&gt;Due by next class: Monday, March 21 at 11:59am&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;{{ .Site.baseurl }}/assignment/05-problem-set&#34;&gt;&lt;i class=&#34;fas fa-pencil-ruler fa-lg&#34;&gt;&lt;/i&gt;  Problem Set&lt;/a&gt; / &lt;a href=&#34;https://uncc.instructure.com/courses/171000/assignments/1415488&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Canvas Link&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -419,7 +434,13 @@
 &lt;br&gt;
 &lt;iframe class=&#34;speakerdeck-iframe&#34; frameborder=&#34;0&#34; src=&#34;https://speakerdeck.com/player/e41e4dabd661476cb52ca156ec4c0132&#34; title=&#34;L16 Statistical Rethinking Winter 2019&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34; style=&#34;border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;&#34; data-ratio=&#34;1.3333333333333333&#34;&gt;&lt;/iframe&gt;
 &lt;h2 id=&#34;comprehension-questions&#34;&gt;Comprehension questions&lt;/h2&gt;
-&lt;p&gt;TBD&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
+  &lt;summary&gt;What are the benefits of using multilevel (aka hierarchical) models?&lt;/summary&gt;
+  &lt;p&gt;&lt;ul&gt;
+&lt;li&gt;They acknowledge that, though each individual group might have its own model, one group can provide valuable information about another. That is, &lt;strong&gt;&amp;ldquo;let’s learn from one another while celebrating our individuality.&amp;quot;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;/details&gt;
 &lt;h2 id=&#34;deliverables&#34;&gt;Deliverables&lt;/h2&gt;</description>
     </item>
     
