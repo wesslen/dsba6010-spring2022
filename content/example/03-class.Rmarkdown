@@ -1,0 +1,351 @@
+---
+date: "`r Sys.Date()`"
+title: "Class 3"
+menu:
+  example:
+    parent: Examples
+weight: 3
+toc: true
+type: docs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, class.source="language-r", class.output="language-r", message = FALSE, warning = FALSE)
+xaringanExtra::use_clipboard()
+library(rethinking)
+```
+
+
+```{r echo=FALSE}
+downloadthis::download_file(
+  path = "03-class.Rmarkdown",
+  output_name = "03-class",
+  button_label = "Download this code",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
+## Introduction
+
+For this class, we'll review code examples found in Chapter 4.
+
+This assumes that you have already installed the `rethinking` package.
+
+If you need help, be sure to remember the references in the [Resources](/resource/):
+
+* [Installing R/RStudio](/resource/install/)
+* [Installing `rethinking` package](/resource/install-rethinking/)
+* [Rmarkdown](/resource/rmarkdown/)
+* [R Style guide](/resource/style/)
+
+## Drawing the Owl
+
+![](../../img/syllabus/owl.png)
+
+
+## 1. Question or estimand
+
+Objective: Describe the association between Adult **weight** and **height**
+
+```{r}
+library(rethinking)
+data(Howell1)
+d <- Howell1[Howell1$age>=18,]
+
+plot(d$height,d$weight, col = "red", xlab = "height (cm)", ylab = "weight (kg)")
+```
+
+Alternatively, using `ggplot2` we can plot the same:
+
+```{r}
+library(ggplot2)
+
+ggplot(d, aes(x = height, y = weight)) +
+  geom_point(color = "red") +
+  labs(x = "height (cm)", y = "weight (kg)") +
+  theme_bw()
+```
+
+
+## 2. Scientific model
+
+Weight is a function of height. 
+
+```{r fig.height=1}
+library(dagitty)
+
+g <- dagitty('dag {
+    W [pos="0,1"]
+    H [pos="1,1"]
+    
+    W -> H
+}')
+plot(g)
+```
+
+## 3. Statistical model
+
+### Generative Model
+
+Let's consider the Generative Model (H -> W) from the lecture:
+
+$W_i \sim Normal(\mu_i,\sigma)$<br>
+$\mu_i = \alpha + \beta H_i$<br>
+
+```{r}
+# forward simulation as we choose these parameters
+alpha <- 0 # implies zero height => zero weight
+beta <- 0.5 
+sigma <- 5
+n_individuals <- 100
+
+H <- runif(n_individuals,130,170) # heights, uniform between 130 - 170 cm
+
+mu <- alpha + beta*H
+W <- rnorm(n_individuals,mu,sigma) # sample from Normal
+```
+
+```{r}
+col2 <- col.alpha(2,0.8)
+plot(H,W,  col=col2, lwd=3,
+     cex=1.2, xlab = "height (cm)", ylab = "weight (kg)")
+mtext( "100 Simulated people" )
+```
+```{r}
+# ggplot2 version
+df <- data.frame(
+  height = H,
+  weight = W
+)
+
+ggplot(df, aes(x = height, y = weight)) +
+  geom_point(color="red") +
+  labs(x = "height (cm)", y = "weight (kg)", title = "100 Simulated people")
+```
+
+### Sampling the prior distribution
+
+```{r}
+n_samples <- 10
+
+alpha <- rnorm(n_samples,0,1)
+beta <- rnorm(n_samples,0,1)
+
+plot(NULL,xlim=c(-2,2),ylim=c(-2,2),xlab="x",ylab="y")
+for (i in 1:n_samples){
+  abline(alpha[i],beta[i],lwd=4,col=2)
+}
+```
+
+```{r}
+df2 <- data.frame(
+  alpha = alpha,
+  beta = beta,
+  samp = 1:n_samples
+)
+
+p <- ggplot(df2) +
+  geom_abline(aes(slope = beta, intercept = alpha, group = samp)) +
+  xlim(-3,3) +
+  ylim(-3,3)
+
+p
+```
+```{r fig.height=2,fig.width=2}
+library(gganimate)
+
+anim <- p + transition_states(samp, transition_length=2, state_length=1) + 
+  ggtitle('Sample {closest_state} of 10') +
+  enter_fade() +
+  exit_fade()
+
+anim
+#animate(anim, height=2, width=3)
+```
+
+### Statistical model for H->W
+
+```{r}
+n <- 10
+alpha <- rnorm(n,60,10)
+beta <- rnorm(n,0,10)
+
+Hbar <- 150
+Hseq <- seq(from=130,to=170,len=30)
+plot(NULL, xlim=c(130,170), ylim=c(10,100),
+     xlab="height (cm)", ylab="weight (kg)")
+
+for (i in 1:n){
+  lines(Hseq, alpha[i] + beta[i]*(Hseq-Hbar),lwd=3,col=2)
+}
+```
+Is this a good prior to be used? Why or why not are they interpretable?
+
+Remember, a lognormal distribution is a distribution that if you take the logarithm of the values, then all of it's values would be normal. 
+
+```{r}
+# simulated lognormal
+b <- rlnorm(1e4, 0, 1) #4.40
+dens(b, xlim=c(0,5), adj=0.1)
+```
+
+Let's do a predictive simulation now using the Log-Normal prior.
+
+```{r}
+set.seed(2971)
+N <- 100  
+a <- rnorm( N , 60 , 10 )
+b <- rlnorm( N , 0 , 1 )
+
+plot(NULL, xlim=c(130,170), ylim=c(10,100),
+     xlab="height (cm)", ylab="weight (kg)")
+
+for (i in 1:n){
+  lines(Hseq, a[i] + b[i]*(Hseq-Hbar),lwd=3,col=2)
+}
+```
+
+
+Key is justify priors with information outside of the data (that will be modeled). This is similar to machine learning where we don't want to include records in our test dataset that were also in our training. Using modeled data to form priors can be thought of as "prior-hacking". Typically in literature, Bayesian approaches require pre-registration when using non-informative priors (see [this example from Fernandes et al., 2018](https://github.com/michael-fernandes/uncertainty-displays-for-transit/blob/master/pre-registration.pdf)).
+
+$W_i \sim Normal(\mu_i,\sigma)$<br>
+$\mu_i = \alpha + \beta(H_i - \overline{H})$<br>
+$\alpha \sim Normal(60,10)$<br>
+$\beta \sim LogNormal(0,1)$<br>
+$\sigma \sim Uniform(0,10)$<br>
+
+```{r}
+# define the average weight, x-bar
+xbar <- mean(d$weight)
+
+# fit model
+m4.3 <- quap(
+    alist(
+        height ~ dnorm( mu , sigma ) ,
+        mu <- a + b*( weight - xbar ) ,
+        a ~ dnorm( 178 , 20 ) ,
+        b ~ dlnorm( 0 , 1 ) ,
+        sigma ~ dunif( 0 , 50 )
+    ) , data=d )
+
+## R code 4.43
+m4.3b <- quap(
+    alist(
+        height ~ dnorm( mu , sigma ) ,
+        mu <- a + exp(log_b)*( weight - xbar ),
+        a ~ dnorm( 178 , 20 ) ,
+        log_b ~ dnorm( 0 , 1 ) ,
+        sigma ~ dunif( 0 , 50 )
+    ) , data=d )
+
+## R code 4.44
+precis( m4.3 )
+```
+
+```{r}
+## R code 4.45
+round( vcov( m4.3 ) , 3 )
+```
+
+## 4. Validate model
+
+We'll use a **simulation-based** validation.
+
+We'll first validate with a simulation (aka fake data).
+
+```{r}
+alpha <- 70
+beta <- 0.5
+sigma <- 5
+n_individuals <- 100
+H <- runif(n_individuals,130,170)
+mu <- alpha + beta*(H-mean(H))
+W <- rnorm(n_individuals,mu,sigma)
+
+dat <- list(H=H,W=W,Hbar=mean(H))
+
+m_validate <- quap(
+    alist(
+        W ~ dnorm( mu , sigma ) ,
+        mu <- a + b*( H - Hbar ),
+        a ~ dnorm( 60 , 10 ) ,
+        b ~ dlnorm( 0 , 1 ) ,
+        sigma ~ dunif( 0 , 10 )
+    ) , data=dat )
+
+precis(m_validate)
+```
+
+```{r}
+dat <- list(W = d$weight, H = d$height, Hbar = mean(d$height))
+
+m_adults <- quap(
+    alist(
+        W ~ dnorm( mu , sigma ) ,
+        mu <- a + b*( H - Hbar ),
+        a ~ dnorm( 60 , 10 ) ,
+        b ~ dlnorm( 0 , 1 ) ,
+        sigma ~ dunif( 0 , 10 )
+    ) , data=dat )
+
+precis(m_adults)
+```
+
+{{% callout note %}}
+
+First Law of Statistical Interpretation: The **parameters are not independent** of one another and cannot always be independently interpreted.
+
+Instead, draw (push out) **posterior predictions** and describe/interpret them.
+
+{{% /callout %}}
+
+```{r}
+post <- extract.samples(m_adults)
+head(post)
+```
+
+### 1. Plot the sample
+
+```{r}
+# 4.4.3
+col2 <- col.alpha(2,0.8)
+plot(d$height, d$weight, col=col2, lwd=3,
+     cex=1.2, xlab="height (cm)", ylab="weight (kg)")
+```
+
+### 2. Plot the posterior mean
+
+```{r}
+weight.seq <- seq(from=25,to=70,by=1)
+mu <- link(m4.3,data=list(weight=weight.seq))
+plot(d$height,d$weight,  col=col2, lwd=3,
+     cex=1.2, xlab="height (cm)", ylab="weight (kg)")
+lines(  apply(mu,2,mean), weight.seq, lwd=4)
+```
+
+### 3. Plot uncertainty of the mean
+
+```{r}
+xseq <- seq(from=130,to=190,len=50)
+plot(d$height, d$weight, col=col2, lwd=3,
+     cex=1.2, xlab="height (cm)", ylab="weight (kg)")
+lines(   apply(mu,2,mean), weight.seq,lwd=4)
+shade( apply(mu,2,PI,prob=0.99), weight.seq, col=col.alpha(2,0.5))
+```
+
+### 4. Plot uncertainty of predictions
+
+{{% callout note %}}
+
+Try as [challenging exercise as shown in Slide 70 of Lecture 3](https://speakerdeck.com/rmcelreath/statistical-rethinking-2022-lecture-03?slide=70).
+
+{{% /callout %}}
+
+## Package versions
+
+```{r}
+sessionInfo()
+```

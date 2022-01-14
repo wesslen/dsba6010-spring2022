@@ -6,6 +6,7 @@ menu:
     parent: Examples
 weight: 2
 type: docs
+toc: true
 ---
 
 ```{r setup, include=FALSE}
@@ -17,7 +18,7 @@ library(rethinking)
 
 ```{r echo=FALSE}
 downloadthis::download_file(
-  path = "02-class.Rmd",
+  path = "02-class.Rmarkdown",
   output_name = "02-class",
   button_label = "Download this code",
   button_type = "danger",
@@ -40,7 +41,7 @@ If you need help, be sure to remember the references in the [Resources](/resourc
 * [Rmarkdown](/resource/rmarkdown/)
 * [R Style guide](/resource/style/)
 
-### Bayesian Updating: Grid Approximation
+## Bayesian Updating: Grid Approximation
 
 Let's assume we have the table in 2.1
 
@@ -81,45 +82,54 @@ Next, let's define our prior. We'll assume a "flat" prior.
 # define prior
 prior <- rep( 1 , 20 )
 
-prior
+plot(p_grid, prior, type="b", ylim=c(0,5))
 ```
 
 ```{r}
 # compute likelihood at each value in grid
 likelihood <- dbinom( 6 , size=9 , prob=p_grid )
 
-likelihood
+plot(p_grid, likelihood, type="b", ylim=c(0,0.3))
 ```
 
 ```{r}
 # compute product of likelihood and prior
 unstd.posterior <- likelihood * prior
 
-unstd.posterior
+plot(p_grid, unstd.posterior, type="b", ylim=c(0,0.3))
 ```
 
 ```{r}
 # standardize the posterior, so it sums to 1
 posterior <- unstd.posterior / sum(unstd.posterior)
 
-posterior
-```
-
-```{r}
 ## R code 2.4
 plot( p_grid , posterior , type="b" ,
     xlab="probability of water" , ylab="posterior probability" )
 mtext( "20 points" )
 ```
-What happens if we alter the priors? What will be the new posteriors?
+
+
+
+{{% callout note %}}
+
+Practice: What happens if we alter the priors? What will be the new posteriors?
+
+Assume 6 W's and 3 L's (9 tosses). Plot the posterior and compare.
 
 ```{r}
-## R code 2.5
+# prior 1
 prior <- ifelse( p_grid < 0.5 , 0 , 1 )
+```
+
+```{r}
+# prior 2
 prior <- exp( -5*abs( p_grid - 0.5 ) )
 ```
 
-### Bayesian Updating: Quadratic Approximation
+{{% /callout %}}
+
+## Bayesian Updating: Quadratic Approximation
 
 ```{r}
 ## R code 2.6
@@ -167,7 +177,44 @@ dens( p , xlim=c(0,1) )
 curve( dbeta( x , W+1 , L+1 ) , lty=2 , add=TRUE )
 ```
 
-### `tidyverse` conversion
+## Demo Problems
+
+2M1: Recall the globe tossing model from the chapter. Compute and plot the grid approximate posterior distribution for each of the following sets of observations. In each case, assume a uniform prior for p.
+
+```{r}
+p_grid <- seq( from=0 , to=1 , length.out=100 ) # grid from 0 to 1 with length 100
+prior <- rep(1,100) # uniform prior
+
+# likelihood of 3 water in 3 tosses
+likelihood <- dbinom( 3 , size=3 , prob=p_grid )
+
+posterior <- likelihood * prior
+posterior <- posterior / sum(posterior) # standardize
+
+plot( posterior ~ p_grid , type="l", main = "W, W, W")
+```
+
+```{r}
+# likelihood of 3 water in 4 tosses
+likelihood <- dbinom( 3 , size=4 , prob=p_grid )
+
+posterior <- likelihood * prior
+posterior <- posterior / sum(posterior) # standardize
+
+plot( posterior ~ p_grid , type="l" , main = "W, W, W, L")
+```
+
+```{r}
+# likelihood of 5 water in 7 tosses
+likelihood <- dbinom( 5 , size=7 , prob=p_grid )
+
+posterior <- likelihood * prior
+posterior <- posterior / sum(posterior) # standardize
+
+plot( posterior ~ p_grid , type="l" , main = "L, W, W, W, L, W, W, W")
+```
+
+## Appendix: `tidyverse` conversion
 
 Statistical Rethinking uses base R functions. More recently, Soloman Kurz has created a [translation of the book's functions](https://bookdown.org/content/4857/) into `tidyverse` (and later `brms`) code. This is not necessary but could be extremely helpful to classmates who are familiar with `tidyverse` already.
 
@@ -176,7 +223,6 @@ First, we'll need to call `tidyverse`. If you do not have `tidyverse`, you'll ne
 ```{r}
 library(tidyverse)
 ```
-
 
 For example, we can translate 2.3 code using pipes (`%>%`)
 
@@ -204,7 +250,7 @@ d %>%
 
 For this class, we'll occasionally refer to Soloman's guide. 
 
-### Practice Problems
+### Demo Problem
 
 2M1: Recall the globe tossing model from the chapter. Compute and plot the grid approximate posterior distribution for each of the following sets of observations. In each case, assume a uniform prior for p.
 
@@ -279,9 +325,9 @@ anim <- ggplot(d2m1, aes(x = p_grid, y = posterior, group = obs)) +
   exit_fade()
 
 animate(anim, height = 500, width = 600)
-#anim_save("World-tossing-bayesian-chapter2.gif")
+#anim_save("../../static/img/example/World-tossing-bayesian-chapter2.gif")
 ```
-
+![](../../static/img/example/World-tossing-bayesian-chapter2.gif)
 
 ## Package versions
 

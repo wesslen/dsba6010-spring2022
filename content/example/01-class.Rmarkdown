@@ -6,6 +6,7 @@ menu:
     parent: Examples
 weight: 1
 type: docs
+toc: true
 ---
 
 ```{r setup, include=FALSE}
@@ -16,7 +17,7 @@ library(rethinking)
 
 ```{r echo=FALSE}
 downloadthis::download_file(
-  path = "01-class.Rmd",
+  path = "01-class.Rmarkdown",
   output_name = "01-class",
   button_label = "Download this code",
   button_type = "danger",

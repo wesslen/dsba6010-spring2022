@@ -54,13 +54,25 @@ Primer](https://arxiv.org/pdf/1411.5018.pdf) [@vanderplas2014frequentism] <i cla
 
 - <i class="fas fa-blog"></i> [A guide to working with country-year panel data and Bayesian multilevel models](https://www.andrewheiss.com/blog/2021/12/01/multilevel-models-panel-data-guide/) [@heiss2021] <i class="fas fa-star"></i>
 
+- <i class="fas fa-blog"></i> [Bayesian Statistics using Julia and Turing](https://storopoli.io/Bayesian-Julia/) [@Storopoli2021] <i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
 <!-- https://betanalpha.github.io/assets/case_studies/modeling_sparsity.html#1_Fading_into_Irrelevance -->
 
 <!-- https://boyangzhao.github.io/posts/mcmc-bayesian-inference -->
 
 ## DAGs / Causal Inference
 
-- <i class="fas fa-blog"></i> [Ways to close backdoors in DAGs](https://www.andrewheiss.com/blog/2020/02/25/closing-backdoors-dags/) [@heiss2020] <i class="fas fa-star"></i>
+- <i class="fas fa-blog"></i> [Ways to close backdoors in DAGs](https://www.andrewheiss.com/blog/2020/02/25/closing-backdoors-dags/) [@heiss2020] <i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+- <i class="fas fa-blog"></i> [An Illustration of Pearl's Simpson Machine
+](http://www.dagitty.net/learn/simpson/index.html) <i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+- <i class="fas fa-blog"></i> [Test your DAG Knowledge
+](http://www.dagitty.net/learn/graphs/index.html) <i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+- <i class="fas fa-blog"></i> [Dagitty Primer
+](http://dagitty.net/primer/) <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
 
 ## Textbooks
 
@@ -72,6 +84,8 @@ Primer](https://arxiv.org/pdf/1411.5018.pdf) [@vanderplas2014frequentism] <i cla
 
 - <i class="fas fa-book"></i> [Think Bayes: Bayesian Statistics in Python](http://allendowney.github.io/ThinkBayes2/) [@downey2021think] <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
 
+- <i class="fas fa-book"></i> [Bayesian Modeling and Computation in Python](https://bayesiancomputationbook.com/welcome.html) [@martin2021bayesian] <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
 
+- <i class="fas fa-book"></i> [Bayes Rules! An Introduction to Applied Bayesian Modeling](https://www.bayesrulesbook.com/) [@johnsonbayes] <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
 
 ## References
