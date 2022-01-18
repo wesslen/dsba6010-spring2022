@@ -87,6 +87,12 @@ Due before class: Monday, January 24 at 11:59am
 
 <a href="https://uncc.instructure.com/courses/171000/quizzes/331407"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a>
 
+## Project Check-in 1
+
+Presentations on February 14, [Project Check In 1](content/assignment/01-project)
+
+Due by next class (Jan 31): Email or DM Ryan the article you will be presenting on.
+
 ## Problem Set 1
 
 Due by next class: Monday, January 31 at 11:59am

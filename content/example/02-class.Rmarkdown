@@ -255,6 +255,7 @@ For this class, we'll occasionally refer to Soloman's guide.
 2M1: Recall the globe tossing model from the chapter. Compute and plot the grid approximate posterior distribution for each of the following sets of observations. In each case, assume a uniform prior for p.
 
 ```{r}
+## be sure to have tidyverse installed, i.e., install.packages('tidyverse')
 library(tidyverse)
 
 dist <- tibble(p_grid = seq(from = 0, to = 1, length.out = 20),
@@ -310,6 +311,7 @@ d2m1
 ```
 
 ```{r}
+# be sure to install gganimate, i.e., run install.packages('gganimate')
 library(gganimate)
 
 anim <- ggplot(d2m1, aes(x = p_grid, y = posterior, group = obs)) + 
@@ -327,7 +329,8 @@ anim <- ggplot(d2m1, aes(x = p_grid, y = posterior, group = obs)) +
 animate(anim, height = 500, width = 600)
 #anim_save("../../static/img/example/World-tossing-bayesian-chapter2.gif")
 ```
-![](../../static/img/example/World-tossing-bayesian-chapter2.gif)
+
+![](../../img/example/World-tossing-bayesian-chapter2.gif)
 
 ## Package versions
 

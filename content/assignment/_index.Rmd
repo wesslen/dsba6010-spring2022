@@ -45,21 +45,18 @@ If situations require us to work remotely, the exam may have changes in its stru
 
 At the end of the course, you will demonstrate your knowledge of Bayesian statistics and causal inference by completing a final project.
 
-There is no final exam. The final project is your final exam.
-
-[Complete details for the final project are here.](/assignment/final-project/)
+There is no final exam. The final project is your final exam. [Details for the final project.](/assignment/final-project/)
 
 ### Scope
 
-Projects can cover anything related to Bayesian inference. We'll cover a range of applications in Bayesian inference for [check-in assigment 1](/assignment/class-presentation/) and students are encouraged to think outside of the box. As mentioned in the syllabus, students may use programming language outside of R/Stan for this project (e.g., Turing.jl, PyMC).
+Projects can cover anything related to Bayesian inference. We'll cover a range of applications in Bayesian inference for [check-in assigment 1](/assignment/01-project/) and students are encouraged to think outside of the box. As mentioned in the syllabus, students may use programming language outside of R/Stan for this project (e.g., Turing.jl, PyMC).
 
 ### Check-in assigments
 
 For your [final project](/assignment/final-project/), you will have two check-in projects. 
+The first check-in is an [in-class presentation](/assignment/01-project/) on February 14th. Presentations will be done individually and can be 5-10 minutes long. Students may present in class or digitally (e.g., .mp4 video). If students choose to upload digitally, the document must be submitted at 11:59am of February 14th.
 
-The first check-in is an [in-class presentation](/assignment/class-presentation/) on February 14th. Presentations will be done individually and can be 5-10 minutes long. Students may present in class or digitally (e.g., .mp4 video). If students choose to upload digitally, the document must be submitted at 11:59am of February 14th.
-
-The second check-in will be a [project proposal](/assignment/project-proposal/) due on March 28th. This will need to be turned in on Canvas. 
+The second check-in will be a [project proposal](/assignment/02-project/) due on March 28th. This will need to be turned in on Canvas. 
 
 Similar to problem sets, late assignments (within 48 hours) will be subject to a 50% reduction. Assignments received over 48 hours will be subject to a zero grade. 
 

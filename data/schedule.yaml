@@ -62,9 +62,8 @@ lessons:
     date: "Feb 14"
     date_start: "Feb 14"
     date_end: "Feb 20"
-    ##content: "02-bayesian-inference"
-    quiz: "https://uncc.instructure.com/courses/171000/quizzes/331404"
-    ##assignment: "01-problem-set"
+    content: "05-bayesian-presentations"
+    assignment: "01-project"
     bg: 1
     bottomborder: True   
     
@@ -73,8 +72,8 @@ lessons:
     date: "Feb 21"
     date_start: "Feb 21"
     date_end: "Feb 27"
-    ##content: "06-spurious-correlations"
-    quiz: "https://uncc.instructure.com/courses/171000/quizzes/331405"
+    content: "06-spurious-correlations"
+    quiz: "https://uncc.instructure.com/courses/171000/quizzes/331404"
     ##assignment: "01-problem-set"
     bg: 2
     bottomborder: True
@@ -84,8 +83,8 @@ lessons:
     date: "Feb 28"
     date_start: "Feb 28"
     date_end: "Mar 6"
-    ##content: "07-model-comparison"
-    quiz: "https://uncc.instructure.com/courses/171000/quizzes/331406"
+    content: "07-model-comparison"
+    quiz: "https://uncc.instructure.com/courses/171000/quizzes/331405"
     ##assignment: "01-problem-set"
     bg: 1
     bottomborder: True  
@@ -102,8 +101,8 @@ lessons:
     date: "Mar 14"
     date_start: "Mar 14"
     date_end: "Mar 20"
-    ##content: "07-model-comparison"
-    ##quiz: "01-lesson-quiz"
+    content: "08-interactions"
+    quiz: "https://uncc.instructure.com/courses/171000/quizzes/331406"
     ##assignment: "01-problem-set"
     bg: 2
     bottomborder: True 
@@ -113,7 +112,7 @@ lessons:
     date: "Mar 21"
     date_start: "Mar 21"
     date_end: "Mar 27"
-    ##content: "07-model-comparison"
+    content: "09-entropy-glm"
     ##quiz: "01-lesson-quiz"
     ##assignment: "01-problem-set"
     bg: 1
@@ -124,7 +123,7 @@ lessons:
     date: "Mar 28"
     date_start: "Mar 28"
     date_end: "Apr 3"
-    ##content: "07-model-comparison"
+    content: "10-guest-lecture"
     ##quiz: "01-lesson-quiz"
     ##assignment: "01-problem-set"
     bg: 2
@@ -138,8 +137,64 @@ lessons:
     date: "Apr 4"
     date_start: "Apr 4"
     date_end: "Apr 10"
-    ##content: "07-model-comparison"
+    #content: "11-multilevel"
     ##quiz: "01-lesson-quiz"
     ##assignment: "01-problem-set"
     bg: 1
     bottomborder: True 
+    
+  - title: '<span class="content-title">Adventures in Covariance</span>'
+    session: "Class 12"
+    date: "Apr 11"
+    date_start: "Apr 11"
+    date_end: "Apr 17"
+    #content: "12-covariance"
+    ##quiz: "01-lesson-quiz"
+    ##assignment: "01-problem-set"
+    bg: 2
+    bottomborder: True 
+    
+  - title: '<span class="content-title">Exam</span>'
+    session: "Class 13"
+    date: "Apr 18"
+    date_start: "Apr 18"
+    date_end: "Apr 24"
+    #content: "12-multilevel-2"
+    ##quiz: "01-lesson-quiz"
+    ##assignment: "01-problem-set"
+    bg: 3
+    bottomborder: True 
+    
+  - title: '<span class="content-title">Measurement Error & Missing Data</span>'
+    session: "Class 14"
+    date: "Apr 25"
+    date_start: "Apr 25"
+    date_end: "May 1"
+    #content: "12-multilevel-2"
+    ##quiz: "01-lesson-quiz"
+    ##assignment: "01-problem-set"
+    bg: 1
+    bottomborder: True 
+    
+  - title: '<span class="content-title">Beyond GLMs</span>'
+    session: "Class 15"
+    date: "May 2"
+    date_start: "May 2"
+    date_end: "May 8"
+    #content: "12-multilevel-2"
+    ##quiz: "01-lesson-quiz"
+    ##assignment: "01-problem-set"
+    bg: 2
+    bottomborder: True 
+
+  - title: '<span class="content-title">Project presentations</span>'
+    session: "Final Exam"
+    date: "May 9"
+    date_start: "May 9"
+    date_end: "May 15"
+    #content: "12-multilevel-2"
+    ##quiz: "01-lesson-quiz"
+    ##assignment: "01-problem-set"
+    bg: 3
+    bottomborder: True 
+

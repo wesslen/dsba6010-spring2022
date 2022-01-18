@@ -8,12 +8,14 @@ menu:
 highlight: true
 tags:
 - Computation
-title: Class 15 - Missing Data
+title: Class 15 - Beyond GLMs
 type: docs
 weight: 15
 ---
 
-{{< icon name="book" pack="fas" >}} Chapter 15: Missing Data and Other Opportunities
+{{< icon name="book" pack="fas" >}} Chapter 16: Generalized Linear Madness
+
+{{< icon name="book" pack="fas" >}} Chapter 17: Horoscopes
 
 ## Lecture
 

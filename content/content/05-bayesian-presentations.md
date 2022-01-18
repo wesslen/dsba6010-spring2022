@@ -13,8 +13,8 @@ weight: 5
 
 Individual presentations on Bayesian applications.
 
-Students will present one published article or blog post of applications on Bayesian statistics.
+Students will present one published article or blog post of applications on Bayesian statistics. 
 
-Due before class: Feb 14, 2022 at 11:59am
-
-[Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1415489)
+* [Project Check in 1 Link Details](/assignment/01-project/)
+* Due before class: Feb 14, 2022 at 11:59am
+* Turn in at the [Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1415489)

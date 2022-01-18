@@ -8,12 +8,12 @@ menu:
 highlight: true
 tags:
 - Computation
-title: Class 14 - Adventures in Covariance
+title: Class 14 - Measurement Error & Missing Data 
 type: docs
 weight: 14
 ---
 
-{{< icon name="book" pack="fas" >}} Chapter 14: Adventures in Covariance
+{{< icon name="book" pack="fas" >}} Chapter 15: Missing Data and Other Opportunities
 
 ## Lecture
 

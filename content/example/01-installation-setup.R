@@ -13,7 +13,6 @@ library(rstan)
 # https://mc-stan.org/cmdstanr/
 library(cmdstanr)
 
-
 #install.packages(c("coda","mvtnorm","devtools","loo","dagitty","shape"))
 #devtools::install_github("rmcelreath/rethinking")
 library(rethinking)
@@ -35,7 +34,11 @@ precis(fit)
 #   mu    0.00 0.59 -0.95  0.95
 # sigma 0.84 0.33  0.31  1.36
 
+# check if cmdstan runs
 fit_stan <- ulam( f , data=list(y=c(-1,1)), cmdstan=TRUE)
+# check if rstan run
+fit_stan <- ulam( f , data=list(y=c(-1,1)), cmdstan=FALSE)
+
 
 # if doesn't work then cmdstan=TRUE, or set forever: set_ulam_cmdstan(TRUE)
 

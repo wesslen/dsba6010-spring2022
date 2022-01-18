@@ -4,15 +4,16 @@ class_date: "2022-04-04"
 menu:
   content:
     parent: Course content
-    weight: 11
+    weight: 9
 highlight: true
 tags:
 - Computation
-title: Class 11 - Monsters & Mixtures
+title: Class 9 - Entropy & GLM
 type: docs
-weight: 11
+weight: 9
 ---
 
+{{< icon name="book" pack="fas" >}} Chapter 11: God Spiked the Integers
 
 {{< icon name="book" pack="fas" >}} Chapter 12: Monsters and Mixtures
 
