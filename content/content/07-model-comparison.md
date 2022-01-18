@@ -21,6 +21,9 @@ weight: 7
 
 {{< icon name="book" pack="fas" >}} Chapter 7: Ulysses' Compass
 
+{{< icon name="book" pack="fas" >}} Chapter 8: Conditional Manatees
+
+
 <!--more-->
 
 ## Lecture

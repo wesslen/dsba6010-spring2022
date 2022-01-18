@@ -101,7 +101,7 @@ lessons:
     date: "Mar 14"
     date_start: "Mar 14"
     date_end: "Mar 20"
-    content: "08-interactions"
+    content: "08-mcmc"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/331406"
     ##assignment: "01-problem-set"
     bg: 2

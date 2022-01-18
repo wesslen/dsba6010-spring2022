@@ -8,7 +8,7 @@ menu:
 highlight: true
 tags:
 - Causal inference
-title: Class 8 - Interactions/MCMC
+title: Class 8 - MCMC / Binomial GLMs
 type: docs
 weight: 8
 ---
