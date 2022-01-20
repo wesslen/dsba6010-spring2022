@@ -89,7 +89,7 @@ Due before class: Monday, January 24 at 11:59am
 
 ## Project Check-in 1
 
-Presentations on February 14, [Project Check In 1](assignment/01-project)
+Presentations on February 14, [Project Check In 1](../../assignment/01-project)
 
 Due by next class (Jan 31): Email or DM Ryan the article you will be presenting on.
 
