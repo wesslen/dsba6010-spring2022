@@ -35,12 +35,10 @@ Present a demo of the notebook (e.g., [Colab](colab.research.google.com), [binde
 
 
 ### Example presentation
-| Topic                                         | Reference                                                                                                                                                                                                      | Type                           | Language |
-|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|----------|
-| Difference between ML vs Bayes vs Freq        | [Regression per Stat School](https://koaning.io/posts/twain-learning/)                                                                                                                                         | <i class="fas fa-blog"></i>    |          |
 
+Example Article: [Vincent Warmerdam's Blogpost on Regression per Stat School](https://koaning.io/posts/twain-learning/) 
 
-{{< gslides src="https://docs.google.com/presentation/d/e/2PACX-1vSFY2YaBD0zyv9_XIfzHJCBO6Dn5egf5anH_QrhVxJ_0_lMxpss1kV1NWB4wKOWTBymUr2cnuGPIcbP/embed?start=false&loop=false&delayms=3000" >}}
+* [Example Slide Presentation](https://docs.google.com/presentation/d/e/2PACX-1vSFY2YaBD0zyv9_XIfzHJCBO6Dn5egf5anH_QrhVxJ_0_lMxpss1kV1NWB4wKOWTBymUr2cnuGPIcbP/embed?start=false&loop=false&delayms=3000)
 
 ## FAQ
 

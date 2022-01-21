@@ -21,7 +21,9 @@ weight: 4
 
 ## Required Readings
 
-{{< icon name="book" pack="fas" >}} Chapter 4: Geocentric models
+{{< icon name="book" pack="fas" >}} Chapter 4: Geocentric Models (Focus on sections 4.5-4.6)
+
+{{< icon name="book" pack="fas" >}} Chapter 5: The Many Variables and the Spurious Waffles (Focus on 5.3, may need 5.1 background but will cover 5.1 more in Lecture 5)
 
 <!--more-->
 

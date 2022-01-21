@@ -1,6 +1,6 @@
 ---
 title: Project Check-in 1
-date: "2022-01-18"
+date: "2022-01-21"
 menu:
   assignment:
     parent: Project
@@ -35,11 +35,9 @@ Present a demo of the notebook (e.g., [Colab](colab.research.google.com), [binde
 
 ### Example presentation
 
-| Topic                                  | Reference                                                              | Type                        | Language |
-|----------------------------------------|------------------------------------------------------------------------|-----------------------------|----------|
-| Difference between ML vs Bayes vs Freq | [Regression per Stat School](https://koaning.io/posts/twain-learning/) | <i class="fas fa-blog"></i> |          |
+Example Article: [Vincent Warmerdam’s Blogpost on Regression per Stat School](https://koaning.io/posts/twain-learning/)
 
-{{&lt; gslides src=“https://docs.google.com/presentation/d/e/2PACX-1vSFY2YaBD0zyv9\_XIfzHJCBO6Dn5egf5anH\_QrhVxJ\_0\_lMxpss1kV1NWB4wKOWTBymUr2cnuGPIcbP/embed?start=false&loop=false&delayms=3000” &gt;}}
+-   [Example Slide Presentation](https://docs.google.com/presentation/d/e/2PACX-1vSFY2YaBD0zyv9_XIfzHJCBO6Dn5egf5anH_QrhVxJ_0_lMxpss1kV1NWB4wKOWTBymUr2cnuGPIcbP/embed?start=false&loop=false&delayms=3000)
 
 ## FAQ
 
@@ -63,7 +61,7 @@ Either run real time locally, on the cloud, or review static rendering (e.g., ht
 
 {{% spoiler text="If I do a tutorial / notebook, do I need to use a new data set than the original tutorial or notebook?" %}}
 
-No. You can use the original if you can explain the code/problem and run it on your own. Spend more time to create replicable reruns like cloud versions that other students can run as well (e.g., Colab, binder, GitHub, etc.).
+No. You can use the original if you can explain the code/problem and run it on your own. Spend more time to create replicable reruns like cloud versions that other students can run as well (e.g., [RStudio.Cloud](https://rstudio.cloud/), [Colab](https://colab.research.google.com/), [binder](https://github.com/binder-examples/r), [GitPod](https://www.gitpod.io/), etc.).
 
 {{% /spoiler %}}
 

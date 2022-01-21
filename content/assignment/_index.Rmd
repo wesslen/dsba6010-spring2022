@@ -18,7 +18,7 @@ You need to show that you made a good faith effort to work each question. I will
 - ✔++: (*110% in gradebook*) Assignment is 100% completed. Every question was attempted and answered, and most answers are correct. Document is clean and easy to follow. Work is exceptional. I will not assign these often.
 - ✔+: (*100% in gradebook*) Assignment is complete and most answers are correct. **This is the expected level of performance.**
 - ✔: (*90% in gradebook*) Completed most of the assignment and answers are mostly correct. 
-- ✔−: (*75% in gradebook*) Assignment is slightly above 50% correct and/or most answers are incorrect. This indicates that you need to improve next time. I will hopefully not assign these often.
+- ✔−: (*75% in gradebook*) Assignment is above 50% correct but several answers or approaches are incorrect. This indicates that you need to improve next time. I will hopefully not assign these often.
 - ✔−−: (*50% in gradebook*) Major components were not completed and/or less than 50% of questions were correct.
 
 Zeros will be issued for problem sets not completed.
