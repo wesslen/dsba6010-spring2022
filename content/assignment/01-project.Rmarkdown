@@ -78,7 +78,7 @@ blogdown::shortcode_close('spoiler')
 blogdown::shortcode_open('spoiler', text = 'If I do a tutorial / notebook, do I need to use a new data set than the original tutorial or notebook?')
 ```
 
-No. You can use the original if you can explain the code/problem and run it on your own. Spend more time to create replicable reruns like cloud versions that other students can run as well (e.g., Colab, binder, GitHub, etc.).
+No. You can use the original if you can explain the code/problem and run it on your own. Spend more time to create replicable reruns like cloud versions that other students can run as well (e.g., [RStudio.Cloud](https://rstudio.cloud/), [Colab](https://colab.research.google.com/), [binder](https://github.com/binder-examples/r), [GitPod](https://www.gitpod.io/), etc.).
 
 ```{r echo=FALSE}
 blogdown::shortcode_close('spoiler')
