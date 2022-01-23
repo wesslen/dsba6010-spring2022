@@ -142,13 +142,24 @@ blogdown::shortcode_close('spoiler')
 |-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|----------|
 | Uncertainty Visualizations in Mobile Apps     | [Uncertainty displays using quantile dotplots or CDFs improve transit   decision-making (Fernandes et al., 2018)](https://www.mjskay.com/papers/chi2018-uncertain-bus-decisions.pdf)                                                    | <i class="fas fa-newspaper"></i> | R        |
 | Bayesian Methodology in HCI                   | [Why Bayesian Statistics Better Fit the Culture and Incentives of   HCI (Kay et al., 2016)](https://www.mjskay.com/papers/chi_2016_bayes.pdf)                                                                                     | <i class="fas fa-newspaper"></i> | R        |
-| Bayesian Data Visualizations                   | [Evaluating Bayesian Model Visualisations (Stein & Williamson, 2022)](https://arxiv.org/pdf/2201.03604.pdf)                                                                                     | <i class="fas fa-newspaper"></i> | R        |
+| Bayesian Data Visualizations                   | [Evaluating Bayesian Model Visualisations (Stein & Williamson, 2022)](https://arxiv.org/pdf/2201.03604.pdf)                                                                                     | <i class="fas fa-newspaper"></i> |         |
 
 ### Natural language programming
 | Topic                                         | Reference                                                                                                                                                                                                      | Type                           | Language |
 |-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|----------|
 | Original paper on LDA (topic modeling)     | [Latent dirichlet allocation (Blei, Ng, Jordan, 2003)](https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf)                                                    | <i class="fas fa-newspaper"></i> |         |
 | Introduction to Topic Modeling                  | [Probabilistic Topic Models](http://www.cs.columbia.edu/~blei/papers/Blei2012.pdf)                                                                                     | <i class="fas fa-newspaper"></i> |         |
+| Topic Modeling in Python                  | [OCTIS python package](https://github.com/mind-Lab/octis)                                                                                     | <i class="fas fa-code"></i> | Python        |
+
+
+### Sports
+
+| Topic                                         | Reference                                                                                                                                                                                                      | Type                           | Language |
+|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|----------|
+| Baseball statistics     | [Understanding Bayesian A/B testing (using baseball statistics)](http://varianceexplained.org/r/bayesian_ab_baseball/)                                                    | <i class="fas fa-blog"></i> | R        |
+| Baseball statistics                   | [Understanding credible intervals (using baseball statistics)](http://varianceexplained.org/r/credible_intervals_baseball/)                                                                                     | <i class="fas fa-blog"></i> | R        |
+| Baseball statistics                   | [Hierarchical Partial Pooling of Batting Averages](https://docs.pymc.io/en/v3/pymc-examples/examples/case_studies/hierarchical_partial_pooling.html)                                                                                     | <i class="fas fa-blog"></i> | Python (PyMC3)        |
+| Soccer                   | [A Bayesian Approach to In-Game Win Probaiblity](https://dtai.cs.kuleuven.be/sports/blog/a-bayesian-approach-to-in-game-win-probability)                                                                                     | <i class="fas fa-blog"></i> | R        |
 
 ### Probabilistic programming
 | Topic                                         | Reference                                                                                                                                                                                                      | Type                           | Language |
