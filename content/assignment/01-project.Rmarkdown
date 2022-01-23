@@ -150,6 +150,7 @@ blogdown::shortcode_close('spoiler')
 | Original paper on LDA (topic modeling)     | [Latent dirichlet allocation (Blei, Ng, Jordan, 2003)](https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf)                                                    | <i class="fas fa-newspaper"></i> |         |
 | Introduction to Topic Modeling                  | [Probabilistic Topic Models](http://www.cs.columbia.edu/~blei/papers/Blei2012.pdf)                                                                                     | <i class="fas fa-newspaper"></i> |         |
 | Topic Modeling in Python                  | [OCTIS python package](https://github.com/mind-Lab/octis)                                                                                     | <i class="fas fa-code"></i> | Python        |
+| Predicting Federalist Paper Authorship                  | [Naive Bayes](https://jrnold.github.io/bayesian_notes/naive-bayes.html)                                                                                     | <i class="fas fa-code"></i> | R        |
 
 
 ### Sports
