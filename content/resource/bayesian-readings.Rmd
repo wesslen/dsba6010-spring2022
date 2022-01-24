@@ -88,6 +88,8 @@ Primer](https://arxiv.org/pdf/1411.5018.pdf) [@vanderplas2014frequentism] <i cla
 
 - <i class="fas fa-book"></i> [Think Bayes: Bayesian Statistics in Python](http://allendowney.github.io/ThinkBayes2/) [@downey2021think] <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
 
+- <i class="fas fa-book"></i> [An Introduction to Bayesian Data Analysis for Cognitive Science](https://vasishth.github.io/bayescogsci/book/) [@nicenboim2021introduction] <i class="fas fa-star"></i>  <i class="fas fa-star"></i>
+
 - <i class="fas fa-book"></i> [Bayesian Modeling and Computation in Python](https://bayesiancomputationbook.com/welcome.html) [@martin2021bayesian] <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
 
 - <i class="fas fa-book"></i> [Bayes Rules! An Introduction to Applied Bayesian Modeling](https://www.bayesrulesbook.com/) [@johnsonbayes] <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>

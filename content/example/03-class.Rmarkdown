@@ -9,12 +9,11 @@ toc: true
 type: docs
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, fig.width=5, fig.height=4}
 knitr::opts_chunk$set(echo = TRUE, class.source="language-r", class.output="language-r", message = FALSE, warning = FALSE)
 xaringanExtra::use_clipboard()
 library(rethinking)
 ```
-
 
 ```{r echo=FALSE}
 downloadthis::download_file(
@@ -26,6 +25,9 @@ downloadthis::download_file(
   icon = "fa fa-save",
   self_contained = FALSE
 )
+```
+```{r echo=FALSE, fig.align="left", fig.link='https://gitpod.io/#https://github.com/wesslen/dsba6010-examples'}
+knitr::include_graphics(path="https://gitpod.io/button/open-in-gitpod.svg")
 ```
 
 ## Introduction
@@ -41,12 +43,14 @@ If you need help, be sure to remember the references in the [Resources](/resourc
 * [Rmarkdown](/resource/rmarkdown/)
 * [R Style guide](/resource/style/)
 
-## Drawing the Owl
+## Chapter 4 
+
+### Drawing the Owl
 
 ![](../../img/syllabus/owl.png)
 
 
-## 1. Question or estimand
+### 1. Question or estimand
 
 Objective: Describe the association between Adult **weight** and **height**
 
@@ -55,7 +59,7 @@ library(rethinking)
 data(Howell1)
 d <- Howell1[Howell1$age>=18,]
 
-plot(d$height,d$weight, col = "red", xlab = "height (cm)", ylab = "weight (kg)")
+plot(d$height,d$weight, col = 2, xlab = "height (cm)", ylab = "weight (kg)", lwd=3)
 ```
 
 Alternatively, using `ggplot2` we can plot the same:
@@ -70,11 +74,11 @@ ggplot(d, aes(x = height, y = weight)) +
 ```
 
 
-## 2. Scientific model
+### 2. Scientific model
 
 Weight is a function of height. 
 
-```{r fig.height=1}
+```{r fig.height=1, fig.width=2}
 library(dagitty)
 
 g <- dagitty('dag {
@@ -86,9 +90,9 @@ g <- dagitty('dag {
 plot(g)
 ```
 
-## 3. Statistical model
+### 3. Statistical model
 
-### Generative Model
+#### Generative Model
 
 Let's consider the Generative Model (H -> W) from the lecture:
 
@@ -126,7 +130,7 @@ ggplot(df, aes(x = height, y = weight)) +
   labs(x = "height (cm)", y = "weight (kg)", title = "100 Simulated people")
 ```
 
-### Sampling the prior distribution
+#### Sampling the prior distribution
 
 ```{r}
 n_samples <- 10
@@ -166,7 +170,7 @@ anim
 #animate(anim, height=2, width=3)
 ```
 
-### Statistical model for H->W
+### 3. Statistical model for H->W
 
 ```{r}
 n <- 10
@@ -207,9 +211,11 @@ for (i in 1:n){
   lines(Hseq, a[i] + b[i]*(Hseq-Hbar),lwd=3,col=2)
 }
 ```
-
+{{% callout note %}}
 
 Key is justify priors with information outside of the data (that will be modeled). This is similar to machine learning where we don't want to include records in our test dataset that were also in our training. Using modeled data to form priors can be thought of as "prior-hacking". Typically in literature, Bayesian approaches require pre-registration when using non-informative priors (see [this example from Fernandes et al., 2018](https://github.com/michael-fernandes/uncertainty-displays-for-transit/blob/master/pre-registration.pdf)).
+
+{{% /callout %}}
 
 $W_i \sim Normal(\mu_i,\sigma)$<br>
 $\mu_i = \alpha + \beta(H_i - \overline{H})$<br>
@@ -250,7 +256,7 @@ precis( m4.3 )
 round( vcov( m4.3 ) , 3 )
 ```
 
-## 4. Validate model
+### 4. Validate model
 
 We'll use a **simulation-based** validation.
 
@@ -307,7 +313,7 @@ post <- extract.samples(m_adults)
 head(post)
 ```
 
-### 1. Plot the sample
+#### 1. Plot the sample
 
 ```{r}
 # 4.4.3
@@ -316,7 +322,8 @@ plot(d$height, d$weight, col=col2, lwd=3,
      cex=1.2, xlab="height (cm)", ylab="weight (kg)")
 ```
 
-### 2. Plot the posterior mean
+#### 2. Plot the posterior mean
+
 
 ```{r}
 weight.seq <- seq(from=25,to=70,by=1)
@@ -326,7 +333,7 @@ plot(d$height,d$weight,  col=col2, lwd=3,
 lines(  apply(mu,2,mean), weight.seq, lwd=4)
 ```
 
-### 3. Plot uncertainty of the mean
+#### 3. Plot uncertainty of the mean
 
 ```{r}
 xseq <- seq(from=130,to=190,len=50)
@@ -336,7 +343,7 @@ lines(   apply(mu,2,mean), weight.seq,lwd=4)
 shade( apply(mu,2,PI,prob=0.99), weight.seq, col=col.alpha(2,0.5))
 ```
 
-### 4. Plot uncertainty of predictions
+#### 4. Plot uncertainty of predictions
 
 {{% callout note %}}
 

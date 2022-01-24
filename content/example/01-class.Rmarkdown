@@ -9,11 +9,18 @@ type: docs
 toc: true
 ---
 
+<style>
+td, th {
+   border: none!important;
+}
+</style>
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, class.source="language-r", class.output="language-r", message = FALSE, warning = FALSE)
 xaringanExtra::use_clipboard()
 library(rethinking)
 ```
+
 
 ```{r echo=FALSE}
 downloadthis::download_file(
@@ -27,6 +34,9 @@ downloadthis::download_file(
 )
 ```
 
+```{r echo=FALSE, fig.align="left", fig.link='https://gitpod.io/#https://github.com/wesslen/dsba6010-examples'}
+knitr::include_graphics(path="https://gitpod.io/button/open-in-gitpod.svg")
+```
 
 ## Introduction
 

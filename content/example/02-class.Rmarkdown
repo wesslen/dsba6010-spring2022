@@ -15,7 +15,6 @@ xaringanExtra::use_clipboard()
 library(rethinking)
 ```
 
-
 ```{r echo=FALSE}
 downloadthis::download_file(
   path = "02-class.Rmarkdown",
@@ -26,6 +25,9 @@ downloadthis::download_file(
   icon = "fa fa-save",
   self_contained = FALSE
 )
+```
+```{r echo=FALSE, fig.align="left", fig.link='https://gitpod.io/#https://github.com/wesslen/dsba6010-examples'}
+knitr::include_graphics(path="https://gitpod.io/button/open-in-gitpod.svg")
 ```
 
 ## Introduction
@@ -41,7 +43,9 @@ If you need help, be sure to remember the references in the [Resources](/resourc
 * [Rmarkdown](/resource/rmarkdown/)
 * [R Style guide](/resource/style/)
 
-## Bayesian Updating: Grid Approximation
+## Chapter 2
+
+### Bayesian Updating: Grid Approximation
 
 Let's assume we have the table in 2.1
 
@@ -115,7 +119,7 @@ mtext( "20 points" )
 
 Practice: What happens if we alter the priors? What will be the new posteriors?
 
-Assume 6 W's and 3 L's (9 tosses). Plot the posterior and compare.
+Assume 6 W's and 3 L's (9 tosses). Plot the posterior and compare them to using a uniform prior.
 
 ```{r}
 # prior 1
@@ -129,7 +133,9 @@ prior <- exp( -5*abs( p_grid - 0.5 ) )
 
 {{% /callout %}}
 
-## Bayesian Updating: Quadratic Approximation
+### Bayesian Updating: Quadratic Approximation
+
+We can also use quadratic approximation, which is discussed on page 42 of Chapter2. We'll use quadratic approximation approach over the next few weeks before moving to MCMC methods via Stan.
 
 ```{r}
 ## R code 2.6
@@ -141,43 +147,30 @@ globe.qa <- quap(
     ) ,
     data=list(W=6,L=3) )
 
+globe.qa
+```
+
+We can also use the `precis` function to summarize parameter estimates. I recommend running `?precis` to look up parameters associated with this function.
+
+```{r}
 # display summary of quadratic approximation
 precis( globe.qa )
 ```
+
+### How does grid approximation compare to analytical posterior calculation?
 
 ```{r}
 ## R code 2.7
 # analytical calculation
 W <- 6
 L <- 3
-curve( dbeta( x , W+1 , L+1 ) , from=0 , to=1 )
+curve( dbeta( x , W+1 , L+1 ) , from=0 , to=1 , col = 1) # solid line
 # quadratic approximation
-curve( dnorm( x , 0.67 , 0.16 ) , lty=2 , add=TRUE )
+curve( dnorm( x , 0.67 , 0.16 ) , lty=2 , add=TRUE , col = 2) # dotted line
 ```
 
 
-```{r}
-## R code 2.8
-n_samples <- 1000
-p <- rep( NA , n_samples )
-p[1] <- 0.5
-W <- 6
-L <- 3
-for ( i in 2:n_samples ) {
-    p_new <- rnorm( 1 , p[i-1] , 0.1 )
-    if ( p_new < 0 ) p_new <- abs( p_new )
-    if ( p_new > 1 ) p_new <- 2 - p_new
-    q0 <- dbinom( W , W+L , p[i-1] )
-    q1 <- dbinom( W , W+L , p_new )
-    p[i] <- ifelse( runif(1) < q1/q0 , p_new , p[i-1] )
-}
-
-## R code 2.9
-dens( p , xlim=c(0,1) )
-curve( dbeta( x , W+1 , L+1 ) , lty=2 , add=TRUE )
-```
-
-## Demo Problems
+### Demo Problems
 
 2M1: Recall the globe tossing model from the chapter. Compute and plot the grid approximate posterior distribution for each of the following sets of observations. In each case, assume a uniform prior for p.
 
@@ -213,6 +206,113 @@ posterior <- posterior / sum(posterior) # standardize
 
 plot( posterior ~ p_grid , type="l" , main = "L, W, W, W, L, W, W, W")
 ```
+
+## Chapter 3
+
+Assume we have the following model:
+
+```{r}
+p_grid <- seq(from = 0, to = 1, length.out = 1000)
+prior <- rep(1, 1000)
+likelihood <- dbinom(6, size = 9, prob = p_grid)
+posterior <- likelihood * prior
+posterior <- posterior / sum(posterior)
+
+set.seed(100) # very important when using randomized functions (e.g., sample)
+samples <- sample(p_grid, prob = posterior, size = 1e4, replace = TRUE)
+```
+
+### Demo Problems
+
+Let's follow work in section 3.2 to understand how to summarize information from the posterior.
+
+3E1: How much posterior probability lies **below** p = 0.2?
+
+```{r}
+mean(samples < 0.2)
+```
+
+3E2: How much posterior probability lies **above** p = 0.8?
+
+```{r}
+mean(samples > 0.8)
+```
+
+3E3: How much posterior probability lies **between** p = 0.2 and p = 0.8?
+
+```{r}
+sum( samples > 0.2 & samples < 0.8 ) / 1e4
+```
+
+3E4: 20% of the posterior probability lies **below** which value of p?
+
+```{r}
+quantile(samples, probs = 0.2)
+```
+
+3E5: 20% of the posterior probability lies **above** which value of p?
+
+```{r}
+quantile(samples, probs = 0.8)
+```
+
+3E6: Which values of p contain the narrowest interval equal to 66% of the posterior probability?
+
+```{r}
+HPDI(samples, prob = 0.66)
+```
+
+3E7: Which values of p contain 66% of the posterior probability, assuming equal posterior probability both below and above the interval?
+
+```{r}
+PI(samples, prob = 0.66)
+```
+
+{{% callout note %}}
+
+Comprehension question: under what circumstances would the PI differ from the HPDI (holding interval value the same)?
+
+{{% /callout %}}
+
+3M1: Suppose the globe tossing data had turned out to be 8 water in 15 tosses. Constructe the posterior distribution, using grid approximation. Use the same flat prior as before.
+
+```{r}
+p_grid <- seq(from = 0, to = 1, length.out = 1000)
+prior <- rep(1, 1000)
+likelihood <- dbinom(8, size = 15, prob = p_grid)
+posterior <- likelihood * prior
+posterior <- posterior / sum(posterior)
+
+plot(posterior)
+```
+
+3M2. Draw 10,000 samples from the grid approximation from above. Then use the sample to calculate the 90% HPDI for p.
+
+```{r}
+samples <- sample(p_grid, prob = posterior, size = 1e4, replace = TRUE)
+
+HPDI(samples, prob = 0.9)
+```
+
+3M3. Construct a **posterior predictive check** for this model and data. The means simulate the distribution of samples, averaging over the posterior uncertainty in p. What is the probability of observing 8 water in 15 tosses?
+
+```{r}
+w <- rbinom(1e4, size = 15, prob = samples)
+mean(w == 8)
+```
+
+3M4: Using the posterior distribution constructed from the new (8/15) data, now calculate the probability of observing 6 water in 9 tosses.
+
+```{r}
+w <- rbinom(1e4, size = 9, prob = samples)
+mean(w == 6)
+```
+
+{{% callout note %}}
+
+Modify the values w (0 to 9) for the size = 9 example in 3M4. Compare these values to Figure 3.6.
+
+{{% /callout %}}
 
 ## Appendix: `tidyverse` conversion
 
