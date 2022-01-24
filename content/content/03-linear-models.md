@@ -37,7 +37,31 @@ weight: 3
 
 ## Comprehension questions
 
-TBD
+{{% spoiler text="How is a linear regression similar to a Geocentric modeling approach?" %}}
+
+- Linear regression are essentially Geocentric models. They are descriptively accurate, mechanistically wrong, and a general method of approximation.
+
+{{% /spoiler %}}
+
+{{% spoiler text="Why are Normal (Gaussian) distributions common?" %}}
+
+- The generative argument implies that summed fluctuations tend towards normal distributions.
+
+- The statistical argument implies that estimate mean and variance (which what linear regressions are doing), the normal distribution is the least informative distribution. This is the maximum entropy argument that we'll cover later in the course when we consider Information Theory.
+
+- The main takeaway is **the variable does not have to be normally distributed for the normal model to be useful**.
+
+{{% /spoiler %}}
+
+{{% spoiler text="Why is rescaling (standardization) important for modeling?" %}}
+
+- Rescaling has multiple benefits. First, it enables comparison across different variables that have different scales (e.g., weight in pounds and height in centimeters).
+
+- Second, it enables simpler priors based on standardized distributions (e.g., Normal(0, 1) or Normal(0,5)).
+
+- Rescaling also makes the intercept (alpha) means the expected dependent variable values, (e.g., in weight/height it means the expected adult weight (the DV)).
+
+{{% /spoiler %}}
 
 ## Deliverables
 

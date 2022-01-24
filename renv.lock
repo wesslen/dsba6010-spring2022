@@ -9,13 +9,6 @@
     ]
   },
   "Packages": {
-    "AsioHeaders": {
-      "Package": "AsioHeaders",
-      "Version": "1.16.1-1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "9305444d113b052089eba3694047d42d"
-    },
     "BH": {
       "Package": "BH",
       "Version": "1.78.0-0",
@@ -106,6 +99,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "0459d4dd7a8c239be18469a30c23dd4b"
+    },
+    "V8": {
+      "Package": "V8",
+      "Version": "3.6.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "075e000b3f9f5eb05f22e3d7bef9f016"
     },
     "abind": {
       "Package": "abind",
@@ -364,6 +364,13 @@
       "Repository": "CRAN",
       "Hash": "022c42d49c28e95d69ca60446dbabf88"
     },
+    "dagitty": {
+      "Package": "dagitty",
+      "Version": "0.3-1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "22d2afac8432f195aabdf417ce42fdf4"
+    },
     "data.table": {
       "Package": "data.table",
       "Version": "1.14.2",
@@ -504,19 +511,19 @@
       "Repository": "CRAN",
       "Hash": "3f6bcfb0ee5d671d9fd1893d2faa79cb"
     },
+    "gganimate": {
+      "Package": "gganimate",
+      "Version": "1.0.7",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "729026083340f1076e622886c5b337b7"
+    },
     "ggdist": {
       "Package": "ggdist",
       "Version": "3.0.1",
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "1667dc859397c6ea01a39382a4cdf4ee"
-    },
-    "ggfun": {
-      "Package": "ggfun",
-      "Version": "0.0.4",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "e274c8e45bac263256ae345e867527df"
     },
     "gghalves": {
       "Package": "gghalves",
@@ -525,26 +532,12 @@
       "Repository": "CRAN",
       "Hash": "ed1e309b64773a074a39e1241c44dd42"
     },
-    "ggimage": {
-      "Package": "ggimage",
-      "Version": "0.3.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "cbec9d28a6bb957f0b4c8f8db04fb077"
-    },
     "ggplot2": {
       "Package": "ggplot2",
       "Version": "3.3.5",
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "d7566c471c7b17e095dd023b9ef155ad"
-    },
-    "ggplotify": {
-      "Package": "ggplotify",
-      "Version": "0.1.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "acbcedf783cdb8710168aa0edba42ac0"
     },
     "ggridges": {
       "Package": "ggridges",
@@ -588,13 +581,6 @@
       "Repository": "CRAN",
       "Hash": "7d7f283939f563670a697165b2cf5560"
     },
-    "gridGraphics": {
-      "Package": "gridGraphics",
-      "Version": "0.5-1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "5b79228594f02385d4df4979284879ae"
-    },
     "gtable": {
       "Package": "gtable",
       "Version": "0.3.0",
@@ -622,20 +608,6 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "24b224366f9c2e7534d2344d10d59211"
-    },
-    "hexSticker": {
-      "Package": "hexSticker",
-      "Version": "0.4.9",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "c624f6eb9e15082a672b5e6277257567"
-    },
-    "hexbin": {
-      "Package": "hexbin",
-      "Version": "1.28.2",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "76314b69dc54f8c14204063a2fd6d74a"
     },
     "highr": {
       "Package": "highr",
@@ -798,13 +770,6 @@
       "Repository": "CRAN",
       "Hash": "2ff5eedb6ee38fb1b81205c73be1be5a"
     },
-    "magick": {
-      "Package": "magick",
-      "Version": "2.7.3",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "56fbad418aa50939ed8c3028126af8d7"
-    },
     "magrittr": {
       "Package": "magrittr",
       "Version": "2.0.1",
@@ -916,13 +881,6 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "95e8c3825efcaad09411799da92c0af9"
-    },
-    "pagedown": {
-      "Package": "pagedown",
-      "Version": "0.15",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "705a85bb415655b45a9b5c5b1b7773f8"
     },
     "pander": {
       "Package": "pander",
@@ -1216,20 +1174,6 @@
       "Repository": "CRAN",
       "Hash": "30f0ebc41feba25691073626ff5e2cf4"
     },
-    "showtext": {
-      "Package": "showtext",
-      "Version": "0.9-4",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "57151c081eee689dc669d1bb9a77bbb7"
-    },
-    "showtextdb": {
-      "Package": "showtextdb",
-      "Version": "3.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "c12e756cf947e58b0f2c2a520521a5a8"
-    },
     "sourcetools": {
       "Package": "sourcetools",
       "Version": "0.1.7",
@@ -1278,13 +1222,6 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "b227d13e29222b4574486cfcbde077fa"
-    },
-    "sysfonts": {
-      "Package": "sysfonts",
-      "Version": "0.8.5",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "d5e2db91a3aa1ac242a6edb6b2093eb5"
     },
     "systemfonts": {
       "Package": "systemfonts",
@@ -1362,6 +1299,13 @@
       "Repository": "CRAN",
       "Hash": "1d7220fe46159fb9f5c99a44354a2bff"
     },
+    "tweenr": {
+      "Package": "tweenr",
+      "Version": "1.0.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "6cc663f970a529dbf776f11d5bcd1a2e"
+    },
     "tzdb": {
       "Package": "tzdb",
       "Version": "0.1.2",
@@ -1410,13 +1354,6 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "e99d80ad34457a4853674e89d5e806de"
-    },
-    "websocket": {
-      "Package": "websocket",
-      "Version": "1.4.1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "76e0d400757e318cca33def29ccebbc2"
     },
     "whisker": {
       "Package": "whisker",
@@ -1499,13 +1436,6 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "2826c5d9efb0a88f657c7a679c7106db"
-    },
-    "yulab.utils": {
-      "Package": "yulab.utils",
-      "Version": "0.0.4",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "922e11dcf40bb5dfcf3fe5e714d0dc35"
     },
     "zip": {
       "Package": "zip",

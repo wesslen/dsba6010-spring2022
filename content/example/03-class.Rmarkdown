@@ -59,7 +59,7 @@ library(rethinking)
 data(Howell1)
 d <- Howell1[Howell1$age>=18,]
 
-plot(d$height,d$weight, col = 2, xlab = "height (cm)", ylab = "weight (kg)", lwd=3)
+plot(d$weight, d$height, col = 2, xlab = "weight (kg)",  ylab = "height (cm)", lwd=3)
 ```
 
 Alternatively, using `ggplot2` we can plot the same:
@@ -67,12 +67,18 @@ Alternatively, using `ggplot2` we can plot the same:
 ```{r}
 library(ggplot2)
 
-ggplot(d, aes(x = height, y = weight)) +
+ggplot(d, aes(x = weight, y = height)) +
   geom_point(color = "red") +
-  labs(x = "height (cm)", y = "weight (kg)") +
+  labs(x = "weight (kg)", y = "height (cm)") +
   theme_bw()
 ```
 
+Let's calculate the average weights -- we'll use this later on when we want to standardize our data.
+
+```{r}
+xbar <- mean(d$weight)
+xbar
+```
 
 ### 2. Scientific model
 
@@ -99,7 +105,10 @@ Let's consider the Generative Model (H -> W) from the lecture:
 $W_i \sim Normal(\mu_i,\sigma)$<br>
 $\mu_i = \alpha + \beta H_i$<br>
 
+Let's now conduct a prior predictive simulation to understand
+
 ```{r}
+set.seed(100)
 # forward simulation as we choose these parameters
 alpha <- 0 # implies zero height => zero weight
 beta <- 0.5 
@@ -114,10 +123,11 @@ W <- rnorm(n_individuals,mu,sigma) # sample from Normal
 
 ```{r}
 col2 <- col.alpha(2,0.8)
-plot(H,W,  col=col2, lwd=3,
-     cex=1.2, xlab = "height (cm)", ylab = "weight (kg)")
+plot(W,H,  col=col2, lwd=3,
+     cex=1.2,  xlab = "weight (kg)", ylab = "height (cm)")
 mtext( "100 Simulated people" )
 ```
+
 ```{r}
 # ggplot2 version
 df <- data.frame(
@@ -125,9 +135,9 @@ df <- data.frame(
   weight = W
 )
 
-ggplot(df, aes(x = height, y = weight)) +
+ggplot(df, aes(x = weight, y = height)) +
   geom_point(color="red") +
-  labs(x = "height (cm)", y = "weight (kg)", title = "100 Simulated people")
+  labs(x = "weight (kg)", y = "height (cm)", title = "100 Simulated people")
 ```
 
 #### Sampling the prior distribution
@@ -158,6 +168,7 @@ p <- ggplot(df2) +
 
 p
 ```
+
 ```{r fig.height=2,fig.width=2}
 library(gganimate)
 
@@ -186,6 +197,7 @@ for (i in 1:n){
   lines(Hseq, alpha[i] + beta[i]*(Hseq-Hbar),lwd=3,col=2)
 }
 ```
+
 Is this a good prior to be used? Why or why not are they interpretable?
 
 Remember, a lognormal distribution is a distribution that if you take the logarithm of the values, then all of it's values would be normal. 
@@ -251,10 +263,23 @@ m4.3b <- quap(
 precis( m4.3 )
 ```
 
+The first row gives the quadratic approximation for α, the second the approximation for β, and the third approximation for σ.
+
+Let’s focus on b (β), because it’s the new parameter. Since β is a slope, the value 0.90 can be read as a **person 1 kg heavier is expected to be 0.90 cm taller.** 89% of the posterior probability lies between 0.84 and 0.97. That suggests that **β values close to zero or greatly above one are highly incompatible with these data and this model.** It is most certainly not evidence that the relationship between weight and height is linear, because the model only considered lines. It just says that, if you are committed to a line, then lines with a slope around 0.9 are plausible ones.
+
 ```{r}
 ## R code 4.45
 round( vcov( m4.3 ) , 3 )
 ```
+
+```{r}
+# shows both the marginal posteriors and the covariance.
+pairs(m4.3)
+```
+
+There is little covariation among the parameters in this case. The lack of covariance among the parameters **results from centering.**
+
+As an exercise, consider rerunning the regression above without centering and compare the covariation.
 
 ### 4. Validate model
 
