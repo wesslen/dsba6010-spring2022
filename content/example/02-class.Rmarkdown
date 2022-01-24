@@ -26,7 +26,7 @@ downloadthis::download_file(
   self_contained = FALSE
 )
 ```
-```{r echo=FALSE, fig.align="left", fig.link='https://gitpod.io/#https://github.com/wesslen/dsba6010-examples'}
+```{r echo=FALSE, fig.align="left", fig.link='https://gitpod.io/#https://github.com/wesslen/dsba6010_examples'}
 knitr::include_graphics(path="https://gitpod.io/button/open-in-gitpod.svg")
 ```
 
