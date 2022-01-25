@@ -1,41 +1,10 @@
 ---
 date: "`r Sys.Date()`"
 title: "Class 1"
-menu:
-  example:
-    parent: Examples
-weight: 1
-type: docs
-toc: true
 ---
 
-<style>
-td, th {
-   border: none!important;
-}
-</style>
-
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, class.source="language-r", class.output="language-r", message = FALSE, warning = FALSE)
-xaringanExtra::use_clipboard()
-library(rethinking)
-```
-
-
-```{r echo=FALSE}
-downloadthis::download_file(
-  path = "01-class.Rmd",
-  output_name = "01-class",
-  button_label = "Download this code",
-  button_type = "danger",
-  has_icon = TRUE,
-  icon = "fa fa-save",
-  self_contained = FALSE
-)
-```
-
-```{r echo=FALSE, fig.align="left", fig.link='https://gitpod.io/#https://github.com/wesslen/dsba6010_examples'}
-knitr::include_graphics(path="https://gitpod.io/button/open-in-gitpod.svg")
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 ```
 
 ## Introduction

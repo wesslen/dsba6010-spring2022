@@ -21,7 +21,7 @@ weight: 3
 
 ## Required Readings
 
-{{< icon name="book" pack="fas" >}} Chapter 4: Geocentric models
+{{< icon name="book" pack="fas" >}} Chapter 4: Geocentric models (Sections 4.1-4.4)
 
 <!--more-->
 
@@ -58,6 +58,8 @@ weight: 3
 - Rescaling has multiple benefits. First, it enables comparison across different variables that have different scales (e.g., weight in pounds and height in centimeters).
 
 - Second, it enables simpler priors based on standardized distributions (e.g., Normal(0, 1) or Normal(0,5)).
+
+- Third, later in the course we'll see where scaling makes computationally intensive (MCMC) easier; or said differently,  MCMC algorithms may run slower on non-scaled data.
 
 - Rescaling also makes the intercept (alpha) means the expected dependent variable values, (e.g., in weight/height it means the expected adult weight (the DV)).
 
