@@ -17,7 +17,7 @@ library(rethinking)
 
 ```{r echo=FALSE}
 downloadthis::download_file(
-  path = "03-class.Rmarkdown",
+  path = "03-class.Rmd",
   output_name = "03-class",
   button_label = "Download this code",
   button_type = "danger",

@@ -93,6 +93,10 @@ Presentations on February 14, [Project Check In 1](../../assignment/01-project)
 
 Due by next class (Jan 31): Email or DM Ryan the article you will be presenting on.
 
+## Example 2
+
+[Example 2 code](../../example/02-class)
+
 ## Problem Set 1
 
 Due by next class: Monday, January 31 at 11:59am

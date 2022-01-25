@@ -73,6 +73,10 @@ Due before class: Monday, January 31 at 11:59am
 
 <a href="https://uncc.instructure.com/courses/171000/quizzes/331402"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a>
 
+## Example 3
+
+[Example 3 code](../../example/03-class)
+
 ## Problem Set 2
 
 Due by next class: Monday, February 7 at 11:59am 
