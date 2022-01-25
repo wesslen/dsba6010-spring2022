@@ -9,11 +9,6 @@ type: docs
 toc: true
 ---
 
-<style>
-td, th {
-   border: none!important;
-}
-</style>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, class.source="language-r", class.output="language-r", message = FALSE, warning = FALSE)
