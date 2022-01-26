@@ -8,7 +8,7 @@ menu:
 highlight: true
 tags:
 - Computation
-title: Class 9 - Entropy & GLM
+title: Class 9 - Count GLM's
 type: docs
 weight: 9
 ---
