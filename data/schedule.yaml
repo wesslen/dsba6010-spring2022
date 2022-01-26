@@ -49,6 +49,7 @@ lessons:
     date_end: "Feb 13"
     session: "Class 4"
     content: "04-linear-models-2"
+    example: "04-class"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/331403"
     #assignment: "03-problem-set"
     bottomborder: True
@@ -74,7 +75,7 @@ lessons:
     date_end: "Feb 27"
     content: "06-spurious-correlations"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/331404"
-    ##assignment: "01-problem-set"
+    ##assignment: "04-problem-set"
     bg: 2
     bottomborder: True
     
