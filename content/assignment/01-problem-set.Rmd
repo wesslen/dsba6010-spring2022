@@ -1,37 +1,9 @@
 ---
 title: Problem Set 1
 date: "`r Sys.Date()`"
-menu:
-  assignment:
-    parent: Problem sets
-    weight: 1
-type: docs
-toc: true
 ---
 
 This problem set is due on January 31, 2022 at 11:59am.
-
-Step 1: Download this file locally.
-```{r echo=FALSE}
-# remove this chunk for your submission
-downloadthis::download_file(
-  path = "01-problem-set.Rmd",
-  output_name = "01-problem-set",
-  button_label = "Download this file",
-  button_type = "danger",
-  has_icon = TRUE,
-  icon = "fa fa-save",
-  self_contained = FALSE
-)
-```
-
-Step 2: Complete the assignment
-
-Step 3: Knit the assignment as either an html or pdf file.
-
-Step 4: Submit your file here [through this canvas link](https://uncc.instructure.com/courses/171000/assignments/1415432).
-
------------------
 
 - **Name**:
 - **UNCC ID**: 
@@ -42,12 +14,6 @@ Step 4: Submit your file here [through this canvas link](https://uncc.instructur
 1. Your friend just became interested in Bayesian statistics. In one paragraph or less (no code), explain the following to them:
 * Why/when is Bayesian statistics useful?
 * What are the similarities in Bayesian and frequentist statistics?
-
-{{% callout note %}}
-
-Hint: If you need ideas, go to [References/Readings in Bayesian Statistics](https://dsba6010-spring2022.netlify.app/resource/bayesian-readings/) and choose 1 paper. No need to read entire paper - focus on introduction or opening paragraphs to justify. Focus on ones with either  <i class="fas fa-star"></i> <i class="fas fa-star"></i> or  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-
-{{% / callout %}}
 
 ## Question 2
 
