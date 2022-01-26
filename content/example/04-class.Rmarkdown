@@ -187,6 +187,7 @@ HWsim <- sim(m_SHW_full,
 W_do_S_auto <- HWsim$W[,2] - HWsim$W[,1]
 ```
 
+
 ## Package versions
 
 ```{r}

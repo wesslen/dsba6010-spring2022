@@ -79,7 +79,7 @@ lessons:
     bg: 2
     bottomborder: True
     
-  - title: '<span class="content-title">Model comparison</span>'
+  - title: '<span class="content-title">Model comparison / MCMC</span>'
     session: "Class 7"
     date: "Feb 28"
     date_start: "Feb 28"
@@ -97,12 +97,12 @@ lessons:
     bg: 3 
     bottomborder: True
     
-  - title: '<span class="content-title">GLM / Categorical</span>'
+  - title: '<span class="content-title">GLM</span>'
     session: "Class 8"
     date: "Mar 14"
     date_start: "Mar 14"
     date_end: "Mar 20"
-    content: "08-mcmc"
+    content: "08-glm"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/331406"
     ##assignment: "01-problem-set"
     bg: 2
@@ -113,7 +113,7 @@ lessons:
     date: "Mar 21"
     date_start: "Mar 21"
     date_end: "Mar 27"
-    content: "09-entropy-glm"
+    content: "09-count-glm"
     ##quiz: "01-lesson-quiz"
     ##assignment: "01-problem-set"
     bg: 1

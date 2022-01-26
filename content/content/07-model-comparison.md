@@ -30,21 +30,20 @@ weight: 7
 
 ### Lecture 7
 
-{{< youtube 0Jc6Kgw5qc0 >}}
+{{< youtube odGAAJDlgp8 >}}
 
 <br>
 
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/a6e7ecd6950045c7ae93f34bc1955557" title="L07 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: 420px;" data-ratio="1.3333333333333333"></iframe>
-
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/9f57deff04ac470d95ff9c8b34abb8f6" title="Statistical Rethinking 2022 Lecture 07" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 <br>
 
 ### Lecture 8
 
-{{< youtube gjrsYDJbRh0 >}}
+{{< youtube Qqz5AJjyugM >}}
 
 <br>
 
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/13b0ac246f344570b6b002b8e3c384bc" title="L08 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;" data-ratio="1.3333333333333333"></iframe>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/cc59c28f5c974674a0745eb48d54d693" title="Statistical Rethinking 2022 Lecture 08" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
 
 ## Comprehension questions
@@ -56,6 +55,18 @@ weight: 7
 2. They give us an **estimate of the tendency of a model** to overfit. This will help us to understand how models and data interact, which in turn helps us to design better models.
 
 3. They help us to spot **highly influential observations**.
+
+{{% /spoiler %}}
+
+{{% spoiler text="Compare and contrast the four ways to calculate posteriors covered in this class." %}}
+
+1. Analytical approach: mathematical approach that relies closed form (aka pure math) solutions that are accurate but cover only limiting circumstances (e.g., memorizing [conjugate distributions](https://en.wikipedia.org/wiki/Conjugate_prior#Table_of_conjugate_distributions)).
+
+2. Grid approximation: very limited approach that relies on brute force counting. This approach is helpful for simple models (e.g., single variable) but becomes too computationally complex with multiple variables.
+
+3. Quadratic approximation: Laplace's approximation that relies on a Gaussian (normal) distribution assumption. This is fast and works well with simple to moderate models. This approach begins having issues with more complex models (e.g., multilevel)
+
+4. Markov Chain Monte Carlo: A family of approaches (e.g., Metropolis, Hamiltonian) that relies on drawing samples from posterior distribution. Depending on the version, it scales well to many dimensions and has beneficial mathematical guarantees (e.g., with many draws long run estimate in proportion to population size). It is used in Stan and other modern PPL's.
 
 {{% /spoiler %}}
 
