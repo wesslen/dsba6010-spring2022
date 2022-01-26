@@ -62,6 +62,8 @@ Similar to problem sets, late assignments (within 48 hours) will be subject to a
 
 Each check-in will make up 5% of your Final Project grade (so 1.5% of your final grade) and these assignments will be graded using a check system:
 
-- ✔+: (*110% in gradebook*) Document/presentation is clear, concise, and thoughtful. Document/Presentation exceeded all requirements and ideas are extremely novel. I will not assign these often.
-- ✔: (*100% in gradebook*) Document/presentation is easy to follow and the work (generally) met the requirements. **This is the expected level of performance.**
-- ✔−: (*50% in gradebook*) Document/presentation missed major requirements and demonstrates a lack of planning and preparation. I will hopefully not assign these.
+- ✔++: (*110% in gradebook*) Document/presentation is clear, concise, and thoughtful. Document/Presentation exceeded all requirements and ideas are extremely novel. I will not assign these often.
+- ✔+: (*100% in gradebook*) Document/presentation is easy to follow and the work fulfilled the requirements. **This is the expected level of performance.**
+- ✔: (*90% in gradebook*) Document/presentation was appropriate but gaps in presentation, explanation, or details. Easy fixes that came be improved upon next time.
+- ✔−: (*75% in gradebook*) Document/presentation had several problems. Feedback will be provided and student should work to improve next time. 
+- ✔−−: (*50% in gradebook*) Document/presentation missed major requirements and demonstrates a lack of planning and preparation. I will hopefully not assign these.
