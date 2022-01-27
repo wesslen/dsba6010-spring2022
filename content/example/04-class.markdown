@@ -1,5 +1,5 @@
 ---
-date: "2022-01-26"
+date: "2022-01-27"
 title: "Class 4"
 menu:
   example:
@@ -27,6 +27,7 @@ For this class, we’ll review code examples found in Chapter 4 and some of Chap
 ## Chapter 4
 
 ``` r
+set.seed(100) # fyi, in code seed wasn't set so may be slightly different
 library(rethinking)
 data("Howell1")
 d <- Howell1[Howell1$age>=18,]
@@ -56,6 +57,8 @@ dens(d$weight[d$male==0],lwd=3,col=2,add=TRUE)
 ```
 
 <img src="/example/04-class_files/figure-html/unnamed-chunk-6-1.png" width="672" />
+
+### Causal effect of S on W?
 
 ``` r
 # W ~ S
@@ -117,7 +120,7 @@ sum( W_contrast > 0 ) / 1000
 ```
 
 ``` language-r
-## [1] 0.793
+## [1] 0.784
 ```
 
 ``` r
@@ -126,8 +129,12 @@ sum( W_contrast < 0 ) / 1000
 ```
 
 ``` language-r
-## [1] 0.207
+## [1] 0.216
 ```
+
+### Direct causal effect of S on W?
+
+About minute 38 in Lecture 4:
 
 ``` r
 # W ~ S + H
@@ -146,6 +153,26 @@ m_SHW <- quap(
         sigma ~ dunif(0,10)
     ), data=dat )
 ```
+
+Let’s now get the posterior predictives for the contrasts.
+
+``` r
+xseq <- seq(from=130,to=190,len=50)
+
+muF <- link(m_SHW,data=list(S=rep(1,50),H=xseq,Hbar=mean(d$height)))
+muM <- link(m_SHW,data=list(S=rep(2,50),H=xseq,Hbar=mean(d$height)))
+mu_contrast <- muF - muM
+plot( NULL, xlim=range(xseq) , ylim=c(-6,8) , xlab = "height (cm)", ylab = "weight contrast (F-M)")
+for ( p in c(0.5,0.6,0.7,0.8,0.9,0.99))
+  shade( apply(mu_contrast,2,PI,prob=p), xseq)
+abline(h=0,lty=2)
+```
+
+<img src="/example/04-class_files/figure-html/unnamed-chunk-14-1.png" width="672" />
+
+### Full Luxury Bayes
+
+In this setup, we’ll run height and weight simulatenously.
 
 ``` r
 # full system as SCM
@@ -174,6 +201,8 @@ m_SHW_full <- quap(
     ), data=dat )
 ```
 
+We’ll simulate 1000 synthetic women in order. We focus on height first since it’s a function of weight. Then simulate weights by using the simulation heights. Then repeat for 1000 synthetic men in the similar order.
+
 ``` r
 # compute total causal effect of S on W
 post <- extract.samples(m_SHW_full)
@@ -182,17 +211,27 @@ n <- 1e4
 
 with( post , {
 # simulate W for S=1
-H_S1 <- rnorm(n, h[,1] , tau )
-W_S1 <- rnorm(n, a[,1] + b[,1]*(H_S1-Hbar) , sigma)
+  H_S1 <- rnorm(n, h[,1] , tau )
+  W_S1 <- rnorm(n, a[,1] + b[,1]*(H_S1-Hbar) , sigma)
 # simulate W for S=2
-H_S2 <- rnorm(n, h[,2] , tau)
-W_S2 <- rnorm(n, a[,2] + b[,2]*(H_S2-Hbar) , sigma)
-# compute contrast
-W_do_S <<- W_S2 - W_S1
-# if you want to learn <<- (scoping assignment)
+  H_S2 <- rnorm(n, h[,2] , tau)
+  W_S2 <- rnorm(n, a[,2] + b[,2]*(H_S2-Hbar) , sigma)
+# compute contrast (do operator); should hold results from intervening in sex
+  W_do_S <<- W_S2 - W_S1
+# <<- (scoping assignment)
 #https://stackoverflow.com/questions/2628621/how-do-you-use-scoping-assignment-in-r
 })
 ```
+
+``` r
+dens( W_do_S , xlim=c(-25,35) , lwd=3 , col=1 , xlab="posterior weight contrast (kg)" )
+
+Wdens <- density(W_do_S,adj=0.5)
+polygon(c(Wdens$x[Wdens$x>0], max(Wdens$x), 0), c(Wdens$y[Wdens$x>0], 0, 0), col = 4, border = NA )
+polygon(c(Wdens$x[Wdens$x<0], 0, min(Wdens$x)), c(Wdens$y[Wdens$x<0], 0, 0), col = 2, border = NA )
+```
+
+<img src="/example/04-class_files/figure-html/unnamed-chunk-17-1.png" width="672" />
 
 ``` r
 # automated way
