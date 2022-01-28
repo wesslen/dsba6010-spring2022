@@ -63,7 +63,7 @@ A sample of students is measured for height each year for 3 years. After the thi
 
 - Write down a mathematical model definition for this regression, using any variable names and priors you choose. You don't need to run since you won't have the data. You may also write down your equation and then upload an image.
 
-To help you, this is what we'll define as the outcome variable height $h_{ij}$, where \it{i} is the student \it{i} and \it{j} is the year \it{j}. For help with LaTeX equations, see this
+To help you, this is what we'll define as the outcome variable height $h_{ij}$, where \it{i} is the student \it{i} and \it{j} is the year \it{j}. For help with LaTeX equations, see this [Resource page](https://dsba6010-spring2022.netlify.app/resource/markdown/#math-1).
 
 $h_{ij} \sim Normal(u_{ij},\sigma)$
 
