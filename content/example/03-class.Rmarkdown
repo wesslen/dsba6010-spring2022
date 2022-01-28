@@ -122,6 +122,7 @@ for (i in 1:n_samples){
   abline(alpha[i],beta[i],lwd=4,col=2)
 }
 ```
+
 ### 3. Statistical model for H->W
 
 ```{r}
@@ -172,9 +173,9 @@ Key is justify priors with information outside of the data (that will be modeled
 
 $W_i \sim Normal(\mu_i,\sigma)$<br>
 $\mu_i = \alpha + \beta(H_i - \overline{H})$<br>
-$\alpha \sim Normal(60,10)$<br>
+$\alpha \sim Normal(178,20)$<br>
 $\beta \sim LogNormal(0,1)$<br>
-$\sigma \sim Uniform(0,10)$<br>
+$\sigma \sim Uniform(0,50)$<br>
 
 ```{r}
 # define the average weight, x-bar
@@ -218,6 +219,12 @@ We'll use a **simulation-based** validation.
 
 We'll first validate with a simulation (aka fake data).
 
+$W_i \sim Normal(\mu_i,\sigma)$<br>
+$\mu_i = \alpha + \beta(H_i - \overline{H})$<br>
+$\alpha \sim Normal(60,10)$<br>
+$\beta \sim LogNormal(0,1)$<br>
+$\sigma \sim Uniform(0,10)$<br>
+
 ```{r}
 alpha <- 70
 beta <- 0.5
@@ -242,6 +249,8 @@ m_validate <- quap(
 
 precis(m_validate)
 ```
+
+Let's now run it with real data.
 
 ```{r}
 dat <- list(W = d$weight, H = d$height, Hbar = mean(d$height))
@@ -316,7 +325,7 @@ shade( mu.PI , xseq )
 #### 4. Plot uncertainty of predictions
 
 ```{r}
-# simulate hypothetical addjusts given xseq
+# simulate hypothetical adjusts given xseq
 sim.height <- sim( m_adults , data=list(H=xseq,Hbar=mean(d$height))) 
 height.PI <- apply( sim.height , 2 , PI , prob=0.89 )
 

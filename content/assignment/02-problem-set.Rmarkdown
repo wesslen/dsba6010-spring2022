@@ -1,0 +1,106 @@
+---
+title: Problem Set 2
+date: "`r Sys.Date()`"
+menu:
+  assignment:
+    parent: Problem sets
+    weight: 1
+type: docs
+toc: true
+---
+
+This problem set is due on February 7, 2022 at 11:59am.
+
+Step 1: Download this file locally.
+```{r echo=FALSE}
+# remove this chunk for your submission
+downloadthis::download_file(
+  path = "02-problem-set.Rmd",
+  output_name = "02-problem-set",
+  button_label = "Download this file",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
+Step 2: Complete the assignment
+
+Step 3: Knit the assignment as either an html or pdf file.
+
+Step 4: Submit your file here [through this canvas link](https://uncc.instructure.com/courses/171000/assignments/1415432).
+
+-----------------
+
+- **Name**:
+- **UNCC ID**: 
+- **Other student worked with (optional)**:
+
+## Question 1
+
+Construct a linear regression of weight as predicted by height, using the adults (age 18 or greater) from the Howell1 dataset. The heights listed below were recorded in the !Kung census, but weights were not recorded for these individuals. 
+
+Provide predicted weights and 89% compatibility intervals for each of these individuals. Fill in the table below, using model-based predictions.
+
+```{r eval=FALSE, include=FALSE}
+# type in your code here
+
+```
+
+| Individual | height | expected weight | 89% interval |
+|------------|--------|-----------------|--------------|
+| 1          | 140    |                 |              |
+| 2          | 150    |                 |              |
+| 3          | 160    |                 |              |
+| 4          | 175    |                 |              |
+
+## Questions 2-4
+
+A sample of students is measured for height each year for 3 years. After the third year, you want to fit a linear regression predicting height (in centimeters) using year as a predictor. 
+
+### Question 2:
+
+- Write down a mathematical model definition for this regression, using any variable names and priors you choose. You don't need to run since you won't have the data. You may also write down your equation and then upload an image.
+
+To help you, this is what we'll define as the outcome variable height $h_{ij}$, where \it{i} is the student \it{i} and \it{j} is the year \it{j}. For help with LaTeX equations, see this
+
+$h_{ij} \sim Normal(u_{ij},\sigma)$
+
+### Question 3
+
+- Run prior predictive simulation and defend your choice of priors.
+
+```{r eval=FALSE, include=FALSE}
+  # type in your simulation 
+  # see code 4.38 and 4.39 example, use year as x axis (predictor)
+```
+
+### Question 4
+
+Now suppose I tell you that the students were 8 to 10 years old (so 8 year 1, 9 year 2, etc.).  What do you expect of the trend of students' heights over time?
+
+- Does this information lead you to change your choice of priors? How? Resimulate your priors from Question 3.
+
+```{r eval=FALSE, include=FALSE}
+  # type in your simulation 
+  # see code 4.38 and 4.39 example, use year as x axis (predictor)
+```
+
+## Question 5
+
+4. Refit model m4.3 from the chapter, but omit the mean weight xbar this time. Compare the new model’s posterior to that of the original model. In particular, look at the covariance among the parameters. What is different? Then compare the posterior predictions of both models.
+
+```{r eval=FALSE, include=FALSE}
+# type in your code here
+
+```
+
+## Optional (not graded)
+
+In the chapter, we used 15 knots with the cherry blossom spline. Increase the number of knots and observe what happens to the resulting spline. Then adjust also the width of the prior on the weights—change the standard deviation of the prior and watch what happens. What do you think the combination of knot number and the prior on the weights controls?
+
+```{r eval=FALSE, include=FALSE}
+# type in your code here
+
+```
