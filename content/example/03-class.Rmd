@@ -22,11 +22,6 @@ If you need help, be sure to remember the references in the [Resources](/resourc
 
 ## Chapter 4 
 
-### Drawing the Owl
-
-![](../../img/syllabus/owl.png)
-
-
 ### 1. Question or estimand
 
 Objective: Describe the association between Adult **weight** and **height**
