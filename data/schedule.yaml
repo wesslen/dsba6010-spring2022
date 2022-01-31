@@ -39,7 +39,7 @@ lessons:
     content: "03-linear-models"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/331402"
     example: "03-class"
-    #assignment: "02-problem-set"
+    assignment: "02-problem-set"
     bottomborder: True
     bg: 1
 
@@ -51,7 +51,7 @@ lessons:
     content: "04-linear-models-2"
     example: "04-class"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/331403"
-    #assignment: "03-problem-set"
+    assignment: "03-problem-set"
     bottomborder: True
     bg: 2
   

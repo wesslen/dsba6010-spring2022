@@ -4,7 +4,7 @@ date: "2022-01-27"
 menu:
   assignment:
     parent: Problem sets
-    weight: 1
+    weight: 2
 type: docs
 toc: true
 ---
@@ -23,7 +23,7 @@ Step 2: Complete the assignment
 
 Step 3: Knit the assignment as either an html or pdf file.
 
-Step 4: Submit your file here [through this canvas link](https://uncc.instructure.com/courses/171000/assignments/1415432).
+Step 4: Submit your file here [through this canvas link](https://uncc.instructure.com/courses/171000/assignments/1415433).
 
 ------------------------------------------------------------------------
 
