@@ -19,7 +19,7 @@ set.seed(1234)
 options("digits" = 2, "width" = 150)
 ```
 
-This resource is to help distinguish between concepts of uncertainty. You can associate these terms with the different -- but note, this is an oversimplification for learning purposes. There may be additional subtle nuances not captured below. I encourage the curious reader to check out some of the references below.
+This resource is to help distinguish between concepts of uncertainty (e.g., see page 109 in Statistical Rethinking). But note, the table below is an oversimplification for learning purposes. There may be additional subtle nuances not captured in the categorization. I encourage the curious reader to check out some of the references below.
 
 | Uncertainty in parameters | Uncertainty in sampling |
 |---------------------------|-------------------------|
