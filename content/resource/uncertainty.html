@@ -1,0 +1,123 @@
+---
+title: Uncertainty
+date: "2022-02-03"
+menu:
+  resource:
+    parent: Resources
+type: docs
+weight: 7
+bibliography: ../../static/bib/references.bib
+editor_options:
+  chunk_output_type: console
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="/rmarkdown-libs/clipboard/clipboard.min.js"></script>
+<link href="/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+<script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+
+
+<p>This resource is to help distinguish between concepts of uncertainty. You can associate these terms with the different – but note, this is an oversimplification for learning purposes. There may be additional subtle nuances not captured below. I encourage the curious reader to check out some of the references below.</p>
+<table>
+<colgroup>
+<col width="51%" />
+<col width="48%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Uncertainty in parameters</th>
+<th>Uncertainty in sampling</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Epistemic</td>
+<td>Aleatoric</td>
+</tr>
+<tr class="even">
+<td>Missing knowledge</td>
+<td>Statistical</td>
+</tr>
+<tr class="odd">
+<td>Reducible</td>
+<td>Irreducible</td>
+</tr>
+<tr class="even">
+<td>Due to ignorance and can be reduced with new information</td>
+<td>Variability in the outcome due to inherently random effects (non-deterministic)</td>
+</tr>
+<tr class="odd">
+<td>more Bayesian-like</td>
+<td>more Frequentist-like</td>
+</tr>
+<tr class="even">
+<td>Compatibility (credible) intervals of the posterior mean</td>
+<td>Posterior predictive distribution</td>
+</tr>
+<tr class="odd">
+<td><code>rethinking</code> <code>link</code> function</td>
+<td><code>rethinking</code> <code>sim</code> function</td>
+</tr>
+<tr class="even">
+<td>“Less common for ML models to consider epistemic; if they do, usually through probabilistic (Bayesian) components” (Bhatt et al., 2021)</td>
+<td>“most ML models account for aleatoric uncertainty through the specification of a noise model or likelihood function” (Bhatt et al., 2021)</td>
+</tr>
+</tbody>
+</table>
+<div id="experiment" class="section level3">
+<h3>Experiment</h3>
+<p>Let’s take a similar example as in Chapter 4 (Figure 4.7). Let’s see what happens to the uncertainty when we increase sample size (i.e., see reducible vs irreducible).</p>
+<p>Which of the uncertainty (posterior for mu prediction or individual prediction) appears to be reducible vs. irreducible?</p>
+<pre class="r language-r"><code>library(rethinking)
+data(Howell1)
+d &lt;- Howell1
+d2 &lt;- d[ d$age &gt;= 18 , ]
+
+set.seed(100)
+
+runSimulation &lt;- function(N){
+  dN &lt;- d2[ 1:N , ]
+  dN$mean_height = mean(dN$height)
+
+  mN &lt;- quap(
+      alist(
+          weight ~ dnorm( mu , sigma ) ,
+          mu &lt;- a + b*( height - mean_height),
+          a ~ dnorm( 60 , 10 ) ,
+          b ~ dlnorm( 0 , 1 ) ,
+          sigma ~ dunif( 0 , 10 )
+      ) , data=dN )
+  
+  xseq &lt;- seq(from=130,to=190,len=50)
+  
+  # epistemic-like uncertainty -- reducible
+  mu &lt;- link(mN,data=list( height=xseq, mean_height = mean(dN$height)))
+  mu.mean &lt;- apply( mu , 2 , mean )
+  mu.PI &lt;- apply( mu , 2 , PI , prob=0.89 )
+  
+  # aleatoric-like uncertainty -- irreducible 
+  sim.height &lt;- sim( mN , data=list(height=xseq,mean_height = mean(dN$height))) 
+  height.PI &lt;- apply( sim.height , 2 , PI , prob=0.89 )
+  
+  plot( dN$height , dN$weight ,
+      ylim=c(30,60) , xlim=c(130,190) ,
+      col=rangi2 , xlab=&quot;height&quot; , ylab=&quot;weight&quot; )
+  mtext(concat(&quot;N = &quot;,N))
+  lines( xseq , mu.mean )
+  shade( mu.PI , xseq )
+  shade( height.PI , xseq )
+}</code></pre>
+<p>Use <code>purrr::map</code> to run under different parameters.</p>
+<pre class="r language-r"><code>runs &lt;- c(10, 25, 50, 100, 150, 200, 250, 300, 350)
+
+purrr::walk(runs, runSimulation)</code></pre>
+<p><img src="/resource/uncertainty_files/figure-html/unnamed-chunk-2-1.png" width="75%" style="display: block; margin: auto;" /><img src="/resource/uncertainty_files/figure-html/unnamed-chunk-2-2.png" width="75%" style="display: block; margin: auto;" /><img src="/resource/uncertainty_files/figure-html/unnamed-chunk-2-3.png" width="75%" style="display: block; margin: auto;" /><img src="/resource/uncertainty_files/figure-html/unnamed-chunk-2-4.png" width="75%" style="display: block; margin: auto;" /><img src="/resource/uncertainty_files/figure-html/unnamed-chunk-2-5.png" width="75%" style="display: block; margin: auto;" /><img src="/resource/uncertainty_files/figure-html/unnamed-chunk-2-6.png" width="75%" style="display: block; margin: auto;" /><img src="/resource/uncertainty_files/figure-html/unnamed-chunk-2-7.png" width="75%" style="display: block; margin: auto;" /><img src="/resource/uncertainty_files/figure-html/unnamed-chunk-2-8.png" width="75%" style="display: block; margin: auto;" /><img src="/resource/uncertainty_files/figure-html/unnamed-chunk-2-9.png" width="75%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="references" class="section level3">
+<h3>References</h3>
+<p>Bhatt, Umang, Javier Antorán, Yunfeng Zhang, Q Vera Liao, Prasanna Sattigeri, Riccardo Fogliato, Gabrielle Melançon, et al. 2021. “<a href="https://arxiv.org/pdf/2011.07586.pdf">Uncertainty as a Form of Transparency: Measuring, Communicating, and Using Uncertainty</a>.” In Proceedings of the 2021 AAAI/ACM Conference on AI, Ethics, and Society, 401–13.</p>
+<p>Hüllermeier, Eyke, and Willem Waegeman. 2021. “<a href="https://link.springer.com/content/pdf/10.1007/s10994-021-05946-3.pdf">Aleatoric and Epistemic Uncertainty in Machine Learning: An Introduction to Concepts and Methods.</a>” Machine Learning 110 (3): 457–506.</p>
+<p>Kendall, Alex, and Yarin Gal. 2017. “<a href="https://proceedings.neurips.cc/paper/2017/file/2650d6089a6d640c5e85b2b88265dc2b-Paper.pdf">What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?</a>” Advances in Neural Information Processing Systems 30.</p>
+<p>Senge, Robin, Stefan Bösner, Krzysztof Dembczyński, Jörg Haasenritter, Oliver Hirsch, Norbert Donner-Banzhoff, and Eyke Hüllermeier. 2014. “<a href="https://www.mathematik.uni-marburg.de/~eyke/publications/reliable-classification.pdf">Reliable Classification: Learning Classifiers That Distinguish Aleatoric and Epistemic Uncertainty.</a>” Information Sciences 255: 16–29.</p>
+</div>
