@@ -74,7 +74,7 @@ data(Howell1)
 d &lt;- Howell1
 d2 &lt;- d[ d$age &gt;= 18 , ]
 
-set.seed(100)
+set.seed(123)
 
 runSimulation &lt;- function(N){
   dN &lt;- d2[ 1:N , ]

@@ -44,7 +44,7 @@ data(Howell1)
 d <- Howell1
 d2 <- d[ d$age >= 18 , ]
 
-set.seed(100)
+set.seed(123)
 
 runSimulation <- function(N){
   dN <- d2[ 1:N , ]
