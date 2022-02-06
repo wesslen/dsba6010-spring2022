@@ -102,7 +102,7 @@ Source: [xkcd](https://www.explainxkcd.com/wiki/index.php/2560:_Confounding_Vari
 
 - Develop unique skill set (Bayesian statistics + causal inference + probabilistic programming + ML) that will **distinguish** you in the **job market** and/or **academic opportunities**.
 
-- Use problem sets and the final project to **build your data science portfolio** (encourage communication and reproducibility).^[I highly recommend aspiring data scientists to read David Robinson's [inspiring post to create a blog](http://varianceexplained.org/r/start-blog/). If you're interested for yourself, I also recommend starting with Allison Hill's [Up and Running with `blogdown` post](https://www.apreshill.com/blog/2020-12-new-year-new-blogdown/) to show how to do it in R. In fact, this website is created using `blogdown`. DM me on Slack if you have questions!]
+- Use problem sets and the final project to **build your data science portfolio** through tools for communication and reproducibility.^[I highly recommend aspiring data scientists to read David Robinson's [inspiring post to create a blog](http://varianceexplained.org/r/start-blog/). If you're interested for yourself, I also recommend starting with Allison Hill's [Up and Running with `blogdown` post](https://www.apreshill.com/blog/2020-12-new-year-new-blogdown/) to show how to do it in R. In fact, this website is created using `blogdown`. DM me on Slack if you have questions!]
 
 - Expose you to a wide range of **applications in Bayesian inference and causal inference** in areas like astronomy, ecology, human-computer interaction, cognitive science, biology, political science, and many more.
 

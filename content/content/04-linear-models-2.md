@@ -39,10 +39,6 @@ weight: 4
 
 <br>
 
-## Comprehension questions
-
-TBD
-
 ## Deliverables
 
 Due before class: Monday, February 7 at 11:59am 
