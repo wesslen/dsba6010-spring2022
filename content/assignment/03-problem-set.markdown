@@ -35,6 +35,8 @@ Step 4: Submit your file here [through this canvas link](https://uncc.instructur
 
 From the Howell1 dataset, consider only the people younger than 13 years old. Estimate the causal association between age and weight. Assume that age influences weight through two paths. First, age influences height, and height influences weight. Second, age directly influences weight through age related changes in muscle growth and body proportions. All of this implies this causal model (DAG):
 
+<img src="/assignment/03-problem-set_files/figure-html/unnamed-chunk-2-1.png" width="192" />
+
 Use a linear regression to estimate the total (not just direct) causal effect of
 each year of growth on weight. Be sure to carefully consider the priors. Try
 using prior predictive simulation to assess what they imply
@@ -52,47 +54,6 @@ To begin, I have provided the same code to get the model `m4.5` (i.e., run R cod
 ``` r
 # R code 4.65 + 4.66 (precis)
 library(rethinking)
-```
-
-    ## Loading required package: rstan
-
-    ## Loading required package: StanHeaders
-
-    ## Loading required package: ggplot2
-
-    ## rstan (Version 2.21.3, GitRev: 2e1f913d3ca3)
-
-    ## For execution on a local, multicore CPU with excess RAM we recommend calling
-    ## options(mc.cores = parallel::detectCores()).
-    ## To avoid recompilation of unchanged Stan programs, we recommend calling
-    ## rstan_options(auto_write = TRUE)
-
-    ## Loading required package: cmdstanr
-
-    ## This is cmdstanr version 0.4.0.9001
-
-    ## - CmdStanR documentation and vignettes: mc-stan.org/cmdstanr
-
-    ## - CmdStan path: /Users/rhymenoceros/.cmdstan/cmdstan-2.28.2
-
-    ## - CmdStan version: 2.28.2
-
-    ## Loading required package: parallel
-
-    ## rethinking (Version 2.21)
-
-    ## 
-    ## Attaching package: 'rethinking'
-
-    ## The following object is masked from 'package:rstan':
-    ## 
-    ##     stan
-
-    ## The following object is masked from 'package:stats':
-    ## 
-    ##     rstudent
-
-``` r
 data(Howell1)
 d <- Howell1
 d$weight_s <- ( d$weight - mean(d$weight) )/sd(d$weight)
@@ -112,10 +73,10 @@ precis( m4.5 )
 ```
 
     ##             mean        sd       5.5%      94.5%
-    ## a     146.053060 0.3689195 145.463455 146.642665
-    ## b1     21.733836 0.2888278  21.272233  22.195438
-    ## b2     -7.801615 0.2741380  -8.239741  -7.363490
-    ## sigma   5.773173 0.1763669   5.491305   6.055042
+    ## a     146.056958 0.3689727 145.467268 146.646648
+    ## b1     21.733294 0.2888856  21.271599  22.194989
+    ## b2     -7.802847 0.2741831  -8.241044  -7.364649
+    ## sigma   5.774388 0.1764589   5.492373   6.056403
 
 Now modify `m4.5` model by relaxing our “positive relationship” (aka lognormal) assumption for the `b1` variable by modifying it’s prior as `dnorm( 0 , 1 )` and create a new model called `m4.5b`. Run `precis(m4.5b)`.
 
