@@ -34,7 +34,13 @@ knitr::include_graphics(path="https://gitpod.io/button/open-in-gitpod.svg")
 
 For this class, we'll review code examples found in Chapter 4 and some of Chapter 5.
 
-## Chapter 4 
+## Chapter 4: The causes aren't in the data 
+
+This chapter expanded regression to multiple regression. This is when we consider more than 1 predictor (independent) variable. We'll consider a new categorical variable of sex. 
+
+![](../../img/example/04-class.png)
+
+## Total causal effect of S on W
 
 ```{r}
 set.seed(100) # fyi, in code seed wasn't set so may be slightly different
@@ -52,6 +58,31 @@ legend(138, 63, legend=c("Female", "Male"),
 ```
 
 ```{r}
+head(d)
+```
+
+
+We are interested in the **total** causal effect of S on W (i.e., through both paths direct and via H).
+
+```{r fig.height=4, fig.width=4}
+library(dagitty)
+
+g <- dagitty('dag {
+bb="0,0,1,1"
+S [pos="0.251,0.481"]
+H [pos="0.251,0.352"]
+W [pos="0.481,0.352"]
+S -> H
+S -> W
+H -> W
+}
+')
+plot(g)
+```
+
+Let's first look at the distributions of heights and weights by sex.
+
+```{r}
 # new height, weight, sex categorical variable example
 dens(d$height[d$male==1],lwd=3,col=4,xlab="height (cm)")
 dens(d$height[d$male==0],lwd=3,col=2,add=TRUE)
@@ -64,6 +95,8 @@ dens(d$weight[d$male==0],lwd=3,col=2,add=TRUE)
 
 ### Causal effect of S on W?
 
+See model in [Lecture 4](https://youtu.be/QiHKdvAbYII?t=1432).
+
 ```{r}
 # W ~ S
 dat <- list(
@@ -74,31 +107,47 @@ m_SW <- quap(
     alist(
         W ~ dnorm(mu,sigma),
         mu <- a[S],
-        a[S] ~ dnorm(60,10),
+        a[S] ~ dnorm(60,10), # assume both sexes have same priors
         sigma ~ dunif(0,10)
     ), data=dat )
 ```
 
+First thing we'll do is calculate the posterior mean weights ([Lecture 4](https://youtu.be/QiHKdvAbYII?t=1535)). 
+
 ```{r}
+N_sim = 1000 # number of samples
+
 # posterior means
-post <- extract.samples(m_SW)
+post <- extract.samples(m_SW, n = N_sim)
 dens( post$a[,1] , xlim=c(39,50) , lwd=3 , col=2 , xlab="posterior mean weight (kg)" )
 dens( post$a[,2] , lwd=3 , col=4 , add=TRUE )
 ```
 
-```{r}
-# posterior W distributions
-W1 <- rnorm( 1000 , post$a[,1] , post$sigma )
-W2 <- rnorm( 1000 , post$a[,2] , post$sigma )
-dens( W1 , xlim=c(20,70) , ylim=c(0,0.085) , lwd=3 , col=2 , xlab="posterior predicted weight (kg)" )
-dens( W2 , lwd=3 , col=4 , add=TRUE )
-```
+We can then calculate the posterior mean weight contrast.
 
 ```{r}
 # causal contrast (in means)
 mu_contrast <- post$a[,2] - post$a[,1]
 dens( mu_contrast , xlim=c(3,10) , lwd=3 , col=1 , xlab="posterior mean weight contrast (kg)" )
 ```
+
+
+On average, men are heavily **on average** but not necessarily **reliably heavier**.
+
+Next, we'll generate predictive weights. This allows us to calculate the contrast on the individual level.
+
+```{r}
+N_sim = 1000 # let's do 1,000 samples
+
+# posterior W distributions
+W1 <- rnorm( N_sim , post$a[,1] , post$sigma )
+W2 <- rnorm( N_sim , post$a[,2] , post$sigma )
+dens( W1 , xlim=c(20,70) , ylim=c(0,0.085) , lwd=3 , col=2 , xlab="posterior predicted weight (kg)" )
+dens( W2 , lwd=3 , col=4 , add=TRUE )
+```
+
+
+
 
 ```{r}
 # W contrast
@@ -110,16 +159,94 @@ polygon(c(Wdens$x[Wdens$x>0], max(Wdens$x), 0), c(Wdens$y[Wdens$x>0], 0, 0), col
 polygon(c(Wdens$x[Wdens$x<0], 0, min(Wdens$x)), c(Wdens$y[Wdens$x<0], 0, 0), col = 2, border = NA )
 ```
 
+This allows us to calculate how many cases where men are taller (above zero) and are shorter (below zero).
+
 ```{r}
 # proportion above zero
-sum( W_contrast > 0 ) / 1000
+sum( W_contrast > 0 ) / N_sim
 # proportion below zero
-sum( W_contrast < 0 ) / 1000
+sum( W_contrast < 0 ) / N_sim
 ```
+
+About 82% the males are taller than the women -- but about 20% of cases women are taller.
+
+{{% callout note %}}
+
+Why is the posterior contrasts not exactly equal to the lecture?
+
+What would happen if you increase number of samples to 100,000? what about 1,000,000 (only run if you have sufficient RAM)?
+
+{{% /callout  %}}
+
+### Alternative Approach
+
+An alternative approach for calculating the contrast using the `link()` and `sim()` functions.
+
+* we can use `extract.samples` similarly as `link()`
+
+* can also use extracted samples to calculate similar function to `sim()`
+
+First, since we're considering the mean (mu) value, we can use the `link()` function.
+
+```{r}
+# approach 2: use link function
+N_sim = 1000
+
+muF <- link(m_SW,data=list(S=1), N_sim)
+muM <- link(m_SW,data=list(S=2), N_sim)
+
+dens( muF , xlim=c(40,50) , lwd=3 , col=2 , xlab="posterior mean weight (kg)" )
+dens( muM , lwd=3 , col=4 , add=TRUE )
+```
+
+```{r}
+# causal contrast (in means)
+link_contrast <- muM - muF
+dens( mu_contrast , xlim=c(3,10) , lwd=3 , col=1 , xlab="posterior mean weight contrast (kg)") # red using extract.samples
+lines( density(link_contrast) , lwd=3 , col=2 ) # black is link()
+```
+
+
+Notice this is nearly identical to the earlier charts with using `extract.samples`. We can follow a similar logic but look at the posterior predictives.
+
+```{r}
+muF <- sim(m_SW,data=list(S=1), N_sim)
+muM <- sim(m_SW,data=list(S=2), N_sim)
+
+dens( muF , xlim=c(20,70) , lwd=3 , col=2 , xlab="posterior mean weight (kg)" )
+dens( muM , lwd=3 , col=4 , add=TRUE )
+```
+
+```{r}
+contrast <- muM - muF
+
+dens( contrast , xlim=c(-25,35) , lwd=3 , col=1 , xlab="posterior weight contrast (kg)" )
+
+Wdens <- density(contrast,adj=0.5)
+polygon(c(Wdens$x[Wdens$x>0], max(Wdens$x), 0), c(Wdens$y[Wdens$x>0], 0, 0), col = 4, border = NA )
+polygon(c(Wdens$x[Wdens$x<0], 0, min(Wdens$x)), c(Wdens$y[Wdens$x<0], 0, 0), col = 2, border = NA )
+```
+
+```{r}
+# proportion above zero
+sum( contrast > 0 ) / N_sim
+# proportion below zero
+sum( contrast < 0 ) / N_sim
+```
+
+{{% callout note %}}
+
+What would happen if you increase number of samples for `link()` and `sim()`?
+
+How does the computational speed compare for using `extract.samples()` vs. `link()` / `sim()`?
+
+{{% /callout  %}}
 
 ### Direct causal effect of S on W?
 
-About minute 38 in Lecture 4:
+We can also try to measure the sole effect of S on W. From [about minute 37 in Lecture 4](https://youtu.be/QiHKdvAbYII?t=2208).
+
+In this we **stratify** by sex where we will get an intercept and a slope unique for each of the sexes.
 
 ```{r}
 # W ~ S + H
@@ -153,9 +280,18 @@ for ( p in c(0.5,0.6,0.7,0.8,0.9,0.99))
 abline(h=0,lty=2)
 ```
 
-### Full Luxury Bayes
+{{% callout note %}}
 
-In this setup, we'll run height and weight simulatenously. 
+Thought question: Why was including height into the regression enabling estimation of the **direct** effect of sex on weight? Why was removing height enabling a **total** effect of sex on weight?
+
+{{% /callout %}}
+
+
+### Full Luxury Bayes (Optional)
+
+This part is covered in Lecture 4 briefly -- note, we won't go in depth so only review this example if you want to understand more.
+
+In this setup, we'll run height and weight simultaneously. 
 
 ```{r}
 # full system as SCM
