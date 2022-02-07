@@ -9,6 +9,12 @@ type: docs
 toc: true
 ---
 
+```{r setup, include=FALSE, fig.width=5, fig.height=4}
+knitr::opts_chunk$set(echo = TRUE, class.source="language-r", class.output="language-r", message = FALSE, warning = FALSE)
+xaringanExtra::use_clipboard()
+library(rethinking)
+```
+
 This problem set is due on February 21, 2022 at 11:59am.
 
 Step 1: Download this file locally.

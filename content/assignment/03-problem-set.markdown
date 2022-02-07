@@ -9,6 +9,10 @@ type: docs
 toc: true
 ---
 
+<script src="/rmarkdown-libs/clipboard/clipboard.min.js"></script>
+<link href="/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+<script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
 <script src="/rmarkdown-libs/font-awesome/js/script.js"></script>
 
 This problem set is due on February 21, 2022 at 11:59am.
@@ -72,11 +76,13 @@ m4.5 <- quap(
 precis( m4.5 )
 ```
 
-    ##             mean        sd       5.5%      94.5%
-    ## a     146.056958 0.3689727 145.467268 146.646648
-    ## b1     21.733294 0.2888856  21.271599  22.194989
-    ## b2     -7.802847 0.2741831  -8.241044  -7.364649
-    ## sigma   5.774388 0.1764589   5.492373   6.056403
+``` language-r
+##             mean        sd       5.5%      94.5%
+## a     146.057412 0.3689756 145.467718 146.647107
+## b1     21.733065 0.2888890  21.271365  22.194766
+## b2     -7.803266 0.2741839  -8.241465  -7.365067
+## sigma   5.774474 0.1764652   5.492449   6.056500
+```
 
 Now modify `m4.5` model by relaxing our “positive relationship” (aka lognormal) assumption for the `b1` variable by modifying it’s prior as `dnorm( 0 , 1 )` and create a new model called `m4.5b`. Run `precis(m4.5b)`.
 

@@ -1,0 +1,251 @@
+---
+title: Problem Set 1 Solutions
+date: "`r Sys.Date()`"
+menu:
+  assignment:
+    parent: Problem sets
+    weight: 1
+type: docs
+toc: true
+---
+
+```{r setup, include=FALSE, fig.width=5, fig.height=4}
+knitr::opts_chunk$set(echo = TRUE, class.source="language-r", class.output="language-r", message = FALSE, warning = FALSE)
+xaringanExtra::use_clipboard()
+library(rethinking)
+```
+
+This problem set is due on January 31, 2022 at 11:59am.
+
+Step 1: Download this file locally.
+```{r echo=FALSE}
+# remove this chunk for your submission
+downloadthis::download_file(
+  path = "01-problem-set-solutions.Rmd",
+  output_name = "01-problem-set-solutions",
+  button_label = "Download this file",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
+Step 2: Complete the assignment
+
+Step 3: Knit the assignment as either an html or pdf file.
+
+Step 4: Submit your file here [through this canvas link](https://uncc.instructure.com/courses/171000/assignments/1415432).
+
+-----------------
+
+
+
+- **Name**:
+- **UNCC ID**: 
+- **Other student worked with (optional)**:
+
+1. Your friend just became interested in Bayesian statistics. In one paragraph or less (no code), explain the following to them:
+* Why/when is Bayesian statistics useful?
+
+Many answers are sufficient.
+
+Bayesian statistics are useful in situations where (see [Kay et al. CHI 2016](https://www.mjskay.com/papers/chi_2016_bayes.pdf)):
+
+1. Bayesian analysis provides more precise estimates of previously-studied conditions in each successive study.
+2. Bayesian analysis allows more precise comparison of novel conditions against known conditions.
+3. Bayesian analysis draws more reasonable conclusions from small-n studies.
+4. Bayesian analyses help shift the conversation from “Does it work?” to “How strong is the effect?”, “How confident are we in this estimate?”, and “Should we care?”
+
+* What are the similarities in Bayesian and frequentist statistics?
+
+Bayesian and frequentist analyses share a common goal: to learn from data about the world around us. They differ in how they interpret probabilities. Bayesians interpret probabilities as a "degree of belief" while Frequentists interpret probabilities as a "long run relative frequency". 
+
+In essence, Frequentist statistics can be thought of as a subset of Bayesian statistics in which we have no prior information or when our sample size is so large, that our prior no longer has any weight in our posterior. In those cases, typically Frequentist and Bayesian statistics produce very similar results.
+
+2. Suppose the globe tossing data (Chapter 2) had turned out to be 4 water and 11 land. Construct the posterior distribution, using grid approximation. Use the same flat prior as in the book.
+
+```{r}
+## R code 2.3
+set.seed(100)
+# define grid
+p_grid <- seq( from=0 , to=1 , length.out=1000 )
+
+# define prior
+prior <- rep( 1 , 1000 )
+
+# compute likelihood at each value in grid
+likelihood <- dbinom( 4 , size=15 , prob=p_grid )
+
+# compute product of likelihood and prior
+unstd.posterior <- likelihood * prior
+
+# standardize the posterior, so it sums to 1
+posterior <- unstd.posterior / sum(unstd.posterior)
+
+plot( p_grid , posterior , type="b" ,
+    xlab="probability of water" , ylab="posterior probability" )
+mtext( "1000 points" )
+```
+
+
+3. Now suppose the data are 4 water and 2 land. Compute the posterior again, but this time use a prior that is zero below p = 0.5 and a constant above p = 0.5. This corresponds to prior information that a majority of the Earth’s surface is water. Compare the new posterior with the previous posterior (flat)
+
+
+```{r}
+## R code 2.3
+# define grid
+p_grid <- seq( from=0 , to=1 , length.out=1000 )
+
+# define prior
+post_prior <- ifelse( p_grid < 0.5 , 0 , 1 )
+
+# compute likelihood at each value in grid
+post_likelihood <- dbinom( 4 , size=6 , prob=p_grid )
+
+# compute product of likelihood and prior
+post_unstd.posterior <- post_likelihood * post_prior
+
+# standardize the posterior, so it sums to 1
+post_posterior <- post_unstd.posterior / sum(post_unstd.posterior)
+
+plot( p_grid , post_posterior , type="b" , col = "red",
+    xlab="probability of water" , ylab="posterior probability", ylim=c(0, 0.005) )
+lines(p_grid , posterior , type="b" , col = "green")
+mtext( "Compare posteriors" )
+```
+
+```{r}
+plot( p_grid , post_prior , type="b" , col = "red",
+    xlab="probability of water" , ylab="prior probability", ylim=c(0, 1) )
+lines(p_grid , prior , type="b" , col = "green")
+mtext( "Compare priors" )
+```
+```{r}
+plot( p_grid , post_likelihood , type="b" , col = "red",
+    xlab="probability of water" , ylab="prior likelihood", ylim=c(0, .4) )
+lines(p_grid , likelihood , type="b" , col = "green")
+mtext( "Compare likelihoods" )
+```
+
+4. For the posterior distribution from 3, compute 89% percentile and HPDI intervals. Compare the widths of these intervals. Which is wider? Why? If you had only the information in the interval, what might you misunderstand about the shape of the posterior distribution?
+
+```{r warning=FALSE}
+library(rethinking)
+#calculate samples of post_posterior
+samples <- sample(p_grid, size = 1e4, replace = TRUE, prob=post_posterior)
+
+# 89 percentile
+PI(samples, prob=.89)
+```
+
+```{r}
+# HPDI
+HPDI(samples, prob=.89)
+```
+
+HPDI is densest (narrowest) region with 89% mass, thus PI is wider than HPDI.
+
+With only intervals, an analyst would miss the drop in the posterior's shape below 52% due to the prior that assumes greater than 50%.
+
+
+OPTIONAL CHALLENGE. Suppose there is bias in sampling so that Land is more likely than Water to be recorded. Specifically, assume that 1-in-5 (20%) of Water samples are accidentally recorded instead as "Land". First, write a generative simulation of this sampling process. Assuming the true proportion of Water is 0.70, what proportion does your simulation tend to produce instead? 
+
+```{r}
+# Pr(W|W) = 0.8
+# Pr(W|L) = 0.2
+# Pr(W) = 0.7*0.8
+set.seed(100)
+true_prob = 0.7
+bias = 0.2
+N=10000
+
+# assume 1 = water, 0 = land
+trueW <- rbinom(N,size=20,prob=true_prob)
+obsW <- rbinom(N,size=trueW,prob=1-bias)
+mean(obsW/20)
+
+# or
+W <- rbinom(N,size=20,prob=true_prob*(1-bias))
+
+mean(W/20)
+```
+
+Second, using a simulated sample of 20 tosses, compute the unbiased posterior distribution of the true proportion of water.
+
+```{r}
+# now analyze
+# Pr(p|W,N) = Pr(W|p,N)Pr(p) / Z
+# Pr(W|N,p) = Pr(W)Pr(W|W)
+
+W <- rbinom(1,size=20,prob=0.7*0.8)
+# grid approx
+grid_p <- seq(from=0,to=1,len=100)
+pr_p <- dbeta(grid_p,1,1)
+prW <- dbinom(W,20,grid_p*0.8)
+post <- prW*pr_p
+
+post_bad <- dbinom(W,20,grid_p)
+
+plot(grid_p,post,type="l",lwd=4,xlab="proportion water",ylab="plausibility")
+lines(grid_p,post_bad,col=2,lwd=4)
+```
+
+-------
+
+# tidyverse
+
+2. Suppose the globe tossing data (Chapter 2) had turned out to be 4 water and 11 land. Construct the posterior distribution, using grid approximation. Use the same flat prior as in the book.
+
+```{r}
+# tidyverse approach
+library(tidyverse)
+# how many grid points would you like?
+n <- 1000
+n_success <- 4
+n_trials  <- 15
+
+d <-
+  tibble(p_grid = seq(from = 0, to = 1, length.out = n),
+         # note we're still using a flat uniform prior
+         prior  = 1) %>% 
+  mutate(likelihood = dbinom(n_success, size = n_trials, prob = p_grid)) %>% 
+  mutate(posterior = (likelihood * prior) / sum(likelihood * prior))
+
+d %>%
+  pivot_longer(-p_grid) %>%
+  filter(name == "posterior") %>%
+  ggplot(aes(x = p_grid, y = value)) +
+  geom_line() +
+  ggtitle("Posterior (Flat prior): 4 out of 15") +
+  theme_bw()
+```
+
+3. Now suppose the data are 4 water and 2 land. Compute the posterior again, but this time use a prior that is zero below p = 0.5 and a constant above p = 0.5. This corresponds to prior information that a majority of the Earth’s surface is water. Compare the new posterior with the previous posterior (flat)
+
+```{r}
+# how many grid points would you like?
+n <- 1000
+n_success <- 4
+n_trials  <- 6
+
+d <-
+  tibble(p_grid = seq(from = 0, to = 1, length.out = n)) %>% 
+  mutate(prior = if_else(p_grid > 0.5, 0.3, 0)) %>%
+  mutate(likelihood = dbinom(n_success, size = n_trials, prob = p_grid)) %>% 
+  mutate(posterior = (likelihood * prior) / sum(likelihood * prior))
+
+d %>%
+  pivot_longer(-p_grid) %>%
+  filter(name == "posterior") %>%
+  ggplot(aes(x = p_grid, y = value)) +
+  geom_line() +
+  ggtitle("Posterior (>50% prior): 4 out of 15") +
+  theme_bw()
+```
+
+## Package versions
+
+```{r}
+sessionInfo()
+```

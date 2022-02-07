@@ -1,6 +1,6 @@
 ---
 title: Problem Set 2
-date: "2022-01-27"
+date: "2022-02-06"
 menu:
   assignment:
     parent: Problem sets
@@ -9,6 +9,10 @@ type: docs
 toc: true
 ---
 
+<script src="/rmarkdown-libs/clipboard/clipboard.min.js"></script>
+<link href="/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+<script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
 <script src="/rmarkdown-libs/font-awesome/js/script.js"></script>
 
 This problem set is due on February 7, 2022 at 11:59am.
