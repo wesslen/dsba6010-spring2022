@@ -49,7 +49,7 @@ Due before class: Monday, February 7 at 11:59am
 
 ## Lab for Class 4
 
-[Lab class 4 code](../../example/04-class)
+[Lab class 4 code](../../lab/04-class)
 
 ## Problem Set 3
 

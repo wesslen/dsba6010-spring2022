@@ -23,11 +23,11 @@ weight: 9
 
 ### Lecture 11
 
-{{< youtube -4y4X8ELcEM >}}
+{{< youtube -397DMPooR8 >}}
 
 <br>
 
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/49d056ed5f2449459654d8b3b1e273fe" title="L11 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;" data-ratio="1.3333333333333333"></iframe>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/96715b386cd147c48bd6db4c93c17fdc" title="Statistical Rethinking 2022 Lecture 11" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
 <br>
 
@@ -49,10 +49,10 @@ Due before class: Monday, March 21 at 11:59am
 
 ## Lab for Class 9
 
-[Lab class 9 code](../../example/09-class)
+[Lab class 9 code](../../lab/09-class)
 
 ## Problem Set 7
 
 Due by next class: Monday, April 4 at 11:59am
 
-<a href="{{ .Site.baseurl }}/assignment/07-problem-set"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / [Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1467898)
+<a href="https://dsba6010-spring2022.netlify.app/assignment/07-problem-set"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / [Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1467898)

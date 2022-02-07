@@ -80,7 +80,7 @@ Due before class: Monday, February 28 at 11:59am
 
 ## Lab for Class 7
 
-[Lab class 7 code](../../example/07-class)
+[Lab class 7 code](../../lab/07-class)
 
 ## Problem Set 5
 

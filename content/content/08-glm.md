@@ -57,10 +57,10 @@ Due before class: Monday, March 14 at 11:59am
 
 ## Lab for Class 8
 
-[Lab class 8 code](../../example/08-class)
+[Lab class 8 code](../../lab/08-class)
 
 ## Problem Set 6
 
 Due by next class: Monday, March 21 at 11:59am
 
-<a href="{{ .Site.baseurl }}/assignment/05-problem-set"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / [Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1415488)
+<a href="https://dsba6010-spring2022.netlify.app/assignment/05-problem-set"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / [Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1415488)

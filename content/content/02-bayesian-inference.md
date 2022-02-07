@@ -101,4 +101,4 @@ Due by next class (Jan 31): Email or DM Ryan the article you will be presenting 
 
 Due by next class: Monday, January 31 at 11:59am
 
-<a href="https://dsba6010-spring2022.netlify.app/assignment/assignment/01-problem-set/"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / [Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1415432)
+<a href="https://dsba6010-spring2022.netlify.app/assignment/01-problem-set/"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / [Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1415432)

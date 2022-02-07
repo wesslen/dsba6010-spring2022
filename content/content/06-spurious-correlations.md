@@ -57,7 +57,7 @@ Due before class: Monday, February 21 at 11:59am
 
 ## Lab for Class 6
 
-[Lab class 6 code](../../example/06-class)
+[Lab class 6 code](../../lab/06-class)
 
 ## Problem Set 4
 
