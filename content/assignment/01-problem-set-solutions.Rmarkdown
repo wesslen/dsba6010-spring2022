@@ -17,7 +17,6 @@ library(rethinking)
 
 This problem set is due on January 31, 2022 at 11:59am.
 
-Step 1: Download this file locally.
 ```{r echo=FALSE}
 # remove this chunk for your submission
 downloadthis::download_file(
@@ -31,21 +30,9 @@ downloadthis::download_file(
 )
 ```
 
-Step 2: Complete the assignment
+## Question 1
 
-Step 3: Knit the assignment as either an html or pdf file.
-
-Step 4: Submit your file here [through this canvas link](https://uncc.instructure.com/courses/171000/assignments/1415432).
-
------------------
-
-
-
-- **Name**:
-- **UNCC ID**: 
-- **Other student worked with (optional)**:
-
-1. Your friend just became interested in Bayesian statistics. In one paragraph or less (no code), explain the following to them:
+Your friend just became interested in Bayesian statistics. In one paragraph or less (no code), explain the following to them:
 * Why/when is Bayesian statistics useful?
 
 Many answers are sufficient.
@@ -63,7 +50,9 @@ Bayesian and frequentist analyses share a common goal: to learn from data about 
 
 In essence, Frequentist statistics can be thought of as a subset of Bayesian statistics in which we have no prior information or when our sample size is so large, that our prior no longer has any weight in our posterior. In those cases, typically Frequentist and Bayesian statistics produce very similar results.
 
-2. Suppose the globe tossing data (Chapter 2) had turned out to be 4 water and 11 land. Construct the posterior distribution, using grid approximation. Use the same flat prior as in the book.
+## Question 2
+
+Suppose the globe tossing data (Chapter 2) had turned out to be 4 water and 11 land. Construct the posterior distribution, using grid approximation. Use the same flat prior as in the book.
 
 ```{r}
 ## R code 2.3
@@ -89,7 +78,9 @@ mtext( "1000 points" )
 ```
 
 
-3. Now suppose the data are 4 water and 2 land. Compute the posterior again, but this time use a prior that is zero below p = 0.5 and a constant above p = 0.5. This corresponds to prior information that a majority of the Earth’s surface is water. Compare the new posterior with the previous posterior (flat)
+## Question 3
+
+Now suppose the data are 4 water and 2 land. Compute the posterior again, but this time use a prior that is zero below p = 0.5 and a constant above p = 0.5. This corresponds to prior information that a majority of the Earth’s surface is water. Compare the new posterior with the previous posterior (flat)
 
 
 ```{r}
@@ -128,7 +119,9 @@ lines(p_grid , likelihood , type="b" , col = "green")
 mtext( "Compare likelihoods" )
 ```
 
-4. For the posterior distribution from 3, compute 89% percentile and HPDI intervals. Compare the widths of these intervals. Which is wider? Why? If you had only the information in the interval, what might you misunderstand about the shape of the posterior distribution?
+## Question 4
+
+For the posterior distribution from 3, compute 89% percentile and HPDI intervals. Compare the widths of these intervals. Which is wider? Why? If you had only the information in the interval, what might you misunderstand about the shape of the posterior distribution?
 
 ```{r warning=FALSE}
 library(rethinking)
@@ -149,7 +142,9 @@ HPDI is densest (narrowest) region with 89% mass, thus PI is wider than HPDI.
 With only intervals, an analyst would miss the drop in the posterior's shape below 52% due to the prior that assumes greater than 50%.
 
 
-OPTIONAL CHALLENGE. Suppose there is bias in sampling so that Land is more likely than Water to be recorded. Specifically, assume that 1-in-5 (20%) of Water samples are accidentally recorded instead as "Land". First, write a generative simulation of this sampling process. Assuming the true proportion of Water is 0.70, what proportion does your simulation tend to produce instead? 
+## Optional Question (Not graded)
+
+Suppose there is bias in sampling so that Land is more likely than Water to be recorded. Specifically, assume that 1-in-5 (20%) of Water samples are accidentally recorded instead as "Land". First, write a generative simulation of this sampling process. Assuming the true proportion of Water is 0.70, what proportion does your simulation tend to produce instead? 
 
 ```{r}
 # Pr(W|W) = 0.8

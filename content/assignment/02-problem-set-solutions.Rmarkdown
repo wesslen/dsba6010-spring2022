@@ -1,0 +1,276 @@
+---
+title: Problem Set 2 Solutions
+date: "`r Sys.Date()`"
+menu:
+  assignment:
+    parent: Problem sets
+    weight: 2
+type: docs
+toc: true
+---
+
+```{r setup, include=FALSE, fig.width=5, fig.height=4}
+knitr::opts_chunk$set(echo = TRUE, class.source="language-r", class.output="language-r", message = FALSE, warning = FALSE)
+xaringanExtra::use_clipboard()
+library(rethinking)
+```
+
+This problem set is due on February 6, 2022 at 11:59am.
+
+```{r echo=FALSE}
+# remove this chunk for your submission
+downloadthis::download_file(
+  path = "02-problem-set-solutions.Rmd",
+  output_name = "02-problem-set-solutions",
+  button_label = "Download this file",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
+## Question 1
+
+Construct a linear regression of weight as predicted by height, using the adults (age 18 or greater) from the Howell1 dataset. The heights listed below were recorded in the !Kung census, but weights were not recorded for these individuals. 
+
+Provide predicted weights and 89% compatibility intervals for each of these individuals. Fill in the table below, using model-based predictions.
+
+```{r}
+library(rethinking)
+data(Howell1)
+d <- Howell1[Howell1$age>=18,]
+
+dat <- list(W = d$weight, H = d$height, Hbar = mean(d$height))
+
+m_adults <- quap(
+    alist(
+        W ~ dnorm( mu , sigma ) ,
+        mu <- a + b*( H - Hbar ),
+        a ~ dnorm( 60 , 10 ) ,
+        b ~ dlnorm( 0 , 1 ) ,
+        sigma ~ dunif( 0 , 10 )
+    ) , data=dat )
+
+set.seed(100)
+sample_heights = c(140,150,160,175)
+
+simul_weights <- sim( m_adults , data=list(H=sample_heights,Hbar=mean(d$height))) 
+
+# simulated means
+mean_weights = apply( simul_weights , 2 , mean )
+# simulated PI's
+pi_weights = apply( simul_weights , 2 , PI , prob=0.89 )
+
+df <- data.frame(
+  individual = 1:4,
+  sample_heights = sample_heights,
+  simulated_mean = mean_weights,
+  low_pi = pi_weights[1,],
+  high_pi = pi_weights[2,]
+)
+
+df
+```
+
+```{r}
+col_name <- c('Individual','Height', 'Expected Weight', 'Low Interval', 'High Interval')
+# see https://bookdown.org/yihui/rmarkdown-cookbook/kable.html
+# fyi this is a way to "fancy" print dataframe in RMarkdown
+knitr::kable(df, col.names = col_name)
+```
+
+## Questions 2-4
+
+A sample of students is measured for height each year for 3 years. After the third year, you want to fit a linear regression predicting height (in centimeters) using year as a predictor. 
+
+### Question 2:
+
+- Write down a mathematical model definition for this regression, using any variable names and priors you choose. You don't need to run since you won't have the data. You may also write down your equation and then upload an image.
+
+We'll define as the outcome variable height $h_{ij}$, where \it{i} is the student \it{i} and \it{j} is the year \it{j}. For help with LaTeX equations, see this
+
+$h_{ij} \sim Normal(u_{ij},\sigma)$
+
+$\mu_{ij} = \alpha + \beta * (x_{j} - \bar{x})$
+
+$\alpha \sim Normal(100, 10)$
+
+$\beta \sim Normal(0, 10)$
+
+$\sigma \sim Exponential(1)$
+
+where *h* is height and *y* is year and *y* the average year in the sample. The index *i* indicates the student and the index *j* indicates the year
+
+The problem didn’t say how old the students are, so you’ll have to decide for yourself. The priors above assume the students are still growing, so the mean height α is set around 100 cm. The slope with year β is vague here—we’ll do better in the next problem. For σ, this needs to express how variable students are in the same year
+
+### Question 3
+
+- Run prior predictive simulation and defend your choice of priors.
+
+```{r}
+n <- 50
+a <- rnorm( n , 100 , 10 )
+b <- rnorm( n , 0 , 10 )
+s <- rexp( n , 1 )
+
+x <- 1:3
+xbar <- mean(x)
+# matrix of heights, students in rows and years in columns
+h <- matrix( NA , nrow=n , ncol=3 )
+for ( i in 1:n ) for ( j in 1:3 )
+  h[ i , j ] <- rnorm( 1 , a[i] + b[i]*( x[j] - xbar ) , s[i] )
+
+plot( NULL , xlim=c(1,3) , ylim=range(h) , xlab="year" , ylab="height (cm)" )
+for ( i in 1:n ) lines( 1:3 , h[i,] )
+```
+
+### Question 4
+
+**Now suppose I tell you that the students were 8 to 10 years old (so 8 year 1, 9 year 2, etc.). What do you expect of the trend of students' heights over time?**
+
+- **Does this information lead you to change your choice of priors? How? Resimulate your priors from Question 3.**
+
+A simple way to force individuals to get taller from one year to the next is to constrain the slope β to be positive. A log-normal distribution makes this rather easy, but you do have to be careful in choosing its parameter values. Recall that the mean of a log-normal is $exp(\mu + \sigma^{2} / 2)$. Let’s try $\mu = 1$ and $\sigma = 0.5$. This will give a mean $exp(1 + (0.25)^{2} / 2) ≈ 3$, or 3 cm of growth per year.
+
+```{r}
+n <- 50
+a <- rnorm( n , 100 , 10 )
+b <- rlnorm( n , 1 , 0.5 )
+s <- rexp( n , 1 )
+x <- 1:3
+xbar <- mean(x)
+# matrix of heights, students in rows and years in columns
+h <- matrix( NA , nrow=n , ncol=3 )
+for ( i in 1:n ) for ( j in 1:3 )
+  h[ i , j ] <- rnorm( 1 , a[i] + b[i]*( x[j] - xbar ) , s[i] )
+plot( NULL , xlim=c(1,3) , ylim=range(h) , xlab="year" , ylab="height (cm)" )
+  for ( i in 1:n ) lines( 1:3 , h[i,] )
+```
+
+Aside from a few people, the lines are slope upwards. Why do some of them zig-zag? Because the variation around the expectation from σ allows it. If you think of this as measurement error, it’s not necessarily bad. If measurement error is small however, you’d have to think harder. Much later in the book, you’ll learn some tools to help with this kind of problem.
+
+## Question 5
+
+**4. Refit model m4.3 from the chapter, but omit the mean weight xbar this time. Compare the new model’s posterior to that of the original model. In particular, look at the covariance among the parameters. What is different? Then compare the posterior predictions of both models.**
+
+```{r}
+library(rethinking)
+data(Howell1); 
+d <- Howell1; 
+d2 <- d[ d$age >= 18 , ]
+
+xbar <- mean(d2$weight)
+# run original model from code
+m4.3 <- quap(
+  alist(
+    height ~ dnorm( mu , sigma ) ,
+    mu <- a + b*(weight - xbar),
+    a ~ dnorm( 178 , 20 ) ,
+    b ~ dlnorm( 0 , 1 ) ,
+    sigma ~ dunif( 0 , 50 )
+) , data=d2 )
+precis( m4.3 )
+```
+
+```{r}
+m4.3b <- quap(
+  alist(
+    height ~ dnorm( mu , sigma ) ,
+    mu <- a + b*weight ,
+    a ~ dnorm( 178 , 20 ) ,
+    b ~ dlnorm( 0 , 1 ) ,
+    sigma ~ dunif( 0 , 50 )
+) , data=d2 )
+precis( m4.3b )
+```
+
+Notice that the models yield similar outputs **except for the a coefficients**.
+
+Let's now look at the covariation which is due to running quadratic approximation.
+
+```{r}
+round( vcov( m4.3 ) , 2 )
+```
+
+Focus on the off-diagonals ... we see nearly zero covariation. This is good.
+
+We can also view this through the `pairs()` function.
+
+```{r}
+pairs(m4.3)
+```
+
+Look at the cov(A,B) plot. Notice there's no covariation.
+
+While if we do this for the non-scaled, we'll see something different. First, let's just run covariation.
+
+```{r}
+round( vcov( m4.3b ) , 2 )
+```
+
+Notice some covariation (-0.08) for the non-scaled. While -0.08 covariation isn't much, let's translate this into correlation (as covariation depends on the scale of variables).
+
+```{r}
+round( cov2cor(vcov( m4.3b )) , 2 )
+```
+
+Wow -- unscaled our A-B are nearly -1 negative correlation. We'll see this in the `pairs()` function.
+
+
+```{r}
+pairs(m4.3b)
+```
+
+We can also run posterior prediction simulations.
+
+First, let's run the original model (scaled).
+
+```{r}
+col2 <- col.alpha(2,0.8)
+# get posterior mean via link function
+xseq <- seq(from=0,to=75,len=75)
+mean = mean(d2$weight)
+mu <- link(m4.3,data=list(weight = xseq, xbar = mean))
+mu.mean <- apply( mu , 2 , mean )
+mu.PI <- apply( mu , 2 , PI , prob=.89)
+# get posterior predictions via sim function
+sim.weight <- sim( m4.3 , data=list(weight = xseq, Wbar = mean(d2$weight)))
+weight.PI <- apply( sim.weight , 2 , PI , prob=0.89 )
+
+plot(d2$weight, d2$height, col=col2, lwd=3,
+     cex=1.2, xlab="weight (kg)", ylab="height (cm)")
+lines(xseq, mu.mean, lwd=4)
+shade( mu.PI , xseq )
+shade( weight.PI , xseq )
+```
+
+Now run the unscaled model simulations.
+
+```{r}
+col2 <- col.alpha(2,0.8)
+# get posterior mean via link function
+xseq <- seq(from=0,to=75,len=75)
+mean = mean(d2$weight)
+mu <- link(m4.3b,data=list(weight = xseq))
+mu.mean <- apply( mu , 2 , mean )
+mu.PI <- apply( mu , 2 , PI , prob=.89)
+# get posterior predictions via sim function
+sim.weight <- sim( m4.3b , data=list(weight = xseq, Wbar = mean(d2$weight)))
+weight.PI <- apply( sim.weight , 2 , PI , prob=0.89 )
+
+plot(d2$weight, d2$height, col=col2, lwd=3,
+     cex=1.2, xlab="weight (kg)", ylab="height (cm)")
+lines(xseq, mu.mean, lwd=4)
+shade( mu.PI , xseq )
+shade( weight.PI , xseq )
+```
+
+
+We have the conclusion that while these models make the same posterior predictions, but the parameters have quite different meanings and relationships with one another. There is nothing wrong with this new version of the model. But usually it is much easier to set priors, when we center the predictor variables. But you can always use prior simulations to set sensible priors, when in doubt.
+
+## Package versions
+
+```{r}
+sessionInfo()
+```
