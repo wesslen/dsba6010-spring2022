@@ -55,4 +55,4 @@ Due before class: Monday, February 7 at 11:59am
 
 Due by next class: Monday, February 14 at 11:59am
 
-<a href="{{ .Site.baseurl }}/assignment/03-problem-set"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / [Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1415434)
+<a href="https://dsba6010-spring2022.netlify.app/assignment/03-problem-set/"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / [Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1415434)
