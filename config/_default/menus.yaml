@@ -16,8 +16,8 @@ main:
   - name: Assignments
     url: /assignment/
     weight: 4
-  - name: Examples
-    url: /example/
+  - name: Labs
+    url: /lab/
     weight: 5    
   - name: Resources
     url: /resource/

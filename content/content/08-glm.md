@@ -55,6 +55,10 @@ Due before class: Monday, March 14 at 11:59am
 
 <a href="https://uncc.instructure.com/courses/171000/quizzes/331406"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a>
 
+## Lab for Class 8
+
+[Lab class 8 code](../../example/08-class)
+
 ## Problem Set 6
 
 Due by next class: Monday, March 21 at 11:59am

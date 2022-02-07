@@ -78,6 +78,10 @@ Due before class: Monday, February 28 at 11:59am
 
 <a href="https://uncc.instructure.com/courses/171000/quizzes/331405"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a>
 
+## Lab for Class 7
+
+[Lab class 7 code](../../example/07-class)
+
 ## Problem Set 5
 
 Due by next class: Monday, March 14 at 11:59am

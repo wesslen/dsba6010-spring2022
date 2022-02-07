@@ -13,7 +13,7 @@
             {{- if .header }}
 
             <td style="width:12%;text-align:center" class="mid-table-header">Lecture</td>
-            <td style="width:12%;text-align:center" class="mid-table-header">Example</td>
+            <td style="width:12%;text-align:center" class="mid-table-header">Lab</td>
             <td style="width:12%;text-align:center" class="mid-table-header">Problem Set</td>
             <td style="width:12%;text-align:center" class="mid-table-header">Quiz</td>
 
@@ -30,9 +30,9 @@
             </td>
             {{- end }}
 
-            {{- if .example }}
+            {{- if .lab }}
             <td align="center" style="width:10%;text-align:center"><a
-                    href="{{ .Site.baseurl }}/example/{{ .example }}/">
+                    href="{{ .Site.baseurl }}/lab/{{ .lab }}/">
                     <i class="fas fa-laptop-code fa-lg"></i></a></td>
             {{- else }}
             <td align="center" style="width:10%;text-align:center">

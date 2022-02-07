@@ -8,7 +8,7 @@ lessons:
     date_start: "Jan 10"
     date_end: "Jan 16"
     content: "01-course-intro"
-    example: "01-class"
+    lab: "01-class"
     bg: 1
     bottomborder: True
   
@@ -27,7 +27,7 @@ lessons:
     content: "02-bayesian-inference"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/331407"
     assignment: "01-problem-set"
-    example: "02-class"
+    lab: "02-class"
     bg: 2
     bottomborder: True    
 
@@ -38,7 +38,7 @@ lessons:
     date_end: "Feb 6"
     content: "03-linear-models"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/331402"
-    example: "03-class"
+    lab: "03-class"
     assignment: "02-problem-set"
     bottomborder: True
     bg: 1
@@ -49,7 +49,7 @@ lessons:
     date_end: "Feb 13"
     session: "Class 4"
     content: "04-linear-models-2"
-    example: "04-class"
+    lab: "04-class"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/331403"
     assignment: "03-problem-set"
     bottomborder: True

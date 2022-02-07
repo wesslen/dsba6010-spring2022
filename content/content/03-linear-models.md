@@ -73,9 +73,9 @@ Due before class: Monday, January 31 at 11:59am
 
 <a href="https://uncc.instructure.com/courses/171000/quizzes/331402"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a>
 
-## Example 3
+## Lab for Class 3
 
-[Example 3 code](../../example/03-class)
+[Lab class 3 code](../../lab/03-class)
 
 ## Problem Set 2
 

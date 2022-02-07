@@ -47,9 +47,9 @@ Due before class: Monday, February 7 at 11:59am
 
 <a href="https://uncc.instructure.com/courses/171000/quizzes/331403"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a>
 
-## Example 4
+## Lab for Class 4
 
-[Example 4 code](../../example/04-class)
+[Lab class 4 code](../../example/04-class)
 
 ## Problem Set 3
 

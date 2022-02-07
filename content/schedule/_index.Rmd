@@ -57,7 +57,7 @@ ic_write(schedule_ics, here::here("content", "schedule", "schedule.ics"))
 ```
 
 - [**Content**](/content/) (<i class="fas fa-book-reader"></i>): Readings, slides, and recorded lectures for the topic.
-- [**Example**](/example/) (<i class="fas fa-laptop-code"></i>): Annotated R code and  supplementary information for reference.
+- [**Labs**](/lab/) (<i class="fas fa-laptop-code"></i>): Annotated R code and  supplementary information for lab session.
 - [**Problem Set**](/assignment/) (<i class="fas fa-pencil-ruler"></i>):  Instructions for problem sets. We'll work on these in class. Due by **11:59 AM (1 minute before class) of the next class.**
 - [**Quiz**](/assignment/) (<i class="fas fa-question"></i>): Lesson quizzes via Canvas to test chapter reading and lectures. Due by **11:59 AM (1 minute before class) on the day they're listed.**
 
