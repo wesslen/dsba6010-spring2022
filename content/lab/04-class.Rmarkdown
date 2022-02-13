@@ -3,7 +3,7 @@ date: "`r Sys.Date()`"
 title: "Class 4"
 menu:
   example:
-    parent: Examples
+    parent: Labs
 weight: 4
 toc: true
 type: docs
@@ -159,7 +159,7 @@ polygon(c(Wdens$x[Wdens$x>0], max(Wdens$x), 0), c(Wdens$y[Wdens$x>0], 0, 0), col
 polygon(c(Wdens$x[Wdens$x<0], 0, min(Wdens$x)), c(Wdens$y[Wdens$x<0], 0, 0), col = 2, border = NA )
 ```
 
-This allows us to calculate how many cases where men are taller (above zero) and are shorter (below zero).
+This allows us to calculate how many cases where men are heavier (above zero) and are lighter (below zero).
 
 ```{r}
 # proportion above zero
@@ -168,7 +168,7 @@ sum( W_contrast > 0 ) / N_sim
 sum( W_contrast < 0 ) / N_sim
 ```
 
-About 82% the males are taller than the women -- but about 20% of cases women are taller.
+About 82% the males are heavier than the women -- but about 20% of cases women are lighter
 
 {{% callout note %}}
 

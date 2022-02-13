@@ -1,9 +1,9 @@
 ---
 title: "Class 2"
-date: "2022-01-24"
+date: "2022-02-12"
 menu:
   example:
-    parent: Examples
+    parent: Labs
 weight: 2
 type: docs
 toc: yes
@@ -94,7 +94,7 @@ prior <- rep( 1 , 20 )
 plot(p_grid, prior, type="b", ylim=c(0,5))
 ```
 
-<img src="/example/02-class_files/figure-html/unnamed-chunk-6-1.png" width="672" />
+<img src="/lab/02-class_files/figure-html/unnamed-chunk-6-1.png" width="672" />
 
 ``` r
 # compute likelihood at each value in grid
@@ -103,7 +103,7 @@ likelihood <- dbinom( 6 , size=9 , prob=p_grid )
 plot(p_grid, likelihood, type="b", ylim=c(0,0.3))
 ```
 
-<img src="/example/02-class_files/figure-html/unnamed-chunk-7-1.png" width="672" />
+<img src="/lab/02-class_files/figure-html/unnamed-chunk-7-1.png" width="672" />
 
 ``` r
 # compute product of likelihood and prior
@@ -112,7 +112,7 @@ unstd.posterior <- likelihood * prior
 plot(p_grid, unstd.posterior, type="b", ylim=c(0,0.3))
 ```
 
-<img src="/example/02-class_files/figure-html/unnamed-chunk-8-1.png" width="672" />
+<img src="/lab/02-class_files/figure-html/unnamed-chunk-8-1.png" width="672" />
 
 ``` r
 # standardize the posterior, so it sums to 1
@@ -124,7 +124,7 @@ plot( p_grid , posterior , type="b" ,
 mtext( "20 points" )
 ```
 
-<img src="/example/02-class_files/figure-html/unnamed-chunk-9-1.png" width="672" />
+<img src="/lab/02-class_files/figure-html/unnamed-chunk-9-1.png" width="672" />
 
 {{% callout note %}}
 
@@ -170,8 +170,8 @@ globe.qa
 ## p ~ dunif(0, 1)
 ## 
 ## Posterior means:
-##       p 
-## 0.66667 
+##         p 
+## 0.6666663 
 ## 
 ## Log-likelihood: -1.3
 ```
@@ -184,8 +184,8 @@ precis( globe.qa )
 ```
 
 ``` language-r
-##      mean       sd      5.5%     94.5%
-## p 0.66667 0.157133 0.4155411 0.9177989
+##        mean        sd      5.5%     94.5%
+## p 0.6666663 0.1571339 0.4155361 0.9177966
 ```
 
 ### How does grid approximation compare to analytical posterior calculation?
@@ -200,7 +200,7 @@ curve( dbeta( x , W+1 , L+1 ) , from=0 , to=1 , col = 1) # solid line
 curve( dnorm( x , 0.67 , 0.16 ) , lty=2 , add=TRUE , col = 2) # dotted line
 ```
 
-<img src="/example/02-class_files/figure-html/unnamed-chunk-14-1.png" width="672" />
+<img src="/lab/02-class_files/figure-html/unnamed-chunk-14-1.png" width="672" />
 
 ### Demo Problems
 
@@ -219,7 +219,7 @@ posterior <- posterior / sum(posterior) # standardize
 plot( posterior ~ p_grid , type="l", main = "W, W, W")
 ```
 
-<img src="/example/02-class_files/figure-html/unnamed-chunk-15-1.png" width="672" />
+<img src="/lab/02-class_files/figure-html/unnamed-chunk-15-1.png" width="672" />
 
 ``` r
 # likelihood of 3 water in 4 tosses
@@ -231,7 +231,7 @@ posterior <- posterior / sum(posterior) # standardize
 plot( posterior ~ p_grid , type="l" , main = "W, W, W, L")
 ```
 
-<img src="/example/02-class_files/figure-html/unnamed-chunk-16-1.png" width="672" />
+<img src="/lab/02-class_files/figure-html/unnamed-chunk-16-1.png" width="672" />
 
 ``` r
 # likelihood of 5 water in 7 tosses
@@ -243,7 +243,7 @@ posterior <- posterior / sum(posterior) # standardize
 plot( posterior ~ p_grid , type="l" , main = "L, W, W, W, L, W, W, W")
 ```
 
-<img src="/example/02-class_files/figure-html/unnamed-chunk-17-1.png" width="672" />
+<img src="/lab/02-class_files/figure-html/unnamed-chunk-17-1.png" width="672" />
 
 ## Chapter 3
 
@@ -356,7 +356,7 @@ posterior <- posterior / sum(posterior)
 plot(posterior)
 ```
 
-<img src="/example/02-class_files/figure-html/unnamed-chunk-26-1.png" width="672" />
+<img src="/lab/02-class_files/figure-html/unnamed-chunk-26-1.png" width="672" />
 
 3M2. Draw 10,000 samples from the grid approximation from above. Then use the sample to calculate the 90% HPDI for p.
 
@@ -460,7 +460,7 @@ d %>%
   theme(panel.grid = element_blank())
 ```
 
-<img src="/example/02-class_files/figure-html/unnamed-chunk-32-1.png" width="672" />
+<img src="/lab/02-class_files/figure-html/unnamed-chunk-32-1.png" width="672" />
 
 For this class, we’ll occasionally refer to Soloman’s guide.
 
@@ -493,7 +493,7 @@ ggplot(dist, aes(x = p_grid, y = posterior)) +
   labs(x = "Proportion Water (p)", y = "Posterior Density")
 ```
 
-<img src="/example/02-class_files/figure-html/unnamed-chunk-33-1.png" width="672" />
+<img src="/lab/02-class_files/figure-html/unnamed-chunk-33-1.png" width="672" />
 
 ``` r
 # W, W, W, L, W, W, W

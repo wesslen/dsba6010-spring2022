@@ -3,7 +3,7 @@ title: "Class 2"
 date: "`r Sys.Date()`"
 menu:
   example:
-    parent: Examples
+    parent: Labs
 weight: 2
 type: docs
 toc: yes

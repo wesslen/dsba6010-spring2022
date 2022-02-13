@@ -1,9 +1,9 @@
 ---
-date: "2022-01-24"
+date: "2022-02-12"
 title: "Class 1"
 menu:
   example:
-    parent: Examples
+    parent: Labs
 weight: 1
 type: docs
 toc: true
@@ -101,7 +101,7 @@ coef(m)
 plot( resid(m) ~ speed , data=cars )
 ```
 
-<img src="/example/01-class_files/figure-html/unnamed-chunk-8-1.png" width="672" />
+<img src="/lab/01-class_files/figure-html/unnamed-chunk-8-1.png" width="672" />
 
 ## Package versions
 

@@ -33,11 +33,11 @@ weight: 9
 
 ### Lecture 12
 
-{{< youtube hRJtKCIDTwc >}}
+{{< youtube SocRgsf202M >}}
 
 <br>
 
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/8204715ef3c445daa83dd2653c4b2559" title="L12 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;" data-ratio="1.3333333333333333"></iframe>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/b0f02f2ccec04891bd7cf6ef31b855e1" title="Statistical Rethinking 2022 Lecture 12" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
 ## Deliverables
 

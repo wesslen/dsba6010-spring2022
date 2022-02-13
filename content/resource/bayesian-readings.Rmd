@@ -30,6 +30,11 @@ Primer](https://arxiv.org/pdf/1411.5018.pdf) [@vanderplas2014frequentism] <i cla
 
 - <i class="fas fa-blog"></i> [My Journey From Frequentist to Bayesian Statistics](https://www.fharrell.com/post/journey/) [@harrell_2021] <i class="fas fa-star"></i> <i class="fas fa-star"></i>
 
+- <i class="fas fa-newspaper"></i> [Credible Confidence: A Pragmatic View on the Frequentist vs Bayesian Debate](https://online.ucpress.edu/collabra/article/4/1/31/112994) [@albers2018credible] <i class="fas fa-star"></i>
+
+- <i class="fas fa-newspaper"></i> [Pragmatism should Not be a Substitute for Statistical Literacy, a Commentary on Albers, Kiers, and Van Ravenzwaaij](https://online.ucpress.edu/collabra/article/5/1/13/112982/Pragmatism-should-Not-be-a-Substitute-for) [@nalborczyk2019pragmatism] <i class="fas fa-star"></i>
+
+
 ## NHST / p-hacking
 
 - <i class="fas fa-newspaper"></i> [Why most published research findings are false](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124&xid=17259,15700019,15700186,15700190,15700248) [@ioannidis2005most] <i class="fas fa-star"></i> <i class="fas fa-star"></i>

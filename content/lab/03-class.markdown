@@ -1,9 +1,9 @@
 ---
-date: "2022-01-31"
+date: "2022-02-12"
 title: "Class 3"
 menu:
   example:
-    parent: Examples
+    parent: Labs
 weight: 3
 toc: true
 type: docs
@@ -51,7 +51,7 @@ d <- Howell1[Howell1$age>=18,]
 plot(d$height, d$weight, col = 2,  xlab = "height (cm)", ylab = "weight (kg)",  lwd=3)
 ```
 
-<img src="/example/03-class_files/figure-html/unnamed-chunk-3-1.png" width="672" />
+<img src="/lab/03-class_files/figure-html/unnamed-chunk-3-1.png" width="672" />
 
 ### 2. Scientific model
 
@@ -69,7 +69,7 @@ g <- dagitty('dag {
 plot(g)
 ```
 
-<img src="/example/03-class_files/figure-html/unnamed-chunk-4-1.png" width="192" />
+<img src="/lab/03-class_files/figure-html/unnamed-chunk-4-1.png" width="192" />
 
 ### 3. Statistical model
 
@@ -102,7 +102,7 @@ plot(W,H,  col=col2, lwd=3,
 mtext( "100 Simulated people" )
 ```
 
-<img src="/example/03-class_files/figure-html/unnamed-chunk-6-1.png" width="672" />
+<img src="/lab/03-class_files/figure-html/unnamed-chunk-6-1.png" width="672" />
 
 #### Sampling the prior distribution
 
@@ -118,7 +118,7 @@ for (i in 1:n_samples){
 }
 ```
 
-<img src="/example/03-class_files/figure-html/unnamed-chunk-7-1.png" width="672" />
+<img src="/lab/03-class_files/figure-html/unnamed-chunk-7-1.png" width="672" />
 
 ### 3. Statistical model for H-&gt;W
 
@@ -137,7 +137,7 @@ for (i in 1:n){
 }
 ```
 
-<img src="/example/03-class_files/figure-html/unnamed-chunk-8-1.png" width="672" />
+<img src="/lab/03-class_files/figure-html/unnamed-chunk-8-1.png" width="672" />
 
 Is this a good prior to be used? Why or why not are they interpretable?
 
@@ -149,7 +149,7 @@ b <- rlnorm(1e4, 0, 1) #4.40
 dens(b, xlim=c(0,5), adj=0.1)
 ```
 
-<img src="/example/03-class_files/figure-html/unnamed-chunk-9-1.png" width="672" />
+<img src="/lab/03-class_files/figure-html/unnamed-chunk-9-1.png" width="672" />
 
 Let’s do a predictive simulation now using the Log-Normal prior.
 
@@ -167,7 +167,7 @@ for (i in 1:n){
 }
 ```
 
-<img src="/example/03-class_files/figure-html/unnamed-chunk-10-1.png" width="672" />
+<img src="/lab/03-class_files/figure-html/unnamed-chunk-10-1.png" width="672" />
 {{% callout note %}}
 
 Key is justify priors with information outside of the data (that will be modeled). This is similar to machine learning where we don’t want to include records in our test dataset that were also in our training. Using modeled data to form priors can be thought of as “prior-hacking.” Typically in literature, Bayesian approaches require pre-registration when using informative priors (see [this example from Fernandes et al., 2018](https://github.com/michael-fernandes/uncertainty-displays-for-transit/blob/master/pre-registration.pdf)).
@@ -226,7 +226,7 @@ round( vcov( m4.3 ) , 3 )
 pairs(m4.3)
 ```
 
-<img src="/example/03-class_files/figure-html/unnamed-chunk-13-1.png" width="672" />
+<img src="/lab/03-class_files/figure-html/unnamed-chunk-13-1.png" width="672" />
 
 There is little covariation among the parameters in this case. The lack of covariance among the parameters **results from centering.**
 
@@ -332,7 +332,7 @@ plot(d$height, d$weight, col=col2, lwd=3,
      cex=1.2, xlab="height (cm)", ylab="weight (kg)")
 ```
 
-<img src="/example/03-class_files/figure-html/unnamed-chunk-17-1.png" width="672" />
+<img src="/lab/03-class_files/figure-html/unnamed-chunk-17-1.png" width="672" />
 
 #### 2. Plot the posterior mean
 
@@ -348,7 +348,7 @@ plot(d$height, d$weight, col=col2, lwd=3,
 lines(xseq, mu.mean, lwd=4)
 ```
 
-<img src="/example/03-class_files/figure-html/unnamed-chunk-18-1.png" width="672" />
+<img src="/lab/03-class_files/figure-html/unnamed-chunk-18-1.png" width="672" />
 
 #### 3. Plot uncertainty of the mean
 
@@ -364,7 +364,7 @@ lines( xseq , mu.mean )
 shade( mu.PI , xseq )
 ```
 
-<img src="/example/03-class_files/figure-html/unnamed-chunk-19-1.png" width="672" />
+<img src="/lab/03-class_files/figure-html/unnamed-chunk-19-1.png" width="672" />
 
 ``` r
 #alternative way to plot uncertainty of the mean
@@ -389,7 +389,7 @@ shade( mu.PI , xseq )
 shade( height.PI , xseq )
 ```
 
-<img src="/example/03-class_files/figure-html/unnamed-chunk-20-1.png" width="672" />
+<img src="/lab/03-class_files/figure-html/unnamed-chunk-20-1.png" width="672" />
 
 ### Example
 

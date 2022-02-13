@@ -13,6 +13,9 @@ type: docs
 weight: 6
 ---
 
+{{< tweet 986388629907017729 >}}^[Scott Cunningham is written an excellent book, ["Causal Inference: The Mixtake"](https://mixtape.scunning.com/index.html). The book is written for econometricians (hence includes R + STATA code). I recommend his [chapter on DAGs](https://mixtape.scunning.com/dag.html).]
+
+
 ## Zoom
 
 <a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i> Zoom</a>: 12:00pm - 2:45pm, February 21, 2022
