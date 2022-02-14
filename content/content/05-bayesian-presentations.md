@@ -11,6 +11,10 @@ type: docs
 weight: 5
 ---
 
+## Zoom
+
+<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i></a>: 12:00pm - 2:45pm, February 14, 2022
+
 Individual presentations on Bayesian applications.
 
 Students will present one published article or blog post of applications on Bayesian statistics. 
