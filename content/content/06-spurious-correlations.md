@@ -13,7 +13,7 @@ type: docs
 weight: 6
 ---
 
-{{< tweet 986388629907017729 >}}^[Scott Cunningham is written an excellent book, ["Causal Inference: The Mixtake"](https://mixtape.scunning.com/index.html). The book is written for econometricians (hence includes R + STATA code). I recommend his [chapter on DAGs](https://mixtape.scunning.com/dag.html).]
+{{< tweet 986388629907017729 >}}
 
 
 ## Zoom
