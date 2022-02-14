@@ -1,0 +1,107 @@
+---
+title: Problem Set 4
+date: "`r Sys.Date()`"
+---
+
+This problem set is due on February 28, 2022 at 11:59am.
+
+- **Name**:
+- **UNCC ID**: 
+- **Other student worked with (optional)**:
+
+## Question 1
+
+The first two problems are based on the same data. The data in `data(foxes)` are 116 foxes from 30 different urban groups in England. 
+
+```{r warning=FALSE,message=FALSE}
+library(rethinking)
+data(foxes)
+d<- foxes
+head(d)
+```
+
+These fox groups are like street gangs. Group size (`groupsize`) varies from 2 to 8 individuals. Each group maintains its own (almost exclusive) urban territory. Some territories are larger than others. The `area` variable encodes this information. Some territories also have more `avgfood` than others. And food influences the `weight` of each fox. Assume this DAG:
+
+```{r fig.height=4, fig.width=4}
+library(dagitty)
+
+g <- dagitty('dag {
+bb="0,0,1,1"
+A [pos="0.450,0.290"]
+F [exposure,pos="0.333,0.490"]
+G [pos="0.539,0.495"]
+W [outcome,pos="0.445,0.686"]
+A -> F
+F -> G
+F -> W
+G -> W
+}
+
+')
+plot(g)
+```
+
+where F is `avgfood`, G is `groupsize`, A is `area`, and W is `weight`.
+
+**Part 1**: Use the backdoor criterion and estimate the total causal influence of A on F. 
+
+```{r eval=FALSE, include=FALSE}
+# type in your code here
+
+```
+
+**Part 2**: What effect would increasing the area of a territory have on the amount of food inside it?
+
+[Write answer here in sentences]
+
+## Question 2
+
+Now infer both the **total** and **direct** causal effects of adding food F to a territory on the weight W of foxes. Which covariates do you need to adjust for in each case? In light of your estimates from this problem and the previous one, what do you think is going on with these foxes? Feel free to speculate—all that matters is that you justify your speculation.
+
+
+
+```{r eval=FALSE, include=FALSE}
+# Total causal effect: type in your code here
+
+```
+
+
+
+```{r eval=FALSE, include=FALSE}
+# For the direct causal effect: type in your code here
+
+```
+
+## Question 3
+
+Reconsider the Table 2 Fallacy example (from Lecture 6), this time with an unobserved confound U that influences both smoking S and stroke Y. Here’s the modified DAG:
+
+```{r echo=FALSE, out.width = '50%'}
+# run this chunk to view the image
+knitr::include_graphics("https://raw.githubusercontent.com/wesslen/dsba6010-spring2022/master/static/img/assignments/04-problem-set/04-problem-set-0.png")
+```
+
+Part 1: use the backdoor criterion to determine an adjustment set that allows you to estimate the causal effect of X on Y, i.e. P(Y|do(X)). 
+
+For this exercise, you can use [dagitty.net](http://www.dagitty.net/dags.html).
+
+Step 1: Input your DAG into Dagitty.net and copy/paste your results here:
+
+```{r eval=FALSE}
+# insert code here
+
+g <- dagitty('
+          # copy/paste dagitty.net code for DAG here
+             ')
+```
+
+Step 2: What is the adjustment set to estimate the causal effect of X on Y?
+
+```{r eval=FALSE, include=FALSE}
+# find adjustment set: type in your code here
+
+```
+
+Part 2: Explain the proper interpretation of each coefficient implied by the regression model that corresponds to the adjustment set. Which coefficients (slopes) are causal and which are not? There is no need to fit any models. Just think through the implications.
+
+[Write answer here in sentences]
