@@ -75,7 +75,7 @@ lessons:
     date_end: "Feb 27"
     content: "06-spurious-correlations"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/331404"
-    ##assignment: "04-problem-set"
+    assignment: "04-problem-set"
     bg: 2
     bottomborder: True
     
