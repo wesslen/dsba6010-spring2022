@@ -56,7 +56,7 @@ Due before class: Monday, February 21 at 11:59am
 
 <a href="https://forms.gle/zMipNzav3BCL3Rwy9"><i class="fas fa-comment fa-lg"></i>  Class Feedback</a>
 
-<a href="https://uncc.instructure.com/courses/171000/quizzes/331403"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a>
+<a href="https://uncc.instructure.com/courses/171000/quizzes/331404"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a>
 
 ## Lab for Class 6
 
