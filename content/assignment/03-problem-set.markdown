@@ -1,6 +1,6 @@
 ---
 title: Problem Set 3
-date: "2022-02-06"
+date: "2022-02-18"
 menu:
   assignment:
     parent: Problem sets
@@ -43,7 +43,7 @@ From the Howell1 dataset, consider only the people younger than 13 years old. Es
 
 Use a linear regression to estimate the total (not just direct) causal effect of
 each year of growth on weight. Be sure to carefully consider the priors. Try
-using prior predictive simulation to assess what they imply
+using prior predictive simulation to assess what they imply.
 
 ## Question 2
 
@@ -78,10 +78,10 @@ precis( m4.5 )
 
 ``` language-r
 ##             mean        sd       5.5%      94.5%
-## a     146.057412 0.3689756 145.467718 146.647107
-## b1     21.733065 0.2888890  21.271365  22.194766
-## b2     -7.803266 0.2741839  -8.241465  -7.365067
-## sigma   5.774474 0.1764652   5.492449   6.056500
+## a     146.058157 0.3689835 145.468450 146.647864
+## b1     21.732164 0.2888954  21.270453  22.193874
+## b2     -7.802966 0.2741948  -8.241182  -7.364750
+## sigma   5.774674 0.1764807   5.492623   6.056724
 ```
 
 Now modify `m4.5` model by relaxing our “positive relationship” (aka lognormal) assumption for the `b1` variable by modifying it’s prior as `dnorm( 0 , 1 )` and create a new model called `m4.5b`. Run `precis(m4.5b)`.
@@ -106,6 +106,8 @@ For this problem, we’re going to reuse the same model (`m4.5`) from Question 3
 Change the priors on the `b2` coefficient to `b2 ~ dnorm(0, 10)` and rerun the prior predictive simulation.
 
 Now, change the priors on the beta coefficients to more “flat, very uninformative” priors, `dnorm(0, 100)` for `b1` and `b2`. Rerun a similar prior predictive simulation.
+
+What is the impact of using more flat/uninformative priors? Which of the three priors do you think is most reasonable to use?
 
 ## Optional Challenge (Not graded)
 

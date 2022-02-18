@@ -122,6 +122,8 @@ Now, change the priors on the beta coefficients to more "flat, very uninformativ
 
 ```
 
+What is the impact of using more flat/uninformative priors? Which of the three priors do you think is most reasonable to use?
+
 ## Optional Challenge (Not graded)
 
 Return to `data(cherry_blossoms)` and model the association between blossom date (`day`) and March temperature (`temp`). Note that there are many missing values in both variables. You may consider a linear model, a polynomial, or a spline on temperature. How well does temperature trend predict the blossom trend?

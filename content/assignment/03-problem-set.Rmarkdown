@@ -65,7 +65,7 @@ plot(g)
 
 Use a linear regression to estimate the total (not just direct) causal effect of
 each year of growth on weight. Be sure to carefully consider the priors. Try
-using prior predictive simulation to assess what they imply
+using prior predictive simulation to assess what they imply.
 
 ```{r eval=FALSE, include=FALSE}
 # type in your code here
@@ -155,6 +155,8 @@ Now, change the priors on the beta coefficients to more "flat, very uninformativ
 # type in your code here
 
 ```
+
+What is the impact of using more flat/uninformative priors? Which of the three priors do you think is most reasonable to use?
 
 ## Optional Challenge (Not graded)
 
