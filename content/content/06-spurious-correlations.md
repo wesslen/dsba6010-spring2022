@@ -38,6 +38,8 @@ weight: 6
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/d67c24afa5e44b18a1da16c3136cf82b" title="Statistical Rethinking 2022 Lecture 05" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
+[Link to pdf](https://files.speakerdeck.com/presentations/d67c24afa5e44b18a1da16c3136cf82b/Lecture_05.pdf)
+
 <br>
 
 ### Lecture 6
@@ -47,6 +49,8 @@ weight: 6
 <br>
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/94d5286165f3482590886a4058df0ed3" title="Statistical Rethinking 2022 Lecture 06" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+[Link to pdf](https://files.speakerdeck.com/presentations/94d5286165f3482590886a4058df0ed3/Lecture_06.pdf)
 
 <br>
 

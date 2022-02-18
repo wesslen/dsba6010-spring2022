@@ -37,6 +37,8 @@ weight: 4
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/48c57c3d7cf04246bb00b35244e728ce" title="Statistical Rethinking 2022 Lecture 04" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
+[Link to pdf](https://files.speakerdeck.com/presentations/48c57c3d7cf04246bb00b35244e728ce/Lecture_04.pdf)
+
 <br>
 
 ## Deliverables

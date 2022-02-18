@@ -35,6 +35,9 @@ weight: 7
 <br>
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/9f57deff04ac470d95ff9c8b34abb8f6" title="Statistical Rethinking 2022 Lecture 07" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+[Link to pdf](https://files.speakerdeck.com/presentations/9f57deff04ac470d95ff9c8b34abb8f6/Lecture_07-overfitting.pdf)
+
 <br>
 
 ### Lecture 8
@@ -45,6 +48,9 @@ weight: 7
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/cc59c28f5c974674a0745eb48d54d693" title="Statistical Rethinking 2022 Lecture 08" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
+[Link to pdf](https://files.speakerdeck.com/presentations/cc59c28f5c974674a0745eb48d54d693/Lecture_08.pdf)
+
+<br>
 
 ## Comprehension questions
 

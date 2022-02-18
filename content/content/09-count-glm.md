@@ -29,6 +29,8 @@ weight: 9
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/96715b386cd147c48bd6db4c93c17fdc" title="Statistical Rethinking 2022 Lecture 11" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
+[Link to pdf](https://files.speakerdeck.com/presentations/96715b386cd147c48bd6db4c93c17fdc/Lecture_11.pdf)
+
 <br>
 
 ### Lecture 12
@@ -38,6 +40,10 @@ weight: 9
 <br>
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/b0f02f2ccec04891bd7cf6ef31b855e1" title="Statistical Rethinking 2022 Lecture 12" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+[Link to pdf](https://files.speakerdeck.com/presentations/b0f02f2ccec04891bd7cf6ef31b855e1/Lecture_12.pdf)
+
+<br>
 
 ## Deliverables
 

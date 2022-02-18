@@ -28,7 +28,21 @@ weight: 11
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/e7bde2e90ac540c8be093d7bc5c57576" title="Statistical Rethinking 2022 Lecture 13" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
+[Link to pdf](https://files.speakerdeck.com/presentations/e7bde2e90ac540c8be093d7bc5c57576/Lecture_13.pdf)
+
+<br>
+
 ### Lecture 14
+
+{{< youtube XDoAglqd7ss >}}
+
+<br>
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/e8c312e606eb4f3091417a48e63ea381" title="Statistical Rethinking 2022 Lecture 14" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+[Link to pdf](https://files.speakerdeck.com/presentations/e8c312e606eb4f3091417a48e63ea381/Lecture_14.pdf)
+
+<br>
 
 
 ## Comprehension questions
