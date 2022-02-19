@@ -22,16 +22,18 @@ weight: 12
 
 ### Lecture 15
 
+{{< youtube L_QumFUv7C8 >}}
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/1ae1d4e9ea0a4c7ab5767b74c9bfb5c3" title="Statistical Rethinking 2022 Lecture 15" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+<br>
+
+[Link to pdf](https://files.speakerdeck.com/presentations/1ae1d4e9ea0a4c7ab5767b74c9bfb5c3/Lecture_15.pdf)
 
 <br>
 
 ### Lecture 16
 
 <br>
-
-
-## Comprehension questions
-
-TBD
 
 ## Deliverables

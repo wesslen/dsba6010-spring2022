@@ -1,0 +1,297 @@
+---
+date: "`r Sys.Date()`"
+title: "Class 6"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+## Introduction
+
+## In-Class Practice
+
+For in-class practice, we're going to use [dagitty.net](https://dagitty.net). Dagitty.net was introduced in [Lecture 6](https://www.youtube.com/watch?v=NSuTaeW6Orc&t=2398s). We're going to consider a few different examples of different DAGs and consider the implications of their structure.
+
+Malaria is a life-threatening disease caused by parasites that are transmitted to people through the bites of infected female Anopheles mosquitoes ([WHO](https://www.who.int/news-room/fact-sheets/detail/malaria)). It is preventable and curable. In 2020, there were an estimated 241 million cases of malaria worldwide. The estimated number of malaria deaths stood at **627,000** in 2020. The WHO African Region carries a disproportionately high share of the global malaria burden. In 2020, the region was home to 95% of malaria cases and 96% of malaria deaths. Children under 5 accounted for an estimated 80% of all malaria deaths in the Region.
+
+We're going to look at understanding the effect of mosquito nets on the spread of Malaria.
+
+### Prep
+
+You will need to have these two additional R packages installed.
+
+```{r eval=FALSE}
+install.packages('dagitty')
+install.packages('ggdag')
+```
+
+### Question 1
+
+First, use [dagitty.net](https://dagitty.net) to create this initial dag.
+
+```{r echo=FALSE, out.width = '50%'}
+# run this chunk to view the image
+knitr::include_graphics("https://raw.githubusercontent.com/wesslen/dsba6010-spring2022/master/static/img/assignments/04-problem-set/04-problem-set-1.png")
+```
+
+Now, do the two following steps:
+
+1. set Mosquito Net as the "exposure" (aka treatment or independent variable) in Dagitty.
+2. set Risk of Malaria as the "outcome" (aka response or dependent variable) in Dagitty.
+
+Your DAG should now look like this:
+
+```{r echo=FALSE, out.width = '50%'}
+# run this chunk to view the image
+knitr::include_graphics("https://raw.githubusercontent.com/wesslen/dsba6010-spring2022/master/static/img/assignments/04-problem-set/04-problem-set-2.png")
+```
+
+Answer the following four questions:
+
+**A. Given the DAG, what type of confound is Income?**
+
+**B. Given Income's confound type, if the goal is to find the total effect of Mosquito Nets on the Risk of Malaria, should you include Income as a predictor (aka independent variable) into a regression with Mosquito Nets to explain the Risk of Malaria? Why or why not?**
+
+**C. Using your Dagitty DAG, find the *minimal adjustment set* for estimating the total effect of Mosquito Net on Risk of Malaria. How does this compare to part B?**
+
+**D. Now change the variables in your *minimal adjustment set* in Part C to "adjusted" on Dagitty. You can do this by selecting the nodes and click the "adjusted" box on the left. After you have completed this, copy and paste your DAG R Code in the chunk below. Be sure to change the chunk parameter from `eval=FALSE` to `eval=TRUE` to ensure the code chunk runs.**
+
+```{r eval=FALSE}
+g <- dagitty::dagitty('
+# insert your dagitty copy/paste code here                      
+')
+ggdag::ggdag_status(g, text = FALSE, use_labels = "name") +
+  guides(color = "none") +  # Turn off legend
+  theme_dag()
+```
+
+This is what your DAG above should look like:
+
+```{r echo=FALSE, out.width = '50%'}
+# run this chunk to view the image
+knitr::include_graphics("https://raw.githubusercontent.com/wesslen/dsba6010-spring2022/master/static/img/assignments/04-problem-set/04-problem-set-3.png")
+```
+
+### Question 2
+
+Let's now add in more complexity to our DAG.
+
+First, go back and **remove "Income" as an "Adjusted" check box.**
+
+```{r echo=FALSE, out.width = '75%'}
+# run this chunk to view the image
+knitr::include_graphics("https://raw.githubusercontent.com/wesslen/dsba6010-spring2022/master/static/img/assignments/04-problem-set/04-problem-set-4.png")
+```
+
+Now, add in additional nodes in your DAG to get the dag above. 
+
+Note that in this DAG on "Mosquito Net" (exposure) and "Risk of Malaria" (outcome) have been assigned (i.e., no other nodes are selected as "adjusted").
+
+Answer the following four questions:
+
+**A. Given the DAG, what is the minimal sufficient adjustment sets for estimating the total effect of Mosquito Net on Risk of Malaria?**
+
+**B. What does this imply for what variables should be included as predictor (independent variables) when trying to identify the total effect of Mosquito Net on Risk of Malaria?**
+
+**C. Now change the adjustment set nodes to "adjusted" nodes (like in Part D of Q1). After you have completed this, copy and paste your DAG R Code in the chunk below. Be sure to change the chunk parameter from `eval=FALSE` to `eval=TRUE` to ensure the code chunk runs.**
+
+```{r eval=FALSE}
+g <- dagitty::dagitty('
+# insert your dagitty copy/paste code here                      
+')
+ggdag::ggdag_status(g, text = FALSE, use_labels = "name") +
+  guides(color = "none") +  # Turn off legend
+  theme_dag()
+```
+
+**D. With your new DAG, use `dagitty`'s `adjustment_set()` function on your DAG to identify. Confirm that you have the same adjustment set as you found on dagitty.net for Part A.**
+
+```{r eval=FALSE, include=FALSE}
+# insert code here
+```
+
+**E. Run `dagitty`'s `ggdag_adjustment_set()` function on the `g` object to get a better graph of the DAG with nodes. Add in these three parameters to your function: `shadow = TRUE`, `use_labels = "label"`, `text = FALSE`.**
+
+## Lecture 6 Examples
+
+In this lab example, we'll review examples from [Lecture 6](https://www.youtube.com/watch?v=NSuTaeW6Orc).
+
+### Grandparent and Parent Effect on Child's Education
+
+Let's start first with this DAG example used in Lecture 6.
+
+```{r echo=FALSE, out.width = '50%'}
+# run this chunk to view the image
+knitr::include_graphics("https://raw.githubusercontent.com/wesslen/dsba6010-spring2022/master/static/img/example/06-class.png")
+```
+
+```{r}
+library(rethinking)
+
+N <- 200 # num grandparent-parent-child triads
+b_GP <- 1 # direct effect of G on P
+b_GC <- 0 # direct effect of G on C
+b_PC <- 1 # direct effect of P on C
+b_U <- 2 #direct effect of U on P and C
+
+set.seed(1)
+# generative model
+U <- 2*rbern( N , 0.5 ) - 1
+G <- rnorm( N )
+P <- rnorm( N , b_GP*G + b_U*U )
+C <- rnorm( N , b_PC*P + b_GC*G + b_U*U )
+d <- data.frame( C=C , P=P , G=G , U=U )
+
+m6.11 <- quap(
+ alist(
+ C ~ dnorm( mu , sigma ),
+ mu <- a + b_PC*P + b_GC*G,
+ a ~ dnorm( 0 , 1 ),
+ c(b_PC,b_GC) ~ dnorm( 0 , 1 ),
+ sigma ~ dexp( 1 )
+ ), data=d )
+
+coeftab_plot(coeftab(m6.11), pars = c("b_PC","b_GC"))
+text(x = b_PC, y = 4, "+", col="red", cex = 2)  # b_PC
+text(x = b_GC, y = 1, "+", col="red", cex = 2)  # b_GC
+```
+
+### Example 
+
+Let's assume this DAG.
+
+```{r echo=FALSE, out.width = '50%'}
+# run this chunk to view the image
+knitr::include_graphics("https://raw.githubusercontent.com/wesslen/dsba6010-spring2022/master/static/img/example/06-class-01.png")
+```
+
+### Example 1
+
+Let's assume this DAG weights:
+
+```{r echo=FALSE, out.width = '50%'}
+# run this chunk to view the image
+knitr::include_graphics("https://raw.githubusercontent.com/wesslen/dsba6010-spring2022/master/static/img/example/06-class-02.png")
+```
+
+```{r}
+f <- function(n=100,bXZ=1,bZY=1){
+  X <- rnorm(n)
+  u <- rnorm(n)
+  Z <- rnorm(n, bXZ*X + u)
+  Y <- rnorm(n, bZY*Z + u)
+  bX <- coef( lm(Y ~ X) )['X']
+  bXZ <- coef( lm(Y ~ X + Z) )['X']
+  return( c(bX,bXZ) )
+}
+
+sim <- mcreplicate( 1e4, f(), mc.cores=4)
+
+dens( sim[1,] , lwd=3, xlab="posterior mean", xlim=c(-1,2), ylim=c(0,3) )
+dens( sim[2,] , lwd=3, col=2, add=TRUE)
+text(x = 0, y = 2.5, "wrong (`Y ~ X + Z`)", col=2, cex = 1) 
+text(x = 1, y = 1.9, "correct (`Y ~ X`)", col=1, cex = 1) 
+```
+
+
+### Example 2
+
+```{r echo=FALSE, out.width = '50%'}
+# run this chunk to view the image
+knitr::include_graphics("https://raw.githubusercontent.com/wesslen/dsba6010-spring2022/master/static/img/example/06-class-03.png")
+```
+
+```{r}
+f <- function(n=100,bXZ=1,bZY=1){
+  X <- rnorm(n)
+  u <- rnorm(n)
+  Z <- rnorm(n, bXZ*X + u)
+  Y <- rnorm(n, bZY*Z + u)
+  bX <- coef( lm(Y ~ X) )['X']
+  bXZ <- coef( lm(Y ~ X + Z) )['X']
+  return( c(bX,bXZ) )
+}
+
+sim <- mcreplicate( 1e4, f(bZY=0), mc.cores=4)
+
+dens( sim[1,] , lwd=3, xlab="posterior mean", xlim=c(-1,2), ylim=c(0,3) )
+dens( sim[2,] , lwd=3, col=2, add=TRUE)
+text(x = -.6, y = 2.8, "wrong (`Y ~ X + Z`)", col=2, cex = 1) 
+text(x = .5, y = 1.9, "correct (`Y ~ X`)", col=1, cex = 1) 
+```
+
+### Example 3
+
+```{r echo=FALSE, out.width = '50%'}
+# run this chunk to view the image
+knitr::include_graphics("https://raw.githubusercontent.com/wesslen/dsba6010-spring2022/master/static/img/example/06-class-04.png")
+```
+
+```{r}
+f <- function(n=100,bXY=1,bYZ=1) {
+ X <- rnorm(n)
+ Y <- rnorm(n, bXY*X )
+ Z <- rnorm(n, bYZ*Y )
+ bX <- coef( lm(Y ~ X) )['X']
+ bXZ <- coef( lm(Y ~ X + Z) )['X']
+ return( c(bX,bXZ) )
+}
+
+sim <- mcreplicate( 1e4 , f() , mc.cores=4 )
+dens( sim[1,] , lwd=3 , xlab="posterior mean", xlim=c(0,1.5), ylim=c(0,5)  )
+dens( sim[2,] , lwd=3 , col=2 , add=TRUE )
+```
+
+
+### Example 4
+
+```{r echo=FALSE, out.width = '30%'}
+# run this chunk to view the image
+knitr::include_graphics("https://raw.githubusercontent.com/wesslen/dsba6010-spring2022/master/static/img/example/06-class-05.png")
+```
+
+```{r}
+ f <- function(n=100,bZX=1,bXY=1) {
+ Z <- rnorm(n)
+ X <- rnorm(n, bZX*Z )
+ Y <- rnorm(n, bXY*X )
+ bX <- coef( lm(Y ~ X) )['X']
+ bXZ <- coef( lm(Y ~ X + Z) )['X']
+ return( c(bX,bXZ) )
+}
+sim <- mcreplicate( 1e4 , f(n=50) , mc.cores=4 )
+dens( sim[1,] , lwd=3 , xlab="posterior mean" )
+dens( sim[2,] , lwd=3 , col=2 , add=TRUE )
+text(x = 1.3, y = 1.4, "wrong (`Y ~ X + Z`)", col=2, cex = 1) 
+text(x = 1.2, y = 3, "correct (`Y ~ X`)", col=1, cex = 1) 
+```
+
+### Example 5
+
+```{r echo=FALSE, out.width = '30%'}
+# run this chunk to view the image
+knitr::include_graphics("https://raw.githubusercontent.com/wesslen/dsba6010-spring2022/master/static/img/example/06-class-06.png")
+```
+
+```{r}
+f <- function(n=100,bZX=1,bXY=1) {
+ Z <- rnorm(n)
+ u <- rnorm(n)
+ X <- rnorm(n, bZX*Z + u )
+ Y <- rnorm(n, bXY*X + u )
+ bX <- coef( lm(Y ~ X) )['X']
+ bXZ <- coef( lm(Y ~ X + Z) )['X']
+ return( c(bX,bXZ) )
+}
+sim <- mcreplicate( 1e4 , f(bXY=0) , mc.cores=8 )
+dens( sim[1,] , lwd=3 , xlab="posterior mean" )
+dens( sim[2,] , lwd=3 , col=2 , add=TRUE )
+```
+
+
+## Package versions
+
+```{r}
+sessionInfo()
+```

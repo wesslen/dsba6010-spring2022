@@ -76,6 +76,7 @@ lessons:
     content: "06-spurious-correlations"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/331404"
     assignment: "04-problem-set"
+    lab: "06-class"
     bg: 2
     bottomborder: True
     
@@ -86,7 +87,7 @@ lessons:
     date_end: "Mar 6"
     content: "07-model-comparison"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/331405"
-    ##assignment: "01-problem-set"
+    ##assignment: "05-problem-set"
     bg: 1
     bottomborder: True  
     
