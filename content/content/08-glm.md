@@ -19,8 +19,6 @@ weight: 8
 
 ## Required Readings
 
-{{< icon name="book" pack="fas" >}} Chapter 9: Markov Chain Monte Carlo
-
 {{< icon name="book" pack="fas" >}} Chapter 10: Big Entropy and the Generalized Linear Model
 
 {{< icon name="book" pack="fas" >}} Chapter 11: God Spiked the Integers
