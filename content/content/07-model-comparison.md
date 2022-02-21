@@ -19,10 +19,13 @@ weight: 7
 
 ## Required Readings
 
-{{< icon name="book" pack="fas" >}} Chapter 7: Ulysses' Compass
+{{< icon name="book" pack="fas" >}} Chapter 7: Ulysses' Compass 
+
+{{< icon name="book" pack="fas" >}} Chapter 9: Markov Chain Monte Carlo
+
+## Optional Readings
 
 {{< icon name="book" pack="fas" >}} Chapter 8: Conditional Manatees
-
 
 <!--more-->
 
