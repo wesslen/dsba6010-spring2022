@@ -265,6 +265,8 @@ f <- function(n=100,bXY=1,bYZ=1) {
 sim <- mcreplicate( 1e4 , f() , mc.cores=4 )
 dens( sim[1,] , lwd=3 , xlab="posterior mean", xlim=c(0,1.5), ylim=c(0,5)  )
 dens( sim[2,] , lwd=3 , col=2 , add=TRUE )
+text(x = 0.2, y = 2.8, "wrong (`Y ~ X + Z`)", col=2, cex = 1) 
+text(x = 1.32, y = 1.9, "correct (`Y ~ X`)", col=1, cex = 1) 
 ```
 
 
@@ -311,6 +313,8 @@ f <- function(n=100,bZX=1,bXY=1) {
 sim <- mcreplicate( 1e4 , f(bXY=0) , mc.cores=8 )
 dens( sim[1,] , lwd=3 , xlab="posterior mean" )
 dens( sim[2,] , lwd=3 , col=2 , add=TRUE )
+text(x = 0.5, y = 4.9, "Y ~ X + Z More Biased", col=2, cex = 1) 
+text(x = 0.13, y = 1.5, "Y ~ X Biased", col=1, cex = 1) 
 ```
 
 
