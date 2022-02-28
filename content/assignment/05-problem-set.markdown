@@ -43,7 +43,7 @@ Revisit the marriage, age, and happiness collider bias example from Chapter 6. R
 
 ## Question 2
 
-2.  Reconsider the urban fox analysis from last week’s homework. On the basis of PSIS and WAIC scores, which combination of variables best predicts body weight (W, weight)? How would you interpret the estimates from the best scoring model?
+Reconsider the urban fox analysis from last week’s homework. On the basis of PSIS and WAIC scores, which combination of variables best predicts body weight (W, weight)? How would you interpret the estimates from the best scoring model?
 
 ## Optional Question (Not Graded)
 
