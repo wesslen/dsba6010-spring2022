@@ -1,0 +1,180 @@
+---
+title: Problem Set 4 Solutions
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE, fig.width=5, fig.height=4}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+library(rethinking)
+```
+
+This problem set is due on February 28, 2022 at 11:59am.
+
+
+## Question 1
+
+The first two problems are based on the same data. The data in `data(foxes)` are 116 foxes from 30 different urban groups in England. 
+
+```{r warning=FALSE,message=FALSE}
+library(rethinking)
+data(foxes)
+d<- foxes
+head(d)
+```
+
+These fox groups are like street gangs. Group size (`groupsize`) varies from 2 to 8 individuals. Each group maintains its own (almost exclusive) urban territory. Some territories are larger than others. The `area` variable encodes this information. Some territories also have more `avgfood` than others. And food influences the `weight` of each fox. Assume this DAG:
+
+```{r fig.height=2, fig.width=2, echo=FALSE}
+library(dagitty)
+
+g <- dagitty('dag {
+bb="0,0,1,1"
+A [pos="0.450,0.290"]
+F [exposure,pos="0.333,0.490"]
+G [pos="0.539,0.495"]
+W [outcome,pos="0.445,0.686"]
+A -> F
+F -> G
+F -> W
+G -> W
+}
+
+')
+plot(g)
+```
+
+where F is `avgfood`, G is `groupsize`, A is `area`, and W is `weight`.
+
+**Part 1**: Use the backdoor criterion and estimate the total causal influence of A on F. 
+
+```{r}
+library(rethinking)
+data(foxes)
+d<- foxes
+head(d)
+
+d$W <- standardize(d$weight)
+d$A <- standardize(d$area)
+d$F <- standardize(d$avgfood)
+d$G <- standardize(d$groupsize)
+
+# 1 
+
+m1 <- quap(
+    alist(
+        F ~ dnorm( mu , sigma ),
+        mu <- a + bA*A,
+        a ~ dnorm(0,0.2),
+        bA ~ dnorm(0,0.5),
+        sigma ~ dexp(1)
+    ), data=d )
+```
+
+**Part 2**: What effect would increasing the area of a territory have on the amount of food inside it?
+
+Territory size seems to have a substantial effect on food availability. These are standardized variables, so bA above means that each standard deviation change in area results on average in about 0.9 standard deviations of change in food availability.
+
+## Question 2
+
+Now infer both the **total** and **direct** causal effects of adding food F to a territory on the weight W of foxes. Which covariates do you need to adjust for in each case? In light of your estimates from this problem and the previous one, what do you think is going on with these foxes? Feel free to speculate—all that matters is that you justify your speculation.
+
+To infer the causal influence of `avgfood` on `weight`, we need to close any back-door paths. There are no back-door paths in the DAG. So again, just use a model with a single predictor
+
+Total causal effect:
+
+```{r}
+m1 <- quap(
+    alist(
+        F ~ dnorm( mu , sigma ),
+        mu <- a + bA*A,
+        a ~ dnorm(0,0.2),
+        bA ~ dnorm(0,0.5),
+        sigma ~ dexp(1)
+    ), data=d )
+```
+
+There seems to be only a small total effect of food on weight, if there is any effect at all. It’s about equally plausible that it’s negative as positive, and it’s small either way
+
+For the direct causal effect, we need to block the mediated path through group size G. That means stratify by group size.
+
+```{r}
+m2b <- quap(
+    alist(
+        W ~ dnorm( mu , sigma ),
+        mu <- a + bF*F + bG*G,
+        a ~ dnorm(0,0.2),
+        c(bF,bG) ~ dnorm(0,0.5),
+        sigma ~ dexp(1)
+    ), data=d )
+```
+
+The direct effect of food on weight is positive (0.19–0.76), it seems. That makes sense. This model also gives us the direct effect (also the total effect) of group size on weight. And it is the opposite and of the same magnitude as the direct effect of food. These two effects seem to cancel one another. That may be why the total effect of food is about zero: the direct effect is positive but the mediated effect through groups size is negative.
+
+What is going on here? Larger territories increase available food (problem 1). But increases in food (and territory) do not influence fox weight. The reason seems to be because adding more food directly increases weight, but the path through group size cancels that increase. To check this idea, we can estimate the causal effect of food on groups size: 
+
+```{r}
+m2c <- quap(
+    alist(
+        G ~ dnorm( mu , sigma ),
+        mu <- a + bF*F,
+        a ~ dnorm(0,0.2),
+        bF ~ dnorm(0,0.5),
+        sigma ~ dexp(1)
+    ), data=d )
+```
+
+Food appears to have a large and reliably (0.83–0.96) effect on group size. That is, more food means more foxes. This is consistent with the idea that the mediating influence of group size cancels the direct influence of more food on individual fox body weight. In simple terms, the benefits of more food are canceled by more foxes being attracted to the food, so each fox gets the same amount.
+
+## Question 3
+
+Reconsider the Table 2 Fallacy example (from Lecture 6), this time with an unobserved confound U that influences both smoking S and stroke Y. Here’s the modified DAG:
+
+```{r echo=FALSE, out.width = '50%'}
+# run this chunk to view the image
+knitr::include_graphics("https://raw.githubusercontent.com/wesslen/dsba6010-spring2022/master/static/img/assignments/04-problem-set/04-problem-set-0.png")
+```
+
+**Part 1:** use the backdoor criterion to determine an adjustment set that allows you to estimate the causal effect of X on Y, i.e. P(Y|do(X)). 
+
+For this exercise, you can use [dagitty.net](http://www.dagitty.net/dags.html).
+
+First, input your DAG into Dagitty.net and copy/paste your results here:
+
+```{r}
+# insert code here
+
+g <- dagitty('dag {
+bb="0,0,1,1"
+A [pos="0.318,0.698"]
+S [pos="0.282,0.370"]
+U [latent,pos="0.475,0.248"]
+X [exposure,pos="0.430,0.470"]
+Y [outcome,pos="0.581,0.465"]
+A -> S
+A -> X
+A -> Y
+S -> X
+S -> Y
+U -> S
+U -> Y
+X -> Y
+}')
+```
+
+Next, find what is the adjustment set to estimate the causal effect of X on Y?
+
+```{r}
+dagitty::adjustmentSets(g)
+```
+
+**Part 2:** Explain the proper interpretation of each coefficient implied by the regression model that corresponds to the adjustment set. Which coefficients (slopes) are causal and which are not? There is no need to fit any models. Just think through the implications.
+
+Now the implications for each coefficient. The coefficient for X should still be the estimate of the causal effect of X on Y, P(Y|do(X)). But the other coefficients are now biased by U. When we stratify by S, we open the collider path that S is on: A → S ← U. Now the coefficients for A and S are not even partial causal effects, because both are biased by the collider through U. In effect the unobserved confound makes the control coefficients uninterpretable even as partial causal effects.
+
+The irony here is that is still possible to estimate the casual effect of age A on Y. But in the model that stratifies by S, the coefficient for age becomes confounded. It really is not safe to interpret control coefficients, unless there is an explicit causal model.
+
+## Package versions
+
+```{r}
+sessionInfo()
+```
