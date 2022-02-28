@@ -1,29 +1,10 @@
 ---
 date: "`r Sys.Date()`"
 title: "Class 7"
-menu:
-  example:
-    parent: Labs
-weight: 7
-toc: true
-type: docs
 ---
 
 ```{r setup, include=FALSE, fig.width=5, fig.height=4}
-knitr::opts_chunk$set(echo = TRUE, class.source="language-r", class.output="language-r", message = FALSE, warning = FALSE)
-```
-
-
-```{r echo=FALSE}
-downloadthis::download_file(
-  path = "07-class.Rmd",
-  output_name = "07-class",
-  button_label = "Download this code",
-  button_type = "danger",
-  has_icon = TRUE,
-  icon = "fa fa-save",
-  self_contained = FALSE
-)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 ```
 
 ## In-Class Lab

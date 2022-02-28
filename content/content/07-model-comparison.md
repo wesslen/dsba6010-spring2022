@@ -87,6 +87,10 @@ Due before class: Monday, February 28 at 11:59am
 
 <a href="https://uncc.instructure.com/courses/171000/quizzes/331405"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a>
 
+## Mid-Semester Feedback
+
+<a href="https://forms.gle/uxSzrDYgCYKunhhD6"><i class="fas fa-comment fa-lg"></i>Optional mid-semester course feedback</a>
+
 ## Lab for Class 7
 
 [Lab class 7 code](../../lab/07-class)
