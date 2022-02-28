@@ -1,0 +1,33 @@
+---
+date: "`r Sys.Date()`"
+title: "Class 7"
+menu:
+  example:
+    parent: Labs
+weight: 7
+toc: true
+type: docs
+---
+
+```{r setup, include=FALSE, fig.width=5, fig.height=4}
+knitr::opts_chunk$set(echo = TRUE, class.source="language-r", class.output="language-r", message = FALSE, warning = FALSE)
+```
+
+## In-Class Lab
+
+### Related Course Materials
+
+Book website
+
+* R code examples from the book: [code.txt](http://xcelab.net/rmpubs/sr2/code.txt)
+* brms + tidyverse conversion here
+* PyMC3 code examples: PyMC repository
+* NumPyro!
+* More NumPyro
+* TensorFlow Probability notebooks
+
+## Package versions
+
+```{r}
+sessionInfo()
+```

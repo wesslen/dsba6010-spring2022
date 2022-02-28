@@ -1,0 +1,41 @@
+---
+title: Problem Set 5
+date: "`r Sys.Date()`"
+---
+
+This problem set is due on March 14, 2022 at 11:59am.
+
+- **Name**:
+- **UNCC ID**: 
+- **Other student worked with (optional)**:
+
+You can use MCMC to solve these problems, if you like. But it’s not required.
+
+## Question 1
+
+Revisit the marriage, age, and happiness collider bias example from Chapter 6. Run models `m6.9` and `m6.10` again (pages 178–179). Compare these two models using both PSIS and WAIC. Which model is expected to make better predictions, according to these criteria? On the basis of the causal model, how should you interpret the parameter estimates from the model preferred by PSIS and WAIC?
+
+```{r eval=FALSE, include=FALSE}
+# type in your code here
+
+```
+
+## Question 2
+
+2. Reconsider the urban fox analysis from last week’s homework. On the basis of PSIS and WAIC scores, which combination of variables best predicts body weight (W, weight)? How would you interpret the estimates from the best scoring model?
+
+```{r eval=FALSE, include=FALSE}
+# type in your code here
+
+```
+
+## Optional Question (Not Graded)
+
+Build a predictive model of the relationship show on the cover of the book, the relationship between the timing of cherry blossoms and March temperature in the same year. The data are found in `data(cherry_blossoms)`. Consider at least two functions to predict doy with temp. Compare them with PSIS or WAIC.
+
+Suppose March temperatures reach 9 degrees by the year 2050. What does your best model predict for the predictive distribution of the day-in-year that the cherry trees will blossom?
+
+```{r eval=FALSE, include=FALSE}
+# type in your code here
+
+```
