@@ -1,6 +1,6 @@
 ---
 date: "2021-12-01"
-class_date: "2022-05-02"
+class_date: "2022-04-25"
 menu:
   content:
     parent: Course content
@@ -12,6 +12,10 @@ title: Class 14 - Measurement Error & Missing Data
 type: docs
 weight: 14
 ---
+
+## Zoom
+
+<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i></a>: 12:00pm - 2:45pm, April 25, 2022
 
 {{< icon name="book" pack="fas" >}} Chapter 15: Missing Data and Other Opportunities
 

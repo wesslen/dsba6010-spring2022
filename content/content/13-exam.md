@@ -13,4 +13,4 @@ type: docs
 weight: 13
 ---
 
-In class exam.
+In class exam

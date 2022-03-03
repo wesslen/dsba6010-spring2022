@@ -17,7 +17,7 @@ weight: 8
 
 <a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i></a>: 12:00pm - 2:45pm, March 14, 2022
 
-## Required Readings
+## Readings
 
 {{< icon name="book" pack="fas" >}} Chapter 10: Big Entropy and the Generalized Linear Model
 

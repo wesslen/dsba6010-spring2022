@@ -1,6 +1,6 @@
 ---
 date: "2021-12-01"
-class_date: "2022-04-25"
+class_date: "2022-05-02"
 menu:
   content:
     parent: Course content
@@ -12,6 +12,10 @@ title: Class 15 - Beyond GLMs
 type: docs
 weight: 15
 ---
+
+## Zoom
+
+<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i></a>: 12:00pm - 2:45pm, May 2, 2022
 
 {{< icon name="book" pack="fas" >}} Chapter 16: Generalized Linear Madness
 

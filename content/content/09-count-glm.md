@@ -13,6 +13,12 @@ type: docs
 weight: 9
 ---
 
+## Zoom
+
+<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i></a>: 12:00pm - 2:45pm, March 21, 2022
+
+## Readings
+
 {{< icon name="book" pack="fas" >}} Chapter 11: God Spiked the Integers
 
 {{< icon name="book" pack="fas" >}} Chapter 12: Monsters and Mixtures

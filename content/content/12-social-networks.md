@@ -8,11 +8,14 @@ menu:
 highlight: true
 tags:
 - Computation
-title: Class 12 - Adventures in Covariance
+title: Class 12 - Social Networks
 type: docs
 weight: 12
 ---
 
+## Zoom
+
+<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i></a>: 12:00pm - 2:45pm, April 11, 2022
 
 {{< icon name="book" pack="fas" >}} Chapter 14: Adventures in Covariance
 
