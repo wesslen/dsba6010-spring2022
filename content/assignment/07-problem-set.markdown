@@ -37,7 +37,7 @@ Step 4: Submit your file here [through this canvas link](https://uncc.instructur
 
 ## Question 1
 
-Conduct a prior predictive simulation for the Reedfrog model. By this I mean to simulate the prior distribution of tank survival probabilities `\(\alpha_{j}\)`\].
+Conduct a prior predictive simulation for the Reedfrog model. By this I mean to simulate the prior distribution of tank survival probabilities `\(\alpha_{j}\)`.
 
 Start by using these priors:
 
@@ -51,7 +51,7 @@ Be sure to transform the `\(\alpha_{j}\)` values to the probability scale for pl
 
 How does increasing the width of the prior on σ change the prior distribution of `\(\alpha_{j}\)`?
 
-You might try Exponential(10) and Exponential(0.1) for example.
+You might try `Exponential(10)` and `Exponential(0.1)` for example.
 
 ``` r
 # type in your code here
