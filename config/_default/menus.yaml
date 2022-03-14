@@ -32,10 +32,8 @@ content:
   - name: Course content
     weight: 2
 example:
-  - name: Overview
+  - name: Labs
     weight: 1
-  - name: Examples
-    weight: 2
 assignment:
   - name: Assignments
     weight: 1

@@ -1,10 +1,10 @@
 ---
-title: Code examples
+title: Labs
 menu:
   example:
-    parent: Overview
-    weight: 1
-weight: 1
+    parent: Lab
+    weight: 0
+weight: 0
 type: docs
 ---
   
