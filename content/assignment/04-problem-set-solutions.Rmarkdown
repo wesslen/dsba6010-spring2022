@@ -106,10 +106,10 @@ Total causal effect:
 ```{r}
 m2 <- quap(
     alist(
-        F ~ dnorm( mu , sigma ),
-        mu <- a + bA*A,
+        W ~ dnorm( mu , sigma ),
+        mu <- a + bF*F,
         a ~ dnorm(0,0.2),
-        bA ~ dnorm(0,0.5),
+        bF ~ dnorm(0,0.5),
         sigma ~ dexp(1)
     ), data=d )
 

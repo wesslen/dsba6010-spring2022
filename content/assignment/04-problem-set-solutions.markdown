@@ -88,10 +88,10 @@ precis(m1)
 ```
 
 ``` language-r
-##               mean         sd       5.5%     94.5%
-## a     1.234984e-05 0.04231107 -0.0676089 0.0676336
-## bA    8.764762e-01 0.04332383  0.8072364 0.9457161
-## sigma 4.662574e-01 0.03052443  0.4174734 0.5150413
+##                mean         sd        5.5%      94.5%
+## a     -1.432375e-07 0.04231133 -0.06762181 0.06762153
+## bA     8.764743e-01 0.04332411  0.80723402 0.94571462
+## sigma  4.662604e-01 0.03052492  0.41747567 0.51504511
 ```
 
 **Part 2**: What effect would increasing the area of a territory have on the amount of food inside it?
@@ -109,10 +109,10 @@ Total causal effect:
 ``` r
 m2 <- quap(
     alist(
-        F ~ dnorm( mu , sigma ),
-        mu <- a + bA*A,
+        W ~ dnorm( mu , sigma ),
+        mu <- a + bF*F,
         a ~ dnorm(0,0.2),
-        bA ~ dnorm(0,0.5),
+        bF ~ dnorm(0,0.5),
         sigma ~ dexp(1)
     ), data=d )
 
@@ -120,10 +120,10 @@ precis(m2)
 ```
 
 ``` language-r
-##                mean         sd        5.5%      94.5%
-## a     -1.548647e-06 0.04231008 -0.06762124 0.06761814
-## bA     8.764739e-01 0.04332279  0.80723567 0.94571205
-## sigma  4.662461e-01 0.03052258  0.41746508 0.51502704
+##                mean         sd       5.5%     94.5%
+## a      1.116891e-06 0.08360032 -0.1336083 0.1336106
+## bF    -2.420602e-02 0.09088521 -0.1694581 0.1210461
+## sigma  9.911462e-01 0.06465894  0.8878087 1.0944836
 ```
 
 There seems to be only a small total effect of food on weight, if there is any effect at all. It’s about equally plausible that it’s negative as positive, and it’s small either way
@@ -145,10 +145,10 @@ precis(m2b)
 
 ``` language-r
 ##                mean         sd       5.5%      94.5%
-## a     -7.444201e-08 0.08013800 -0.1280761  0.1280759
-## bF     4.772534e-01 0.17912309  0.1909801  0.7635267
-## bG    -5.735255e-01 0.17914159 -0.8598283 -0.2872226
-## sigma  9.420430e-01 0.06175241  0.8433508  1.0407353
+## a      1.330174e-08 0.08013807 -0.1280761  0.1280761
+## bF     4.772531e-01 0.17912322  0.1909796  0.7635266
+## bG    -5.735257e-01 0.17914172 -0.8598288 -0.2872227
+## sigma  9.420439e-01 0.06175255  0.8433514  1.0407364
 ```
 
 The direct effect of food on weight is positive (0.19–0.76), it seems. That makes sense. This model also gives us the direct effect (also the total effect) of group size on weight. And it is the opposite and of the same magnitude as the direct effect of food. These two effects seem to cancel one another. That may be why the total effect of food is about zero: the direct effect is positive but the mediated effect through groups size is negative.
@@ -169,10 +169,10 @@ precis(m2c)
 ```
 
 ``` language-r
-##               mean         sd        5.5%      94.5%
-## a     5.957141e-09 0.03916853 -0.06259887 0.06259888
-## bF    8.957172e-01 0.03999383  0.83179938 0.95963510
-## sigma 4.301884e-01 0.02816950  0.38516814 0.47520875
+##                mean         sd        5.5%      94.5%
+## a     -8.680653e-09 0.03916832 -0.06259855 0.06259853
+## bF     8.957170e-01 0.03999361  0.83179953 0.95963455
+## sigma  4.301860e-01 0.02816911  0.38516637 0.47520572
 ```
 
 Food appears to have a large and reliably (0.83–0.96) effect on group size. That is, more food means more foxes. This is consistent with the idea that the mediating influence of group size cancels the direct influence of more food on individual fox body weight. In simple terms, the benefits of more food are canceled by more foxes being attracted to the food, so each fox gets the same amount.

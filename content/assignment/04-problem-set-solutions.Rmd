@@ -68,6 +68,8 @@ m1 <- quap(
         bA ~ dnorm(0,0.5),
         sigma ~ dexp(1)
     ), data=d )
+
+precis(m1)
 ```
 
 **Part 2**: What effect would increasing the area of a territory have on the amount of food inside it?
@@ -83,14 +85,16 @@ To infer the causal influence of `avgfood` on `weight`, we need to close any bac
 Total causal effect:
 
 ```{r}
-m1 <- quap(
+m2 <- quap(
     alist(
-        F ~ dnorm( mu , sigma ),
-        mu <- a + bA*A,
+        W ~ dnorm( mu , sigma ),
+        mu <- a + bF*F,
         a ~ dnorm(0,0.2),
-        bA ~ dnorm(0,0.5),
+        bF ~ dnorm(0,0.5),
         sigma ~ dexp(1)
     ), data=d )
+
+precis(m2)
 ```
 
 There seems to be only a small total effect of food on weight, if there is any effect at all. It’s about equally plausible that it’s negative as positive, and it’s small either way
@@ -106,6 +110,8 @@ m2b <- quap(
         c(bF,bG) ~ dnorm(0,0.5),
         sigma ~ dexp(1)
     ), data=d )
+
+precis(m2b)
 ```
 
 The direct effect of food on weight is positive (0.19–0.76), it seems. That makes sense. This model also gives us the direct effect (also the total effect) of group size on weight. And it is the opposite and of the same magnitude as the direct effect of food. These two effects seem to cancel one another. That may be why the total effect of food is about zero: the direct effect is positive but the mediated effect through groups size is negative.
@@ -121,6 +127,8 @@ m2c <- quap(
         bF ~ dnorm(0,0.5),
         sigma ~ dexp(1)
     ), data=d )
+
+precis(m2c)
 ```
 
 Food appears to have a large and reliably (0.83–0.96) effect on group size. That is, more food means more foxes. This is consistent with the idea that the mediating influence of group size cancels the direct influence of more food on individual fox body weight. In simple terms, the benefits of more food are canceled by more foxes being attracted to the food, so each fox gets the same amount.
