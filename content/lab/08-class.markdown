@@ -82,7 +82,9 @@ dat_list <- list(
 We’ll also start with this initial model.
 
 `\(A_{i} \sim Binomial( N_{i},p_{i})\)`
+
 `\(logit(p) = \alpha_{G[i]}\)`
+
 `\(\alpha_{j} \sim Normal(0,1.5)\)`
 
 ### Prior Predictive Simulation

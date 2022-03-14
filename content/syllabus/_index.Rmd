@@ -191,9 +191,9 @@ assignments <- tribble(
   ~Points,   ~Assignment,
   50,    "Participation",
   180,   "Lecture quizzes (9 * 20pt)",
-  320,    "Problem sets (8 * 40pt)",
+  240,    "Problem sets (6 * 40pt)",
   200,       "Exam",
-  250,       "Final Project"
+  330,       "Final Project"
 ) %>%
   mutate(Percent = Points / sum(Points),
          Percent = scales::percent(Percent))
