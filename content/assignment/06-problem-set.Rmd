@@ -1,12 +1,6 @@
 ---
 title: Problem Set 6
 date: "`r Sys.Date()`"
-menu:
-  assignment:
-    parent: Problem sets
-    weight: 6
-type: docs
-toc: true
 ---
 
 This problem set is **optional** and not necessary to be submitted. We will try to work on it in class on March 14.
