@@ -1,0 +1,86 @@
+---
+title: Problem Set 7
+date: "`r Sys.Date()`"
+menu:
+  assignment:
+    parent: Problem sets
+    weight: 7
+type: docs
+toc: true
+---
+
+```{r setup, include=FALSE, fig.width=5, fig.height=4}
+knitr::opts_chunk$set(echo = TRUE, class.source="language-r", class.output="language-r", message = FALSE, warning = FALSE)
+xaringanExtra::use_clipboard()
+```
+
+This problem set is due on April 4, 2022 at 11:59am.
+
+Step 1: Download this file locally.
+```{r echo=FALSE}
+# remove this chunk for your submission
+downloadthis::download_file(
+  path = "07-problem-set.Rmd",
+  output_name = "07-problem-set",
+  button_label = "Download this file",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
+Step 2: Complete the assignment
+
+Step 3: Knit the assignment as either an html or pdf file.
+
+Step 4: Submit your file here [through this canvas link](https://uncc.instructure.com/courses/171000/assignments/1467898).
+
+-----------------
+
+- **Name**:
+- **UNCC ID**: 
+- **Other student worked with (optional)**:
+
+## Question 1
+
+Conduct a prior predictive simulation for the Reedfrog model. By this I mean to simulate the prior distribution of tank survival probabilities $\alpha_{j}$]. 
+
+Start by using these priors:
+
+$\alpha_{j} \sim Normal(\bar{\alpha},\sigma)$
+
+$\bar{\alpha} \sim Normal(0, 1)$
+
+$\sigma \sim Exponential(1)$
+
+Be sure to transform the $\alpha_{j}$ values to the probability scale for plotting and summary.
+
+How does increasing the width of the prior on σ change the prior distribution of $\alpha_{j}$?
+
+You might try Exponential(10) and Exponential(0.1) for example.
+
+```{r}
+# type in your code here
+
+```
+
+## Question 2
+
+Revisit the Reedfrog survival data, `data(reedfrogs)`. Start with the varying effects model from the book and lecture. Then modify it to estimate the causal effects of the treatment variables pred and size, including how size might modify the effect of predation. An easy approach is to estimate an effect for each combination of pred and size. Justify your model with a DAG of this experiment.
+
+```{r}
+# type in your code here
+
+```
+
+## Question 3
+
+Now estimate the causal effect of density on survival. Consider whether pred modifies the effect of density. There are several good ways to include density in your Binomial GLM. You could treat it as a continuous regression variable (possibly standardized). Or you could convert it to an ordered category (with three levels). 
+
+Compare the $\sigma$ (tank standard deviation) posterior distribution to $\sigma$ from your model in Problem 2. How are they different? Why?
+
+```{r}
+# type in your code here
+
+```
