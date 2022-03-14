@@ -1,0 +1,43 @@
+---
+title: Problem Set 6
+date: "`r Sys.Date()`"
+menu:
+  assignment:
+    parent: Problem sets
+    weight: 6
+type: docs
+toc: true
+---
+
+This problem set is **optional** and not necessary to be submitted. We will try to work on it in class on March 14.
+
+## Question 1
+
+The data in `data(NWOGrants)` are outcomes for scientific funding applications for the Netherlands Organization for Scientific Research (NWO) from 2010-2012. These data have a very similar structure to the UCBAdmit data discussed in Chapter 11. 
+
+Draw a DAG and estimate the **TOTAL** causal effect of gender on grant awards. 
+
+Be sure to check convergence stats (`traceplot()`, `trankplot()` and Rhat)
+
+```{r}
+# type in your code here
+
+```
+
+## Question 2
+
+Now estimate the **DIRECT** causal effect of gender on grant awards. Compare the average direct causal effect of gender, weighting each discipline in proportion to the number of applications in the sample. Refer to the marginal effect example in Lecture 9 for help.
+
+```{r}
+# type in your code here
+
+```
+
+## Question 3
+
+Considering the total effect (problem 1) and direct effect (problem 2) of gender, what causes contribute to the average difference between women and men in award rate in this sample? It is not necessary to say whether or not there is evidence of discrimination. Simply explain how the direct effects you have estimated make sense (or not) of the total effect.
+
+```{r}
+# type in your code here
+
+```
