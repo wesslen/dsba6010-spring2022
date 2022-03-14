@@ -46,7 +46,7 @@ Students will be expected to [submit onto canvas](https://uncc.instructure.com/c
 
 1. A reproducible notebook (e.g., RMarkdown, Jupyter, etc.) of their data analysis. Students are able to break the project into multiple notebooks for organization purposes. Ideally, this could also be a zipped folder that includes the entire contents of the project (e.g., data + code).
 
-2. Present on the final day of class a 7 minute presentation + 2-3 min question and answers. Presentation can either be your notebook or a new presentation.
+2. Present on the final day of class (May 9) a 7 minute presentation + 2-3 min question and answers.
 
 Students may use additional communication packages like `shiny`, `streamlit`, `quarto`, and `Rmarkdown`. Students that use those tools successfully will receive very high grades although they are not required. 
 
@@ -115,11 +115,11 @@ You will be graded on six dimensions. Final projects are worth 250 points.
 
 ### 1. Creativity: 40 points 
 
-* **Excellent (21-25 points):** Project is a creative and important issue that may have many applications beyond what was explored. Student provided great background on the motivation of the problem.
+* **Excellent (34-40 points):** Project is a creative and important issue that may have many applications beyond what was explored. Student provided great background on the motivation of the problem.
 
-* **Good (16-20 points):** Project was an acceptable objective but questions still remain. Likely student tried to analyze too large of a dataset or too broad of a topic.
+* **Good (26-33 points):** Project was an acceptable objective but questions still remain. Likely student tried to analyze too large of a dataset or too broad of a topic.
 
-* **Unsatisfactory (<= 15 points):** The project's objective was not clear or completely identical to a past notebook (e.g., exact same data was changed).
+* **Unsatisfactory (< 25 points):** The project's objective was not clear or completely identical to a past notebook (e.g., exact same data was changed).
 
 ### 2. Number of analysis tasks: 50 points
 
