@@ -106,18 +106,18 @@ lessons:
     date_end: "Mar 20"
     content: "08-glm"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/331406"
-    ##assignment: "01-problem-set"
+    assignment: "06-problem-set"
     bg: 2
     bottomborder: True 
     
-  - title: '<span class="content-title">God Spiked the Integers</span>'
+  - title: '<span class="content-title">Count GLMs</span>'
     session: "Class 9"
     date: "Mar 21"
     date_start: "Mar 21"
     date_end: "Mar 27"
     content: "09-count-glm"
-    ##quiz: "01-lesson-quiz"
-    ##assignment: "01-problem-set"
+    quiz: "https://uncc.instructure.com/courses/171000/quizzes/356126"
+    ##assignment: "07-problem-set"
     bg: 1
     bottomborder: True 
     
@@ -141,8 +141,8 @@ lessons:
     date_start: "Apr 4"
     date_end: "Apr 10"
     content: "11-multilevel"
-    ##quiz: "01-lesson-quiz"
-    ##assignment: "01-problem-set"
+    quiz: "https://uncc.instructure.com/courses/171000/quizzes/356153"
+    ##assignment: "08-problem-set"
     bg: 1
     bottomborder: True 
     
@@ -152,7 +152,7 @@ lessons:
     date_start: "Apr 11"
     date_end: "Apr 17"
     content: "12-social-networks"
-    ##quiz: "01-lesson-quiz"
+    quiz: "https://uncc.instructure.com/courses/171000/quizzes/356157"
     ##assignment: "01-problem-set"
     bg: 2
     bottomborder: True 
@@ -174,7 +174,7 @@ lessons:
     date_start: "Apr 25"
     date_end: "May 1"
     content: "14-missing"
-    ##quiz: "01-lesson-quiz"
+    quiz: "https://uncc.instructure.com/courses/171000/quizzes/356158"
     ##assignment: "01-problem-set"
     bg: 1
     bottomborder: True 
@@ -185,7 +185,7 @@ lessons:
     date_start: "May 2"
     date_end: "May 8"
     content: "15-beyond-glm"
-    ##quiz: "01-lesson-quiz"
+    quiz: "https://uncc.instructure.com/courses/171000/quizzes/356159"
     ##assignment: "01-problem-set"
     bg: 2
     bottomborder: True 
