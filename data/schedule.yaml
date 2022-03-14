@@ -105,6 +105,7 @@ lessons:
     date_start: "Mar 14"
     date_end: "Mar 20"
     content: "08-glm"
+    lab: "08-class"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/331406"
     assignment: "06-problem-set"
     bg: 2

@@ -1,0 +1,220 @@
+---
+title: Problem Set 6
+date: "`r Sys.Date()`"
+---
+
+## Question 1
+
+The data in `data(NWOGrants)` are outcomes for scientific funding applications for the Netherlands Organization for Scientific Research (NWO) from 2010-2012. These data have a very similar structure to the UCBAdmit data discussed in Chapter 11. Draw a DAG for this sample and then use one or more binomial GLMs to estimate the **TOTAL** causal effect of gender on grant awards.
+
+```{r}
+library(rethinking)
+data(NWOGrants)
+d <- NWOGrants
+
+head(d)
+```
+Let's plot the DAG. 
+
+```{r}
+library(dagitty)
+
+g <- dagitty('dag {
+bb="0,0,1,1"
+G [pos="0.251,0.481"]
+D [pos="0.251,0.352"]
+A [pos="0.481,0.352"]
+G -> D
+G -> A
+D -> A
+}
+')
+plot(g)
+```
+
+Since Department is a mediator, we would **not** condition by it to find the total causal effect of gender on awards.
+
+```{r}
+dat <- list(
+    A = as.integer(d$awards),
+    N = as.integer(d$applications),
+    G = ifelse( d$gender=="f" , 1L , 2L ) ,
+    D = as.integer(d$discipline) 
+)
+
+m1 <- ulam(
+  alist(
+    A ~ dbinom( N, p ) ,
+    logit(p) <- a[G] ,
+    a[G] ~ dnorm(0, 1.5)
+  ) , data = dat, chains = 4
+)
+
+precis(m1, depth = 2)
+```
+
+Before looking at the contrasts (causal effect), we'll look at convergence statistics. The Rhat's are 1 which are good. Let's also look at the trace and trank plots.
+
+```{r}
+traceplot(m1)
+```
+
+```{r}
+trankplot(m1)
+```
+
+Therefore, our model has appropriate convergence statistics.
+
+We'll need to calculate the **contrasts** to make a determination of the total causal effect of gender on awards.
+
+```{r}
+post1 <- extract.samples(m1)
+post1$pGf <- inv_logit(post1$a[,1])
+post1$pGm <- inv_logit(post1$a[,2])
+post1$G_contrast <- post1$pGf - post1$pGm
+
+dens( post1$G_contrast, lwd=4, col=2, xlab="F-M contrast (total)")
+abline( v=0, lty=3)
+```
+
+We find about a 3% difference on average for men over women. This could be significant.
+
+We can also do a posterior predictive (validation) check on each of the 18 individuals.
+
+```{r}
+postcheck(m1)
+```
+
+For each individual, the model fits okay but not great. 
+
+### Alternative approach
+
+You may also use the `brms` package for this model along with `tidyverse` based packages.
+
+```{r}
+library(brms)
+
+m1_brms <- brm(awards | trials(applications) ~ gender, family = binomial("logit"), prior = set_prior("normal(0,1.5)", class = "b"), data = d, chains = 4)
+
+summary(m1_brms)
+```
+
+
+```{r}
+library(tidybayes)
+library(magrittr) # for %>%
+library(dplyr)
+
+posterior_draws <- m1_brms %>%
+  spread_draws(b_genderm,b_Intercept) %>% # sample/draw posteriors
+  mutate(b_M = b_Intercept + b_genderm) %>% # due to dummy variables
+  mutate(Contrast = inv_logit(b_Intercept) - inv_logit(b_M))
+
+ggplot(posterior_draws, aes(x = Contrast)) +
+  geom_density() +
+  labs(x = "F-M contrast (total)")
+```
+
+We can check that the posterior contrasts from both approaches are similar.
+
+```{r}
+mean(post1$G_contrast)
+```
+
+```{r}
+mean(posterior_draws$Contrast)
+```
+
+One nice thing about using `brms` is there are many other helpful packages. For example, we can easily calculate posterior predictive checks:
+
+```{r}
+bayesplot::pp_check(m1_brms)
+```
+
+## Question 2
+
+Now estimate the **DIRECT** causal effect of gender on grant awards. Compare the average direct causal effect of gender, weighting each discipline in proportion to the number of applications in the sample. Refer to the marginal effect example in Lecture 9 for help.
+
+```{r}
+m2 <- ulam(
+  alist(
+    A ~ dbinom( N, p ) ,
+    logit(p) <- a[G,D],
+    matrix[G,D]:a ~ normal(0, 1.5)
+  ) , data = dat, chains = 4
+)
+
+# fyi: an identical way to specify priors in ulam
+# we use above as easier for post-modeling calculations
+# logit(p) <- a[G] + delta[D] ,
+# a[G] ~ dnorm(0, 1.5) ,
+# delta[D] ~ dnorm(0, 1.5)
+```
+
+```{r}
+precis(m2, depth = 2)
+```
+
+Let's calculate the contrast for gender.
+
+```{r}
+total_apps <- sum(dat$N)
+apps_per_disc <- sapply( 1:9 , function(i) sum(dat$N[dat$D==i]) )
+
+pG1 <- link(m2,data=list(
+    D=rep(1:9,times=apps_per_disc),
+    N=rep(1,total_apps),
+    G=rep(1,total_apps)))
+
+pG2 <- link(m2,data=list(
+    D=rep(1:9,times=apps_per_disc),
+    N=rep(1,total_apps),
+    G=rep(2,total_apps)))
+
+dens( pG1 - pG2 , lwd=4 , col=2 , xlab="F-M contrast (marginal)" , xlim=c(-0.3,0.3) )
+abline( v=0 , lty=3 )
+```
+
+
+```{r}
+plot( NULL , xlim=c(-0.4,0.4) , ylim=c(0,18) , xlab="F-M contrast for each discipline" , ylab="Density" )
+abline( v=0 , lty=3 )
+dat$disc <- as.character(d$discipline)
+disc <- dat$disc[order(dat$D)]
+for ( i in 1:9 ) {
+    pG1Di <- link(m2,data=list(D=i,N=1,G=1))
+    pG2Di <- link(m2,data=list(D=i,N=1,G=2))
+    Gcont <- pG1Di - pG2Di
+    dens( Gcont , add=TRUE , lwd=3 , col=i )
+    xloc <- ifelse( mean(Gcont) < 0 , -0.35 , 0.35 )
+    xpos <- ifelse( mean(Gcont) < 0 , 4 , 2 )
+    text( xloc + 0.5*mean(Gcont) , 18-i , disc[2*i] , col=i , pos=xpos , font=2 )
+}
+```
+
+## Question 3
+
+Considering the total effect (problem 1) and direct effect (problem 2) of gender, what causes contribute to the average difference between women and men in award rate in this sample? It is not necessary to say whether or not there is evidence of discrimination. Simply explain how the direct effects you have estimated make sense (or not) of the total effect.
+
+```{r}
+total_f <- sum(d$applications[d$gender=="f"])
+pDf <- d$applications[d$gender=="f"] / total_f
+
+total_m <- sum(d$applications[d$gender=="m"])
+pDm <- d$applications[d$gender=="m"] / total_m
+
+# overall award rate in each discipline
+n_apps <- xtabs( dat$N ~ dat$D )
+n_awards <- xtabs( dat$A ~ dat$D )
+p_award <- n_awards / n_apps
+
+# f/m award rate in each discipline
+post2 <- extract.samples(m2)
+pF <- apply( inv_logit(post2$a[,1,]) , 2 , mean )
+pM <- apply( inv_logit(post2$a[,2,]) , 2 , mean )
+
+plot( pDf , pDm , lwd=3 , col=ifelse(pDf>pDm,2,4) , pch=ifelse(pF>pM,"F","M") )
+abline(a=0,b=1, lty=3)
+
+identify( pDf , pDm , round(p_award,2) )
+```

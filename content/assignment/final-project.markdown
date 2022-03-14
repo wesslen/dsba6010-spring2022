@@ -78,7 +78,7 @@ In addition, next class you will work in small groups (2-3 students) and share y
 
 ### Project Check in 3
 
-Due Date: 11:59AM on Monday, March 24
+Due Date: 11:59AM on Monday, April 11
 
 [Project Check In 3 Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1503271)
 
