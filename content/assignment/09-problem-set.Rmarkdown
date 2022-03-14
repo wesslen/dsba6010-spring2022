@@ -1,0 +1,75 @@
+---
+title: Problem Set 9
+date: "`r Sys.Date()`"
+menu:
+  assignment:
+    parent: Problem sets
+    weight: 9
+type: docs
+toc: true
+---
+
+```{r setup, include=FALSE, fig.width=5, fig.height=4}
+knitr::opts_chunk$set(echo = TRUE, class.source="language-r", class.output="language-r", message = FALSE, warning = FALSE)
+xaringanExtra::use_clipboard()
+```
+
+This problem set is due on May 2, 2022 at 11:59am.
+
+Step 1: Download this file locally.
+```{r echo=FALSE}
+# remove this chunk for your submission
+downloadthis::download_file(
+  path = "09-problem-set.Rmd",
+  output_name = "09-problem-set",
+  button_label = "Download this file",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
+Step 2: Complete the assignment
+
+Step 3: Knit the assignment as either an html or pdf file.
+
+Step 4: Submit your file here [through this canvas link](https://uncc.instructure.com/courses/171000/assignments/1467904).
+
+-----------------
+
+- **Name**:
+- **UNCC ID**: 
+- **Other student worked with (optional)**:
+
+The data in `data(Achehunting)` are 14,364 individual hunting trips by 147 men among the indigenous Aché of Paraguay. Each trip has recorded the hunter’s identity (anonymized id), hunter’s age at the time of the trip, the duration in hours of the trip, and the kilograms of meat returned. Many of the trips have missing values for duration.
+
+## Question 1
+
+In this first problem, estimate the influence of age on the probability of trip success. Define “success” as a trip that returns any non-zero amount of meat. Ignore individual hunter identities for now. You can use any functional relationship for age and success that you think is sensible, but be sure to justify it and check it against posterior predictions.
+
+```{r}
+# type in your code here
+
+```
+
+## Question 2
+
+Now incorporate individual hunter varying effects into your analysis from the previous problem. Allow the influence of age on success to vary by each individual.
+
+How much variation in success is explained by individuals and how much by age?
+
+```{r}
+# type in your code here
+
+```
+
+## Question 3
+
+Now include trip duration in the model from the previous problem. The focus is still the causal relationship between age and success, but duration is a potential competing cause or a mediator, so it is useful to include it. Since there are many missing values for trip duration, compare (1) a complete case analysis, which drops all the trips with missing durations, to (2) an analysis which uses all 14,364 trips and imputes missing duration values where necessary. Use any functional relationship
+between duration and success that you think is sensible, but be sure to justify it and check it against posterior predictions
+
+```{r}
+# type in your code here
+
+```

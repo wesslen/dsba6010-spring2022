@@ -117,7 +117,7 @@ lessons:
     date_end: "Mar 27"
     content: "09-count-glm"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/356126"
-    ##assignment: "07-problem-set"
+    assignment: "07-problem-set"
     bg: 1
     bottomborder: True 
     
@@ -142,7 +142,7 @@ lessons:
     date_end: "Apr 10"
     content: "11-multilevel"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/356153"
-    ##assignment: "08-problem-set"
+    assignment: "08-problem-set"
     bg: 1
     bottomborder: True 
     
@@ -175,7 +175,7 @@ lessons:
     date_end: "May 1"
     content: "14-missing"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/356158"
-    ##assignment: "01-problem-set"
+    assignment: "09-problem-set"
     bg: 1
     bottomborder: True 
     
