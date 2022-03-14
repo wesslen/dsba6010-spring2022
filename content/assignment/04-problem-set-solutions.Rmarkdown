@@ -87,6 +87,8 @@ m1 <- quap(
         bA ~ dnorm(0,0.5),
         sigma ~ dexp(1)
     ), data=d )
+
+precis(m1)
 ```
 
 **Part 2**: What effect would increasing the area of a territory have on the amount of food inside it?

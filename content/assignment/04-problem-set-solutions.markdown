@@ -1,6 +1,6 @@
 ---
 title: Problem Set 4 Solutions
-date: "2022-02-14"
+date: "2022-03-14"
 menu:
   assignment:
     parent: Problem sets
@@ -51,6 +51,23 @@ where F is `avgfood`, G is `groupsize`, A is `area`, and W is `weight`.
 **Part 1**: Use the backdoor criterion and estimate the total causal influence of A on F.
 
 ``` r
+library(rethinking)
+data(foxes)
+d<- foxes
+head(d)
+```
+
+``` language-r
+##   group avgfood groupsize area weight
+## 1     1    0.37         2 1.09   5.02
+## 2     1    0.37         2 1.09   2.84
+## 3     2    0.53         2 2.05   5.33
+## 4     2    0.53         2 2.05   6.07
+## 5     3    0.49         2 2.12   5.85
+## 6     3    0.49         2 2.12   3.25
+```
+
+``` r
 d$W <- standardize(d$weight)
 d$A <- standardize(d$area)
 d$F <- standardize(d$avgfood)
@@ -66,6 +83,15 @@ m1 <- quap(
         bA ~ dnorm(0,0.5),
         sigma ~ dexp(1)
     ), data=d )
+
+precis(m1)
+```
+
+``` language-r
+##               mean         sd        5.5%      94.5%
+## a     4.770480e-08 0.04231145 -0.06762182 0.06762191
+## bA    8.764764e-01 0.04332423  0.80723588 0.94571687
+## sigma 4.662618e-01 0.03052515  0.41747669 0.51504686
 ```
 
 **Part 2**: What effect would increasing the area of a territory have on the amount of food inside it?
