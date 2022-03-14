@@ -1,0 +1,181 @@
+---
+date: "`r Sys.Date()`"
+title: "Class 8"
+---
+
+```{r setup, include=FALSE, fig.width=5, fig.height=4}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+## In-Class Lab
+
+### Rethinking: Section 11.1.4
+
+We'll review the UCBadmit examples covered in Lecture 9.
+
+```{r}
+library(rethinking)
+data(UCBadmit)
+d <- UCBadmit
+d
+```
+
+It's important to realize this data is on the **aggregated** level, not individual level. Because of this, we'll use the (aggregated) Binomial model instead of a logistic model.
+
+### Initial Model
+
+Let's first plot our DAG.
+
+```{r fig.width=3,fig.height=3}
+library(dagitty)
+
+g <- dagitty('dag {
+bb="0,0,1,1"
+G [pos="0.251,0.481"]
+D [pos="0.251,0.352"]
+A [pos="0.481,0.352"]
+G -> D
+G -> A
+D -> A
+}
+')
+plot(g)
+```
+
+Since Department is a mediator, we would **not** condition by it to find the total causal effect of gender on admission.
+
+For our model, we'll need to create our dataset.
+
+```{r}
+dat_list <- list(
+  A = as.integer(d$admit), # this variable is Admit in the book
+  N = as.integer(d$applications), # this variable is applications in the book
+  G = ifelse( d$applicant.gender=="male", 1L, 2L) # this is gid in book
+)
+```
+
+We'll also start with this initial model.
+
+$A_{i} \sim Binomial( N_{i},p_{i})$
+$logit(p) = \alpha_{G[i]}$
+$\alpha_{j} \sim Normal(0,1.5)$
+
+### Prior Predictive Simulation
+
+For this prior predictive simulation, we'll use the `extract.priors()` function. To do this, we need to specify our model. Technically we'll run the model but not analyse the model until the next step.
+
+```{r}
+m11.7 <- ulam(
+  alist(
+    A ~ dbinom( N , p ) ,
+    logit(p) <- a[G] ,
+    a[G] ~ dnorm( 0 , 1.5 )
+  ) , data = dat_list, chains = 4
+)
+```
+
+```{r}
+set.seed(1999)
+
+prior <- extract.prior(m11.7, n=1e4)
+```
+
+Now we'll run the prior predictive simulation.
+
+```{r}
+# prior for females
+pF <- inv_logit( prior$a[,1])
+dens(pF, adj=0.1, xlab="Prior Female Admission Rates")
+```
+
+```{r}
+# prior for males
+pM <- inv_logit( prior$a[,2])
+dens(pM, adj=0.1, xlab="Prior Male Admission Rates")
+```
+
+These posteriors makes sense as we'd expect the application rates to be somewhere between 0.1 - 0.9. But this is only the probability for Females and Males individually (let alone they're identical), but not their contrasts. We can also calculate priors for the gender causal effect.
+
+```{r}
+dens(abs( pF - pM), adj = 0.1)
+```
+
+These are what we'd expect. If you're not sure why, make sure to go through section 11.1 in the book where Richard discusses implications for the prior in Binomial regressions, especially where too wide of prior sigma's can have a bad effect on the priors. Alternatively, change the model above to a wider prior for the alpha and see what happens.
+
+### Analyze the Model
+
+```{r}
+m11.7 <- ulam(
+  alist(
+    A ~ dbinom( N , p ) ,
+    logit(p) <- a[G] ,
+    a[G] ~ dnorm( 0 , 1.5 )
+  ) , data = dat_list, chains = 4
+)
+
+precis( m11.7, depth = 2)
+```
+
+The posterior for males `a[1]` is higher than that of female applications. We'll need to calculate the contrasts to much how much higher.
+
+But before that, let's also consider convergence criteria.
+
+### Convergence Diagnostics
+
+First, we can see that both coefficients Rhat values are near to 1, which is what we would like.
+
+We can also run trace and trank plots:
+
+```{r}
+traceplot(m11.7)
+```
+
+
+```{r}
+trankplot(m11.7)
+```
+
+These are good. The traceplots are like "hairy caterpillars" and the trankplots show "mixture" so that no one chain is higher/lower than others.
+
+### Prediction
+
+Now let's calculate the contrasts. 
+
+```{r}
+post <- extract.samples(m11.7)
+diff_a <- post$a[,1] - post$a[,2]
+diff_p <- inv_logit(post$a[,1]) - inv_logit(post$a[,2])
+precis( list( diff_a=diff_a , diff_p=diff_p))
+```
+
+```{r}
+dens( diff_p, lwd=4, col=2, xlab="F-M contrast (total)")
+abline( v=0, lty=3)
+```
+
+
+On the probability scale (`diff_p`), the difference is about a 12-16% percent higher admission rate for males than females.
+
+But let's now also do a posterior predictive (validation) check on each of the 18 individuals.
+
+### Posterior predictive check
+
+```{r}
+postcheck(m11.7)
+```
+
+As discussed on page 342, these predictions aren't great (e.g., cases 1-4 and 11-12). As mentioned, the model did correctly answer: *"What are the average probabilities of admissions for women and men, across all departments?"*
+
+The problem is students self-select application by gender, namely women have different application rates by department. More difficult, women tend to apply more to most selective departments which drives more of the lower rate of admissions on total effect than the direct effect.
+
+However, what we're really interested in is: *"What is the average difference in probability of admission between women and men _within_ departments?"* That is conditioning on department (aka direct effect)
+
+If this doesn't make sense, watch [Richard's lecture 12 from his Fall 2019 class]().
+
+This was also considered on pages 343-345 and you may need this for problem set 6.
+
+## Package versions
+
+```{r}
+sessionInfo()
+```
