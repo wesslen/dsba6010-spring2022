@@ -23,25 +23,27 @@ weight: 14
 
 ### Lecture 17
 
-{{< youtube yfXpjmWgyXU >}}
+{{< youtube lTFAB6QmwHM >}}
 
 <br>
 
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/4542a31bca014bacb068a3d19c61770d" title="L17 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;" data-ratio="1.3333333333333333"></iframe>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/b657637e48814c7896ad79395a29f0a0" title="Statistical Rethinking 2022 Lecture 17" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
 <br>
+
+[Link to pdf](https://files.speakerdeck.com/presentations/b657637e48814c7896ad79395a29f0a0/Lecture_17.pdf)
 
 ### Lecture 18
 
-{{< youtube e5cgiAGBKzI >}}
+{{< youtube oMiSb8GKR0o >}}
 
 <br>
 
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/365cb7f482674b12baaee3aadaddc3cf" title="L18 Statistical Rethinking Winter 2019" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 420px;" data-ratio="1.3333333333333333"></iframe>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/dd8e6cb0183e42bea9aea9a23e73345e" title="Statistical Rethinking 2022 Lecture 18" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
-## Comprehension questions
+<br>
 
-TBD
+[Link to pdf](https://files.speakerdeck.com/presentations/dd8e6cb0183e42bea9aea9a23e73345e/Lecture_18.pdf)
 
 ## Deliverables
 
