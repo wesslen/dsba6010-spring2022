@@ -1,6 +1,6 @@
 ---
 title: Final Project
-date: "2022-03-13"
+date: "2022-03-14"
 menu:
   assignment:
     parent: Project
@@ -21,7 +21,9 @@ If you choose this option, you will be expected in your proposal to make signifi
 
 * modification of a different (but ideally related) data set
 
-* additional analysis steps.
+* additional analysis tasks
+
+* modification to fit Bayesian workflow as outlined below
 
 ### Option 2
 
@@ -33,7 +35,7 @@ Create a custom (from scratch) Bayesian data analysis.
   
 ## Submission Documents
 
-Students will be expected to [submit onto canvas]():
+Students will be expected to [submit onto canvas](https://uncc.instructure.com/courses/171000/assignments/1415491):
 
 1. A reproducible notebook (e.g., RMarkdown, Jupyter, etc.) of their data analysis. Students are able to break the project into multiple notebooks for organization purposes. Ideally, this could also be a zipped folder that includes the entire contents of the project (e.g., data + code).
 
@@ -63,7 +65,7 @@ This was already completed and graded.
 
 Due Date: 11:59AM on Monday, March 24
 
-Due next class, you will need to complete this [Google Form]() outlining details of your project. This is worth 20 points.
+Due next class, you will need to complete this [Google Form](https://forms.gle/9REg9gK38QDu8k738) outlining details of your project. This is worth 20 points.
 
 In addition, next class you will work in small groups (2-3 students) and share your current version of your notebook. For teammates on Zoom, you'll be broken into small groups.
 
@@ -71,7 +73,7 @@ In addition, next class you will work in small groups (2-3 students) and share y
 
 Due Date: 11:59AM on Monday, March 24
 
-[Project Check In 3 Canvas Link]()
+[Project Check In 3 Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1503271)
 
 You will be expected to provide your first draft of your project notebook. 
 
@@ -81,9 +83,9 @@ Some feedback may be provided but overall this is more of a check for students t
 
 ### Project Check in 4
 
-Due Date: 11:59AM on Monday, May 2
+Due Date: 11:59AM on Monday, April 25
 
-[Project Check In 4 Canvas Link]()
+[Project Check In 4 Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1503272)
 
 You will be expected to provide a second draft of your project notebook. 
 
@@ -114,7 +116,7 @@ You will be graded on six dimensions. Final projects are worth 250 points.
 
 ### 2. Number of analysis tasks: 50 points
 
-For this project, we'll follow the workflow outlined by [Bayesian Workflow]() paper. 
+For this project, we'll follow the workflow outlined by [Bayesian Workflow](https://arxiv.org/abs/2011.01808) paper. 
 
 ![](/img/assignments/bayesian-workflow.JPG)
 
