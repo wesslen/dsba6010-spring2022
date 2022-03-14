@@ -25,6 +25,13 @@ If you choose this option, you will be expected in your proposal to make signifi
 
 * modification to fit Bayesian workflow as outlined below
 
+There are many examples you can look through:
+* [`brms` vignettes](https://paul-buerkner.github.io/brms/articles/)
+* [`bambi` (PyMC) vignettes](https://bambinos.github.io/bambi/main/examples.html)
+* [PyMC notebooks](https://docs.pymc.io/en/v3/nb_examples/index.html)
+* [Austin Rochford notebooks](https://austinrochford.com/posts.html)
+* [Solomon Kurz blog posts](https://solomonkurz.netlify.app/post/)
+
 ### Option 2
 
 Create a custom (from scratch) Bayesian data analysis.
