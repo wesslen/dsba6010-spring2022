@@ -1,5 +1,5 @@
 ---
-title: Problem Set 6
+title: Problem Set 6 Solutions
 date: "2022-03-20"
 menu:
   assignment:
@@ -148,9 +148,9 @@ precis(m1, depth = 2)
 ```
 
 ``` language-r
-##           mean         sd      5.5%     94.5%    n_eff     Rhat4
-## a[1] -1.535284 0.06227377 -1.635018 -1.435144 1511.267 0.9989355
-## a[2] -1.740657 0.07917990 -1.870740 -1.612703 1596.696 0.9994035
+##           mean         sd      5.5%     94.5%    n_eff    Rhat4
+## a[1] -1.529911 0.06482889 -1.631014 -1.424725 1374.110 1.002098
+## a[2] -1.740197 0.08196258 -1.870830 -1.613570 1447.698 0.999101
 ```
 
 Before looking at the contrasts (causal effect), we’ll look at convergence statistics. The Rhat’s are 1 which are good. Let’s also look at the trace and trank plots.
@@ -209,8 +209,8 @@ m1_brms <- brm(awards | trials(applications) ~ gender, family = binomial("logit"
 ## 
 ## SAMPLING FOR MODEL '07311d06eaed335b1371c9568f20ecc2' NOW (CHAIN 1).
 ## Chain 1: 
-## Chain 1: Gradient evaluation took 2.1e-05 seconds
-## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.21 seconds.
+## Chain 1: Gradient evaluation took 9.2e-05 seconds
+## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.92 seconds.
 ## Chain 1: Adjust your expectations accordingly!
 ## Chain 1: 
 ## Chain 1: 
@@ -227,15 +227,15 @@ m1_brms <- brm(awards | trials(applications) ~ gender, family = binomial("logit"
 ## Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 1: 
-## Chain 1:  Elapsed Time: 0.014968 seconds (Warm-up)
-## Chain 1:                0.015221 seconds (Sampling)
-## Chain 1:                0.030189 seconds (Total)
+## Chain 1:  Elapsed Time: 0.015024 seconds (Warm-up)
+## Chain 1:                0.016784 seconds (Sampling)
+## Chain 1:                0.031808 seconds (Total)
 ## Chain 1: 
 ## 
 ## SAMPLING FOR MODEL '07311d06eaed335b1371c9568f20ecc2' NOW (CHAIN 2).
 ## Chain 2: 
-## Chain 2: Gradient evaluation took 4e-06 seconds
-## Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.04 seconds.
+## Chain 2: Gradient evaluation took 5e-06 seconds
+## Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 0.05 seconds.
 ## Chain 2: Adjust your expectations accordingly!
 ## Chain 2: 
 ## Chain 2: 
@@ -252,15 +252,15 @@ m1_brms <- brm(awards | trials(applications) ~ gender, family = binomial("logit"
 ## Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 2: 
-## Chain 2:  Elapsed Time: 0.015302 seconds (Warm-up)
-## Chain 2:                0.015328 seconds (Sampling)
-## Chain 2:                0.03063 seconds (Total)
+## Chain 2:  Elapsed Time: 0.015295 seconds (Warm-up)
+## Chain 2:                0.014512 seconds (Sampling)
+## Chain 2:                0.029807 seconds (Total)
 ## Chain 2: 
 ## 
 ## SAMPLING FOR MODEL '07311d06eaed335b1371c9568f20ecc2' NOW (CHAIN 3).
 ## Chain 3: 
-## Chain 3: Gradient evaluation took 5e-06 seconds
-## Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.05 seconds.
+## Chain 3: Gradient evaluation took 4e-06 seconds
+## Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 0.04 seconds.
 ## Chain 3: Adjust your expectations accordingly!
 ## Chain 3: 
 ## Chain 3: 
@@ -277,15 +277,15 @@ m1_brms <- brm(awards | trials(applications) ~ gender, family = binomial("logit"
 ## Chain 3: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 3: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 3: 
-## Chain 3:  Elapsed Time: 0.015096 seconds (Warm-up)
-## Chain 3:                0.015424 seconds (Sampling)
-## Chain 3:                0.03052 seconds (Total)
+## Chain 3:  Elapsed Time: 0.015559 seconds (Warm-up)
+## Chain 3:                0.013756 seconds (Sampling)
+## Chain 3:                0.029315 seconds (Total)
 ## Chain 3: 
 ## 
 ## SAMPLING FOR MODEL '07311d06eaed335b1371c9568f20ecc2' NOW (CHAIN 4).
 ## Chain 4: 
-## Chain 4: Gradient evaluation took 6e-06 seconds
-## Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.06 seconds.
+## Chain 4: Gradient evaluation took 5e-06 seconds
+## Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 0.05 seconds.
 ## Chain 4: Adjust your expectations accordingly!
 ## Chain 4: 
 ## Chain 4: 
@@ -302,9 +302,9 @@ m1_brms <- brm(awards | trials(applications) ~ gender, family = binomial("logit"
 ## Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
 ## Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
 ## Chain 4: 
-## Chain 4:  Elapsed Time: 0.015164 seconds (Warm-up)
-## Chain 4:                0.014215 seconds (Sampling)
-## Chain 4:                0.029379 seconds (Total)
+## Chain 4:  Elapsed Time: 0.014645 seconds (Warm-up)
+## Chain 4:                0.014611 seconds (Sampling)
+## Chain 4:                0.029256 seconds (Total)
 ## Chain 4:
 ```
 
@@ -322,8 +322,8 @@ summary(m1_brms)
 ## 
 ## Population-Level Effects: 
 ##           Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
-## Intercept    -1.74      0.08    -1.90    -1.59 1.00     2252     2457
-## genderm       0.21      0.10     0.00     0.42 1.00     2779     2377
+## Intercept    -1.74      0.08    -1.91    -1.59 1.00     2270     2386
+## genderm       0.21      0.11     0.01     0.41 1.00     2871     2411
 ## 
 ## Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
 ## and Tail_ESS are effective sample size measures, and Rhat is the potential
@@ -354,7 +354,7 @@ mean(post1$G_contrast)
 ```
 
 ``` language-r
-## [1] 0.02789571
+## [1] 0.02861795
 ```
 
 ``` r
@@ -362,7 +362,7 @@ mean(posterior_draws$Contrast)
 ```
 
 ``` language-r
-## [1] -0.0284291
+## [1] -0.02819377
 ```
 
 One nice thing about using `brms` is there are many other helpful packages. For example, we can easily calculate posterior predictive checks:
