@@ -155,36 +155,37 @@ d$T <- standardize(d$temp)
 
 dd <- d[ complete.cases(d$D,d$T) , ]
 
-m3a <- quap(
+
+m3a <- ulam(
     alist(
         D ~ dnorm(mu,sigma),
         mu <- a,
         a ~ dnorm(0,10),
         sigma ~ dexp(1)
-    ) , data=list(D=dd$D,T=dd$T) )
+    ) , data=list(D=dd$D,T=dd$T), log_lik = TRUE )
 
-m3b <- quap(
+m3b <- ulam(
     alist(
         D ~ dnorm(mu,sigma),
         mu <- a + b*T,
         a ~ dnorm(0,10),
         b ~ dnorm(0,10),
         sigma ~ dexp(1)
-    ) , data=list(D=dd$D,T=dd$T) )
+    ) , data=list(D=dd$D,T=dd$T), log_lik = TRUE )
 
-m3c <- quap(
+m3c <- ulam(
     alist(
         D ~ dnorm(mu,sigma),
         mu <- a + b1*T + b2*T^2,
         a ~ dnorm(0,10),
         c(b1,b2) ~ dnorm(0,10),
         sigma ~ dexp(1)
-    ) , data=list(D=dd$D,T=dd$T) )
+    ) , data=list(D=dd$D,T=dd$T), log_lik = TRUE )
 
 compare( m3a , m3b , m3c , func=PSIS )
 ```
 
-The linear m3b is slightly better than the quadratic m3c. Both are much better than the intercept-only m3a. Now we need to generate a predictive distribution for the first day of bloom. We do this by simulating from the model for a specific temperature. The only trick here is to remember that both the predictor and outcome were standardized above. If you didn’t standardized, then you won’t need to convert back. But my code below does.
+The linear m3b is slightly better than m3c. Both are much better than the intercept-only m3a. Now we need to generate a predictive distribution for the first day of bloom. We do this by simulating from the model for a specific temperature. The only trick here is to remember that both the predictor and outcome were standardized above. If you didn’t standardized, then you won’t need to convert back. But my code below does.
 
 ```{r}
 # predict
