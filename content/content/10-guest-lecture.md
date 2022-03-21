@@ -27,3 +27,10 @@ By day, Alex is a Bayesian modeler at the PyMC Labs consultancy. By night, he do
 
 Zoom-link for guest lecture will be provided in class.
 
+## Problem Set 7
+
+Due by next class: Monday, April 4 at 11:59am
+
+<a href="https://dsba6010-spring2022.netlify.app/assignment/07-problem-set"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / [Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1467898)
+
+

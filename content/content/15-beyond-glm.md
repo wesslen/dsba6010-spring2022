@@ -37,5 +37,15 @@ weight: 15
 
 ### Lecture 20
 
+{{< youtube qV3eos7maGs >}}
+
+<br>
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/3d334fa90e22470189fd92e8ccf4a88e" title="Statistical Rethinking 2022 Lecture 20" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+<br>
+
+[Link to pdf](https://files.speakerdeck.com/presentations/3d334fa90e22470189fd92e8ccf4a88e/Lecture_20.pdf)
+
 ## Deliverables
 

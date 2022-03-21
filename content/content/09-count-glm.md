@@ -61,10 +61,10 @@ Due before class: Monday, March 21 at 11:59am
 
 ## Lab for Class 9
 
-[Lab class 9 code](../../lab/09-class)
+For today's class, we're going to review Rmarkdown templates from <https://github.com/cdphelan/bayesian-template>. You can find the [original paper here](http://users.eecs.northwestern.edu/~jhullman/phelan2019.pdf).
 
 ## Problem Set 7
 
-Due by next class: Monday, April 4 at 11:59am
+Due in two weeks: Monday, April 4 at 11:59am
 
 <a href="https://dsba6010-spring2022.netlify.app/assignment/07-problem-set"><i class="fas fa-pencil-ruler fa-lg"></i>  Problem Set</a> / [Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1467898)

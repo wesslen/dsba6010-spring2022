@@ -44,13 +44,15 @@ weight: 11
 
 <br>
 
-
-## Comprehension questions
-
-{{% spoiler text="What are the benefits of using multilevel (aka hierarchical) models?" %}}
-
-- They acknowledge that, though each individual group might have its own model, one group can provide valuable information about another. That is, **"let’s learn from one another while celebrating our individuality."**
-
-{{% /spoiler %}}
-
 ## Deliverables
+
+Due before class: Monday, April 4 at 11:59am 
+
+<a href="https://forms.gle/zMipNzav3BCL3Rwy9"><i class="fas fa-comment fa-lg"></i>  Class Feedback</a>
+
+<a href="https://uncc.instructure.com/courses/171000/quizzes/356153"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a>
+
+## Lab for Class 11
+
+[Lab class 11 code](../../lab/11-class)
+

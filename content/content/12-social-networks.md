@@ -48,3 +48,9 @@ weight: 12
 [Link to pdf](https://files.speakerdeck.com/presentations/ac82407e9778495caf907541e0c9c5cf/Lecture_16.pdf)
 
 ## Deliverables
+
+Due before class: Monday, April 4 at 11:59am 
+
+<a href="https://forms.gle/zMipNzav3BCL3Rwy9"><i class="fas fa-comment fa-lg"></i>  Class Feedback</a>
+
+<a href="https://uncc.instructure.com/courses/171000/quizzes/356157"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a>
