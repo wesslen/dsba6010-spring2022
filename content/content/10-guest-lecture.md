@@ -23,7 +23,7 @@ By day, Alex is a Bayesian modeler at the PyMC Labs consultancy. By night, he do
 
 ## Zoom
 
-<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i></a>: 12:00pm - 2:45pm, March 28, 2022
+<a href="https://uncc.zoom.us/j/7987432903"><i class="fas fa-video fa-lg"></i></a>: 12:00pm - 2:45pm, March 28, 2022
 
 Zoom-link for guest lecture will be provided in class.
 
