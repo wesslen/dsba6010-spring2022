@@ -21,6 +21,10 @@ By day, Alex is a Bayesian modeler at the PyMC Labs consultancy. By night, he do
 
 <div style="width: 100%; height: 200px; margin-bottom: 20px; border-radius: 6px; overflow:hidden;"><iframe style="width: 100%; height: 200px;" frameborder="no" scrolling="no" seamless src="https://player.captivate.fm/episode/2e1d49e5-89f6-4d0d-8d21-9e796ff668bf"></iframe></div> 
 
+{{< youtube JS8Mh6W_ELM >}}
+
+{{< gslides src="https://docs.google.com/presentation/d/e/2PACX-1vQ6EjnWaicVdzqVG3a2iS4dvWk6kCMUCE5j06zyxPE2TCriDKoUwkE_LjpIu76PS4xkIW8fOc7MoIgz/pub?start=false&loop=false&delayms=3000" >}}
+
 ## Zoom
 
 <a href="https://uncc.zoom.us/j/7987432903"><i class="fas fa-video fa-lg"></i></a>: 12:00pm - 2:45pm, March 28, 2022
