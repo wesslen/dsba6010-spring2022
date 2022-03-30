@@ -23,7 +23,7 @@ By day, Alex is a Bayesian modeler at the PyMC Labs consultancy. By night, he do
 
 {{< youtube JS8Mh6W_ELM >}}
 
-{{< gslides src="https://docs.google.com/presentation/d/e/2PACX-1vQ6EjnWaicVdzqVG3a2iS4dvWk6kCMUCE5j06zyxPE2TCriDKoUwkE_LjpIu76PS4xkIW8fOc7MoIgz/pub?start=false&loop=false&delayms=3000" >}}
+{{< gslides src="https://docs.google.com/presentation/d/e/2PACX-1vQ6EjnWaicVdzqVG3a2iS4dvWk6kCMUCE5j06zyxPE2TCriDKoUwkE_LjpIu76PS4xkIW8fOc7MoIgz/embed?start=false&loop=false&delayms=3000" >}}
 
 ## Zoom
 
