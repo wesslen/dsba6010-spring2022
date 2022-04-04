@@ -1,0 +1,56 @@
+---
+title: Exam
+date: "`r Sys.Date()`"
+menu:
+  resource:
+    parent: Study guides
+type: docs
+weight: 1
+bibliography: ../../static/bib/references.bib
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(fig.width = 6, fig.height = 5, fig.align = "center",
+                      fig.retina = 3, collapse = TRUE, out.width = "75%", class.source="language-r", class.output="language-r")
+xaringanExtra::use_clipboard()
+set.seed(1234)
+options("digits" = 2, "width" = 150)
+```
+
+April 18 we'll have our in-class exam. It will be closed notes and based on chapter lectures, slides, and materials. It will be a blend of multiple choice/true-false questions (very similar to lecture quizzes) and short open ended questions (e.g., reading comprehension or explaining code snippets similar to problem sets). The exam is worth 200 points.
+
+The expected time to complete the exam will be 1 hour but students may have the entire class period (12pm - 2:45pm) to complete.
+
+The exam will cover material from Chapters 1 - 13 in Statistical Rethinking, which is consistent with the material from Lectures 1 - 13. 
+
+## Part 1: Multiple choice/true-false questions (100 points)
+
+Half of the exam will be multiple choice and true-false questions from Lesson quizzes 1-8. Some questions will be repeated and some questions will be new.
+
+To help you study, I have prepared a pdf file with all of the questions and answers from Lesson quizzes 1-8. [You can download the file here](https://dsba6010-spring2022.netlify.app/resource/course-lesson-quizzes.pdf).
+
+Similar to the lesson quizzes, multiple choice questions will be worth 4 points and true-false questions will be worth 2 points.
+
+## Part 2: Short answer questions (100 points)
+
+There will also be 8-10 short answer questions. These will be motivated from Lectures 1-13 and chapter 1-13. Lecture materials are the most important with chapter readings helpful if you need a more in-depth discussion on lecture topics. Solutions to problem sets 1-7 may also be helpful to review.  
+
+Here is a list of the relevant topics from each of the 13 lectures that will be covered.
+
+| Lecture | Topics |
+|---------|----------|
+| 1       | Models, hypotheses, "drawing the Bayesian owl", Science before Statistics, DAGs/Causal inference vs prediction         |
+| 2       | Bayesian data analysis, Garden of Forking Data / Bayesian marbles example, Globe tossing example, Posterior to prediction / sampling posterior         |
+| 3       | Linear regression, why Normal distribution?, language for modeling / specifying Bayesian models, height-weight example, basics of generative modeling, prior/posterior sampling, simulation-based validation         |
+| 4       | Causes aren't in the data, categorical/index variables in regression, contrasts, polynomial, splines         |
+| 5       | Interpretation and creation of DAGs, four elemental confounds, marriage/divorce example, plant height-fungus example, post-treatment bias, collider bias, descendents         |
+| 6       | Parent-grandparent education example, DAG thinking / marginal effects, Do calculus, backdoor criterion, examples of finding adjustment set, good vs bad controls examples, Table 2 fallacy         |
+| 7       | Leave one-out cross validation, regularization, importance sampling / PSIS, WAIC, model mis-selection, outliers and robust regression         |
+| 8       | Four methods for estimating posterior considered in class, intuition for Markov Chain Monte Carlo and Hamiltonian MC, convergence diagnostics (trace/trank plots, Rhat, effective samples), determining good vs bad convergence         |
+| 9       | Berkeley admission example / related examples, GLM modeling, logistic vs binomial regression, post-stratification        |
+| 10      | Continued discussion on GLM, hidden collider bias in admissions example, sensitivity analysis, how/why more parameters than observations, oceanic tool example, poisson regression,          |
+| 11      | Trolley problem example, ordered categories, endogenous selection, monotonic predictors, complex causal effects         |
+| 12      | Models with memory / intro to multi-level models, coffeeshop example, tad pole/tank example, varying effects superstitions,          |
+| 13      | Clusters and features, Chimpanzee example, multi-level predictions, handling divergent transitions         |

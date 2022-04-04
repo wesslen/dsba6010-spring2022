@@ -52,7 +52,36 @@ Due before class: Monday, April 4 at 11:59am
 
 <a href="https://uncc.instructure.com/courses/171000/quizzes/356153"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a>
 
+## Project Check in 3
+
+Due next class (11:59am on Monday, April 11) will be your first draft of your project. You can refer back to the [final project page](https://dsba6010-spring2022.netlify.app/assignment/final-project/#project-check-in-3) for more details.
+
+[Project Check In 3 Canvas Link](https://uncc.instructure.com/courses/171000/assignments/1503271)
+
+What will be expected to be included in your first draft:
+* articulated problem statement / research question (what are you trying to study?)
+* load data and basic data manipulation (if necessary)
+* initial modeling (e.g., prior, first attempt at model, DAG)
+
+Also, starting next week, I will provide calendly links for a 30 minute group meeting to discuss your project. This meeting will be sometime between April 11 and April 25 (project check-in 4).
+
 ## Lab for Class 11
 
-[Lab class 11 code](../../lab/11-class)
+* [Andrew Heiss' introduction to Bayesian Stats with `brms`](https://dsba6010-spring2022.netlify.app/resource/bayes/)
+
+* [Soloman Kurz' Chapter 13 Statistical Rethinking with `brms` and `tidyverse`](https://bookdown.org/content/4857/models-with-memory.html)
+
+* [Andrew Heiss' A guide to correctly calculating posterior predictions and average marginal effects with multilievel Bayesian models](https://www.andrewheiss.com/blog/2021/11/10/ame-bayes-re-guide/)
+
+## Additional helper packages
+
+Likely we won't have time to review but worth mentioning.
+
+* [Andrew Heiss' A guide to working with country-year panel data and Bayesian multilevel models](https://www.andrewheiss.com/blog/2021/12/01/multilevel-models-panel-data-guide/)
+
+* [TJ Mahr' Plotting partial pooling in mixed-effects models](https://www.tjmahr.com/plotting-partial-pooling-in-mixed-effects-models/)
+
+* [`brmstools`: Tools and Helpers for brms Package](https://mvuorre.github.io/brmstools/)
+
+* [`tidybayes` and `ggdist` for tidyverse Bayesian modeling](https://dsba6010-spring2022.netlify.app/resource/install-rethinking/#tidybayes-and-ggdist-1)
 

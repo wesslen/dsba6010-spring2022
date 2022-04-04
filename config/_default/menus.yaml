@@ -44,9 +44,9 @@ assignment:
 resource:
   - name: Overview
     weight: 1
-  - name: Guides
-    weight: 2
-  - name: Resources
-    weight: 3
   - name: Study guides
+    weight: 2
+  - name: Guides
+    weight: 3
+  - name: Resources
     weight: 4
