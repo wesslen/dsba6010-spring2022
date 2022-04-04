@@ -13,6 +13,9 @@ type: docs
 weight: 11
 ---
 
+## Zoom
+
+<a href="https://uncc.zoom.us/j/93339403054"><i class="fas fa-video fa-lg"></i></a>: 12:00pm - 2:45pm, March 21, 2022
 
 {{< icon name="book" pack="fas" >}} Chapter 13: Models with Memory
 
