@@ -1,0 +1,161 @@
+---
+title: Problem Set 7 Solutions
+date: "`r Sys.Date()`"
+menu:
+  assignment:
+    parent: Problem sets
+    weight: 7
+type: docs
+toc: true
+---
+
+```{r setup, include=FALSE, fig.width=5, fig.height=4}
+knitr::opts_chunk$set(echo = TRUE, class.source="language-r", class.output="language-r", message = FALSE, warning = FALSE)
+xaringanExtra::use_clipboard()
+```
+
+This problem set is due on April 4, 2022 at 11:59am.
+
+```{r echo=FALSE}
+# remove this chunk for your submission
+downloadthis::download_file(
+  path = "07-problem-set-solutions.Rmarkdown",
+  output_name = "07-problem-set-solutions",
+  button_label = "Download this file",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
+## Question 1
+
+Conduct a prior predictive simulation for the Reedfrog model. By this I mean to simulate the prior distribution of tank survival probabilities $\alpha_{j}$. 
+
+Start by using these priors:
+
+$\alpha_{j} \sim Normal(\bar{\alpha},\sigma)$
+
+$\bar{\alpha} \sim Normal(0, 1)$
+
+$\sigma \sim Exponential(1)$
+
+Be sure to transform the $\alpha_{j}$ values to the probability scale for plotting and summary.
+
+How does increasing the width of the prior on σ change the prior distribution of $\alpha_{j}$?
+
+You might try `Exponential(10)` and `Exponential(0.1)` for example.
+
+Simulating varying effect priors is in principle like simulating any other priors. The only difference is that the parameters have an implied order now, because some parameters depend upon others. So in this problem we must simulate $\sigma$ and $\bar{\alpha}$ first, and then we can simulate the individual tank $\alpha_{T}$ variables
+
+```{r}
+library(rethinking)
+n <- 1e4
+sigma <- rexp(n,1)
+abar <- rnorm(n,0,1)
+aT <- rnorm(n,abar,sigma)
+dens(inv_logit(aT),xlim=c(0,1),adj=0.1,lwd=4,col=2, main="sigma~exponential(0,1)")
+```
+
+Let's also run two more (0.1 and 10): 
+
+```{r}
+n <- 1e4
+sigma <- rexp(n,0.1)
+abar <- rnorm(n,0,1)
+aT <- rnorm(n,abar,sigma)
+dens(inv_logit(aT),xlim=c(0,1),adj=0.1,lwd=4,col=2, main="sigma~exponential(0,0.1)")
+```
+
+```{r}
+n <- 1e4
+sigma <- rexp(n,10)
+abar <- rnorm(n,0,1)
+aT <- rnorm(n,abar,sigma)
+dens(inv_logit(aT),xlim=c(0,1),adj=0.1,lwd=4,col=2, main="sigma~exponential(0,10)")
+```
+
+Increasing the variation across tanks, by making the $\sigma$ distribution wider, pushes prior survival up against the floor and ceiling of the outcome space. This is the same phenomenon you saw before for ordinary logit models. The key lesson again is that flat priors on one scale are not necessarily flat on another.
+
+## Question 2
+
+Revisit the Reedfrog survival data, `data(reedfrogs)`. Start with the varying effects model from the book and lecture. Then modify it to estimate the causal effects of the treatment variables pred and size, including how size might modify the effect of predation. An easy approach is to estimate an effect for each combination of pred and size. Justify your model with a DAG of this experiment.
+
+```{r}
+library(rethinking)
+data(reedfrogs)
+d <- reedfrogs
+
+dat <- list(
+S = d$surv,
+D = d$density,
+T = 1:nrow(d),
+P = ifelse( d$pred=="no" , 1L , 2L ),
+G = ifelse( d$size=="small" , 1L , 2L ) )
+
+m2 <- ulam(
+  alist(
+    S ~ binomial( D , p ),
+    logit(p) <- a[T] + b[P,G],
+    a[T] ~ normal( 0 , sigma ),
+    matrix[P,G]:b ~ normal( 0 , 1 ),
+    sigma ~ exponential( 1 )
+  ), data=dat , chains=4 , cores=4 , log_lik=TRUE )
+precis(m2,3,pars=c("b","sigma"))
+
+```
+
+The parameters are in order from top to bottom: no-pred/small, no-pred/large, pred/small, pred/large. The curious thing is not that survival is lower with predation, but rather that it is lowest for large tadpoles, `b[2,2]`. This is a strong interaction that would be missed if we had made the effects purely additive with one another (on the log-odds scale). The Vonesh & Bolker paper that these data come from goes into this interaction in great depth.
+
+The problem asked for a justification of the model in terms of the DAG. 
+
+
+```{r fig.height=2, fig.width=2, echo=FALSE}
+library(dagitty)
+
+g <- dagitty('dag {
+bb="0,0,1,1"
+D [pos="0.670,0.218"]
+G [pos="0.787,0.453"]
+P [pos="0.203,0.457"]
+S [outcome,pos="0.514,0.448"]
+T [pos="0.354,0.200"]
+D -> S
+G -> S
+P -> S
+T -> S
+}
+')
+plot(g)
+```
+
+This is an experiment, so we know the treatments P, G, and D are not confounded. At least not in any obvious way. And then unobserved tank effects T also moderate the influence of the treatments. The model I used tries to estimate how P and G moderate one another. It ignores D, which we are allowed to do, because it is not a confound, just a competing cause. But I include tanks, which is also just a competing cause. Including competing causes helps with precision, if nothing else.
+
+They just show inputs and outputs. To justify any particular statistical model, you need more than the DAG.
+
+## Question 3
+
+Now estimate the causal effect of density on survival. Consider whether pred modifies the effect of density. There are several good ways to include density in your Binomial GLM. You could treat it as a continuous regression variable (possibly standardized). Or you could convert it to an ordered category (with three levels). 
+
+Compare the $\sigma$ (tank standard deviation) posterior distribution to $\sigma$ from your model in Problem 2. How are they different? Why?
+
+Density is an important factor in these experiments. So let’s include it finally. I will do something simple, just include it as an additive effect that interacts with predators. But I will use the logarithm of density, so that it has implied diminishing returns on the log-odds scale.
+
+```{r}
+dat$Do <- standardize(log(d$density))
+
+m3 <- ulam(
+  alist(
+    S ~ binomial( D , p ),
+    logit(p) <- a[T] + b[P,G] + bD[P]*Do,
+    a[T] ~ normal( 0 , sigma ),
+    matrix[P,G]:b ~ normal( 0 , 1 ),
+    bD[P] ~ normal(0,0.5),
+    sigma ~ exponential( 1 )
+  ), data=dat , chains=4 , cores=4 , log_lik=TRUE )
+
+precis(m3,3,pars=c("b","bD","sigma"))
+```
+
+Again an interaction. Higher densities are worse for survival, but only in the presence of predators. The other estimates are not changed much. The $\sigma$ estimate here is a little smaller than in the previous problem. This is just because density is an real cause of survival, so it explains some of the variation that was previously soaked up by tanks with different densities.
