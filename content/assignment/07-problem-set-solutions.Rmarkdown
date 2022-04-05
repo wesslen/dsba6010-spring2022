@@ -19,7 +19,7 @@ This problem set is due on April 4, 2022 at 11:59am.
 ```{r echo=FALSE}
 # remove this chunk for your submission
 downloadthis::download_file(
-  path = "07-problem-set-solutions.Rmarkdown",
+  path = "07-problem-set-solutions.Rmd",
   output_name = "07-problem-set-solutions",
   button_label = "Download this file",
   button_type = "danger",
