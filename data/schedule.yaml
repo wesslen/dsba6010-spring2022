@@ -147,12 +147,12 @@ lessons:
     bg: 1
     bottomborder: True 
     
-  - title: '<span class="content-title">Social Networks</span>'
+  - title: '<span class="content-title">Gaussian Processes</span>'
     session: "Class 12"
     date: "Apr 11"
     date_start: "Apr 11"
     date_end: "Apr 17"
-    content: "12-social-networks"
+    content: "12-gaussian-processes"
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/356157"
     ##assignment: "01-problem-set"
     bg: 2

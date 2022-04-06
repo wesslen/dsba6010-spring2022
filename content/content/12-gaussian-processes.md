@@ -8,7 +8,7 @@ menu:
 highlight: true
 tags:
 - Computation
-title: Class 12 - Social Networks
+title: Class 12 - Gaussian processes
 type: docs
 weight: 12
 ---
