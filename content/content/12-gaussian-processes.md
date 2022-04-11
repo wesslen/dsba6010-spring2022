@@ -54,3 +54,10 @@ Due before class: Monday, April 4 at 11:59am
 <a href="https://forms.gle/zMipNzav3BCL3Rwy9"><i class="fas fa-comment fa-lg"></i>  Class Feedback</a>
 
 <a href="https://uncc.instructure.com/courses/171000/quizzes/356157"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a>
+
+## Labs
+
+* [Alex Andorra's How popular is the President?](https://alexandorra.github.io/pollsposition_blog/popularity/macron/gaussian%20processes/polls/2021/01/18/gp-popularity.html) / [Colab](https://colab.research.google.com/github/AlexAndorra/pollsposition_blog/blob/master/_notebooks/2021-01-18-gp-popularity.ipynb) / [Binder](https://mybinder.org/v2/gh/AlexAndorra/pollsposition_blog/master?filepath=_notebooks%2F2021-01-18-gp-popularity.ipynb)
+
+* [Michael Betancourt's Robust Gaussian Process Modeling
+](https://betanalpha.github.io/assets/case_studies/gaussian_processes.html) (Advanced)
