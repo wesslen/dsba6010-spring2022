@@ -47,3 +47,15 @@ weight: 14
 
 ## Deliverables
 
+Due before class: Monday, April 25 at 11:59am 
+
+<a href="https://forms.gle/zMipNzav3BCL3Rwy9"><i class="fas fa-comment fa-lg"></i>  Class Feedback</a>
+
+<a href="https://uncc.instructure.com/courses/171000/quizzes/356158"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a>
+
+<a href="https://uncc.instructure.com/courses/171000/assignments/1503272"><i class="fas fa-question fa-lg"></i> Project Check in 4</a>
+
+## Links
+
+* [`brms` missing vignette](https://cran.r-project.org/web/packages/brms/vignettes/brms_missings.html)
+
