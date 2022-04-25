@@ -42,34 +42,45 @@ Step 4: Submit your file here [through this canvas link](https://uncc.instructur
 - **UNCC ID**: 
 - **Other student worked with (optional)**:
 
-The data in `data(Achehunting)` are 14,364 individual hunting trips by 147 men among the indigenous Aché of Paraguay. Each trip has recorded the hunter’s identity (anonymized id), hunter’s age at the time of the trip, the duration in hours of the trip, and the kilograms of meat returned. Many of the trips have missing values for duration.
+For this problem set, you're going to run the measurement error examples considered in 15.1 in the book and [Lecture 17](https://youtu.be/lTFAB6QmwHM). However, you're going to run them in the [format of the project](https://dsba6010-spring2022.netlify.app/assignment/final-project/#2-number-of-analysis-tasks-50-points, namely the Bayesian workflow.
 
-## Question 1
+You may find [this code from the lecture to be helpful](https://github.com/rmcelreath/stat_rethinking_2022/blob/b75c45b35d383866aab52623c4e5dc52be78beee/scripts_animation/17_measurement_error.r#L35). Instead of using `rethinking`, you may also alternatively use `brms` using [Solomon Kurz's rethinking version of Chapter 15](https://bookdown.org/content/4857/missing-data-and-other-opportunities.html#measurement-error).
 
-In this first problem, estimate the influence of age on the probability of trip success. Define “success” as a trip that returns any non-zero amount of meat. Ignore individual hunter identities for now. You can use any functional relationship for age and success that you think is sensible, but be sure to justify it and check it against posterior predictions.
+Either use this Rmarkdown file or create a new one for scratch for this project. 
 
-```{r}
-# type in your code here
+## 1. Initial Model
 
-```
+* Part 1: Provide in DAG form the initial model shown on page 492. Be sure to differentiate the unobserved nodes. What is a way that we can rewrite the regression into multiple parts (see [Lecture 17 slides 37-38](https://files.speakerdeck.com/presentations/b657637e48814c7896ad79395a29f0a0/Lecture_17.pdf))? Explain in 2-3 sentences the DAG.
 
-## Question 2
+* Part 2: Write out your statistical model in ulam form. This is slides 41-42 on [Lecture 17](https://files.speakerdeck.com/presentations/b657637e48814c7896ad79395a29f0a0/Lecture_17.pdf). When does the distinction between data and parameters important in this model and when is it not (see [around 30:00 in Lecture 17 video](https://youtu.be/lTFAB6QmwHM))
 
-Now incorporate individual hunter varying effects into your analysis from the previous problem. Allow the influence of age on success to vary by each individual.
+For this part, it's okay if you technically run the model, which would be part 3. We'll need the model specification for the prior predictive check next.
 
-How much variation in success is explained by individuals and how much by age?
+## 2. Prior Predictive Check
 
-```{r}
-# type in your code here
+Conduct a prior predictive simulation for your model. You may find the earlier example of R code 5.4 to be helpful from Chapter 5. You will need to use the `extract.prior()` function. Set your seed to `set.seed(10)`. To do the prior predictive check, you will need to put `c(-2,2)` for the `A` and `M` inputs. Plot your model.
 
-```
+## 3. Fit the Model
 
-## Question 3
+Run the `m15.1` model if you haven't already in part 1. Run a `precis(depth=2)` function to display the summarized model results. Compare your results to what was in Lecture 17 / page 494.
 
-Now include trip duration in the model from the previous problem. The focus is still the causal relationship between age and success, but duration is a potential competing cause or a mediator, so it is useful to include it. Since there are many missing values for trip duration, compare (1) a complete case analysis, which drops all the trips with missing durations, to (2) an analysis which uses all 14,364 trips and imputes missing duration values where necessary. Use any functional relationship
-between duration and success that you think is sensible, but be sure to justify it and check it against posterior predictions
+## 4. Validate Computation
 
-```{r}
-# type in your code here
+Run convergence diagnostics like trace plots, trank plots, and examining the `Rhat` and `n_eff`. Are you satisfied with the convergence of your model? Make an argument why or why not. 
 
-```
+## 5. Posterior Predictive Check
+
+Run a posterior predictive check as a scatterplot. You will want to first display the original points (ignores model error) and the posterior means. You can find [the code here](https://github.com/rmcelreath/stat_rethinking_2022/blob/b75c45b35d383866aab52623c4e5dc52be78beee/scripts_animation/17_measurement_error.r#L91). In order to run this, you'll need to rerun the similar model but without model error.
+
+Explain what is going on in this plot.
+
+You are welcome to run cross-validation (e.g., WAIC/PSIS) on the two models to and compare their model fit. 
+
+## Revise Model: Repeat for error in both outcome and predictor
+
+Follow similar model code in 15.5 to extend your model to include measurement error for marriage rate (M). You will need to repeat the same five steps above for this new version of the model: specify the model/DAG, run prior predictive check, fit the model, validate computation, and run posterior predictive check (see R code 15.6). 
+
+In your posterior predictive check, rerun the code to produce Figure 15.3 in the book (slide 58-59 in the Lecture).
+
+Compare your results to running the model without measurement error. Did including error on M increase or decrease the effect of M on D?
+
