@@ -42,7 +42,7 @@ Step 4: Submit your file here [through this canvas link](https://uncc.instructur
 - **UNCC ID**: 
 - **Other student worked with (optional)**:
 
-For this problem set, you're going to run the measurement error examples considered in 15.1 in the book and [Lecture 17](https://youtu.be/lTFAB6QmwHM). However, you're going to run them in the [format of the project](https://dsba6010-spring2022.netlify.app/assignment/final-project/#2-number-of-analysis-tasks-50-points, namely the Bayesian workflow.
+For this problem set, you're going to run the measurement error examples considered in 15.1 in the book and [Lecture 17](https://youtu.be/lTFAB6QmwHM). However, you're going to run them in the [format of the project](https://dsba6010-spring2022.netlify.app/assignment/final-project/#2-number-of-analysis-tasks-50-points), namely the Bayesian workflow.
 
 You may find [this code from the lecture to be helpful](https://github.com/rmcelreath/stat_rethinking_2022/blob/b75c45b35d383866aab52623c4e5dc52be78beee/scripts_animation/17_measurement_error.r#L35). Instead of using `rethinking`, you may also alternatively use `brms` using [Solomon Kurz's rethinking version of Chapter 15](https://bookdown.org/content/4857/missing-data-and-other-opportunities.html#measurement-error).
 
