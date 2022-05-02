@@ -186,6 +186,7 @@ lessons:
     date_start: "May 2"
     date_end: "May 8"
     content: "15-beyond-glm"
+    lab: "15-class"   
     quiz: "https://uncc.instructure.com/courses/171000/quizzes/356159"
     ##assignment: "01-problem-set"
     bg: 2
@@ -198,7 +199,7 @@ lessons:
     date_end: "May 15"
     #content: "12-multilevel-2"
     ##quiz: "01-lesson-quiz"
-    ##assignment: "01-problem-set"
+    assignment: "final-project"
     bg: 3
     bottomborder: True 
 

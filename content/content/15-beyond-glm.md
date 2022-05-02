@@ -49,3 +49,22 @@ weight: 15
 
 ## Deliverables
 
+Due before class: Monday, May 2 at 11:59am 
+
+<a href="https://forms.gle/zMipNzav3BCL3Rwy9"><i class="fas fa-comment fa-lg"></i>  Class Feedback</a>
+
+<a href="https://uncc.instructure.com/courses/171000/quizzes/356159"><i class="fas fa-question fa-lg"></i>  Lesson Quiz</a>
+
+<a href="https://uncc.instructure.com/courses/171000/assignments/1467904"><i class="fas fa-question fa-lg"></i> Problem Set 9</a>
+
+## Lab for Class 15
+
+[Lab class 15 code](../../lab/15-class)
+
+## Projects due next class
+
+Next Monday, we'll have our final presentations. Be sure to submit your notebooks on Canvas by class time. 
+
+Be sure to review [Final Project resource page](https://dsba6010-spring2022.netlify.app/assignment/final-project/) to recall specifications for the project.
+
+<a href="https://uncc.instructure.com/courses/171000/quizzes/356159"><i class="fas fa-question fa-lg"></i>Final Project</a>

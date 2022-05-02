@@ -1,0 +1,291 @@
+---
+date: "`r Sys.Date()`"
+title: "Class 15"
+menu:
+  example:
+    parent: Labs
+weight: 15
+toc: true
+type: docs
+---
+
+```{r setup, include=FALSE, fig.width=5, fig.height=4}
+knitr::opts_chunk$set(echo = TRUE, class.source="language-r", class.output="language-r", message = FALSE, warning = FALSE)
+```
+
+
+```{r echo=FALSE}
+downloadthis::download_file(
+  path = "15-class.Rmd",
+  output_name = "15-class",
+  button_label = "Download this code",
+  button_type = "danger",
+  has_icon = TRUE,
+  icon = "fa fa-save",
+  self_contained = FALSE
+)
+```
+
+## In-Class Lab: Chapter 16
+
+In this lab, we'll go through two examples from Chapter 16 with models that go beyond generalized linear models.
+
+## Geometric People
+
+Let's review the `Howell1` dataset and scale the values per 16.1 to eliminate the units.
+
+```{r}
+library(rethinking)
+data(Howell1)
+d <- Howell1
+
+# scale observed variables
+d$w <- d$weight / mean(d$weight)
+d$h <- d$height / mean(d$height)
+```
+
+We can follow the code in lecture to view both plots.
+
+```{r}
+plot( d$height , d$weight , xlim=c(0,max(d$height)) , ylim=c(0,max(d$weight)) , col=col.alpha(2,0.7) ,
+    lwd=3 , xlab="height (cm)" , ylab="weight (kg)" )
+mw <- mean(d$weight)
+mh <- mean(d$height)
+lines( c(mh,mh) , c(0,mw) , lty=3 , lwd=2 )
+lines( c(0,mh) , c(mw,mw) , lty=3 , lwd=2 )
+
+plot( d$h , d$w , xlim=c(0,max(d$h)) , ylim=c(0,max(d$w)) , col=col.alpha(2,0.7) ,
+    lwd=3 , xlab="height (scaled)" , ylab="weight (scaled)" )
+lines( c(1,1) , c(0,1) , lty=3 , lwd=2 )
+lines( c(0,1) , c(1,1) , lty=3 , lwd=2 )
+```
+
+### Scientific Model
+
+We'll start with the scientific model for the volume of a cylinder:
+
+$V = \pi r^{2} h$
+
+By following the algebra in the textbook, we can rearrange to get this equation:
+
+$W = kV = k \pi p^{2} h^{3}$
+
+where $k$ is a constant.
+
+Notice that given we have a scientific model, we no longer need a DAG.
+
+### Statistical Model
+
+We can rewrite our scientific model as:
+
+$W_{i} ~ \sim Lognormal(\mu_{i},\sigma)$
+
+$exp(\mu_{i}) = k \pi p^{2} h^{3}$
+
+$k \sim some\,\,prior$
+
+$p \sim some\,\,prior$
+
+$\sigma \sim Exponential(1)$
+
+We selected the Lognormal as the response function since weight can't be negative and is continuous.
+
+### Prior Predictive Check
+
+The key will be to select the priors for $k$ and $p$. We'll select $p \sim Beta(25,50)$ given that this would imply the prior will have a mean of $25 / (25 + 50) = 1/3$, given we're selecting a $Beta$ distribution. For $k$, we'll use $Exponential(0.5)$ given that this value represents the kilograms per cubic centimeters. Note that the priors shown in Lecture 19 are slightly different than what's in the textbook. We'll use Lecture 19 values.
+
+```{r}
+n <- 30
+p <- rbeta(1e4,25,50)
+k <- rexp(1e4,0.5)
+sigma <- rexp(n,1)
+xseq <- seq(from=0,to=1.3,len=100)
+plot(NULL,xlim=c(0,1.3),ylim=c(0,1.5),xlab="height (scaled)",ylab="weight (scaled)")
+for ( i in 1:n ) {
+    mu <- log( pi * k[i] * p[i]^2 * xseq^3 )
+    lines( xseq , exp(mu + sigma[i]^2/2) , lwd=3 , col=col.alpha(2,runif(1,0.4,0.8)) )
+}
+lines( c(1,1) , c(0,1) , lty=3 , lwd=2 )
+lines( c(0,1) , c(1,1) , lty=3 , lwd=2 )
+
+curve( dbeta(x,25,50) , from=0, to=1 , xlim=c(0,1) , lwd=3 , col=2 , xlab="p")
+
+curve( dexp(x,0.5) , from=0, to=5 , xlim=c(0,5) , lwd=3 , col=2 , xlab="k")
+```
+
+### Initial Model
+
+Given our statistical model above, let's write out our model:
+
+```{r}
+dat <- list(W=d$w,H=d$h)
+m16.1 <- ulam(
+    alist(
+        W ~ dlnorm( mu , sigma ),
+        exp(mu) <- 3.141593 * k * p^2 * H^3,
+        p ~ beta( 25 , 50 ),
+        k ~ exponential( 0.5 ),
+        sigma ~ exponential( 1 )
+    ), data=dat , chains=4 , cores=4 )
+```
+
+### Fit Model
+
+```{r}
+precis(m16.1)
+```
+
+### Convergence
+
+```{r}
+traceplot(m16.1)
+```
+
+We find sufficient model convergence in the traceplots, consistent with the Rhat.
+
+#### Posterior Predictive Simulation
+
+Let's do a posterior predictive simulation.
+
+```{r}
+h_seq <- seq( from=0 , to=max(d$h) , length.out=100 )
+w_sim <- sim( m16.1 , data=list(H=h_seq) )
+mu_mean <- apply( w_sim , 2 , mean )
+w_CI <- apply( w_sim , 2 , PI )
+plot( d$h , d$w , xlim=c(0,max(d$h)) , ylim=c(0,max(d$w)) , col=2 ,
+    lwd=2 , xlab="height (scaled)" , ylab="weight (scaled)" )
+shade( w_CI , h_seq , col=col.alpha(2,0.5) )
+lines( h_seq , mu_mean , lwd=3 )
+```
+
+We can see that with the exception of children (i.e., small weight/height), the cylinder model does a fairly good job of fitting the model. You can review Lecture 19 for more details on how we can rewrite different versions of this model.
+
+## Population Dynamics
+
+Let's also review the Lynx and Hare example in Lecture 19 and Chapter 16.
+
+```{r}
+## R code 16.13
+library(rethinking)
+data(Lynx_Hare)
+Lynx_Hare
+```
+
+Let's plot the data.
+
+```{r}
+
+plot( 1:21 , Lynx_Hare[,3] , ylim=c(0,90) , xlab="year" ,
+    ylab="thousands of pelts" , xaxt="n" , type="l" , lwd=3  )
+at <- c(1,11,21)
+axis( 1 , at=at , labels=Lynx_Hare$Year[at] )
+lines( 1:21 , Lynx_Hare[,2] , lwd=3 , col=2 )
+points( 1:21 , Lynx_Hare[,3] , bg="black" , col="white" , pch=21 , cex=1.4 )
+points( 1:21 , Lynx_Hare[,2] , bg=2 , col="white" , pch=21 , cex=1.4 )
+text( 17 , 80 , "Lepus" , pos=2 )
+text( 19 , 50 , "Lynx" , pos=2 , col=2 )
+```
+
+### Generative Model
+
+Let's create a generative model. This is based on the ordinary differential equations laid out in Lecture 19. See Lecture 19 for the intuition around the equations.
+
+```{r}
+## R code 16.14
+sim_lynx_hare <- function( n_steps , init , theta , dt=0.002 ) {
+    L <- rep(NA,n_steps)
+    H <- rep(NA,n_steps)
+    L[1] <- init[1]
+    H[1] <- init[2]
+    for ( i in 2:n_steps ) {
+        H[i] <- H[i-1] + dt*H[i-1]*( theta[1] - theta[2]*L[i-1] )
+        L[i] <- L[i-1] + dt*L[i-1]*( theta[3]*H[i-1] - theta[4] )
+    }
+    return( cbind(L,H) )
+}
+
+## R code 16.15
+theta <- c( 0.5 , 0.05 , 0.025 , 0.5 )
+z <- sim_lynx_hare( 1e4 , as.numeric(Lynx_Hare[1,2:3]) , theta )
+
+plot( z[,2] , type="l" , ylim=c(0,max(z[,2])) , lwd=4 , xaxt="n" ,
+    ylab="number (thousands)" , xlab="" )
+lines( z[,1] , col=2 , lwd=4 )
+mtext( "time" , 1 )
+```
+
+### Prior Predictive Simulation
+
+```{r}
+## R code 16.16
+N <- 1e4
+Ht <- 1e4
+p <- rbeta(N,2,18)
+h <- rbinom( N , size=Ht , prob=p )
+h <- round( h/1000 , 2 )
+dens( h , xlab="thousand of pelts" , lwd=2 )
+```
+
+### Initial Model
+
+Let's specify our model.
+
+```{r}
+## R code 16.17
+data(Lynx_Hare_model)
+cat(Lynx_Hare_model) # Stan model specifications (see Lecture 19)
+```
+We can now run the model into `cstan`.
+
+```{r}
+## R code 16.18
+dat_list <- list(
+    N = nrow(Lynx_Hare),
+    pelts = Lynx_Hare[,2:3] )
+
+m16.5 <- cstan( model_code=Lynx_Hare_model , data=dat_list , chains=3 ,
+    cores=3 , control=list( adapt_delta=0.95 ) )
+```
+
+```{r}
+precis(m16.5, depth=2)
+```
+
+### Convergence
+
+```{r}
+traceplot(m16.5)
+```
+
+### Posterior Predictive Simulation
+
+```{r}
+## R code 16.19
+post <- extract.samples(m16.5)
+pelts <- dat_list$pelts
+plot( 1:21 , pelts[,2] , pch=16 , ylim=c(0,140) , xlab="year" ,
+    ylab="thousands of pelts" , xaxt="n" )
+at <- c(1,11,21)
+axis( 1 , at=at , labels=Lynx_Hare$Year[at] )
+# 21 time series from posterior
+for ( s in 1:21 ) {
+    lines( 1:21 , post$pelts_pred[s,,2] , col=col.alpha("black",0.2) , lwd=3 )
+    lines( 1:21 , post$pelts_pred[s,,1] , col=col.alpha(2,0.3) , lwd=3 )
+}
+# points
+points( 1:21 , pelts[,2] , col="white" , pch=16 , cex=1.5 )
+points( 1:21 , pelts[,2] , col=1 , pch=16 )
+points( 1:21 , pelts[,1] , col="white" , pch=16 , cex=1.5 )
+points( 1:21 , pelts[,1] , col=2 , pch=16 )
+# text labels
+text( 17 , 110 , "Lepus" , pos=2 )
+text( 19 , 50 , "Lynx" , pos=2 , col=2 )
+```
+
+
+
+## Package versions
+
+```{r}
+sessionInfo()
+```
